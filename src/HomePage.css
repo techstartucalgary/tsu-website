@@ -8,7 +8,7 @@
 .homePage {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background-color: #282c34;
+  background: linear-gradient(to bottom, #282c34  5%, #07080A 100%); /*#282c34 */
   min-height: 100vh;
   display: flex;
   flex-direction: column;

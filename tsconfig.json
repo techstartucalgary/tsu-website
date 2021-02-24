@@ -18,8 +18,11 @@
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    "___comment1": "Using baseUrl as below sets up imports from absolute paths, making it easier to import components.",
+    "baseUrl": "src"
   },
+  
   "include": [
     "src"
   ]

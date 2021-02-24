@@ -1,4 +1,4 @@
-import tsu_logo from './images/logo_white_start.png'
+import tsu_logo from 'images/logo_white_start.png'
 import './HomePage.css';
 
 function HomePage() {

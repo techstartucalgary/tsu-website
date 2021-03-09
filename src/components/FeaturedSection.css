@@ -1,62 +1,82 @@
-.homePage__ourSections {
-  background-color: rgb(12, 12, 12);
-}
-@supports (background-blend-mode: multiply) {
-  .homePage__ourSections {
-    background: url(../images/temp.jpg),
-      radial-gradient(rgba(75, 73, 73, 0.5), rgba(41, 41, 41, 0.5));
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
-.homePage__section {
+.featuredSection {
   background: radial-gradient(
     var(--clr-inner, rgba(47, 163, 115, 0.7)),
     var(--clr-outer, rgba(0, 99, 81, 0.7))
   );
-  padding: 6em;
-  border-radius: 1em;
-  margin-bottom: 3em;
+  padding: 96px;
+  border-radius: 16px;
+  margin-bottom: 48px;
+  margin-top: 32px;
 }
 
-.homePage__sectionImage {
-  margin-top: -8em;
-  margin-right: -10em;
+.featuredSection__sectionImage {
+  margin-top: -120px;
+  margin-right: -160px;
   display: flex;
   shape-outside: url(../images/temp.png);
 }
 
+@media (max-width: 600px){
+  .featuredSection{
+    margin-top: 64px;
+    padding-top: 35%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 15%;
+  }
+}
+
 @media (min-width: 720px) {
-  .homePage__sectionImage {
+  .featuredSection__sectionImage {
     float: right;
     width: 65%;
   }
-  .homePage__section {
+  .featuredSection__section {
     text-align: left;
   }
 }
 
-.homePage__sectionTitle {
+.featuredSection__sectionTitle {
   font-size: clamp(2rem, calc(5vw + 1rem), 3.5rem);
   color: white;
   line-height: 1.1;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
-.homePage__meetTheTeam {
+.featuredSection__meetTheTeam {
   --clr-inner: rgba(66, 163, 123, 0.7);
   --clr-outer: rgba(18, 117, 99, 0.7);
 }
 
-.homePage__ourEvents {
+.featuredSection__ourEvents {
   --clr-inner: rgba(24, 116, 78, 0.7);
   --clr-outer: rgba(2, 70, 58, 0.7);
 }
 
-.homePage__getInvolved {
+.featuredSection__getInvolved {
   --clr-inner: rgba(34, 71, 56, 0.7);
   --clr-outer: rgba(0, 49, 41, 0.7);
+}
+
+
+.featuredSection__btn {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--clr-text, white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  padding: 0.5em 1.25em;
+  background-color: var(--clr-accent, rgb(44, 196, 30));
+  border-radius: 0.18em;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+}
+
+.featuredSection__btn:hover,
+.featuredSection__btn:focus {
+  transform: scale(1.1);
+  opacity: 0.75;
 }

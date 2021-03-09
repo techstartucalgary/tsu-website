@@ -1,0 +1,62 @@
+.homePage__ourSections {
+  background-color: rgb(12, 12, 12);
+}
+@supports (background-blend-mode: multiply) {
+  .homePage__ourSections {
+    background: url(../images/temp.jpg),
+      radial-gradient(rgba(75, 73, 73, 0.5), rgba(41, 41, 41, 0.5));
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+.homePage__section {
+  background: radial-gradient(
+    var(--clr-inner, rgba(47, 163, 115, 0.7)),
+    var(--clr-outer, rgba(0, 99, 81, 0.7))
+  );
+  padding: 6em;
+  border-radius: 1em;
+  margin-bottom: 3em;
+}
+
+.homePage__sectionImage {
+  margin-top: -8em;
+  margin-right: -10em;
+  display: flex;
+  shape-outside: url(../images/temp.png);
+}
+
+@media (min-width: 720px) {
+  .homePage__sectionImage {
+    float: right;
+    width: 65%;
+  }
+  .homePage__section {
+    text-align: left;
+  }
+}
+
+.homePage__sectionTitle {
+  font-size: clamp(2rem, calc(5vw + 1rem), 3.5rem);
+  color: white;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.homePage__meetTheTeam {
+  --clr-inner: rgba(66, 163, 123, 0.7);
+  --clr-outer: rgba(18, 117, 99, 0.7);
+}
+
+.homePage__ourEvents {
+  --clr-inner: rgba(24, 116, 78, 0.7);
+  --clr-outer: rgba(2, 70, 58, 0.7);
+}
+
+.homePage__getInvolved {
+  --clr-inner: rgba(34, 71, 56, 0.7);
+  --clr-outer: rgba(0, 49, 41, 0.7);
+}

@@ -1,14 +1,13 @@
-
-
 /* .App-logo {
   height: 40vmin;
   pointer-events: none;
 } */
-
+/*
 .homePage {
   text-align: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(to bottom, #282c34  5%, #07080A 100%); /*#282c34 */
+  background: linear-gradient(to bottom, #282c34  5%, #07080A 100%); */ /*#282c34 */
+/*
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -42,4 +41,171 @@
   .homePage__logo{
     min-width: 310px;
   }
+}
+*/
+
+.homePage,
+.homePage::before,
+.homePage::after {
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  font-family: "Inter", Tahoma, sans-serif;
+  line-height: 1.5;
+}
+.homePage img {
+  max-width: 100%;
+  display: block;
+}
+
+.homePage h1,
+.homePage h2,
+.homePage h3,
+.homePage p {
+  margin: 0;
+}
+.homePage section {
+  padding: 8em 0;
+}
+
+.homePage__spacing > * + * {
+  /*adds spacing for any child of the containing*/
+  margin-top: var(--spacer, 2rem);
+}
+
+.homePage__container {
+  width: 85%;
+  max-width: 65em;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.homePage__split {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.homePage__split > * {
+  flex-basis: 30%;
+  min-width: 10em;
+}
+
+.homePage__btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--clr-text, white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  padding: 0.5em 1.25em;
+  background-color: var(--clr-accent, rgb(44, 196, 30));
+  border-radius: 0.18em;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+}
+
+.homePage__btn:hover,
+.homePage__btn:focus {
+  transform: scale(1.1);
+  opacity: 0.75;
+}
+
+.homePage__primaryTitle {
+  font-size: 4rem;
+  font-size: clamp(0.8rem, calc(5vw + 1rem), 4.5rem); /*adjust size to window*/
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.homePage__containerTitle {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  color: var(--clr-accent, rgb(28, 151, 16));
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.homePage__hero {
+  text-align: center;
+  padding: 15em 0;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(1, 115, 68));
+}
+
+@supports (background-blend-mode: multiply) {
+  .homePage__hero {
+    background: url(../images/temp.jpg),
+      radial-gradient(rgb(75, 73, 73), rgb(61, 55, 55));
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.homePage__aboutUs {
+  background-color: rgb(19, 19, 19);
+  text-align: center;
+}
+
+.homePage__featuredProjects {
+  background-image: linear-gradient(rgb(19, 19, 19), rgb(26, 26, 26));
+  text-align: center;
+}
+.homePage__projectItem {
+  display: block;
+  position: relative;
+  transform: scale(0.9);
+  transition: transform 250ms ease-in-out;
+  transition: opacity 250ms linear;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  opacity: 0.75;
+}
+.homePage__projectItem:hover,
+.homePage__projectItem:focus {
+  transform: scale(0.95);
+  opacity: 1;
+}
+
+.homePage__projectDetails {
+  opacity: 0;
+  transition: opacity 250ms linear;
+}
+.homePage__projectItem:hover .homePage__projectDetails,
+.homePage__projectItem:focus .homePage__projectDetails {
+  opacity: 1;
+}
+.homePage__projectItem img {
+  border-radius: 1em;
+}
+.homePage__projectItem span {
+  display: block;
+  font-weight: 700;
+  font-size: clamp(1.5rem, calc(1vw + 1rem), 3rem);
+  text-transform: uppercase;
+}
+
+.homePage__ourSponsors {
+  background-image: linear-gradient(rgba(12, 12, 12, 1), rgb(1, 115, 95));
+}
+
+#homePage__sponsorPackage {
+  text-decoration: none;
+  font-size: clamp(1rem, calc(3vw+1rem), 1.5rem);
+  display: inline-block;
+  color: white;
+  transition: color 250ms linear, transform 250ms ease-in-out;
+}
+#homePage__sponsorPackage:hover,
+#homePage__sponsorPackage:hover {
+  color: var(--clr-accent, rgb(28, 151, 16));
+  transform: scale(1.3);
+}
+footer {
+  background-color: black;
 }

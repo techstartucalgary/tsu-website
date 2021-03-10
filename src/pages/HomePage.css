@@ -58,16 +58,30 @@
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.125rem;
-  padding: 0.5em 1.25em;
+  border-width: 0px;
   background-color: var(--primary-green);
-  border-radius: 0.18em;
-  transition: transform 250ms ease-in-out, opacity 250ms linear;
+  width: 300px;
+  min-height: 40px;
+  transition: transform 250ms ease-in-out;
+  /* transition: width 250ms ease-in-out, height 250ms ease-in-out, font-size 250ms ease-in-out, opacity 250ms linear; */
+  padding: 8px 20px;
+  border-radius: 3px;
+  cursor: pointer;
 }
 
-.homePage__btn:hover,
-.homePage__btn:focus {
+.homePage__btn:hover{
   transform: scale(1.1);
-  opacity: 0.75;
+  /* font-size: 1.2375rem;
+  width: 330px;
+  min-height: 44px;
+  max-height: 100%; */
+}
+
+@media(max-width: 400px){
+  .homePage__btn {
+    max-width: 180px;
+    padding: 8px 12px;
+  }
 }
 
 .homePage__primaryTitle {

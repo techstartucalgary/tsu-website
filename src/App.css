@@ -2,4 +2,5 @@
     /* CSS Variables with global scope */
     --primary-green: #99E755;
     --primary-black: #282A36;
+    font-family: "Inter", Tahoma, sans-serif;
 }

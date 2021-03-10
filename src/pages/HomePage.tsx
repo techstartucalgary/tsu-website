@@ -32,10 +32,9 @@ function HomePage() {
           </p>
           <a
             href="https://linktr.ee/techstartuofc"
-            className="homePage__btn"
             target="blank"
           >
-            Visit our Linktree
+            <button className="homePage__btn">Visit our Linktree</button>
           </a>
         </div>
       </section>
@@ -63,8 +62,8 @@ function HomePage() {
             />
           </div>
           <div>
-            <a href="#" className="homePage__btn">
-              View All Projects
+            <a href="#">
+              <button className="homePage__btn">View All Projects</button>
             </a>
           </div>
         </div>

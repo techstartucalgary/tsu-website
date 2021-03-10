@@ -60,6 +60,10 @@
 }
 
 
+.featuredSection__sectionDescription{
+  margin-top: 28px;
+}
+
 .featuredSection__btn {
   margin-top: 20px;
   display: inline-block;

@@ -73,19 +73,8 @@
   display: block;
 }
 
-.homePage h1,
-.homePage h2,
-.homePage h3,
-.homePage p {
-  margin: 0;
-}
 .homePage section {
   padding: 8em 0;
-}
-
-.homePage__spacing > * + * {
-  /*adds spacing for any child of the containing*/
-  margin-top: var(--spacer, 2rem);
 }
 
 .homePage__container {

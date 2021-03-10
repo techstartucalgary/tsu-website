@@ -1,7 +1,10 @@
+// Images
 import tsu_logo from "images/logo_white_start.png";
 import temp from "images/temp.jpg";
 import temp1 from "images/temp.png";
+// CSS
 import "./HomePage.css";
+// React Components
 import FeaturedProject from "components/FeaturedProject";
 import FeaturedSection from "components/FeaturedSection";
 import SponsorLogo from "components/SponsorLogo";
@@ -10,7 +13,7 @@ function HomePage() {
   return (
     <div className="homePage">
       <header className="homePage__hero">
-        <div className="homePage__container homePage__spacing">
+        <div className="homePage__container">
           <img className="homePage__logo" src={tsu_logo}></img>
           <p className="homePage__primaryTitle">
             Currently Under Construction.
@@ -19,7 +22,7 @@ function HomePage() {
       </header>
 
       <section className="homePage__aboutUs">
-        <div className="homePage__container homePage__spacing">
+        <div className="homePage__container">
           <h1>About Us</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
@@ -37,7 +40,7 @@ function HomePage() {
         </div>
       </section>
       <section className="homePage__featuredProjects">
-        <div className="homePage__container homePage__spacing">
+        <div className="homePage__container">
           <h2 className="homePage__containerTitle">Featured projects</h2>
           <div className="homePage__split">
             <FeaturedProject
@@ -94,7 +97,7 @@ function HomePage() {
       </section>
 
       <section className="homePage__ourSponsors">
-        <div className="homePage__container homePage__spacing">
+        <div className="homePage__container">
           <h2 className="homePage__containerTitle">Sponsors</h2>
           <div className="homePage__split">
             <SponsorLogo sponsorLink="#" sponsorImage={temp1} />

@@ -1,0 +1,17 @@
+.SubscribeButton {
+    background: none;
+    color: #081C15;
+    border: 2px solid;
+    padding: 1em 2em;
+    font-size: 1em;
+    transition: all 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.SubscribeButton:hover{
+    border-color: #D8F3DC;
+    color: #D8F3DC;
+    box-shadow: 0 0.5em 0.5em -0.4em #D8F3DC; /* offset-x | offset-y | blur-radius | spread-radius | color*/
+    transform: translateY(-0.25em);
+    cursor: pointer;
+}

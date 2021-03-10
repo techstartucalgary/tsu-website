@@ -1,5 +1,6 @@
 import tsu_logo from 'images/logo_white_start.png'
 import './HomePage.css';
+import Footer from 'components/Footer/Footer';
 
 function HomePage() {
   return (
@@ -10,6 +11,9 @@ function HomePage() {
       <a className="homePage__cta" href="https://linktr.ee/techstartuofc">Learn more about us!</a>
 
       <p className="homePage__construction">This website is under construction... come back soon!</p>
+
+      <Footer />
+
     </div>
   );
 }

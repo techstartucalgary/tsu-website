@@ -1,0 +1,19 @@
+.Footer{
+    background-image: linear-gradient(#081C15, #1B4332, #2D6A4F);
+    margin-top: 1rem;
+    padding: 2rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    display:inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.SocialMediaSection {
+  padding: 25px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

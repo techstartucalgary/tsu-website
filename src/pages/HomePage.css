@@ -170,40 +170,7 @@
   background-image: linear-gradient(rgb(19, 19, 19), rgb(26, 26, 26));
   text-align: center;
 }
-.homePage__projectItem {
-  display: block;
-  position: relative;
-  transform: scale(0.9);
-  transition: transform 250ms ease-in-out;
-  transition: opacity 250ms linear;
-  text-decoration: none;
-  color: white;
-  text-align: center;
-  opacity: 0.75;
-}
-.homePage__projectItem:hover,
-.homePage__projectItem:focus {
-  transform: scale(0.95);
-  opacity: 1;
-}
 
-.homePage__projectDetails {
-  opacity: 0;
-  transition: opacity 250ms linear;
-}
-.homePage__projectItem:hover .homePage__projectDetails,
-.homePage__projectItem:focus .homePage__projectDetails {
-  opacity: 1;
-}
-.homePage__projectItem img {
-  border-radius: 1em;
-}
-.homePage__projectItem span {
-  display: block;
-  font-weight: 700;
-  font-size: clamp(1.5rem, calc(1vw + 1rem), 3rem);
-  text-transform: uppercase;
-}
 
 .homePage__ourSponsors {
   background-image: linear-gradient(rgba(12, 12, 12, 1), rgb(1, 115, 95));

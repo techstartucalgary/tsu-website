@@ -4,7 +4,7 @@ import temp1 from "images/temp.png";
 import "./HomePage.css";
 import FeaturedProject from "components/FeaturedProject";
 import FeaturedSection from "components/FeaturedSection";
-import FeaturedSponsor from "components/FeaturedSponsor";
+import SponsorLogo from "components/SponsorLogo";
 
 function HomePage() {
   return (
@@ -97,8 +97,8 @@ function HomePage() {
         <div className="homePage__container homePage__spacing">
           <h2 className="homePage__containerTitle">Sponsors</h2>
           <div className="homePage__split">
-            <FeaturedSponsor sponsorLink="#" sponsorImage={temp1} />
-            <FeaturedSponsor sponsorLink="#" sponsorImage={temp1} />
+            <SponsorLogo sponsorLink="#" sponsorImage={temp1} />
+            <SponsorLogo sponsorLink="#" sponsorImage={temp1} />
           </div>
           <div>
             <a href="#" id="homePage__sponsorPackage">

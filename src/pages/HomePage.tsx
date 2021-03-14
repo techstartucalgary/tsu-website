@@ -8,6 +8,7 @@ import "./HomePage.css";
 import FeaturedProject from "components/FeaturedProject";
 import FeaturedSection from "components/FeaturedSection";
 import SponsorLogo from "components/SponsorLogo";
+import TeamSection from "components/TeamSection/TeamSection";
 
 function HomePage() {
   return (
@@ -109,6 +110,9 @@ function HomePage() {
           </div>
         </div>
       </section>
+
+      <TeamSection />
+
     </div>
   );
 }

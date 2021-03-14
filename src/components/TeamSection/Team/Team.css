@@ -1,0 +1,24 @@
+.Container {
+    margin: 10% 10% 0%;
+    display: grid;
+    grid-template-columns: 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px;
+    grid-auto-flow: dense;
+    grid-column-gap: 20%;
+    grid-row-gap: 40%;
+}
+
+@media (max-width:500px){
+    .Container {
+        margin: 10% 10% 10%;
+        display: grid;
+        grid-template-columns: 60%;
+        grid-template-rows: auto;
+        grid-auto-flow: dense;
+        grid-column-gap: 20%;
+        grid-row-gap: 80px;
+
+        
+        justify-content: center;
+    }
+}

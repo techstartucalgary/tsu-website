@@ -1,0 +1,18 @@
+.ProfileDescription {
+    width: 100%;
+    display:inline-block;
+}
+
+.Bio {
+    align-self: center;
+    text-align: center;
+} 
+
+.LinksSection {
+    border-radius: 30%;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    align-items: center;  
+    justify-content: center;
+}

@@ -1,0 +1,152 @@
+.docsPage {
+    text-align: center;
+  }
+  
+  .docsPage__header {
+    background: rgb(23, 28, 19);
+    background: linear-gradient(
+      279deg,
+      rgba(23, 28, 19, 1) 0%,
+      rgba(40, 42, 54, 1) 51%
+    );
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  
+    color: white;
+  }
+  
+  .docsPage__link {
+    color: #61dafb;
+  }
+  
+  .docsPage__h1 {
+    text-align: left;
+    justify-content: left;
+    padding-top: 20px;
+    padding-left: 35px;
+    color: cornsilk;
+    font-weight: 100px;
+    font-size: 25px;
+    font-family: "Inter", Tahoma, sans-serif;
+  }
+  
+  .docsPage__header2 {
+    text-align: right;
+    padding-right: 10px;
+    padding-top: -20px;
+  }
+  
+  .docsPage__h2 {
+    text-align: right;
+    justify-content: right;
+    padding-right: 10px;
+    font-size: 20px;
+    font-family: "Inter", Tahoma, sans-serif;
+    color: cornsilk;
+  }
+  
+  .docsPage__h2:hover {
+    color: darkgray;
+  }
+  
+  .docsPage__h3 {
+    margin-top: 300px;
+    height: 80px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: "Inter", Tahoma, sans-serif;
+    color: white;
+    font-size: 30px;
+  }
+  
+  .docsPage__Search input {
+    margin-top: 0px;
+    height: 30px;
+    width: 500px;
+    border: seagreen 3px solid;
+  }
+  
+  .docsPage__h4 {
+    margin-left: 260px;
+    width: 300px;
+    padding-left: 21%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: "Inter", Tahoma, sans-serif;
+    font-weight: 70px;
+    font-size: 23px;
+    color: white;
+  }
+  
+  .docsPage__p {
+    width: 700px;
+    margin-left: 25%;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-family: "Inter", Tahoma, sans-serif;
+    font-size: 20px;
+    font-weight: 50px;
+    color: seashell;
+  }
+  
+  .docsPage__ol {
+    justify-content: left;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 33px;
+    font-weight: 300vh;
+    color: antiquewhite;
+  }
+  
+  .docsPage__Hanbook {
+    margin-top: 10px;
+    color: darkgrey;
+    font-size: 20px;
+    font-weight: 30px;
+    font-family: "Inter", Tahoma, sans-serif;
+  }
+  
+  .docsPage__Resources {
+    color: darkgrey;
+    font-size: 20px;
+    font-weight: 30px;
+    font-family: "Inter", Tahoma, sans-serif;
+  }
+  
+  .docsPage__ol2 {
+    justify-content: left;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 33px;
+    font-weight: 300vh;
+    color: antiquewhite;
+  }
+  
+  .docsPage__links {
+    color: darkgrey;
+  }
+  
+  .docsPage__links:hover {
+    color: green;
+  }
+  
+  .docsPage__DarkMode {
+    justify-content: left;
+    text-align: left;
+    margin-left: 10px;
+    font-size: 33px;
+    font-weight: 300vh;
+    color: antiquewhite;
+  }
+  
+  .docsPage__DarkMode2 {
+    color: darkgrey;
+    font-size: 20px;
+    font-weight: 30px;
+    font-family: "Inter", Tahoma, sans-serif;
+  }
+  

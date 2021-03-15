@@ -1,45 +1,152 @@
-
-
-/* .App-logo {
-  height: 40vmin;
-  pointer-events: none;
-} */
-
-.homePage {
-  text-align: center;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  background: linear-gradient(to bottom, #282c34  5%, #07080A 100%); /*#282c34 */
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.homePage__ourSections {
+  background-color: rgb(12, 12, 12);
 }
-
-.homePage__logo{
-  width: 55%;
-  min-width: 400px;
-}
-
-.homePage__construction{
-  margin-top: 50px;
-  font-size: 1rem;
-  font-family: Inter, 'Courier New', Courier, monospace;
-}
-
-.homePage__description{
-  margin-left: 30px;
-  margin-right: 30px;
-}
-.homePage__cta{
-  margin-top: 25px;
-  color: #8FDC63;
-}
-
-@media(max-width: 450px){
-  .homePage__logo{
-    min-width: 310px;
+@supports (background-blend-mode: multiply) {
+  .homePage__ourSections {
+    background: url(../images/temp.jpg),
+      radial-gradient(rgba(75, 73, 73, 0.5), rgba(41, 41, 41, 0.5));
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
   }
+}
+
+.homePage,
+.homePage::before,
+.homePage::after {
+  box-sizing: border-box;
+  border: none;
+  margin: 0;
+  font-family: "Inter", Tahoma, sans-serif;
+  line-height: 1.5;
+}
+.homePage img {
+  max-width: 100%;
+  display: block;
+}
+
+.homePage section {
+  padding: 8em 0;
+}
+
+.homePage__container {
+  width: 85%;
+  max-width: 65em;
+  margin: 0 auto;
+  color: white;
+  text-align: center;
+}
+
+.homePage__split {
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.homePage__split > * {
+  flex-basis: 30%;
+  min-width: 10em;
+}
+
+.homePage__btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--clr-text, white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  border-width: 0px;
+  background-color: var(--primary-green);
+  width: 300px;
+  min-height: 40px;
+  transition: transform 250ms ease-in-out;
+  /* transition: width 250ms ease-in-out, height 250ms ease-in-out, font-size 250ms ease-in-out, opacity 250ms linear; */
+  padding: 8px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.homePage__btn:hover{
+  transform: scale(1.1);
+  /* font-size: 1.2375rem;
+  width: 330px;
+  min-height: 44px;
+  max-height: 100%; */
+}
+
+@media(max-width: 400px){
+  .homePage__btn {
+    max-width: 180px;
+    padding: 8px 12px;
+  }
+}
+
+.homePage__primaryTitle {
+  font-size: 4rem;
+  font-size: clamp(0.8rem, calc(5vw + 1rem), 4.5rem); /*adjust size to window*/
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.homePage__containerTitle {
+  text-align: center;
+  font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
+  color: var(--primary-green);
+  text-transform: uppercase;
+  line-height: 1;
+  margin-bottom: 3rem;
+}
+
+.homePage__hero {
+  text-align: center;
+  padding: 15em 0;
+  background-image: linear-gradient(rgb(0, 0, 0), rgb(1, 115, 68));
+}
+
+@supports (background-blend-mode: multiply) {
+  .homePage__hero {
+    background: url(../images/temp.jpg),
+      radial-gradient(rgb(75, 73, 73), rgb(61, 55, 55));
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+
+.homePage__aboutUs {
+  background-color: rgb(19, 19, 19);
+  text-align: center;
+}
+
+.homePage__featuredProjects {
+  background-image: linear-gradient(rgb(19, 19, 19), rgb(26, 26, 26));
+  text-align: center;
+}
+
+
+.homePage__ourSponsors {
+  background-image: linear-gradient(rgba(12, 12, 12, 1), rgb(1, 115, 95));
+}
+
+#homePage__sponsorPackage {
+  text-decoration: none;
+  font-size: clamp(1rem, calc(3vw+1rem), 1.5rem);
+  max-width: 90%;
+  display: inline-block;
+  color: white;
+  transform: scale(1);
+  transition: color 250ms linear, transform 250ms ease-in-out;
+}
+#homePage__sponsorPackage:hover,
+#homePage__sponsorPackage:hover {
+  color: var(--primary-green);
+  transform: scale(1.2);
+}
+footer {
+  background-color: black;
 }

@@ -11,7 +11,6 @@ function App(){
     return <Router>
         <div className="App">
             <Header/>
-            <Navbar />
             <div className="content">
                 <Switch>
                     <Route path="/docs">

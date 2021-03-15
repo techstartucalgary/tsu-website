@@ -8,5 +8,6 @@
 .TeamSection {
     margin: 10%;
     width: 80%;
+    min-height:auto;
     transform: translateY(10%);
 }

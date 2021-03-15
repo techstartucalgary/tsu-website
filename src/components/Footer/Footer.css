@@ -1,5 +1,6 @@
 .Footer{
-    background-image: linear-gradient( #282A36, #99E755);
+    background-color: #99E755;
+    /* background-image: linear-gradient( #282A36, #99E755); */
     margin-top: 1rem;
     padding: 2rem;
     position:relative;
@@ -13,7 +14,7 @@
   }
 
 .SocialMediaSection {
-  padding: 25px 50px;
+  padding: 25px 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -22,9 +23,10 @@
 @media (max-width:500px){
   .Footer {
     padding:0em;
+    margin-top:400%;
   }
   .SocialMediaSection {
-    padding: 5px 10px;
+    padding: 10px 20px;
   }
 
   .Copyright{

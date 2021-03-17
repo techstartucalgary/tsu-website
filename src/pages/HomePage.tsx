@@ -2,6 +2,8 @@
 import tsu_logo from "images/logo_white_start.png";
 import temp from "images/temp.jpg";
 import temp1 from "images/temp.png";
+import hunterHubLogo from "images/hunterhublogo.png";
+import arcurveLogo from "images/arcurvelogo.png";
 // CSS
 import "./HomePage.css";
 // React Components
@@ -100,8 +102,8 @@ function HomePage() {
         <div className="homePage__container">
           <h2 className="homePage__containerTitle">Sponsors</h2>
           <div className="homePage__split">
-            <SponsorLogo sponsorLink="#" sponsorImage={temp1} />
-            <SponsorLogo sponsorLink="#" sponsorImage={temp1} />
+            <SponsorLogo sponsorLink="#" sponsorImage={arcurveLogo} />
+            <SponsorLogo sponsorLink="#" sponsorImage={hunterHubLogo} />
           </div>
           <div>
             <a href="#" id="homePage__sponsorPackage">

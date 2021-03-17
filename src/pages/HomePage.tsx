@@ -1,9 +1,9 @@
 // Images
-import tsu_logo from "images/logo_white_start.png";
+import tsu_logo from "images/tech-start-logo-white.png";
 import temp from "images/temp.jpg";
 import temp1 from "images/temp.png";
-import hunterHubLogo from "images/hunterhublogo.png";
-import arcurveLogo from "images/arcurvelogo.png";
+import sponsorLogoHunterHub from "images/sponsor-logo-hunter-hub.png";
+import sponsorLogoArcurve from "images/sponsor-logo-arcurve.png";
 // CSS
 import "./HomePage.css";
 // React Components
@@ -102,8 +102,8 @@ function HomePage() {
         <div className="homePage__container">
           <h2 className="homePage__containerTitle">Sponsors</h2>
           <div className="homePage__split">
-            <SponsorLogo sponsorLink="#" sponsorImage={arcurveLogo} />
-            <SponsorLogo sponsorLink="#" sponsorImage={hunterHubLogo} />
+            <SponsorLogo sponsorLink="https://www.arcurve.com/" sponsorImage={sponsorLogoArcurve} />
+            <SponsorLogo sponsorLink="https://www.ucalgary.ca/hunter-hub" sponsorImage={sponsorLogoHunterHub} />
           </div>
           <div>
             <a href="#" id="homePage__sponsorPackage">

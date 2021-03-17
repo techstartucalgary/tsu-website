@@ -28,10 +28,9 @@ function HomePage() {
         <div className="homePage__container">
           <h1>About Us</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-            aperiam architecto veritatis labore! Numquam iusto sit culpa
-            obcaecati perspiciatis illum laborum architecto facere laboriosam?
-            Aperiam fuga a minima suscipit dignissimos!
+            We're a student-led club at the University of Calgary that builds collaborative software projects and explores technology entrepreneurship.
+            Our projects give members the opportunity to learn new skills, recieve mentorship, and combine strategy, design, and software to build something awesome.
+            Throughout the year, we run events and workshops to build knowledge and foster entrepreneurial thinking.
           </p>
           <a
             href="https://linktr.ee/techstartuofc"

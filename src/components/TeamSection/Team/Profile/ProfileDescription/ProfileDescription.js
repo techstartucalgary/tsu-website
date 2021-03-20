@@ -15,11 +15,16 @@ const ProfileDescription = props => {
             </div>
 
             <div className="LinksSection">
-                <SocialMedia
-                    className="Profile-SocialMedia"
-                    onClick={props.linkClicked}
-                    icon={faLinkedin}
-                    link={props.member.linkedin} />
+                {props.member.linkedin.trim() !== "" &&
+
+                    <SocialMedia
+                        className="Profile-SocialMedia"
+                        onClick={props.linkClicked}
+                        icon={faLinkedin}
+                        link={props.member.linkedin} />
+
+                }
+
 
                 <SocialMedia
                     className="Profile-SocialMedia"

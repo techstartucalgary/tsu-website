@@ -1,4 +1,3 @@
-import React from 'react';
 import './ProfileDescription.css';
 import SocialMedia from '../../../../SocialMedia/SocialMedia';
 
@@ -24,7 +23,6 @@ const ProfileDescription = props => {
                         link={props.member.linkedin} />
 
                 }
-
 
                 <SocialMedia
                     className="Profile-SocialMedia"

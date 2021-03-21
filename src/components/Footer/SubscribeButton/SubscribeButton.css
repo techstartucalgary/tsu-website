@@ -16,9 +16,42 @@
     cursor: pointer;
 }
 
+@media (max-width:1020px){
+    .SubscribeButton{
+        padding: 0.875em 1.75em;
+        font-size:0.9em;
+    }
+}
+
+@media (max-width:975px){
+    .SubscribeButton{
+        padding: 0.625em 1.25em;
+        font-size:0.7em;
+    }
+}
+
+@media (max-width:890px){
+    .SubscribeButton{
+        font-size: 0.65em;
+    }
+  }
+
+@media (max-width:835px){
+    .SubscribeButton{
+        padding: 0.5em 1em;
+        font-size: 0.6em;
+    }
+  }
+
 @media (max-width:500px){
     .SubscribeButton{
         padding: 0.25em 0.5em;
-        font-size:0.7em;
+        font-size:0.6em;
+    }
+}
+
+@media (max-width:400px){
+    .SubscribeButton{
+        font-size:0.5em;
     }
 }

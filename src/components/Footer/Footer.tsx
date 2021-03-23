@@ -1,4 +1,3 @@
-import React from "react";
 import './Footer.css'
 import SocialMedia from '../SocialMedia/SocialMedia';
 import SubscribeButton from './SubscribeButton/SubscribeButton';
@@ -12,7 +11,7 @@ import {
 
 const Footer = () => (
     <div className="Footer">
-        <p>UofC TechStart 2021</p>
+        <p className="Copyright">UofC TechStart 2021</p>
         <div className="SocialMediaSection">
             <SocialMedia
                 footer={true}

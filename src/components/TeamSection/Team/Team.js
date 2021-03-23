@@ -47,7 +47,7 @@ const Team = props => {
             return m.id === id;
         });
         const member = { ...containerState.members[iconIndex] };
-        member.clicked = false; // TODO: fix logic here
+        member.hoverAndClick = false;
         const members = [...containerState.members];
         members[iconIndex] = member;
         setContainerState({ members: members });

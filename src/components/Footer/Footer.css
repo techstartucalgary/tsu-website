@@ -2,7 +2,7 @@
     background-color: #99E755;
     /* background-image: linear-gradient( #282A36, #99E755); */
     margin-top: 1rem;
-    padding: 2rem;
+    padding: 2rem 0rem;
     position:relative;
     bottom: 0px;
     
@@ -22,7 +22,7 @@
 
 @media (max-width:1020px){
   .Footer {
-    padding:1.5em;
+    padding:1.5em 0em;
   }
   .Copyright{
     font-size: 0.9em;
@@ -31,10 +31,10 @@
 
 @media (max-width:975px){
   .SocialMediaSection {
-    padding: 25px 190px;
+    padding: 25px 180px;
   }
   .Footer {
-    padding: 1em;
+    padding: 1em 0em;
   }
   .Copyright{
     font-size: 0.7em;
@@ -47,7 +47,7 @@
   }
 
   .SocialMediaSection {
-    padding: 25px 180px;
+    padding: 25px 170px;
   }
 }
 
@@ -95,11 +95,25 @@
   }
 }
 
+@media (max-width:550px){
+  .Footer {
+    width:100%;
+  }
+}
+
 @media (max-width:400px){
   .SocialMediaSection {
-    padding: 5px 10px;
+    padding: 5px 0px;
   }
   .Copyright{
     font-size: 0.5em;
   }
 }
+
+
+
+
+
+
+
+

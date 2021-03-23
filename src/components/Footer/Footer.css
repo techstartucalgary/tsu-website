@@ -87,11 +87,17 @@
 
 @media (max-width:500px){
   .Footer {
+    display:inline-table;
     padding:0em;
     margin-top:250%;
   }
+
   .SocialMediaSection {
     padding: 10px 20px;
+  }
+
+  SubscribeButton {
+    transform: translateX(100px);
   }
 }
 

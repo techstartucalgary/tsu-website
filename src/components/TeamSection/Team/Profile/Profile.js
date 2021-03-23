@@ -18,12 +18,10 @@ const Profile = props => {
                     alt={props.alt} />
             </div>
 
-
             <ProfileDescription
                 className="ProfileDescription"
                 member={props.member}
                 linkClicked={props.linkClicked}
-                linkedin={props.member.linkedin}
             />
 
         </div>

@@ -96,7 +96,7 @@
     padding: 10px 20px;
   }
 
-  SubscribeButton {
+  .SubscribeButton {
     transform: translateX(100px);
   }
 }

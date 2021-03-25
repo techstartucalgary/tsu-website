@@ -26,7 +26,7 @@ function HomePage() {
 
       <section className="homePage__aboutUs">
         <div className="homePage__container">
-          <h1>We're the innovators on campus.</h1>
+          <h1 className="homePage__sectionHeader">We're the innovators on campus.</h1>
           <p>
             We're a software club at the University of Calgary. Through multidisciplinary teams, we take on interesting problems and use technology to solve them.
             Every semester, our teams combine software, design, and strategy to complete awesome projects.
@@ -35,12 +35,12 @@ function HomePage() {
             At Tech Start, our members learn new technologies, gain experience with professional development tools and methodologies, and master the art of collaboration.
             We're also the top spot on campus to meet fellow tech enthusiasts, aspiring entrepreneurs, and innovators. 
           </p>
-          <a
+          {/* <a
             href="https://linktr.ee/techstartuofc"
             target="blank"
           >
             <button className="homePage__btn">Visit our Linktree</button>
-          </a>
+          </a> */}
         </div>
       </section>
       <section className="homePage__featuredProjects">

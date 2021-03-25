@@ -1,16 +1,112 @@
 .Container {
     margin: 10% 10% 30%;
+    margin-left: 20%;
     display: grid;
-    grid-template-columns: 20% 20% 20%;
-    grid-template-rows: 20% 20% 20%;
+    grid-template-columns: repeat(3, 20%);
+    grid-auto-rows: 20%;
     grid-auto-flow: dense;
-    grid-column-gap: 20%;
-    grid-row-gap: 20%;
+    grid-column-gap: 10%;
+    grid-row-gap: 5%;
+
+}
+
+.Container-7{
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 30%;
+    display: grid;
+    grid-template-columns: repeat(8, 10%);
+    grid-auto-rows: 20%;
+    grid-column-gap: 5%;
+    grid-row-gap: 30%;
+}
+
+.Profile-7:nth-child(-n+4) {
+    grid-column: span 2;
+}
+.Profile-7:nth-last-child(3) {
+    grid-row-start: 2;
+    grid-column: 2 / span 2;
+}
+.Profile-7:nth-last-child(2) {
+    grid-row-start: 2;
+    grid-column: 4 / span 2;
+}
+.Profile-7:nth-last-child(1) {
+    grid-row-start: 2;
+    grid-column: 6 / span 2;
+}
+
+.Container-8{
+    margin: 10% 10% 30%;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-auto-rows: 20%;
+    grid-column-gap: 5%;
+    grid-row-gap: 30%;
+}
+
+.Container-10{
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 30%;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-auto-rows: 20%;
+    grid-column-gap: 5%;
+    grid-row-gap: 10%;
+}
+
+.Profile-10:nth-child(1) {
+    grid-row-start: 1;
+    grid-column: 2 / span 2;
+}
+
+.Profile-10:nth-child(2) {
+    grid-row-start: 1;
+    grid-column: 4 / span 2;
+}
+
+.Profile-10:nth-child(3) {
+    grid-row-start: 1;
+    grid-column: 6 / span 2;
+}
+
+.Profile-10:nth-child(4) {
+    grid-row-start: 2;
+    grid-column: 1 / span 2;
+}
+
+.Profile-10:nth-child(5) {
+    grid-row-start: 2;
+    grid-column: 3 / span 2;
+}
+
+.Profile-10:nth-child(6) {
+    grid-row-start: 2;
+    grid-column: 5 / span 2;
+}
+
+.Profile-10:nth-child(7) {
+    grid-row-start: 2;
+    grid-column: 7 / span 2;
+}
+
+.Profile-10:nth-last-child(3) {
+    grid-row-start: 3;
+    grid-column: 2 / span 2;
+}
+.Profile-10:nth-last-child(2) {
+    grid-row-start: 3;
+    grid-column: 4 / span 2;
+}
+.Profile-10:nth-last-child(1) {
+    grid-row-start: 3;
+    grid-column: 6 / span 2;
 }
 
 @media (max-width:500px){
-    .Container {
-        margin: 10% 10% 100%;
+    .Container{
         grid-template-columns: auto;
         grid-template-rows: auto;
         grid-column-gap: auto;

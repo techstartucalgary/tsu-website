@@ -53,14 +53,20 @@ const Team = props => {
         setContainerState({ members: members });
     }
 
+    let ContainerClass = "Container";
+    if (containerState.members.length === 7) ContainerClass = "Container-7";
+    else if (containerState.members.length === 8) ContainerClass = "Container-8";
+    else if (containerState.members.length === 10) ContainerClass = "Container-10";
+
     return (
-        <div className="Container">
+        <div className={ContainerClass}>
             {
                 containerState.members.map((member, i) => {
                     return (
                         <Profile
                             key={i}
                             member={member}
+                            class={`Profile-${containerState.members.length}`}
 
                             profilePic={props.profilePics[`member_${i}`]}
                             alt={[`member_${i}`]}

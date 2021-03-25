@@ -1,12 +1,11 @@
-import React from 'react';
 import './Profile.css';
-import CircularIcon from './CircularIcon/CircularIcon';
 import ProfileDescription from './ProfileDescription/ProfileDescription';
 
 const Profile = props => {
 
     const ProfileClasses = ["ProfileDiv"];
     if (props.hoverAndClick) ProfileClasses.push("ProfileDiv--HoverAndClick");
+    ProfileClasses.push(props.class);
 
     return (
         <div className={ProfileClasses.join(' ')} onMouseEnter={props.hover} onMouseLeave={props.leave} onClick={props.click} >

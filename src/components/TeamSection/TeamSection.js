@@ -36,7 +36,7 @@ class TeamSection extends Component {
             { id: 3, name: "Luke Hollinda", role: "VP External", linkedin: "https://www.linkedin.com/in/luke-hollinda-89270a183/?originalSubdomain=ca", email: "mailto:luke.hollinda1@ucalgary.ca", hovered: false, clicked: false },
             { id: 4, name: "Amanda Nguyen", role: "VP Internal", linkedin: "", email: "mailto:amanda.nguyen1@ucalgary.ca", hovered: false, clicked: false },
             { id: 5, name: "Tyler Chan", role: "VP Communications", linkedin: "https://www.linkedin.com/in/chan-tyler/", email: "mailto:tyler.chan@ucalgary.ca", hovered: false, clicked: false },
-            { id: 6, name: "Sareen Singh", role: "VP Events", linkedin: "https://www.linkedin.com/in/sareen-singh-309b55173/?originalSubdomain=ca", email: "mailto:sareen.singh@ucalgary.ca", hovered: false, clicked: false },
+            { id: 6, name: "Sareen Singh", role: "VP Events", linkedin: "https://www.linkedin.com/in/sareen-singh-309b55173/?originalSubdomain=ca", email: "mailto:sareen.singh@ucalgary.ca", hovered: false, clicked: false }
         ],
 
         projectManagers: [
@@ -52,6 +52,7 @@ class TeamSection extends Component {
                 <h1>Meet the team!</h1>
                 <h2>We're thrilled to build up the tech and entrepreneurship sectors at UCalgary. Check out our executive team below!</h2>
                 <Team
+                    className="Team"
                     teamMembers={this.state.executiveTeam}
                     profilePics={this.profilePics} />
             </div>

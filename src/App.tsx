@@ -9,8 +9,8 @@ import './App.css';
 function App() {
     return <Router>
         <div className="App">
-            <Navbar />
-            <div className="Content">
+            <Navbar/>
+            <div className="content">
                 <Switch>
                     <Route path="/docs">
                         <DocsPage />

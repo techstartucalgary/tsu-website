@@ -108,7 +108,7 @@
 
 @supports (background-blend-mode: multiply) {
   .homePage__hero {
-    background: url(../images/temp.jpg),
+    background: url("../images/blackbg.png"),
       radial-gradient(rgb(75, 73, 73), rgb(61, 55, 55));
     background-size: cover;
     background-blend-mode: multiply;

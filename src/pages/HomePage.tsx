@@ -19,18 +19,21 @@ function HomePage() {
         <div className="homePage__container">
           <img className="homePage__logo" src={tsu_logo}></img>
           <p className="homePage__primaryTitle">
-            Currently Under Construction.
+            A tech club for dreamers and doers 
           </p>
         </div>
       </header>
 
       <section className="homePage__aboutUs">
         <div className="homePage__container">
-          <h1>About Us</h1>
+          <h1>We're the innovators on campus.</h1>
           <p>
-            We're a student-led club at the University of Calgary that builds collaborative software projects and explores technology entrepreneurship.
-            Our projects give members the opportunity to learn new skills, recieve mentorship, and combine strategy, design, and software to build something awesome.
-            Throughout the year, we run events and workshops to build knowledge and foster entrepreneurial thinking.
+            We're a software club at the University of Calgary. Through multidisciplinary teams, we take on interesting problems and use technology to solve them.
+            Every semester, our teams combine software, design, and strategy to complete awesome projects.
+          </p>
+          <p>
+            At Tech Start, our members learn new technologies, gain experience with professional development tools and methodologies, and master the art of collaboration.
+            We're also the top spot on campus to meet fellow tech enthusiasts, aspiring entrepreneurs, and innovators. 
           </p>
           <a
             href="https://linktr.ee/techstartuofc"

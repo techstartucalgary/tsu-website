@@ -1,12 +1,12 @@
 import HomePage from 'pages/HomePage';
 import DocsPage from 'pages/DocsPage';
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from 'components/Navbar';
 import Footer from 'components/Footer/Footer';
 import './App.css';
 
-function App(){
+function App() {
     return <Router>
         <div className="App">
             <Navbar/>
@@ -16,11 +16,11 @@ function App(){
                         <DocsPage />
                     </Route>
                     <Route path="/">
-                        <HomePage/>
+                        <HomePage />
                     </Route>
                 </Switch>
             </div>
-            <Footer/>
+            <Footer />
         </div>
     </Router>
 }

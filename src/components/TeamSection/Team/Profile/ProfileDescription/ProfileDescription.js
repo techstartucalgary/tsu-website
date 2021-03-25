@@ -1,8 +1,8 @@
-import React from 'react';
 import './ProfileDescription.css';
 import SocialMedia from '../../../../SocialMedia/SocialMedia';
 
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 const ProfileDescription = props => {
 
@@ -14,12 +14,21 @@ const ProfileDescription = props => {
             </div>
 
             <div className="LinksSection">
+                {props.member.linkedin.trim() !== "" &&
+
+                    <SocialMedia
+                        className="Profile-SocialMedia"
+                        onClick={props.linkClicked}
+                        icon={faLinkedin}
+                        link={props.member.linkedin} />
+
+                }
+
                 <SocialMedia
                     className="Profile-SocialMedia"
                     onClick={props.linkClicked}
-                    icon={faLinkedin}
-                    link={props.linkedin}
-                    email={props.email} />
+                    icon={faEnvelope}
+                    link={props.member.email} />
             </div>
         </div>
     )

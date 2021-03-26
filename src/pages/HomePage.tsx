@@ -18,8 +18,8 @@ function HomePage() {
       <header className="homePage__hero">
         <div className="homePage__container">
           <img className="homePage__logo" src={tsu_logo}></img>
-          <p className="homePage__primaryTitle">
-            A tech club for dreamers and doers 
+          <p className="homePage__headerSubtitle">
+            a tech club for dreamers and doers 
           </p>
         </div>
       </header>

@@ -54,7 +54,8 @@ const Team = props => {
     }
 
     let ContainerClass = "Container";
-    if (containerState.members.length === 7) ContainerClass = "Container-7";
+    if (containerState.members.length === 4) ContainerClass = "Container-4";
+    else if (containerState.members.length === 7) ContainerClass = "Container-7";
     else if (containerState.members.length === 8) ContainerClass = "Container-8";
     else if (containerState.members.length === 10) ContainerClass = "Container-10";
 
@@ -68,7 +69,7 @@ const Team = props => {
                             member={member}
                             class={`Profile-${containerState.members.length}`}
 
-                            profilePic={props.profilePics[`member_${i}`]}
+                            profilePic={props.profilePics[`member_${member.id}`]}
                             alt={[`member_${i}`]}
 
                             hover={() => hoverIcon(member.id)}

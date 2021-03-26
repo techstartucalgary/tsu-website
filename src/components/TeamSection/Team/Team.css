@@ -10,10 +10,22 @@
 
 }
 
+.Container-4{
+    margin-top: 10%;
+    margin-bottom: 30%;
+    margin-right:5%;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-auto-rows: 30%;
+    grid-auto-flow: dense;
+    grid-column-gap: 10%;
+    grid-row-gap: 5%;
+}
+
 .Container-7{
     margin-top: 10%;
     margin-right: 10%;
-    margin-bottom: 30%;
+    margin-bottom: 10%;
     display: grid;
     grid-template-columns: repeat(8, 10%);
     grid-auto-rows: 20%;
@@ -49,7 +61,7 @@
 .Container-10{
     margin-top: 10%;
     margin-right: 10%;
-    margin-bottom: 30%;
+    margin-bottom: 10%;
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-auto-rows: 20%;

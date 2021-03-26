@@ -40,6 +40,7 @@ class TeamSection extends Component {
         ],
 
         projectManagers: [
+            { id: 0, name: "Joel Happ", role: "President | Project Manager", linkedin: "https://www.linkedin.com/in/joel-happ/", email: "mailto:joel.happ1@ucalgary.ca", hovered: false, clicked: false },
             { id: 7, name: "Armeen Rashidian", role: "Project Manager", linkedin: "https://www.linkedin.com/in/armeen-rashidian-b12080195/", email: "mailto:armeenrn@gmail.com", hovered: false, clicked: false },
             { id: 8, name: "Felix Vaughan", role: "Project Manager", linkedin: "", email: "mailto:ezamabusiness@gmail.com", hovered: false, clicked: false },
             { id: 9, name: "Darryl Huët", role: "Project Manager", linkedin: "", email: "mailto:darryl.huet1@ucalgary.ca", hovered: false, clicked: false }
@@ -54,6 +55,11 @@ class TeamSection extends Component {
                 <Team
                     className="Team"
                     teamMembers={this.state.executiveTeam}
+                    profilePics={this.profilePics} />
+                <h2>Check out our project managers below!</h2>
+                <Team
+                    className="Team"
+                    teamMembers={this.state.projectManagers}
                     profilePics={this.profilePics} />
             </div>
         );

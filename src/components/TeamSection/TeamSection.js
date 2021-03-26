@@ -2,7 +2,7 @@ import { Component } from 'react';
 import Team from './Team/Team';
 import './TeamSection.css';
 
-import member_0 from './Images/Joel_Happ.jpg'
+import member_0 from './Images/Joel_Happ.jfif'
 import member_1 from './Images/Valeriya_Volkova.png'
 import member_2 from './Images/Arpith_Indukuri.jpg'
 import member_3 from './Images/Luke_Hollinda.jpg'

@@ -159,9 +159,25 @@
   }
 }
 
+
+/*** About Us *****/
+
 .homePage__aboutUs {
   background-color: white;
   text-align: center;
+}
+
+.homePage__numberContainer{
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+@media(max-width: 750px){
+  .homePage__numberContainer{
+    grid-template-columns: 1fr;
+  }
 }
 
 .homePage__featuredProjects {

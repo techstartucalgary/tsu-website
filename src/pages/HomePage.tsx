@@ -11,6 +11,7 @@ import FeaturedProject from "components/FeaturedProject";
 import FeaturedSection from "components/FeaturedSection";
 import SponsorLogo from "components/SponsorLogo";
 import TeamSection from "components/TeamSection/TeamSection";
+import NumberStat from "components/NumberStat";
 
 function HomePage() {
   return (
@@ -60,6 +61,11 @@ function HomePage() {
           >
             <button className="homePage__btn">Visit our Linktree</button>
           </a> */}
+          <div className="homePage__numberContainer">
+            <NumberStat number={4} stat="projects so far"/>
+            <NumberStat number={32} stat="members so far"/>
+            <NumberStat number={93} extra={"%"} stat="enjoyed their involvement"/>
+          </div>
         </div>
       </section>
       <section className="homePage__featuredProjects">

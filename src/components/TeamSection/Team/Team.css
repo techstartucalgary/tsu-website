@@ -13,12 +13,12 @@
 .Container-4{
     margin-top: 10%;
     margin-bottom: 30%;
-    margin-right:5%;
+    margin-left:5%;
     display: grid;
     grid-template-columns: repeat(4, 20%);
     grid-auto-rows: 30%;
     grid-auto-flow: dense;
-    grid-column-gap: 10%;
+    grid-column-gap: 5%;
     grid-row-gap: 5%;
 }
 

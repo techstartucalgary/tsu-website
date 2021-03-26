@@ -7,13 +7,13 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 const ProfileDescription = props => {
 
     return (
-        <div className="ProfileDescription">
+        <div className="ProfileDescription" >
             <div className="Bio">
                 <h3>{props.member.name}</h3>
                 <h4>{props.member.role}</h4>
             </div>
 
-            <div className="LinksSection">
+            <div className="LinksSection" onMouseEnter={props.hover} onMouseLeave={props.leave} onClick={props.click}>
                 {props.member.linkedin.trim() !== "" &&
 
                     <SocialMedia

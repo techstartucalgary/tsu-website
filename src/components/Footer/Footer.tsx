@@ -12,7 +12,9 @@ import {
 
 const Footer = () => (
     <div className="Footer">
+
         <SubscribeButton />
+
         <div className="SocialMediaSection">
             <SocialMedia
                 footer={true}

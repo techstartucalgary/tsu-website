@@ -21,6 +21,10 @@ const Profile = props => {
                 className="ProfileDescription"
                 member={props.member}
                 linkClicked={props.linkClicked}
+
+                hover={props.hover}
+                click={props.click}
+                leave={props.leave}
             />
 
         </div>

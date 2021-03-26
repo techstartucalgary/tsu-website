@@ -89,7 +89,7 @@
 .homePage__text {
   margin: 20px 10px;
   font-size: 16px;
-  color: rgba(34, 34, 34, .85);
+  color: var(--secondary-grey);
 }
 
 .homePage__divider{

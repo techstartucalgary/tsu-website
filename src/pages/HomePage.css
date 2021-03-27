@@ -177,6 +177,7 @@
 @media(max-width: 750px){
   .homePage__numberContainer{
     grid-template-columns: 1fr;
+    margin-top: 30px;
   }
 }
 

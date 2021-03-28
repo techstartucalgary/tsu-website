@@ -1,0 +1,12 @@
+.numberStat__number{
+    color: var(--primary-green);
+    font-weight: 800;
+    font-size: 4rem;
+}
+
+.numberStat__stat{
+    color: var(--secondary-grey);
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-top: 10px;
+}

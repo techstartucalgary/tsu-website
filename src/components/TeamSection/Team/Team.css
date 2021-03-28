@@ -16,7 +16,7 @@
     margin-left:5%;
     display: grid;
     grid-template-columns: repeat(4, 20%);
-    grid-auto-rows: 30%;
+    grid-auto-rows: 20%;
     grid-auto-flow: dense;
     grid-column-gap: 5%;
     grid-row-gap: 5%;

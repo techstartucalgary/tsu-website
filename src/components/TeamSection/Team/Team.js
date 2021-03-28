@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import Profile from './Profile/Profile';
 import './Team.css';
 
@@ -8,6 +8,7 @@ const Team = props => {
         members: props.teamMembers // array of objects
     });
 
+    /*
     const toggleIcon = id => {
         const iconIndex = containerState.members.findIndex(m => {
             return m.id === id;
@@ -19,6 +20,7 @@ const Team = props => {
         members[iconIndex] = member; // update object in array
         setContainerState({ members: members }); // update array in state
     }
+    */
 
     const hoverIcon = id => {
         const iconIndex = containerState.members.findIndex(m => {
@@ -30,6 +32,7 @@ const Team = props => {
         members[iconIndex] = member;
         setContainerState({ members: members });
     }
+
 
     const leaveIcon = id => {
         const iconIndex = containerState.members.findIndex(m => {
@@ -68,15 +71,22 @@ const Team = props => {
                             key={i}
                             member={member}
                             class={`Profile-${containerState.members.length}`}
+                            col={containerState.members.length}
 
                             profilePic={props.profilePics[`member_${member.id}`]}
                             alt={[`member_${i}`]}
 
+
                             hover={() => hoverIcon(member.id)}
-                            click={() => toggleIcon(member.id)}
+                            hovered={member.hovered}
                             leave={() => leaveIcon(member.id)}
-                            linkClicked={() => linkClicked(member.id)}
+                            /*
+                            click={() => toggleIcon(member.id)}
                             hoverAndClick={member.hovered && member.clicked}
+                            */
+
+                            linkClicked={() => linkClicked(member.id)}
+
                         />
                     );
                 })

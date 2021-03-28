@@ -111,6 +111,7 @@
 .homePage__headerSubtitle {
   font-size: 3rem;
   font-size: clamp(0.8rem, calc(5vw + 1rem), 4.5rem);
+  color: white;
   /*adjust size to window*/
   line-height: 1.1;
   font-weight: 700;
@@ -152,7 +153,7 @@
   text-align: center;
   padding: 15vh 0;
   background-image: fixed url("../images/blackbg2.jpg"), llinear-gradient(rgb(0, 0, 0), rgb(1, 115, 68));
-  max-height: 70vh;
+  height: 100vh;
 }
 
 @supports (background-blend-mode: multiply) {
@@ -166,6 +167,12 @@
   }
 }
 
+.homePage__logo{
+  width: 85%;
+  max-width: 800px !important;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /*** About Us *****/
 

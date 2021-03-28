@@ -19,7 +19,7 @@ function HomePage() {
   return (
     <div className="homePage">
       <header className="homePage__hero">
-        <div className="homePage__container">
+        <div>
           <img className="homePage__logo" src={tsu_logo}></img>
           <p className="homePage__headerSubtitle">
             a tech club for dreamers and doers 

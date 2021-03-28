@@ -3,5 +3,24 @@
     --primary-green: #99E755;
     --primary-black: #282A36;
     --secondary-grey: rgba(34, 34, 34, .85);
+    --chonky-header-size: 4.75rem;
+    --chonky-header-weight: 900;
+    --regular-font: 1rem;
     font-family: "Inter", Tahoma, sans-serif;
+}
+
+
+@media(max-width: 535px) {
+    
+    :root{
+        --regular-font: 14px;
+        --chonky-header-size: 3.2rem;
+    }
+}
+
+@media(max-width: 390px){
+    :root{
+        --chonky-header-size: 2.7rem;
+    }
+
 }

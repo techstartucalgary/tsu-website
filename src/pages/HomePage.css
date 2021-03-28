@@ -88,15 +88,9 @@
 
 .homePage__text {
   margin: 20px 5px;
-  font-size: 1rem;
+  font-size: var(--regular-font);
   color: var(--secondary-grey);
   text-align: left;
-}
-
-@media(max-width: 535px){
-  .homePage__text{
-    font-size: 14px;
-  }
 }
 
 .homePage__divider{
@@ -127,24 +121,12 @@
 }
 
 .homePage__sectionHeader {
-  font-size: 4.75rem;
-  font-weight: 900;
+  font-size: var(--chonky-header-size);
+  font-weight: var(--chonky-header-weight);
 }
 
 .homePage__sectionHeader {
   color: var(--primary-black);
-}
-
-@media(max-width: 535px) {
-  .homePage__sectionHeader {
-    font-size: 3.2rem;
-  }
-}
-
-@media(max-width: 390px) {
-  .homePage__sectionHeader {
-    font-size: 2.7rem;
-  }
 }
 
 /**** Hero (Landing Page) *****/

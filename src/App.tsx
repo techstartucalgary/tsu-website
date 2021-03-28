@@ -1,5 +1,6 @@
 import HomePage from 'pages/HomePage';
 import DocsPage from 'pages/DocsPage';
+import SparkPage from 'pages/SparkPage'
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from 'components/Navbar';
@@ -16,7 +17,7 @@ function App() {
                         <DocsPage />
                     </Route>
                     <Route path="/community">
-                        <DocsPage />
+                        <SparkPage />
                     </Route>
                     <Route path="/">
                         <HomePage />

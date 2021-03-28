@@ -1,7 +1,7 @@
 import "./Navbar.css"
 import React from 'react';
 import {Link} from 'react-router-dom';
-import logo from "images/logo_white_start.png";
+import logo from "images/tech-start-logo-white.png";
 
 function Header (props: any){
  var temp:string = props.HelloName;

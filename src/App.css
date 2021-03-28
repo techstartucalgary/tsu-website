@@ -2,5 +2,6 @@
     /* CSS Variables with global scope */
     --primary-green: #99E755;
     --primary-black: #282A36;
+    --secondary-grey: rgba(34, 34, 34, .85);
     font-family: "Inter", Tahoma, sans-serif;
 }

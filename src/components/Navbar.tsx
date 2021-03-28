@@ -17,7 +17,7 @@ function Header (props: any){
      <ul>
          <li> <a href ="#"><Link to ="/" > About</Link></a> </li> 
          <li> <a href ="#"><Link to ="/docs" >Docs</Link></a> </li>
-         <li> <a href ="#"><Link to ="/" >Projects</Link></a> </li>
+         <li> <a href ="#"><Link to ="/community" >Community</Link></a> </li>
          <li> <a href ="#"><Link to ="/" >Get Involved</Link></a> </li>
          <li> <a href ="#"><Link to ="/" >Resources</Link></a> </li>
      </ul>

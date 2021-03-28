@@ -15,6 +15,9 @@ function App() {
                     <Route path="/docs">
                         <DocsPage />
                     </Route>
+                    <Route path="/community">
+                        <DocsPage />
+                    </Route>
                     <Route path="/">
                         <HomePage />
                     </Route>

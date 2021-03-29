@@ -135,7 +135,7 @@
   text-align: center;
   padding: 15vh 0;
   background-image: fixed url("../images/blackbg2.jpg"), llinear-gradient(rgb(0, 0, 0), rgb(1, 115, 68));
-  height: 100vh;
+
 }
 
 @supports (background-blend-mode: multiply) {
@@ -152,6 +152,7 @@
 .homePage__logo{
   width: 85%;
   max-width: 800px !important;
+  margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
 }

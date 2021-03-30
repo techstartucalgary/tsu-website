@@ -1,5 +1,6 @@
-import { Component } from 'react';
 import Team from './Team/Team';
+import TeamCarousel from './Team/TeamCarousel';
+import useViewport from '../UseViewport';
 import './TeamSection.css';
 
 import member_0 from './Images/Joel_Happ.jfif'
@@ -13,9 +14,9 @@ import member_7 from './Images/Armeen_Rashidian.jpg'
 import member_8 from './Images/Felix_Vaughan.jpg'
 import member_9 from './Images/Darryl_Huët.jpg'
 
-class TeamSection extends Component {
+const TeamSection = () => {
 
-    profilePics = {
+    const profilePics = {
         "member_0": member_0,
         "member_1": member_1,
         "member_2": member_2,
@@ -28,7 +29,7 @@ class TeamSection extends Component {
         "member_9": member_9
     }
 
-    state = {
+    const teams = {
         executiveTeam: [
             { id: 0, name: "Joel Happ", role: "President | Project Manager", linkedin: "https://www.linkedin.com/in/joel-happ/", email: "mailto:joel.happ1@ucalgary.ca", hovered: false, clicked: false },
             { id: 1, name: "Valeriya Volkova", role: "VP Strategy", linkedin: "https://www.linkedin.com/in/valeriyavolkova/?originalSubdomain=ca", email: "mailto:valeriya.volkova@ucalgary.ca", hovered: false, clicked: false },
@@ -47,23 +48,42 @@ class TeamSection extends Component {
         ]
     }
 
-    render() {
-        return (
+    const { width } = useViewport();
+    console.log(width);
+    const breakpoint = 500;
+
+    return (
+        width > breakpoint ?
             <div className="TeamSection" >
                 <h1>Meet the team!</h1>
                 <h2>We're thrilled to build up the tech and entrepreneurship sectors at UCalgary. Check out our executive team below!</h2>
                 <Team
-                    className="Team"
-                    teamMembers={this.state.executiveTeam}
-                    profilePics={this.profilePics} />
+                    teamMembers={teams.executiveTeam}
+                    profilePics={profilePics} />
+
                 <h2>Check out our project managers below!</h2>
                 <Team
-                    className="Team"
-                    teamMembers={this.state.projectManagers}
-                    profilePics={this.profilePics} />
+                    teamMembers={teams.projectManagers}
+                    profilePics={profilePics} />
             </div>
-        );
-    }
+
+            :
+
+            <div className="TeamSection" >
+                <h1>Meet the team!</h1>
+                <h2>We're thrilled to build up the tech and entrepreneurship sectors at UCalgary. Check out our executive team below!</h2>
+                <TeamCarousel
+                    teamMembers={teams.executiveTeam}
+                    profilePics={profilePics} />
+
+                <h2>Check out our project managers below!</h2>
+                <TeamCarousel
+                    teamMembers={teams.projectManagers}
+                    profilePics={profilePics} />
+
+            </div>
+    );
+
 }
 
 export default TeamSection;

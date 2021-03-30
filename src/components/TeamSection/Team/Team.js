@@ -33,7 +33,6 @@ const Team = props => {
         setContainerState({ members: members });
     }
 
-
     const leaveIcon = id => {
         const iconIndex = containerState.members.findIndex(m => {
             return m.id === id;
@@ -77,16 +76,12 @@ const Team = props => {
                             alt={[`member_${i}`]}
 
 
+
                             hover={() => hoverIcon(member.id)}
                             hovered={member.hovered}
                             leave={() => leaveIcon(member.id)}
-                            /*
-                            click={() => toggleIcon(member.id)}
-                            hoverAndClick={member.hovered && member.clicked}
-                            */
 
                             linkClicked={() => linkClicked(member.id)}
-
                         />
                     );
                 })

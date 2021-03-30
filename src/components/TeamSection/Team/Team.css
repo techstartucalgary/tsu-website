@@ -61,12 +61,12 @@
 .Container-10{
     margin-top: 10%;
     margin-right: 10%;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
     display: grid;
     grid-template-columns: repeat(10, 10%);
     grid-auto-rows: 20%;
     grid-column-gap: 5%;
-    grid-row-gap: 10%;
+    grid-row-gap: 20%;
 }
 
 .Profile-10:nth-child(1) {

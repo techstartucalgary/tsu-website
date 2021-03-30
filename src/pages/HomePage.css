@@ -93,13 +93,6 @@
   text-align: left;
 }
 
-.homePage__divider{
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -30px;
-  margin-bottom: 40px;
-}
-
 /****** Titles **********/
 
 .homePage__headerSubtitle {
@@ -118,15 +111,6 @@
   text-transform: uppercase;
   line-height: 1;
   margin-bottom: 3rem;
-}
-
-.homePage__sectionHeader {
-  font-size: var(--chonky-header-size);
-  font-weight: var(--chonky-header-weight);
-}
-
-.homePage__sectionHeader {
-  color: var(--primary-black);
 }
 
 /**** Hero (Landing Page) *****/

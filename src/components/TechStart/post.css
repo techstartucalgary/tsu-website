@@ -1,0 +1,24 @@
+.rectangle {
+    /* display: inline-block; */
+    width: 250px;
+    height: 250px;
+    background: #99E755;
+    border: 1px solid green ;
+    border-radius: 25px;
+    position: relative;
+    margin-bottom: 40px;
+    font-family: 'Inter', Tahoma, sans-serif;   
+  }
+
+  
+.button {
+    position: absolute;
+    bottom:20px;
+    right:20px;
+    border: none;
+    color: none;
+    /* outline:none    ; */
+    background-color: Transparent;
+    font-size: 20px;
+    font-weight: bold;
+}

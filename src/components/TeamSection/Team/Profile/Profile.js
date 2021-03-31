@@ -43,7 +43,6 @@ const Profile = props => {
 
             <ProfileDescription
                 member={props.member}
-                linkClicked={props.linkClicked}
             />
         </div>
     );

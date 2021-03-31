@@ -2,6 +2,7 @@ import Team from './Team/Team';
 import TeamCarousel from './Team/TeamCarousel';
 import useViewport from '../UseViewport';
 import './TeamSection.css';
+import '../../App.css'
 
 import member_0 from './Images/Joel_Happ.jfif'
 import member_1 from './Images/Valeriya_Volkova.png'
@@ -50,18 +51,18 @@ const TeamSection = () => {
 
     const { width } = useViewport();
     console.log(width);
-    const breakpoint = 500;
+    const breakpoint = 750;
 
     return (
         width > breakpoint ?
             <div className="TeamSection" >
-                <h1>Meet the team!</h1>
-                <h2>We're thrilled to build up the tech and entrepreneurship sectors at UCalgary. Check out our executive team below!</h2>
+                <h1 className="chonkyHeading">Meet the team!</h1>
+                <h2 className="thiccSubheading">We're thrilled to build up the tech and entrepreneurship sectors at UCalgary. Check out our executive team below!</h2>
                 <Team
                     teamMembers={teams.executiveTeam}
                     profilePics={profilePics} />
 
-                <h2>Check out our project managers below!</h2>
+                <h2 className="thiccSubheading">Check out our project managers below!</h2>
                 <Team
                     teamMembers={teams.projectManagers}
                     profilePics={profilePics} />
@@ -70,13 +71,13 @@ const TeamSection = () => {
             :
 
             <div className="TeamSection" >
-                <h1>Meet the team!</h1>
-                <h2>We're thrilled to build up the tech and entrepreneurship sectors at UCalgary. Check out our executive team below!</h2>
+                <h1 className="thiccSubheading">Meet the team!</h1>
+                <h2 className="babyHeading">We're thrilled to build up the tech and entrepreneurship sectors at UCalgary. Check out our executive team below!</h2>
                 <TeamCarousel
                     teamMembers={teams.executiveTeam}
                     profilePics={profilePics} />
 
-                <h2>Check out our project managers below!</h2>
+                <h2 className="babyHeading">Check out our project managers below!</h2>
                 <TeamCarousel
                     teamMembers={teams.projectManagers}
                     profilePics={profilePics} />

@@ -1,6 +1,7 @@
 .Footer{
     background-color: #99E755;
     /* background-image: linear-gradient( #282A36, #99E755); */
+    color: var(--primary-black);
     margin-top: 0.5rem;
     padding: 2rem 0rem;
     position:relative;
@@ -54,6 +55,9 @@
 }
 
 @media (max-width:750px){
+  .Footer {
+    margin-top:5em;
+  }
   .SocialMediaSection {
     padding: 25px 50px;
   }
@@ -81,8 +85,8 @@
   .Footer {
     display:block;
     padding:0em;
-    margin-top:2em;
     height: 9em;
+    margin-top: 10em;
   }
 
   .SocialMediaSection {

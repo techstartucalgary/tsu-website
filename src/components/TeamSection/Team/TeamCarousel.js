@@ -9,12 +9,55 @@ const TeamCarousel = props => {
         members: props.teamMembers // array of objects
     });
 
+    const hoverIcon = id => {
+        const iconIndex = containerState.members.findIndex(m => {
+            return m.id === id;
+        });
+        const member = { ...containerState.members[iconIndex] };
+        member.hovered = true;
+        const members = [...containerState.members];
+        members[iconIndex] = member;
+        setContainerState({ members: members });
+    }
+    const leaveIcon = id => {
+        const iconIndex = containerState.members.findIndex(m => {
+            return m.id === id;
+        });
+        const member = { ...containerState.members[iconIndex] };
+        if (!(member.hovered && member.clicked)) member.hovered = false
+        const members = [...containerState.members];
+        members[iconIndex] = member;
+        setContainerState({ members: members });
+    }
+    const linkClicked = id => {
+        const iconIndex = containerState.members.findIndex(m => {
+            return m.id === id;
+        });
+        const member = { ...containerState.members[iconIndex] };
+        member.hoverAndClick = false;
+        const members = [...containerState.members];
+        members[iconIndex] = member;
+        setContainerState({ members: members });
+    }
+
     return (
-        <div className="Carousel">
-            <Carousel>
-                {containerState.members.map(member => <div key={member.id}>{member.name}</div>)}
-            </Carousel>
-        </div >
+        <Carousel className="Carousel">
+            {containerState.members.map((member, i) =>
+                <Profile
+                    className="Profile"
+                    key={i}
+                    member={member}
+                    class={`Profile-${containerState.members.length}`}
+                    col={containerState.members.length}
+                    profilePic={props.profilePics[`member_${member.id}`]}
+                    alt={[`member_${i}`]}
+                    hover={() => hoverIcon(member.id)}
+                    hovered={member.hovered}
+                    leave={() => leaveIcon(member.id)}
+                    linkClicked={() => linkClicked(member.id)}
+                />)}
+        </Carousel>
+
     );
 };
 

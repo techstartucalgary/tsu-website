@@ -1,4 +1,5 @@
-import './Footer.css'
+import './Footer.css';
+import '../../App.css';
 import SocialMedia from '../SocialMedia/SocialMedia';
 import SubscribeButton from './SubscribeButton/SubscribeButton';
 

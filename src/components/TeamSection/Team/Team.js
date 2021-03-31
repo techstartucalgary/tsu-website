@@ -75,8 +75,6 @@ const Team = props => {
                             profilePic={props.profilePics[`member_${member.id}`]}
                             alt={[`member_${i}`]}
 
-
-
                             hover={() => hoverIcon(member.id)}
                             hovered={member.hovered}
                             leave={() => leaveIcon(member.id)}

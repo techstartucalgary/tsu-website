@@ -5,3 +5,24 @@
 .Profile {
     margin-bottom: 50%;
 }
+
+/* Overriding CSS rules for react-elastic-carousel */
+
+button.rec-dot {
+    background-color: var(--primary-black);
+    box-shadow: var(--primary-black);
+}
+
+button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus {
+    background-color: var(--primary-green);
+    box-shadow: 0 0 1px 3px var(--primary-green)
+}
+
+.rec.rec-arrow {
+    background-color: white;
+    box-shadow: 0 0 1px 3px var(--primary-black);
+}
+
+.rec.rec-arrow:hover:enabled, .rec.rec-arrow:active:enabled, .rec.rec-arrow:focus:enabled  {
+    box-shadow: 0 0 1px 3px var(--primary-black);
+}

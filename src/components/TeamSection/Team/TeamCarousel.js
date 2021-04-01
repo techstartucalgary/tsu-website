@@ -2,6 +2,7 @@ import { useState } from 'react';
 import Carousel from 'react-elastic-carousel';
 import Profile from './Profile/Profile';
 import './TeamCarousel.css';
+import '../../../App.css';
 
 const TeamCarousel = props => {
 

@@ -13,18 +13,23 @@ button.rec-dot {
     box-shadow: var(--primary-black);
 }
 
-button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus {
+button.rec-dot:hover:enabled, button.rec-dot:active:enabled, button.rec-dot:focus:enabled {
     background-color: var(--primary-green);
-    box-shadow: 0 0 1px 3px var(--primary-green)
+    box-shadow: 0 0 1px 2px var(--primary-green)
+}
+
+.lgksPe:hover:enabled, .lgksPe:focus:enabled {
+    background-color: var(--primary-green) !important;
+    box-shadow: 0 0 1px 2px var(--primary-green)
 }
 
 .rec.rec-arrow {
     background-color: white;
-    box-shadow: 0 0 1px 3px var(--primary-black);
+    box-shadow: 0 0 1px 2px var(--primary-black);
 }
 
 .rec.rec-arrow:hover:enabled, .rec.rec-arrow:active:enabled, .rec.rec-arrow:focus:enabled  {
-    box-shadow: 0 0 1px 3px var(--primary-black);
+    box-shadow: 0 0 1px 2px var(--primary-black);
 }
 
 /* Source: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting*/

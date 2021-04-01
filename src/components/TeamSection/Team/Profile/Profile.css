@@ -51,11 +51,42 @@
     transition: 0.4s ease-in-out;
 }
 
-@media (max-width:800px){
-    .ProfileDiv{
-      font-size: 0.7em;
+@media (max-width:750px){
+    .LinksSection {
+        font-size: 3vw;
+        transform:translateY(-35vw);
+    }
+}
+
+@media (max-width:650px){
+    .LinksSection {
+        transform:translateY(-32vw);
+    }
+}
+
+@media (max-width:500px){
+    .LinksSection {
+        transform:translateY(-30vw);
     }
   }
+
+@media (max-width:450px){
+    .LinksSection {
+        transform:translateY(-28vw);
+    }
+}
+  
+@media (max-width:400px){
+    .LinksSection {
+        transform:translateY(-26vw);
+    }
+}
+
+@media (max-width:350px){
+    .LinksSection {
+        transform:translateY(-24vw);
+    }
+}
 
 /*
 .ProfileDescription {

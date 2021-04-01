@@ -4,27 +4,27 @@
     border: 0.1em solid;
     padding: 1em 2em;
     font-size: 1em;
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     text-decoration: none;
 }
 
 .SubscribeButtonDiv {
     width:auto;
+    transition: 0.3s ease-in-out;
+}
+
+.SubscribeButtonDiv:hover{
+    transform: translateY(-0.25em);
 }
 
 .SubscribeButton:hover{
     border-color: white;
     color:white;
     box-shadow: 0 0.5em 0.5em -0.4em white; /* offset-x | offset-y | blur-radius | spread-radius | color*/
-    transform: translateY(-0.25em);
     cursor: pointer;
 }
 
 @media (max-width:1500px){
-    .SubscribeButtonDiv{
-        
-    }
-
     .SubscribeButton {
         padding: 0.875em 1.5em;
     }

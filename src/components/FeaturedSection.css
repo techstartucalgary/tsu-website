@@ -1,0 +1,86 @@
+.featuredSection {
+  background: radial-gradient(
+    var(--clr-inner, rgba(47, 163, 115, 0.7)),
+    var(--clr-outer, rgba(0, 99, 81, 0.7))
+  );
+  padding: 96px;
+  border-radius: 16px;
+  margin-bottom: 48px;
+  margin-top: 32px;
+}
+
+.featuredSection__sectionImage {
+  margin-top: -120px;
+  margin-right: -160px;
+  display: flex;
+  shape-outside: url(../images/temp.png);
+}
+
+@media (max-width: 600px){
+  .featuredSection{
+    margin-top: 64px;
+    padding-top: 35%;
+    padding-right: 10%;
+    padding-left: 10%;
+    padding-bottom: 15%;
+  }
+}
+
+@media (min-width: 720px) {
+  .featuredSection__sectionImage {
+    float: right;
+    width: 65%;
+  }
+  .featuredSection__section {
+    text-align: left;
+  }
+}
+
+.featuredSection__sectionTitle {
+  font-size: clamp(2rem, calc(5vw + 1rem), 3.5rem);
+  color: white;
+  line-height: 1.1;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.featuredSection__meetTheTeam {
+  --clr-inner: rgba(66, 163, 123, 0.7);
+  --clr-outer: rgba(18, 117, 99, 0.7);
+}
+
+.featuredSection__ourEvents {
+  --clr-inner: rgba(24, 116, 78, 0.7);
+  --clr-outer: rgba(2, 70, 58, 0.7);
+}
+
+.featuredSection__getInvolved {
+  --clr-inner: rgba(34, 71, 56, 0.7);
+  --clr-outer: rgba(0, 49, 41, 0.7);
+}
+
+
+.featuredSection__sectionDescription{
+  margin-top: 28px;
+}
+
+.featuredSection__btn {
+  margin-top: 20px;
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--clr-text, white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  padding: 0.5em 1.25em;
+  background-color: var(--clr-accent, rgb(44, 196, 30));
+  border-radius: 0.18em;
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+}
+
+.featuredSection__btn:hover,
+.featuredSection__btn:focus {
+  transform: scale(1.1);
+  opacity: 0.75;
+}

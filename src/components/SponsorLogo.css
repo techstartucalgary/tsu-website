@@ -1,0 +1,15 @@
+.sponsorLogo {
+    display: block;
+    position: relative;
+    transform: scale(1.0);
+    transition: transform 250ms ease-in-out;
+    transition: opacity 250ms linear;
+    text-decoration: none;
+    opacity: 0.75;
+  }
+  .sponsorLogo:hover,
+  .sponsorLogo:focus {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+  

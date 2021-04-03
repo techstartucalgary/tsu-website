@@ -1,0 +1,52 @@
+.ProfileDescription {
+    width: 100%;
+    display:inline-block;
+}
+
+.Bio {
+    align-self: center;
+    text-align: center;
+} 
+
+/* NOTE: the following styles are based on those in App.css but tweaked to acommodate the
+         smaller font size of profile descriptions. */
+
+h3, h4 {
+    margin:0%;
+    font-family: "Inter", Tahoma, sans-serif;
+}
+
+h3 {
+    color: var(--primary-black);
+    font-size: 1.5rem;
+}
+
+h4 {
+    color: var(--primary-green);
+    font-size: 1.2rem;
+}
+
+@media (max-width:1500px){
+    h3 {font-size: 1.2rem}
+    h4 {font-size: 1rem}
+}
+
+@media (max-width:1200px){
+    h3 {font-size: 1rem}
+    h4 {font-size: 0.8rem}
+}
+
+@media (max-width:1000px){
+    h3 {font-size: 0.8rem}
+    h4 {font-size: 0.6rem}
+}
+
+@media (max-width:750px){
+    h3 {font-size: 1.2rem}
+    h4 {font-size: 1rem}
+}
+
+@media (max-width:450px){
+    h3 {font-size: 1rem}
+    h4 {font-size: 0.8rem}
+}

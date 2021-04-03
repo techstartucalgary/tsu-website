@@ -27,11 +27,16 @@
 
 .docsPage__header2 {
   width: 90%;
+
   margin: auto;
   padding: 35px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.docsPage__margin {
+  height: 90px;
 }
 
 .docsPage__header2 ul li {

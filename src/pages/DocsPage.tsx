@@ -3,7 +3,7 @@ import './DocsPage.css';
 import { ThemeProvider} from 'styled-components'
 import {lightTheme, darkTheme, GlobalStyles } from 'types/Themes.js'
 import Emoji from 'components/Emoji'
-import docsPage__logo from 'images/logo_white_start.png'
+import docsPage__logo from 'images/tech-start-logo-white.png'
 
 function DocsPage(){
   const [theme, setTheme] = useState('dark');
@@ -26,6 +26,7 @@ function DocsPage(){
       
   return (
     <ThemeProvider theme = { theme === 'light' ? lightTheme : darkTheme}>
+      <div className="docsPage__margin"></div>
     <div className="docsPage">
       <header className="docsPage__header">
       <GlobalStyles />

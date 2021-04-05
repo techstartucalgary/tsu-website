@@ -1,0 +1,38 @@
+img{
+    padding-top: 10px;
+    width: 100px;
+    height: 100px;
+}
+
+.alignment{    
+    text-align: left;
+    margin: 1px 10px;
+    color: black;
+    
+}
+
+.styling{
+    width: 225px;
+    height: 225px;
+    border: solid #1B4332;
+    border-radius: 25px;
+    margin: 25px;
+    padding: 10px;
+    float: left;
+    background-color:#52B788;
+    
+}
+
+a:link, a:visited, a:active{
+    text-decoration: none;
+}
+
+#title{
+    font-size: 16px;
+    transition:all 0.4s ease-in-out;
+}
+
+#title:hover{
+    font-size: 17px;
+    color: white;
+}

@@ -7,11 +7,11 @@ function Event(props){
         <div className = "styling">
             <a href = {props.link}>
                 <img src = {props.img} />
-                <h3 className = "alignment" id ="title">{props.name}</h3>
+                <h1 id ="title">{props.name}</h1>
             </a>
             
             
-            <h5 className = "alignment">{props.date}</h5>
+            <h2 className = "alignment">{props.date}</h2>
             <p className = "alignment">{props.description}</p>
         </div>
     );

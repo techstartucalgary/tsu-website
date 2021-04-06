@@ -1,25 +1,25 @@
 img{
     padding-top: 10px;
-    width: 100px;
+    width: 150px;
     height: 100px;
 }
 
 .alignment{    
     text-align: left;
+    font-size: 16px;
     margin: 1px 10px;
-    color: black;
+    color: #282A36;;
     
 }
 
 .styling{
     width: 225px;
     height: 225px;
-    border: solid #1B4332;
     border-radius: 25px;
+    background-color: #d3f5b6;
     margin: 25px;
     padding: 10px;
     float: left;
-    background-color:#52B788;
     
 }
 
@@ -28,11 +28,14 @@ a:link, a:visited, a:active{
 }
 
 #title{
-    font-size: 16px;
+    font-size: 18px;
+    text-align: left;
+    margin: 1px 10px;
+    color: #282A36;;
     transition:all 0.4s ease-in-out;
 }
 
 #title:hover{
-    font-size: 17px;
-    color: white;
+    font-size: 19px;
+    color: #767b99;;
 }

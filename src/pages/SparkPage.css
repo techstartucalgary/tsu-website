@@ -64,3 +64,13 @@ padding: 10px;
     font-size: 18px;
     text-align: left;
 }
+
+.techspark_about{
+    text-align: center;
+    font-family: 'Inter', Tahoma, sans-serif;
+    padding-bottom: 10px;
+}
+
+#first{
+    margin-top: 60px;
+}

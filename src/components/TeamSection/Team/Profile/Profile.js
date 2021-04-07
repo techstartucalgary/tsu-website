@@ -16,6 +16,10 @@ const Profile = props => {
     if (props.hovered) { LinkSectionClasses.push("LinkSection--Hover") };
     if (props.col < 7) { LinkSectionClasses.push("LinkSection--Translate--Small") }
 
+    const preventDragHandler = (e) => {
+        e.preventDefault();
+    }
+
     return (
         <div className={ProfileClasses.join(' ')} >
             <div className="ProfileIconDiv" onMouseEnter={props.hover} onMouseLeave={props.leave} /*onClick={props.click}*/>
@@ -23,7 +27,8 @@ const Profile = props => {
                     className="ProfileIcon"
                     src={props.profilePic}
                     key={props.key}
-                    alt={props.alt} />
+                    alt={props.alt}
+                    onDragStart={preventDragHandler} />
 
                 <div className={LinkSectionClasses.join(' ')} >
                     {props.member.linkedin.trim() !== "" &&

@@ -72,7 +72,7 @@ const Team = props => {
                             class={`Profile-${containerState.members.length}`}
                             col={containerState.members.length}
 
-                            profilePic={props.profilePics[`member_${member.id}`]}
+                            profilePic={member.image}
                             alt={[`member_${i}`]}
 
                             hover={() => hoverIcon(member.id)}

@@ -50,7 +50,7 @@ const TeamCarousel = props => {
                     member={member}
                     class={`Profile-${containerState.members.length}`}
                     col={containerState.members.length}
-                    profilePic={props.profilePics[`member_${member.id}`]}
+                    profilePic={member.image}
                     alt={[`member_${i}`]}
                     hover={() => hoverIcon(member.id)}
                     hovered={member.hovered}

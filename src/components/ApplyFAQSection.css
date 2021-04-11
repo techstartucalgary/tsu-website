@@ -6,6 +6,7 @@
   width: 80%;
   padding: 20px 0;
   margin: auto;
+  overflow: hidden;
 }
 
 @media (max-width: 550px) {

@@ -8,10 +8,11 @@
   padding: 0;
   background-color: white;
   white-space: normal;
+  overflow: hidden;
 }
 .applyPage__waves {
   position: absolute;
-  bottom: 9%;
+  bottom: 9.5%;
   left: 0;
   width: 100%;
   height: 100px;
@@ -89,7 +90,10 @@
   color: white;
   font-size: clamp(1rem, calc(1vw + 0.5rem), 2.5rem);
   text-transform: capitalize;
-  background-image: linear-gradient(rgb(89, 201, 209), var(--primary-green, rgb(106, 235, 80)));
+  background-image: linear-gradient(
+    rgb(89, 201, 209),
+    var(--primary-green, rgb(106, 235, 80))
+  );
   height: 90vh;
 }
 
@@ -145,7 +149,10 @@
 
 @supports (background-blend-mode: multiply) {
   .applyPage__showcase {
-    background-image: linear-gradient(var(--primary-green, rgb(106, 235, 80)), rgb(89, 201, 209));
+    background-image: linear-gradient(
+      var(--primary-green, rgb(106, 235, 80)),
+      rgb(89, 201, 209)
+    );
     background-size: cover;
     background-blend-mode: multiply;
     background-attachment: fixed;

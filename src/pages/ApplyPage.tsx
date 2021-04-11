@@ -59,8 +59,8 @@ function ApplyPage() {
               is to be the best space at UofC for students to find a welcoming
               community, build projects in a team setting, gain experience with
               professional tools and principles, and share their knowledge with
-              others. 
-              Every few semesters, our members form teams that gather together
+              others."
+            extraAnswer="Every few semesters, our members form teams that gather together
               to brainstorm a project, and then work on that idea for anywhere
               between a single semester to over a year. During this time the
               projects evolve and shift, and our members get to experience the

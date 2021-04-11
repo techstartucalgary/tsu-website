@@ -1,0 +1,65 @@
+.loginImage{
+    vertical-align: middle;
+    height: 70px;
+}
+
+.loginStyling{
+    display: inline-block;
+    width: 700px;
+    height: 400px;
+    border-radius: 25px;
+    background-color: #282c34;;
+    margin: 25px;
+    padding: 10px;  
+    color: white; 
+    font-family: 'Inter', Tahoma, sans-serif;  
+}
+
+.loginHeading{
+    margin-top: 8px;
+}
+
+.loginForm{
+    font-size: larger;
+    padding: auto;
+    margin: auto;
+    display: table;
+}
+
+.registerLink{
+    display: block;
+    margin: 12px auto;
+}
+
+.loginP{
+    display: table-row;
+}
+
+.loginLabel {
+    padding: 12px 12px 12px 0;
+    display: table-cell;
+}
+
+input[id=username], input[id=password]{
+    display:table-cell;
+    width: 200px;
+    padding: 12px;
+    margin: 12px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+input[type=submit]{
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #99e755;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 12px;
+    
+}

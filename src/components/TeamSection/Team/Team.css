@@ -1,24 +1,118 @@
 .Container {
-    margin: 10% 10% 0%;
+    margin: 10% 10% 30%;
+    margin-left: 20%;
     display: grid;
-    grid-template-columns: 150px 150px 150px;
-    grid-template-rows: 150px 150px 150px;
+    grid-template-columns: repeat(3, 20%);
+    grid-auto-rows: 20%;
     grid-auto-flow: dense;
-    grid-column-gap: 20%;
+    grid-column-gap: 10%;
+    grid-row-gap: 40%;
+
+}
+
+.Container-4{
+    margin-top: 10%;
+    margin-bottom: 30%;
+    margin-left:5%;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-auto-rows: 20%;
+    grid-auto-flow: dense;
+    grid-column-gap: 5%;
+    grid-row-gap: 5%;
+}
+
+.Container-7{
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 10%;
+    display: grid;
+    grid-template-columns: repeat(8, 10%);
+    grid-auto-rows: 20%;
+    grid-column-gap: 5%;
     grid-row-gap: 40%;
 }
 
-@media (max-width:500px){
-    .Container {
-        margin: 10% 10% 10%;
-        display: grid;
-        grid-template-columns: 60%;
-        grid-template-rows: auto;
-        grid-auto-flow: dense;
-        grid-column-gap: 20%;
-        grid-row-gap: 80px;
+.Profile-7:nth-child(-n+4) {
+    grid-column: span 2;
+}
+.Profile-7:nth-last-child(3) {
+    grid-row-start: 2;
+    grid-column: 2 / span 2;
+}
+.Profile-7:nth-last-child(2) {
+    grid-row-start: 2;
+    grid-column: 4 / span 2;
+}
+.Profile-7:nth-last-child(1) {
+    grid-row-start: 2;
+    grid-column: 6 / span 2;
+}
 
-        
-        justify-content: center;
-    }
+.Container-8{
+    margin: 10% 10% 30%;
+    display: grid;
+    grid-template-columns: repeat(4, 20%);
+    grid-auto-rows: 20%;
+    grid-column-gap: 5%;
+    grid-row-gap: 40%;
+}
+
+.Container-10{
+    margin-top: 10%;
+    margin-right: 10%;
+    margin-bottom: 20%;
+    display: grid;
+    grid-template-columns: repeat(10, 10%);
+    grid-auto-rows: 20%;
+    grid-column-gap: 5%;
+    grid-row-gap: 15%;
+}
+
+.Profile-10:nth-child(1) {
+    grid-row-start: 1;
+    grid-column: 2 / span 2;
+}
+
+.Profile-10:nth-child(2) {
+    grid-row-start: 1;
+    grid-column: 4 / span 2;
+}
+
+.Profile-10:nth-child(3) {
+    grid-row-start: 1;
+    grid-column: 6 / span 2;
+}
+
+.Profile-10:nth-child(4) {
+    grid-row-start: 2;
+    grid-column: 1 / span 2;
+}
+
+.Profile-10:nth-child(5) {
+    grid-row-start: 2;
+    grid-column: 3 / span 2;
+}
+
+.Profile-10:nth-child(6) {
+    grid-row-start: 2;
+    grid-column: 5 / span 2;
+}
+
+.Profile-10:nth-child(7) {
+    grid-row-start: 2;
+    grid-column: 7 / span 2;
+}
+
+.Profile-10:nth-last-child(3) {
+    grid-row-start: 3;
+    grid-column: 2 / span 2;
+}
+.Profile-10:nth-last-child(2) {
+    grid-row-start: 3;
+    grid-column: 4 / span 2;
+}
+.Profile-10:nth-last-child(1) {
+    grid-row-start: 3;
+    grid-column: 6 / span 2;
 }

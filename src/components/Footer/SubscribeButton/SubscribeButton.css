@@ -1,17 +1,74 @@
 .SubscribeButton {
     background: none;
-    color: #081C15;
-    border: 2px solid;
+    color: #282A36;
+    border: 0.1em solid;
     padding: 1em 2em;
     font-size: 1em;
-    transition: all 0.3s ease-in-out;
+    transition: 0.3s ease-in-out;
     text-decoration: none;
 }
 
-.SubscribeButton:hover{
-    border-color: #D8F3DC;
-    color: #D8F3DC;
-    box-shadow: 0 0.5em 0.5em -0.4em #D8F3DC; /* offset-x | offset-y | blur-radius | spread-radius | color*/
+.SubscribeButtonDiv {
+    width:auto;
+    transition: 0.3s ease-in-out;
+}
+
+.SubscribeButtonDiv:hover{
     transform: translateY(-0.25em);
+}
+
+.SubscribeButton:hover{
+    border-color: white;
+    color:white;
+    box-shadow: 0 0.5em 0.5em -0.4em white; /* offset-x | offset-y | blur-radius | spread-radius | color*/
     cursor: pointer;
+}
+
+@media (max-width:1500px){
+    .SubscribeButton {
+        padding: 0.875em 1.5em;
+    }
+}
+
+@media (max-width:1020px){
+    .SubscribeButton{
+        font-size:0.9em;
+    }
+}
+
+@media (max-width:975px){
+    .SubscribeButton{
+        padding: 0.625em 1.25em;
+        font-size:0.8em;
+    }
+}
+
+@media (max-width:835px){
+    .SubscribeButton{
+        padding: 0.5em 1em;
+    }
+  }
+
+@media (max-width:785px){
+    .SubscribeButton{
+        padding: 0.25em 0.5em;
+    }
+  }
+
+@media (max-width:675px){
+    .SubscribeButton{
+        font-size:0.7em;
+    }
+}
+  
+@media (max-width:500px){
+    .SubscribeButton{
+        padding: 0.25em 0.5em;
+    }
+    .SubscribeButtonDiv {
+        padding-top:1em;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

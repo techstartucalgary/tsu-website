@@ -1,0 +1,53 @@
+.Carousel {
+    margin: 15% auto;
+}
+
+.Profile {
+    margin-bottom: 50%;
+}
+
+/* Overriding CSS rules for react-elastic-carousel */
+
+button.rec-dot {
+    background-color: var(--primary-green);
+    box-shadow: v0 0 1px 2px var(--primary-black);
+}
+
+button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus {
+    background-color: var(--primary-green);
+    box-shadow: 0 0 1px 2px var(--primary-green)
+}
+
+.guuruq {
+    background-color: var(--primary-black) !important;
+}
+
+.lgksPe:hover:enabled, .lgksPe:focus:enabled {
+    background-color: var(--primary-green) !important;
+    box-shadow: 0 0 1px 2px var(--primary-green)
+}
+
+.rec.rec-arrow {
+    background-color: white;
+    box-shadow: 0 0 1px 2px var(--primary-black);
+}
+
+.rec.rec-arrow:hover:enabled, .rec.rec-arrow:active:enabled, .rec.rec-arrow:focus:enabled  {
+    box-shadow: 0 0 1px 2px var(--primary-black);
+}
+
+.rec-carousel-item:focus:enabled {
+    outline: none;
+    box-shadow: inset 0 0 1px 1px white;
+}
+
+/* Source: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting*/
+button.rec-dot, .rec.rec-arrow {
+    -webkit-touch-callout: none; /* iOS Safari */
+      -webkit-user-select: none; /* Safari */
+       -khtml-user-select: none; /* Konqueror HTML */
+         -moz-user-select: none; /* Old versions of Firefox */
+          -ms-user-select: none; /* Internet Explorer/Edge */
+              user-select: none; /* Non-prefixed version, currently
+                                    supported by Chrome, Edge, Opera and Firefox */
+}

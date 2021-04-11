@@ -1,10 +1,10 @@
 .homePage__ourSections {
   background-color: rgb(12, 12, 12);
 }
+
 @supports (background-blend-mode: multiply) {
   .homePage__ourSections {
-    background: url(../images/temp.jpg),
-      radial-gradient(rgba(75, 73, 73, 0.5), rgba(41, 41, 41, 0.5));
+    background: url(../images/temp.jpg), radial-gradient(rgba(75, 73, 73, 0.5), rgba(41, 41, 41, 0.5));
     background-size: cover;
     background-blend-mode: multiply;
     background-attachment: fixed;
@@ -13,15 +13,14 @@
   }
 }
 
-.homePage,
-.homePage::before,
-.homePage::after {
+.homePage, .homePage::before, .homePage::after {
   box-sizing: border-box;
   border: none;
   margin: 0;
   font-family: "Inter", Tahoma, sans-serif;
   line-height: 1.5;
 }
+
 .homePage img {
   max-width: 100%;
   display: block;
@@ -45,7 +44,8 @@
   flex-wrap: wrap;
   justify-content: center;
 }
-.homePage__split > * {
+
+.homePage__split>* {
   flex-basis: 30%;
   min-width: 10em;
 }
@@ -69,7 +69,7 @@
   cursor: pointer;
 }
 
-.homePage__btn:hover{
+.homePage__btn:hover {
   transform: scale(1.1);
   /* font-size: 1.2375rem;
   width: 330px;
@@ -77,18 +77,31 @@
   max-height: 100%; */
 }
 
-@media(max-width: 400px){
+@media(max-width: 400px) {
   .homePage__btn {
     max-width: 180px;
     padding: 8px 12px;
   }
 }
 
-.homePage__primaryTitle {
-  font-size: 4rem;
-  font-size: clamp(0.8rem, calc(5vw + 1rem), 4.5rem); /*adjust size to window*/
+/*** Text ****/
+
+.homePage__text {
+  margin: 20px 5px;
+  font-size: var(--regular-font);
+  color: var(--secondary-grey);
+  text-align: left;
+}
+
+/****** Titles **********/
+
+.homePage__headerSubtitle {
+  font-size: 3rem;
+  font-size: clamp(0.8rem, calc(5vw + 1rem), 4.5rem);
+  color: white;
+  /*adjust size to window*/
   line-height: 1.1;
-  text-transform: uppercase;
+  font-weight: 700;
 }
 
 .homePage__containerTitle {
@@ -100,16 +113,18 @@
   margin-bottom: 3rem;
 }
 
+/**** Hero (Landing Page) *****/
+
 .homePage__hero {
   text-align: center;
-  padding: 15em 0;
-  background-image: linear-gradient(rgb(0, 0, 0), rgb(1, 115, 68));
+  padding: 15vh 0;
+  background-image: fixed url("../images/blackbg2.jpg"), llinear-gradient(rgb(0, 0, 0), rgb(1, 115, 68));
+
 }
 
 @supports (background-blend-mode: multiply) {
   .homePage__hero {
-    background: url(../images/temp.jpg),
-      radial-gradient(rgb(75, 73, 73), rgb(61, 55, 55));
+    background: fixed url("../images/blackbg2.jpg"), radial-gradient(rgb(75, 73, 73), rgb(61, 55, 55));
     background-size: cover;
     background-blend-mode: multiply;
     background-attachment: fixed;
@@ -118,9 +133,33 @@
   }
 }
 
+.homePage__logo{
+  width: 85%;
+  max-width: 800px !important;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*** About Us *****/
+
 .homePage__aboutUs {
-  background-color: rgb(19, 19, 19);
+  background-color: white;
   text-align: center;
+}
+
+.homePage__numberContainer{
+  margin-top: 75px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 30px;
+}
+
+@media(max-width: 750px){
+  .homePage__numberContainer{
+    grid-template-columns: 1fr;
+    margin-top: 30px;
+  }
 }
 
 .homePage__featuredProjects {
@@ -128,6 +167,7 @@
   text-align: center;
 }
 
+/*** Sponsor section ***/
 
 .homePage__ourSponsors {
   background-image: linear-gradient(rgba(12, 12, 12, 1), rgb(1, 115, 95));
@@ -142,11 +182,8 @@
   transform: scale(1);
   transition: color 250ms linear, transform 250ms ease-in-out;
 }
-#homePage__sponsorPackage:hover,
-#homePage__sponsorPackage:hover {
+
+#homePage__sponsorPackage:hover, #homePage__sponsorPackage:hover {
   color: var(--primary-green);
   transform: scale(1.2);
-}
-footer {
-  background-color: black;
 }

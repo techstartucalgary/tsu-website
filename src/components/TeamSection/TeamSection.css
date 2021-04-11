@@ -1,12 +1,5 @@
-/* html { */
-    /* height:fit-content; */
-    /* background-color: #081C15; */
-    /* display: block; */
-/* } */
-  
-
 .TeamSection {
     margin: 10%;
-    width: 80%;
+    width: auto;
     transform: translateY(10%);
 }

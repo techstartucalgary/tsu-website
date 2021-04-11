@@ -1,0 +1,190 @@
+.applyPage {
+  border: none;
+  box-sizing: border-box;
+  font-family: "Inter", Tahoma, sans-serif;
+  line-height: 1.5;
+  margin: 0;
+  height: 100%;
+  padding: 0;
+  background-color: white;
+  white-space: normal;
+}
+.applyPage__waves {
+  position: absolute;
+  bottom: 9%;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background: url(../images/wave.png);
+  background-size: 1000px 100px;
+}
+.applyPage__waves1 {
+  animation: animate1 15s linear infinite;
+  animation-delay: 0s;
+}
+.applyPage__waves2 {
+  height: 120px;
+  background-size: 750px 100px;
+  opacity: 0.5;
+  background-position-x: 200px;
+  animation: animate2 9s linear infinite;
+  animation-delay: 0s;
+}
+@keyframes animate1 {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 1000px;
+  }
+}
+@keyframes animate2 {
+  0% {
+    background-position-x: 500px;
+  }
+  100% {
+    background-position-x: -250px;
+  }
+}
+
+.custom-shape-divider-bottom-1618119246 svg {
+  position: relative;
+  display: block;
+  width: calc(123% + 1.3px);
+  height: 20%;
+}
+
+.applyPage__btn {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  color: var(--clr-text, white);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.7em 1.5em;
+  background-color: var(--primary-green, rgb(106, 235, 80));
+  border-radius: 0.1em;
+  border: none;
+  box-shadow: 0 0 10px 0px rgb(207, 207, 207);
+  border: 2px solid rgb(0, 0, 0, 0);
+  transition: transform 250ms ease-in-out, opacity 250ms linear;
+}
+.applyPage a {
+  text-decoration: none;
+  color: white;
+}
+
+.applyPage__btn:hover,
+.applyPage__btn:focus,
+.applyPage__btn::after {
+  transform: scale(1.03);
+  border: 2px solid var(--primary-green, rgb(106, 235, 80));
+  color: var(--primary-green, rgb(106, 235, 80));
+  background-color: white;
+}
+.applyPage__showcase {
+  text-align: center;
+  display: inline-block;
+  color: white;
+  font-size: clamp(1rem, calc(1vw + 0.5rem), 2.5rem);
+  text-transform: capitalize;
+  background-image: linear-gradient(rgb(89, 201, 209), var(--primary-green, rgb(106, 235, 80)));
+  height: 90vh;
+}
+
+.applyPage__primary-title {
+  position: relative;
+  float: left;
+  left: 13%;
+  top: 30%;
+  font-size: clamp(1.4rem, calc(15vw + 1rem), 8rem);
+}
+.applyPage__showcase p {
+  width: 80%;
+}
+.applyPage__primary-description {
+  position: relative;
+  float: left;
+  left: 13%;
+  top: 30%;
+  text-align: left;
+}
+.applyPage__showcase h1,
+.applyPage__showcase p {
+  margin: 0;
+  color: #ffffff;
+}
+
+.applyPage__container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(32, 32, 32);
+  background-color: white;
+}
+
+.applyPage__applicationContainer {
+  min-width: none;
+}
+
+.applyPage__application {
+  position: relative;
+  width: 90%;
+  height: auto;
+  max-width: 1800px;
+  justify-content: center;
+  margin: 40px auto;
+}
+
+.applyPage__applicationUL {
+  list-style: none;
+  padding: 0;
+}
+
+@supports (background-blend-mode: multiply) {
+  .applyPage__showcase {
+    background-image: linear-gradient(var(--primary-green, rgb(106, 235, 80)), rgb(89, 201, 209));
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+@media (min-width: 800px) {
+  .applyPage__applicationUL {
+    display: inline-flex;
+    justify-content: center;
+  }
+}
+.applyPage__FAQ {
+  background-color: rgb(48, 48, 48);
+  color: rgb(255, 255, 255);
+  padding: 5% 0;
+  overflow: hidden;
+}
+.applyPage__SectionTitle {
+  font-size: clamp(1rem, calc(8vw + 1rem), 3rem);
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.applyPage__FAQ h2,
+.applyPage__FAQ p {
+  padding: 1.5%;
+  margin: 0;
+}
+
+.applyPage__applicationImg,
+.applyPage__FAQImg {
+  display: block;
+  margin: auto;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-left: 150px solid var(--primary-green, rgb(106, 235, 80));
+  border-bottom: 10px solid transparent;
+  border-radius: 100px;
+}

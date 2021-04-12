@@ -5,9 +5,9 @@ function Event(props){
 
     return (
         <div className = "styling">
-            <a href = {props.link}>
-                <img src = {props.img} />
-                <h1 id ="title">{props.name}</h1>
+            <a className = "eventLink" href = {props.link}>
+                <img className = "eventImg" src = {props.img} />
+                <h1 id ="eventTitle">{props.name}</h1>
             </a>
             
             

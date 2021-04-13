@@ -48,13 +48,6 @@
   }
 }
 
-.custom-shape-divider-bottom-1618119246 svg {
-  position: relative;
-  display: block;
-  width: calc(123% + 1.3px);
-  height: 20%;
-}
-
 .applyPage__btn {
   display: inline-block;
   text-align: center;
@@ -118,6 +111,33 @@
 .applyPage__showcase p {
   margin: 0;
   color: #ffffff;
+}
+
+@media (max-height: 600px) {
+  .applyPage__waves {
+    position: absolute;
+    bottom: calc(6.5% - 75px);
+  }
+  .applyPage__showcase {
+    height: calc(93vh + 75px);
+  }
+  .applyPage__primary-title,
+  .applyPage__primary-description {
+    top: 25%;
+  }
+}
+@media (max-height: 450px) {
+  .applyPage__waves {
+    position: absolute;
+    bottom: calc(4.5% - 175px);
+  }
+  .applyPage__showcase {
+    height: calc(95vh + 175px);
+  }
+  .applyPage__primary-title,
+  .applyPage__primary-description {
+    top: 20%;
+  }
 }
 
 .applyPage__container {

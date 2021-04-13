@@ -2,17 +2,15 @@
 import tsu_logo from "images/tech-start-logo-white.png";
 import temp from "images/temp.jpg";
 import temp1 from "images/temp.png";
-import sponsorLogoHunterHub from "images/sponsor-logo-hunter-hub.png";
-import sponsorLogoArcurve from "images/sponsor-logo-arcurve.png";
 // CSS
 import "./HomePage.css";
 // React Components
 import FeaturedProject from "components/FeaturedProject";
 import FeaturedSection from "components/FeaturedSection";
-import SponsorLogo from "components/SponsorLogo";
 import TeamSection from "components/TeamSection/TeamSection";
 import NumberStat from "components/NumberStat";
 import Divider from "components/Divider";
+import SponsorSection from "components/SponsorSection/SponsorSection";
 
 function HomePage() {
 
@@ -22,7 +20,7 @@ function HomePage() {
         <div>
           <img className="homePage__logo" src={tsu_logo}></img>
           <p className="homePage__headerSubtitle">
-            a tech club for dreamers and doers 
+            a tech club for dreamers and doers
           </p>
         </div>
       </header>
@@ -37,7 +35,7 @@ function HomePage() {
           </p>
           <p className="regularText">
             At Tech Start, our members learn new technologies, gain experience with professional development tools and methodologies, and master the art of collaboration.
-            We're also the top spot on campus to meet fellow tech enthusiasts, aspiring entrepreneurs, and innovators. 
+            We're also the top spot on campus to meet fellow tech enthusiasts, aspiring entrepreneurs, and innovators.
           </p>
           {/* <a
             href="https://linktr.ee/techstartuofc"
@@ -46,9 +44,9 @@ function HomePage() {
             <button className="homePage__btn">Visit our Linktree</button>
           </a> */}
           <div className="homePage__numberContainer">
-            <NumberStat number={4} stat="projects so far"/>
-            <NumberStat number={32} stat="members so far"/>
-            <NumberStat number={93} extra={"%"} stat="enjoyed their involvement"/>
+            <NumberStat number={4} stat="projects so far" />
+            <NumberStat number={32} stat="members so far" />
+            <NumberStat number={93} extra={"%"} stat="enjoyed their involvement" />
           </div>
         </div>
       </section>
@@ -110,18 +108,7 @@ function HomePage() {
       </section>
 
       <section className="homePage__ourSponsors">
-        <div className="homePage__container">
-          <h2 className="homePage__containerTitle">Sponsors</h2>
-          <div className="homePage__split">
-            <SponsorLogo sponsorLink="https://www.arcurve.com/" sponsorImage={sponsorLogoArcurve} />
-            <SponsorLogo sponsorLink="https://www.ucalgary.ca/hunter-hub" sponsorImage={sponsorLogoHunterHub} />
-          </div>
-          <div>
-            <a href="#" id="homePage__sponsorPackage">
-              Interested in sponsoring us? Check out our sponsorship package.
-            </a>
-          </div>
-        </div>
+        <SponsorSection />
       </section>
 
       <TeamSection />

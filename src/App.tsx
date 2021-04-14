@@ -1,5 +1,6 @@
 import HomePage from 'pages/HomePage';
 import DocsPage from 'pages/DocsPage';
+import ApplyPage from 'pages/ApplyPage';
 import React from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from 'components/Navbar';
@@ -14,6 +15,9 @@ function App() {
                 <Switch>
                     <Route path="/docs">
                         <DocsPage />
+                    </Route>
+                    <Route path="/apply">
+                        <ApplyPage />
                     </Route>
                     <Route path="/">
                         <HomePage />

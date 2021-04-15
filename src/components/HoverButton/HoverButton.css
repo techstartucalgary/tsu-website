@@ -26,8 +26,8 @@
 }
 
 .HoverButton--DarkMode:hover {
-    /*border-color: var(--primary-green);*/
     color: var(--primary-green);
+    border-color:var(--primary-green);
     box-shadow: 0 0.5em 0.5em -0.4em var(--primary-green); /* offset-x | offset-y | blur-radius | spread-radius | color*/
     cursor: pointer;
 }
@@ -36,15 +36,11 @@
     transform: translateY(-0.25em);
 }
 
-@media (max-width:1500px){
-    .HoverButton {
-        padding: 0.875em 1.5em;
-    }
-}
+/* TODO FIX SIZE OF BUTTON FOR DIFFERENT SCREEN WIDTHS*/
 
-@media (max-width:1020px){
-    .HoverButton{
-        font-size:0.9em;
+@media (max-width:1500px){
+    .HoverButton, .HoverButton--DarkMode {
+        padding: 0.875em 1.5em;
     }
 }
 
@@ -52,6 +48,12 @@
     .HoverButton{
         padding: 0.625em 1.25em;
         font-size:0.8em;
+    }
+}
+
+@media (max-width:850px){
+    .HoverButton--DarkMode{
+        font-size: 0.9em;
     }
 }
 
@@ -65,14 +67,32 @@
     .HoverButton{
         padding: 0.25em 0.5em;
     }
-  }
-
-@media (max-width:675px){
-    .HoverButton{
-        font-size:0.7em;
-    }
 }
   
+@media (max-width:650px){
+    .HoverButton--DarkMode{
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width:550px){
+    .HoverButton--DarkMode{
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width:470px){
+    .HoverButton--DarkMode{
+        font-size: 0.6em;
+    }
+}
+
+@media (max-width:400px){
+    .HoverButton--DarkMode{
+        font-size: 0.45em;
+    }
+}
+
 @media (max-width:500px){
     .HoverButton{
         padding: 0.25em 0.5em;

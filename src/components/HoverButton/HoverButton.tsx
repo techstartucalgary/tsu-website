@@ -1,7 +1,6 @@
 import './HoverButton.css'
 import '../../App.css';
 
-// TODO: CREATE LIGHT AND DARK MODE FOR BUTTON
 const HoverButton = (props: any) => {
     const HoverButtonClasses = ["regularText"];
 

@@ -19,12 +19,8 @@ const SponsorSection = () => {
             <div className="SponsorSection">
                 <SponsorLogo sponsorLink="https://www.arcurve.com/" sponsorImage={sponsorLogoArcurve} />
                 <SponsorLogo sponsorLink="https://www.ucalgary.ca/hunter-hub" sponsorImage={sponsorLogoHunterHub} />
-                <div className="Grayscale">
-                    <SponsorLogo sponsorLink="https://unity.com/" sponsorImage={sponsorLogoUnity} />
-                </div>
-                <div className="Grayscale">
-                    <SponsorLogo sponsorLink="https://www.microsoft.com/" sponsorImage={sponsorLogoMicrosoft} />
-                </div>
+                <SponsorLogo sponsorLink="https://www.microsoft.com/" sponsorImage={sponsorLogoMicrosoft} />
+                <SponsorLogo sponsorLink="https://unity.com/" sponsorImage={sponsorLogoUnity} />
             </div>
 
             <HoverButton

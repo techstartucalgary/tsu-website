@@ -8,42 +8,30 @@ const Team = props => {
         members: props.teamMembers // array of objects
     });
 
-    /*
-    const toggleIcon = id => {
-        const iconIndex = containerState.members.findIndex(m => {
-            return m.id === id;
-        }); // executes function on every element and returns index
-        const member = { ...containerState.members[iconIndex] }; // distribute properties of object at array index
-        const isClicked = member.clicked;
-        member.clicked = !isClicked; // update property of object
-        const members = [...containerState.members]; // copy old array of objects
-        members[iconIndex] = member; // update object in array
-        setContainerState({ members: members }); // update array in state
-    }
-    */
-
-    const hoverIcon = id => {
+    /**
+     * Finds profile icon with matching id supplied by the parameter and
+     * toggles its hovered element. Then updates state.
+     * 
+     * @param {integer} id 
+     */
+    const toggleHoverIcon = id => {
         const iconIndex = containerState.members.findIndex(m => {
             return m.id === id;
         });
         const member = { ...containerState.members[iconIndex] };
-        member.hovered = true;
+        let toggledValue = !member.hovered;
+        member.hovered = toggledValue;
         const members = [...containerState.members];
         members[iconIndex] = member;
         setContainerState({ members: members });
     }
 
-    const leaveIcon = id => {
-        const iconIndex = containerState.members.findIndex(m => {
-            return m.id === id;
-        });
-        const member = { ...containerState.members[iconIndex] };
-        if (!(member.hovered && member.clicked)) member.hovered = false;
-        const members = [...containerState.members];
-        members[iconIndex] = member;
-        setContainerState({ members: members });
-    }
-
+    /**
+     * Finds profile icon with matching id supplied by the parameter and
+     * sets its hoverAndClick element to false. Then updates state.
+     * 
+     * @param {integer} id 
+     */
     const linkClicked = id => {
         const iconIndex = containerState.members.findIndex(m => {
             return m.id === id;
@@ -55,7 +43,11 @@ const Team = props => {
         setContainerState({ members: members });
     }
 
-    let ContainerClass = "Container";
+    /**
+     * The following if conditions are for setting the layout of the team section
+     * according to the number of members.
+     */
+    let ContainerClass = "Container"; // default layout of members
     if (containerState.members.length === 4) ContainerClass = "Container-4";
     else if (containerState.members.length === 7) ContainerClass = "Container-7";
     else if (containerState.members.length === 8) ContainerClass = "Container-8";
@@ -75,9 +67,8 @@ const Team = props => {
                             profilePic={member.image}
                             alt={[`member_${i}`]}
 
-                            hover={() => hoverIcon(member.id)}
+                            toggleHover={() => toggleHoverIcon(member.id)}
                             hovered={member.hovered}
-                            leave={() => leaveIcon(member.id)}
 
                             linkClicked={() => linkClicked(member.id)}
                         />

@@ -1,7 +1,7 @@
 import './Footer.css';
 import '../../App.css';
 import SocialMedia from '../SocialMedia/SocialMedia';
-import SubscribeButton from './SubscribeButton/SubscribeButton';
+import HoverButton from '../HoverButton/HoverButton';
 
 import {
     faFacebook,
@@ -14,7 +14,7 @@ import {
 const Footer = () => (
     <div className="Footer">
 
-        <SubscribeButton />
+        <HoverButton link="http://eepurl.com/hnusUP" text="Join our mailing list!" />
 
         <div className="SocialMediaSection">
             <SocialMedia

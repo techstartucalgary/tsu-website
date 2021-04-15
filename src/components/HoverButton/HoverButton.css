@@ -76,7 +76,7 @@
 }
 
 @media (max-width:550px){
-    .HoverButton--DarkMode{
+    .HoverButton, .HoverButton--DarkMode{
         font-size: 0.7em;
     }
 }

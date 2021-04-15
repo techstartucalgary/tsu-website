@@ -13,36 +13,34 @@ import {
 
 import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 
-const Footer = () => {
-    return (
-        <div className="Footer">
+const Footer = () => (
+    <div className="Footer">
 
-            <HoverButton link="http://eepurl.com/hnusUP" text="Join our mailing list!" />
+        <HoverButton link="http://eepurl.com/hnusUP" text="Join our mailing list!" />
 
-            <div className="SocialMediaSection">
-                <SocialMedia
-                    footer={true}
-                    icon={faFacebook}
-                    link="https://www.facebook.com/TechStartUCalgary/" />
+        <div className="SocialMediaSection">
+            <SocialMedia
+                footer={true}
+                icon={faFacebook}
+                link="https://www.facebook.com/TechStartUCalgary/" />
 
-                <SocialMedia
-                    footer={true}
-                    icon={faInstagram}
-                    link="https://www.instagram.com/techstartucalgary/" />
+            <SocialMedia
+                footer={true}
+                icon={faInstagram}
+                link="https://www.instagram.com/techstartucalgary/" />
 
-                <SocialMedia
-                    footer={true}
-                    icon={faDiscord}
-                    link="https://discord.gg/Sxj5QrxRPk" />
+            <SocialMedia
+                footer={true}
+                icon={faDiscord}
+                link="https://discord.gg/Sxj5QrxRPk" />
 
-                <SocialMedia
-                    footer={true}
-                    icon={faLinkedin}
-                    link="https://www.linkedin.com/company/tech-start-ucalgary" />
-            </div>
-            <p className="Copyright"><FontAwesomeIcon icon={faCopyright} /> {new Date().getFullYear()} Tech Start UCalgary</p>
+            <SocialMedia
+                footer={true}
+                icon={faLinkedin}
+                link="https://www.linkedin.com/company/tech-start-ucalgary" />
         </div>
-    );
-};
+        <p className="Copyright"><FontAwesomeIcon icon={faCopyright} /> {new Date().getFullYear()} Tech Start UCalgary</p>
+    </div>
+);
 
 export default Footer;

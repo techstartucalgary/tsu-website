@@ -9,7 +9,6 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 const Profile = props => {
 
     const ProfileClasses = ["ProfileDiv"];
-    // if (props.hoverAndClick) ProfileClasses.push("ProfileDiv--HoverAndClick");
     ProfileClasses.push(props.class);
 
     const LinkSectionClasses = ["LinksSection"];
@@ -45,10 +44,7 @@ const Profile = props => {
                         link={props.member.email} />
                 </div>
             </div>
-
-            <ProfileDescription
-                member={props.member}
-            />
+            <ProfileDescription member={props.member} />
         </div>
     );
 };

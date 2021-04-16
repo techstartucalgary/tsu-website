@@ -20,7 +20,7 @@ executiveTeam = [
     { id: 1, name: "Valeriya Volkova", role: "VP Strategy", image: member_1, linkedin: "https://www.linkedin.com/in/valeriyavolkova/?originalSubdomain=ca", email: "mailto:valeriya.volkova@ucalgary.ca", hovered: false },
     { id: 2, name: "Daniel Indukuri", role: "VP Finance", image: member_2, linkedin: "https://www.linkedin.com/in/daniel-indukuri-99776b204/?originalSubdomain=ca", email: "mailto:arpith.indukuri@ucalgary.ca", hovered: false },
     { id: 3, name: "Luke Hollinda", role: "VP External", image: member_3, linkedin: "https://www.linkedin.com/in/luke-hollinda-89270a183/?originalSubdomain=ca", email: "mailto:luke.hollinda1@ucalgary.ca", hovered: false },
-    { id: 4, name: "Amanda Nguyen", role: "VP Internal", image: member_4, linkedin: "", email: "mailto:amanda.nguyen1@ucalgary.ca", hovered: false },
+    { id: 4, name: "Amanda Nguyen", role: "VP Internal", image: member_4, linkedin: "https://www.linkedin.com/in/amanda-nguyen-b9146620b/", email: "mailto:amanda.nguyen1@ucalgary.ca", hovered: false },
     { id: 5, name: "Tyler Chan", role: "VP Communications", image: member_5, linkedin: "https://www.linkedin.com/in/chan-tyler/", email: "mailto:tyler.chan@ucalgary.ca", hovered: false },
     { id: 6, name: "Sareen Singh", role: "VP Events", image: member_6, linkedin: "https://www.linkedin.com/in/sareen-singh-309b55173/?originalSubdomain=ca", email: "mailto:sareen.singh@ucalgary.ca", hovered: false }
 ];

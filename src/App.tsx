@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from 'components/Navbar';
 import Footer from 'components/Footer/Footer';
 import './App.css';
+import Particles from 'react-particles-js';
 
 function App() {
     return <Router>

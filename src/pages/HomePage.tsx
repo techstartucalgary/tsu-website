@@ -1,3 +1,4 @@
+import React, {useState} from 'react'
 // Images
 import tsu_logo from "images/tech-start-logo-white.png";
 import temp from "images/temp.jpg";
@@ -13,22 +14,86 @@ import SponsorLogo from "components/SponsorLogo";
 import TeamSection from "components/TeamSection/TeamSection";
 import NumberStat from "components/NumberStat";
 import Divider from "components/Divider";
+import Particle from "components/Particles";
+
 
 function HomePage() {
+  const [cursorY, setCursorY] = useState()
+  const [cursorX, setCursorX] = useState()
+  
+  window.addEventListener("mousemove", (e:any) => {
+  setCursorX(e.clientX);
+  setCursorY(e.clientY);
+  })
+    var mouse = document.getElementById("cursor");
+    
+    var center = document.getElementById("mouseChange");
+    var mouse2 = document.getElementById("cursor2");
+    var mouse3 = document.getElementById("cursor3");
+  
+    if (center != null ){
+    center.addEventListener('mouseover', () => 
+    mouse?.setAttribute("style", "display:none"))
+
+    center.addEventListener('mouseleave', () => 
+    mouse?.setAttribute("style", "opacity:1"))
+
+    center.addEventListener('mouseover', () => 
+    mouse2?.setAttribute("style", "display:none"))
+
+    center.addEventListener('mouseleave', () => 
+    mouse2?.setAttribute("style", "opacity:1"))
+
+    center.addEventListener('mouseover', () => 
+    mouse3?.setAttribute("style", "display:none", ))
+
+    center.addEventListener('mouseleave', () => 
+    mouse3?.setAttribute("style", "opacity:1"))
+  
+    }
+
 
   return (
     <div className="homePage">
-      <header className="homePage__hero">
+      <div id="cursor"
+      style ={{
+        left:cursorX +'px',
+        top:cursorY+'px'
+      }}></div>
+      <div id="cursor2"
+      style ={{
+        left:cursorX +'px',
+        top:cursorY+'px'
+      }}></div>
+      <div id="cursor3"
+      style ={{
+        left:cursorX +'px',
+        top:cursorY+'px'
+      }}></div>
+       <div id="mouseChange">
+      <header className="homePage__hero" ><div className="particles"><Particle /></div>
+      
+
+      
+
+      
+    
+      
         <div>
-          <img className="homePage__logo" src={tsu_logo}></img>
+          <div className="homePage__logoContainer">
+          <img className="homePage__logo" src={tsu_logo}></img></div>
           <p className="homePage__headerSubtitle">
             a tech club for dreamers and doers 
           </p>
         </div>
+        
       </header>
-
+      </div>
       <section className="homePage__aboutUs">
+        
+      
         <div className="homePage__container">
+        
           <h1 className="chonkyHeading">We're the innovators on campus.</h1>
           <Divider />
           <p className="regularText">
@@ -49,7 +114,12 @@ function HomePage() {
             <NumberStat number={4} stat="projects so far"/>
             <NumberStat number={32} stat="members so far"/>
             <NumberStat number={93} extra={"%"} stat="enjoyed their involvement"/>
-          </div>
+            </div>
+            <div className="homePage__applyButtonBox">
+            <div className="homePage__applyButton">
+          <div className="homePage__applyButtonArrow"> ˃˃ </div>
+          <div className="homePage__applyButtonText"> theTeam.join()</div>
+          </div></div>
         </div>
       </section>
       <section className="homePage__featuredProjects">
@@ -128,6 +198,6 @@ function HomePage() {
 
     </div>
   );
-}
+        };
 
 export default HomePage;

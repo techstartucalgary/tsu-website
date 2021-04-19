@@ -1,8 +1,15 @@
 import React from "react";
 import "./ApplyPage.css";
-import wave from "images/wave.png";
+import "components/ApplyGallery.css";
+import gallery1 from "images/calgary.jpg";
+import gallery2 from "images/banana.jpg";
+import gallery3 from "images/temp.jpg";
+import gallery4 from "images/funkystudent.jpg";
+import gallery5 from "images/banana.jpg";
 import ApplySection from "components/ApplySection";
 import ApplyFAQSection from "components/ApplyFAQSection";
+import ApplyGallery from "components/ApplyGallery";
+
 //import AOS from "../../node_modules/aos";
 //import "aos/dist/aos.css";
 
@@ -32,11 +39,18 @@ function ApplyPage() {
             projects in a team setting, gain experience with professional tools
             and principles, and share their knowledge with others.
           </h2>
-          <button className="applyPage__btn">
-            Join the Community
-          </button>
+          <button className="applyPage__btn">Join the Community</button>
         </div>
       </div>
+
+      <ApplyGallery
+        gallery1={gallery1}
+        gallery2={gallery2}
+        gallery3={gallery3}
+        gallery4={gallery4}
+        gallery5={gallery5}
+      />
+
       <div className="applyPage__container applyPage__applicationContainer">
         <div className="applyPage__application">
           <h1 className="applyPage__SectionTitle">Applications</h1>

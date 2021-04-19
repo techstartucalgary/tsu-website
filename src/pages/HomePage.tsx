@@ -11,6 +11,7 @@ import TeamSection from "components/TeamSection/TeamSection";
 import NumberStat from "components/NumberStat";
 import Divider from "components/Divider";
 import SponsorSection from "components/SponsorSection/SponsorSection";
+import Blobbie from "components/Blobbie";
 
 function HomePage() {
 
@@ -110,6 +111,8 @@ function HomePage() {
       <section className="homePage__ourSponsors">
         <SponsorSection />
       </section>
+
+      <Blobbie id={8} width={500} height={500} transform="translate(-50%, -30%)" />
 
       <TeamSection />
 

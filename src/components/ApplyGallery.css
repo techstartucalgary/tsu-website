@@ -56,23 +56,23 @@ input[name="r"] {
   bottom: 0;
 }
 
-#r1:checked ~ .s1 {
+#r1:checked ~ .show {
   margin-left: 0%;
 }
 
-#r2:checked ~ .s1 {
+#r2:checked ~ .show {
   margin-left: -20%;
 }
 
-#r3:checked ~ .s1 {
+#r3:checked ~ .show {
   margin-left: -40%;
 }
 
-#r4:checked ~ .s1 {
+#r4:checked ~ .show {
   margin-left: -60%;
 }
 
-#r5:checked ~ .s1 {
+#r5:checked ~ .show {
   margin-left: -80%;
 }
 

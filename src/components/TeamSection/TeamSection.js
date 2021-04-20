@@ -4,6 +4,8 @@ import useViewport from '../UseViewport';
 import './TeamSection.css';
 import '../../App.css'
 import { executiveTeam, projectManagers } from './TeamInformation';
+import Divider from "components/Divider";
+import { Link } from "react-router-dom";
 
 const TeamSection = () => {
 
@@ -14,22 +16,30 @@ const TeamSection = () => {
     return (
         width > breakpoint ?
             <div className="TeamSection" >
-                <h1 className="chonkyHeading">Meet the team!</h1>
-                <h2 className="thiccSubheading">We're thrilled to build up the tech and entrepreneurship sectors at UCalgary. Check out our executive team below!</h2>
+                <h1 className="chonkyHeading">Our Team</h1>
+                <Divider />
+                <p className="regularText">
+                    Tech Start is only possible thanks to our team of talented, passionate leaders. Interested in joining us? <Link to="/apply">Find out what it takes to apply!</Link>
+                </p>
+                <h2 className="thiccSubheading">Executives</h2>
                 <Team teamMembers={executiveTeam} />
 
-                <h2 className="thiccSubheading">Check out our project managers below!</h2>
+                <h2 className="thiccSubheading">Project Managers</h2>
                 <Team teamMembers={projectManagers} />
             </div>
 
             :
 
             <div className="TeamSection" >
-                <h1 className="thiccSubheading">Meet the team!</h1>
-                <h2 className="babyHeading">We're thrilled to build up the tech and entrepreneurship sectors at UCalgary. Check out our executive team below!</h2>
+                <h1 className="chonkyHeading">Our Team</h1>
+                <Divider />
+                <p className="regularText">
+                    Tech Start is only possible thanks to our team of talented, passionate leaders. Interested in joining us? <Link to="/apply">Find out what it takes to apply!</Link>
+                </p>
+                <h2 className="babyHeading">Executives</h2>
                 <TeamCarousel teamMembers={executiveTeam} />
 
-                <h2 className="babyHeading">Check out our project managers below!</h2>
+                <h2 className="babyHeading">Project Managers</h2>
                 <TeamCarousel teamMembers={projectManagers} />
             </div>
     );

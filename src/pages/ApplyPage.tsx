@@ -1,10 +1,20 @@
 import React from "react";
 import "./ApplyPage.css";
-import wave from "images/wave.png";
+import "components/ApplyGallery.css";
+import gallery1 from "images/calgary.jpg";
+import gallery2 from "images/banana.jpg";
+import gallery3 from "images/temp.jpg";
+import gallery4 from "images/funkystudent.jpg";
+import gallery5 from "images/faketeam.jpg";
 import ApplySection from "components/ApplySection";
 import ApplyFAQSection from "components/ApplyFAQSection";
+import ApplyGallery from "components/ApplyGallery";
+
+//import AOS from "../../node_modules/aos";
+//import "aos/dist/aos.css";
 
 function ApplyPage() {
+  //window.addEventListener("load", AOS.refresh);
   return (
     <div className="applyPage">
       <div className="applyPage__waves applyPage__waves1"></div>
@@ -13,10 +23,34 @@ function ApplyPage() {
         <div className="applyPage__spacing" data-aos="zoom-out-down"></div>
         <h1 className="applyPage__primary-title">APPLY</h1>
         <p className="applyPage__primary-description">
-          Join a high-energy, dynamic team dedicated to creating an
-          entreprenuerial and software community at the University of Calgary.
+          Join a high-energy, dynamic community dedicated to creating an
+          entreprenuerial and software environment at the University of Calgary.
         </p>
       </header>
+      <div className="applyPage__intro">
+        <h1 className="applyPage__SectionTitle">What We Do</h1>
+        <div className="applyPage__introImg"></div>
+        <div className="applyPage__introContents" data-aos="fade-down">
+          <h2>
+            Tech Start is a UofC student student-run software engineering design
+            team devoted to building software projects in a collaborative and
+            professional environment. Our primary objective is to be the best
+            space at UofC for students to find a welcoming community, build
+            projects in a team setting, gain experience with professional tools
+            and principles, and share their knowledge with others.
+          </h2>
+          <button className="applyPage__btn">Join the Community</button>
+        </div>
+      </div>
+
+      <ApplyGallery
+        gallery1={gallery1}
+        gallery2={gallery2}
+        gallery3={gallery3}
+        gallery4={gallery4}
+        gallery5={gallery5}
+      />
+
       <div className="applyPage__container applyPage__applicationContainer">
         <div className="applyPage__application">
           <h1 className="applyPage__SectionTitle">Applications</h1>
@@ -52,25 +86,17 @@ function ApplyPage() {
         <div className="applyPage__FAQImg"></div>
         <div className="applyPage__FAQContents">
           <ApplyFAQSection
-            question="What is Tech Start?"
-            answer="Tech Start is a UofC student student-run software engineering
-              design team devoted to building software projects in a
-              collaborative and professional environment. Our primary objective
-              is to be the best space at UofC for students to find a welcoming
-              community, build projects in a team setting, gain experience with
-              professional tools and principles, and share their knowledge with
-              others."
-            extraAnswer="Every few semesters, our members form teams that gather together
-              to brainstorm a project, and then work on that idea for anywhere
-              between a single semester to over a year. During this time the
-              projects evolve and shift, and our members get to experience the
-              full lifecycle of bringing a complex project to life. Each team is
-              lead by an experienced tech lead who provides the expertise needed
-              to execute on the team’s vision. Tech Start also has mentors for
-              each platform to help you learn to solve unique problems on your
-              platform. We are also fortunate enough to be supported by a number
-              of companies who provide us with the resources necessary to build
-              our projects and run events and workshops."
+            question="What is a Tech Start project?"
+            answer="Every semester, our members form teams that gather together 
+              to brainstorm a project, and then work on that idea collaboratively 
+              over the semester. During this time the projects evolve and shift, 
+              and our members get to experience the full lifecycle of bringing a 
+              complex project to life. Each team is lead by an experienced tech 
+              lead who provides the expertise needed to execute on the team’s vision. 
+              Tech Start also has mentors for each platform to help you learn to solve 
+              unique problems on your platform. We are also fortunate enough to be 
+              supported by a number of companies who provide us with the resources 
+              necessary to build our projects and run events and workshops."
           />
           <ApplyFAQSection
             question="What does the Executive Team do?"

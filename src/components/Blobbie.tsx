@@ -14,11 +14,34 @@ import blobLottie13 from "images/lottie/bloblottie13.json";
 import blobLottie14 from "images/lottie/bloblottie14.json";
 import blobLottie15 from "images/lottie/bloblottie15.json";
 import Lottie from "lottie-react";
+import "./Blobbie.css";
 
-function Blobbie(props:any){
-    return <div style={{"width": 200}}>
-            <Lottie animationData={blobLottie1}></Lottie>
-        </div>
-}
+const Blobbie = (props: any) => {
+
+    const blobbies = {
+        blobLottie1: blobLottie1,
+        blobLottie2: blobLottie2,
+        blobLottie3: blobLottie3,
+        blobLottie4: blobLottie4,
+        blobLottie5: blobLottie5,
+        blobLottie6: blobLottie6,
+        blobLottie7: blobLottie7,
+        blobLottie8: blobLottie8,
+        blobLottie9: blobLottie9,
+        blobLottie10: blobLottie10,
+        blobLottie11: blobLottie11,
+        blobLottie12: blobLottie12,
+        blobLottie13: blobLottie13,
+        blobLottie14: blobLottie14,
+        blobLottie15: blobLottie15
+    }
+
+    return (
+        <Lottie
+            className="Blobbie"
+            animationData={eval(`blobbies.blobLottie${props.id}`)}
+            style={{ "width": props.width, "height": props.height, "transform": props.transform }} />
+    );
+};
 
 export default Blobbie;

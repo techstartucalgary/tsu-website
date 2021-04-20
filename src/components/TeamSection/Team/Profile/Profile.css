@@ -68,7 +68,7 @@
     .LinksSection {
         transform:translateY(-30vw);
     }
-  }
+}
 
 @media (max-width:450px){
     .LinksSection {
@@ -87,40 +87,3 @@
         transform:translateY(-24vw);
     }
 }
-
-/*
-.ProfileDescription {
-    visibility:hidden;
-    opacity:0;
-    transition: width 0.5s 0.5s, height 0.5s 0.5s, opacity 0.25s;
-}
-
-.ProfileDiv:hover {
-    cursor:pointer;
-}
-
-
-.ProfileDiv--HoverAndClick {
-    transition: 0.3s ease-in-out;
-    transform: translateY(-40px);
-}
-
-.ProfileDiv--HoverAndClick .ProfileDescription{
-    visibility: visible;
-    opacity:1
-}
-
-@media (max-width:500px) {
-    .ProfileDescription {
-        visibility:visible;
-        opacity:1;
-    }
-    
-    .ProfileDiv--HoverAndClick {
-        height:60%;
-    }
-    .ProfileDiv--HoverAndClick {
-        transform: translateY(0px);
-    }
-}
-*/

@@ -73,11 +73,12 @@
   .Footer {
     display:block;
     padding:0em;
-    height: 9em;
+    height: 12em;
   }
 
   .SocialMediaSection {
-    margin: 1em 0em;
+    margin-top:0em;
+    margin-bottom: 1.5em;
     padding-top: 2em;
   }
 

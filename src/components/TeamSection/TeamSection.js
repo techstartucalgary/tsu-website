@@ -25,13 +25,13 @@ const TeamSection = () => {
         <div className="TeamSection" >
             <h1 className={headers[0]}>Our Team</h1>
             <Divider />
-            <p className="regularText">
+            <p className="regularText" style={{ "margin-bottom": "10%" }}>
                 Tech Start is only possible thanks to our team of talented, passionate leaders. Interested in joining us? <Link to="/apply">Find out what it takes to apply!</Link>
             </p>
-            <h2 className={headers[2]}>Executives</h2>
+            <h2 className={headers[2]} style={{ "textAlign": "center" }}><u>Executives</u></h2>
             <Team teamMembers={executiveTeam} defaultView={defaultView} />
 
-            <h2 className={headers[2]}>Project Managers</h2>
+            <h2 className={headers[2]} style={{ "textAlign": "center" }}><u>Project Managers</u></h2>
             <Team teamMembers={projectManagers} defaultView={defaultView} />
         </div>
     );

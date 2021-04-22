@@ -37,22 +37,22 @@ const Team = props => {
      * The following if conditions are for setting the layout of the team section
      * according to the number of members for a default screen width.
      */
-    let ContainerClass = "Container"; // default layout of members
-    if (containerState.members.length === 4) ContainerClass = "Container-4";
-    else if (containerState.members.length === 7) ContainerClass = "Container-7";
-    else if (containerState.members.length === 8) ContainerClass = "Container-8";
-    else if (containerState.members.length === 10) ContainerClass = "Container-10";
+    let containerClasses = ["Container"]; // default layout of members
+    if (containerState.members.length === 4) containerClasses.push("Container--size4");
+    else if (containerState.members.length === 7) containerClasses.push("Container--size7");
+    else if (containerState.members.length === 8) containerClasses.push("Container--size8");
+    else if (containerState.members.length === 10) containerClasses.push("Container--size10");
 
     return (
         props.defaultView === true ?
-            <div className={ContainerClass}>
+            <div className={containerClasses.join(' ')}>
                 {
                     containerState.members.map((member, i) => {
                         return (
                             <Profile
                                 key={i}
                                 member={member}
-                                class={`Profile-${containerState.members.length}`}
+                                class={`Profile--${containerState.members.length}`}
                                 col={containerState.members.length}
 
                                 profilePic={member.image}

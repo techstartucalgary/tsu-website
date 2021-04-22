@@ -36,11 +36,13 @@ const Blobbie = (props: any) => {
         blobLottie15: blobLottie15
     }
 
+    const blobbieClass = props.edge === true ? "Blobbie--edge" : "Blobbie--middle";
+
     return (
         <Lottie
-            className="Blobbie"
+            className={blobbieClass}
             animationData={eval(`blobbies.blobLottie${props.id}`)}
-            style={{ "width": props.width, "height": props.height, "transform": props.transform }} />
+            style={{ "width": props.width, "transform": props.transform }} />
     );
 };
 

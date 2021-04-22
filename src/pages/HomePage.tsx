@@ -27,6 +27,8 @@ function HomePage() {
       </header>
 
       <section className="homePage__aboutUs">
+        <Blobbie id={8} width={400} transform="translate(-70%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
+        <Blobbie id={2} width={100} transform="translate(clamp(10vw, calc(10vw + 1rem), 40vw), 40%)" edge={false} />
         <div className="homePage__container">
           <h1 className="chonkyHeading">We're the innovators on campus.</h1>
           <Divider />
@@ -109,11 +111,11 @@ function HomePage() {
       </section>
 
       <section className="homePage__ourSponsors">
+        <Blobbie id={9} width={800} transform="translate(-80%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
+        <Blobbie id={2} width={150} transform="translate(90vw, -60%)" edge={false} />
         <SponsorSection />
       </section>
-
-      <Blobbie id={8} width={500} height={500} transform="translate(-50%, -30%)" />
-
+      <Blobbie id={11} width={200} transform="translate(-65%, -30%)" />
       <TeamSection />
 
     </div>

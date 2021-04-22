@@ -24,16 +24,16 @@ const TeamSection = () => {
     return (
         <div className="TeamSection" >
             <h1 className={headers[0]}>Our Team</h1>
-                <Divider />
-                <p className="regularText">
-                    Tech Start is only possible thanks to our team of talented, passionate leaders. Interested in joining us? <Link to="/apply">Find out what it takes to apply!</Link>
-                </p>
-                <h2 className={headers[2]}>Executives</h2>
-                <Team teamMembers={executiveTeam} defaultView={defaultView} />
+            <Divider />
+            <p className="regularText">
+                Tech Start is only possible thanks to our team of talented, passionate leaders. Interested in joining us? <Link to="/apply">Find out what it takes to apply!</Link>
+            </p>
+            <h2 className={headers[2]}>Executives</h2>
+            <Team teamMembers={executiveTeam} defaultView={defaultView} />
 
-                <h2 className={headers[2]}>Project Managers</h2>
-                <Team teamMembers={projectManagers} defaultView={defaultView} />
-            </div>
+            <h2 className={headers[2]}>Project Managers</h2>
+            <Team teamMembers={projectManagers} defaultView={defaultView} />
+        </div>
     );
 }
 

@@ -9,7 +9,7 @@
         max-width:80vw !important;
     }
     .Blobbie--middle {
-        max-width:10vw !important;
+        max-width:30vw !important;
     }
 }
 
@@ -18,6 +18,6 @@
         max-width:70vw !important;
     }
     .Blobbie--middle {
-        max-width:5vw !important;
+        max-width:20vw !important;
     }
 }

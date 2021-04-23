@@ -117,9 +117,12 @@ function HomePage() {
         <Blobbie id={2} width={75} transform="translate(85vw, 0%)" edge={false} />
         <SponsorSection />
       </section>
-      <Blobbie id={12} width={300} transform="translate(93vw, -30%)" edge={true} />
-      <Blobbie id={8} width={200} transform="translate(-10vw, 10vw)" edge={true} />
-      <TeamSection />
+
+      <section>
+        <Blobbie id={12} width={300} transform="translate(93vw, -30%)" edge={true} />
+        <Blobbie id={8} width={200} transform="translate(-10vw, 10vw)" edge={true} />
+        <TeamSection />
+      </section>
     </div>
   );
 }

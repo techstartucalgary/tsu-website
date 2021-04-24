@@ -29,13 +29,13 @@ function HomePage() {
 
       <section className="homePage__aboutUs">
         <div className="homePage__container">
-          <h1 className="homePage__sectionHeader homePage__sectionHeader-dark">We're the innovators on campus.</h1>
+          <h1 className="chonkyHeading">We're the innovators on campus.</h1>
           <Divider />
-          <p className="homePage__text">
+          <p className="regularText">
             We're a software club at the University of Calgary. Through multidisciplinary teams, we take on interesting problems and use technology to solve them.
             Every semester, our teams combine software, design, and strategy to complete awesome projects.
           </p>
-          <p className="homePage__text">
+          <p className="regularText">
             At Tech Start, our members learn new technologies, gain experience with professional development tools and methodologies, and master the art of collaboration.
             We're also the top spot on campus to meet fellow tech enthusiasts, aspiring entrepreneurs, and innovators. 
           </p>

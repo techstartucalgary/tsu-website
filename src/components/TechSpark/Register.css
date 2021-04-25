@@ -1,40 +1,49 @@
-.loginDesign{
-    float:left;
-    background: rgb(35,100,204);
-background: linear-gradient(0deg, rgba(35,100,204,1) 0%, rgba(16,157,147,1) 61%, rgba(36,241,31,1) 100%);
-    width: 20%;
-    height: 100%;
-    border-radius: 25px 0 0 25px;
-}
-
-.loginHeading{
-    margin-left: 30%;
-}
-
-.loginImage{
-    vertical-align: middle;
+.registerLogo{
     height: 70px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.loginStyling{
+.registerStyling{
     display: inline-block;
-    width: 700px;
-    height: 400px;
+    width: 550px;
+    height: 600px;
     border-radius: 25px;
     background-color: #282c34;
+    margin: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;  
     color: white; 
     font-family: 'Inter', Tahoma, sans-serif;  
 }
 
-.loginForm{
+.registerIntro{
+    padding: 10px;
+    margin-left: auto;
+    text-align: center;
+}
+
+.registerHeading{
+    margin-top: 8px;
+    text-align: center;
+}
+
+.registerForm{
     font-size: larger;
 }
 
-.loginDiv{
-    width: 50%;
+.logInLink{
+    float: left;
+    font-weight: normal;
+    margin: 12px;
+}
+
+.registerDiv{
+    position:relative;
+    width: 60%;
     padding: 12px;
-    margin-left: 35%;
-    margin-top: 12px;
+    margin: 12px auto;
     border: 1px solid #ccc;
     background-color: white;
     color: grey;
@@ -43,13 +52,8 @@ background: linear-gradient(0deg, rgba(35,100,204,1) 0%, rgba(16,157,147,1) 61%,
     resize: vertical;
 }
 
-.registerLink{
-    float: left;
-    font-weight: normal;
-    margin: 12px;
-}
 
-.registerSwitch{
+.loginSwitch{
     color: white;
     background-color: transparent;
     cursor: pointer;
@@ -59,22 +63,15 @@ background: linear-gradient(0deg, rgba(35,100,204,1) 0%, rgba(16,157,147,1) 61%,
     vertical-align: middle;
 }
 
-.switchStyling{
-    width: 50%;
-    margin-left: 35%;
+.switchToLogin{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 12px;
 }
 
-.blue_to_green{
-    width: 10%;
-    height: 100%;
-    float: left;
-    background: rgb(3,238,56);
-    background: linear-gradient(0deg, rgba(3,238,56,1) 0%, rgba(61,61,167,1) 56%, rgba(0,212,255,1) 100%);
-}
-
-
-input[id=username], input[id=password]{
+input[id=registerName], input[id=registerEmail], 
+input[id=registerPassword]{
     width: 85%;
     padding: 12px;
     margin-left: 5px;
@@ -86,9 +83,9 @@ input[id=username], input[id=password]{
     border: none;
 }
 
-input[id=loginSubmit]{
-    margin-left: 30%;
-    margin-top: 12px;
+input[id=registerSubmit]{
+    margin-left: 40%;
+    margin-right: 40%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #99e755;
@@ -98,4 +95,5 @@ input[id=loginSubmit]{
     cursor: pointer;  
     width: 20%;  
     text-align: center;
+    
 }

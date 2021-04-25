@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import './SparkPage.css';
-import '../components/TechSpark/Event'
-
-
+import Event from '../components/TechSpark/Event'
+import Login from '../components/TechSpark/Login'
+import SignIn from '../components/TechSpark/SignIn'
+import PostCreation from '../components/TechSpark/PostCreation'
+import Register from '../components/TechSpark/Register'
 class Dashboard extends Component {
     render() {
         return(
@@ -21,13 +23,45 @@ specific skill sets.</p>
         
        <div className="page">
            <div className="techsparkTitle">Whats the Latest?</div>
-           <div className="sparkGrid"></div>
+           <div className="sparkGrid">
+           <Event 
+                name = "Event 1" 
+                date = "March 30th, 2021"
+                img = "https://picsum.photos/200"
+                link = ""
+                description = "Tech Start UCalgary Meeting"
+          /> 
+          <Event 
+                name = "Event 2" 
+                date = "April 20th, 2021"
+                img = "https://picsum.photos/200" 
+                link = "https://www.ucalgary.ca/hunter-hub"
+                description = "Hunter Hub Conference"
+            />
+            <Event 
+                name = "Event 1" 
+                date = "March 30th, 2021"
+                img = "https://picsum.photos/200"
+                link = ""
+                description = "Tech Start UCalgary Meeting"
+          /> 
+          <Event 
+                name = "Event 2" 
+                date = "April 20th, 2021"
+               img = "https://picsum.photos/200" 
+                link = "https://www.ucalgary.ca/hunter-hub"
+                description = "Hunter Hub Conference"
+                />
+           </div>
         </div>
     </body>   
        <br/>
     <div className="page">
         <div className="techsparkTitle">See What People Are Saying</div>
-        <div className="sparkGrid"></div>
+        <div className="sparkGrid">
+            <SignIn/>
+            
+        </div>
     </div>
     </div> 
       

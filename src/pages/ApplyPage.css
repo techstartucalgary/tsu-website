@@ -148,6 +148,10 @@
   margin: 5% auto;
 }
 
+.applyPage__introContents h2 {
+  font-weight: normal;
+}
+
 .applyPage__container {
   width: 100%;
   display: flex;

@@ -43,14 +43,6 @@ function ApplyPage() {
         </div>
       </div>
 
-      <ApplyGallery
-        gallery1={gallery1}
-        gallery2={gallery2}
-        gallery3={gallery3}
-        gallery4={gallery4}
-        gallery5={gallery5}
-      />
-
       <div className="applyPage__container applyPage__applicationContainer">
         <div className="applyPage__application">
           <h1 className="applyPage__SectionTitle">Applications</h1>

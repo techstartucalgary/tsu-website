@@ -1,0 +1,33 @@
+
+.applyPage__FAQContents {
+  justify-content: center;
+  margin: 0;
+  max-width: 1200px;
+  width: 80%;
+  padding: 20px 0;
+  margin: auto;
+  overflow: hidden;
+}
+
+@media (max-width: 550px) {
+  .applyPage__FAQContents {
+    width: 87%;
+    padding: 15% 0;
+  }
+  .applyPage__FAQ h1,
+  .applyPage__FAQ h2,
+  .applyPage__FAQ p {
+    padding: 10px;
+  }
+}
+
+.applyPage__FAQSection {
+  margin: 40px 0;
+}
+
+.applyPage__FAQQuestion {
+  font-size: clamp(24px, calc(0.15vw + 24px), 30px);
+}
+.applyPage__FAQAnswer {
+  font-size: clamp(16px, calc(0.15vw + 16px), 22px);
+}

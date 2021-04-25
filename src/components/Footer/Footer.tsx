@@ -1,4 +1,5 @@
-import './Footer.css'
+import './Footer.css';
+import '../../App.css';
 import SocialMedia from '../SocialMedia/SocialMedia';
 import SubscribeButton from './SubscribeButton/SubscribeButton';
 
@@ -9,9 +10,12 @@ import {
     faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 
+
 const Footer = () => (
     <div className="Footer">
-        <p className="Copyright">UofC TechStart 2021</p>
+
+        <SubscribeButton />
+
         <div className="SocialMediaSection">
             <SocialMedia
                 footer={true}
@@ -33,7 +37,7 @@ const Footer = () => (
                 icon={faLinkedin}
                 link="https://www.linkedin.com/company/tech-start-ucalgary" />
         </div>
-        <SubscribeButton />
+        <p className="Copyright">UofC TechStart 2021</p>
     </div>
 );
 

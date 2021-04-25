@@ -181,3 +181,7 @@ body {
   /*background-image: linear-gradient(rgba(12, 12, 12, 1), rgb(1, 115, 95));*/
   background-color: white;
 }
+
+.homepage__teamSection {
+  padding: 0em 0em !important;
+}

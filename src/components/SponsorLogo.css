@@ -1,0 +1,12 @@
+.sponsorLogo {
+  display: block;
+  position: relative;
+  opacity: 0.95;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  text-decoration: none;
+}
+
+.sponsorLogo:hover {
+  transform: scale(1.03);
+  opacity: 1;
+}

@@ -1,0 +1,19 @@
+.SocialMediaIcon {
+    margin: 0 1em;
+    transition: 0.3s ease-in-out;
+    display: inline-block;
+}
+
+.SocialMediaIcon-FooterColor {
+    color: #282A36;
+}
+
+.SocialMediaIcon-DefaultColor {
+    color: #99E755;
+}
+
+.SocialMediaIcon:hover {
+    transform: translateY(-0.25em);
+    color: white;
+    box-shadow: 0 0.5em 0.5em -0.4em white; /* offset-x | offset-y | blur-radius | spread-radius | color*/
+}

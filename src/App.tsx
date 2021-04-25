@@ -1,10 +1,13 @@
 import HomePage from 'pages/HomePage';
 import DocsPage from 'pages/DocsPage';
+import ApplyPage from 'pages/ApplyPage';
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch} from 'react-router-dom';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Navbar from 'components/Navbar';
+import Footer from 'components/Footer/Footer';
+import './App.css';
 
-function App(){
+function App() {
     return <Router>
         <div className="App">
             <Navbar />
@@ -13,11 +16,15 @@ function App(){
                     <Route path="/docs">
                         <DocsPage />
                     </Route>
+                    <Route path="/apply">
+                        <ApplyPage />
+                    </Route>
                     <Route path="/">
-                        <HomePage/>
+                        <HomePage />
                     </Route>
                 </Switch>
             </div>
+            <Footer />
         </div>
     </Router>
 }

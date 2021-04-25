@@ -5,28 +5,18 @@
 }
 
 .registerStyling{
-    display: inline-block;
-    width: 550px;
-    height: 600px;
-    border-radius: 25px;
-    background-color: #282c34;
-    margin: 25px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;  
-    color: white; 
-    font-family: 'Inter', Tahoma, sans-serif;  
+    color: white;
 }
 
 .registerIntro{
-    padding: 10px;
     margin-left: auto;
     text-align: center;
 }
 
 .registerHeading{
     margin-top: 8px;
-    text-align: center;
+    text-align: center; 
+    color: white;
 }
 
 .registerForm{
@@ -37,12 +27,13 @@
     float: left;
     font-weight: normal;
     margin: 12px;
+    margin-left: 10%;
 }
 
 .registerDiv{
     position:relative;
-    width: 60%;
-    padding: 12px;
+    width: 80%;
+    padding: 10px;
     margin: 12px auto;
     border: 1px solid #ccc;
     background-color: white;
@@ -60,19 +51,17 @@
     border: none;
     float: right;
     margin: 12px;
+    margin-right: 10%;
     vertical-align: middle;
 }
 
 .switchToLogin{
-    width: 60%;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 12px;
 }
 
 input[id=registerName], input[id=registerEmail], 
 input[id=registerPassword]{
-    width: 85%;
+    width: 70%;
     padding: 12px;
     margin-left: 5px;
     border: 1px solid #ccc;
@@ -84,16 +73,35 @@ input[id=registerPassword]{
 }
 
 input[id=registerSubmit]{
-    margin-left: 40%;
-    margin-right: 40%;
+    width: 42%;
+    margin-left: 29%;
+    margin-right: 29%;
     padding-top: 10px;
     padding-bottom: 10px;
     background-color: #99e755;
     color: black;
     border: none;
     border-radius: 4px;
-    cursor: pointer;  
-    width: 20%;  
+    cursor: pointer;    
     text-align: center;
     
+}
+
+@media (max-width: 475px){
+    .switchToLogin{
+        display: block;
+    }
+    .loginSwitch{
+        float: none;
+        margin-left: 10%;
+    }
+    .logInLink{
+        float: none;
+        margin-bottom: 0px;
+    }
+    input[id=registerSubmit]{
+        width: 42%;
+        margin-left: 29%;
+        margin-right: 29%;
+    }
 }

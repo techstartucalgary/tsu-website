@@ -10,11 +10,14 @@ function SignIn(props){
         setIsLoginMode(!isLoginMode)
     }
     return (
-        <div className= {"signInBackground " + isLoginMode ? "signInBackground--loginMode" : "signInBackground--registerMode"}>
+        <div className= {"signInBackground " + (isLoginMode ? "signInBackground--loginMode" : "signInBackground--registerMode")}>
+        
             {isLoginMode ? 
+                <div className = "loginHeaderDiv"><div className = "loginDesign"></div> 
                 <p><Login
                     switchMode = {handleClick}
-                /></p> : <p><Register
+                /></p></div>
+                 : <p><Register
                     switchMode = {handleClick}
                 /></p>}  
       </div>

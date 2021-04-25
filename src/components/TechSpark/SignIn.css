@@ -1,5 +1,16 @@
-.signInStyling{
-    background: black;
+.loginDesign{
+    position: relative;
+    float:left;
+    background: rgb(35,100,204);
+    background: linear-gradient(0deg, rgba(35,100,204,1) 0%, rgba(16,157,147,1) 61%, rgba(36,241,31,1) 100%);
+    width: 20%;
+    height: 350px;
+    border-radius: 25px 0 0 25px;
+}
+.loginHeaderDiv{
+    position: absolute;
+    max-width: 700px;
+    width: 100%;
 }
 
 .signInBackground{
@@ -8,17 +19,23 @@
     background-color: #282c34;
     color: white; 
     font-family: 'Inter', Tahoma, sans-serif; 
-
+    margin-left: auto;
+    margin-right: auto;
+    transition: width 2s;
+    
 }
 
 .signInBackground--loginMode{
-    width: 700px;
-    height: 400px;
+    position: relative;
+    max-width: 700px;
+    width: 90%;
+    height: 350px;
 
 }
 
-.singInBackground--registerMode{
-    width: 550px;
+.signInBackground--registerMode{
+    max-width: 550px;
+    width: 70%;
     height: 600px;
     padding: 10px; 
 }

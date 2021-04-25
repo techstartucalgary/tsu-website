@@ -11,7 +11,7 @@ function Register(props){
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
              <div className = "registerHeading">
                 <img src = {logo} className = "registerLogo"/>
-                <h3>Get Started with TechStart's Community</h3>
+                <h3 className = "registerStyling">Get Started with TechStart's Community</h3>
              </div>  
             
             <p className = "registerIntro">Find people to connect with and post about your new projects

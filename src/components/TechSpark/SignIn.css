@@ -1,0 +1,24 @@
+.signInStyling{
+    background: black;
+}
+
+.signInBackground{
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #282c34;
+    color: white; 
+    font-family: 'Inter', Tahoma, sans-serif; 
+
+}
+
+.signInBackground--loginMode{
+    width: 700px;
+    height: 400px;
+
+}
+
+.singInBackground--registerMode{
+    width: 550px;
+    height: 600px;
+    padding: 10px; 
+}

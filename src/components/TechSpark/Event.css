@@ -1,22 +1,24 @@
 .eventImg{
     padding-top: 10px;
-    width: 150px;
-    height: 100px;
+    width: 75%;
+    height: 60%;
+    margin-left: 34px;
+    margin-right: auto;
 }
 
 .alignment{    
     text-align: left;
     font-size: 16px;
     margin: 1px 10px;
-    color: #282A36;;
+    color: white;
     
 }
 
 .styling{
-    width: 225px;
-    height: 225px;
+    width: 300px;
+    height: 250px;
     border-radius: 25px;
-    background-color: #d3f5b6;
+    background-color: #282A36;
     margin: 25px;
     padding: 10px;
     float: left;
@@ -31,7 +33,7 @@
     font-size: 18px;
     text-align: left;
     margin: 1px 10px;
-    color: #282A36;;
+    color: white;
     transition:all 0.4s ease-in-out;
     
 }

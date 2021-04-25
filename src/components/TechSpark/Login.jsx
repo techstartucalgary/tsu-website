@@ -1,27 +1,41 @@
 import React from "react";
 import "./Login.css"
-import logo from "../images/tech-start-logo-white.png";
+import logo from "images/tech-start-logo-white.png";
+import design from "images/circuitBoard.svg"
 
 function Login(props){
 
     return (
         <div className = "loginStyling">
+            <div className = "loginDesign"></div>
+        <link rel="stylesheet"
+          href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                
-            <h1><img src = {logo} className = "loginImage"/> Community Login</h1>
+            <h1 className= "loginHeading"><img src = {logo} className = "loginImage"/> Community Login</h1>
             <form className = "loginForm">
-                <p className = "loginP">
-                    <label className = "loginLabel" for="username">Username:</label>
-                    <input type="text" id="username" placeholder = "Username..."/><br></br>
-                </p>
-                <p className = "loginP">
-                    <label className = "loginLabel" for="password">Password:</label>
-                    <input type="password" id="password" placeholder = "Password..."/><br></br>
-                </p>
+                <div className = "loginDiv">
+                  <i class="fa fa-envelope icon">
+                  </i>
+                 <input id="username" 
+                       type="text"
+                       placeholder="Email"/>
+                </div>
+                <div className = "loginDiv">
+                <i class="fa fa-key icon">
+                </i>
+                    <input type="password" id="password" placeholder = "Password"/><br></br>
+                </div>
+                <input type="submit" id = "loginSubmit" value = "Login"/>
+
 
             </form>
-            <input type="submit" value = "Login"/>
-
-            <h5 className = "registerLink">Don't yet have an account? <a>Register Here!</a></h5>
+            <div className = "switchStyling">
+                <h5 className = "registerLink">Don't have an account?</h5>
+                 <button className= "registerSwitch" onClick = {props.switchMode}><i class="fa fa-user icon">
+                  </i> Sign Up</button>
+            </div>
+            
         </div>
     );
 }

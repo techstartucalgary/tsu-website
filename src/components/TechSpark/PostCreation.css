@@ -1,16 +1,21 @@
 .postCreationStyling{
     display: block;
     width: 500px;
-    height: 425px;
+    height: 430px;
     border-radius: 25px;
     background-color: #282c34;;
     margin: 25px;
+    margin-left: auto;
+    margin-right: auto; 
     padding: 10px;  
     color: white; 
     font-family: 'Inter', Tahoma, sans-serif;  
 }
 
-input[id=postTitle]{
+input[id=createPostTitle]{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;  
     width: 350px;
     padding: 12px;
     margin: 12px;
@@ -22,6 +27,7 @@ input[id=postTitle]{
 }
 
 input[id=postSubmit]{
+    display: block;
     background-color: #99e755;
     color: black;
     padding: 12px 20px;
@@ -29,7 +35,8 @@ input[id=postSubmit]{
     border-radius: 4px;
     cursor: pointer;
     margin: 12px;
-    
+    margin-left: auto;
+    margin-right: auto;    
 }
 
 .postTextArea{

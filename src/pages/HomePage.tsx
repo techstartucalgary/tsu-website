@@ -27,6 +27,8 @@ function HomePage() {
       </header>
 
       <section className="homePage__aboutUs">
+        <Blobbie id={8} width={400} transform="translate(-70%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
+        <Blobbie id={2} width={100} transform="translate(clamp(20vw, calc(5vw + 1rem), 40vw), -80%)" edge={false} />
         <div className="homePage__container">
           <h1 className="chonkyHeading">We're the innovators on campus.</h1>
           <Divider />
@@ -44,6 +46,7 @@ function HomePage() {
           >
             <button className="homePage__btn">Visit our Linktree</button>
           </a> */}
+          <Blobbie id={2} width={300} transform="translate(80vw, -30%)" edge={true} />
           <div className="homePage__numberContainer">
             <NumberStat number={4} stat="projects so far" />
             <NumberStat number={32} stat="members so far" />
@@ -109,13 +112,17 @@ function HomePage() {
       </section>
 
       <section className="homePage__ourSponsors">
+        <Blobbie id={9} width={800} transform="translate(-80%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
+        <Blobbie id={2} width={150} transform="translate(75vw, -60%)" edge={false} />
+        <Blobbie id={2} width={75} transform="translate(85vw, 0%)" edge={false} />
         <SponsorSection />
       </section>
 
-      <Blobbie id={8} width={500} height={500} transform="translate(-50%, -30%)" />
-
-      <TeamSection />
-
+      <section>
+        <Blobbie id={12} width={300} transform="translate(93vw, -30%)" edge={true} />
+        <Blobbie id={8} width={200} transform="translate(-10vw, 10vw)" edge={true} />
+        <TeamSection />
+      </section>
     </div>
   );
 }

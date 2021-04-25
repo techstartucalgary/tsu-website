@@ -11,22 +11,18 @@ const Team = props => {
 
     /**
      * Finds profile icon with matching id supplied by the parameter and
-     * updates its state according to the action supplied by the parameter.
+     * toggles its clicked state.
      * 
      * @param {integer} id 
-     * @param {string} action 
      */
-    const changeState = (id, action) => {
+    const toggleClick = (id) => {
         const iconIndex = containerState.members.findIndex(m => {
             return m.id === id;
         });
-        const member = { ...containerState.members[iconIndex] };
 
-        if (action === "toggle hover") {
-            let toggledValue = !member.hovered;
-            member.hovered = toggledValue;
-        } else if (action === "link clicked")
-            member.hovered = false;
+        const member = { ...containerState.members[iconIndex] };
+        let toggledValue = !member.clicked;
+        member.clicked = toggledValue;
 
         const members = [...containerState.members];
         members[iconIndex] = member;
@@ -37,30 +33,30 @@ const Team = props => {
      * The following if conditions are for setting the layout of the team section
      * according to the number of members for a default screen width.
      */
-    let ContainerClass = "Container"; // default layout of members
-    if (containerState.members.length === 4) ContainerClass = "Container-4";
-    else if (containerState.members.length === 7) ContainerClass = "Container-7";
-    else if (containerState.members.length === 8) ContainerClass = "Container-8";
-    else if (containerState.members.length === 10) ContainerClass = "Container-10";
+    let containerClasses = ["Container"]; // default layout of members
+    if (containerState.members.length === 4) containerClasses.push("Container--size4");
+    else if (containerState.members.length === 7) containerClasses.push("Container--size7");
+    else if (containerState.members.length === 8) containerClasses.push("Container--size8");
+    else if (containerState.members.length === 10) containerClasses.push("Container--size10");
 
     return (
         props.defaultView === true ?
-            <div className={ContainerClass}>
+            <div className={containerClasses.join(' ')}>
                 {
                     containerState.members.map((member, i) => {
                         return (
                             <Profile
                                 key={i}
                                 member={member}
-                                class={`Profile-${containerState.members.length}`}
+                                class={`Profile--${containerState.members.length}`}
                                 col={containerState.members.length}
 
                                 profilePic={member.image}
                                 alt={[`member_${i}`]}
 
-                                toggleHover={() => changeState(member.id, "toggle hover")}
-                                hovered={member.hovered}
-                                linkClicked={() => changeState(member.id, "link clicked")}
+                                toggleClick={() => toggleClick(member.id)}
+                                clicked={member.clicked}
+                                linkClicked={() => toggleClick(member.id)}
                             />
                         );
                     })
@@ -79,9 +75,9 @@ const Team = props => {
                         profilePic={member.image}
                         alt={[`member_${i}`]}
 
-                        toggleHover={() => changeState(member.id, "toggle hover")}
-                        hovered={member.hovered}
-                        linkClicked={() => changeState(member.id, "link clicked")}
+                        toggleClick={() => toggleClick(member.id)}
+                        clicked={member.clicked}
+                        linkClicked={() => toggleClick(member.id)}
                     />)}
             </Carousel>
     );

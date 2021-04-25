@@ -1,4 +1,23 @@
-.Blobbie {
+.Blobbie--edge, .Blobbie--middle {
     position:absolute;
-   /* z-index: -999;*/
+    height: auto;
+    opacity:60%;
+}
+
+@media (max-width:750px){
+    .Blobbie--edge {
+        max-width:80vw !important;
+    }
+    .Blobbie--middle {
+        max-width:30vw !important;
+    }
+}
+
+@media (max-width:500px){
+    .Blobbie--edge {
+        max-width:70vw !important;
+    }
+    .Blobbie--middle {
+        max-width:20vw !important;
+    }
 }

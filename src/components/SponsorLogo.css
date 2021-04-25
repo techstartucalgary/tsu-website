@@ -1,7 +1,7 @@
 .sponsorLogo {
   display: block;
   position: relative;
-  opacity: 0.8;
+  opacity: 0.95;
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   text-decoration: none;
 }

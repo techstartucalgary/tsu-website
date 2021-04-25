@@ -7,12 +7,11 @@ function Login(props){
 
     return (
         <div className = "loginStyling">
-            <div className = "loginDesign"></div>
         <link rel="stylesheet"
           href=
 "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
                
-            <h1 className= "loginHeading"><img src = {logo} className = "loginImage"/> Community Login</h1>
+            <h1 className= "loginHeading">Login</h1>
             <form className = "loginForm">
                 <div className = "loginDiv">
                   <i class="fa fa-envelope icon">

@@ -73,10 +73,42 @@ function ApplyPage() {
             description=""
           />
           <Accordion
-            title="What roles are take part in a project?"
+            title="What roles are there in a project?"
             active={active}
             setActive={setActive}
-            description=""
+            description="<strong>Project Software Developer</br></strong>As a developer, you will learn to architect and build awesome
+              projects and participate in team events. You want
+              to collaborate with a team to build awesome software and learn
+              professional development practices. Work together with
+              other developers on different platforms, collaborating
+              cross-functionally to build a project that you and your teammates
+              will decide on at the start of the semester.
+              </br>
+              </br>
+              <strong>Business Strategist</br></strong>As a developer, you will learn to architect and build awesome
+              projects, and participate in team events and lunch trips. You want
+              to collaborate with a team to build awesome software and learn
+              professional development practices. Work collaboratively with
+              other developers on different platforms, collaborating
+              cross-functionally to build a project that you and your teammates
+              will decide on at the start of the semester.
+              </br>
+              </br>
+              <strong>Project Designer</br></strong>As a developer, you will learn to architect and build awesome
+              projects, and participate in team events and lunch trips. You want
+              to collaborate with a team to build awesome software and learn
+              professional development practices. Work collaboratively with
+              other developers on different platforms, collaborating
+              cross-functionally to build a project that you and your teammates
+              will decide on at the start of the semester.
+              </br>
+              </br>
+              <strong>Project Manager</br></strong>As a manager, take the opportunity to
+              pass on and earn experience leading in a professional and
+              experimental environment! Manage a project for a semester and lead
+              a team of 6-9 developers to create complex projects! Build your
+              portfolio, gain industry-like experience, and learn about the
+              product life cycle from initial design to testing and deployment."
           />
           <Accordion
             title="What is required to take part in a project?"
@@ -95,15 +127,17 @@ function ApplyPage() {
             <ApplySection
               term="1 semester"
               role="Project Member"
-              description="Work and grow with other developers on different platforms,
-                  collaborating cross-functionally to build an exciting project."
+              description="Work and grow with other team members on different platforms,
+                  collaborating to build an exciting project."
+              status="closed"
               applicationLink="#"
             />
             <ApplySection
               term="1 semester"
-              role="Project Manager Team"
+              role="Project Manager"
               description="Manage a project for a semester and lead a team of 6-9
-                    developers to create complex projects."
+                    project members to create complex projects."
+              status="open"
               applicationLink="#"
             />
             <ApplySection
@@ -112,6 +146,7 @@ function ApplyPage() {
               description="Work behind the scenes to organize project teams, run
                   workshops and events, and more. Lead and grow the club vision
                   and culture."
+              status="closed"
               applicationLink="#"
             />
           </ul>
@@ -122,27 +157,6 @@ function ApplyPage() {
         <div className="applyPage__FAQImg"></div>
         <div className="applyPage__FAQContents">
           <ApplyFAQSection
-            question="What is a Tech Start project?"
-            answer="Every semester, our members form teams that gather together 
-              to brainstorm a project, and then work on that idea collaboratively 
-              over the semester. During this time the projects evolve and shift, 
-              and our members get to experience the full lifecycle of bringing a 
-              complex project to life. Each team is lead by an experienced tech 
-              lead who provides the expertise needed to execute on the team’s vision. 
-              Tech Start also has mentors for each platform to help you learn to solve 
-              unique problems on your platform. We are also fortunate enough to be 
-              supported by a number of companies who provide us with the resources 
-              necessary to build our projects and run events and workshops."
-          />
-          <ApplyFAQSection
-            question="What does the Executive Team do?"
-            answer="The Executive Team runs behind the scenes to organize and maintain
-              project teams, run workshops and events, and much more. There are
-              many portfolios on the team, each essential to the carrying out
-              the entrepreneurial and inventive vision for the community. More
-              information on unique roles is in our application!"
-          />
-          <ApplyFAQSection
             question="What do the Project Managers do?"
             answer="Consider applying to be a Project Manager! Take the opportunity to
               pass on and earn experience leading in a professional and
@@ -152,14 +166,12 @@ function ApplyPage() {
               product life cycle from initial design to testing and deployment."
           />
           <ApplyFAQSection
-            question="What do the Project developers do?"
-            answer="As a developer, you will learn to architect and build awesome
-              projects, and participate in team events and lunch trips. You want
-              to collaborate with a team to build awesome software and learn
-              professional development practices. Work collaboratively with
-              other developers on different platforms, collaborating
-              cross-functionally to build a project that you and your teammates
-              will decide on at the start of the semester."
+            question="What does the Executive Team do?"
+            answer="The Executive Team runs behind the scenes to organize and maintain
+              project teams, run workshops and events, and much more. There are
+              many portfolios on the team, each essential to the carrying out
+              the entrepreneurial and inventive vision for the community. More
+              information on unique roles is in our application!"
           />
         </div>
       </div>

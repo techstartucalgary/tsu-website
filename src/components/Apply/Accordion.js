@@ -14,7 +14,7 @@ const Accordion = (props) => {
             </div>
             <div className={(props.active === props.title ? "applyPage__accordionShow" : "") + " applyPage__accordionContent"}>
                 <div className="applyPage__accordionContainer">
-                    <p>{props.description}</p>
+                    <p dangerouslySetInnerHTML = {{ __html: props.description}}></p>
                 </div>
             </div>
         </div>

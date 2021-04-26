@@ -4,7 +4,7 @@
 }
 .applyPage__accordion {
   width: 100%;
-  border-bottom: 0.5px solid white;
+  border-bottom: 0.5px solid rgb(148, 148, 148);
 }
 
 .applyPage__accordion:last-of-type {
@@ -26,25 +26,34 @@
   font-weight: 520;
   color: white;
   margin: 0;
+  padding-right: 2vw;
 }
 .applyPage__accordionHeading span {
   font-size: 27px;
   position: absolute;
   transform: translateY(-6.5px);
-  right: 6%;
+  right: 8%;
   color: var(--primary-green, rgb(106, 235, 80));
+}
+@media (max-width: 850px) {
+  .applyPage__accordionHeading span {
+    right: 11vw;
+  }
+  .applyPage__accordionHeading p {
+    padding-right: 6vw;
+  }
+}
+.applyPage__accordionContent.applyPage__accordionShow {
+  max-height: 100vh;
+  opacity: 1;
 }
 .applyPage__accordionContent {
   max-height: 0;
   opacity: 0;
   display: flex;
   overflow: hidden;
-  transition: all 0.8s linear;
+  transition: all 0.8s ease-in-out;
   transition-delay: 0s;
-}
-.applyPage__accordionContent.applyPage__accordionShow {
-  max-height: 100vh;
-  opacity: 1;
 }
 
 .applyPage__accordionContent p {

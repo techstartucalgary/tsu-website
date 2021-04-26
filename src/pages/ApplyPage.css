@@ -105,6 +105,7 @@
   left: 13%;
   top: 30%;
   text-align: left;
+  font-size: clamp(18px, calc(1vw + 12px), 24px);
 }
 .applyPage__showcase h1,
 .applyPage__showcase p {
@@ -150,19 +151,61 @@
 
 .applyPage__introContents h2 {
   font-weight: normal;
+  text-align: center;
+  font-size: clamp(18px, calc(1vw + 12px), 24px);
 }
 
+.applyPage__SectionTitle {
+  font-size: clamp(1rem, calc(8vw + 1rem), 3.5rem);
+  font-weight: 625;
+  margin-bottom: 10px;
+  text-align: center;
+}
 .applyPage__container {
   width: 100%;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  color: rgb(32, 32, 32);
-  background-color: white;
+  background-color: rgb(32, 32, 32);
+  color: rgb(255, 255, 255);
+  padding: 0;
+  overflow: hidden;
+}
+.applyPage__projectIntroImg {
+  object-fit: cover;
+  width: 30vw;
+  height: 30vw;
+  padding: 3%;
+  margin-left: 8%;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+.applyPage__projectIntro {
+  text-align: left;
+  color: white;
+  width: 60%;
+  background-color: rgb(32, 32, 32);
+  float: right;
+  padding: 5% 7% 5% 3%;
+}
+
+.applyPage__projectIntro h1 {
+  margin: 10px 0;
+}
+.applyPage__projectIntro h2 {
+  font-size: clamp(28px, calc(1.2vw + 24px), 34px);
+  margin: 0;
+}
+.applyPage__projectIntro h3 {
+  color: white;
+  font-size: clamp(15px, calc(1vw + 15px), 19px);
+  font-weight: normal;
+  margin: 10px;
 }
 
 .applyPage__applicationContainer {
+  display: flex;
   min-width: none;
+  color: rgb(32, 32, 32);
+  background-color: white;
 }
 
 .applyPage__application {
@@ -199,15 +242,10 @@
   }
 }
 .applyPage__FAQ {
-  background-color: rgb(48, 48, 48);
+  background-color: rgb(32, 32, 32);
   color: rgb(255, 255, 255);
   padding: 5% 0;
   overflow: hidden;
-}
-.applyPage__SectionTitle {
-  font-size: clamp(1rem, calc(8vw + 1rem), 3rem);
-  text-align: center;
-  margin-bottom: 10px;
 }
 
 .applyPage__FAQ h2,

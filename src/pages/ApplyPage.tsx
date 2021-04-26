@@ -1,6 +1,5 @@
 import React from "react";
 import "./ApplyPage.css";
-import "components/ApplyGallery.css";
 import gallery1 from "images/calgary.jpg";
 import gallery2 from "images/banana.jpg";
 import gallery3 from "images/temp.jpg";
@@ -8,7 +7,6 @@ import gallery4 from "images/funkystudent.jpg";
 import gallery5 from "images/faketeam.jpg";
 import ApplySection from "components/ApplySection";
 import ApplyFAQSection from "components/ApplyFAQSection";
-import ApplyGallery from "components/ApplyGallery";
 
 //import AOS from "../../node_modules/aos";
 //import "aos/dist/aos.css";

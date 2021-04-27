@@ -10,11 +10,7 @@ import ApplySection from "components/ApplySection";
 import ApplyFAQSection from "components/ApplyFAQSection";
 import ApplyGallery from "components/ApplyGallery";
 
-//import AOS from "../../node_modules/aos";
-//import "aos/dist/aos.css";
-
 function ApplyPage() {
-  //window.addEventListener("load", AOS.refresh);
   return (
     <div className="applyPage">
       <div className="applyPage__waves applyPage__waves1"></div>

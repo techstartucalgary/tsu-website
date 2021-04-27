@@ -61,52 +61,40 @@ function ApplyPage() {
                   collaboratively over the semester. During this time the
                   projects evolve and shift, and our members get to experience
                   the full lifecycle of bringing a complex project to life. Each
-                  team is lead by an experienced tech lead who provides the
-                  expertise needed to execute on the team’s vision. Tech Start
-                  also has mentors for each platform to help you learn to solve
-                  unique problems on your platform. We are also fortunate enough
-                  to be supported by a number of companies who provide us with
+                  team is lead by an experienced project manager who provides the
+                  expertise needed to execute on the team’s vision. We are also fortunate 
+                  enough to be supported by a number of companies who provide us with
                   the resources necessary to build our projects and run events
                   and workshops."
-          />
-          <Accordion
-            title="Why join a project?"
-            active={active}
-            setActive={setActive}
-            description=""
           />
           <Accordion
             title="What roles are there in a project?"
             active={active}
             setActive={setActive}
-            description="<strong>Project Software Developer</br></strong>As a developer, you will learn to architect and build awesome
+            description="<strong>Project Software Developer</strong></br>
+              As a developer, you will learn to architect and build awesome
               projects and participate in team events. You want
               to collaborate with a team to build awesome software and learn
               professional development practices. Work together with
               other developers on different platforms, collaborating
               cross-functionally to build a project that you and your teammates
               will decide on at the start of the semester.
-              </br>
-              </br>
-              <strong>Business Strategist</br></strong>As a developer, you will learn to architect and build awesome
+              </br></br>
+              <strong>Business Strategist</strong></br>
+              As a developer, you will learn to architect and build awesome
               projects, and participate in team events and lunch trips. You want
               to collaborate with a team to build awesome software and learn
               professional development practices. Work collaboratively with
               other developers on different platforms, collaborating
               cross-functionally to build a project that you and your teammates
               will decide on at the start of the semester.
-              </br>
-              </br>
-              <strong>Project Designer</br></strong>As a developer, you will learn to architect and build awesome
-              projects, and participate in team events and lunch trips. You want
-              to collaborate with a team to build awesome software and learn
-              professional development practices. Work collaboratively with
-              other developers on different platforms, collaborating
-              cross-functionally to build a project that you and your teammates
-              will decide on at the start of the semester.
-              </br>
-              </br>
-              <strong>Project Manager</br></strong>As a manager, take the opportunity to
+              </br></br>
+              <strong>Project Designer</strong></br>
+              As a designer at Tech Start, you will be in charge of making 
+              attractive, creative interfaces that provide great user experiences.
+              </br></br>
+              <strong>Project Manager</strong></br>
+              As a manager, you will be in charge of take the opportunity to
               pass on and earn experience leading in a professional and
               experimental environment! Manage a project for a semester and lead
               a team of 6-9 developers to create complex projects! Build your
@@ -114,10 +102,35 @@ function ApplyPage() {
               product life cycle from initial design to testing and deployment."
           />
           <Accordion
+            title="Why join a project?"
+            active={active}
+            setActive={setActive}
+            description="
+            You will get
+            <li>to learn and exercise professional development/design practices </li>
+            <li>to experience the full cycle of developing a project from nothing </li>
+            <li>to experience and practice development, business, or design skills </li>
+            <li>to work collaboratively on a project and learn from those around you</li>
+            <li>to expand your portfolio by working on a team project</li>
+            <li>to make some meaningful relationships with the people from Tech Start </li>"
+          />
+          <Accordion
             title="What is required to take part in a project?"
             active={active}
             setActive={setActive}
-            description=""
+            description="
+                    A passion for learning and experimenting, and a willingness to participate
+              actively! We welcome everyone of all skill levels, whether you are a complete
+              beginner just starting out or if you’ve done several internships and have
+              a portfolio of awesome projects."
+          />
+          <Accordion
+            title="What are is the commitment of a project member?"
+            active={active}
+            setActive={setActive}
+            description="
+            <li>Weekly team meetings (1 hour per week) and occasional club meetings </li>
+            <li>Around 4 hours per week working on tasks in and outside of web-development nights </li>"
           />
         </div>
       </div>
@@ -129,8 +142,8 @@ function ApplyPage() {
             <ApplySection
               term="1 semester"
               role="Project Member"
-              description="Work and grow with other team members on different platforms,
-                  collaborating to build an exciting project."
+              description="Work and grow as a developer, business strategist, or designer.
+                  Collaborate with team members on various platforms to build an exciting project."
               status="closed"
               applicationLink="#"
             />

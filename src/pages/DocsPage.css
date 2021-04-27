@@ -1,5 +1,6 @@
 .docsPage {
   text-align: center;
+  font-family: "Inter", Tahoma, sans-serif;
 }
 
 .docsPage__header {
@@ -137,8 +138,7 @@
   font-family: "Inter", Tahoma, sans-serif;
   font-weight: 70px;
   font-size: 23px;
-  margin-top: 150px;
-  opacity: 0;
+  opacity: 1;
   transform: translateY(40px);
   transition: 0.5s ease-in-out;
 }

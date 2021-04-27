@@ -19,7 +19,6 @@ function ApplyPage() {
       <div className="applyPage__waves applyPage__waves1"></div>
       <div className="applyPage__waves applyPage__waves2"></div>
       <header className="applyPage__showcase">
-        <div className="applyPage__spacing" data-aos="zoom-out-down"></div>
         <h1 className="applyPage__primary-title">APPLY</h1>
         <p className="applyPage__primary-description">
           Join a high-energy, dynamic community dedicated to creating an
@@ -44,9 +43,13 @@ function ApplyPage() {
           </div>
         </div>
       </div>
-
       <div className="applyPage__container applyPage__projectIntroContainer">
-        <img className="applyPage__projectIntroImg" src={gallery5} alt="" />
+        <img
+          className="applyPage__projectIntroImg"
+          src={gallery5}
+          alt=""
+          data-aos="fade-right"
+        />
         <div className="applyPage__projectIntro">
           <h1 className="applyPage__SectionTitle">Projects</h1>
           <Accordion
@@ -118,7 +121,6 @@ function ApplyPage() {
           />
         </div>
       </div>
-      <div className="applyPage__container"></div>
       <div className="applyPage__container applyPage__applicationContainer">
         <div className="applyPage__application">
           <h1 className="applyPage__SectionTitle">Applications</h1>

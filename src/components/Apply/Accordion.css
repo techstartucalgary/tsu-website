@@ -34,6 +34,8 @@
   transform: translateY(-6.5px);
   right: 8%;
   color: var(--primary-green, rgb(106, 235, 80));
+  text-shadow:  rgb(74, 241, 8);
+
 }
 @media (max-width: 850px) {
   .applyPage__accordionHeading span {
@@ -44,7 +46,7 @@
   }
 }
 .applyPage__accordionContent.applyPage__accordionShow {
-  max-height: 100vh;
+  max-height: 120vh;
   opacity: 1;
 }
 .applyPage__accordionContent {

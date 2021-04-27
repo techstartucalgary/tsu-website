@@ -218,6 +218,8 @@
   font-size: 3rem;
   font-size: clamp(0.8rem, calc(5vw + 1rem), 4.5rem);
   color: white;
+  z-index: 3;
+  pointer-events: none;
   /*adjust size to window*/
   line-height: 1.1;
   font-weight: 700;
@@ -257,6 +259,7 @@
 .homePage__logoContainer {
   z-index: 3;
   position: relative;
+  pointer-events: none;
 }
 
 .homePage__logo {

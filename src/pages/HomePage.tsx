@@ -71,7 +71,7 @@ function HomePage() {
         top:cursorY+'px'
       }}></div> */}
        <div id="mouseChange">
-      <header className="homePage__hero" ><div className="particles"><Particle /></div>
+      <header className="homePage__hero" ><Particle />
       
 
       

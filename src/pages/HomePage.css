@@ -69,48 +69,6 @@
   font-family: "Consolas", monaco, monospace;
 }
 
-.particles {
-  z-index: 1;
-  left: 0;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  height: 100%;
-  margin-top: 70px;
-  position: absolute;
-  min-height: fit-content;
-}
-
-@media (max-width: 800px) {
-  .tsparticles-canvas-el {
-    height: 700px !important;
-  }
-}
-
-@media (max-width: 750px) {
-  .tsparticles-canvas-el {
-    height: 600px !important;
-  }
-}
-
-@media (max-width: 600px) {
-  .tsparticles-canvas-el {
-    height: 550px !important;
-  }
-}
-
-@media (max-width: 400px) {
-  .tsparticles-canvas-el {
-    height: 450px !important;
-  }
-}
-
-@media (min-width: 850px) {
-  .tsparticles-canvas-el {
-    height: 800px !important;
-  }
-}
-
 .homePage,
 .homePage::before,
 .homePage::after {
@@ -281,7 +239,7 @@
   padding: 15vh 0;
   background-image: fixed url("../images/blackbg2.jpg"),
     llinear-gradient(rgb(0, 0, 0), rgb(1, 115, 68));
-  z-index: 20;
+  position: relative;
 }
 
 @supports (background-blend-mode: multiply) {

@@ -1,9 +1,10 @@
 import React from 'react';
 import Particles from 'react-particles-js';
-
+import "./Particles.css";
 
 function Particle() {
-  return (<div id="homepage__particles"><Particles
+  return (<Particles
+    className="particle_container"
     params={{
       particles: {
         number: {
@@ -113,6 +114,6 @@ function Particle() {
         }
       },
       retina_detect: false
-      }}  />  </div> )}
+      }}  />)}
 
       export default Particle

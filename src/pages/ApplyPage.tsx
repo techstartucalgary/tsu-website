@@ -93,7 +93,7 @@ function ApplyPage() {
               As a designer at Tech Start, you will be in charge of making 
               attractive, creative interfaces that provide great user experiences.
               </br></br>
-              <strong>Project Manager</strong></br>
+              <strong>Project Manager</strong> (separate application)</br>
               As a manager, you will be in charge of take the opportunity to
               pass on and earn experience leading in a professional and
               experimental environment! Manage a project for a semester and lead

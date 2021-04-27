@@ -23,6 +23,11 @@
 /* Nav features */
 /* @media (m-width: 0px) and (max-width: 700px){ */
 
+.navbar__placeholder{
+  content: "";
+  height: 83.6px;
+}
+
 .navbar {
   /* background:#07080A; */
   background: #07080a;

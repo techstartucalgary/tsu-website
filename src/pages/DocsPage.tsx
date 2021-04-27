@@ -4,34 +4,25 @@ import { ThemeProvider} from 'styled-components'
 import {lightTheme, darkTheme, GlobalStyles } from 'types/Themes.js'
 import Emoji from 'components/Emoji'
 import docsPage__logo from 'images/tech-start-logo-white.png'
+import { faShower } from '@fortawesome/free-solid-svg-icons';
 
 function DocsPage(){
   const [theme, setTheme] = useState('dark');
 
   const themeToggler = () => {
     theme === 'light' ? setTheme('dark') : setTheme('light'); };
-
-    /*const [docsPage__text, setText] = useState(false);
-
-    const textAppear = () => {
-      var textReveal = document.querySelector('docsPage__Search');
-      var position = textReveal.getBoundingClientRect().bottom;
-      if(window.scrollY >= position/2) {
-         setText(true)
-      } else {
-        setText(false)
-      }
-    }
-  window.addEventListener('scroll', textAppear);*/
+  
       
   return (
     <ThemeProvider theme = { theme === 'light' ? lightTheme : darkTheme}>
       <div className="docsPage__margin"></div>
     <div className="docsPage">
+      
       <header className="docsPage__header">
       <GlobalStyles />
+      <div className="docsPage__sections">
       <span className = "switch">
-      <span className="switch1"> <span style={ theme === 'light' ? {color:'yellow'} : {color:'grey'}}>☀</span></span>
+      <span className="switch1"> <span style={ theme === 'light' ? {color:'#ffc045'} : {color:'grey'}}>☀</span></span>
       <div className="switch2"> <span style={ theme === 'light' ? {color:'grey'} : {color:'white'}}>☾</span></div>
      <label className = "switch__label">
         <input type ="checkbox" onClick={() => themeToggler()}></input>
@@ -41,7 +32,7 @@ function DocsPage(){
     </span>
         
         <h2 className="docsPage__header2">
-        <h1 className="docsPage__h1"><Emoji symbol="💡" /> TechStart UCalgary Documentation</h1>
+        
           <ul>
           <li><a href ="" ><Emoji symbol=" 📚" />Resources</a></li>
           <li><a href =""><Emoji symbol="📓" />Handbook</a></li>
@@ -52,8 +43,8 @@ function DocsPage(){
         <h3 className="docsPage__h3">techstart/docs</h3>
         <div className="docsPage__Search"> 
         <input type ="text" placeholder="Search..."/>
-        </div> 
-        <h4 className=/*</header>{docsPage__text ? 'docsPage__h4 active' : */'docsPage__h4'/*}*/><Emoji symbol="💻" /> The official TechStart UCalgary knowledge base</h4>
+        </div> </div>
+        <h4 className='docsPage__h4'><Emoji symbol="💻" /> The official TechStart UCalgary knowledge base</h4>
         
         <p className="docsPage__p">
         TechStart UCalgary Documentation gathers advice, resources and best practices to help members find information they need to learn from our work. Please help us make it better!
@@ -80,8 +71,7 @@ function DocsPage(){
         <p className="docsPage__p2">Hit the icon in the navigation bar to toggle light mode!</p>
         </li>
         </ul>
-        <p className="docsPage__pLast"> TechStart UCalgary is a student-run software engineering club, whose mission is to build software projects, explore tech entrepreneurship and help others learn.</p>
-      </header>
+        </header>
     </div>
     </ThemeProvider>
     );

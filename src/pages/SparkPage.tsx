@@ -59,11 +59,9 @@ specific skill sets.</p>
     <div className="page">
         <div className="techsparkTitle">See What People Are Saying</div>
         <div className="sparkGrid">
-            
         </div>
 
     </div>
-    <SignIn/>
     </div> 
       
         )

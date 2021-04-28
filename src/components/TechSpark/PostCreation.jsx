@@ -6,7 +6,7 @@ function PostCreation(props){
     return (
         <div className = "postCreationStyling">
                
-            <h1>Create a Post</h1>
+            <h1 className = "postCreationHeader">Create a Post</h1>
             <form id="postForm">
                 <input type="text" id="createPostTitle" placeholder = "Title..."/><br></br>
             </form>

@@ -1,6 +1,7 @@
 .postCreationStyling{
     display: block;
-    width: 500px;
+    max-width: 500px;
+    width: 90%;
     height: 430px;
     border-radius: 25px;
     background-color: #282c34;;
@@ -12,13 +13,21 @@
     font-family: 'Inter', Tahoma, sans-serif;  
 }
 
+.postCreationHeader{  
+    width: 100%;
+    text-align: center;
+}
+
+#postForm{
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
 input[id=createPostTitle]{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;  
-    width: 350px;
+    margin-left: 10%;
+    margin-right: 10%;  
+    width: 80%;
     padding: 12px;
-    margin: 12px;
     border: 1px solid #ccc;
     border-radius: 12px;
     box-sizing: border-box;
@@ -34,7 +43,6 @@ input[id=postSubmit]{
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    margin: 12px;
     margin-left: auto;
     margin-right: auto;    
 }
@@ -42,11 +50,12 @@ input[id=postSubmit]{
 .postTextArea{
     display: block;
     font-family: 'Inter', Tahoma, sans-serif;
-    width: 350px;
+    margin-left: 10%;
+    margin-right: 10%; 
+    margin-top: 12px;
+    margin-bottom: 12px; 
+    width: 80%;
     padding: 12px;
-    margin: 12px;
-    margin-left: auto;
-    margin-right: auto;
     border: 1px solid #ccc;
     border-radius: 12px;
     box-sizing: border-box;

@@ -7,6 +7,7 @@ import sponsorLogoHunterHub from "images/sponsor-logo-hunter-hub.png";
 import sponsorLogoArcurve from "images/sponsor-logo-arcurve.png";
 // CSS
 import "./HomePage.css";
+
 // React Components
 import FeaturedProject from "components/FeaturedProject";
 import FeaturedSection from "components/FeaturedSection";
@@ -15,6 +16,7 @@ import TeamSection from "components/TeamSection/TeamSection";
 import NumberStat from "components/NumberStat";
 import Divider from "components/Divider";
 import Particle from "components/Particles";
+import { Link, animateScroll as scroll } from "react-scroll";
 
 
 function HomePage() {
@@ -70,8 +72,8 @@ function HomePage() {
         left:cursorX +'px',
         top:cursorY+'px'
       }}></div> */}
-       <div id="mouseChange">
-      <header className="homePage__hero" ><Particle />
+       
+      <header className="homePage__hero" id="section1"><div className="ParticlesCSS"><Particle /></div>
       
 
       
@@ -85,10 +87,10 @@ function HomePage() {
           <p className="homePage__headerSubtitle">
             a tech club for dreamers and doers 
           </p>
-        </div>
+          </div>
         
       </header>
-      </div>
+      
       <section className="homePage__aboutUs">
         
       

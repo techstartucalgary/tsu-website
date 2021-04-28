@@ -9,9 +9,6 @@ import ApplySection from "components/ApplySection";
 import ApplyFAQSection from "components/ApplyFAQSection";
 import Accordion from "../components/Apply/Accordion";
 
-//import AOS from "../../node_modules/aos";
-//import "aos/dist/aos.css";
-
 function ApplyPage() {
   const [active, setActive] = useState("");
   return (

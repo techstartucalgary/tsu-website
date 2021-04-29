@@ -23,10 +23,11 @@ function Header (props: any){
      </ul>
      
  </nav>
- <label htmlFor="navbar__nav-toggle" className="navbar__nav-toggle-label">
-     <span></span>
-     
+ 
+    <label htmlFor= "navbar__nav-toggle" className="navbar__nav-toggle-label">
+        <span></span>
    </label>
+
 
 </header>  
 }

@@ -15,12 +15,12 @@ function DocsPage(){
       
   return (
     <ThemeProvider theme = { theme === 'light' ? lightTheme : darkTheme}>
-      <div className="docsPage__margin"></div>
+      
     <div className="docsPage">
       
       <header className="docsPage__header">
       <GlobalStyles />
-      <div className="docsPage__sections">
+      <div className="docsPage__sections" id="section2">
       <span className = "switch">
       <span className="switch1"> <span style={ theme === 'light' ? {color:'#ffc045'} : {color:'grey'}}>☀</span></span>
       <div className="switch2"> <span style={ theme === 'light' ? {color:'grey'} : {color:'white'}}>☾</span></div>

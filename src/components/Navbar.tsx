@@ -20,7 +20,14 @@ function Header(props: any) {
     offset={0}
     duration={500}
 > About</Link></a> </li>
-                    <li> <a href="#"><Link to="/docs" >Docs</Link></a> </li>
+                    <li> <a href="#"><Link
+    activeClass="active"
+    to="section2"
+    spy={true}
+    smooth={true}
+    offset={0}
+    duration={500}
+> Docs</Link></a> </li>
                     <li> <a href="#"><Link to="/" >Projects</Link></a> </li>
                     <li> <a href="#"><Link to="/" >Get Involved</Link></a> </li>
                     <li> <a href="#"><Link to="/" >Resources</Link></a> </li>

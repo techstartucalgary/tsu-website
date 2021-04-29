@@ -17,9 +17,9 @@
   margin-right: auto;
 }
 
-.docsPage__sections:nth-child(1) {
+/*.docsPage__sections:nth-child(1) {
   height: 700px;
-}
+}*/
 
 .docsPage__h1 {
   text-align: left;
@@ -41,10 +41,6 @@
   padding: 35px 0;
   display: flex;
   margin: auto;
-}
-
-.docsPage__margin {
-  height: 90px;
 }
 
 .docsPage__header2 ul li {
@@ -148,6 +144,8 @@
   opacity: 1;
   transform: translateY(40px);
   transition: 0.5s ease-in-out;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .docsPage__h4.active {
@@ -279,7 +277,7 @@
   padding-left: 0;
   width: 200px;
 
-  right: 0%;
+  right: 5%;
   transform-origin: 200px;
 }
 
@@ -287,7 +285,7 @@
   display: inline-block;
   position: absolute;
   font-size: 35px;
-  top: 2px;
+  top: 1.8px;
   height: 21px;
   left: 82%;
 }
@@ -297,8 +295,8 @@
   position: absolute;
   font-size: 35px;
   height: 20px;
-  left: 35%;
-  top: 8px;
+  left: 35.4%;
+  top: 7.5px;
 }
 
 .switch__label {

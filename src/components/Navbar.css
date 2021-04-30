@@ -1,27 +1,7 @@
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
+.navbar__placeholder {
+  content: "";
+  height: 83.6px;
 }
-
-/* body {
-    margin: -2px;
-    font-family: 'Inter', Tahoma, sans-serif;
-    font-weight : 300;
-    background: linear-gradient(to bottom, #282c34  5%, #07080A 100%);
-} */
-
-/* .content{
-    height: 200vh;
-    color: white;
-    background: linear-gradient(to bottom, #282c34  5%, #07080A 100%);
-    display: grid;
-    place-items: center;
-
-} */
-
-/* Nav features */
-/* @media (m-width: 0px) and (max-width: 700px){ */
 
 .navbar {
   /* background:#07080A; */

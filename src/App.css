@@ -14,6 +14,7 @@
     font-size: var(--chonky-header-size);
     font-weight: var(--chonky-header-weight);
     color: var(--primary-black);
+    text-align: center;
 }
 
 .chonkyHeading--white{

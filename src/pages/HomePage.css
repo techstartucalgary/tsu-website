@@ -1,3 +1,11 @@
+body {
+  overflow-x: hidden;
+}
+
+.homePage > * {
+  position: relative;
+}
+
 .homePage__ourSections {
   background-color: rgb(12, 12, 12);
 }
@@ -238,17 +246,8 @@
 /*** Sponsor section ***/
 
 .homePage__ourSponsors {
-  background-image: linear-gradient(rgba(12, 12, 12, 1), rgb(1, 115, 95));
-}
-
-#homePage__sponsorPackage {
-  text-decoration: none;
-  font-size: clamp(1rem, calc(3vw+1rem), 1.5rem);
-  max-width: 90%;
-  display: inline-block;
-  color: white;
-  transform: scale(1);
-  transition: color 250ms linear, transform 250ms ease-in-out;
+  /*background-image: linear-gradient(rgba(12, 12, 12, 1), rgb(1, 115, 95));*/
+  background-color: white;
 }
 
 #homePage__sponsorPackage:hover,
@@ -256,3 +255,4 @@
   color: var(--primary-green);
   transform: scale(1.2);
 }
+/*maybe delete this rule*/

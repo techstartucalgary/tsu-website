@@ -9,21 +9,24 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 const Profile = props => {
 
     const ProfileClasses = ["ProfileDiv"];
-    // if (props.hoverAndClick) ProfileClasses.push("ProfileDiv--HoverAndClick");
     ProfileClasses.push(props.class);
 
     const LinkSectionClasses = ["LinksSection"];
-    if (props.hovered) { LinkSectionClasses.push("LinkSection--Hover") };
-    if (props.col < 7) { LinkSectionClasses.push("LinkSection--Translate--Small") }
+    if (props.clicked) LinkSectionClasses.push("LinkSection--Click");
+    if (props.col < 7) LinkSectionClasses.push("LinkSection--Translate--Small");
+
+    const preventDragHandler = (e) => e.preventDefault();
 
     return (
         <div className={ProfileClasses.join(' ')} >
-            <div className="ProfileIconDiv" onMouseEnter={props.hover} onMouseLeave={props.leave} /*onClick={props.click}*/>
+            <div className="ProfileIconDiv">
                 <img
                     className="ProfileIcon"
                     src={props.profilePic}
                     key={props.key}
-                    alt={props.alt} />
+                    alt={props.alt}
+                    onClick={props.toggleClick}
+                    onDragStart={preventDragHandler} />
 
                 <div className={LinkSectionClasses.join(' ')} >
                     {props.member.linkedin.trim() !== "" &&
@@ -40,10 +43,7 @@ const Profile = props => {
                         link={props.member.email} />
                 </div>
             </div>
-
-            <ProfileDescription
-                member={props.member}
-            />
+            <ProfileDescription member={props.member} />
         </div>
     );
 };

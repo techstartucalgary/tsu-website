@@ -20,60 +20,14 @@ import { Link, animateScroll as scroll } from "react-scroll";
 
 
 function HomePage() {
-  // const [cursorY, setCursorY] = useState()
-  // const [cursorX, setCursorX] = useState()
-  
-  // window.addEventListener("mousemove", (e:any) => {
-  // setCursorX(e.clientX);
-  // setCursorY(e.clientY);
-  // })
-  //   var mouse = document.getElementById("cursor");
-    
-  //   var center = document.getElementById("mouseChange");
-  //   var mouse2 = document.getElementById("cursor2");
-  //   var mouse3 = document.getElementById("cursor3");
-  
-  //   if (center != null ){
-  //   center.addEventListener('mouseover', () => 
-  //   mouse?.setAttribute("style", "display:none"))
 
-  //   center.addEventListener('mouseleave', () => 
-  //   mouse?.setAttribute("style", "opacity:1"))
-
-  //   center.addEventListener('mouseover', () => 
-  //   mouse2?.setAttribute("style", "display:none"))
-
-  //   center.addEventListener('mouseleave', () => 
-  //   mouse2?.setAttribute("style", "opacity:1"))
-
-  //   center.addEventListener('mouseover', () => 
-  //   mouse3?.setAttribute("style", "display:none", ))
-
-  //   center.addEventListener('mouseleave', () => 
-  //   mouse3?.setAttribute("style", "opacity:1"))
-  
-  //   }
 
 
   return (
     <div className="homePage">
-      {/* <div id="cursor"
-      style ={{
-        left:cursorX +'px',
-        top:cursorY+'px'
-      }}></div>
-      <div id="cursor2"
-      style ={{
-        left:cursorX +'px',
-        top:cursorY+'px'
-      }}></div>
-      <div id="cursor3"
-      style ={{
-        left:cursorX +'px',
-        top:cursorY+'px'
-      }}></div> */}
+      
        
-      <header className="homePage__hero" id="section1"><div className="ParticlesCSS"><Particle /></div>
+      <header className="homePage__hero" id="HomePageSection1"><div className="ParticlesCSS"><Particle /></div>
       
 
       

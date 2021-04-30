@@ -79,67 +79,6 @@
   line-height: 1.5;
 }
 
-@media (max-width: 700px) {
-  .cursor2 {
-    display: none;
-  }
-}
-
-@media (max-width: 700px) {
-  .cursor {
-    display: none;
-  }
-}
-
-@media (max-width: 700px) {
-  .cursor3 {
-    display: none;
-  }
-}
-
-#cursor {
-  position: fixed;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 50%;
-  background-color: rgb(44, 196, 30);
-  pointer-events: none;
-  mix-blend-mode: lighten;
-  z-index: 0;
-
-  transform: translate(-50%, -50%);
-  transition: ease;
-  display: block;
-}
-
-#cursor2 {
-  position: fixed;
-  width: 4rem;
-  height: 4rem;
-  border-radius: 50%;
-  background-color: rgb(44, 196, 30);
-  pointer-events: none;
-  mix-blend-mode: lighten;
-  z-index: 0;
-  overflow: hidden;
-  transform: translate(-50%, -50%);
-
-  transition: 0.1s ease;
-}
-
-#cursor3 {
-  position: fixed;
-  width: 4.5rem;
-  height: 4.5rem;
-  border-radius: 50%;
-  background-color: rgb(44, 196, 30);
-  pointer-events: none;
-  mix-blend-mode: lighten;
-  z-index: 0;
-  overflow: hidden;
-  transform: translate(-50%, -50%);
-  transition: 0.24s ease;
-}
 .homePage img {
   max-width: 100%;
   display: block;

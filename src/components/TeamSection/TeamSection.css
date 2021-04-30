@@ -1,5 +1,17 @@
 .TeamSection {
-    margin: 10%;
-    width: 80%;
-    transform: translateY(10%);
+    margin: 0px 50px;
+    width: auto;
+}
+
+.applyLinkDiv {
+    transition: 0.4s ease-in-out;
+}
+
+.applyLink {
+    text-decoration: none;
+    color: var(--primary-green);
+}
+
+.applyLinkDiv:hover {
+    transform: scale(1.1);
 }

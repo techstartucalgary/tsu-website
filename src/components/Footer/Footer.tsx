@@ -1,6 +1,8 @@
-import './Footer.css'
+import './Footer.css';
+import '../../App.css';
 import SocialMedia from '../SocialMedia/SocialMedia';
-import SubscribeButton from './SubscribeButton/SubscribeButton';
+import HoverButton from '../HoverButton/HoverButton';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import {
     faFacebook,
@@ -9,9 +11,13 @@ import {
     faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 
+import { faCopyright } from '@fortawesome/free-solid-svg-icons'
+
 const Footer = () => (
     <div className="Footer">
-        <p className="Copyright">UofC TechStart 2021</p>
+
+        <HoverButton link="http://eepurl.com/hnusUP" text="Join our mailing list!" />
+
         <div className="SocialMediaSection">
             <SocialMedia
                 footer={true}
@@ -33,7 +39,7 @@ const Footer = () => (
                 icon={faLinkedin}
                 link="https://www.linkedin.com/company/tech-start-ucalgary" />
         </div>
-        <SubscribeButton />
+        <p className="Copyright"><FontAwesomeIcon icon={faCopyright} /> {new Date().getFullYear()} Tech Start UCalgary</p>
     </div>
 );
 

@@ -2,11 +2,75 @@
     /* CSS Variables with global scope */
     --primary-green: #99E755;
     --primary-black: #282A36;
-    --secondary-grey: rgba(34, 34, 34, .85);
+    --secondary-grey: rgba(34, 34, 34, 0.95);
     --chonky-header-size: 4.75rem;
+    --thicc-subheading-size: 2.5rem;
     --chonky-header-weight: 900;
     --regular-font: 1rem;
     font-family: "Inter", Tahoma, sans-serif;
+}
+
+.chonkyHeading{
+    font-size: var(--chonky-header-size);
+    font-weight: var(--chonky-header-weight);
+    color: var(--primary-black);
+    text-align: center;
+}
+
+.chonkyHeading--white{
+    color: white;
+}
+
+.chonkyHeading--green{
+    color: var(--primary-green);
+}
+
+
+.thiccSubheading{
+    font-size: var(--thicc-subheading-size);
+    color: var(--primary-black);
+    font-weight: 800;
+    margin-block-start: 13px;
+    margin-block-end: 13px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.thiccSubheading--white{
+    color: white;
+}
+.thiccSubheading--green{
+    color: var(--primary-green);
+}
+
+
+.babyHeading{
+    color: var(--primary-black);
+    font-weight: 800;
+    font-size: 1.6rem;
+    margin-block-start: 8px;
+    margin-block-end: 8px;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+.babyHeading--white{
+    color: white;
+}
+
+.babyHeading--grey{
+    color: var(--secondary-grey);
+}
+
+.regularText{
+    text-align: left;
+    color: var(--secondary-grey);
+    font-size: var(--regular-font);
+    margin: 20px 5px;
+}
+
+.regularText--white{
+    color: white;
 }
 
 
@@ -15,6 +79,7 @@
     :root{
         --regular-font: 14px;
         --chonky-header-size: 3.2rem;
+        --thicc-subheading-size: 2.1rem;
     }
 }
 

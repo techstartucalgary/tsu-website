@@ -1,0 +1,78 @@
+.applyPage__gallery {
+  max-width: 80%;
+  height: 55vh;
+  overflow: hidden;
+  margin: auto;
+  margin-top: 45px;
+}
+@media (max-height: 600px) {
+  .applyPage__gallery {
+    height: max-content;
+  }
+}
+.applyPage__galleryNavigation {
+  position: relative;
+  bottom: 30px;
+  display: flex;
+  justify-content: center;
+}
+.applyPage__galleryNavigationBar {
+  width: 50px;
+  height: 10px;
+  border: 2px solid var(--primary-green, rgb(106, 235, 80));
+  margin: 6px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.applyPage__galleryNavigationBar:hover {
+  background: var(--primary-green, rgb(106, 235, 80));
+}
+
+input[name="r"] {
+  /*moves input to the applyPage__galleryNavigationBars*/
+  position: absolute;
+  visibility: hidden;
+}
+
+.applyPage__galleryapplyPage__gallerySlides {
+  width: 500%;
+  height: 100%;
+  display: flex;
+}
+
+.applyPage__gallerySlide {
+  width: 20%;
+  transition: 0.6s;
+  display: flex;
+}
+
+.applyPage__gallerySlide img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  margin: auto;
+  margin-bottom: 0;
+  bottom: 0;
+}
+
+#r1:checked ~ .show {
+  margin-left: 0%;
+}
+
+#r2:checked ~ .show {
+  margin-left: -20%;
+}
+
+#r3:checked ~ .show {
+  margin-left: -40%;
+}
+
+#r4:checked ~ .show {
+  margin-left: -60%;
+}
+
+#r5:checked ~ .show {
+  margin-left: -80%;
+}
+

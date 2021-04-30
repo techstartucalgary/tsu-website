@@ -2,17 +2,16 @@
 import tsu_logo from "images/tech-start-logo-white.png";
 import temp from "images/temp.jpg";
 import temp1 from "images/temp.png";
-import sponsorLogoHunterHub from "images/sponsor-logo-hunter-hub.png";
-import sponsorLogoArcurve from "images/sponsor-logo-arcurve.png";
 // CSS
 import "./HomePage.css";
 // React Components
 import FeaturedProject from "components/FeaturedProject";
 import FeaturedSection from "components/FeaturedSection";
-import SponsorLogo from "components/SponsorLogo";
 import TeamSection from "components/TeamSection/TeamSection";
 import NumberStat from "components/NumberStat";
 import Divider from "components/Divider";
+import SponsorSection from "components/SponsorSection/SponsorSection";
+import Blobbie from "components/Blobbie";
 
 function HomePage() {
 
@@ -22,22 +21,24 @@ function HomePage() {
         <div>
           <img className="homePage__logo" src={tsu_logo}></img>
           <p className="homePage__headerSubtitle">
-            a tech club for dreamers and doers 
+            a tech club for dreamers and doers
           </p>
         </div>
       </header>
 
       <section className="homePage__aboutUs">
+        <Blobbie id={8} width={400} transform="translate(-70%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
+        <Blobbie id={2} width={100} transform="translate(clamp(20vw, calc(5vw + 1rem), 40vw), -80%)" edge={false} />
         <div className="homePage__container">
-          <h1 className="homePage__sectionHeader homePage__sectionHeader-dark">We're the innovators on campus.</h1>
+          <h1 className="chonkyHeading">We're the innovators on campus.</h1>
           <Divider />
-          <p className="homePage__text">
+          <p className="regularText">
             We're a software club at the University of Calgary. Through multidisciplinary teams, we take on interesting problems and use technology to solve them.
             Every semester, our teams combine software, design, and strategy to complete awesome projects.
           </p>
-          <p className="homePage__text">
+          <p className="regularText">
             At Tech Start, our members learn new technologies, gain experience with professional development tools and methodologies, and master the art of collaboration.
-            We're also the top spot on campus to meet fellow tech enthusiasts, aspiring entrepreneurs, and innovators. 
+            We're also the top spot on campus to meet fellow tech enthusiasts, aspiring entrepreneurs, and innovators.
           </p>
           {/* <a
             href="https://linktr.ee/techstartuofc"
@@ -45,6 +46,7 @@ function HomePage() {
           >
             <button className="homePage__btn">Visit our Linktree</button>
           </a> */}
+          <Blobbie id={2} width={300} transform="translate(80vw, -30%)" edge={true} />
           <div className="homePage__numberContainer">
             <NumberStat number= {4}  stat="projects so far"/>
             <NumberStat number= {32} stat="members so far"/>
@@ -110,22 +112,17 @@ function HomePage() {
       </section>
 
       <section className="homePage__ourSponsors">
-        <div className="homePage__container">
-          <h2 className="homePage__containerTitle">Sponsors</h2>
-          <div className="homePage__split">
-            <SponsorLogo sponsorLink="https://www.arcurve.com/" sponsorImage={sponsorLogoArcurve} />
-            <SponsorLogo sponsorLink="https://www.ucalgary.ca/hunter-hub" sponsorImage={sponsorLogoHunterHub} />
-          </div>
-          <div>
-            <a href="#" id="homePage__sponsorPackage">
-              Interested in sponsoring us? Check out our sponsorship package.
-            </a>
-          </div>
-        </div>
+        <Blobbie id={9} width={800} transform="translate(-80%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
+        <Blobbie id={2} width={150} transform="translate(75vw, -60%)" edge={false} />
+        <Blobbie id={2} width={75} transform="translate(85vw, 0%)" edge={false} />
+        <SponsorSection />
       </section>
 
-      <TeamSection />
-
+      <section>
+        <Blobbie id={12} width={300} transform="translate(93vw, -30%)" edge={true} />
+        <Blobbie id={8} width={200} transform="translate(-10vw, 10vw)" edge={true} />
+        <TeamSection />
+      </section>
     </div>
   );
 }

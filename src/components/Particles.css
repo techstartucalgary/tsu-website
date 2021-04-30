@@ -1,0 +1,17 @@
+.particle_container {
+  z-index: 1;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  object-fit: none;
+}
+
+.ParticlesCSS {
+  width: 100%;
+  min-height: 100% !important;
+  object-fit: none;
+  background-size: contain;
+  background-size: auto auto;
+  overflow: hidden;
+}

@@ -12,7 +12,8 @@ body {
 
 @supports (background-blend-mode: multiply) {
   .homePage__ourSections {
-    background: url(../images/temp.jpg), radial-gradient(rgba(75, 73, 73, 0.5), rgba(41, 41, 41, 0.5));
+    background: url(../images/temp.jpg),
+      radial-gradient(rgba(75, 73, 73, 0.5), rgba(41, 41, 41, 0.5));
     background-size: cover;
     background-blend-mode: multiply;
     background-attachment: fixed;
@@ -21,7 +22,64 @@ body {
   }
 }
 
-.homePage, .homePage::before, .homePage::after {
+.homePage__applyButtonBox {
+  position: relative;
+  height: 50px;
+  justify-content: center;
+
+  display: flex;
+}
+
+.homePage__applyButton {
+  position: relative;
+  height: 65px;
+  width: 290px;
+  color: rgb(241, 244, 247);
+  background-color: rgb(6, 7, 6);
+  border-radius: 10px;
+  margin-top: 40px;
+  display: flex;
+  transition: transform 250ms ease-in-out;
+  /* transition: width 250ms ease-in-out, height 250ms ease-in-out, font-size 250ms ease-in-out, opacity 250ms linear; */
+  padding-left: 2px;
+  padding-right: 6px;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 3px;
+  padding-top: 10px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+}
+
+.homePage__applyButton:hover {
+  transform: scale(1.1);
+}
+
+.homePage__applyButtonArrow {
+  margin-left: 10px;
+  width: 20px;
+  animation: applyButtonArrow 1.4s ease-in-out infinite;
+  padding-top: 8px;
+}
+
+@keyframes applyButtonArrow {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+.homePage__applyButtonText {
+  padding-top: 8px;
+  margin-left: 30px;
+  font-family: "Consolas", monaco, monospace;
+}
+
+.homePage,
+.homePage::before,
+.homePage::after {
   box-sizing: border-box;
   border: none;
   margin: 0;
@@ -53,7 +111,7 @@ body {
   justify-content: center;
 }
 
-.homePage__split>* {
+.homePage__split > * {
   flex-basis: 30%;
   min-width: 10em;
 }
@@ -85,7 +143,7 @@ body {
   max-height: 100%; */
 }
 
-@media(max-width: 400px) {
+@media (max-width: 400px) {
   .homePage__btn {
     max-width: 180px;
     padding: 8px 12px;
@@ -107,6 +165,8 @@ body {
   font-size: 3rem;
   font-size: clamp(0.8rem, calc(5vw + 1rem), 4.5rem);
   color: white;
+  z-index: 3;
+  pointer-events: none;
   /*adjust size to window*/
   line-height: 1.1;
   font-weight: 700;
@@ -126,13 +186,15 @@ body {
 .homePage__hero {
   text-align: center;
   padding: 15vh 0;
-  background-image: fixed url("../images/blackbg2.jpg"), llinear-gradient(rgb(0, 0, 0), rgb(1, 115, 68));
-
+  background-image: fixed url("../images/blackbg2.jpg"),
+    llinear-gradient(rgb(0, 0, 0), rgb(1, 115, 68));
+  position: relative;
 }
 
 @supports (background-blend-mode: multiply) {
   .homePage__hero {
-    background: fixed url("../images/blackbg2.jpg"), radial-gradient(rgb(75, 73, 73), rgb(61, 55, 55));
+    background: fixed url("../images/blackbg2.jpg"),
+      radial-gradient(rgb(75, 73, 73), rgb(61, 55, 55));
     background-size: cover;
     background-blend-mode: multiply;
     background-attachment: fixed;
@@ -141,7 +203,13 @@ body {
   }
 }
 
-.homePage__logo{
+.homePage__logoContainer {
+  z-index: 3;
+  position: relative;
+  pointer-events: none;
+}
+
+.homePage__logo {
   width: 85%;
   max-width: 800px !important;
   margin-top: 50px;
@@ -156,15 +224,15 @@ body {
   text-align: center;
 }
 
-.homePage__numberContainer{
+.homePage__numberContainer {
   margin-top: 75px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   column-gap: 30px;
 }
 
-@media(max-width: 750px){
-  .homePage__numberContainer{
+@media (max-width: 750px) {
+  .homePage__numberContainer {
     grid-template-columns: 1fr;
     margin-top: 30px;
   }
@@ -181,3 +249,10 @@ body {
   /*background-image: linear-gradient(rgba(12, 12, 12, 1), rgb(1, 115, 95));*/
   background-color: white;
 }
+
+#homePage__sponsorPackage:hover,
+#homePage__sponsorPackage:hover {
+  color: var(--primary-green);
+  transform: scale(1.2);
+}
+/*maybe delete this rule*/

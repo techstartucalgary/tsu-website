@@ -142,9 +142,9 @@ function HomePage() {
         <SponsorSection />
       </section>
 
-      <section>
+      <section className="homepage__teamSection">
         <Blobbie id={12} width={300} transform="translate(93vw, -30%)" edge={true} />
-        <Blobbie id={8} width={200} transform="translate(-10vw, 10vw)" edge={true} />
+        <Blobbie id={8} width={200} transform="translate(-10vw, 10vw)" edge={false} />
         <TeamSection />
       </section>
     </div>

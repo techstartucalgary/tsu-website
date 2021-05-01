@@ -1,0 +1,108 @@
+.registerLogo{
+    height: 70px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.registerStyling{
+    color: white;
+    font-size: medium;
+}
+
+.registerIntro{
+    margin-left: auto;
+    text-align: center;
+}
+
+.registerHeading{
+    margin-top: 8px;
+    text-align: center; 
+    color: white;
+}
+
+.registerForm{
+    font-size: larger;
+}
+
+.logInLink{
+    float: left;
+    font-weight: normal;
+    margin: 12px;
+    margin-left: 10%;
+}
+
+.registerDiv{
+    position:relative;
+    width: 80%;
+    padding: 10px;
+    margin: 12px auto;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: grey;
+    border-radius: 12px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
+
+.loginSwitch{
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    float: right;
+    margin: 12px;
+    margin-right: 10%;
+    vertical-align: middle;
+}
+
+.switchToLogin{
+    margin-top: 12px;
+}
+
+input[id=registerName], input[id=registerEmail], 
+input[id=registerPassword]{
+    width: 70%;
+    padding: 12px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: grey;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: none;
+}
+
+input[id=registerSubmit]{
+    width: 42%;
+    margin-left: 29%;
+    margin-right: 29%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #99e755;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;    
+    text-align: center;
+    
+}
+
+@media (max-width: 475px){
+    .switchToLogin{
+        display: block;
+    }
+    .loginSwitch{
+        float: none;
+        margin-left: 10%;
+    }
+    .logInLink{
+        float: none;
+        margin-bottom: 0px;
+    }
+    input[id=registerSubmit]{
+        width: 42%;
+        margin-left: 29%;
+        margin-right: 29%;
+    }
+}

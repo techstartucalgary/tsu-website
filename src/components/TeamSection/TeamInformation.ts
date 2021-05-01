@@ -27,7 +27,7 @@ executiveTeam = [
 
 projectManagers = [
     { id: 7, name: "Daniel Rashidian", project: "Resume Tracker", image: member_7, linkedin: "https://www.linkedin.com/in/armeen-rashidian-b12080195/", email: "mailto:armeenrn@gmail.com" },
-    { id: 9, name: "Darryl Huët", project: "Supply Me", image: member_9, linkedin: "", email: "mailto:darryl.huet1@ucalgary.ca" },
+    { id: 9, name: "Darryl Huët", project: "Supply Me", image: member_9, linkedin: "https://www.linkedin.com/in/darrylhuet/", email: "mailto:darryl.huet1@ucalgary.ca" },
     { id: 8, name: "Felix Vaughan", project: "Social Media Hub", image: member_8, linkedin: "", email: "mailto:ezamabusiness@gmail.com" },
     { id: 0, name: "Joel Happ", project: "Tech Start Website", image: member_0, linkedin: "https://www.linkedin.com/in/joel-happ/", email: "mailto:joel.happ1@ucalgary.ca" },
 ];

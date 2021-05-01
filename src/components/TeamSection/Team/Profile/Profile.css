@@ -25,7 +25,6 @@
 .ProfileIcon:hover {
     filter: brightness(70%);
     transition: 0.4s ease-in-out;
-    cursor:pointer;
 }
 
 .LinksSection {
@@ -45,10 +44,14 @@
     transform:translateY(-8vw);
 }
 
-.LinkSection--Click {
+.LinkSection--Hover, .LinkSection--CarouselView {
     visibility:visible;
     opacity:1;
-    transition: 0.4s ease-in-out;
+}
+
+.LinkSection--CarouselView {
+    transform:translateY(1vw) !important;
+
 }
 
 @media (max-width:750px){

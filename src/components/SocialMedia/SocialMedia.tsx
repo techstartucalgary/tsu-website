@@ -1,4 +1,3 @@
-import React from "react";
 import './SocialMedia.css';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -6,6 +5,8 @@ const SocialMedia = (props: any) => {
     const SocialMediaClasses = ["SocialMediaIcon"];
     if (props.footer) SocialMediaClasses.push("SocialMediaIcon-FooterColor");
     else SocialMediaClasses.push("SocialMediaIcon-DefaultColor");
+    if (props.noHoverColor) SocialMediaClasses.push("SocialMediaIcon--NoHovorColor")
+
     return (
         <a
             onClick={props.linkClicked}

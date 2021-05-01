@@ -185,7 +185,10 @@ body {
 
 .homePage__hero {
   text-align: center;
-  padding: 15vh 0;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
   background-image: fixed url("../images/blackbg2.jpg"),
     llinear-gradient(rgb(0, 0, 0), rgb(1, 115, 68));
   position: relative;

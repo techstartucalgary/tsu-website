@@ -5,29 +5,9 @@ import './Team.css';
 
 const Team = props => {
 
-    const [containerState, setContainerState] = useState({
+    const [containerState] = useState({
         members: props.teamMembers // array of objects
     });
-
-    /**
-     * Finds profile icon with matching id supplied by the parameter and
-     * toggles its clicked state.
-     * 
-     * @param {integer} id 
-     */
-    const toggleClick = (id) => {
-        const iconIndex = containerState.members.findIndex(m => {
-            return m.id === id;
-        });
-
-        const member = { ...containerState.members[iconIndex] };
-        let toggledValue = !member.clicked;
-        member.clicked = toggledValue;
-
-        const members = [...containerState.members];
-        members[iconIndex] = member;
-        setContainerState({ members: members });
-    }
 
     /**
      * The following if conditions are for setting the layout of the team section
@@ -50,13 +30,8 @@ const Team = props => {
                                 member={member}
                                 class={`Profile--${containerState.members.length}`}
                                 col={containerState.members.length}
-
                                 profilePic={member.image}
                                 alt={[`member_${i}`]}
-
-                                toggleClick={() => toggleClick(member.id)}
-                                clicked={member.clicked}
-                                linkClicked={() => toggleClick(member.id)}
                             />
                         );
                     })
@@ -71,13 +46,10 @@ const Team = props => {
                         member={member}
                         class={`Profile-${containerState.members.length}`}
                         col={containerState.members.length}
+                        carouselView={true}
 
                         profilePic={member.image}
                         alt={[`member_${i}`]}
-
-                        toggleClick={() => toggleClick(member.id)}
-                        clicked={member.clicked}
-                        linkClicked={() => toggleClick(member.id)}
                     />)}
             </Carousel>
     );

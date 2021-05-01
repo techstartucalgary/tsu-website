@@ -23,7 +23,7 @@ const TeamSection = () => {
 
     return (
         <div className="TeamSection" >
-            <h1 className={headers[0]}>Our Team</h1>
+            <h1 className="chonkyHeading">Our Team</h1>
             <Divider />
 
             <div className={headers[2]} style={{ "padding": "4em 0em", "textAlign": "center" }}>

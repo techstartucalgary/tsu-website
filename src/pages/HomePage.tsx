@@ -26,22 +26,14 @@ function HomePage() {
     <div className="homePage">
       
        
-      <header className="homePage__hero" id="HomePageSection1"><div className="ParticlesCSS"><Particle /></div>
-      
-
-      
-
-      
-    
-      
-        <div>
+      <header className="homePage__hero" id="HomePageSection1">
+        <Particle />
           <div className="homePage__logoContainer">
           <img className="homePage__logo" src={tsu_logo}></img></div>
           <p className="homePage__headerSubtitle">
             a tech club for dreamers and doers
           </p>
-          </div>
-        
+
       </header>
       
       <section className="homePage__aboutUs">

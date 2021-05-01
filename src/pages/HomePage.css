@@ -1,5 +1,10 @@
-body {
-  overflow-x: hidden;
+.homePage{
+  box-sizing: border-box;
+  overflow: hidden;
+  border: none;
+  margin: 0;
+  font-family: "Inter", Tahoma, sans-serif;
+  line-height: 1.5;
 }
 
 .homePage > * {
@@ -75,16 +80,6 @@ body {
   padding-top: 8px;
   margin-left: 30px;
   font-family: "Consolas", monaco, monospace;
-}
-
-.homePage,
-.homePage::before,
-.homePage::after {
-  box-sizing: border-box;
-  border: none;
-  margin: 0;
-  font-family: "Inter", Tahoma, sans-serif;
-  line-height: 1.5;
 }
 
 .homePage img {

@@ -1,5 +1,10 @@
-body {
-  overflow-x: hidden;
+.homePage{
+  box-sizing: border-box;
+  overflow: hidden;
+  border: none;
+  margin: 0;
+  font-family: "Inter", Tahoma, sans-serif;
+  line-height: 1.5;
 }
 
 .homePage > * {
@@ -75,16 +80,6 @@ body {
   padding-top: 8px;
   margin-left: 30px;
   font-family: "Consolas", monaco, monospace;
-}
-
-.homePage,
-.homePage::before,
-.homePage::after {
-  box-sizing: border-box;
-  border: none;
-  margin: 0;
-  font-family: "Inter", Tahoma, sans-serif;
-  line-height: 1.5;
 }
 
 .homePage img {
@@ -185,7 +180,10 @@ body {
 
 .homePage__hero {
   text-align: center;
-  padding: 15vh 0;
+  height: 100vh;
+  min-height: 600px;
+  display: flex;
+  flex-direction: column;
   background-image: fixed url("../images/blackbg2.jpg"),
     llinear-gradient(rgb(0, 0, 0), rgb(1, 115, 68));
   position: relative;

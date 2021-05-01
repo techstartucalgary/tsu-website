@@ -3,7 +3,7 @@ import Particles from 'react-particles-js';
 import "./Particles.css";
 
 function Particle() {
-  return (<div className="ParticlesCSS"><Particles
+  return (<Particles
     className="particle_container"
     
     params={{
@@ -62,7 +62,7 @@ function Particle() {
         },
         move: {
           enable: true,
-          speed: 6,
+          speed: 4.5,
           direction: "none",
           random: false,
           straight: false,
@@ -115,7 +115,7 @@ function Particle() {
         }
       },
       retina_detect: false
-      }}  /></div>)}
+      }}  />)}
       
 
-      export default Particle
+      export default Particle;

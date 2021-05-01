@@ -23,14 +23,14 @@
   left: -9999px;
 }
 
-.nav__nav-toggle-label {
-  position: fixed;
-  top: 0;
-  left: 0;
-  margin-right: 100px;
-  height: 100%;
+.navbar__nav-toggle-label {
+  position: absolute;
+  top: 32px;
+  left: 20px;
+  height: 25%;
   display: flex;
   align-items: center;
+
   cursor: pointer;
 }
 
@@ -38,28 +38,25 @@
 .navbar__nav-toggle-label span::before,
 .navbar__nav-toggle-label span::after {
   display: block;
-  background: white;
+  background: rgb(255, 255, 255);
   height: 3px;
-  width: 2em;
-  border-radius: 5px;
+  width: 35px;
+  border-radius: 6px;
   position: relative;
-  left: 20px;
-  top: -45px;
+  cursor: pointer;
 }
+
 .navbar__nav-toggle-label span::before,
 .navbar__nav-toggle-label span::after {
   content: "";
   position: absolute;
 }
 .navbar__nav-toggle-label span::before {
-  top: 7px;
-  bottom: 170px;
-  left: -0.2px;
+  bottom: 7px;
 }
 
 .navbar__nav-toggle-label span::after {
-  top: -6px;
-  left: -0.2px;
+  top: 7px;
 }
 
 .navbar__content {
@@ -71,6 +68,7 @@
   width: 100%;
   transform: scale(1, 0);
   transform-origin: top;
+  transition: transform ease-in-out;
 }
 
 .navbar__content ul {

@@ -63,11 +63,11 @@ function HomePage() {
             <NumberStat number={32} stat="members so far" />
             <NumberStat number={93} extra={"%"} stat="enjoyed their involvement" />
           </div>
-          <Link className="applyLink" to="/apply" ><div className="homePage__applyButtonBox">
+          <div className="homePage__applyButtonBox"><Link to="/apply" className="homePage__applyButtonLink" >
             <div className="homePage__applyButton">
               <div className="homePage__applyButtonArrow"> ˃˃ </div>
               <div className="homePage__applyButtonText"> theTeam.join()</div>
-            </div></div></Link>
+            </div></Link></div>
         </div>
       </section>
       <section className="homePage__featuredProjects">

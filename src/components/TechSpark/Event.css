@@ -1,27 +1,42 @@
-img{
+.eventImg{
     padding-top: 10px;
-    width: 100px;
-    height: 100px;
+    width: 75%;
+    height: 60%;
+    margin-left: 34px;
+    margin-right: auto;
 }
 
 .alignment{    
     text-align: left;
+    font-size: 16px;
     margin: 1px 10px;
-    color: black;
-}
-
-.styling{
-    width: 225px;
-    height: 225px;
-    border: solid #1B4332;
-    border-radius: 25px;
-    margin: 25px;
-    padding: 10px;
-    float: left;
-    background-color:#52B788;
+    color: white;
     
 }
 
-a:link, a:visited, a:hover, a:active{
+.styling{
+    width: 300px;
+    height: 250px;
+    border-radius: 25px;
+    background-color: #282A36;
+    padding: 10px;
+    float: left;
+    
+}
+
+.eventLink{
     text-decoration: none;
+}
+
+#eventTitle{
+    font-size: 18px;
+    text-align: left;
+    margin: 1px 10px;
+    color: white;
+    transition:all 0.4s ease-in-out;
+    
+}
+
+#eventTitle:hover{
+    font-size: 19px;
 }

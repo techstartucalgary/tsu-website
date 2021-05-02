@@ -50,4 +50,29 @@ padding: 10px;
     padding: 20px;
     padding-left: 80px;
     padding-right: 80px;
+   
+}
+.forumContainer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+    grid-auto-flow: dense;
+    grid-gap: 1em;
+    padding: 10px;
+}
+.forumThread{
+    background-color: rgb(241, 238, 238);
+    border: 1px solid rgb(0, 0, 0);
+    padding: 1em;
+    font-size: 18px;
+    text-align: left;
+}
+
+.techspark_about{
+    text-align: center;
+    font-family: 'Inter', Tahoma, sans-serif;
+    padding-bottom: 10px;
+}
+
+#first{
+    margin-top: 60px;
 }

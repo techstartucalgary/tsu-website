@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import './SparkPage.css';
+import axios from "axios";
 import PostButton from "components/TechSpark/postButton"
-import Event from "components/TechSpark/Event"
-import Post from 'components/TechSpark/post';
+import Event from '../components/TechSpark/Event'
+import Login from '../components/TechSpark/Login'
+import SignIn from '../components/TechSpark/SignIn'
+import PostCreation from '../components/TechSpark/PostCreation'
+import Register from '../components/TechSpark/Register'
+function Dashboard() {
 
-
-class Dashboard extends Component {
-    render() {
         return(
     <div className="sparkPage">
     <body>
@@ -41,6 +43,6 @@ class Dashboard extends Component {
       
         )
     }
-}
+
 
 export default Dashboard

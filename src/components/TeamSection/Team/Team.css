@@ -115,6 +115,23 @@
     margin-bottom: 50%;
 }
 
+/* Overriding CSS rules in react-elastic-carousel */
+
+button.rec-dot {
+    background-color: var(--primary-green);
+    box-shadow: v0 0 1px 2px var(--primary-black);
+}
+
+button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus {
+    background-color: var(--primary-green);
+    box-shadow: 0 0 1px 2px var(--primary-green)
+}
+
+.guuruq {
+    background-color: var(--primary-black) !important;
+}
+
+
 /* Source: https://stackoverflow.com/questions/826782/how-to-disable-text-selection-highlighting*/
 button.rec-dot, .rec.rec-arrow {
     -webkit-touch-callout: none; /* iOS Safari */

@@ -11,11 +11,13 @@ const Event = (props: any) => {
     return (
         <div className="event">
             {props.pastEvent &&
-                <img
-                    className="eventImg"
-                    src={props.event.image}
-                    key={props.event.key}
-                    onDragStart={preventDragHandler} />
+                <div className="eventImgDiv">
+                    <img
+                        className="eventImg"
+                        src={props.event.image}
+                        key={props.event.key}
+                        onDragStart={preventDragHandler} />
+                </div>
             }
 
             <div className="eventText">
@@ -23,8 +25,8 @@ const Event = (props: any) => {
                 <p className={fontClasses[1]}>{props.event.description}</p>
 
                 {!props.pastEvent &&
-                    <div>
-                        <p className={fontClasses[1]}>{props.event.date} | {props.event.time}</p>
+                    <div style={{ "height": "10vh" }}>
+                        <p style={{ "marginBottom": "3vh" }} className={fontClasses[1]}>{props.event.date} | {props.event.time}</p>
                         <HoverButton
                             darkMode={true}
                             text="Register"
@@ -35,11 +37,13 @@ const Event = (props: any) => {
             </div>
 
             {!props.pastEvent &&
-                <img
-                    className="eventImg"
-                    src={props.event.image}
-                    key={props.event.key}
-                    onDragStart={preventDragHandler} />
+                <div className="eventImgDiv">
+                    <img
+                        className="eventImg"
+                        src={props.event.image}
+                        key={props.event.key}
+                        onDragStart={preventDragHandler} />
+                </div>
             }
         </div>
     );

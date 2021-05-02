@@ -15,9 +15,9 @@ const TeamSection = () => {
     let headers = [];
     let defaultView = true;
     if (width > breakpoint)
-        headers = ["chonkyHeading", "thiccSubheading", "babyHeading"];
+        headers = ["chonkyHeading", "thiccSubheading", "regularText--larger"];
     else {
-        headers = ["thiccSubheading", "babyHeading", "regularText"];
+        headers = ["thiccSubheading", "babyHeading", ""];
         defaultView = false;
     }
 
@@ -26,7 +26,7 @@ const TeamSection = () => {
             <h1 className="chonkyHeading">Our Team</h1>
             <Divider />
 
-            <div className={headers[2]} style={{ "padding": "4em 0em", "textAlign": "center" }}>
+            <div className={"regularText " + headers[2]} style={{ "padding": "5px 0 24px", "textAlign": "center" }}>
                 <p>Tech Start is only possible thanks to our team of talented, passionate leaders. Interested in joining us?</p>
                 <div className="applyLinkDiv">
                     <Link className="applyLink" to="/apply" > Find out what it takes to apply!</Link>

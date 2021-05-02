@@ -73,6 +73,10 @@
     color: white;
 }
 
+.regularText--larger{
+    font-size: 18px;
+}
+
 
 @media(max-width: 535px) {
     

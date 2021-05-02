@@ -27,12 +27,20 @@
   }
 }
 
+
+
+/*** Apply Button ***/
+ 
 .homePage__applyButtonBox {
   position: relative;
   height: 50px;
   justify-content: center;
-
   display: flex;
+  text-decoration: none;
+}
+
+.homePage__applyButtonLink{
+  text-decoration: none;
 }
 
 .homePage__applyButton {
@@ -81,6 +89,11 @@
   margin-left: 30px;
   font-family: "Consolas", monaco, monospace;
 }
+
+
+
+
+
 
 .homePage img {
   max-width: 100%;

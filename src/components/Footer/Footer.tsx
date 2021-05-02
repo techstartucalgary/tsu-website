@@ -2,8 +2,6 @@ import './Footer.css';
 import '../../App.css';
 import SocialMedia from '../SocialMedia/SocialMedia';
 import HoverButton from '../HoverButton/HoverButton';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-
 import {
     faFacebook,
     faInstagram,
@@ -11,7 +9,6 @@ import {
     faLinkedin
 } from "@fortawesome/free-brands-svg-icons";
 
-import { faCopyright } from '@fortawesome/free-solid-svg-icons'
 
 const Footer = () => (
     <div className="Footer">
@@ -39,7 +36,7 @@ const Footer = () => (
                 icon={faLinkedin}
                 link="https://www.linkedin.com/company/tech-start-ucalgary" />
         </div>
-        <p className="Copyright"><FontAwesomeIcon icon={faCopyright} /> {new Date().getFullYear()} Tech Start UCalgary</p>
+        <p className="Copyright">© {new Date().getFullYear()} Tech Start UCalgary</p>
     </div>
 );
 

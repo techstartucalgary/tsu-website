@@ -32,9 +32,9 @@
 }
 
 .docsPage__header2 {
-  width: 90%;
+  width: 98%;
 
-  padding: 35px 0;
+  padding: 33px 0;
   display: flex;
   margin: auto;
 }
@@ -280,8 +280,8 @@
 .switch1 {
   display: inline-block;
   position: absolute;
-  font-size: 35px;
-  top: 1.8px;
+  font-size: 27px;
+  top: 7px;
   height: 21px;
   left: 82%;
 }
@@ -289,10 +289,10 @@
 .switch2 {
   display: inline-block;
   position: absolute;
-  font-size: 35px;
+  font-size: 30px;
   height: 20px;
-  left: 35.4%;
-  top: 7.5px;
+  left: 37%;
+  top: 10.5px;
 }
 
 .switch__label {

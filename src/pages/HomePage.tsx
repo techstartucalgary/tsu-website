@@ -13,14 +13,13 @@ import TeamSection from "components/TeamSection/TeamSection";
 import NumberStat from "components/NumberStat";
 import Divider from "components/Divider";
 import Particle from "components/Particles";
-import { Link, animateScroll as scroll } from "react-scroll";
-
-import EventsSection from 'components/EventsSection/EventsSection';
+import { Link } from "react-router-dom";
 import SponsorSection from "components/SponsorSection/SponsorSection";
 import Blobbie from "components/Blobbie";
 
 function HomePage() {
 
+  document.getElementById("draft")?.addEventListener("mouseover", NumberStat)
 
 
   return (
@@ -33,7 +32,7 @@ function HomePage() {
           <img className="homePage__logo" src={tsu_logo}></img></div>
         <p className="homePage__headerSubtitle">
           a tech club for dreamers and doers
-          </p>
+        </p>
 
       </header>
 
@@ -44,7 +43,7 @@ function HomePage() {
 
           <h1 className="chonkyHeading">We're the innovators on campus.</h1>
           <Divider />
-          <p className="regularText">
+          <p className="regularText" id="draft">
             We're a software club at the University of Calgary. Through multidisciplinary teams, we take on interesting problems and use technology to solve them.
             Every semester, our teams combine software, design, and strategy to complete awesome projects.
           </p>
@@ -64,16 +63,11 @@ function HomePage() {
             <NumberStat number={32} stat="members so far" />
             <NumberStat number={93} extra={"%"} stat="enjoyed their involvement" />
           </div>
-          <div className="homePage__applyButtonBox">
+          <div className="homePage__applyButtonBox"><Link to="/apply" className="homePage__applyButtonLink" >
             <div className="homePage__applyButton">
               <div className="homePage__applyButtonArrow"> ˃˃ </div>
               <div className="homePage__applyButtonText"> theTeam.join()</div>
-            </div></div>
-        </div>
-      </section>
-      <section className="homePage__eventsSection">
-        <div className="homePage__container">
-          <EventsSection />
+            </div></Link></div>
         </div>
       </section>
       <section className="homePage__featuredProjects">

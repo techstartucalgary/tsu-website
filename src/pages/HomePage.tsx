@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 // Images
 import tsu_logo from "images/tech-start-logo-white.png";
 import temp from "images/temp.jpg";
@@ -15,6 +15,7 @@ import Divider from "components/Divider";
 import Particle from "components/Particles";
 import { Link, animateScroll as scroll } from "react-scroll";
 
+import EventsSection from 'components/EventsSection/EventsSection';
 import SponsorSection from "components/SponsorSection/SponsorSection";
 import Blobbie from "components/Blobbie";
 
@@ -24,23 +25,23 @@ function HomePage() {
 
   return (
     <div className="homePage">
-      
-       
+
+
       <header className="homePage__hero" id="HomePageSection1">
         <Particle />
-          <div className="homePage__logoContainer">
+        <div className="homePage__logoContainer">
           <img className="homePage__logo" src={tsu_logo}></img></div>
-          <p className="homePage__headerSubtitle">
-            a tech club for dreamers and doers
+        <p className="homePage__headerSubtitle">
+          a tech club for dreamers and doers
           </p>
 
       </header>
-      
+
       <section className="homePage__aboutUs">
         <Blobbie id={8} width={400} transform="translate(-70%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
         <Blobbie id={2} width={100} transform="translate(clamp(20vw, calc(5vw + 1rem), 40vw), -80%)" edge={false} />
         <div className="homePage__container">
-        
+
           <h1 className="chonkyHeading">We're the innovators on campus.</h1>
           <Divider />
           <p className="regularText">
@@ -59,15 +60,20 @@ function HomePage() {
           </a> */}
           <Blobbie id={2} width={300} transform="translate(80vw, -30%)" edge={true} />
           <div className="homePage__numberContainer">
-            <NumberStat number={4} stat="projects so far"/>
-            <NumberStat number={32} stat="members so far"/>
-            <NumberStat number={93} extra={"%"} stat="enjoyed their involvement"/>
-            </div>
-            <div className="homePage__applyButtonBox">
+            <NumberStat number={4} stat="projects so far" />
+            <NumberStat number={32} stat="members so far" />
+            <NumberStat number={93} extra={"%"} stat="enjoyed their involvement" />
+          </div>
+          <div className="homePage__applyButtonBox">
             <div className="homePage__applyButton">
-          <div className="homePage__applyButtonArrow"> ˃˃ </div>
-          <div className="homePage__applyButtonText"> theTeam.join()</div>
-          </div></div>
+              <div className="homePage__applyButtonArrow"> ˃˃ </div>
+              <div className="homePage__applyButtonText"> theTeam.join()</div>
+            </div></div>
+        </div>
+      </section>
+      <section className="homePage__eventsSection">
+        <div className="homePage__container">
+          <EventsSection />
         </div>
       </section>
       <section className="homePage__featuredProjects">
@@ -141,6 +147,6 @@ function HomePage() {
       </section>
     </div>
   );
-        };
+};
 
 export default HomePage;

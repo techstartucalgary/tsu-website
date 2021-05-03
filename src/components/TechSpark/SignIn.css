@@ -38,8 +38,19 @@
 }
 
 
-@media (max-width: 480px){
+@media (max-width: 530px){
     .signInBackground--registerMode{
         height: 600px;
+    }
+}
+@media (max-width: 480px){
+    .signInBackground--registerMode{
+        height: 670px;
+    }
+}
+
+@media (max-width: 370px){
+    .signInBackground--registerMode{
+        height: 690px;
     }
 }

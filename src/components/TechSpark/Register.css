@@ -44,6 +44,37 @@
     resize: vertical;
 }
 
+.registerNameDiv{
+    width: 80%;
+    margin-left:10%;
+    margin-right: 10%;
+}
+
+.registerFirstNameInput{
+    float: left;
+    width: 49%;
+    padding: 10px;
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: grey;
+    border-radius: 12px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+.registerLastNameInput{
+    float: right;
+    width: 49%;
+    padding: 10px;
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: grey;
+    border-radius: 12px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
 
 .loginSwitch{
     color: white;
@@ -60,9 +91,9 @@
     margin-top: 12px;
 }
 
-input[id=registerName], input[id=registerEmail], 
+input[id=registerFirstName], input[id=registerLastName],input[id=registerEmail], 
 input[id=registerPassword]{
-    width: 70%;
+    width: 80%;
     padding: 12px;
     margin-left: 5px;
     border: 1px solid #ccc;
@@ -71,6 +102,7 @@ input[id=registerPassword]{
     border-radius: 12px;
     box-sizing: border-box;
     border: none;
+    outline: none;
 }
 
 input[id=registerSubmit]{
@@ -86,6 +118,19 @@ input[id=registerSubmit]{
     cursor: pointer;    
     text-align: center;
     
+}
+
+@media(max-width: 530px){
+    .registerNameDiv{
+        display: block;
+        
+    }
+    .registerFirstNameInput{
+        width: 100%;
+    }
+    .registerLastNameInput{
+        width: 100%;
+    }
 }
 
 @media (max-width: 475px){
@@ -105,4 +150,7 @@ input[id=registerSubmit]{
         margin-left: 29%;
         margin-right: 29%;
     }
+}
+#clear{
+    clear: both;
 }

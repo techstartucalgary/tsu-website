@@ -48,7 +48,7 @@ specific skill sets.</p>
           <Event 
                 name = "Event 2" 
                 date = "April 20th, 2021"
-               img = "https://picsum.photos/200" 
+                img = "https://picsum.photos/200" 
                 link = "https://www.ucalgary.ca/hunter-hub"
                 description = "Hunter Hub Conference"
                 />
@@ -62,6 +62,8 @@ specific skill sets.</p>
         </div>
 
     </div>
+    <SignIn/>
+    <PostCreation/>
     </div> 
       
         )

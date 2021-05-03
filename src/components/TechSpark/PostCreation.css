@@ -33,6 +33,7 @@ input[id=createPostTitle]{
     box-sizing: border-box;
     resize: vertical;
     font-size: large;
+    outline: none;
 }
 
 input[id=postSubmit]{
@@ -61,5 +62,5 @@ input[id=postSubmit]{
     box-sizing: border-box;
     resize: vertical;
     height: 200px;
-
+    outline: none;
 }

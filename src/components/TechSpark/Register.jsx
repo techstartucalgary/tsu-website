@@ -17,10 +17,18 @@ function Register(props){
             <p className = "registerIntro">Find people to connect with and post about your new projects
             and ideas as a TechStart Community Member.</p>
             <form className = "registerForm">
-                <div className = "registerDiv">
+            <div className="registerNameDiv">
+                <div className = "registerFirstNameInput">
                 <i class="fa fa-user icon">
                   </i>
-                    <input type="text" id="registerName" placeholder = "Name"/><br></br>
+                    <input type="text" id="registerFirstName" placeholder = "First Name"/>
+                </div>
+                <div className = "registerLastNameInput">
+                <i class="fa fa-user icon">
+                  </i>
+                    <input type="text" id="registerLastName" placeholder = "Last Name"/><br></br>
+                </div>
+                <div id="clear"/>
                 </div>
                 <div className = "registerDiv">
                     <i class="fa fa-envelope icon">

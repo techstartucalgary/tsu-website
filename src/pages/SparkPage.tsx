@@ -1,12 +1,14 @@
-import React, { Component } from 'react';
+import React, { Component, useEffect } from 'react';
 import './SparkPage.css';
+import axios from "axios";
+
 import Event from '../components/TechSpark/Event'
 import Login from '../components/TechSpark/Login'
 import SignIn from '../components/TechSpark/SignIn'
 import PostCreation from '../components/TechSpark/PostCreation'
 import Register from '../components/TechSpark/Register'
-class Dashboard extends Component {
-    render() {
+function Dashboard() {
+
         return(
     <div className="sparkPage">
     <body>
@@ -68,6 +70,6 @@ specific skill sets.</p>
       
         )
     }
-}
+
 
 export default Dashboard

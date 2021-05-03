@@ -8,8 +8,8 @@
 }
 
 .applyLink {
-    text-decoration: none;
     color: var(--primary-green);
+    font-style: italic;
 }
 
 .applyLinkDiv:hover {

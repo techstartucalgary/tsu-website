@@ -10,7 +10,7 @@
     font-family: "Inter", Tahoma, sans-serif;
 }
 
-.chonkyHeading{
+.chonkyHeading, .chonkyHeading--white, .chonkyHeading--green{
     font-size: var(--chonky-header-size);
     font-weight: var(--chonky-header-weight);
     color: var(--primary-black);
@@ -26,7 +26,7 @@
 }
 
 
-.thiccSubheading{
+.thiccSubheading, .thiccSubheading--white, .thiccSubheading--green{
     font-size: var(--thicc-subheading-size);
     color: var(--primary-black);
     font-weight: 800;
@@ -44,7 +44,7 @@
 }
 
 
-.babyHeading{
+.babyHeading, .babyHeading--white, .babyHeading--grey, .babyHeading--green{
     color: var(--primary-black);
     font-weight: 800;
     font-size: 1.6rem;
@@ -62,7 +62,11 @@
     color: var(--secondary-grey);
 }
 
-.regularText{
+.babyHeading--green{
+    color: var(--primary-green);
+}
+
+.regularText, .regularText--white{
     text-align: left;
     color: var(--secondary-grey);
     font-size: var(--regular-font);
@@ -71,6 +75,10 @@
 
 .regularText--white{
     color: white;
+}
+
+.regularText--larger{
+    font-size: 18px;
 }
 
 

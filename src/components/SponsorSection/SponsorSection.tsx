@@ -9,12 +9,9 @@ import './SponsorSection.css';
 
 const SponsorSection = () => {
 
-    const SponsorsHeaderClasses = ["SponsorsHeader"];
-    SponsorsHeaderClasses.push("chonkyHeading");
-
     return (
         <div className="homePage__container">
-            <h2 className={SponsorsHeaderClasses.join(' ')}>Sponsors</h2>
+            <h2 className={"chonkyHeading"}>Sponsors</h2>
 
             <div className="SponsorSection">
                 <SponsorLogo sponsorLink="https://www.arcurve.com/" sponsorImage={sponsorLogoArcurve} />

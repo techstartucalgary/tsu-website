@@ -62,7 +62,7 @@
 }
 
 
-input[id=username], input[id=password]{
+input[id=loginUsername], input[id=loginPassword]{
     width: 80%;
     padding: 10px;
     margin-left: 5px;

@@ -21,6 +21,7 @@
     "@types/react-fontawesome": "^1.6.4",
     "@types/react-router": "^5.1.11",
     "@types/react-router-dom": "^5.1.7",
+    "all": "0.0.0",
     "axios": "^0.21.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",

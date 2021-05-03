@@ -1,9 +1,26 @@
-.sparkGrid{
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-grid-auto-flow: dense;
-grid-gap: 1em;
-padding: 10px;
+.sparkOuterGrid{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: repeat(auto-fit);
+    gap: 10px;
+    min-width: fit-content;
+
+}
+.sparkInnerGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    grid-auto-flow: dense;
+    grid-gap: 1em;
+    padding: 10px;
+    min-width: max-content;
+}
+.sparkMenuGrid{
+    display: grid;
+    grid-template-columns: 1;
+    grid-auto-flow: dense;
+    grid-gap: 1em;
+    padding: 10px;
+    justify-items: center;
 }
 .sparkPage{
     font-family: 'Inter', Tahoma, sans-serif; 
@@ -37,6 +54,10 @@ padding: 10px;
     color : #282A36;
     background-color : #99E755; 
     border-radius: 10px; 
+}
+.sparkMenuContainer{
+    grid-row: span 2;
+    min-width: max-content;
 }
 .sparkNavbarSpacing{
     height: 83.6px;

@@ -16,6 +16,7 @@ import Particle from "components/Particles";
 import { Link } from "react-router-dom";
 import SponsorSection from "components/SponsorSection/SponsorSection";
 import Blobbie from "components/Blobbie";
+import EventsSection from "components/EventsSection/EventsSection";
 
 function HomePage() {
 
@@ -70,6 +71,14 @@ function HomePage() {
             </div></Link></div>
         </div>
       </section>
+
+      {/* <section> */}
+      {/* <div className="homePage__container"> */}
+      {/* <EventsSection /> */}
+
+      {/* </div> */}
+      {/* </section> */}
+
       <section className="homePage__featuredProjects">
         <div className="homePage__container">
           <h2 className="homePage__containerTitle">Featured projects</h2>

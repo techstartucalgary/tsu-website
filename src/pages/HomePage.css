@@ -266,3 +266,7 @@
   color: var(--primary-green);
   transform: scale(1.2);
 }
+
+.homePage__eventsSection {
+  background: linear-gradient(to bottom, white 20%, var(--primary-black) 70%);
+}

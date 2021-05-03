@@ -12,7 +12,7 @@
 }
 .applyPage__waves {
   position: absolute;
-  bottom: 9.5%;
+  top: 80vh;
   left: 0;
   width: 100%;
   height: 100px;
@@ -103,14 +103,14 @@
     rgb(89, 201, 209),
     var(--primary-green, rgb(106, 235, 80))
   );
-  height: 90vh;
+  height: 80vh;
 }
 
 .applyPage__primary-title {
   position: relative;
   float: left;
   left: 13%;
-  top: 30%;
+  top: 20%;
   font-size: clamp(1.4rem, calc(15vw + 1rem), 8rem);
 }
 .applyPage__showcase p {
@@ -120,7 +120,7 @@
   position: relative;
   float: left;
   left: 13%;
-  top: 30%;
+  top: 20%;
   text-align: left;
   font-size: clamp(18px, calc(1vw + 12px), 24px);
 }
@@ -132,28 +132,38 @@
 
 @media (max-height: 600px) {
   .applyPage__waves {
-    position: absolute;
-    bottom: calc(6.5% - 75px);
+    top: 80vh;
   }
   .applyPage__showcase {
-    height: calc(93vh + 75px);
+    height: 80vh;
   }
   .applyPage__primary-title,
   .applyPage__primary-description {
-    top: 25%;
+    top: 5vh;
   }
 }
 @media (max-height: 450px) {
-  .applyPage__waves {
-    position: absolute;
-    bottom: calc(4.5% - 175px);
+.applyPage__waves {
+    top: 80vh;
   }
   .applyPage__showcase {
-    height: calc(95vh + 175px);
+    height: 80vh;
   }
   .applyPage__primary-title,
   .applyPage__primary-description {
-    top: 20%;
+    top: 3vh;
+  }
+}
+@media (max-height: 400px) {
+.applyPage__waves {
+    top: 105vh;
+  }
+  .applyPage__showcase {
+    height: 105vh;
+  }
+  .applyPage__primary-title,
+  .applyPage__primary-description {
+    top: 3vh;
   }
 }
 
@@ -191,9 +201,9 @@
 
 .applyPage__projectIntroImg {
   object-fit: cover;
-  width: 34vw;
-  height: 34vw;
-  padding: 3%;
+  width: 24vw;
+  height: 24vw;
+  padding: 5% 3% 5% 3%;
   margin-left: 5%;
   border-radius: 50%;
   display: inline-block;
@@ -202,10 +212,11 @@
 .applyPage__projectIntro {
   text-align: left;
   color: white;
-  width: 60%;
+  width: 50vw;
   background-color: rgb(32, 32, 32);
   float: right;
-  padding: 5% 7% 5% 3%;
+  padding: 5% 3% 5% 3%;
+  margin-right: 4%;
 }
 
 .applyPage__projectIntro h1 {

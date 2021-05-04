@@ -1,6 +1,5 @@
 import './ProfileDescription.css';
-
-const ProfileDescription = props => {
+const ProfileDescription = (props: any) => {
 
     return (
         <div className="ProfileDescription" >

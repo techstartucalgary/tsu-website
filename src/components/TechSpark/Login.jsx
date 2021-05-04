@@ -21,16 +21,10 @@ function Login(props){
                 
                 let token = response.data.token;;
                 console.log(token)
-                console.log('Printing the information')
-            console.log(document.getElementById('loginUsername').value)
-            console.log(document.getElementById('loginPassword').value)
                 
           }, (error) => {
             console.log(error);
-            console.log('Printing the information')
-            console.log(document.getElementById('loginUsername').value)
-            console.log(document.getElementById('loginPassword').value)
-            console.log(tracker)
+
           }); 
     },[tracker]);
 
@@ -46,12 +40,12 @@ function Login(props){
             <h1 className= "loginHeading">Login</h1>
             <form className = "loginForm">
                 <div className = "loginDiv">
-                  <i class="fa fa-envelope icon">
+                  <i className="fa fa-envelope icon">
                   </i>
                  <input id="loginUsername" type="text" placeholder="Email"/>
                 </div>
                 <div className = "loginDiv">
-                <i class="fa fa-key icon">
+                <i className ="fa fa-key icon">
                 </i>
                     <input type="password" id="loginPassword" placeholder = "Password"/><br></br>
                 </div>
@@ -61,7 +55,7 @@ function Login(props){
             </form>
             <div className = "switchStyling">
                 <h5 className = "registerLink">Don't have an account?</h5>
-                 <button className= "registerSwitch" onClick = {props.switchMode}><i class="fa fa-user icon">
+                 <button className= "registerSwitch" onClick = {props.switchMode}><i className ="fa fa-user icon">
                   </i> Sign Up</button>
             </div>
             

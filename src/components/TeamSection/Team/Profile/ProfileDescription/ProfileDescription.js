@@ -1,5 +1,4 @@
 import './ProfileDescription.css';
-import '../../../../../App.css';
 
 const ProfileDescription = props => {
 

@@ -1,0 +1,56 @@
+.techGuidesSection {
+  display: flex;
+  row-gap: 5em;
+  gap: 10px 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.techGuidesSection__split > * {
+  flex-basis: 30%;
+  min-width: 10em;
+}
+
+.guide__background {
+  background-color: rgb(36, 37, 37);
+
+  border-radius: 5px;
+}
+
+.guide {
+  display: block;
+  position: relative;
+  transform: scale(0.9);
+  transition: 200ms linear;
+  text-decoration: none;
+  color: rgb(8, 8, 8);
+  opacity: 0.95;
+}
+
+.guide:hover,
+.guide:focus {
+  transform: scale(0.95);
+  opacity: 1;
+}
+
+.guideName {
+  font-size: 20px;
+  color: white;
+  padding: 10px 0px;
+}
+
+.techGuidesSection img {
+  height: 100px;
+  width: 200px;
+
+  border-radius: 5px;
+  box-shadow: 10px 10px 8px 0px rgba(155, 172, 161, 0.45);
+}
+
+.guideDescription {
+  width: 250px;
+  font-size: 15px;
+  color: white;
+  opacity: 1;
+}

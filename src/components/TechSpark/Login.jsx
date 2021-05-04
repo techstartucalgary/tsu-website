@@ -28,7 +28,11 @@ function Login(props){
           }); 
     },[tracker]);
 
-    function handleLogin(){
+    function handleLogin(event){ // The event parameter will automatically be passed by React's onClick - read more at https://reactjs.org/docs/events.html
+        event.preventDefault(); // This makes it so that pressing the button does not reload the page
+        // Additionally, right now we are using document.getElementById to pass the results to the useEffect. This is theoretically functional, but it's not the best practice in React.
+        // https://reactjs.org/docs/forms.html#handling-multiple-inputs This is a great alternative way of doing it using form names + state. 
+        // I would also consider changing this into a TypeScript file eventually. You will have to strong-type certain variables, (see the WebDev guide for info, and you'd have to search what the appropriate types are for certain objects), but it could be very helpful for debugging.
         setTracker(!tracker);
     }
 

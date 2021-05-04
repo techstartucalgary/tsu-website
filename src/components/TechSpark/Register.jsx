@@ -4,12 +4,40 @@ import React, { Component, useEffect } from 'react';
 import axios from "axios";
 
 const dataRoot = "https://techstartbackend.herokuapp.com"
+const {useRef, useLayoutEffect} = React;
 
 function Register(props){
 
     const[user, setUser] = React.useState(0)
 
-    useEffect(() => {
+    const firstUpdate = useRef(true);
+    useLayoutEffect(() => {
+      
+        if(firstUpdate.current){
+            firstUpdate.current =false;
+            return;
+        }
+        
+        if(document.getElementById('registerEmail').value == ""){
+          console.log('Invalid Email')
+          //alert('Please enter your email address');
+          return;
+      }
+      if(document.getElementById('registerFirstName').value == ""){
+          console.log('Invalid First Name')
+          alert('Please enter your first name');
+          return;
+      }
+      if(document.getElementById('registerLastName').value == ""){
+        console.log('Invalid Last Name')
+        alert('Please enter your last name');
+        return;
+    }
+    if(document.getElementById('registerPassword').value == ""){
+      console.log('Invalid Password')
+      alert('Please enter a password');
+      return;
+  }
         axios.post(
             `${dataRoot}/register`, {
                 username: document.getElementById('registerEmail').value,

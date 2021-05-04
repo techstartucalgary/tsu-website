@@ -4,18 +4,40 @@ import axios from "axios";
 import { setTokenSourceMapRange } from "typescript";
 
 const dataRoot = "https://techstartbackend.herokuapp.com"
+const {useRef, useLayoutEffect} = React;
 
 function Login(props){
     
     const [tracker, setTracker] = React.useState(false)
-
-     useEffect(() => {
+    const [invalidUsername, setInvalidUsername] = React.useState(false)
+    const [invalidPassword, setInvalidPassword] = React.useState(false)
+    const [invalidLogin, setInvalidLogin] = React.useState(false)
+    const firstUpdate = useRef(true);
+    useLayoutEffect(() => {
+        setInvalidLogin(false);
+        if(firstUpdate.current){
+            firstUpdate.current =false;
+            return;
+        }
+        if(document.getElementById('loginUsername').value == ""){
+            console.log('Invalid Username')
+            setInvalidUsername(true);
+            setInvalidPassword(false);
+            return;
+        }else{{
+            setInvalidUsername(false);
+        }}
+        if(document.getElementById('loginPassword').value == ""){
+            console.log('Invalid Password')
+            setInvalidPassword(true);
+            return;
+        }else{
+            setInvalidPassword(false);
+        }
         axios.post(
             `${dataRoot}/login`, {
                 username: document.getElementById('loginUsername').value,
                 password: document.getElementById('loginPassword').value
-               // username: 'TaylorNoel',
-               // password: 'TtaSnoU20'
             }
           ).then((response) => {
                 
@@ -24,6 +46,8 @@ function Login(props){
                 
           }, (error) => {
             console.log(error);
+            setInvalidLogin(true);
+            
 
           }); 
     },[tracker]);
@@ -61,6 +85,13 @@ function Login(props){
                 <h5 className = "registerLink">Don't have an account?</h5>
                  <button className= "registerSwitch" onClick = {props.switchMode}><i className ="fa fa-user icon">
                   </i> Sign Up</button>
+                  <div id="clearLogin"/>
+                  {invalidUsername ? 
+                  <p className = "alert">Invalid Username</p> : <div/>}
+                  {invalidPassword ? 
+                  <p className = "alert">Invalid Password</p> : <div/>}
+                  {invalidLogin ? 
+                  <p className = "alert">Invalid Login</p> : <div/>}
             </div>
             
         </div>

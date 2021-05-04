@@ -61,6 +61,16 @@
     background: linear-gradient(0deg, rgba(3,238,56,1) 0%, rgba(61,61,167,1) 56%, rgba(0,212,255,1) 100%);
 }
 
+.alert{
+    color: #FF3131;
+    width: 100%;
+    text-align: center;
+    margin: 0px;
+}
+
+#clearLogin{
+    clear: both;
+}
 
 input[id=loginUsername], input[id=loginPassword]{
     width: 80%;

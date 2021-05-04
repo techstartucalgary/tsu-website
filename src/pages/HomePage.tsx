@@ -72,13 +72,12 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="homePage__eventsSection">
-        <div className="homePage__container">
-          <EventsSection />
+      {/* <section> */}
+      {/* <div className="homePage__container"> */}
+      {/* <EventsSection /> */}
 
-        </div>
-      </section>
-
+      {/* </div> */}
+      {/* </section> */}
 
       <section className="homePage__featuredProjects">
         <div className="homePage__container">

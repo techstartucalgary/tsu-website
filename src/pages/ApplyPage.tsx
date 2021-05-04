@@ -54,8 +54,8 @@ function ApplyPage() {
             active={active}
             setActive={setActive}
             description="Every semester, our members form teams that gather together to
-                  brainstorm a project, and then work on that idea
-                  collaboratively over the semester. During this time the
+                  brainstorm a project, and then work on that idea collaboratively 
+                  with 6-9 other creators over the semester. During this time the
                   projects evolve and shift, and our members get to experience
                   the full lifecycle of bringing a complex project to life. Each
                   team is lead by an experienced project manager who provides the
@@ -78,25 +78,27 @@ function ApplyPage() {
               will decide on at the start of the semester.
               </br></br>
               <strong>Business Strategist</strong></br>
-              As a developer, you will learn to architect and build awesome
-              projects, and participate in team events and lunch trips. You want
-              to collaborate with a team to build awesome software and learn
-              professional development practices. Work collaboratively with
-              other developers on different platforms, collaborating
-              cross-functionally to build a project that you and your teammates
-              will decide on at the start of the semester.
+              As a strategist, you will focus on the business side of the
+              project, working alongside the Executive VP Strategy to learn
+              and develop a business deliverable (i.e. a business plan, a business 
+              canvas, a short report, a pitch, any combination of those, etc.) at 
+              the end of the term. Ideally, this would be something that is tangible 
+              and you can save for your portfolio to share with future employers, 
+              internships, and co-op placements.
               </br></br>
               <strong>Project Designer</strong></br>
-              As a designer at Tech Start, you will be in charge of making 
+              As a designer at Tech Start, you will be in charge of making the
               attractive, creative interfaces that provide great user experiences.
+              This role requires creativity, a practical and user-friendly perspective, 
+              and an eye for art! This usually involves planning out the design and 
+              working on the front-end for the majority of projects.
               </br></br>
               <strong>Project Manager</strong> (separate application)</br>
-              As a manager, you will be in charge of take the opportunity to
-              pass on and earn experience leading in a professional and
-              experimental environment! Manage a project for a semester and lead
-              a team of 6-9 developers to create complex projects! Build your
-              portfolio, gain industry-like experience, and learn about the
-              product life cycle from initial design to testing and deployment."
+              As a manager, you will be in charge of organizing, coordinating, and 
+              leading the team to create complex projects! This involves leading
+              weekly team meetings, leading the team vision, and guiding the project process. 
+              During the process, you will share and earn technical and professional 
+              experience!"
           />
           <Accordion
             title="Why join a project?"

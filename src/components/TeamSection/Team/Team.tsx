@@ -4,7 +4,7 @@ import Carousel from 'react-elastic-carousel';
 import Profile from './Profile/Profile';
 import './Team.css';
 
-const Team = (props: { teamMembers: ExecutiveMember[] | ProjectManager[], defaultView: boolean }) => {
+const Team = (props: { teamMembers: any, defaultView: boolean }) => {
 
     const [containerState] = useState({
         members: props.teamMembers // array of objects
@@ -24,7 +24,7 @@ const Team = (props: { teamMembers: ExecutiveMember[] | ProjectManager[], defaul
         props.defaultView === true ?
             <div className={containerClasses.join(' ')}>
                 {
-                    containerState.members.map((member: (ExecutiveMember | ProjectManager), i: number) => {
+                    containerState.members.map((member: any, i: number) => {
                         return (
                             <Profile
                                 className=""
@@ -42,7 +42,7 @@ const Team = (props: { teamMembers: ExecutiveMember[] | ProjectManager[], defaul
             </div>
             :
             <Carousel className="Carousel" isRTL={true}>
-                {containerState.members.map((member: (ExecutiveMember | ProjectManager), i: number) =>
+                {containerState.members.map((member: any, i: number) =>
                     <Profile
                         className="Profile"
                         key={i}

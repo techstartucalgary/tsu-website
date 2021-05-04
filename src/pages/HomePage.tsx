@@ -17,6 +17,7 @@ import { Link } from "react-router-dom";
 import SponsorSection from "components/SponsorSection/SponsorSection";
 import Blobbie from "components/Blobbie";
 import EventsSection from "components/EventsSection/EventsSection";
+import ProjectSection from 'components/ProjectSection';
 
 function HomePage() {
 
@@ -82,7 +83,7 @@ function HomePage() {
       <section className="homePage__featuredProjects">
         <div className="homePage__container">
           <h2 className="homePage__containerTitle">Featured projects</h2>
-          <div className="homePage__split">
+          {/* <div className="homePage__split">
             <FeaturedProject
               projectLink="#"
               projectImage={temp}
@@ -101,7 +102,8 @@ function HomePage() {
               projectName="Project3"
               teamName="Team3"
             />
-          </div>
+          </div> */}
+          <ProjectSection/>
           <div>
             <a href="#">
               <button className="homePage__btn">View All Projects</button>

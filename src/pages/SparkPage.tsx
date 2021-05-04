@@ -1,18 +1,23 @@
-import React, { Component, useEffect } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import './SparkPage.css';
 import axios from "axios";
 import PostButton from "components/TechSpark/postButton"
 import Event from '../components/TechSpark/Event'
 import Login from '../components/TechSpark/Login'
 import SignIn from '../components/TechSpark/SignIn'
-import PostCreation from '../components/TechSpark/PostCreation'
+import Popup from "components/TechSpark/Popup"
 import Register from '../components/TechSpark/Register'
 import MenuButton from "components/TechSpark/MenuButton"
 function Dashboard() {
+    const [displayPost,setDisplayPost] = useState(false)    
 
-        return(
-    <div className="sparkPage">
-    <body>
+    function showPost(){
+        setDisplayPost(true)
+    }
+    return(
+    <div className="sparkBackground">
+        {displayPost && <Popup/>}
+    <div>
         <div className="sparkNavbarSpacing"/>
 
         <div className="sparkTitle">
@@ -48,13 +53,12 @@ function Dashboard() {
         <div className="sparkContentTitle">
             See what people are saying:
             <div className="sparkInnerGrid">
-            <PostButton link={"https://www.youtube.com/watch?v=dQw4w9WgXcQ"}/>
+            <PostButton showPost={showPost}/>
             </div>
         </div>
-        
     </div>
     </div>
-    </body>
+    </div>
     </div>
     
     

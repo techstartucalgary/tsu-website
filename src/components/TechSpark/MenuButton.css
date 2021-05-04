@@ -3,13 +3,13 @@ button.MenuButton{
     float: left;
     display: inline-table;
     background-color: #D3f5b6;
-    height: 40px;
-    min-width: 126;
+    height: 50px;
+    min-width: 204px;
     border: 1px #282A36;
     border-radius: 25px;
     padding-right: 35px;
     padding-left: 35px;
-    padding-top: 10px;
+    padding-top: 13px;
     padding-bottom: 35px;
     vertical-align: middle;
     font-family: 'Inter', Tahoma, sans-serif; 

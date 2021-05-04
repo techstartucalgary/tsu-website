@@ -1,7 +1,7 @@
 import React from "react"
 import "./MenuButton.css"
 
-function LoginButton(props){
+function MenuButton(props){
     
     return(
       
@@ -12,4 +12,4 @@ function LoginButton(props){
           </a>
     );
 }
-export default LoginButton
+export default MenuButton

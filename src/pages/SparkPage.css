@@ -4,8 +4,8 @@
     grid-template-rows: repeat(auto-fit);
     gap: 10px;
     min-width: fit-content;
-
 }
+
 .sparkInnerGrid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -22,18 +22,18 @@
     padding: 10px;
     justify-items: center;
 }
-.sparkPage{
+.sparkBackground{
     font-family: 'Inter', Tahoma, sans-serif; 
     color: #99E755;
     background-color: #282A36;
     padding: 10px;
-    
+    width: 100% !important;
+    position: relative;
 }
 .sparkSpacing{
     height: 1em;
     border: none;
     background:#282A36;
-    
 }
 .sparkTitle{
     font-family: 'Inter', Tahoma, sans-serif;
@@ -54,6 +54,10 @@
     color : #282A36;
     background-color : #99E755; 
     border-radius: 10px; 
+    
+}
+@media screen and (max-width:600px){
+    
 }
 .sparkMenuContainer{
     grid-row: span 2;
@@ -71,7 +75,13 @@
     padding: 20px;
     padding-left: 80px;
     padding-right: 80px;
-   
+}
+@media only screen and (max-width:600px) {
+    .sparkMissionStatement{
+        font-size: small;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 .forumContainer{
     display: grid;

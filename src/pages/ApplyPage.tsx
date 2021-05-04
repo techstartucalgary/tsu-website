@@ -144,7 +144,7 @@ function ApplyPage() {
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project."
               status="closed"
-              applicationLink="#"
+              applicationLink="https://forms.gle/3BD9dQ3TjcXzEqZN9"
             />
             <ApplySection
               term="1 semester"
@@ -152,7 +152,7 @@ function ApplyPage() {
               description="Manage a project for a semester and lead a team of 6-9
                     project members to create complex projects."
               status="open"
-              applicationLink="#"
+              applicationLink="https://forms.gle/bFGzAFD1QWdCavGr5"
             />
             <ApplySection
               term="1 academic year"
@@ -161,7 +161,7 @@ function ApplyPage() {
                   workshops and events, and more. Lead and grow the club vision
                   and culture."
               status="closed"
-              applicationLink="#"
+              applicationLink="https://forms.gle/PQMbV5SWQfNe46GAA"
             />
           </ul>
         </div>

@@ -37,7 +37,9 @@ function ApplyPage() {
               professional tools and principles, and share their knowledge with
               others.
             </h2>
-            <button className="applyPage__btn">Join the Community</button>
+            <a href="http://eepurl.com/hnusUP">
+              <button className="applyPage__btn">Join the Community</button>
+            </a>
           </div>
         </div>
       </div>

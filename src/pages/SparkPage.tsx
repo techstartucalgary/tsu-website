@@ -16,7 +16,53 @@ function Dashboard() {
     const[news, setNews] = React.useState([])
     
    
-return(
+  const dataRoot = "https://techstartbackend.herokuapp.com"
+  const [token, setToken] = React.useState([]);
+  const [userID, setUserID] = React.useState([]);
+
+  useEffect(() => {
+        axios.post(
+            `${dataRoot}/login`, {
+                username: 'test@testing.test',
+                password: 'WordPass123'
+            }
+          ).then((response) => {
+                
+                let token = response.data.token;
+                let userID = response.data.id;
+                setToken(token)
+                setUserID(userID)
+                console.log(token)
+                
+          }, (error) => {
+            console.log(error);
+          });; 
+    },[])
+
+    const body = 
+    useEffect(() => {
+      axios.put(
+          `${dataRoot}/update-post/1`, {
+              author: userID,
+              title: 'changed titlee',
+              date_posted: '2021-05-01',
+              post_description: 'changed description',
+              
+          }, {headers: {'Authorization': `Token ${token}`}}
+        ).then((response) => {
+              
+              let token = response.data.token;;
+              setToken(token)
+              console.log(token)
+              
+        }, (error) => {
+          console.log(error);
+        });; 
+    },[])
+
+
+    
+        return(
     <div className="sparkPage">
     <body>
         

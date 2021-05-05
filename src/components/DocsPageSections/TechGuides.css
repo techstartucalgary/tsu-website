@@ -1,0 +1,66 @@
+.techGuidesSection {
+  display: flex;
+  row-gap: 5em;
+  gap: 10px 100px;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+
+.techGuidesSection__split > * {
+  flex-basis: 30%;
+  min-width: 10em;
+}
+
+.guide__background {
+  background-color: rgb(36, 37, 37);
+  padding: 20px;
+  height: 270px;
+  border-radius: 5px;
+  transition: 200ms ease-in-out;
+}
+
+.guide__background:hover, .guide__background:focus{
+  /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+}
+
+.guide {
+  display: block;
+  position: relative;
+  transition: 200ms ease-in-out;
+  text-decoration: none;
+  color: rgb(8, 8, 8);
+  margin-bottom: 40px;
+
+}
+
+.guide:hover,
+.guide:focus {
+  transform: translateY(-7px);
+}
+
+
+
+.guideName {
+  font-size: 20px;
+  color: white;
+  padding: 10px 0px;
+}
+
+.techGuidesSection img {
+  height: 100px;
+  width: 200px;
+
+  border-radius: 5px;
+  box-shadow: 10px 10px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+.guideDescription {
+  width: 250px;
+  font-size: 15px;
+  color: white;
+  opacity: 1;
+}
+
+

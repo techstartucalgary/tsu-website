@@ -4,7 +4,6 @@ import logo from "images/tech-start-logo-white.png";
 import design from "images/circuitBoard.svg"
 
 function Login(props){
-
     return (
         <div className = "loginStyling">
         <link rel="stylesheet"

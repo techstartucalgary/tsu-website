@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 .applyPage {
   border: none;
   box-sizing: border-box;

@@ -3,8 +3,8 @@ import "./ApplyPage.css";
 import gallery1 from "images/calgary.jpg";
 import gallery2 from "images/banana.jpg";
 import gallery3 from "images/temp.jpg";
-import gallery4 from "images/funkystudent.jpg";
-import gallery5 from "images/faketeam.jpg";
+import projectExample from "images/teamphoto-techstartwebteam.png";
+import joinProject from "images/faketeam.jpg";
 import ApplySection from "components/ApplySection";
 import ApplyFAQSection from "components/ApplyFAQSection";
 import Accordion from "../components/Apply/Accordion";
@@ -43,7 +43,7 @@ function ApplyPage() {
       <div className="applyPage__container applyPage__projectIntroContainer">
         <img
           className="applyPage__projectIntroImg"
-          src={gallery5}
+          src={joinProject}
           alt=""
           data-aos="fade-right"
         />
@@ -131,6 +131,15 @@ function ApplyPage() {
             <li>Weekly team meetings (1 hour per week) and occasional club meetings </li>
             <li>Around 4 hours per week working on tasks in and outside of web-development nights </li>"
           />
+        </div>
+        <div className="applyPage__container applyPage__projectExample">
+          <div className="applyPage__projectExampleText">
+            <h1>
+              Need an example of a project? Look no further! As a matter of
+              fact, this website was made by this project team!
+            </h1>
+          </div>
+          <img src={projectExample} alt="" />
         </div>
       </div>
       <div className="applyPage__container applyPage__applicationContainer">

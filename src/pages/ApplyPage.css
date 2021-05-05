@@ -143,7 +143,7 @@
   }
 }
 @media (max-height: 450px) {
-.applyPage__waves {
+  .applyPage__waves {
     top: 80vh;
   }
   .applyPage__showcase {
@@ -155,7 +155,7 @@
   }
 }
 @media (max-height: 400px) {
-.applyPage__waves {
+  .applyPage__waves {
     top: 105vh;
   }
   .applyPage__showcase {
@@ -207,7 +207,6 @@
   margin-left: 5%;
   border-radius: 50%;
   display: inline-block;
-  vertical-align: middle;
 }
 .applyPage__projectIntro {
   text-align: left;
@@ -234,6 +233,30 @@
   margin: 10px;
 }
 
+.applyPage__projectExample {
+  justify-content: block;
+  margin-bottom: 5%;
+}
+
+.applyPage__projectExample img {
+  object-fit: cover;
+  width: 85vw;
+  max-width: 900px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.applyPage__projectExampleText {
+  width: 80vw;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  position: relative;
+}
+.applyPage__projectExampleText h1 {
+  font-size: clamp(24px, calc(0.4vw + 24px), 30px);
+  font-weight: 550;
+}
 @media (max-width: 850px) {
   .applyPage__projectIntroImg {
     width: 60vw;

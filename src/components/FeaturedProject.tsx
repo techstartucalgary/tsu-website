@@ -11,7 +11,14 @@ interface featuredProjectProps {
   project: Project
 }
 function FeaturedProject(props: featuredProjectProps) {
-  return <div className="box"><img src={props.project.image} /></div>
+  return <a href="https://github.com/Tech-Start-UCalgary/tsu-website" className="featuredProjectSection">
+    <div className="featuredProject">
+      <img className="featuredProjectImage" src={props.project.image}></img>
+
+      <div className="featuredProjectDescription">{props.project.description}</div>
+    </div>
+
+  </a>
 
   // return<a href={props.projectLink} className="projectItem">
   //     <img src={props.projectImage} alt=""/>

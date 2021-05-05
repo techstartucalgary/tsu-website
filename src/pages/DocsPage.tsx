@@ -58,7 +58,7 @@ function DocsPage() {
                   duration={500}><li><a href="#"><Emoji symbol="📓 " />Branding</a></li></LinkScroll>
                 <LinkScroll
 
-                  to="docsPage__brandingSection"
+                  to="docsPage__reachOutSection"
                   spy={true}
                   offset={-95}
                   duration={500}><li><a href="#"> <Emoji symbol="📤 " />Reach Out</a></li></LinkScroll>
@@ -88,7 +88,7 @@ function DocsPage() {
               <li id="docsPage__brandingSection"><Emoji symbol="📓 " />Branding</li>
               <p className="docsPage__sectionDescription">This section documents Tech Start's branding guidelines:</p>
               <Branding />
-              <li><Emoji symbol="📤 " />Reach Out</li>
+              <li id="docsPage__reachOutSection"><Emoji symbol="📤 " />Reach Out</li>
               <p className="docsPage__sectionDescription">How to reach out to us:</p>
               <ReachOut />
               <div className="docsPage__break"></div>

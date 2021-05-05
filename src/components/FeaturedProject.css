@@ -33,7 +33,40 @@
     text-transform: uppercase;
   }*/
 
-.box {
-  width: 100px;
-  height: 100px;
+.featuredProjectSection {
+  text-decoration: none;
+  color: white;
+}
+
+.featuredProject {
+  transition: 200ms linear;
+  height: auto;
+}
+
+.featuredProjectImage {
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.featuredProject:hover,
+.featuredProjectImage {
+  opacity: 0.7;
+  transform: scale(0.97);
+}
+
+.featuredProjectDescription {
+  bottom: 150px;
+  position: relative;
+  opacity: 0;
+  padding: 10px;
+}
+
+.featuredProject:hover + .featuredProjectDescription {
+  opacity: 1;
+}
+
+.featuredProjectContainer {
+  height: 100%;
+  width: 100%;
+  background-color: lightsalmon;
 }

@@ -1,4 +1,5 @@
 import React from "react";
+import "./ProjectSection.css"
 import { OurProjects, Project } from "ProjectData";
 import FeaturedProject from "./FeaturedProject";
 

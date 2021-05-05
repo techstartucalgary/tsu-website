@@ -127,17 +127,13 @@ button.rec-dot_active {
     box-shadow: v0 0 1px 2px var(--primary-green) !important;
 }
 
-button.rec-arrow:hover:enabled, button.rec-arrow:focus:enabled {
-    background-color: var(--primary-green) !important;
-    box-shadow: 0 0 1px 2px var(--primary-green);
-}
-
 button.rec-arrow {
     background-color: white;
     box-shadow: 0 0 1px 2px var(--primary-black);
 }
 
 .rec.rec-arrow:hover:enabled, .rec.rec-arrow:active:enabled, .rec.rec-arrow:focus:enabled  {
+    background-color: var(--primary-green) !important;
     box-shadow: 0 0 1px 2px var(--primary-black);
 }
 

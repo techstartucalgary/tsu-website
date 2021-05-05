@@ -2,7 +2,7 @@ import React from "react";
 import "./GuidesSection.css";
 
 function DocsPageGuide(props: any) {
-    return <a href={props.link} className="guide">
+    return <a href={props.link} className="guide" target="_blank">
         <header className="guideName">
             {props.name}
         </header>

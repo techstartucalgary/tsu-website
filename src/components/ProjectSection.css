@@ -1,9 +1,9 @@
 .projectSection {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 400px));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 450px));
   column-gap: 100px;
   justify-content: center;
   align-items: center;
-  row-gap: 20px;
+  row-gap: 50px;
   padding-bottom: 50px;
 }

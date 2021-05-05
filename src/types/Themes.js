@@ -6,12 +6,14 @@ export const lightTheme = {
   background:'#F8F8F8',
   fontColor: "black",
   docsPage__logo: "images/tech-start-logo-white.png",
+  color: '#404440',
 }
 
 export const darkTheme = {
     body: '#0e1111',
     fontColor:'white',
     src: "images/tech-start-logo-white.png",
+    color: '#d1e2d1'
 }
 
 export const GlobalStyles = createGlobalStyle`
@@ -45,4 +47,8 @@ body {
 
 .guideDescription{
   color:${props => props.theme.fontColor}
+}
+
+.docsPage__title{
+  color:${props => props.theme.color}
 }`

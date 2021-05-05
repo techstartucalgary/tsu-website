@@ -69,9 +69,9 @@ function DocsPage() {
 
             <h3 className="docsPage__title">techstart/docs</h3>
 
-            <div className="docsPage__search">
+            {/*<div className="docsPage__search">
               <input type="text" placeholder="Search..." />
-            </div>
+  </div>*/}
 
           </div>
           <h4 className='docsPage__intro'><Emoji symbol="💻" /> The official TechStart UCalgary knowledge base</h4>

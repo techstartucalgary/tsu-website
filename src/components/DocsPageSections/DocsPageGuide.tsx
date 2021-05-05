@@ -1,7 +1,7 @@
 import React from "react";
-import "./TechGuides.css";
+import "./GuidesSection.css";
 
-function WebDevGuide(props: any) {
+function DocsPageGuide(props: any) {
     return <a href={props.link} className="guide">
         <header className="guideName">
             {props.name}
@@ -13,4 +13,4 @@ function WebDevGuide(props: any) {
     </a>;
 }
 
-export default WebDevGuide;
+export default DocsPageGuide;

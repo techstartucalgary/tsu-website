@@ -1,16 +1,18 @@
 import { Project } from "ProjectData";
 import React from "react";
 import './FeaturedProject.css'
+import ProjectSection from "./ProjectSection";
 
 /**
  * TODO: Re-implement
  */
 
-interface featuredProjectProps{
+interface featuredProjectProps {
   project: Project
 }
 function FeaturedProject(props: featuredProjectProps) {
-  return <div>Placeholder</div>
+  return <div className="box"><img src={props.project.image} /></div>
+
   // return<a href={props.projectLink} className="projectItem">
   //     <img src={props.projectImage} alt=""/>
   //     <p className="projectItem__Details">

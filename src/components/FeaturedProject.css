@@ -1,4 +1,4 @@
-.projectItem {
+/*.projectItem {
     display: block;
     position: relative;
     transform: scale(0.9);
@@ -31,4 +31,9 @@
     font-weight: 700;
     font-size: clamp(1.5rem, calc(1vw + 1rem), 3rem);
     text-transform: uppercase;
-  }
+  }*/
+
+.box {
+  width: 100px;
+  height: 100px;
+}

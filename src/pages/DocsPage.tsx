@@ -6,7 +6,7 @@ import Emoji from 'components/Emoji'
 import docsPage__logoblack from 'images/tech-start-logo-black.png'
 import docsPage__logowhite from 'images/tech-start-logo-white.png'
 import { faShower } from '@fortawesome/free-solid-svg-icons';
-import TechGuides from "components/DocsPageSections/TechGuides"
+import GuidesSection from "components/DocsPageSections/GuidesSection"
 import Branding from "components/DocsPageSections/Branding"
 import ReachOut from "components/DocsPageSections/ReachOut"
 import { Link as LinkScroll } from "react-scroll";
@@ -84,7 +84,7 @@ function DocsPage() {
             <ul>
               <li id="docsPage__techGuidesSection"><Emoji symbol="📚 " />Tech Guides</li>
               <p className="docsPage__sectionDescription">This section documents Tech Start's super awesome mega guides :)</p>
-              <TechGuides />
+              <GuidesSection />
               <li id="docsPage__brandingSection"><Emoji symbol="📓 " />Branding</li>
               <p className="docsPage__sectionDescription">This section documents Tech Start's branding guidelines:</p>
               <Branding />

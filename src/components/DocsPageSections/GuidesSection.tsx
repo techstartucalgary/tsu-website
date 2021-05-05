@@ -1,20 +1,18 @@
 import React from "react";
-import "./TechGuides.css"
+import "./GuidesSection.css"
 import imgDjango from "images/django.png"
 import imgGit from "images/git.png"
 import imgWebDev from "images/webdev.png"
-import DjangoGuide from "./DjangoGuide"
-import GitGuide from "./GitGuide"
-import WebDevGuide from "./WebDevGuide"
+import DocsPageGuide from "./DocsPageGuide"
 import { lightTheme, darkTheme, GlobalStyles } from 'types/Themes.js'
 
 
-function TechGuides(props: any) {
+function GuidesSection(props: any) {
     return <section className="techGuidesSection">
         <GlobalStyles />
 
         <div className="guide__background">
-            <DjangoGuide
+            <DocsPageGuide
                 link="https://docs.google.com/document/d/1Emq59prVwyzpnOW8CkTfz9FEWE00AH0epGFHji2k_lA/edit?usp=sharing"
                 image={imgDjango}
                 name="Django Guide"
@@ -22,7 +20,7 @@ function TechGuides(props: any) {
             />
         </div>
         <div className="guide__background">
-            <GitGuide
+            <DocsPageGuide
                 link="https://docs.google.com/document/d/19n16a4ksCs-MJmmru1TDtBWKjFOcfPF-bE8zuhR-RiQ/edit?usp=sharing"
                 image={imgGit}
                 name="Git Guide"
@@ -30,7 +28,7 @@ function TechGuides(props: any) {
             />
         </div>
         <div className="guide__background">
-            <WebDevGuide
+            <DocsPageGuide
                 link="https://docs.google.com/document/d/1K1prdp8otB_cowT4E39qM6SYlduTSG4g7abx3FtM3YA/edit?usp=sharing"
                 image={imgWebDev}
                 name="Web Dev Guide"
@@ -42,4 +40,4 @@ function TechGuides(props: any) {
     </section>;
 }
 
-export default TechGuides;
+export default GuidesSection;

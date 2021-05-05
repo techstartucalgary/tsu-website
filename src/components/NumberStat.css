@@ -1,23 +1,20 @@
-.numberStat__number{ 
-    color: var(--primary-green);
-    font-weight: 800;
-    font-size: 4rem;
-    transition: 0.05s ease 
+.numberStat__number {
+  color: var(--primary-green);
+  font-weight: 800;
+  font-size: 4rem;
+  transition: 0.5s ease;
 }
 
-.numberStat__number:hover{
-    transform: scale(1.1);
-    color: rgb(49, 49, 49);
+.numberStat__number:hover {
+  transform: scale(1.1);
+  color: rgb(49, 49, 49);
 }
 
-.numberStat__stat{
-    color: var(--secondary-grey);
-    font-size: 1.25rem;
-    font-weight: 600;
-    margin-top: 10px;
-}
 
-.numberStat__stat:hover{
-    color: var(--primary-green);
-    transform: scale(1.5);
+.numberStat__stat {
+  color: var(--secondary-grey);
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: 0.5s ease;
 }

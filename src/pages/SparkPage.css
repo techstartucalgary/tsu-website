@@ -63,9 +63,6 @@
     grid-row: span 2;
     min-width: max-content;
 }
-.sparkNavbarSpacing{
-    height: 83.6px;
-}
 .sparkMissionStatement{
     background-color: #282A36;
     color: #99E755;
@@ -102,4 +99,8 @@
     text-align: center;
     font-family: 'Inter', Tahoma, sans-serif;
     padding-bottom: 10px;
+}
+
+#first{
+    margin-top: 60px;
 }

@@ -3,8 +3,8 @@ import "./MenuButton.css"
 
 function MenuButton(props){
   function buttonClicked(){
-    console.log("Post Button Clicked")
     props.showPost()
+    props.showSignIn()
   }
     return(
       

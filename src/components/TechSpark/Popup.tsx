@@ -8,15 +8,20 @@ import SignIn from "./SignIn"
 function Popup(props : any){
     function displayChild(){
             switch(props.windowType){
-            case "PostCreation":
+            case 1:
                 console.log("Post window clicked")    
                 return(
                     <PostCreation/>
                 )
-            case "SignIn":
+            case 2:
                 console.log("Login clicked")
                 return(
                     <SignIn/>
+                )
+            default:
+                console.log("Default rendered")
+                return(
+                    <PostCreation/>
                 )
             }
     }
@@ -25,7 +30,8 @@ function Popup(props : any){
         props.hidePost()
     }
     return(
-        <div className="popup" onClick={hideChild}>
+        <div className="popup">
+            <div className="popup__background" onClick={hideChild}/>
             <div className="popup__inner">
                 {displayChild()}
             </div>

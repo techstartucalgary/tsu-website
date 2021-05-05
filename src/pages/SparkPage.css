@@ -1,54 +1,87 @@
-.sparkGrid{
-display: grid;
-grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-grid-auto-flow: dense;
-grid-gap: 1em;
-padding: 10px;
+.sparkOuterGrid{
+    display: grid;
+    grid-template-columns: 1fr 10fr;
+    grid-template-rows: repeat(auto-fit);
+    gap: 10px;
+    min-width: fit-content;
 }
-.sparkPage{
-    font-family: 'Inter', Tahoma, sans-serif; 
-    color: #99E755;
-    background-color: white;
-}
-.spacing{
-    height: 1px;
-    border: none;
-    background:#282A36;
-    
-}
-.techsparkTitle{
-    font-family: 'Inter', Tahoma, sans-serif;
-    text-align: left;
-    font-size: 2rem;
-    font-weight: 700;
-}
-.eventPhoto {
-    grid-area: photo;
-  }
-  
-.eventPhoto>img {
-    object-fit:scale-down;
-    width: 100%
-}
-.page{
-    color : #282A36;
-    background-color : #99E755;  
-}
-.eventContainer{
+
+.sparkInnerGrid{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     grid-auto-flow: dense;
     grid-gap: 1em;
     padding: 10px;
+    min-width: max-content;
+}
+.sparkMenuGrid{
+    display: grid;
+    grid-template-columns: 1;
+    grid-auto-flow: dense;
+    grid-gap: 1em;
+    padding: 10px;
+    justify-items: center;
+}
+.sparkBackground{
+    font-family: 'Inter', Tahoma, sans-serif; 
+    color: #99E755;
+    background-color: #282A36;
+    padding: 10px;
+    width: 100% !important;
+    position: relative;
+}
+.sparkSpacing{
+    height: 1em;
+    border: none;
+    background:#282A36;
+}
+.sparkTitle{
+    font-family: 'Inter', Tahoma, sans-serif;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.sparkContentTitle{
+    font-family: 'Inter', Tahoma, sans-serif;
+    text-align: left;
+    font-size: 2rem;
+    font-weight: 700;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+.sparkContentPage{
+    color : #282A36;
+    background-color : #99E755; 
+    border-radius: 10px; 
     
 }
-.event{
-    background-color: rgb(241, 238, 238);
-    border: 1px solid rgb(0, 0, 0);
-    padding: 1em;
-    font-size: 18px;
+@media screen and (max-width:600px){
+    
+}
+.sparkMenuContainer{
+    grid-row: span 2;
+    min-width: max-content;
+}
+.sparkNavbarSpacing{
+    height: 83.6px;
+}
+.sparkMissionStatement{
+    background-color: #282A36;
+    color: #99E755;
     text-align: center;
-   
+    font-weight: 500;
+    font-size: large;
+    padding: 20px;
+    padding-left: 80px;
+    padding-right: 80px;
+}
+@media only screen and (max-width:600px) {
+    .sparkMissionStatement{
+        font-size: small;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
 }
 .forumContainer{
     display: grid;
@@ -69,8 +102,4 @@ padding: 10px;
     text-align: center;
     font-family: 'Inter', Tahoma, sans-serif;
     padding-bottom: 10px;
-}
-
-#first{
-    margin-top: 60px;
 }

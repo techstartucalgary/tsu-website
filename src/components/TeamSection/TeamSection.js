@@ -1,39 +1,45 @@
 import Team from './Team/Team';
-import TeamCarousel from './Team/TeamCarousel';
 import useViewport from '../UseViewport';
 import './TeamSection.css';
 import '../../App.css'
 import { executiveTeam, projectManagers } from './TeamInformation';
+import Divider from "components/Divider";
+import { Link } from "react-router-dom";
 
 const TeamSection = () => {
 
-    const { width } = useViewport();
-    console.log(width);
-    const breakpoint = 750;
+    const { width } = useViewport(); // get screen width
+    const breakpoint = 750; // set breakpoint
+
+    // set headers and defaultView flag according to screen width
+    let headers = [];
+    let defaultView = true;
+    if (width > breakpoint)
+        headers = ["chonkyHeading", "thiccSubheading", "regularText--larger"];
+    else {
+        headers = ["thiccSubheading", "babyHeading", ""];
+        defaultView = false;
+    }
 
     return (
-        width > breakpoint ?
-            <div className="TeamSection" >
-                <h1 className="chonkyHeading">Meet the team!</h1>
-                <h2 className="thiccSubheading">We're thrilled to build up the tech and entrepreneurship sectors at UCalgary. Check out our executive team below!</h2>
-                <Team teamMembers={executiveTeam} />
+        <div className="TeamSection" >
+            <h1 className="chonkyHeading">Our Team</h1>
+            <Divider />
 
-                <h2 className="thiccSubheading">Check out our project managers below!</h2>
-                <Team teamMembers={projectManagers} />
+            <div className={"regularText " + headers[2]} style={{ "padding": "5px 0 24px", "textAlign": "center" }}>
+                <p>Tech Start is only possible thanks to our team of talented, passionate leaders. Interested in joining us?</p>
+                <div className="applyLinkDiv">
+                    <Link className="applyLink" to="/apply" > Find out what it takes to apply!</Link>
+                </div>
             </div>
 
-            :
+            <h2 className={headers[1]} style={{ "textAlign": "center" }}><u>Executives</u></h2>
+            <Team teamMembers={executiveTeam} defaultView={defaultView} />
 
-            <div className="TeamSection" >
-                <h1 className="thiccSubheading">Meet the team!</h1>
-                <h2 className="babyHeading">We're thrilled to build up the tech and entrepreneurship sectors at UCalgary. Check out our executive team below!</h2>
-                <TeamCarousel teamMembers={executiveTeam} />
-
-                <h2 className="babyHeading">Check out our project managers below!</h2>
-                <TeamCarousel teamMembers={projectManagers} />
-            </div>
+            <h2 className={headers[1]} style={{ "textAlign": "center" }}><u>Project Managers</u></h2>
+            <Team teamMembers={projectManagers} defaultView={defaultView} />
+        </div>
     );
-
 }
 
 export default TeamSection;

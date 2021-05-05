@@ -20,12 +20,13 @@ const SponsorSection = () => {
                 <SponsorLogo sponsorLink="https://unity.com/" sponsorImage={sponsorLogoUnity} />
             </div>
 
-            <HoverButton
-                darkMode={true}
-                link="#"
-                text="Interested in sponsoring us? Check out our sponsorship package!"
-            />
-
+            <div style={{ "justifyContent": "center", "display": "flex" }}>
+                <HoverButton
+                    darkMode={true}
+                    link="#"
+                    text="Interested in sponsoring us? Check out our sponsorship package!"
+                />
+            </div>
         </div>
     );
 };

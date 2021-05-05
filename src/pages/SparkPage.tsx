@@ -10,15 +10,17 @@ import Register from '../components/TechSpark/Register'
 import MenuButton from "components/TechSpark/MenuButton"
 function Dashboard() {
     const [displayPost,setDisplayPost] = useState(false)    
-
+    var popupType;
     function showPost(){
         setDisplayPost(true)
     }
+    function hidePost(){
+        setDisplayPost(false)
+    }
     return(
-    <div className="sparkBackground">
-        {displayPost && <Popup/>}
+    <div className="sparkBackground" id="sparkPageTop">
+        {displayPost && <Popup windowType={"PostCreation"} hidePost={hidePost}/>}
     <div>
-        <div className="sparkNavbarSpacing"/>
 
         <div className="sparkTitle">
             Tech Spark
@@ -32,7 +34,7 @@ function Dashboard() {
                 Menu
             </div>
             <div className="sparkMenuGrid">
-                <MenuButton text={"Login"}/>
+                <MenuButton text={"Sign in"} showPost={showPost} popupType="SignIn"/>
                 <MenuButton text={"Profile"}/>
                 <MenuButton text={"Post History"}/>
 
@@ -53,7 +55,7 @@ function Dashboard() {
         <div className="sparkContentTitle">
             See what people are saying:
             <div className="sparkInnerGrid">
-            <PostButton showPost={showPost}/>
+            <PostButton showPost={showPost} popupType="PostButton"/>
             </div>
         </div>
     </div>

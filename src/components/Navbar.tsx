@@ -31,12 +31,6 @@ function Header(props: any) {
                         to="docsPageTop"
                         spy={true}
 
-                        duration={500}><Link to="/community" > Community </Link></LinkScroll></a> </li>
-                    <li> <a href="#"><LinkScroll
-                            activeClass="active"
-                            to="sparkPageTop"
-                            spy={true}
-
                         offset={-77}
                         duration={300}
                     ><Link to="/docs" >Resources</Link></LinkScroll></a> </li>

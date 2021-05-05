@@ -2,14 +2,11 @@ import React from "react"
 import "./MenuButton.css"
 
 function MenuButton(props){
-  function buttonClicked(){
-    console.log("Post Button Clicked")
-    props.showPost()
-  }
+    
     return(
       
           <a href={props.link}>
-              <button className="MenuButton" onClick={buttonClicked}>
+              <button className="MenuButton">
                 {props.text}
               </button>
           </a>

@@ -61,7 +61,7 @@ function HomePage() {
           <div className="homePage__numberContainer">
             <NumberStat number={4} stat="projects so far" />
             <NumberStat number={32} stat="members so far" />
-            <NumberStat number={93} extra={"%"} stat="enjoyed their involvement" />
+            <NumberStat number={93} suffix={"%"} stat="enjoyed their involvement" />
           </div>
           <div className="homePage__applyButtonBox"><Link to="/apply" className="homePage__applyButtonLink" >
             <div className="homePage__applyButton">

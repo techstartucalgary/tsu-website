@@ -10,15 +10,22 @@ function NumberStat(props: any) {
       <VisibilitySensor>
         {({ isVisible }) => (
           <div className="numberStat__number">
-            {(isVisible) ? (
+            {isVisible ? (
               <CountUp
                 start={0}
                 end={props.number}
+                suffix={props.suffix}
                 duration={2.0}
                 delay={0.2}
               />
             ) : (
-              <CountUp start={0} end={0} duration={0} delay={0} />
+              <CountUp
+                start={0}
+                end={0}
+                suffix={props.suffix}
+                duration={0}
+                delay={0}
+              />
             )}
           </div>
         )}

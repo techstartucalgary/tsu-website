@@ -15,7 +15,7 @@ function ApplyPage() {
     <div className="applyPage">
       <div className="applyPage__waves applyPage__waves1"></div>
       <div className="applyPage__waves applyPage__waves2"></div>
-      <header className="applyPage__showcase">
+      <header className="applyPage__showcase" id="applyPageTop">
         <div className="applyPage__spacing" data-aos="zoom-out-down"></div>
         <h1 className="applyPage__primary-title">APPLY</h1>
         <p className="applyPage__primary-description">

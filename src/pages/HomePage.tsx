@@ -20,14 +20,13 @@ import EventsSection from "components/EventsSection/EventsSection";
 
 function HomePage() {
 
-  document.getElementById("draft")?.addEventListener("mouseover", NumberStat)
 
 
   return (
     <div className="homePage">
 
 
-      <header className="homePage__hero" id="HomePageSection1">
+      <header className="homePage__hero" id="homePageTop">
         <Particle />
         <div className="homePage__logoContainer">
           <img className="homePage__logo" src={tsu_logo}></img></div>

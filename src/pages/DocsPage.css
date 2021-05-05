@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .docsPage {
   text-align: center;
   font-family: "Inter", Tahoma, sans-serif;
@@ -17,36 +21,40 @@
   margin-right: auto;
 }
 
-.docsPage__h1 {
+/*.docsPage__h1 {
   text-align: left;
   justify-content: left;
 
   font-weight: 100px;
   font-size: 25px;
   font-family: "Inter", Tahoma, sans-serif;
-}
+}*/
 
-.docsPage__header2 ul {
+.docsPage__links ul {
   margin-left: -20px;
   margin-top: -20px;
+
+  text-align: left;
 }
 
-.docsPage__header2 {
+.docsPage__links {
   width: 98%;
 
   padding: 33px 0;
   display: flex;
   margin: auto;
+  text-align: left;
 }
 
-.docsPage__header2 ul li {
+.docsPage__links ul li {
   list-style: none;
   padding-bottom: 5px;
   margin: 0 20px;
   position: relative;
+  justify-content: left;
 }
 
-.docsPage__header2 ul li a {
+.docsPage__links ul li a {
   text-decoration: none;
   color: #fff;
   text-transform: uppercase;
@@ -55,7 +63,7 @@
   font-weight: 100;
 }
 
-.docsPage__header2 ul li::after {
+.docsPage__links ul li::after {
   content: "";
   height: 3px;
   width: 0;
@@ -66,27 +74,27 @@
   transition: 0.5s;
 }
 
-.docsPage__header2 ul li:hover::after {
+.docsPage__links ul li:hover::after {
   width: 100%;
 }
 
-.docsPage__h2 {
+/*.docsPage__h2 {
   text-align: right;
   justify-content: right;
   padding-right: 10px;
   font-size: 20px;
   font-family: "Inter", Tahoma, sans-serif;
-}
+}*/
 
-.docsPage__links {
+/*.docsPage__links {
   text-decoration: none;
   color: white;
 }
 .docsPage__links:hover {
   color: rgb(183, 189, 180);
-}
+}*/
 
-.docsPage__h3 {
+.docsPage__title {
   margin-top: 0px;
   height: 80px;
   justify-content: center;
@@ -97,14 +105,14 @@
   font-size: 30px;
 }
 
-.docsPage__Search {
+.docsPage__search {
   margin: auto;
   position: relative;
   width: 50%;
   height: 70px;
 }
 
-.docsPage__Search input {
+.docsPage__search input {
   width: 90%;
   height: 65px;
   border-radius: 30px;
@@ -116,18 +124,20 @@
   transition: 0.5s ease;
 }
 
-.docsPage__Search input:hover {
+.docsPage__search input:hover {
   border: 8px solid rgb(189, 209, 212);
   background-color: rgb(189, 209, 212);
 }
 
 @media (max-width: 600px) {
-  .docsPage__Search input {
+  .docsPage__search input {
     width: 75%;
   }
 }
 
-.docsPage__h4 {
+/*** Contents section ***/
+
+.docsPage__intro {
   margin-left: auto;
   margin-right: auto;
   width: 300px;
@@ -144,13 +154,13 @@
   padding-bottom: 20px;
 }
 
-.docsPage__h4.active {
+/*.docsPage__intro.active {
   transform: translateY(0);
   opacity: 1;
   margin-top: -2%;
-}
+}*/
 
-.docsPage__p {
+.docsPage__description {
   margin-top: 50px;
   width: 75%;
   margin-left: auto;
@@ -161,16 +171,36 @@
   font-weight: 50px;
 }
 
-.docsPage__p2 {
+.docsPage__content {
+  text-align: left;
+  color: white;
+  justify-content: center;
+}
+
+.docsPage__sectionDescription {
+  font-size: 19px;
+}
+
+.docsPage__content ul {
+  font-size: 25px;
+  list-style: none;
+  padding-left: 0;
+  margin: 4px 40px;
+}
+
+.docsPage__break {
+  height: 60px;
+}
+
+/*.docsPage__p2 {
   width: 85%;
 
   font-family: "Inter", Tahoma, sans-serif;
   font-size: 15px;
   font-weight: 50px;
-}
+}*/
 
-.docsPage__ol {
-  font-size: 20px;
+/*.docsPage__ol {
   font-weight: 400;
   font-family: "Inter", Tahoma, sans-serif;
   justify-content: left;
@@ -178,9 +208,9 @@
   align-items: left;
   margin-inline-start: 5%;
   width: 80%;
-}
+}*/
 
-.docsPage__ol button {
+/*.docsPage__ol button {
   width: 120px;
   height: 40px;
   padding: 5px 0;
@@ -202,13 +232,22 @@
   color: black;
   width: 130px;
   height: 45px;
-}
+}*/
 
-.docsPage__ol li {
+/*.docsPage__ol li {
   margin: 2%;
+  text-decoration: none;
+  list-style: none;
+  font-size: 23px;
 }
 
-.docsPage__White {
+.docsPage__techGuideCards{
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+}*/
+/*.docsPage__White {
   background-color: white;
   text-align: center;
   color: black;
@@ -249,18 +288,10 @@
   font-family: "Inter", Tahoma, sans-serif;
   text-decoration: none;
   list-style: none;
-}
+}*/
 
-.docsPage__pLast {
-  position: relative;
-  height: 20px;
-  margin-bottom: 50px;
-  font-size: 15px;
-  font-weight: 400;
-  text-align: center;
-  font-family: "Inter", Tahoma, sans-serif;
-  margin: 50px 10%;
-}
+/*** Dark Mode Toggler ***/
+
 .switch {
   overflow-y: hidden;
   white-space: nowrap;
@@ -277,7 +308,7 @@
   transform-origin: 200px;
 }
 
-.switch1 {
+.switchSun {
   display: inline-block;
   position: absolute;
   font-size: 27px;
@@ -286,7 +317,7 @@
   left: 82%;
 }
 
-.switch2 {
+.switchMoon {
   display: inline-block;
   position: absolute;
   font-size: 30px;
@@ -312,7 +343,7 @@
 .switch__span {
   position: absolute;
 
-  background-color: #556e53;
+  background-color: #4b4c4b;
 
   cursor: pointer;
   top: 0;
@@ -345,10 +376,4 @@
 
 .switch__label input:checked + .switch__span {
   background-color: #bef992;
-}
-
-#smth {
-  height: 70px;
-  width: 80px;
-  background-color: violet;
 }

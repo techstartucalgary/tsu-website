@@ -101,14 +101,29 @@ html {
   text-align: center;
   display: inline-block;
   color: white;
+  width: 100vw;
   font-size: clamp(1rem, calc(1vw + 0.5rem), 2.5rem);
   background-image: linear-gradient(
     rgb(89, 201, 209),
     var(--primary-green, rgb(106, 235, 80))
-  );
-  height: 80vh;
-}
+    );
+    height: 80vh;
+  }
 
+  @supports (background-blend-mode: multiply) {
+    .applyPage__showcase {
+      background-image: linear-gradient(
+        var(--primary-green, rgb(106, 235, 80)),
+        rgb(89, 201, 209)
+      );
+      background-size: cover;
+      background-blend-mode: multiply;
+      background-attachment: fixed;
+      background-repeat: repeat-x;
+      background-position: center center;
+    }
+  }
+  
 .applyPage__primary-title {
   position: relative;
   float: left;
@@ -299,19 +314,6 @@ html {
   padding: 0;
 }
 
-@supports (background-blend-mode: multiply) {
-  .applyPage__showcase {
-    background-image: linear-gradient(
-      var(--primary-green, rgb(106, 235, 80)),
-      rgb(89, 201, 209)
-    );
-    background-size: cover;
-    background-blend-mode: multiply;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-position: center center;
-  }
-}
 @media (min-width: 800px) {
   .applyPage__applicationUL {
     display: inline-flex;

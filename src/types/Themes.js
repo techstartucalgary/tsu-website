@@ -5,13 +5,16 @@ export const lightTheme = {
   body: `white`,
   background:'#F8F8F8',
   fontColor: "black",
+  docsPage__logo: "images/tech-start-logo-white.png",
+  color: '#404440',
   boxShadow:"rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px",
-  /*docsPage__logo: "images/tech-start-logo-white.png",*/
 }
 
 export const darkTheme = {
     body: '#0e1111',
     fontColor:'white',
+    src: "images/tech-start-logo-white.png",
+    color: '#d1e2d1',
     boxShadow:"rgba(255, 255, 255, 0.25) 0px 50px 100px -20px, rgba(255, 255, 255, 0.3) 0px 30px 60px -30px",
     /*src: "images/tech-start-logo-white.png",*/
 }
@@ -50,4 +53,8 @@ body {
 
 .guideName{
   color:${props => props.theme.fontColor}
+}
+
+.docsPage__title{
+  color:${props => props.theme.color}
 }`

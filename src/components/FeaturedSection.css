@@ -16,8 +16,8 @@
   shape-outside: url(../images/temp.png);
 }
 
-@media (max-width: 600px){
-  .featuredSection{
+@media (max-width: 600px) {
+  .featuredSection {
     margin-top: 64px;
     padding-top: 35%;
     padding-right: 10%;
@@ -59,8 +59,7 @@
   --clr-outer: rgba(0, 49, 41, 0.7);
 }
 
-
-.featuredSection__sectionDescription{
+.featuredSection__sectionDescription {
   margin-top: 28px;
 }
 

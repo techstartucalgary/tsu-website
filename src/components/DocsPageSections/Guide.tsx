@@ -1,5 +1,4 @@
 import React from "react";
-import "./TechGuides.css";
 import { lightTheme, darkTheme, GlobalStyles } from 'types/Themes.js'
 // Note: all CSS for this file is currently in TechGuides.css
 
@@ -18,7 +17,7 @@ interface guideProps {
  */
 function Guide(props: guideProps) {
 
-    return <a href={props.link} className="guide">
+    return <a href={props.link} className="guide" target="_blank">
 
         <div className="guide__background">
             <header className="guideName">

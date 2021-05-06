@@ -13,7 +13,7 @@ import {
 const Footer = () => (
     <div className="Footer">
 
-        <HoverButton link="http://eepurl.com/hnusUP" text="Join our mailing list!" />
+        <div className="hoverButton"><HoverButton link="http://eepurl.com/hnusUP" text="Join our mailing list!" /></div>
 
         <div className="SocialMediaSection">
             <SocialMedia

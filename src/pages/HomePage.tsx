@@ -82,32 +82,7 @@ function HomePage() {
       <section className="homePage__featuredProjects">
         <div className="homePage__container">
           <h2 className="homePage__containerTitle">Featured projects</h2>
-          {/* <div className="homePage__split">
-            <FeaturedProject
-              projectLink="#"
-              projectImage={temp}
-              projectName="Project1"
-              teamName="Team1"
-            />
-            <FeaturedProject
-              projectLink="#"
-              projectImage={temp}
-              projectName="Project2"
-              teamName="Team2"
-            />
-            <FeaturedProject
-              projectLink="#"
-              projectImage={temp}
-              projectName="Project3"
-              teamName="Team3"
-            />
-          </div> */}
           <ProjectSection/>
-          <div>
-            <a href="#">
-              <button className="homePage__btn">View All Projects</button>
-            </a>
-          </div>
         </div>
       </section>
 

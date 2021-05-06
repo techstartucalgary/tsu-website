@@ -23,7 +23,7 @@ function App() {
             <Navbar />
             <div className="content">
                 <Switch>
-                    <Route path="/docs">
+                    <Route path="/resources">
                         <DocsPage />
                     </Route>
                     <Route path="/apply">

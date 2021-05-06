@@ -20,9 +20,11 @@
   transition: 200ms ease-in-out;
 }
 
-.guide__background:hover, .guide__background:focus{
+.guide__background:hover,
+.guide__background:focus {
   /* box-shadow: rgba(255, 255, 255, 0.1) 0px 1px 1px 0px inset, rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px; */
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 
 .guide {
@@ -32,15 +34,12 @@
   text-decoration: none;
   color: rgb(8, 8, 8);
   margin-bottom: 40px;
-
 }
 
 .guide:hover,
 .guide:focus {
   transform: translateY(-7px);
 }
-
-
 
 .guideName {
   font-size: 20px;
@@ -62,5 +61,3 @@
   color: white;
   opacity: 1;
 }
-
-

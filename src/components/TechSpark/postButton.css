@@ -1,9 +1,9 @@
 button.postButton{
     text-align: center;
     background-color: #D3f5b6;
-    width: 250px;
-    height: 250px;
-    border: 1px #282A36;
+    width: 300px;
+    height: 300px;
+    border: 1px solid green;
     border-radius: 25px;
     vertical-align: middle;
     font-family: 'Inter', Tahoma, sans-serif; 
@@ -14,6 +14,6 @@ a{
     color:#282A36;
     text-decoration: none;
 }
-.postButtonPrompt{
+.postButton__prompt{
     font-size: large;
 }

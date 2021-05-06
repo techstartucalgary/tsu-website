@@ -10,7 +10,7 @@
     font-family: 'Inter', Tahoma, sans-serif;   
     transition: width 1s, height 1s;
     padding: 10px;
-
+    z-index: 1;
   }
 
 .expandableForumPost--active {

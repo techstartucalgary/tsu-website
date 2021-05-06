@@ -7,18 +7,48 @@ import SignIn from '../components/TechSpark/SignIn'
 import PostCreation from '../components/TechSpark/PostCreation'
 import Register from '../components/TechSpark/Register'
 import '../components/TechSpark/Event'
+import { EventType } from "./EventType"
 
 const dataRoot = "https://techstartbackend.herokuapp.com"
 function Dashboard() {
     
-    const [newsCategories, setNewsCategories] = React.useState([]);
+const [newsCategories, setNewsCategories] = React.useState([]);
 
-    const[news, setNews] = React.useState([])
+const [news, setNews] = React.useState([])
     
    
-  const dataRoot = "https://techstartbackend.herokuapp.com"
-  const [token, setToken] = React.useState([]);
-  const [userID, setUserID] = React.useState([]);
+    const dataRoot = "https://techstartbackend.herokuapp.com"
+    const [token, setToken] = React.useState([]);
+    const [userID, setUserID] = React.useState([]);
+
+    const [events, setEvents] = React.useState([])
+
+    //Get existing news 
+    useEffect(() => {
+        axios.get(
+            `${dataRoot}/news`
+          ).then((response) => {
+            if (response.status === 200) {
+                
+                let data = response.data;
+                setEvents(data)
+                let event = new EventType(data[0])
+                console.log(event)
+                console.log(data)
+                console.log(JSON.parse(data))
+          }}, (error) => {
+            console.log(error);
+          });; 
+    },[])
+    console.log(newsCategories)
+    console.log(events)
+    console.log(events.length)
+    console.log(events[0])
+    console.log(events[0])
+    // if (events.length > 0) {
+    //     console.log(events[0].category)
+    // }
+    
 
   useEffect(() => {
         axios.post(
@@ -39,7 +69,7 @@ function Dashboard() {
           });; 
     },[])
 
-    const body = 
+    
     useEffect(() => {
       axios.put(
           `${dataRoot}/update-post/1`, {
@@ -58,6 +88,25 @@ function Dashboard() {
         }, (error) => {
           console.log(error);
         });; 
+    },[])
+
+    useEffect(() => {
+        axios.post(
+            `${dataRoot}/login`, {
+                username: 'test@testing.test',
+                password: 'WordPass123'
+            }
+          ).then((response) => {
+                
+                let token = response.data.token;
+                let userID = response.data.id;
+                setToken(token)
+                setUserID(userID)
+                console.log(token)
+                
+          }, (error) => {
+            console.log(error);
+          });; 
     },[])
 
 

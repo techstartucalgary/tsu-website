@@ -10,7 +10,7 @@
     font-family: "Inter", Tahoma, sans-serif;
 }
 
-.chonkyHeading, .chonkyHeading--white, .chonkyHeading--green{
+.chonkyHeading{
     font-size: var(--chonky-header-size);
     font-weight: var(--chonky-header-weight);
     color: var(--primary-black);
@@ -27,6 +27,10 @@
 
 .chonkyHeading--lessMargin{
     margin-bottom: 0px;
+}
+
+.chonkyHeading--dynamic{
+    font-size: clamp(1rem, calc(8vw + 1rem), 3.5rem);
 }
 
 .thiccSubheading, .thiccSubheading--white, .thiccSubheading--green{

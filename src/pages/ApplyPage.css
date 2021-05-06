@@ -200,12 +200,6 @@ html {
   font-size: clamp(18px, calc(1vw + 12px), 24px);
 }
 
-.applyPage__SectionTitle {
-  font-size: clamp(1rem, calc(8vw + 1rem), 3.5rem);
-  font-weight: 625;
-  margin-bottom: 10px;
-  text-align: center;
-}
 .applyPage__container {
   width: 100%;
   height: 100%;

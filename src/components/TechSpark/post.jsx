@@ -1,39 +1,24 @@
-import React, {View} from "react";
+import React, { useState, View } from "react";
 import './post.css'
-import ExpandedPost from './expandedPost'
+import { MdKeyboardArrowDown } from 'react-icons/md';
+import { IconContext } from "react-icons";
 
+function PostContainer(props) {
+  const [active, setActive] = useState(false)
 
+  function toggle() {
+    setActive(!active)
+  }
 
-class Post extends React.Component  {
-    constructor() {
-        super();
-        this.state = {
-          show: false
-        };
-        this.showModal = this.showModal.bind(this);
-        this.hideModal = this.hideModal.bind(this);
-      }
-    
-      showModal = () => {
-        this.setState({ show: true });
-      };
-    
-      hideModal = () => {
-        this.setState({ show: false });
-      };
-    render() {
-        return (
-            <div className="rectangle">
-                Looking for group for project
+  return <div className={'expandableForumPost' + (active ? ' expandableForumPost--active' : '')}>
+    {props.title}
+    <p className = "author">{props.author}</p>
+    <p className = "date">{props.date}</p>
                 <hr></hr>
-                Project XYZ
-                <button className="button" type="button" onClick={this.showModal}>...</button>
-                <ExpandedPost show={this.state.show} handleClose={this.hideModal}>
-                    <p>Modal</p>
-                </ExpandedPost>
-            </div>
-        );
-      }
+                <p className = "description">{props.description}</p>
+                <button className={"forumPostButton" + (active ? ' forumPostButton--active' : '')} type="button" onClick={toggle}><IconContext.Provider value={{ size: "1.5em" }}><MdKeyboardArrowDown /></IconContext.Provider></button>
+  </div>
+
 }
 
-export default Post
+export default PostContainer

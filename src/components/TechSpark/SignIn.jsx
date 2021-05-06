@@ -9,17 +9,17 @@ function SignIn(props){
    function handleClick(){
         setIsLoginMode(!isLoginMode)
     }
+
     return (
         <div className= {"signInBackground " + (isLoginMode ? "signInBackground--loginMode" : "signInBackground--registerMode")}>
-        
             {isLoginMode ? 
                 <div className = "loginHeaderDiv"><div className = "loginDesign"></div> 
-                <p><Login
+                <div><Login
                     switchMode = {handleClick}
-                /></p></div>
-                 : <p><Register
+                /></div></div>
+                 : <div><Register
                     switchMode = {handleClick}
-                /></p>}  
+                /></div>}  
       </div>
     );
 }

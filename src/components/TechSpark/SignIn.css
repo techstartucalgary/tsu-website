@@ -58,19 +58,38 @@
     }
 }
 
-@media (max-width: 530px){
+@media (max-width: 1150px){
     .signInBackground--registerMode{
-        height: 600px;
+        height: 540px;
     }
 }
-@media (max-width: 480px){
+@media (max-width: 1060px){
     .signInBackground--registerMode{
-        height: 670px;
+        height: 560px;
     }
 }
 
-@media (max-width: 370px){
+@media (max-width: 970px){
     .signInBackground--registerMode{
-        height: 690px;
+        height: 630px;
+    }
+}
+
+@media (max-width: 885px){
+    .signInBackground--registerMode{
+        height: 665px;
+    }
+}
+
+@media (max-width: 785px){
+    .signInBackground--registerMode{
+        height: 680px;
+    }
+}
+
+
+@media (max-width: 655px){
+    .signInBackground--registerMode{
+        height: 695px;
     }
 }

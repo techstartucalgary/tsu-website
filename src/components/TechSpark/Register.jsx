@@ -8,7 +8,8 @@ const {useRef, useLayoutEffect} = React;
 
 function Register(props){
 
-    const[user, setUser] = React.useState(0)
+    const[successfulRegister, setSuccesfulRegister] = React.useState(false)
+    const[invalidInput, setInvalidInput] = React.useState(false)
 
     const firstUpdate = useRef(true);
     useLayoutEffect(() => {
@@ -18,26 +19,14 @@ function Register(props){
             return;
         }
         
-        if(document.getElementById('registerEmail').value == ""){
-          console.log('Invalid Email')
-          //alert('Please enter your email address');
+        if((document.getElementById('registerEmail').value == "")||(document.getElementById('registerFirstName').value == "")||
+        (document.getElementById('registerLastName').value == "")||(document.getElementById('registerPassword').value == "")){
+          setInvalidInput(true);
           return;
+      }else{
+        setInvalidInput(false);
       }
-      if(document.getElementById('registerFirstName').value == ""){
-          console.log('Invalid First Name')
-          alert('Please enter your first name');
-          return;
-      }
-      if(document.getElementById('registerLastName').value == ""){
-        console.log('Invalid Last Name')
-        alert('Please enter your last name');
-        return;
-    }
-    if(document.getElementById('registerPassword').value == ""){
-      console.log('Invalid Password')
-      alert('Please enter a password');
-      return;
-  }
+
         axios.post(
             `${dataRoot}/register`, {
                 username: document.getElementById('registerEmail').value,
@@ -56,6 +45,11 @@ function Register(props){
           });
            
     });
+
+    function handleRegister(event){
+      event.preventDefault();
+        setSuccesfulRegister(!successfulRegister);
+    }
 
     return (
         <div className = "registerStyling">
@@ -92,14 +86,19 @@ function Register(props){
                     </i>
                     <input type="password" id="registerPassword" placeholder="Password"/><br></br>
                 </div>
-                <input type="submit" id = "registerSubmit" value = "Get Started!" onClick = {() => setUser(user + 1)}/>
+                <input type="submit" id = "registerSubmit" value = "Get Started!" onClick = {handleRegister}/>
 
             </form>
             <div className = "switchToLogin">
                 <h5 className = "logInLink">Already have an account?</h5>
                  <button className= "loginSwitch" onClick = {props.switchMode} ><i className="fa fa-lock icon">
                   </i> Log In</button>
+                  <div id="clearRegister" />
             </div>
+            {invalidInput ?
+                    <div className = "registerAlert">
+                        <p className = "registerAlertMessage">You have not entered the necessary information</p>
+                    </div>  : <div />}
         </div>
     );
 }

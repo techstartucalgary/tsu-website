@@ -99,7 +99,8 @@ html {
 }
 
 .homePage section {
-  padding: 8em 0;
+  padding-top: 8em;
+  padding-bottom: 5em;
 }
 
 .homePage__container {
@@ -108,6 +109,13 @@ html {
   margin: 0 auto;
   color: white;
   text-align: center;
+}
+
+@media(max-width:700px){
+  .homePage__container--noVert{
+    margin-left: 7.25%;
+    margin-right: 7.25%;
+  }
 }
 
 .homePage__split {

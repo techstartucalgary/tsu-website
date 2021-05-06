@@ -1,5 +1,5 @@
 .HoverButtonDiv {
-    width:auto;
+    width:fit-content;
     transition: 0.3s ease-in-out;
 }
 
@@ -24,6 +24,7 @@
     color:white;
     box-shadow: 0 0.5rem 0.5rem -0.4rem white; /* offset-x | offset-y | blur-radius | spread-radius | color*/
     cursor: pointer;
+    transform: translateY(-0.25rem);
 }
 
 .HoverButton--DarkMode:hover {

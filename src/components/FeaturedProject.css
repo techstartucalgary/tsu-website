@@ -1,4 +1,4 @@
-.projectItem {
+/*.projectItem {
     display: block;
     position: relative;
     transform: scale(0.9);
@@ -31,4 +31,93 @@
     font-weight: 700;
     font-size: clamp(1.5rem, calc(1vw + 1rem), 3rem);
     text-transform: uppercase;
-  }
+  }*/
+
+.featuredProjectSection {
+  text-decoration: none;
+  color: white;
+}
+
+.featuredProject {
+  height: auto;
+}
+
+.project__container {
+  border-radius: 20px; /* Change this to image, probably */
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  background: linear-gradient(180deg, rgb(26, 25, 25), rgb(40, 46, 51));
+}
+
+.project__content {
+  /* We can change this, but position should be absolute still */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  font-size: var(--regular-font);
+  color: white;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  opacity: 0;
+}
+
+.project__button {
+  border: 3px solid var(--primary-green);
+  background-color: rgb(43, 48, 53);
+  border-radius: 30px;
+  width: 40%;
+  height: 30px;
+  padding-top: 7px;
+  margin: auto;
+  margin-top: 25px;
+  transition: 200ms;
+}
+
+.project__content a {
+  color: white;
+  text-decoration: none;
+}
+.project__button:hover,
+.project__button:focus {
+  background-color: var(--primary-green);
+}
+.project__image--transparent {
+  opacity: 0;
+  transition: 200ms;
+}
+.project__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.project__description--visible {
+  opacity: 1;
+  transition: 200ms;
+}
+.featuredProjectImage {
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.featuredProjectDescription {
+  bottom: 150px;
+  position: relative;
+  opacity: 0;
+  padding: 10px;
+}
+
+.featuredProjectContainer {
+  height: 100%;
+  width: 100%;
+  background-color: lightsalmon;
+}

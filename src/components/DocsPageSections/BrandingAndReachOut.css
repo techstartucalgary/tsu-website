@@ -12,6 +12,5 @@
 }
 
 .sectionContent a {
-  text-decoration: none;
-  color: rgb(102, 98, 98);
+  color: var(--primary-green);
 }

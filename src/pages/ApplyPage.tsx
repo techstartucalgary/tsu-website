@@ -8,6 +8,8 @@ import joinProject from "images/faketeam.jpg";
 import ApplySection from "components/ApplySection";
 import ApplyFAQSection from "components/ApplyFAQSection";
 import Accordion from "../components/Apply/Accordion";
+import Blobbie from "components/Blobbie";
+import Divider from "components/Divider";
 
 function ApplyPage() {
   const [active, setActive] = useState("");
@@ -19,25 +21,27 @@ function ApplyPage() {
         <div className="applyPage__spacing" data-aos="zoom-out-down"></div>
         <h1 className="applyPage__primary-title">APPLY</h1>
         <p className="applyPage__primary-description">
-          Join a high-energy, dynamic community dedicated to creating an
-          entreprenuerial and software environment at the University of Calgary.
+          Join a dynamic community dedicated to advancing software development and entrepreneurship at the University of Calgary.
         </p>
       </header>
       <div className="applyPage__introContainer">
         <div className="applyPage__intro">
-          <h1 className="applyPage__SectionTitle">What We Do</h1>
-          <div className="applyPage__introImg"></div>
+          <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">What We Do</h1>
+          <Divider/>
+          <Blobbie id={8} width={400} transform="translate(-70%, -30%)" edge={true} />
           <div className="applyPage__introContents" data-aos="fade-down">
             <h2>
               Tech Start is a UofC student student-run software engineering
               design team devoted to building software projects in a
-              collaborative and professional environment. Our primary objective
+              collaborative and professional environment. We're aiming to be the best
               is to be the best space at UofC for students to find a welcoming
               community, build projects in a team setting, gain experience with
               professional tools and principles, and share their knowledge with
               others.
             </h2>
-            <button className="applyPage__btn">Join the Community</button>
+            <a href="http://eepurl.com/hnusUP">
+              <button className="applyPage__btn">Sign up to our mailing list</button>
+            </a>
           </div>
         </div>
       </div>
@@ -49,7 +53,7 @@ function ApplyPage() {
           data-aos="fade-right"
         />
         <div className="applyPage__projectIntro">
-          <h1 className="applyPage__SectionTitle">Projects</h1>
+          <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--white">Project FAQs</h1>
           <Accordion
             title="What is a Tech Start project?"
             active={active}
@@ -107,47 +111,54 @@ function ApplyPage() {
             setActive={setActive}
             description="
             You will get
-            <li>to learn and exercise professional development/design practices </li>
+            <li>to learn and exercise professional development and design practices </li>
             <li>to experience the full cycle of developing a project from nothing </li>
             <li>to experience and practice development, business, or design skills </li>
             <li>to work collaboratively on a project and learn from those around you</li>
             <li>to expand your portfolio by working on a team project</li>
-            <li>to make some meaningful relationships with the people from Tech Start </li>"
+            <li>to make friendships and connections with UCalgary's best  </li>"
           />
           <Accordion
             title="What is required to take part in a project?"
             active={active}
             setActive={setActive}
             description="
-                    A passion for learning and experimenting, and a willingness to participate
-              actively! We welcome everyone of all skill levels, whether you are a complete
+                    A passion for learning and experimenting, and a willingness to get involved! We welcome everyone of all skill levels, whether you are a complete
               beginner just starting out or if you’ve done several internships and have
               a portfolio of awesome projects."
           />
           <Accordion
-            title="What are is the commitment of a project member?"
+            title="What commitments are expected of project members?"
             active={active}
             setActive={setActive}
             description="
-            <li>Weekly team meetings (1 hour per week) and occasional club meetings </li>
-            <li>Around 4 hours per week working on tasks in and outside of web-development nights </li>"
+            <li>Team members must be able to attend the majority of our weekly dev nights, which are held on Wednesdays from 5:30-8:30PM.</li>
+            <li>Beyond the dev nights, you should expect to contribute a minimum of 1-2 hours of additional work per week</li>
+            <li>Additional team meetings may be arranged by your Project Manager when necessary</li>
+            "
           />
         </div>
         <div className="applyPage__container applyPage__projectExample">
           <div className="applyPage__projectExampleText">
             <h1>
-              Need an example of a project? Look no further! As a matter of
-              fact, this website was made by this project team!
+              Join a project to make new friends, gain new skills, and supercharge your portfolio!
             </h1>
           </div>
-          <img src={projectExample} alt="" />
+          <img src={projectExample} alt="The Tech Start website team" />
         </div>
+        <Blobbie id={2} width={130} transform="translate(-30%, 70%)" edge={false} />
+
       </div>
+
       <div className="applyPage__container applyPage__applicationContainer">
+
         <div className="applyPage__application">
-          <h1 className="applyPage__SectionTitle">Applications</h1>
-          <div className="applyPage__applicationImg"></div>
+          <Blobbie id={2} width={190} transform="translate(clamp(90vw, calc(5vw + 1rem), 40vw), 20%)" edge={false} />
+          <Blobbie id={2} width={50} transform="translate(clamp(-70vw, calc(5vw + 1rem), 40vw), -15%)" edge={false} />
+          <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">Applications</h1>
+          <Divider/>
           <ul className="applyPage__applicationUL">
+
             <ApplySection
               term="1 semester"
               role="Project Member"
@@ -156,6 +167,7 @@ function ApplyPage() {
               status="closed"
               applicationLink="https://forms.gle/3BD9dQ3TjcXzEqZN9"
             />
+
             <ApplySection
               term="1 semester"
               role="Project Manager"
@@ -164,12 +176,12 @@ function ApplyPage() {
               status="open"
               applicationLink="https://forms.gle/bFGzAFD1QWdCavGr5"
             />
+
             <ApplySection
               term="1 academic year"
               role="Executive Team"
               description="Work behind the scenes to organize project teams, run
-                  workshops and events, and more. Lead and grow the club vision
-                  and culture."
+                  workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               status="closed"
               applicationLink="https://forms.gle/PQMbV5SWQfNe46GAA"
             />
@@ -177,8 +189,8 @@ function ApplyPage() {
         </div>
       </div>
       <div className="applyPage__FAQ">
-        <h1 className="applyPage__SectionTitle">FAQ</h1>
-        <div className="applyPage__FAQImg"></div>
+        <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin chonkyHeading--white">FAQ</h1>
+        <Divider/>
         <div className="applyPage__FAQContents">
           <ApplyFAQSection
             question="What do the Project Managers do?"

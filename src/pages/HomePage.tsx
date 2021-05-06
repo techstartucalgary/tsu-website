@@ -17,6 +17,7 @@ import { Link } from "react-router-dom";
 import SponsorSection from "components/SponsorSection/SponsorSection";
 import Blobbie from "components/Blobbie";
 import EventsSection from "components/EventsSection/EventsSection";
+import ProjectSection from 'components/ProjectSection';
 
 function HomePage() {
 
@@ -41,7 +42,7 @@ function HomePage() {
         <Blobbie id={2} width={100} transform="translate(clamp(20vw, calc(5vw + 1rem), 40vw), -80%)" edge={false} />
         <div className="homePage__container">
 
-          <h1 className="chonkyHeading">We're the innovators on campus.</h1>
+          <h1 className="chonkyHeading chonkyHeading--lessMargin">We're the innovators on campus.</h1>
           <Divider />
           <p className="regularText" id="draft">
             We're a software club at the University of Calgary. Through multidisciplinary teams, we take on interesting problems and use technology to solve them.
@@ -61,7 +62,7 @@ function HomePage() {
           <div className="homePage__numberContainer">
             <NumberStat number={4} stat="projects so far" />
             <NumberStat number={32} stat="members so far" />
-            <NumberStat number={93} extra={"%"} stat="enjoyed their involvement" />
+            <NumberStat number={93} suffix={"%"} stat="enjoyed their involvement" />
           </div>
           <div className="homePage__applyButtonBox"><Link to="/apply" className="homePage__applyButtonLink" >
             <div className="homePage__applyButton">
@@ -71,81 +72,34 @@ function HomePage() {
         </div>
       </section>
 
-      {/* <section> */}
-      {/* <div className="homePage__container"> */}
-      {/* <EventsSection /> */}
-
-      {/* </div> */}
-      {/* </section> */}
+      <section className="homePage__eventsSection">
+        <Blobbie id={8} width={300} transform="translate(-10vw, -90%)" edge={false} />
+        <Blobbie id={8} width={300} transform="translate(80vw, -60%)" edge={false} />
+        <div className="homePage__container">
+          <EventsSection />
+        </div>
+      </section>
 
       <section className="homePage__featuredProjects">
-        <div className="homePage__container">
-          <h2 className="homePage__containerTitle">Featured projects</h2>
-          <div className="homePage__split">
-            <FeaturedProject
-              projectLink="#"
-              projectImage={temp}
-              projectName="Project1"
-              teamName="Team1"
-            />
-            <FeaturedProject
-              projectLink="#"
-              projectImage={temp}
-              projectName="Project2"
-              teamName="Team2"
-            />
-            <FeaturedProject
-              projectLink="#"
-              projectImage={temp}
-              projectName="Project3"
-              teamName="Team3"
-            />
-          </div>
-          <div>
-            <a href="#">
-              <button className="homePage__btn">View All Projects</button>
-            </a>
-          </div>
+        <div className="homePage__container homePage__container--noVert">
+          <h2 className="chonkyHeading chonkyHeading--white">Featured Projects</h2>
         </div>
-      </section>
-
-      <section className="homePage__ourSections">
-        <div className="homePage__container">
-          <FeaturedSection
-            className="homePage__meetTheTeam"
-            sectionImage={temp1}
-            sectionTitle="Meet the Team"
-            sectionDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam architecto veritatis!"
-            sectionLink="#"
-          />
-          <FeaturedSection
-            className="homePage__ourEvents"
-            sectionImage={temp1}
-            sectionTitle="Our Events"
-            sectionDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam architecto veritatis!"
-            sectionLink="#"
-          />
-          <FeaturedSection
-            className="homePage__getInvolved"
-            sectionImage={temp1}
-            sectionTitle="Get Involved"
-            sectionDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam architecto veritatis!"
-            sectionLink="#"
-          />
-        </div>
-      </section>
-
-      <section className="homePage__ourSponsors">
-        <Blobbie id={9} width={800} transform="translate(-80%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
-        <Blobbie id={2} width={150} transform="translate(75vw, -60%)" edge={false} />
-        <Blobbie id={2} width={75} transform="translate(85vw, 0%)" edge={false} />
-        <SponsorSection />
+        <Divider />
+        <ProjectSection />
       </section>
 
       <section className="homepage__teamSection">
         <Blobbie id={12} width={300} transform="translate(93vw, -30%)" edge={true} />
         <Blobbie id={8} width={200} transform="translate(-10vw, 10vw)" edge={false} />
         <TeamSection />
+      </section>
+
+      <section className="homePage__ourSponsors">
+        <Blobbie id={9} width={800} transform="translate(-80%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
+        <Blobbie id={2} width={150} transform="translate(75vw, -60%)" edge={false} />
+        <Blobbie id={2} width={75} transform="translate(85vw, 0%)" edge={false} />
+        <Blobbie id={8} width={300} transform="translate(40vw, -90%)" edge={false} />
+        <SponsorSection />
       </section>
     </div>
   );

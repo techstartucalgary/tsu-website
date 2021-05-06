@@ -1,7 +1,10 @@
 :root{
     /* CSS Variables with global scope */
     --primary-green: #99E755;
+    --greyish-green: #85ed99;
     --primary-black: #282A36;
+    --secondary-blue: #00b7ff;
+    --secondary-lime: #c9e265;
     --secondary-grey: rgba(34, 34, 34, 0.95);
     --chonky-header-size: 4.75rem;
     --thicc-subheading-size: 2.5rem;
@@ -10,7 +13,7 @@
     font-family: "Inter", Tahoma, sans-serif;
 }
 
-.chonkyHeading, .chonkyHeading--white, .chonkyHeading--green{
+.chonkyHeading{
     font-size: var(--chonky-header-size);
     font-weight: var(--chonky-header-weight);
     color: var(--primary-black);
@@ -25,6 +28,13 @@
     color: var(--primary-green);
 }
 
+.chonkyHeading--lessMargin{
+    margin-bottom: 0px;
+}
+
+.chonkyHeading--dynamic{
+    font-size: clamp(1rem, calc(8vw + 1rem), 3.5rem);
+}
 
 .thiccSubheading, .thiccSubheading--white, .thiccSubheading--green{
     font-size: var(--thicc-subheading-size);

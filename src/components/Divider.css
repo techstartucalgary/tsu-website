@@ -6,6 +6,11 @@
     margin-bottom: 10px;
     width: min(30%, 250px);
     min-width: 175px;
+    display: block;
+}
+
+.divider{
+    width: 100%;
 }
 
 /* @media(max-width: 535px){

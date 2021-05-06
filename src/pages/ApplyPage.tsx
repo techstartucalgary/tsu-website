@@ -9,6 +9,7 @@ import ApplySection from "components/ApplySection";
 import ApplyFAQSection from "components/ApplyFAQSection";
 import Accordion from "../components/Apply/Accordion";
 import Blobbie from "components/Blobbie";
+import Divider from "components/Divider";
 
 function ApplyPage() {
   const [active, setActive] = useState("");
@@ -26,7 +27,7 @@ function ApplyPage() {
       <div className="applyPage__introContainer">
         <div className="applyPage__intro">
           <h1 className="applyPage__SectionTitle">What We Do</h1>
-          <div className="applyPage__introImg"></div>
+          <Divider/>
           <Blobbie id={8} width={400} transform="translate(-70%, -30%)" edge={true} />
           <div className="applyPage__introContents" data-aos="fade-down">
             <h2>
@@ -151,7 +152,8 @@ function ApplyPage() {
           <Blobbie id={2} width={190} transform="translate(clamp(90vw, calc(5vw + 1rem), 40vw), -10%)" edge={false} />
           <Blobbie id={2} width={130} transform="translate(clamp(-70vw, calc(5vw + 1rem), 40vw), 0%)" edge={false} />
           <h1 className="applyPage__SectionTitle">Applications</h1>
-          <div className="applyPage__applicationImg"></div>
+          <Divider/>
+          {/* <div className="applyPage__applicationImg"></div> */}
           <ul className="applyPage__applicationUL">
 
             <ApplySection
@@ -185,7 +187,8 @@ function ApplyPage() {
       </div>
       <div className="applyPage__FAQ">
         <h1 className="applyPage__SectionTitle">FAQ</h1>
-        <div className="applyPage__FAQImg"></div>
+        <Divider/>
+        {/* <div className="applyPage__FAQImg"></div> */}
         <div className="applyPage__FAQContents">
           <ApplyFAQSection
             question="What do the Project Managers do?"

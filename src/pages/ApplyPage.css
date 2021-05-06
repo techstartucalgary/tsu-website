@@ -332,16 +332,3 @@ html {
   padding: 1.5%;
   margin: 0;
 }
-
-.applyPage__applicationImg,
-.applyPage__introImg,
-.applyPage__FAQImg {
-  display: block;
-  margin: auto;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-left: 150px solid var(--primary-green, rgb(106, 235, 80));
-  border-bottom: 10px solid transparent;
-  border-radius: 100px;
-}

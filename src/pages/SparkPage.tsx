@@ -43,17 +43,14 @@ function Dashboard() {
             </div>
             <div className="sparkMenuGrid">
                 <MenuButton text={"Sign in"} showPost={showPost} showSignIn={showSignIn}/>
-                <MenuButton text={"Profile"}/>
-                <MenuButton text={"Post History"}/>
+                {/* <MenuButton text={"Profile"}/>
+                <MenuButton text={"Post History"}/> */}
 
             </div>
         </div>   
        <div className="sparkContentPage">
            <div className="sparkContentTitle">Whats the latest?:</div>
            <div className="sparkInnerGrid">
-               <Event/>
-               <Event/>
-               <Event/>
                <Event/>
                <Event/>
                <Event/>

@@ -62,7 +62,7 @@ function Header(props: any) {
                                 spy={true}
                                 offset={-77}
                                 duration={300}>
-                                <Link onClick={hideNavbar} to="/apply" >Get Involved</Link>
+                                <Link onClick={hideNavbar} to="/apply" >Apply</Link>
                             </LinkScroll>
                         </a>
                     </li>

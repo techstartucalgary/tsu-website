@@ -146,14 +146,17 @@ function ApplyPage() {
           </div>
           <img src={projectExample} alt="The Tech Start website team" />
         </div>
+        <Blobbie id={2} width={130} transform="translate(-30%, 70%)" edge={false} />
+
       </div>
+
       <div className="applyPage__container applyPage__applicationContainer">
+
         <div className="applyPage__application">
-          <Blobbie id={2} width={190} transform="translate(clamp(90vw, calc(5vw + 1rem), 40vw), -10%)" edge={false} />
-          <Blobbie id={2} width={130} transform="translate(clamp(-70vw, calc(5vw + 1rem), 40vw), 0%)" edge={false} />
+          <Blobbie id={2} width={190} transform="translate(clamp(90vw, calc(5vw + 1rem), 40vw), 20%)" edge={false} />
+          <Blobbie id={2} width={50} transform="translate(clamp(-70vw, calc(5vw + 1rem), 40vw), -15%)" edge={false} />
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">Applications</h1>
           <Divider/>
-          {/* <div className="applyPage__applicationImg"></div> */}
           <ul className="applyPage__applicationUL">
 
             <ApplySection

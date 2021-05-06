@@ -4,7 +4,7 @@ import gallery1 from "images/calgary.jpg";
 import gallery2 from "images/banana.jpg";
 import gallery3 from "images/temp.jpg";
 import projectExample from "images/teamphoto-techstartwebteam.png";
-import joinProject from "images/faketeam.jpg";
+import joinProject from "images/team.png";
 import ApplySection from "components/ApplySection";
 import ApplyFAQSection from "components/ApplyFAQSection";
 import Accordion from "../components/Apply/Accordion";

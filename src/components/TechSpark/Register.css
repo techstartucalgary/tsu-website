@@ -44,6 +44,37 @@
     resize: vertical;
 }
 
+.registerNameDiv{
+    width: 80%;
+    margin-left:10%;
+    margin-right: 10%;
+}
+
+.registerFirstNameInput{
+    float: left;
+    width: 49%;
+    padding: 10px;
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: grey;
+    border-radius: 12px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+.registerLastNameInput{
+    float: right;
+    width: 49%;
+    padding: 10px;
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: grey;
+    border-radius: 12px;
+    box-sizing: border-box;
+    resize: vertical;
+}
+
 
 .loginSwitch{
     color: white;
@@ -60,9 +91,28 @@
     margin-top: 12px;
 }
 
-input[id=registerName], input[id=registerEmail], 
+
+.registerAlert{
+    background-color: #ffb6b9;
+    padding: 4px;
+    border-radius: 7px;
+    color: #282c34;
+    font-size: small;
+    text-align: center;
+    margin: 0px 10%;
+}
+
+.registerAlertMessage{
+    margin: 0px;
+}
+
+#clearRegister{
+    clear: both;
+}
+
+input[id=registerFirstName], input[id=registerLastName],input[id=registerEmail], 
 input[id=registerPassword]{
-    width: 70%;
+    width: 80%;
     padding: 12px;
     margin-left: 5px;
     border: 1px solid #ccc;
@@ -71,6 +121,7 @@ input[id=registerPassword]{
     border-radius: 12px;
     box-sizing: border-box;
     border: none;
+    outline: none;
 }
 
 input[id=registerSubmit]{
@@ -88,7 +139,20 @@ input[id=registerSubmit]{
     
 }
 
-@media (max-width: 475px){
+@media(max-width: 970px){
+    .registerNameDiv{
+        display: block;
+        
+    }
+    .registerFirstNameInput{
+        width: 100%;
+    }
+    .registerLastNameInput{
+        width: 100%;
+    }
+}
+
+@media (max-width: 860px){
     .switchToLogin{
         display: block;
     }
@@ -105,4 +169,14 @@ input[id=registerSubmit]{
         margin-left: 29%;
         margin-right: 29%;
     }
+}
+
+
+@media (max-width: 785px){
+    .loginSwitch{
+        margin-bottom: 7px;
+    }
+}
+#clear{
+    clear: both;
 }

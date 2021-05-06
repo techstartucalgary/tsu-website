@@ -19,8 +19,7 @@ function ApplyPage() {
         <div className="applyPage__spacing" data-aos="zoom-out-down"></div>
         <h1 className="applyPage__primary-title">APPLY</h1>
         <p className="applyPage__primary-description">
-          Join a high-energy, dynamic community dedicated to creating an
-          entreprenuerial and software environment at the University of Calgary.
+          Join a dynamic community dedicated to advancing software development and entrepreneurship at the University of Calgary.
         </p>
       </header>
       <div className="applyPage__introContainer">
@@ -31,14 +30,14 @@ function ApplyPage() {
             <h2>
               Tech Start is a UofC student student-run software engineering
               design team devoted to building software projects in a
-              collaborative and professional environment. Our primary objective
+              collaborative and professional environment. We're aiming to be the best 
               is to be the best space at UofC for students to find a welcoming
               community, build projects in a team setting, gain experience with
               professional tools and principles, and share their knowledge with
               others.
             </h2>
             <a href="http://eepurl.com/hnusUP">
-              <button className="applyPage__btn">Join the Community</button>
+              <button className="applyPage__btn">Sign up to our mailing list</button>
             </a>
           </div>
         </div>
@@ -51,7 +50,7 @@ function ApplyPage() {
           data-aos="fade-right"
         />
         <div className="applyPage__projectIntro">
-          <h1 className="applyPage__SectionTitle">Projects</h1>
+          <h1 className="applyPage__SectionTitle">Project FAQs</h1>
           <Accordion
             title="What is a Tech Start project?"
             active={active}
@@ -109,40 +108,40 @@ function ApplyPage() {
             setActive={setActive}
             description="
             You will get
-            <li>to learn and exercise professional development/design practices </li>
+            <li>to learn and exercise professional development and design practices </li>
             <li>to experience the full cycle of developing a project from nothing </li>
             <li>to experience and practice development, business, or design skills </li>
             <li>to work collaboratively on a project and learn from those around you</li>
             <li>to expand your portfolio by working on a team project</li>
-            <li>to make some meaningful relationships with the people from Tech Start </li>"
+            <li>to make friendships and connections with UCalgary's best  </li>"
           />
           <Accordion
             title="What is required to take part in a project?"
             active={active}
             setActive={setActive}
             description="
-                    A passion for learning and experimenting, and a willingness to participate
-              actively! We welcome everyone of all skill levels, whether you are a complete
+                    A passion for learning and experimenting, and a willingness to get involved! We welcome everyone of all skill levels, whether you are a complete
               beginner just starting out or if you’ve done several internships and have
               a portfolio of awesome projects."
           />
           <Accordion
-            title="What are is the commitment of a project member?"
+            title="What commitments are expected of project members?"
             active={active}
             setActive={setActive}
             description="
-            <li>Weekly team meetings (1 hour per week) and occasional club meetings </li>
-            <li>Around 4 hours per week working on tasks in and outside of web-development nights </li>"
+            <li>Team members must be able to attend the majority of our weekly dev nights, which are held on Wednesdays from 5:30-8:30PM.</li>
+            <li>Beyond the dev nights, you should expect to contribute a minimum of 1-2 hours of additional work per week</li>
+            <li>Additional team meetings may be arranged by your Project Manager when necessary</li>
+            "
           />
         </div>
         <div className="applyPage__container applyPage__projectExample">
           <div className="applyPage__projectExampleText">
             <h1>
-              Need an example of a project? Look no further! As a matter of
-              fact, this website was made by this project team!
+              Join a project to make new friends, gain new skills, and supercharge your portfolio!
             </h1>
           </div>
-          <img src={projectExample} alt="" />
+          <img src={projectExample} alt="The Tech Start website team" />
         </div>
       </div>
       <div className="applyPage__container applyPage__applicationContainer">
@@ -170,8 +169,7 @@ function ApplyPage() {
               term="1 academic year"
               role="Executive Team"
               description="Work behind the scenes to organize project teams, run
-                  workshops and events, and more. Lead and grow the club vision
-                  and culture."
+                  workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               status="closed"
               applicationLink="https://forms.gle/PQMbV5SWQfNe46GAA"
             />

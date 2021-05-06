@@ -15,3 +15,21 @@
 .eventImgDiv, .eventText {
     padding: 5% 5%;
 }
+
+.datetime_Button_Div {
+    height: clamp(6vh, 6vh + 7%, 12vh);
+}
+
+.datetime_Button_Div p{
+    margin-bottom: 3vh;
+}
+
+@media (max-width: 750px) {
+    .event {
+        grid-template-columns: repeat(1, 100%);
+    }
+
+    .datetime_Button_Div p {
+        margin-bottom: 0vh;
+    }
+}

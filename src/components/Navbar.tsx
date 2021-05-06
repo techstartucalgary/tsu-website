@@ -34,7 +34,7 @@ function Header(props: any) {
                         offset={-77}
                         duration={300}
                     ><Link to="/resources" >Resources</Link></LinkScroll></a> </li>
-                    <li> <a href="#"><Link to="/" >Projects</Link></a> </li>
+
                     <li> <a href="#"><LinkScroll
                         activeClass="active"
                         to="applyPageTop"

@@ -86,33 +86,6 @@ function HomePage() {
           <ProjectSection/>
         </div>
       </section>
-
-      <section className="homePage__ourSections">
-        <div className="homePage__container">
-          <FeaturedSection
-            className="homePage__meetTheTeam"
-            sectionImage={temp1}
-            sectionTitle="Meet the Team"
-            sectionDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam architecto veritatis!"
-            sectionLink="#"
-          />
-          <FeaturedSection
-            className="homePage__ourEvents"
-            sectionImage={temp1}
-            sectionTitle="Our Events"
-            sectionDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam architecto veritatis!"
-            sectionLink="#"
-          />
-          <FeaturedSection
-            className="homePage__getInvolved"
-            sectionImage={temp1}
-            sectionTitle="Get Involved"
-            sectionDescription="Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis aperiam architecto veritatis!"
-            sectionLink="#"
-          />
-        </div>
-      </section>
-
       <section className="homePage__ourSponsors">
         <Blobbie id={9} width={800} transform="translate(-80%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
         <Blobbie id={2} width={150} transform="translate(75vw, -60%)" edge={false} />

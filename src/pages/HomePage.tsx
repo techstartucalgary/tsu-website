@@ -77,16 +77,15 @@ function HomePage() {
         <Blobbie id={8} width={300} transform="translate(80vw, -60%)" edge={false} />
         <div className="homePage__container">
           <EventsSection />
-
         </div>
       </section>
 
       <section className="homePage__featuredProjects">
-        <div className="homePage__container">
+        <div className="homePage__container homePage__container--noVert">
           <h2 className="chonkyHeading chonkyHeading--white">Featured Projects</h2>
-          <Divider />
-          <ProjectSection />
         </div>
+        <Divider />
+        <ProjectSection />
       </section>
 
       <section className="homepage__teamSection">

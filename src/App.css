@@ -1,7 +1,10 @@
 :root{
     /* CSS Variables with global scope */
     --primary-green: #99E755;
+    --greyish-green: #85ed99;
     --primary-black: #282A36;
+    --secondary-blue: #00b7ff;
+    --secondary-lime: #c9e265;
     --secondary-grey: rgba(34, 34, 34, 0.95);
     --chonky-header-size: 4.75rem;
     --thicc-subheading-size: 2.5rem;

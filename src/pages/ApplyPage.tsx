@@ -8,6 +8,7 @@ import joinProject from "images/faketeam.jpg";
 import ApplySection from "components/ApplySection";
 import ApplyFAQSection from "components/ApplyFAQSection";
 import Accordion from "../components/Apply/Accordion";
+import Blobbie from "components/Blobbie";
 
 function ApplyPage() {
   const [active, setActive] = useState("");
@@ -26,11 +27,12 @@ function ApplyPage() {
         <div className="applyPage__intro">
           <h1 className="applyPage__SectionTitle">What We Do</h1>
           <div className="applyPage__introImg"></div>
+          <Blobbie id={8} width={400} transform="translate(-70%, -30%)" edge={true} />
           <div className="applyPage__introContents" data-aos="fade-down">
             <h2>
               Tech Start is a UofC student student-run software engineering
               design team devoted to building software projects in a
-              collaborative and professional environment. We're aiming to be the best 
+              collaborative and professional environment. We're aiming to be the best
               is to be the best space at UofC for students to find a welcoming
               community, build projects in a team setting, gain experience with
               professional tools and principles, and share their knowledge with
@@ -146,9 +148,12 @@ function ApplyPage() {
       </div>
       <div className="applyPage__container applyPage__applicationContainer">
         <div className="applyPage__application">
+          <Blobbie id={2} width={190} transform="translate(clamp(90vw, calc(5vw + 1rem), 40vw), -10%)" edge={false} />
+          <Blobbie id={2} width={130} transform="translate(clamp(-70vw, calc(5vw + 1rem), 40vw), 0%)" edge={false} />
           <h1 className="applyPage__SectionTitle">Applications</h1>
           <div className="applyPage__applicationImg"></div>
           <ul className="applyPage__applicationUL">
+
             <ApplySection
               term="1 semester"
               role="Project Member"
@@ -157,6 +162,7 @@ function ApplyPage() {
               status="closed"
               applicationLink="https://forms.gle/3BD9dQ3TjcXzEqZN9"
             />
+
             <ApplySection
               term="1 semester"
               role="Project Manager"
@@ -165,6 +171,7 @@ function ApplyPage() {
               status="open"
               applicationLink="https://forms.gle/bFGzAFD1QWdCavGr5"
             />
+
             <ApplySection
               term="1 academic year"
               role="Executive Team"

@@ -1,5 +1,5 @@
 import React from "react";
-import "./TechGuides.css"
+import "./GuidesSection.css"
 import imgDjango from "images/django.png"
 import imgGit from "images/git.png"
 import imgWebDev from "images/webdev.png"
@@ -7,7 +7,7 @@ import { lightTheme, darkTheme, GlobalStyles } from 'types/Themes.js'
 import Guide from "./Guide";
 
 
-function TechGuides(props: any) {
+function GuidesSection(props: any) {
     return <section className="techGuidesSection">
         <GlobalStyles />
 
@@ -23,4 +23,4 @@ function TechGuides(props: any) {
     </section>;
 }
 
-export default TechGuides;
+export default GuidesSection;

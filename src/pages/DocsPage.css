@@ -101,7 +101,7 @@ html {
   text-align: center;
   align-items: center;
   font-family: "Inter", Tahoma, sans-serif;
-
+  color: #d1e2d1;
   font-size: 30px;
 }
 
@@ -177,6 +177,12 @@ html {
   justify-content: center;
 }
 
+@media (min-width: 600px) {
+  .docsPage__content {
+    width: 75%;
+    margin: auto;
+  }
+}
 .docsPage__sectionDescription {
   font-size: 19px;
 }

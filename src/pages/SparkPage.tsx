@@ -57,7 +57,9 @@ function Dashboard() {
             <div className="sparkInnerGrid">
                                 <PostButton showPost={showPost} popupType="PostButton" />
                             </div>
+                            
                         </div>
+                        <SignIn/>
                     </div>
                 </div>
             </div>

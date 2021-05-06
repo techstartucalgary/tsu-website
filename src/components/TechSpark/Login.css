@@ -2,7 +2,7 @@
     position: absolute;
     max-width:560px;
     width: 80%;
-    height: 400px;
+    height: 325px;
     margin-left: 20%;
 }
 
@@ -28,13 +28,15 @@
     border-radius: 12px;
     box-sizing: border-box;
     resize: vertical;
+    
 }
 
 .registerLink{
     float: left;
     font-weight: normal;
-    margin: 20px;
+    margin-top: 10px;
     margin-left: 10%;
+    margin-bottom:0px;
 }
 
 .registerSwitch{
@@ -43,37 +45,39 @@
     cursor: pointer;
     border: none;
     float: right;
-    margin: 20px;
+    margin: 10px;
     margin-right: 10%;
     vertical-align: middle;
+    margin-bottom:0px
 }
 
 .switchStyling{
-    margin-top: 12px;
+    margin-top: 10px;
     display: inline;
-}
-
-.blue_to_green{
-    width: 10%;
-    height: 100%;
-    float: left;
-    background: rgb(3,238,56);
-    background: linear-gradient(0deg, rgba(3,238,56,1) 0%, rgba(61,61,167,1) 56%, rgba(0,212,255,1) 100%);
+    margin-bottom: 0px;
 }
 
 .alert{
-    color: #FF3131;
-    width: 100%;
+    background-color: #ffb6b9;
+    padding: 4px;
+    border-radius: 7px;
+    color: #282c34;
+    font-size: small;
     text-align: center;
+    margin: 9px 18%;
+}
+
+.alertMessage{
     margin: 0px;
 }
+
 
 #clearLogin{
     clear: both;
 }
 
 input[id=loginUsername], input[id=loginPassword]{
-    width: 80%;
+    width: 87%;
     padding: 10px;
     margin-left: 5px;
     border: 1px solid #ccc;
@@ -100,7 +104,24 @@ input[id=loginSubmit]{
     
 }
 
-@media (max-width: 470px){
+@media (max-width: 935px){
+    .alert{
+        margin: 9px 10%;
+    }
+}
+
+@media (max-width: 830px) {
+    input[id=loginUsername], input[id=loginPassword]{
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 640px) {
+    input[id=loginUsername], input[id=loginPassword]{
+        width: 75%;
+        
+    }
     .switchStyling{
         display: block;
         
@@ -115,4 +136,6 @@ input[id=loginSubmit]{
         margin-bottom: 12px;
     }
 
+    
 }
+

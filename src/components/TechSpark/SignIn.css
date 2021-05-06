@@ -1,10 +1,11 @@
 .loginDesign{
     position: relative;
     float:left;
-    background: rgb(35,100,204);
-    background: linear-gradient(0deg, rgba(35,100,204,1) 0%, rgba(16,157,147,1) 61%, rgba(36,241,31,1) 100%);
+    background: linear-gradient(
+        var(--primary-green, rgb(106, 235, 80)),
+        rgb(89, 201, 209));
     width: 20%;
-    height: 350px;
+    height: 325px;
     border-radius: 25px 0 0 25px;
 }
 .loginHeaderDiv{
@@ -27,7 +28,7 @@
     position: relative;
     max-width: 700px;
     width: 90%;
-    height: 350px;
+    height: 325px;
 }
 
 .signInBackground--registerMode{
@@ -37,6 +38,25 @@
     padding: 10px; 
 }
 
+@media (max-width: 790px){
+    .signInBackground--loginMode{
+        height: 340px;
+    }
+
+    .loginDesign{
+        height: 340px;
+    }
+}
+
+@media (max-width: 640px){
+    .signInBackground--loginMode{
+        height: 370px;
+    }
+
+    .loginDesign{
+        height: 370px;
+    }
+}
 
 @media (max-width: 530px){
     .signInBackground--registerMode{

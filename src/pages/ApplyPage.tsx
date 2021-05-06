@@ -19,7 +19,8 @@ function ApplyPage() {
         <div className="applyPage__spacing" data-aos="zoom-out-down"></div>
         <h1 className="applyPage__primary-title">APPLY</h1>
         <p className="applyPage__primary-description">
-          Join a dynamic community dedicated to advancing software development and entrepreneurship at the University of Calgary.
+          Join a dynamic community dedicated to advancing software development
+          and entrepreneurship at the University of Calgary.
         </p>
       </header>
       <div className="applyPage__introContainer">
@@ -28,16 +29,17 @@ function ApplyPage() {
           <div className="applyPage__introImg"></div>
           <div className="applyPage__introContents" data-aos="fade-down">
             <h2>
-              Tech Start is a UofC student student-run software engineering
-              design team devoted to building software projects in a
-              collaborative and professional environment. We're aiming to be the best 
-              is to be the best space at UofC for students to find a welcoming
-              community, build projects in a team setting, gain experience with
-              professional tools and principles, and share their knowledge with
-              others.
+              Tech Start is a club based at the University of Calgary, directed
+              at software development and entrepreneurial thinking. This is
+              where innovation meets collaboration, and amazing projects are
+              brought into creation by student teams! Join an open community
+              that fuels learning and creativity, fellowship and meaningful
+              relationships, and experience and professional development.
             </h2>
             <a href="http://eepurl.com/hnusUP">
-              <button className="applyPage__btn">Sign up to our mailing list</button>
+              <button className="applyPage__btn">
+                Sign up to our mailing list
+              </button>
             </a>
           </div>
         </div>
@@ -138,7 +140,8 @@ function ApplyPage() {
         <div className="applyPage__container applyPage__projectExample">
           <div className="applyPage__projectExampleText">
             <h1>
-              Join a project to make new friends, gain new skills, and supercharge your portfolio!
+              Join a project to make new friends, gain new skills, and
+              supercharge your portfolio!
             </h1>
           </div>
           <img src={projectExample} alt="The Tech Start website team" />

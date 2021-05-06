@@ -3,10 +3,9 @@ import "./postButton.css"
 
 function PostButton(props : any){
   function buttonClicked(){
-    console.log("Post Button Clicked")
     props.showPost()
+    props.showPostCreation()
   }  
-  
         return(
               <button className="postButton" onClick={buttonClicked}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" fill="currentColor" viewBox="0 0 16 16">

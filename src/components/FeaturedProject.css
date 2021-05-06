@@ -66,6 +66,14 @@
   opacity: 0;
 }
 
+@media (max-width: 400px) {
+  .project__button {
+    transform: scale(0.7);
+    position: relative;
+    top: -20px;
+  }
+}
+
 .project__button {
   border: 3px solid var(--primary-green);
   background-color: rgb(43, 48, 53);
@@ -74,7 +82,7 @@
   height: 30px;
   padding-top: 7px;
   margin: auto;
-  margin-top: 25px;
+  margin-top: 20px;
   transition: 200ms;
 }
 

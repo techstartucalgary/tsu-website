@@ -27,9 +27,16 @@ function ApplyPage() {
       </header>
       <div className="applyPage__introContainer">
         <div className="applyPage__intro">
-          <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">What We Do</h1>
-          <Divider/>
-          <Blobbie id={8} width={400} transform="translate(-70%, -30%)" edge={true} />
+          <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">
+            What We Do
+          </h1>
+          <Divider />
+          <Blobbie
+            id={8}
+            width={400}
+            transform="translate(-70%, -30%)"
+            edge={true}
+          />
           <div className="applyPage__introContents" data-aos="fade-down">
             <h2>
               Tech Start is a club based at the University of Calgary, directed
@@ -39,7 +46,7 @@ function ApplyPage() {
               that fuels learning and creativity, fellowship and meaningful
               relationships, and experience and professional development.
             </h2>
-            <a href="http://eepurl.com/hnusUP">
+            <a href="http://eepurl.com/hnusUP" target="_blank">
               <button className="applyPage__btn">
                 Sign up to our mailing list
               </button>
@@ -55,7 +62,9 @@ function ApplyPage() {
           data-aos="fade-right"
         />
         <div className="applyPage__projectIntro">
-          <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--white">Project FAQs</h1>
+          <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--white">
+            Project FAQs
+          </h1>
           <Accordion
             title="What is a Tech Start project?"
             active={active}
@@ -149,19 +158,33 @@ function ApplyPage() {
           </div>
           <img src={projectExample} alt="The Tech Start website team" />
         </div>
-        <Blobbie id={2} width={130} transform="translate(-30%, 70%)" edge={false} />
-
+        <Blobbie
+          id={2}
+          width={130}
+          transform="translate(-30%, 70%)"
+          edge={false}
+        />
       </div>
 
       <div className="applyPage__container applyPage__applicationContainer">
-
         <div className="applyPage__application">
-          <Blobbie id={2} width={190} transform="translate(clamp(90vw, calc(5vw + 1rem), 40vw), 20%)" edge={false} />
-          <Blobbie id={2} width={50} transform="translate(clamp(-70vw, calc(5vw + 1rem), 40vw), -15%)" edge={false} />
-          <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">Applications</h1>
-          <Divider/>
+          <Blobbie
+            id={2}
+            width={190}
+            transform="translate(clamp(90vw, calc(5vw + 1rem), 40vw), 20%)"
+            edge={false}
+          />
+          <Blobbie
+            id={2}
+            width={50}
+            transform="translate(clamp(-70vw, calc(5vw + 1rem), 40vw), -15%)"
+            edge={false}
+          />
+          <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">
+            Applications
+          </h1>
+          <Divider />
           <ul className="applyPage__applicationUL">
-
             <ApplySection
               term="1 semester"
               role="Project Member"
@@ -192,8 +215,10 @@ function ApplyPage() {
         </div>
       </div>
       <div className="applyPage__FAQ">
-        <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin chonkyHeading--white">FAQ</h1>
-        <Divider/>
+        <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin chonkyHeading--white">
+          FAQ
+        </h1>
+        <Divider />
         <div className="applyPage__FAQContents">
           <ApplyFAQSection
             question="What do the Project Managers do?"

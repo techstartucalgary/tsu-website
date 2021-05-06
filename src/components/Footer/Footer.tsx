@@ -1,8 +1,7 @@
 import './Footer.css';
 import '../../App.css';
 import SocialMedia from '../SocialMedia/SocialMedia';
-import SubscribeButton from './SubscribeButton/SubscribeButton';
-
+import HoverButton from '../HoverButton/HoverButton';
 import {
     faFacebook,
     faInstagram,
@@ -14,7 +13,7 @@ import {
 const Footer = () => (
     <div className="Footer">
 
-        <SubscribeButton />
+        <HoverButton link="http://eepurl.com/hnusUP" text="Join our mailing list!" />
 
         <div className="SocialMediaSection">
             <SocialMedia
@@ -37,7 +36,7 @@ const Footer = () => (
                 icon={faLinkedin}
                 link="https://www.linkedin.com/company/tech-start-ucalgary" />
         </div>
-        <p className="Copyright">UofC TechStart 2021</p>
+        <p className="Copyright">© {new Date().getFullYear()} Tech Start UCalgary</p>
     </div>
 );
 

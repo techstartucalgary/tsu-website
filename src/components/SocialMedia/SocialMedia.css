@@ -9,11 +9,15 @@
 }
 
 .SocialMediaIcon-DefaultColor {
-    color: #99E755;
+    color: var(--primary-green);
 }
 
 .SocialMediaIcon:hover {
     transform: translateY(-0.25em);
     color: white;
     box-shadow: 0 0.5em 0.5em -0.4em white; /* offset-x | offset-y | blur-radius | spread-radius | color*/
+}
+
+.SocialMediaIcon--NoHovorColor:hover {
+    color: var(--primary-green) !important;
 }

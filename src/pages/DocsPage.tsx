@@ -77,16 +77,21 @@ function DocsPage() {
           <h4 className='docsPage__intro'><Emoji symbol="💻" /> The official TechStart UCalgary knowledge base</h4>
 
           <p className="docsPage__description">
-            TechStart UCalgary Documentation gathers advice, resources and best practices to help members find information they need to learn from our work. Please help us make it better!
+            Information, guides, and resources for Tech Start UCalgary members
           </p>
 
           <div className="docsPage__content">
             <ul>
               <li id="docsPage__techGuidesSection"><Emoji symbol="📚 " />Tech Guides</li>
-              <p className="docsPage__sectionDescription">This section documents Tech Start's super awesome mega guides :)</p>
+              <p className="docsPage__sectionDescription">
+                We've created several guides to help you learn new tools, programming languages, and frameworks.
+              </p>
               <TechGuides />
+              <p className="docsPage__sectionDescription">
+                If you have minor fixes or suggestions for any of our guides, leave a comment on the corresponding Google Doc. If you're interested in contributing to our guides, reach out to our VP Development over Discord!
+              </p>
               <li id="docsPage__brandingSection"><Emoji symbol="📓 " />Branding</li>
-              <p className="docsPage__sectionDescription">This section documents Tech Start's branding guidelines:</p>
+              <p className="docsPage__sectionDescription">Here are our branding guidelines for you to follow whenever you represent Tech Start UCalgary in writing or graphics:</p>
               <Branding />
               <li><Emoji symbol="📤 " />Reach Out</li>
               <p className="docsPage__sectionDescription">How to reach out to us:</p>

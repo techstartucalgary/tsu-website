@@ -42,7 +42,7 @@ function HomePage() {
         <Blobbie id={2} width={100} transform="translate(clamp(20vw, calc(5vw + 1rem), 40vw), -80%)" edge={false} />
         <div className="homePage__container">
 
-          <h1 className="chonkyHeading">We're the innovators on campus.</h1>
+          <h1 className="chonkyHeading chonkyHeading--lessMargin">We're the innovators on campus.</h1>
           <Divider />
           <p className="regularText" id="draft">
             We're a software club at the University of Calgary. Through multidisciplinary teams, we take on interesting problems and use technology to solve them.
@@ -81,7 +81,7 @@ function HomePage() {
 
       <section className="homePage__featuredProjects">
         <div className="homePage__container">
-          <h2 className="chonkyHeading chonkyHeading--white">Featured Projects</h2>
+          <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">Featured Projects</h2>
           <Divider />
           <ProjectSection/>
         </div>

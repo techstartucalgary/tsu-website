@@ -25,6 +25,9 @@
     color: var(--primary-green);
 }
 
+.chonkyHeading--lessMargin{
+    margin-bottom: 0px;
+}
 
 .thiccSubheading, .thiccSubheading--white, .thiccSubheading--green{
     font-size: var(--thicc-subheading-size);

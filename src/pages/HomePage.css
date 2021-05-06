@@ -110,6 +110,13 @@ html {
   text-align: center;
 }
 
+@media(max-width:700px){
+  .homePage__container--noVert{
+    margin-left: 7.25%;
+    margin-right: 7.25%;
+  }
+}
+
 .homePage__split {
   display: flex;
   gap: 1.5em;

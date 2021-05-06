@@ -1,15 +1,15 @@
 .eventsSection_container {
-    display:block;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10%;
+  display: block;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
 }
 
-.upcomingEvents_container, .pastEvents_container{
-    display:flex;
-    flex-wrap: wrap;
+.upcomingEvents_container,
+.pastEvents_container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
-.pastEvents_container  {
-    
+.pastEvents_container {
 }

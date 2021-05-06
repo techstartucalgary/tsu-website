@@ -99,7 +99,8 @@ html {
 }
 
 .homePage section {
-  padding: 8em 0;
+  padding-top: 8em;
+  padding-bottom: 5em;
 }
 
 .homePage__container {

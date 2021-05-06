@@ -264,6 +264,7 @@ html {
 
 .homePage__featuredProjects {
   background-image: linear-gradient(rgb(19, 19, 19), rgb(26, 26, 26));
+  padding-top: 20px;
   text-align: center;
 }
 

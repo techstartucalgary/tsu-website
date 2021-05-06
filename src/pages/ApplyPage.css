@@ -214,10 +214,9 @@ html {
 .applyPage__projectIntroImg {
   object-fit: cover;
   width: 24vw;
-  height: 24vw;
+  height: auto;
   padding: 5% 3% 5% 3%;
   margin-left: 5%;
-  border-radius: 50%;
   display: inline-block;
 }
 .applyPage__projectIntro {

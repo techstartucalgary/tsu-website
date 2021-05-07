@@ -1,10 +1,9 @@
 import React, {useState} from "react";
-import { isPropertySignature } from "typescript";
 import Login from "./Login"
 import Register from "./Register"
 import "./SignIn.css"
 
-function SignIn(props){
+function SignIn(props: any){
     const [isLoginMode, setIsLoginMode] = useState(true);
     
    function handleClick(){

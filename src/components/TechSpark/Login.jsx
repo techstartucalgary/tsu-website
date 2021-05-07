@@ -1,10 +1,8 @@
 import "./Login.css"
-import React, { Component, useEffect } from 'react';
+import React, { Component, useEffect, useLayoutEffect, useRef } from 'react';
 import axios from "axios";
-import { setTokenSourceMapRange } from "typescript";
 
 const dataRoot = "https://techstartbackend.herokuapp.com"
-const { useRef, useLayoutEffect } = React;
 
 function Login(props) {
 

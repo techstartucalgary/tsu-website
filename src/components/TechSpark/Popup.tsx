@@ -6,29 +6,32 @@ import { disconnect } from "node:process"
 import SignIn from "./SignIn"
 
 function Popup(props : any){
+    function hideChild(){
+        console.log("Popup hidden")
+        props.hidePost()
+    }
     function displayChild(){
             switch(props.windowType){
             case 1:
                 console.log("Post window clicked")    
                 return(
-                    <PostCreation/>
+                    <PostCreation
+                    close = {hideChild}/>
                 )
             case 2:
                 console.log("Login clicked")
                 return(
-                    <SignIn/>
+                    <SignIn
+                        close = {hideChild}/>
                 )
             default:
                 console.log("Default rendered")
                 return(
-                    <PostCreation/>
+                    <PostCreation close = {hideChild}/>
                 )
             }
     }
-    function hideChild(){
-        console.log("Popup hidden")
-        props.hidePost()
-    }
+    
     return(
         <div className="popup">
             <div className="popup__background" onClick={hideChild}/>

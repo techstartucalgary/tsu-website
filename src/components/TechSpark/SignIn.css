@@ -38,7 +38,7 @@
     padding: 10px; 
 }
 
-@media (max-width: 980px){
+@media (max-width: 1000px){
     .signInBackground--loginMode{
         height: 340px;
     }
@@ -55,6 +55,15 @@
 
     .loginDesign{
         height: 370px;
+    }
+}
+@media (max-width: 470px){
+    .signInBackground--loginMode{
+        height: 385px;
+    }
+
+    .loginDesign{
+        height: 385px;
     }
 }
 
@@ -75,20 +84,20 @@
     }
 }
 
-@media (max-width: 885px){
+@media (max-width: 905px){
     .signInBackground--registerMode{
         height: 665px;
     }
 }
 
-@media (max-width: 785px){
+@media (max-width: 805px){
     .signInBackground--registerMode{
         height: 680px;
     }
 }
 
 
-@media (max-width: 655px){
+@media (max-width: 675px){
     .signInBackground--registerMode{
         height: 695px;
     }

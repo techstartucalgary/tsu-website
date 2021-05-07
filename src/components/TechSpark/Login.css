@@ -133,3 +133,18 @@ input[id=loginSubmit]{
     
 }
 
+@media (max-width: 400px) {
+    input[id=loginUsername], input[id=loginPassword]{
+        width: 65%;
+        font-size: 8px;
+        
+    }
+    
+}
+
+@media (max-width:570px) {
+    .alertMessage{
+        font-size: smaller;
+    }
+    
+}

@@ -37,3 +37,12 @@
   height: 100%;
   content: "";
 }
+
+@media (max-width: 885px){
+  .popup{
+    margin-top: 0px;
+  }
+  .popup__inner{
+    margin-top: 0px;
+  }
+}

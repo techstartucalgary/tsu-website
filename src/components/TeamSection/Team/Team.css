@@ -3,14 +3,18 @@
     margin-top:5%;
     margin-left: 10%;
     margin-right: 10%;
-    margin-bottom:15%;
+    margin-bottom: 50px;
 
     display: grid;
     grid-template-columns: repeat(3, 20%);
-    grid-auto-flow: dense;
-    grid-auto-rows: 20%;
+     /* I removed these because they were causing an issue depending on the screen size/height (glitched team section on my laptop) */
+    /* grid-auto-flow: dense;
+    grid-auto-rows: 20%; 
+        grid-row-gap: 40%;
+    */
     grid-column-gap: 10%;
-    grid-row-gap: 40%;
+    grid-row-gap: 30px;
+
 
 }
 

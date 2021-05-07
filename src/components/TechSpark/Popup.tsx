@@ -1,8 +1,6 @@
 import React from "react"
 import PostCreation from "components/TechSpark/PostCreation"
 import "./Popup.css"
-import { render } from "@testing-library/react"
-import { disconnect } from "node:process"
 import SignIn from "./SignIn"
 
 function Popup(props : any){

@@ -75,12 +75,12 @@ function Dashboard() {
         let postWithType = new PostType(posts[index])
         postArray.push(postWithType)
     }
-
+    
     const postList = postArray.map((pst) => 
         <Post
             title = {pst.title} 
             date = {pst.date_posted}
-            author = {pst.author}
+            // author = {pst.author}
             description = {pst.post_description}
         />
     )
@@ -159,8 +159,8 @@ function Dashboard() {
             </div>
                         <div className="sparkMenuGrid">
                             <MenuButton text={"Sign in"} showPost={showPost} showSignIn={showSignIn} />
-                            <MenuButton text={"Profile"} />
-                            <MenuButton text={"Post History"} />
+                            {/* <MenuButton text={"Profile"} />
+                            <MenuButton text={"Post History"} /> */}
 
                         </div>
                     </div>

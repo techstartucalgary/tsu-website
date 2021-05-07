@@ -37,7 +37,7 @@ function HomePage() {
 
       </header>
 
-      <section className="homePage__aboutUs">
+      <section className="homePage__section homePage__section--aboutUs">
         <Blobbie id={8} width={400} transform="translate(-70%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
         <Blobbie id={2} width={100} transform="translate(clamp(20vw, calc(5vw + 1rem), 40vw), -80%)" edge={false} />
         <div className="homePage__container">
@@ -72,7 +72,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="homePage__eventsSection">
+      <section className="homePage__section homePage__section--events">
         <Blobbie id={8} width={300} transform="translate(-10vw, -90%)" edge={false} />
         <Blobbie id={8} width={300} transform="translate(80vw, -60%)" edge={false} />
         <div className="homePage__container">
@@ -80,7 +80,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="homePage__featuredProjects">
+      <section className="homePage__section homePage__section--featuredProjects">
         <div className="homePage__container homePage__container--noVert">
           <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">Featured Projects</h2>
         </div>
@@ -88,13 +88,13 @@ function HomePage() {
         <ProjectSection />
       </section>
 
-      <section className="homepage__teamSection">
+      <section className="homePage__section homePage__section--team">
         <Blobbie id={12} width={300} transform="translate(93vw, -30%)" edge={true} />
         <Blobbie id={8} width={200} transform="translate(-10vw, 10vw)" edge={false} />
         <TeamSection />
       </section>
 
-      <section className="homePage__ourSponsors">
+      <section className="homePage__section homePage__section--sponsors">
         <Blobbie id={9} width={800} transform="translate(-80%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
         <Blobbie id={2} width={150} transform="translate(75vw, -60%)" edge={false} />
         <Blobbie id={2} width={75} transform="translate(85vw, 0%)" edge={false} />

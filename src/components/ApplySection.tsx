@@ -10,7 +10,7 @@ function ApplySection(props: any) {
         <p>{props.description}</p>
       </li>
       {props.status === "open" ? (
-        <a href={props.link}>
+        <a href={props.applicationLink} target="_blank">
           <button className="applyPage__btn">Apply Now</button>
         </a>
       ) : (

@@ -37,7 +37,7 @@ function HomePage() {
 
       </header>
 
-      <section className="homePage__aboutUs">
+      <section className="homePage__section homePage__section--aboutUs">
         <Blobbie id={8} width={400} transform="translate(-70%, 0%)" edge={true} /> {/* translate is relative to previous div*/}
         <Blobbie id={2} width={100} transform="translate(clamp(20vw, calc(5vw + 1rem), 40vw), -10%)" edge={false} />
         <div className="homePage__container">
@@ -72,7 +72,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="homePage__eventsSection">
+      <section className="homePage__section homePage__section--events">
         <div className="homePage__container">
           <EventsSection />
 
@@ -87,7 +87,7 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="homepage__teamSection">
+      <section className="homePage__section homePage__section--team">
         <Blobbie id={12} width={300} transform="translate(93vw, -30%)" edge={true} />
         <Blobbie id={8} width={200} transform="translate(-10vw, 10vw)" edge={false} />
         <TeamSection />

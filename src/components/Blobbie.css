@@ -1,7 +1,11 @@
 .Blobbie--edge, .Blobbie--middle {
     position:absolute;
     height: auto;
-    opacity:60%;
+    opacity:0.59;
+}
+
+.Blobbie{
+    opacity: 0.6;
 }
 
 @media (max-width:750px){

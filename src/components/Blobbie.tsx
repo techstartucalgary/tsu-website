@@ -40,7 +40,7 @@ const Blobbie = (props: any) => {
 
     return (
         <Lottie
-            className={blobbieClass}
+            className={"Blobbie " + blobbieClass}
             animationData={eval(`blobbies.blobLottie${props.id}`)}
             style={{ "width": props.width, "transform": props.transform }} />
     );

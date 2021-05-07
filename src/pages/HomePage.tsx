@@ -80,11 +80,9 @@ function HomePage() {
       </section>
 
       <section className="homePage__section homePage__section--featuredProjects">
-        <div className="homePage__container homePage__container--noVert">
           <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">Featured Projects</h2>
           <Divider />
           <ProjectSection />
-        </div>
       </section>
 
       <section className="homePage__section homePage__section--team">

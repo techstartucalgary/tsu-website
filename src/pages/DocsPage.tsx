@@ -34,8 +34,8 @@ function DocsPage() {
           <div className="docsPage__sections" id="docsPageTop">
 
             <span className="switch">
-              <span className="switchSun"> <span style={theme === 'light' ? { color: '#ffc045' } : { color: 'grey' }}>☀</span></span>
-              <div className="switchMoon"> <span style={theme === 'light' ? { color: 'grey' } : { color: 'white' }}>☾</span></div>
+           {/*   <span className="switchSun"> <span style={theme === 'light' ? { color: '#ffc045' } : { color: 'grey' }}>☀</span></span>
+              <div className="switchMoon"> <span style={theme === 'light' ? { color: 'grey' } : { color: 'white' }}>☾</span></div> */}
               <label className="switch__label">
                 <input type="checkbox" onClick={() => themeToggler()}></input>
                 <span className="switch__span"></span>

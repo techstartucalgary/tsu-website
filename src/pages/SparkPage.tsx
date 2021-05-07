@@ -147,10 +147,12 @@ function Dashboard() {
             <div>
 
                 <div className="sparkTitle">
-                    Tech Spark
+                    Community
         </div>
                 <div className="sparkMissionStatement">
-                    TechStart has partnered with the Hunter Hub to create TechSpark where we believe that young entrepreneurs have great potential to create innovative products and solutions. Our goal is to help those seeking new opportunities or collaborators by providing a space for individuals to post their ideas, find out more about technolgy focused entrepreneurship events, and connect with like minded individuals looking for specific skill sets.
+                Tech Start's community page helps University of Calgary students stay up to date with the latest news in technology and startups. We've partnered with the Hunter Hub to show news and events from within the University and from abroad.
+
+In the "See what people are saying" section, you can post your ideas, projects, requests, and connect with other students. It's a great way to find projects, collaborators, or make connections with like-minded students!
         </div>
                 <div className="sparkOuterGrid">
                     <div className="sparkMenuContainer sparkContentPage">

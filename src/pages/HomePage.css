@@ -209,7 +209,7 @@ html {
   min-height: 600px;
   display: flex;
   flex-direction: column;
-  background: radial-gradient(rgb(0, 0, 0), var(--secondary-grey)); 
+  /* background: radial-gradient(rgb(0, 0, 0), var(--secondary-grey));  */
   /* background-image: fixed url("../images/blackbg2.jpg"),
     llinear-gradient(rgb(0, 0, 0), rgb(1, 115, 68)); */
   position: relative;
@@ -219,7 +219,8 @@ html {
   .homePage__hero {
     /* background: fixed url("../images/blackbg2.jpg"),
       radial-gradient(rgb(75, 73, 73), rgb(61, 55, 55)); */
-    background: radial-gradient(rgb(0, 0, 0), var(--primary-black)); 
+    background: radial-gradient(rgb(0, 0, 0) 60%, var(--primary-green) 110%); 
+    /* background: linear-gradient(0deg, #243949 0%, #517fa4 100%); */
     background-size: cover;
     background-blend-mode: multiply;
     background-attachment: fixed;

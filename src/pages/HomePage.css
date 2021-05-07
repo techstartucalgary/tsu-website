@@ -279,6 +279,12 @@ html {
   padding-top: 20px;
 }
 
+@media (max-width: 500px) {
+  .homePage__section--sponsors {
+    padding-bottom: 70px;
+  }
+}
+
 #homePage__sponsorPackage:hover,
 #homePage__sponsorPackage:hover {
   color: var(--primary-green);

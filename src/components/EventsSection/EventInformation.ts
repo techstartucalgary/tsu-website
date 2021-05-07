@@ -20,7 +20,7 @@ upcomingEvents = [
 pastEvents = [
     {
         title: "Building a Brand and Business",
-        description: "For Tech Fest, TSU is excited to present a webinar on founding a business. Judy Hughes will walk us through her experiences with founding her own company JYZ Design and discuss what business practices and strategies companies will use to stand out from their competitors.",
+        description: "For Tech Fest, Tech Start is excited to present a webinar on founding a business. Judy Hughes will walk us through her experiences with founding her own company JYZ Design and discuss what business practices and strategies companies will use to stand out from their competitors.",
         date: "",
         time: "",
         image: Building_a_Brand_and_Business_img,

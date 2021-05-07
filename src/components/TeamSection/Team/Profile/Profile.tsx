@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import './Profile.css';
+import { ExecutiveMember, ProjectManager } from '../../TeamInformation';
 import ProfileDescription from './ProfileDescription/ProfileDescription';
 import SocialMedia from '../../../SocialMedia/SocialMedia';
 
@@ -7,7 +8,10 @@ import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 
-const Profile = props => {
+const Profile = (props: {
+    className: string, key: number, member: (ExecutiveMember | ProjectManager),
+    class: string, col: number, carouselView: boolean, profilePic: any, alt: string
+}) => {
 
     const [containerState, setContainerState] = useState({
         hovered: false
@@ -26,7 +30,7 @@ const Profile = props => {
     if (props.col < 7) LinkSectionClasses.push("LinkSection--Translate--Small");
     if (props.carouselView) LinkSectionClasses.push("LinkSection--CarouselView");
 
-    const preventDragHandler = (e) => e.preventDefault();
+    const preventDragHandler = (e: any) => e.preventDefault();
 
     return (
         <div className={ProfileClasses.join(' ')} >

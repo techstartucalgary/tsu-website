@@ -118,30 +118,22 @@
 /* Overriding CSS rules in react-elastic-carousel */
 
 button.rec-dot {
-    background-color: var(--primary-green);
+    background-color: var(--primary-black);
     box-shadow: v0 0 1px 2px var(--primary-black);
 }
 
-button.rec-dot:hover, button.rec-dot:active, button.rec-dot:focus {
+button.rec-dot_active {
     background-color: var(--primary-green);
-    box-shadow: 0 0 1px 2px var(--primary-green)
+    box-shadow: v0 0 1px 2px var(--primary-green) !important;
 }
 
-.guuruq {
-    background-color: var(--primary-black) !important;
-}
-
-.lgksPe:hover:enabled, .lgksPe:focus:enabled {
-    background-color: var(--primary-green) !important;
-    box-shadow: 0 0 1px 2px var(--primary-green)
-}
-
-.rec.rec-arrow {
+button.rec-arrow {
     background-color: white;
     box-shadow: 0 0 1px 2px var(--primary-black);
 }
 
 .rec.rec-arrow:hover:enabled, .rec.rec-arrow:active:enabled, .rec.rec-arrow:focus:enabled  {
+    background-color: var(--primary-green) !important;
     box-shadow: 0 0 1px 2px var(--primary-black);
 }
 

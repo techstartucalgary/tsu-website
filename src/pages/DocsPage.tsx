@@ -6,7 +6,7 @@ import Emoji from 'components/Emoji'
 import docsPage__logoblack from 'images/tech-start-logo-black.png'
 import docsPage__logowhite from 'images/tech-start-logo-white.png'
 import { faShower } from '@fortawesome/free-solid-svg-icons';
-import TechGuides from "components/DocsPageSections/TechGuides"
+import GuidesSection from "components/DocsPageSections/GuidesSection"
 import Branding from "components/DocsPageSections/Branding"
 import ReachOut from "components/DocsPageSections/ReachOut"
 import { Link as LinkScroll } from "react-scroll";
@@ -58,7 +58,7 @@ function DocsPage() {
                   duration={500}><li><a href="#"><Emoji symbol="📓 " />Branding</a></li></LinkScroll>
                 <LinkScroll
 
-                  to="docsPage__brandingSection"
+                  to="docsPage__reachOutSection"
                   spy={true}
                   offset={-95}
                   duration={500}><li><a href="#"> <Emoji symbol="📤 " />Reach Out</a></li></LinkScroll>
@@ -67,28 +67,33 @@ function DocsPage() {
 
             <img className="docsPage__logo" src={docsPage__logo}></img>
 
-            <h3 className="docsPage__title">techstart/docs</h3>
+            {/* <h3 className="docsPage__title">techstart/docs</h3> */}
 
-            <div className="docsPage__search">
+            {/*<div className="docsPage__search">
               <input type="text" placeholder="Search..." />
-            </div>
+  </div>*/}
 
           </div>
-          <h4 className='docsPage__intro'><Emoji symbol="💻" /> The official TechStart UCalgary knowledge base</h4>
+          {/* <h4 className='docsPage__intro'><Emoji symbol="💻" /> The official TechStart UCalgary knowledge base</h4> */}
 
           <p className="docsPage__description">
-            TechStart UCalgary Documentation gathers advice, resources and best practices to help members find information they need to learn from our work. Please help us make it better!
+            Information, guides, and resources for Tech Start UCalgary members
           </p>
 
           <div className="docsPage__content">
             <ul>
               <li id="docsPage__techGuidesSection"><Emoji symbol="📚 " />Tech Guides</li>
-              <p className="docsPage__sectionDescription">This section documents Tech Start's super awesome mega guides :)</p>
-              <TechGuides />
+              <p className="docsPage__sectionDescription">
+                We've created several guides to help you learn new tools, programming languages, and frameworks.
+              </p>
+              <GuidesSection />
+              <p className="docsPage__sectionDescription">
+                If you have minor fixes or suggestions for any of our guides, leave a comment on the corresponding Google Doc. If you're interested in contributing to our guides, reach out to our VP Development over Discord!
+              </p>
               <li id="docsPage__brandingSection"><Emoji symbol="📓 " />Branding</li>
-              <p className="docsPage__sectionDescription">This section documents Tech Start's branding guidelines:</p>
+              <p className="docsPage__sectionDescription">Here are our branding guidelines for you to follow whenever you represent Tech Start UCalgary in writing or graphics:</p>
               <Branding />
-              <li><Emoji symbol="📤 " />Reach Out</li>
+              <li id="docsPage__reachOutSection"><Emoji symbol="📤 " />Reach Out</li>
               <p className="docsPage__sectionDescription">How to reach out to us:</p>
               <ReachOut />
               <div className="docsPage__break"></div>

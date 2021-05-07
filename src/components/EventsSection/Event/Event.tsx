@@ -1,21 +1,26 @@
 import './Event.css';
 import HoverButton from '../../HoverButton/HoverButton';
+import useViewport from '../../UseViewport';
 
 const Event = (props: any) => {
 
-    let fontClasses = [];
-    fontClasses = ["babyHeading--green", "regularText"]
+    const fontClasses = ["babyHeading--green", "regularText"]
 
     const preventDragHandler = (e: any) => e.preventDefault();
 
+    const { width } = useViewport(); // get screen width
+    const breakpoint = 750; // set breakpoint
+
     return (
         <div className="event">
-            {props.pastEvent &&
-                <img
-                    className="eventImg"
-                    src={props.event.image}
-                    key={props.event.key}
-                    onDragStart={preventDragHandler} />
+            {(props.pastEvent || width <= breakpoint) &&
+                <div className="eventImgDiv">
+                    <img
+                        className="eventImg"
+                        src={props.event.image}
+                        key={props.event.key}
+                        onDragStart={preventDragHandler} />
+                </div>
             }
 
             <div className="eventText">
@@ -23,7 +28,7 @@ const Event = (props: any) => {
                 <p className={fontClasses[1]}>{props.event.description}</p>
 
                 {!props.pastEvent &&
-                    <div>
+                    < div className="datetime_Button_Div">
                         <p className={fontClasses[1]}>{props.event.date} | {props.event.time}</p>
                         <HoverButton
                             darkMode={true}
@@ -34,14 +39,17 @@ const Event = (props: any) => {
                 }
             </div>
 
-            {!props.pastEvent &&
-                <img
-                    className="eventImg"
-                    src={props.event.image}
-                    key={props.event.key}
-                    onDragStart={preventDragHandler} />
+            {
+                !props.pastEvent && width > breakpoint &&
+                <div className="eventImgDiv">
+                    <img
+                        className="eventImg"
+                        src={props.event.image}
+                        key={props.event.key}
+                        onDragStart={preventDragHandler} />
+                </div>
             }
-        </div>
+        </div >
     );
 };
 

@@ -28,22 +28,24 @@ function Header(props: any) {
                 </LinkScroll>
             </a>
             <nav className="navbar__content " >
-                <ul>
-                <LinkScroll
-                                to="homePageTop"
-                                spy={true}
-                                offset={-70}
-                                duration={500}>
-                        <Link onClick={hideNavbar} to="/" > About </Link></LinkScroll>
-                        <li >
+                <ul><li>
+                    <LinkScroll
+                        to="homePageTop"
+                        spy={true}
+                        offset={-70}
+                        duration={500}>
+                        <Link onClick={hideNavbar} to="/" > About </Link>
+                    </LinkScroll></li>
+                    <li >
                         <a href="#" >
                             <LinkScroll
-                                to="homePageTop"
+                                to="sparkPageTop"
                                 spy={true}
-                                offset={-70}
+                                offset={-80}
                                 duration={500}>
 
-                        <Link to="/community" > Community </Link></LinkScroll></a> </li>
+                                <Link onClick={hideNavbar} to="/community" > Community </Link>
+                            </LinkScroll></a> </li>
                     <li>
                         <a href="#">
                             <LinkScroll

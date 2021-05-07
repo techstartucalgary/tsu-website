@@ -79,9 +79,9 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="homePage__featuredProjects">
-        <div className="homePage__container">
-          <h2 className="chonkyHeading chonkyHeading--white">Featured Projects</h2>
+      <section className="homePage__section homePage__section--featuredProjects">
+        <div className="homePage__container homePage__container--noVert">
+          <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">Featured Projects</h2>
           <Divider />
           <ProjectSection />
         </div>
@@ -93,7 +93,7 @@ function HomePage() {
         <TeamSection />
       </section>
 
-      <section className="homePage__ourSponsors">
+      <section className="homePage__section homePage__section--sponsors">
         <Blobbie id={9} width={800} transform="translate(-80%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
         <Blobbie id={2} width={150} transform="translate(75vw, -60%)" edge={false} />
         <Blobbie id={2} width={75} transform="translate(85vw, 0%)" edge={false} />

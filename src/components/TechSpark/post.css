@@ -54,3 +54,16 @@
   margin: 1px;
   
 }
+
+.emailButton {
+  position: absolute;
+  bottom:20px;
+  right:20px;
+  border: none;
+  color: none; 
+  outline:none    ; 
+  background-color: Transparent; 
+  font-size: 15px;
+  font-weight: bold;
+  font-family: 'Inter', Tahoma, sans-serif;
+}

@@ -161,7 +161,9 @@ html {
 }*/
 
 .docsPage__description {
-  margin-top: 50px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  font-weight: 900;
   width: 75%;
   margin-left: auto;
   margin-right: auto;
@@ -318,7 +320,7 @@ html {
   display: inline-block;
   position: absolute;
   font-size: 27px;
-  top: 7px;
+  top: 7.9px;
   height: 21px;
   left: 82%;
 }

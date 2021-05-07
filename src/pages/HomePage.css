@@ -91,15 +91,15 @@ html {
   font-family: "Consolas", monaco, monospace;
 }
 
-/*** Projects section ***/
 
 .homePage img {
   max-width: 100%;
   display: block;
 }
 
-.homePage section {
-  padding: 8em 0;
+.homePage__section {
+  padding-top: 8em;
+  padding-bottom: 5em;
 }
 
 .homePage__container {
@@ -108,6 +108,20 @@ html {
   margin: 0 auto;
   color: white;
   text-align: center;
+}
+
+@media (max-width: 700px) {
+  .homePage__headerSubtitle {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media (max-width: 700px) {
+  .homePage__container--noVert {
+    margin-left: 7.25%;
+    margin-right: 7.25%;
+  }
 }
 
 .homePage__split {
@@ -228,7 +242,7 @@ html {
 
 /*** About Us *****/
 
-.homePage__aboutUs {
+.homePage__section--aboutUs {
   background-color: white;
   text-align: center;
 }
@@ -247,16 +261,28 @@ html {
   }
 }
 
-.homePage__featuredProjects {
-  background-image: linear-gradient(rgb(19, 19, 19), rgb(26, 26, 26));
+.homePage__section--featuredProjects {
+  background-image: linear-gradient(to bottom, rgb(19, 19, 19), rgb(26, 26, 26));
+  padding-top: 20px;
   text-align: center;
+}
+.homePage__section--team{
+  padding-bottom: 0px;
 }
 
 /*** Sponsor section ***/
 
-.homePage__ourSponsors {
+.homePage__section--sponsors {
   /*background-image: linear-gradient(rgba(12, 12, 12, 1), rgb(1, 115, 95));*/
   background-color: white;
+  padding-bottom: 150px;
+  padding-top: 20px;
+}
+
+@media (max-width: 500px) {
+  .homePage__section--sponsors {
+    padding-bottom: 70px;
+  }
 }
 
 #homePage__sponsorPackage:hover,
@@ -265,6 +291,7 @@ html {
   transform: scale(1.2);
 }
 
-.homePage__eventsSection {
-  background: linear-gradient(to bottom, white 20%, var(--primary-black) 70%);
+.homePage__section--events {
+  background: linear-gradient(to bottom, white 20%, rgb(19,19,19) 70%);
+  padding-bottom: 20px;
 }

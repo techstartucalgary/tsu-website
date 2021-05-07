@@ -67,14 +67,14 @@ function DocsPage() {
 
             <img className="docsPage__logo" src={docsPage__logo}></img>
 
-            <h3 className="docsPage__title">techstart/docs</h3>
+            {/* <h3 className="docsPage__title">techstart/docs</h3> */}
 
             {/*<div className="docsPage__search">
               <input type="text" placeholder="Search..." />
   </div>*/}
 
           </div>
-          <h4 className='docsPage__intro'><Emoji symbol="💻" /> The official TechStart UCalgary knowledge base</h4>
+          {/* <h4 className='docsPage__intro'><Emoji symbol="💻" /> The official TechStart UCalgary knowledge base</h4> */}
 
           <p className="docsPage__description">
             Information, guides, and resources for Tech Start UCalgary members

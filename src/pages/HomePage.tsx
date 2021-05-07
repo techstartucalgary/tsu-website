@@ -37,12 +37,12 @@ function HomePage() {
 
       </header>
 
-      <section className="homePage__section homePage__section--aboutUs">
-        <Blobbie id={8} width={400} transform="translate(-70%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
-        <Blobbie id={2} width={100} transform="translate(clamp(20vw, calc(5vw + 1rem), 40vw), -80%)" edge={false} />
+      <section className="homePage__aboutUs">
+        <Blobbie id={8} width={400} transform="translate(-70%, 0%)" edge={true} /> {/* translate is relative to previous div*/}
+        <Blobbie id={2} width={100} transform="translate(clamp(20vw, calc(5vw + 1rem), 40vw), -10%)" edge={false} />
         <div className="homePage__container">
 
-          <h1 className="chonkyHeading chonkyHeading--lessMargin">We're the innovators on campus.</h1>
+          <h1 className="chonkyHeading">We're the innovators on campus.</h1>
           <Divider />
           <p className="regularText" id="draft">
             We're a software club at the University of Calgary. Through multidisciplinary teams, we take on interesting problems and use technology to solve them.
@@ -66,39 +66,37 @@ function HomePage() {
           </div>
           <div className="homePage__applyButtonBox"><Link to="/apply" className="homePage__applyButtonLink" >
             <div className="homePage__applyButton">
-              <div className="homePage__applyButtonArrow"><span>&#62;</span><span>&#62;</span></div>
+              <div className="homePage__applyButtonArrow"> ˃˃ </div>
               <div className="homePage__applyButtonText"> theTeam.join()</div>
             </div></Link></div>
         </div>
       </section>
 
-      <section className="homePage__section homePage__section--events">
-        <Blobbie id={8} width={300} transform="translate(-10vw, -90%)" edge={false} />
-        <Blobbie id={8} width={300} transform="translate(80vw, -60%)" edge={false} />
+      <section className="homePage__eventsSection">
         <div className="homePage__container">
           <EventsSection />
+
         </div>
       </section>
 
-      <section className="homePage__section homePage__section--featuredProjects">
-        <div className="homePage__container homePage__container--noVert">
-          <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">Featured Projects</h2>
+      <section className="homePage__featuredProjects">
+        <div className="homePage__container">
+          <h2 className="chonkyHeading chonkyHeading--white">Featured Projects</h2>
+          <Divider />
+          <ProjectSection />
         </div>
-        <Divider />
-        <ProjectSection />
       </section>
 
-      <section className="homePage__section homePage__section--team">
+      <section className="homepage__teamSection">
         <Blobbie id={12} width={300} transform="translate(93vw, -30%)" edge={true} />
         <Blobbie id={8} width={200} transform="translate(-10vw, 10vw)" edge={false} />
         <TeamSection />
       </section>
 
-      <section className="homePage__section homePage__section--sponsors">
+      <section className="homePage__ourSponsors">
         <Blobbie id={9} width={800} transform="translate(-80%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
         <Blobbie id={2} width={150} transform="translate(75vw, -60%)" edge={false} />
         <Blobbie id={2} width={75} transform="translate(85vw, 0%)" edge={false} />
-        {/* <Blobbie id={8} width={300} transform="translate(40vw, -90%)" edge={false} /> */}
         <SponsorSection />
       </section>
     </div>

@@ -98,7 +98,7 @@ function HomePage() {
         <Blobbie id={9} width={800} transform="translate(-80%, -30%)" edge={true} /> {/* translate is relative to previous div*/}
         <Blobbie id={2} width={150} transform="translate(75vw, -60%)" edge={false} />
         <Blobbie id={2} width={75} transform="translate(85vw, 0%)" edge={false} />
-        <Blobbie id={8} width={300} transform="translate(40vw, -90%)" edge={false} />
+        {/* <Blobbie id={8} width={300} transform="translate(40vw, -90%)" edge={false} /> */}
         <SponsorSection />
       </section>
     </div>

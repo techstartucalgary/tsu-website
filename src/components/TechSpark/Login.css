@@ -1,0 +1,150 @@
+.loginStyling{
+    position: absolute;
+    max-width:560px;
+    width: 80%;
+    height: 325px;
+    margin-left: 20%;
+}
+
+.loginHeading{
+    width: 80%;
+    text-align: center;
+    margin-left: 10%;
+}
+
+
+.loginForm{
+    font-size: larger;
+}
+
+.loginDiv{
+    width: 80%;
+    padding: 10px;
+    margin-left: 10%;
+    margin-top: 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: grey;
+    border-radius: 12px;
+    box-sizing: border-box;
+    resize: vertical;
+    
+}
+
+.registerLink{
+    float: left;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-bottom:0px;
+}
+
+.registerSwitch{
+    color: white;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    float: right;
+    margin: 10px;
+    margin-right: 10%;
+    vertical-align: middle;
+    margin-bottom:0px
+}
+
+.switchStyling{
+    margin-top: 10px;
+    display: inline;
+    margin-bottom: 0px;
+}
+
+.alert{
+    background-color: #ffb6b9;
+    padding: 4px;
+    border-radius: 7px;
+    color: #282c34;
+    font-size: small;
+    text-align: center;
+    margin: 9px 10%;
+}
+
+.alertMessage{
+    margin: 0px;
+}
+
+
+#clearLogin{
+    clear: both;
+}
+
+input[id=loginUsername], input[id=loginPassword]{
+    width: 87%;
+    padding: 10px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    background-color: white;
+    color: grey;
+    border-radius: 12px;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+
+input[id=loginSubmit]{
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 12px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #99e755;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;  
+    text-align: center;
+    
+}
+
+@media (max-width: 830px) {
+    input[id=loginUsername], input[id=loginPassword]{
+        width: 80%;
+    }
+    
+}
+
+@media (max-width: 790px) {
+    input[id=loginUsername], input[id=loginPassword]{
+        width: 75%;
+        
+    }
+    .switchStyling{
+        display: block;
+        
+    }
+    .registerSwitch{
+        float: none;
+        margin-top: 0px;
+        margin-left: 10%;
+    }
+    .registerLink{
+        float: none;
+        margin-bottom: 12px;
+    }
+
+    
+}
+
+@media (max-width: 400px) {
+    input[id=loginUsername], input[id=loginPassword]{
+        width: 65%;
+        font-size: 8px;
+        
+    }
+    
+}
+
+@media (max-width:570px) {
+    .alertMessage{
+        font-size: smaller;
+    }
+    
+}

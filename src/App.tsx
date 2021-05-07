@@ -1,5 +1,6 @@
 import HomePage from 'pages/HomePage';
 import DocsPage from 'pages/DocsPage';
+import SparkPage from 'pages/SparkPage'
 import ApplyPage from 'pages/ApplyPage';
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
@@ -25,6 +26,9 @@ function App() {
                 <Switch>
                     <Route path="/resources">
                         <DocsPage />
+                    </Route>
+                    <Route path="/community">
+                        <SparkPage />
                     </Route>
                     <Route path="/apply">
                         <ApplyPage />

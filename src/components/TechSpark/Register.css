@@ -152,7 +152,7 @@ input[id=registerSubmit]{
     }
 }
 
-@media (max-width: 860px){
+@media (max-width: 875px){
     .switchToLogin{
         display: block;
     }
@@ -175,6 +175,12 @@ input[id=registerSubmit]{
 @media (max-width: 785px){
     .loginSwitch{
         margin-bottom: 7px;
+    }
+}
+
+@media (max-width: 590px){
+    .registerStyling{
+        font-size: small;
     }
 }
 #clear{

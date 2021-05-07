@@ -43,7 +43,8 @@ function Login(props) {
         }
         ).then((response) => {
 
-            let token = response.data.token;;
+            let token = response.data.token;
+            props.hide();
             console.log(token)
 
         }, (error) => {

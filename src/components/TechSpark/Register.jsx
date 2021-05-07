@@ -38,6 +38,7 @@ function Register(props){
           ).then((response) => {
                 
                 let data = response.data;
+                props.hide();
                 console.log(data)                
                 
           }, (error) => {

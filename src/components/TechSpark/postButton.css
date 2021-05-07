@@ -3,7 +3,7 @@ button.postButton{
     background-color: #D3f5b6;
     width: 300px;
     height: 300px;
-    border: 1px solid green;
+    border:none;
     border-radius: 25px;
     vertical-align: middle;
     font-family: 'Inter', Tahoma, sans-serif; 

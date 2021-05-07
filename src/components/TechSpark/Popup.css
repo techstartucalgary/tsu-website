@@ -7,6 +7,18 @@
   right: 0;
   bottom: 0;
   margin: auto;
+  z-index: 10;
+  animation: fadeIn 0.5s;
+}
+@keyframes fadeIn {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@media only screen and (max-width:600px) {
+  .popup__inner{
+    left: 10%;
+    right: 10%;
+  }
 }
 .popup__inner{
   position: absolute;
@@ -15,7 +27,6 @@
   top: 25%;
   bottom: 25%;
   margin: auto;
-  pointer-events: auto;
   z-index: 10;
 }
 .popup__background{

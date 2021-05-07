@@ -10,7 +10,7 @@
     text-align: left;
     font-size: 16px;
     margin: 1px 10px;
-    color: white;
+    color: #282A36;;
     
 }
 
@@ -18,7 +18,8 @@
     width: 300px;
     height: 250px;
     border-radius: 25px;
-    background-color: #282A36;
+    background-color: #D3f5b6;
+    border: 1px #282A36;;
     padding: 10px;
     float: left;
 }
@@ -36,7 +37,7 @@
     font-size: 18px;
     text-align: left;
     margin: 1px 10px;
-    color: white;
+    color: #282A36;
     transition:all 0.4s ease-in-out;
     
 }

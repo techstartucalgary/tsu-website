@@ -154,12 +154,6 @@ html {
   padding-bottom: 20px;
 }
 
-/*.docsPage__intro.active {
-  transform: translateY(0);
-  opacity: 1;
-  margin-top: -2%;
-}*/
-
 .docsPage__description {
   margin-top: 30px;
   margin-bottom: 60px;
@@ -200,103 +194,22 @@ html {
   height: 60px;
 }
 
-/*.docsPage__p2 {
-  width: 85%;
-
-  font-family: "Inter", Tahoma, sans-serif;
-  font-size: 15px;
-  font-weight: 50px;
-}*/
-
-/*.docsPage__ol {
-  font-weight: 400;
-  font-family: "Inter", Tahoma, sans-serif;
-  justify-content: left;
-  text-align: left;
-  align-items: left;
-  margin-inline-start: 5%;
-  width: 80%;
-}*/
-
-/*.docsPage__ol button {
-  width: 120px;
-  height: 40px;
-  padding: 5px 0;
-  text-align: center;
-  outline: none;
-  border-radius: 25px;
-  font-weight: bold;
-  border: 2px solid rgb(96, 117, 102);
-  background: transparent;
-  color: #fff;
-  cursor: pointer;
-  position: relative;
-  overflow: hidden;
-  transition: 0.5s ease;
+.sectionContent li {
+  font-size: 18px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  margin-left: 0px;
 }
 
-.docsPage__ol button:hover {
-  background-color: white;
-  color: black;
-  width: 130px;
-  height: 45px;
-}*/
-
-/*.docsPage__ol li {
-  margin: 2%;
-  text-decoration: none;
-  list-style: none;
-  font-size: 23px;
+@media (max-width: 600px) {
+  .sectionContent li {
+    margin-left: -50px;
+  }
 }
 
-.docsPage__techGuideCards{
-  display: flex;
-  gap: 1.5em;
-  flex-wrap: wrap;
-  justify-content: center;
-}*/
-/*.docsPage__White {
-  background-color: white;
-  text-align: center;
-  color: black;
-  font-size: 16px;
-  font-weight: 300;
-  font-family: "Inter", Tahoma, sans-serif;
+.sectionContent a {
+  color: var(--primary-green);
 }
-
-.docsPage__White ul li a {
-  text-decoration: none;
-  line-height: 50px;
-}
-
-.docsPage__White ul li ul li {
-  margin-left: 7%;
-  margin-right: 14%;
-  margin-bottom: 20px;
-  margin-top: 20px;
-}
-
-.docsPage__White ul {
-  list-style: none;
-}
-
-.docsPage__WhiteLi {
-  opacity: 1;
-  height: 0;
-  width: 0;
-}
-
-.docsPage__Contents {
-  margin-top: 10px;
-  justify-content: left;
-  text-align: left;
-  align-items: left;
-  font-size: 15px;
-  font-weight: 400;
-  font-family: "Inter", Tahoma, sans-serif;
-  text-decoration: none;
-  list-style: none;
-}*/
 
 /*** Dark Mode Toggler ***/
 

@@ -7,8 +7,6 @@ import docsPage__logoblack from 'images/tech-start-logo-black.png'
 import docsPage__logowhite from 'images/tech-start-logo-white.png'
 import { faShower } from '@fortawesome/free-solid-svg-icons';
 import GuidesSection from "components/DocsPageSections/GuidesSection"
-import Branding from "components/DocsPageSections/Branding"
-import ReachOut from "components/DocsPageSections/ReachOut"
 import { Link as LinkScroll } from "react-scroll";
 
 function DocsPage() {
@@ -21,6 +19,27 @@ function DocsPage() {
     theme === 'light' ? setLogo(logo.docsPage__logowhite) : setLogo(docsPage__logoblack)
   };
 
+  function Branding() {
+    return <section>
+
+      <ul className="sectionContent">
+        <li><Emoji symbol="👩🏽‍💻 " />Club Name: Refer to the club as "Tech Start UCalgary" or "Tech Start", but avoid the acronyms "TS" and "TSU".</li>
+        <li><Emoji symbol="🖥️ " />Logos: Want to use the Tech Start logo? You can download official versions from our Google Drive <a href="https://drive.google.com/drive/folders/1VW7TTFteVvLU4avbyZvtdizZ9fdNhYRC?usp=sharing" target="_blank">here</a>!</li>
+        <li><Emoji symbol="🔖 " />Styling Guide: You can find a more in-depth styling guide <a href="#" target="_blank">here</a>.</li>
+      </ul>
+    </section>;
+  }
+
+  function ReachOut() {
+    return <section>
+
+      <ul className="sectionContent">
+        <li><Emoji symbol="💡 " />Website Suggestions: If you have a suggestion for our website, submit it to us as an Issue on our <a href="https://github.com/Tech-Start-UCalgary/tsu-website/issues" target="_blank">GitHub repository</a>.</li>
+        <li><Emoji symbol="📗 " />Guide Contributions: If you would like to contribute to our guides, you can reach out to us over <a href="https://discord.gg/Sxj5QrxRPk" target="_blank">Discord</a>, or leave a comment on the guide about minor changes.</li>
+        <li><Emoji symbol="📩 " />Other Suggestions: Please feel free to reach out to us over other concerns over one of the public channels in our <a href="https://discord.gg/Sxj5QrxRPk" target="_blank">Discord</a>.</li>
+      </ul>
+    </section>;
+  }
 
   return (
     <ThemeProvider theme={theme === 'light' ? lightTheme : darkTheme}>
@@ -34,7 +53,7 @@ function DocsPage() {
           <div className="docsPage__sections" id="docsPageTop">
 
             <span className="switch">
-           {/*   <span className="switchSun"> <span style={theme === 'light' ? { color: '#ffc045' } : { color: 'grey' }}>☀</span></span>
+              {/*   <span className="switchSun"> <span style={theme === 'light' ? { color: '#ffc045' } : { color: 'grey' }}>☀</span></span>
               <div className="switchMoon"> <span style={theme === 'light' ? { color: 'grey' } : { color: 'white' }}>☾</span></div> */}
               <label className="switch__label">
                 <input type="checkbox" onClick={() => themeToggler()}></input>

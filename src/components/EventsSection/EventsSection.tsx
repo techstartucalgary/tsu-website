@@ -6,8 +6,7 @@ import '../../App.css';
 const EventsSection = () => {
     return (
         <div className="eventsSection_container">
-            <h2 className="chonkyHeading">Events</h2>
-            <p className="regularText" style={{ "textAlign": "center", "marginBottom": "10%" }}>
+            <p className="regularText" style={{ "marginBottom": "10%" }}>
                 Every semester, Tech Start UCalgary organizes and hosts a range of events, both online and on campus.
                 We cover a wide array of topics, from technical workshops to panel discussions with successful entrepreneurs to interviews with industry leaders.
                 If you're interested in the intersection of technology and startups, make sure to follow our social media and sign up for our upcoming events!

@@ -73,18 +73,21 @@ function HomePage() {
       </section>
 
       <section className="homePage__section homePage__section--events">
+        <Blobbie id={3} width={400} transform="translate(-75%, -40%)" edge={true} />
+        <Blobbie id={8} width={150} transform="translate(75vw, 0vw)" edge={false} />
         <div className="homePage__container">
+          <h1 className="chonkyHeading chonkyHeading--lessMargin">Events</h1>
+          <Divider />
           <EventsSection />
-
         </div>
       </section>
 
       <section className="homePage__section homePage__section--featuredProjects">
-          <div className="homePage__container homePage__container--noVert">
-            <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">Featured Projects</h2>
-          </div>
-          <Divider />
-          <ProjectSection />
+        <div className="homePage__container homePage__container--noVert">
+          <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">Featured Projects</h2>
+        </div>
+        <Divider />
+        <ProjectSection />
       </section>
 
       <section className="homePage__section homePage__section--team">

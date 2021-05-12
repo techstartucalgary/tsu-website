@@ -64,6 +64,7 @@
   left: 10%;
   right: 10%;
   opacity: 0;
+  transition: 0.3s ease-in-out;
 }
 
 @media (max-width: 400px) {
@@ -95,8 +96,7 @@
   background-color: var(--primary-green);
 }
 .project__image--transparent {
-  opacity: 0;
-  transition: 200ms;
+  opacity: 0.4;
 }
 .project__image {
   position: absolute;
@@ -106,11 +106,12 @@
   height: 100%;
   width: 100%;
   border-radius: 20px;
+  transition: 0.3s ease-in-out;
 }
 
 .project__description--visible {
   opacity: 1;
-  transition: 200ms;
+  
 }
 .featuredProjectImage {
   border-radius: 10px;

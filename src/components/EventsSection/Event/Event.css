@@ -4,6 +4,7 @@
   background-color: white;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
     rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    height: 300px;
 }
 
 .eventImgDiv {
@@ -13,15 +14,19 @@
 }
 
 .eventImg {
-  width:auto;
-  height:auto;
+  width:100% !important;
+  height:auto !important;
   padding:0% !important;
   margin:auto !important;
 }
 
-.eventImgDiv,
 .eventText {
-  padding: 8% 5%;
+  overflow: auto;
+  padding: 8% 5%
+}
+
+.eventImgDiv {
+  padding: 2% 2%;
 }
 
 .datetime_Button_Div {

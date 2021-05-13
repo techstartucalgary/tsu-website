@@ -29,7 +29,7 @@ function FeaturedProject(props: featuredProjectProps) {
     <img src={props.project.image} className={"project__image " + projectImageClass} />
 
     <div className={"project__content " + projectDescriptionClass}>{props.project.description}
-      <a href="https://github.com/Tech-Start-UCalgary/tsu-website" target="_blank"><div className="project__button" >Visit GitHub →</div></a>
+      <a href={props.project.github} target="_blank"><div className="project__button" >Visit GitHub →</div></a>
     </div>
 
   </div>

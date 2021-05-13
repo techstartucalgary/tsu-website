@@ -62,16 +62,4 @@
     padding: 0em;
     height: 10rem;
   }
-
-  .SocialMediaSection {
-    margin-top: 0em;
-    margin-bottom: 1.5em;
-    padding-top: 1em;
-  }
-
-  .Copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 }

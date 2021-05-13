@@ -111,13 +111,6 @@ html {
 }
 
 @media (max-width: 700px) {
-  .homePage__headerSubtitle {
-    margin-left: 10px;
-    margin-right: 10px;
-  }
-}
-
-@media (max-width: 700px) {
   .homePage__container--noVert {
     margin-left: 7.25%;
     margin-right: 7.25%;
@@ -181,17 +174,6 @@ html {
 
 /****** Titles **********/
 
-.homePage__headerSubtitle {
-  font-size: 3rem;
-  font-size: clamp(0.8rem, calc(5vw + 1rem), 4.5rem);
-  color: white;
-  z-index: 3;
-  pointer-events: none;
-  /*adjust size to window*/
-  line-height: 1.1;
-  font-weight: 700;
-}
-
 .homePage__containerTitle {
   text-align: center;
   font-size: clamp(2.5rem, calc(5vw + 1rem), 4rem);
@@ -201,15 +183,33 @@ html {
   margin-bottom: 3rem;
 }
 
+@media (max-width: 700px) {
+  .homePage__headerSubtitle {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+.homePage__headerSubtitle {
+  font-size: 3rem;
+  font-size: clamp(0.8rem, calc(5vw + 1rem), 4.5rem);
+  color: white;
+  z-index: 3;
+  pointer-events: none;
+  /*adjust size to window*/
+  line-height: 1.1;
+  font-weight: 700;
+  margin-bottom: 300px;
+}
+
 /**** Hero (Landing Page) *****/
 
 .homePage__hero {
   text-align: center;
-  height: 100vh;
-  min-height: 600px;
+  height: clamp(700px, 100vh, 1200px);
   display: flex;
   flex-direction: column;
-  background: radial-gradient(rgb(0, 0, 0), var(--secondary-grey)); 
+  /* background: radial-gradient(rgb(0, 0, 0), var(--secondary-grey));  */
   /* background-image: fixed url("../images/blackbg2.jpg"),
     llinear-gradient(rgb(0, 0, 0), rgb(1, 115, 68)); */
   position: relative;
@@ -219,7 +219,8 @@ html {
   .homePage__hero {
     /* background: fixed url("../images/blackbg2.jpg"),
       radial-gradient(rgb(75, 73, 73), rgb(61, 55, 55)); */
-    background: radial-gradient(rgb(0, 0, 0), var(--primary-black)); 
+    background: radial-gradient(rgb(0, 0, 0) 60%, var(--primary-green) 110%); 
+    /* background: linear-gradient(0deg, #243949 0%, #517fa4 100%); */
     background-size: cover;
     background-blend-mode: multiply;
     background-attachment: fixed;

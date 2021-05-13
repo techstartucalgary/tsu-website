@@ -12,6 +12,13 @@
   align-items: center;
 }
 
+.eventImg {
+  width:auto;
+  height:auto;
+  padding:0% !important;
+  margin:auto !important;
+}
+
 .eventImgDiv,
 .eventText {
   padding: 8% 5%;
@@ -26,6 +33,10 @@
 }
 
 @media (max-width: 750px) {
+  .eventText {
+    padding: 0% 5%;
+  }
+
   .event {
     grid-template-columns: repeat(1, 100%);
   }

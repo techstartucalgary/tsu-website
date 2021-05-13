@@ -37,12 +37,12 @@ function HomePage() {
 
       </header>
 
-      <section className="homePage__aboutUs">
+      <section className="homePage__section homePage__section--aboutUs">
         <Blobbie id={8} width={400} transform="translate(-70%, 0%)" edge={true} /> {/* translate is relative to previous div*/}
         <Blobbie id={2} width={100} transform="translate(clamp(20vw, calc(5vw + 1rem), 40vw), -10%)" edge={false} />
         <div className="homePage__container">
 
-          <h1 className="chonkyHeading">We're the innovators on campus.</h1>
+          <h1 className="chonkyHeading chonkyHeading--lessMargin">We're the innovators on campus.</h1>
           <Divider />
           <p className="regularText" id="draft">
             We're a software club at the University of Calgary. Through multidisciplinary teams, we take on interesting problems and use technology to solve them.
@@ -72,22 +72,25 @@ function HomePage() {
         </div>
       </section>
 
-      <section className="homePage__eventsSection">
+      <section className="homePage__section homePage__section--events">
+        <Blobbie id={3} width={400} transform="translate(-75%, -40%)" edge={true} />
+        <Blobbie id={8} width={150} transform="translate(75vw, 0vw)" edge={false} />
         <div className="homePage__container">
+          <h1 className="chonkyHeading chonkyHeading--lessMargin">Events</h1>
+          <Divider />
           <EventsSection />
-
         </div>
       </section>
 
       <section className="homePage__section homePage__section--featuredProjects">
         <div className="homePage__container homePage__container--noVert">
           <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">Featured Projects</h2>
-          <Divider />
-          <ProjectSection />
         </div>
+        <Divider />
+        <ProjectSection />
       </section>
 
-      <section className="homepage__teamSection">
+      <section className="homePage__section homePage__section--team">
         <Blobbie id={12} width={300} transform="translate(93vw, -30%)" edge={true} />
         <Blobbie id={8} width={200} transform="translate(-10vw, 10vw)" edge={false} />
         <TeamSection />

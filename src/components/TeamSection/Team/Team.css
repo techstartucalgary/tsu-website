@@ -2,29 +2,26 @@
 .Container {
     margin-top:5%;
     margin-left: 10%;
-    margin-right: 10%;
-    margin-bottom:15%;
+    margin-right: 5%;
+    margin-bottom: 50px;
 
     display: grid;
     grid-template-columns: repeat(3, 20%);
-    grid-auto-flow: dense;
-    grid-auto-rows: 20%;
     grid-column-gap: 10%;
-    grid-row-gap: 40%;
-
+    grid-row-gap: 30px;
 }
 
 .Container--size4{
     margin-bottom:10%;
-    margin-left:15%;
+    margin-left:10%;
     grid-template-columns: repeat(4, 20%);
     grid-column-gap: 5%;
     grid-row-gap: 5%;
 }
 
 .Container--size7{
-    margin-left: 0%;
-    margin-right: 12.5%;
+    margin-left: 10%;
+    margin-right: 20%;
     grid-template-columns: repeat(8, 10%);
     grid-column-gap: 5%;
 }
@@ -103,6 +100,10 @@
 .Profile--10:nth-last-child(1) {
     grid-row-start: 3;
     grid-column: 6 / span 2;
+}
+
+@media (max-width: 800px) {
+
 }
 
 /**Carousel layout*/

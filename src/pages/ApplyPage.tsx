@@ -19,11 +19,13 @@ function ApplyPage() {
       <div className="applyPage__waves applyPage__waves2"></div>
       <header className="applyPage__showcase" id="applyPageTop">
         <div className="applyPage__spacing" data-aos="zoom-out-down"></div>
-        <h1 className="applyPage__primary-title">APPLY</h1>
-        <p className="applyPage__primary-description">
-          Join a dynamic community dedicated to advancing software development
-          and entrepreneurship at the University of Calgary.
-        </p>
+        <div className="applyPage__primary-wrapper">
+          <h1 className="applyPage__primary-title">APPLY</h1>
+          <p className="applyPage__primary-description">
+            Join a dynamic community dedicated to advancing software development
+            and entrepreneurship at the University of Calgary.
+          </p>
+        </div>
       </header>
       <div className="applyPage__introContainer">
         <div className="applyPage__intro">

@@ -15,6 +15,22 @@ function Header(props: any) {
         setNavbarExpanded(false)
         console.log("mouse")
     }
+
+    function NavbarLink(props: any) {
+
+        return (
+            <li ><a href="#">
+                <LinkScroll
+                    to={props.top}
+                    spy={true}
+                    offset={-80}
+                    duration={500}>
+                    <Link onClick={hideNavbar} to={props.link}> {props.name} </Link>
+                </LinkScroll></a>
+            </li>)
+
+    }
+
     return <header className="navbar__container">
         <div className="navbar">
             <input type="checkbox" checked={navbarExpanded} onClick={toggleNavbarExpanded} id="navbar__nav-toggle" className="navbar__nav-toggle" />
@@ -29,47 +45,26 @@ function Header(props: any) {
             </a>
             <nav className="navbar__content " >
                 <ul>
-                <LinkScroll
-                                to="homePageTop"
-                                spy={true}
-                                offset={-70}
-                                duration={500}>
-                        <Link onClick={hideNavbar} to="/" > About </Link></LinkScroll>
-                        <li >
-                        <a href="#" >
-                            <LinkScroll
-                                to="homePageTop"
-                                spy={true}
-                                offset={-70}
-                                duration={500}>
-
-                        <Link to="/community" > Community </Link></LinkScroll></a> </li>
-                    <li>
-                        <a href="#">
-                            <LinkScroll
-                                activeClass="active"
-                                to="docsPageTop"
-                                spy={true}
-                                offset={-77}
-                                duration={300}>
-                                <Link onClick={hideNavbar} to="/resources" >Resources</Link>
-                            </LinkScroll>
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="#">
-                            <LinkScroll
-                                activeClass="active"
-                                to="applyPageTop"
-                                spy={true}
-                                offset={-77}
-                                duration={300}>
-                                <Link onClick={hideNavbar} to="/apply" >Apply</Link>
-                            </LinkScroll>
-                        </a>
-                    </li>
-
+                    <NavbarLink
+                        top="homePageTop"
+                        link="/"
+                        name="About"
+                    />
+                    <NavbarLink
+                        top="applyPageTop"
+                        link="/apply"
+                        name="Apply"
+                    />
+                    <NavbarLink
+                        top="docsPageTop"
+                        link="/resources"
+                        name="Resources"
+                    />
+                    <NavbarLink
+                        top="sparkPageTop"
+                        link="/community"
+                        name="Community"
+                    />
                 </ul>
             </nav>
             <label htmlFor="navbar__nav-toggle" className="navbar__nav-toggle-label">

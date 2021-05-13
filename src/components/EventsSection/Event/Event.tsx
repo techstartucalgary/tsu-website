@@ -1,15 +1,11 @@
 import './Event.css';
 import HoverButton from '../../HoverButton/HoverButton';
-import useViewport from '../../UseViewport';
 
 const Event = (props: any) => {
 
     const textClasses = ["babyHeading--green", "regularText", "eventText"]
 
     const preventDragHandler = (e: any) => e.preventDefault();
-
-    const { width } = useViewport(); // get screen width
-    const breakpoint = 750; // set breakpoint
 
     return (
 

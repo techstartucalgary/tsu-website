@@ -295,6 +295,6 @@ html {
 }
 
 .homePage__section--events {
-  background: linear-gradient(to bottom, white 20%, rgb(19,19,19) 70%);
+  background: linear-gradient(to bottom, white 50%, rgb(19,19,19) 70%);
   padding-bottom: 20px;
 }

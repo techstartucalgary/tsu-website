@@ -38,7 +38,7 @@
     transform: translateY(-0.25rem);
 }
 
-@media (max-width:750px){
+@media (max-width:785px){
     .HoverButton,.HoverButton--DarkMode{
         padding: 0.25rem 0.5rem;
     }
@@ -47,5 +47,10 @@
         display:flex;
         justify-content: center;
         align-items: center;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+    .regularText{
+        margin: 5px;
     }
 }

@@ -19,7 +19,7 @@
   align-items: center;
 }
 
-@media (max-width: 765px) {
+@media (max-width: 785px) {
   .Footer {
     display: block;
     padding: 0em;
@@ -39,7 +39,7 @@
   }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 785px) {
   .hoverButton {
     width: 175px;
     margin-left: auto;
@@ -49,7 +49,7 @@
   }
 }
 
-@media (max-width: 765px) {
+@media (max-width: 785px) {
   .Copyright {
     transform: translateY(-30px);
   }

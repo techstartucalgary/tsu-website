@@ -19,17 +19,17 @@
   align-items: center;
 }
 
-@media (max-width: 760px) {
+@media (max-width: 765px) {
   .Footer {
     display: block;
     padding: 0em;
-    height: 14rem;
+    height: 12rem;
   }
 
   .SocialMediaSection {
     margin-top: 0em;
     margin-bottom: 1.5em;
-    padding-top: 2em;
+    padding-top: 1em;
   }
 
   .Copyright {
@@ -39,7 +39,7 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 765px) {
   .hoverButton {
     width: 175px;
     margin-left: auto;
@@ -49,8 +49,29 @@
   }
 }
 
-@media (max-width: 760px) {
+@media (max-width: 765px) {
   .Copyright {
     transform: translateY(-30px);
+  }
+}
+
+
+@media (max-width: 555px) {
+  .Footer {
+    display: block;
+    padding: 0em;
+    height: 10rem;
+  }
+
+  .SocialMediaSection {
+    margin-top: 0em;
+    margin-bottom: 1.5em;
+    padding-top: 1em;
+  }
+
+  .Copyright {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

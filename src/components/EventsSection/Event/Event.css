@@ -1,27 +1,21 @@
 .event {
-  display: grid;
-  grid-template-columns: repeat(2, 50%);
   background-color: white;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: 8px 8px 2px 1px rgba(0, 0, 0, 0.4);
+  padding: 3% 3%;
 }
 
-.eventImgDiv {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.eventImgLeft, .eventImgRight {
+  margin: 2%;
+  width:60%;
 }
 
-.eventImg {
-  width:auto;
-  height:auto;
-  padding:0% !important;
-  margin:auto !important;
+.eventImgLeft {
+  float: left;
+  clear:right;
 }
 
-.eventImgDiv,
-.eventText {
-  padding: 8% 5%;
+.eventImgRight {
+  float: right;
 }
 
 .datetime_Button_Div {
@@ -34,14 +28,17 @@
 
 @media (max-width: 750px) {
   .eventText {
-    padding: 0% 5%;
-  }
-
-  .event {
-    grid-template-columns: repeat(1, 100%);
+    padding: 0% 0%;
+    margin-top: 5%;
   }
 
   .datetime_Button_Div p {
     margin-bottom: 0vh;
+  }
+
+  .eventImgLeft, .eventImgRight {
+    width: 100%;
+    float: none;
+    margin: 0%;
   }
 }

@@ -1,4 +1,5 @@
 import "./Register.css"
+import "./SignIn.css"
 import logo from "images/tech-start-logo-white.png";
 import React, { Component, useEffect, useRef, useLayoutEffect } from 'react';
 import axios from "axios";
@@ -55,13 +56,12 @@ function Register(props){
         <div className = "registerStyling">
                <link rel="stylesheet"
                  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></link>
-             <div className = "registerHeading">
-                <img src = {logo} className = "registerLogo"/>
-                <h3 className = "registerStyling">Get Started with TechStart's Community</h3>
+             <div className = "registerHeading">Register
+               {/* <img src = {logo} className = "registerLogo"/>
+                <h3 className = "registerStyling">Register</h3>*/}
              </div>  
             
-            <p className = "registerIntro">Find people to connect with and post about your new projects
-            and ideas as a TechStart Community Member.</p>
+            <p className = "registerIntro">Make an account to interact with the community page</p>
             <form className = "registerForm">
             <div className="registerNameDiv">
                 <div className = "registerFirstNameInput">
@@ -100,7 +100,7 @@ function Register(props){
                         <p className = "registerAlertMessage">You have not entered the necessary information</p>
                     </div>  : <div />}
         </div>
-    );
+        );
 }
 
 export default Register;

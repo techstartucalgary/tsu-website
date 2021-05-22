@@ -7,9 +7,11 @@ const Event = (props: any) => {
 
     const preventDragHandler = (e: any) => e.preventDefault();
 
+    const fadeDirection = props.pastEvent ? "fade-left" : "fade-right";
+
     return (
 
-        <div className="event">
+        <div className="event" data-aos={fadeDirection}>
             {props.pastEvent ?
                 <img
                     className="eventImgLeft"

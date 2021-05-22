@@ -33,14 +33,16 @@ const Profile = (props: {
     const preventDragHandler = (e: any) => e.preventDefault();
 
     return (
-        <div className={ProfileClasses.join(' ')} >
+        <div className={ProfileClasses.join(' ')} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="3000">
             <div className="ProfileIconDiv" onMouseEnter={toggleHoveredState} onMouseLeave={toggleHoveredState}>
+
                 <img
                     className="ProfileIcon"
                     src={props.profilePic}
                     key={props.key}
                     alt={props.alt}
                     onDragStart={preventDragHandler} />
+
 
                 {!props.carouselView &&
                     <div className={LinkSectionClasses.join(' ')} >

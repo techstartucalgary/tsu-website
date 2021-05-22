@@ -11,7 +11,7 @@ const Event = (props: any) => {
 
     return (
 
-        <div className="event" data-aos={fadeDirection}>
+        <div className="event" data-aos={fadeDirection} data-aos-duration="2000">
             {props.pastEvent ?
                 <img
                     className="eventImgLeft"

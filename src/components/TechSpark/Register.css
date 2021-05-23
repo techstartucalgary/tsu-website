@@ -1,188 +1,215 @@
-.registerLogo{
-    height: 70px;
-    margin-left: auto;
-    margin-right: auto;
+.registerLogo {
+  height: 70px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.registerStyling{
-    color: white;
-    font-size: medium;
+.registerStyling {
+  position: relative;
+  color: white;
+  font-size: medium;
+  height: 100%;
+  /*may need to delete*/
+  width: 80%;
+  padding-top: 10px;
+  padding-left: 20%;
+  padding-bottom: 20px;
 }
 
-.registerIntro{
-    margin-left: auto;
-    text-align: center;
+/***/
+.registerDesign {
+  position: absolute;
+  float: left;
+  background: linear-gradient(
+    var(--primary-green, rgb(106, 235, 80)),
+    rgb(89, 201, 209)
+  );
+  width: 20%;
+  border-radius: 25px 0 0 25px;
+  height: 100%;
+}
+.registerHeaderDiv {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+/***/
+
+.registerIntro {
+  margin-left: auto;
+  text-align: center;
+  font-size: 13px;
 }
 
-.registerHeading{
-    margin-top: 8px;
-    text-align: center; 
-    color: white;
+.registerHeading {
+  margin-top: 8px;
+  text-align: center;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-.registerForm{
-    font-size: larger;
+.registerForm {
+  font-size: larger;
 }
 
-.logInLink{
-    float: left;
-    font-weight: normal;
-    margin: 12px;
+.logInLink {
+  float: left;
+  font-weight: normal;
+  margin: 12px;
+  margin-left: 10%;
+  font-size: 13px;
+}
+
+.registerDiv {
+  position: relative;
+  width: 80%;
+  padding: 10px;
+  margin: 12px auto;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: grey;
+  border-radius: 12px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.registerNameDiv {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.registerFirstNameInput {
+  float: left;
+  width: 49%;
+  padding: 10px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: grey;
+  border-radius: 12px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+.registerLastNameInput {
+  float: right;
+  width: 49%;
+  padding: 10px;
+  margin-top: 12px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: grey;
+  border-radius: 12px;
+  box-sizing: border-box;
+  resize: vertical;
+}
+
+.loginSwitch {
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  float: right;
+  margin: 12px;
+  margin-right: 10%;
+  vertical-align: middle;
+}
+
+.switchToLogin {
+  margin-top: 12px;
+}
+
+.registerAlert {
+  background-color: #ffb6b9;
+  padding: 4px;
+  border-radius: 7px;
+  color: #282c34;
+  font-size: small;
+  text-align: center;
+  margin: 0px 10%;
+}
+
+.registerAlertMessage {
+  margin: 0px;
+}
+
+#clearRegister {
+  clear: both;
+}
+
+input[id="registerFirstName"],
+input[id="registerLastName"],
+input[id="registerEmail"],
+input[id="registerPassword"] {
+  width: 80%;
+  padding: 12px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: grey;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
+}
+
+input[id="registerSubmit"] {
+  width: 42%;
+  margin-left: 29%;
+  margin-right: 29%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #99e755;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media (max-width: 970px) {
+  .registerNameDiv {
+    display: block;
+  }
+  .registerFirstNameInput {
+    width: 100%;
+  }
+  .registerLastNameInput {
+    width: 100%;
+  }
+}
+
+@media (max-width: 875px) {
+  .switchToLogin {
+    display: block;
+  }
+  .loginSwitch {
+    float: none;
     margin-left: 10%;
-}
-
-.registerDiv{
-    position:relative;
-    width: 80%;
-    padding: 10px;
-    margin: 12px auto;
-    border: 1px solid #ccc;
-    background-color: white;
-    color: grey;
-    border-radius: 12px;
-    box-sizing: border-box;
-    resize: vertical;
-}
-
-.registerNameDiv{
-    width: 80%;
-    margin-left:10%;
-    margin-right: 10%;
-}
-
-.registerFirstNameInput{
-    float: left;
-    width: 49%;
-    padding: 10px;
-    margin-top: 12px;
-    border: 1px solid #ccc;
-    background-color: white;
-    color: grey;
-    border-radius: 12px;
-    box-sizing: border-box;
-    resize: vertical;
-}
-.registerLastNameInput{
-    float: right;
-    width: 49%;
-    padding: 10px;
-    margin-top: 12px;
-    border: 1px solid #ccc;
-    background-color: white;
-    color: grey;
-    border-radius: 12px;
-    box-sizing: border-box;
-    resize: vertical;
-}
-
-
-.loginSwitch{
-    color: white;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    float: right;
-    margin: 12px;
-    margin-right: 10%;
-    vertical-align: middle;
-}
-
-.switchToLogin{
-    margin-top: 12px;
-}
-
-
-.registerAlert{
-    background-color: #ffb6b9;
-    padding: 4px;
-    border-radius: 7px;
-    color: #282c34;
-    font-size: small;
-    text-align: center;
-    margin: 0px 10%;
-}
-
-.registerAlertMessage{
-    margin: 0px;
-}
-
-#clearRegister{
-    clear: both;
-}
-
-input[id=registerFirstName], input[id=registerLastName],input[id=registerEmail], 
-input[id=registerPassword]{
-    width: 80%;
-    padding: 12px;
-    margin-left: 5px;
-    border: 1px solid #ccc;
-    background-color: white;
-    color: grey;
-    border-radius: 12px;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
-}
-
-input[id=registerSubmit]{
+  }
+  .logInLink {
+    float: none;
+    margin-bottom: 0px;
+  }
+  input[id="registerSubmit"] {
     width: 42%;
     margin-left: 29%;
     margin-right: 29%;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #99e755;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;    
-    text-align: center;
-    
+  }
 }
 
-@media(max-width: 970px){
-    .registerNameDiv{
-        display: block;
-        
-    }
-    .registerFirstNameInput{
-        width: 100%;
-    }
-    .registerLastNameInput{
-        width: 100%;
-    }
+@media (max-width: 785px) {
+  .loginSwitch {
+    margin-bottom: 7px;
+  }
 }
 
-@media (max-width: 875px){
-    .switchToLogin{
-        display: block;
-    }
-    .loginSwitch{
-        float: none;
-        margin-left: 10%;
-    }
-    .logInLink{
-        float: none;
-        margin-bottom: 0px;
-    }
-    input[id=registerSubmit]{
-        width: 42%;
-        margin-left: 29%;
-        margin-right: 29%;
-    }
+@media (max-width: 590px) {
+  .registerStyling {
+    font-size: small;
+  }
 }
-
-
-@media (max-width: 785px){
-    .loginSwitch{
-        margin-bottom: 7px;
-    }
-}
-
-@media (max-width: 590px){
-    .registerStyling{
-        font-size: small;
-    }
-}
-#clear{
-    clear: both;
+#clear {
+  clear: both;
 }

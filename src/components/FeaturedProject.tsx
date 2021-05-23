@@ -21,7 +21,7 @@ function FeaturedProject(props: featuredProjectProps) {
     setProjectImageClass("project__image--transparent")
     setprojectDescriptionClass("project__description--visible")
   }
-  return <div className="project__container" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave}>
+  return <div className="project__container" onMouseEnter={mouseEnter} onMouseLeave={mouseLeave} data-aos="zoom-in" data-aos-duration="2500">
     <img src={props.project.image} className={"project__image " + projectImageClass} />
 
     <div className={"project__content " + projectDescriptionClass}>{props.project.description}

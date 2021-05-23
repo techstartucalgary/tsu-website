@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import { ExecutiveMember, ProjectManager } from '../TeamInformation';
 import Carousel from 'react-elastic-carousel';
 import Profile from './Profile/Profile';
 import './Team.css';

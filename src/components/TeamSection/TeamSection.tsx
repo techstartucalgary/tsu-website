@@ -22,7 +22,7 @@ const TeamSection = () => {
     }
 
     return (
-        <div className="TeamSection" >
+        <div className="TeamSection">
             <h1 className="chonkyHeading chonkyHeading--lessMargin">Our Team</h1>
             <Divider />
 

@@ -32,8 +32,11 @@ const Profile = (props: {
 
     const preventDragHandler = (e: any) => e.preventDefault();
 
+    let animationProps = ["fade-up", "top-center", "3000"];
+    if (props.carouselView) animationProps = [];
+
     return (
-        <div className={ProfileClasses.join(' ')} data-aos="fade-up" data-aos-anchor-placement="top-center" data-aos-duration="3000">
+        <div className={ProfileClasses.join(' ')} data-aos={animationProps[0]} data-aos-anchor-placement={animationProps[1]} data-aos-duration={animationProps[2]}>
             <div className="ProfileIconDiv" onMouseEnter={toggleHoveredState} onMouseLeave={toggleHoveredState}>
 
                 <img

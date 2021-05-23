@@ -14,9 +14,7 @@ import { PostType } from "./PostType"
 
 function Dashboard() {
 
-    const [newsCategories, setNewsCategories] = React.useState([]);
-
-    const [news, setNews] = React.useState([])
+    const [eventCategories, setEventCategories] = React.useState([]);
     
     const dataRoot = "https://techstartbackend.herokuapp.com"
     const [token, setToken] = React.useState([]);
@@ -26,10 +24,10 @@ function Dashboard() {
 
     const [posts, setPosts] = React.useState([])
 
-    //Get existing news 
+    //Get existing events
     useEffect(() => {
         axios.get(
-            `${dataRoot}/news`
+            `${dataRoot}/event`
           ).then((response) => {
             if (response.status === 200) {
                 let data = response.data;
@@ -39,7 +37,7 @@ function Dashboard() {
           });; 
     },[])
     
-    //Get existing news 
+    //Get existing posts
     useEffect(() => {
         axios.get(
             `${dataRoot}/post`

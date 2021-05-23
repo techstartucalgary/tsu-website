@@ -71,9 +71,9 @@ function ApplyPage() {
             title="What is a Tech Start project?"
             active={active}
             setActive={setActive}
-            description="Every semester, our members form teams that gather together to
+            description="Our members form teams that gather together to
                   brainstorm a project, and then work on that idea collaboratively 
-                  with 6-9 other creators over the semester. During this time the
+                  with 6-9 other creators over 1 or 2 semesters. During this time the
                   projects evolve and shift, and our members get to experience
                   the full lifecycle of bringing a complex project to life. Each
                   team is lead by an experienced project manager who provides the
@@ -197,9 +197,9 @@ function ApplyPage() {
             />
 
             <ApplySection
-              term="1 semester"
+              term="1 to 2 semesters"
               role="Project Manager"
-              description="Manage a project for a semester and lead a team of 6-9
+              description="Manage a project for 1 or 2 semesters and lead a team of 6-9
                     project members to create complex projects."
               status="open"
               applicationLink="https://forms.gle/bFGzAFD1QWdCavGr5"
@@ -226,7 +226,7 @@ function ApplyPage() {
             question="What do the Project Managers do?"
             answer="Consider applying to be a Project Manager! Take the opportunity to
               pass on and earn experience leading in a professional and
-              experimental environment! Manage a project for a semester and lead
+              experimental environment! Manage a project for 1 or 2 semesters and lead
               a team of 6-9 developers to create complex projects! Build your
               portfolio, gain industry-like experience, and learn about the
               product life cycle from initial design to testing and deployment."

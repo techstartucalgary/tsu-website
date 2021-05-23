@@ -23,16 +23,16 @@ const Team = (props: { teamMembers: any, defaultView: boolean }) => {
         props.defaultView === true ?
             <div className={containerClasses.join(' ')}>
                 {
-                    containerState.members.map((member: any, i: number) => {
+                    containerState.members.map((member: any) => {
                         return (
                             <Profile
                                 className=""
-                                key={i}
+                                key={member.id}
                                 member={member}
                                 class={`Profile--${containerState.members.length}`}
                                 col={containerState.members.length}
                                 profilePic={member.image}
-                                alt={`member_${i}`}
+                                alt={member.image}
                                 carouselView={false}
                             />
                         );
@@ -40,18 +40,18 @@ const Team = (props: { teamMembers: any, defaultView: boolean }) => {
                 }
             </div>
             :
-            <Carousel className="Carousel" isRTL={true}>
-                {containerState.members.map((member: any, i: number) =>
+            <Carousel className="Carousel" isRTL={false}>
+                {containerState.members.map((member: any) =>
                     <Profile
                         className="Profile"
-                        key={i}
+                        key={member.id}
                         member={member}
                         class={`Profile-${containerState.members.length}`}
                         col={containerState.members.length}
                         carouselView={true}
 
                         profilePic={member.image}
-                        alt={`member_${i}`}
+                        alt={member.image}
                     />)}
             </Carousel>
     );

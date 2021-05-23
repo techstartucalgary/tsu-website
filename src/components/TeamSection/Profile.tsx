@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './Profile.css';
-import { ExecutiveMember, ProjectManager } from '../../TeamInformation';
-import ProfileDescription from './ProfileDescription/ProfileDescription';
-import SocialMedia from '../../../SocialMedia/SocialMedia';
+import { ExecutiveMember, ProjectManager } from './TeamInformation';
+import ProfileDescription from './ProfileDescription';
+import SocialMedia from '../SocialMedia/SocialMedia';
 
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';

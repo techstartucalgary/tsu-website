@@ -44,6 +44,7 @@ h4 {
 @media (max-width:750px){
     h3 {font-size: 1.2rem}
     h4 {font-size: 1rem}
+    .ProfileDescription {margin-top: 3%;}
 }
 
 @media (max-width:450px){

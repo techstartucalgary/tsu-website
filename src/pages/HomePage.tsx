@@ -66,7 +66,7 @@ function HomePage() {
           </div>
           <div className="homePage__applyButtonBox"><Link to="/apply" className="homePage__applyButtonLink" >
             <div className="homePage__applyButton">
-              <div className="homePage__applyButtonArrow"> ˃˃ </div>
+              <div className="homePage__applyButtonArrow"> <span>&#62;</span><span>&#62;</span> </div>
               <div className="homePage__applyButtonText"> theTeam.join()</div>
             </div></Link></div>
         </div>

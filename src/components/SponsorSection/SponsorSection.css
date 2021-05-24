@@ -1,27 +1,35 @@
 .SponsorSection {
-    display: flex;
-    gap: 1.5em;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10%;
+  display: flex;
+  gap: 1.5em;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10%;
 }
-  
-.SponsorSection>* {
-    flex-basis: 30%;
-    min-width: 10em;
+
+.SponsorSection > * {
+  flex-basis: 30%;
+  min-width: 10em;
+}
+.SponsorLogo {
+  transition: 0.3s ease-in-out;
+  opacity: 0.7;
+}
+.SponsorLogo:hover {
+  transform: translateY(-3px);
+  opacity: 1;
 }
 
 .SponsorButton {
-    text-decoration: none; 
-    font-size: clamp(1rem, calc(3vw+1rem), 1.5rem); 
-    max-width: 90%;
-    display: inline-block;
-    color: black;
-    transform: scale(1);
-    transition: color 250ms linear, transform 250ms ease-in-out;
+  text-decoration: none;
+  font-size: clamp(1rem, calc(3vw+1rem), 1.5rem);
+  max-width: 90%;
+  display: inline-block;
+  color: black;
+  transform: scale(1);
+  transition: color 250ms linear, transform 250ms ease-in-out;
 }
-  
+
 .SponsorButton:hover {
-    color: black !important;
+  color: black !important;
 }

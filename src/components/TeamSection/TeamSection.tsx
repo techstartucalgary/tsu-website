@@ -1,4 +1,4 @@
-import Team from './Team/Team';
+import Team from './Team';
 import useViewport from '../UseViewport';
 import './TeamSection.css';
 import '../../App.css'

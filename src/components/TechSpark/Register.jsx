@@ -97,7 +97,7 @@ function Register(props){
             </div>
             {invalidInput ?
                     <div className = "registerAlert">
-                        <p className = "registerAlertMessage">You have not entered the necessary information</p>
+                        <p className = "registerAlertMessage">**You have not entered the necessary information**</p>
                     </div>  : <div />}
         </div>
         );

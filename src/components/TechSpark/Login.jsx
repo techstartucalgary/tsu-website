@@ -93,15 +93,15 @@ function Login(props) {
             </div>
             {invalidUsername ?
                     <div className = "alert"> 
-                    <p className = "alertMessage">You have entered an invalid username</p>
+                    <p className = "alertMessage">**You have entered an invalid username**</p>
                     </div>  : <div />}
                 {invalidPassword ?
                     <div className = "alert">
-                        <p className = "alertMessage">You have entered an invalid password</p>
+                        <p className = "alertMessage">**You have entered an invalid password**</p>
                     </div> : <div />}
                 {invalidLogin ?
                     <div className = "alert">
-                        <p className = "alertMessage">You have entered an invalid username or password</p>
+                        <p className = "alertMessage">**You have entered an invalid username or password**</p>
                     </div>  : <div />}
         </div>
     );

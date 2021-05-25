@@ -35,6 +35,17 @@
   z-index: 10;
 }
 
+@media (max-width: 885px) {
+  .popup {
+    margin-top: 0px;
+  }
+  .popup__inner {
+    margin-top: 0px;
+    left: 20%;
+    right: 20%;
+  }
+}
+
 @media (max-width: 600px) {
   .popup__inner {
     left: 20px;
@@ -50,11 +61,4 @@
   content: "";
 }
 
-@media (max-width: 885px) {
-  .popup {
-    margin-top: 0px;
-  }
-  .popup__inner {
-    margin-top: 0px;
-  }
-}
+

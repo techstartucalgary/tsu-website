@@ -1,29 +1,34 @@
 /**Default layout*/
 .Container {
-    margin-top:5%;
-    margin-left: 10%;
-    margin-right: 5%;
-    margin-bottom: 50px;
-
+    margin: 50px, 10%, 50px, 10%;
     display: grid;
-    grid-template-columns: repeat(3, 20%);
-    grid-column-gap: 10%;
+    max-width: 1400px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 5em;
     grid-row-gap: 30px;
+}
+
+@media(min-width: 1400px){
+    .Container{
+        grid-column-gap: 5%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 .Container--size4{
     margin-bottom:10%;
-    margin-left:10%;
-    grid-template-columns: repeat(4, 20%);
-    grid-column-gap: 5%;
-    grid-row-gap: 5%;
+    /* margin-left:10%; */
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-row-gap: 0.8rem;
 }
 
 .Container--size7{
-    margin-left: 10%;
-    margin-right: 20%;
-    grid-template-columns: repeat(8, 10%);
-    grid-column-gap: 5%;
+    /* margin-left: 10%;
+    margin-right: 20%; */
+    grid-template-columns: repeat(8, 1fr);
+    grid-column-gap: 1.5rem;
 }
 
 .Profile--7:nth-child(-n+4) {

@@ -3,6 +3,10 @@
     display:inline-block;
 }
 
+.ProfileDescription--carousel{
+    margin-top: 1.5em;
+}
+
 .Bio {
     align-self: center;
     text-align: center;
@@ -11,43 +15,46 @@
 /* NOTE: the following styles are based on those in App.css but tweaked to acommodate the
          smaller font size of profile descriptions. */
 
-h3, h4 {
+.Bio__name, .Bio__subtitle {
     margin:0%;
     font-family: "Inter", Tahoma, sans-serif;
 }
 
-h3 {
+.Bio__name {
     color: var(--primary-black);
     font-size: 1.5rem;
+    font-weight: 900;
 }
 
-h4 {
-    color: var(--primary-green);
-    font-size: 1.2rem;
+.Bio__subtitle {
+    /* color: var(--primary-green); */
+    color: var(--secondary-grey);
+    font-weight: 300;
+    font-size: 1.1rem;
 }
 
-@media (max-width:1500px){
-    h3 {font-size: 1.2rem}
-    h4 {font-size: 1rem}
+/* @media (max-width:1500px){
+    .Bio__name {font-size: 1.2rem}
+    .Bio__subtitle {font-size: 1rem}
 }
 
 @media (max-width:1200px){
-    h3 {font-size: 1rem}
-    h4 {font-size: 0.8rem}
+    .Bio__name {font-size: 1rem}
+    .Bio__subtitle {font-size: 0.8rem}
 }
 
 @media (max-width:1000px){
-    h3 {font-size: 0.8rem}
-    h4 {font-size: 0.6rem}
+    .Bio__name {font-size: 0.8rem}
+    .Bio__subtitle {font-size: 0.6rem}
 }
 
 @media (max-width:750px){
-    h3 {font-size: 1.2rem}
-    h4 {font-size: 1rem}
+    .Bio__name {font-size: 1.6em}
+    .Bio__subtitle {font-size: 1.2rem}
     .ProfileDescription {margin-top: 3%;}
 }
 
 @media (max-width:450px){
-    h3 {font-size: 1rem}
-    h4 {font-size: 0.8rem}
-}
+    .Bio__name {font-size: 1rem}
+    .Bio__subtitle {font-size: 0.8rem}
+} */

@@ -36,7 +36,7 @@ const Profile = (props: {
     if (props.carouselView) animationProps = [];
 
     return (
-        <div className={ProfileClasses.join(' ')} data-aos={animationProps[0]} data-aos-anchor-placement={animationProps[1]} data-aos-duration={animationProps[2]}>
+        <div className={ProfileClasses.join(' ')} data-aos-anchor-placement={animationProps[1]} data-aos-duration={animationProps[2]}>
             <div className="ProfileIconDiv" onMouseEnter={toggleHoveredState} onMouseLeave={toggleHoveredState}>
 
                 <img
@@ -62,7 +62,7 @@ const Profile = (props: {
                     </div>
                 }
             </div>
-            <ProfileDescription member={props.member} />
+            <ProfileDescription member={props.member} isCarousel={props.carouselView}/>
             {props.carouselView &&
                 <div className={LinkSectionClasses.join(' ')} >
                     {props.member.linkedin.trim() !== "" &&

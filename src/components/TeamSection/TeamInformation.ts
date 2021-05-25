@@ -16,7 +16,7 @@ export var executiveTeam: ExecutiveMember[];
 export var projectManagers: ProjectManager[];
 
 executiveTeam = [
-    { id: 0, name: "Joel Happ", role: "President | Project Manager", image: member_0, linkedin: "https://www.linkedin.com/in/joel-happ/", email: "mailto:joel.happ1@ucalgary.ca" },
+    { id: 0, name: "Joel Happ", role: "President", image: member_0, linkedin: "https://www.linkedin.com/in/joel-happ/", email: "mailto:joel.happ1@ucalgary.ca" },
     { id: 1, name: "Valeriya Volkova", role: "VP Strategy", image: member_1, linkedin: "https://www.linkedin.com/in/valeriyavolkova/?originalSubdomain=ca", email: "mailto:valeriya.volkova@ucalgary.ca" },
     { id: 2, name: "Daniel Indukuri", role: "VP Finance", image: member_2, linkedin: "https://www.linkedin.com/in/daniel-indukuri-99776b204/?originalSubdomain=ca", email: "mailto:arpith.indukuri@ucalgary.ca" },
     { id: 3, name: "Luke Hollinda", role: "VP External", image: member_3, linkedin: "https://www.linkedin.com/in/luke-hollinda-89270a183/?originalSubdomain=ca", email: "mailto:luke.hollinda1@ucalgary.ca" },

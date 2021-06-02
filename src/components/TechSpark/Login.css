@@ -1,15 +1,19 @@
 .loginStyling {
-  position: absolute;
-  max-width: 560px;
+  height: 100%;
+  position: relative;
   width: 80%;
-  height: 325px;
-  margin-left: 20%;
+  padding-top: 10px;
+  padding-left: 20%;
+  padding-bottom: 20px;
 }
 
 .loginHeading {
   width: 80%;
   text-align: center;
   margin-left: 10%;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
 }
 
 .loginForm {
@@ -17,10 +21,10 @@
 }
 
 .loginDiv {
+  position: relative;
   width: 80%;
   padding: 10px;
-  margin-left: 10%;
-  margin-top: 12px;
+  margin: 12px auto;
   border: 1px solid #ccc;
   background-color: white;
   color: grey;
@@ -32,9 +36,8 @@
 .registerLink {
   float: left;
   font-weight: normal;
-  margin-top: 10px;
+  margin: 12px;
   margin-left: 10%;
-  margin-bottom: 0px;
 }
 
 .registerSwitch {
@@ -46,13 +49,10 @@
   margin: 10px;
   margin-right: 10%;
   vertical-align: middle;
-  margin-bottom: 0px;
 }
 
 .switchStyling {
   margin-top: 10px;
-  display: inline;
-  margin-bottom: 0px;
 }
 
 .alert {
@@ -62,7 +62,7 @@
   color: #282c34;
   font-size: small;
   text-align: center;
-  margin: 9px 10%;
+  margin: 0px 10%;
 }
 
 .alertMessage {
@@ -76,7 +76,7 @@
 input[id="loginUsername"],
 input[id="loginPassword"] {
   width: 87%;
-  padding: 10px;
+  padding: 5px;
   margin-left: 5px;
   border: 1px solid #ccc;
   background-color: white;
@@ -109,28 +109,17 @@ input[id="loginSubmit"] {
 }
 
 @media (max-width: 790px) {
-  input[id="loginUsername"],
-  input[id="loginPassword"] {
-    width: 75%;
-  }
   .switchStyling {
     display: block;
   }
   .registerSwitch {
     float: none;
-    margin-top: 0px;
     margin-left: 10%;
+    margin-bottom: 7px;
   }
   .registerLink {
     float: none;
-    margin-bottom: 12px;
-  }
-}
-
-@media (max-width: 400px) {
-  input[id="loginUsername"],
-  input[id="loginPassword"] {
-    width: 65%;
+    margin-bottom: 0px;
   }
 }
 
@@ -138,4 +127,8 @@ input[id="loginSubmit"] {
   .alertMessage {
     font-size: smaller;
   }
+}
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }

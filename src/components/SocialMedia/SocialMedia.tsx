@@ -12,7 +12,7 @@ const SocialMedia = (props: any) => {
             onClick={props.linkClicked}
             href={props.link}
             className={SocialMediaClasses.join(' ')}>
-            <FontAwesomeIcon icon={props.icon} size="2x" />
+            <FontAwesomeIcon icon={props.icon} size="3x" />
         </a>
     );
 };

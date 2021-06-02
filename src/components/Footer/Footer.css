@@ -1,15 +1,18 @@
 .Footer {
-  background-color: #99e755;
+  /*background-color: #77db62;*/
   /* background-image: linear-gradient( #282A36, #99E755); */
   color: var(--primary-black);
   padding: 2rem 0rem;
-
   font-size: clamp(0.8rem, calc(2vw + 0.2rem), 1rem);
   width: 100%;
   height: 5em;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  color: white;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 15%, rgb(36, 35, 35) 70%);
+  opacity: 1;
 }
 
 .SocialMediaSection {
@@ -43,9 +46,8 @@
   .hoverButton {
     width: 175px;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     transform: scale(0.8);
-
   }
 }
 
@@ -54,7 +56,6 @@
     transform: translateY(-30px);
   }
 }
-
 
 @media (max-width: 555px) {
   .Footer {

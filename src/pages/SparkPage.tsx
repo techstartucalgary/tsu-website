@@ -17,7 +17,7 @@ function Dashboard() {
     const [newsCategories, setNewsCategories] = React.useState([]);
 
     const [news, setNews] = React.useState([])
-    
+
     const dataRoot = "https://techstartbackend.herokuapp.com"
     const [token, setToken] = React.useState([]);
     const [userID, setUserID] = React.useState([]);
@@ -30,99 +30,101 @@ function Dashboard() {
     useEffect(() => {
         axios.get(
             `${dataRoot}/news`
-          ).then((response) => {
+        ).then((response) => {
             if (response.status === 200) {
                 let data = response.data;
                 setEvents(data)
-          }}, (error) => {
+            }
+        }, (error) => {
             console.log(error);
-          });; 
-    },[])
-    
+        });;
+    }, [])
+
     //Get existing news 
     useEffect(() => {
         axios.get(
             `${dataRoot}/post`
-          ).then((response) => {
+        ).then((response) => {
             if (response.status === 200) {
                 let data = response.data;
                 setPosts(data)
-          }}, (error) => {
+            }
+        }, (error) => {
             console.log(error);
-          });; 
-    },[])
-    
+        });;
+    }, [])
+
     console.log(posts)
     const eventArray = []
     const postArray = []
-    for (let index=0; index<events.length; index++) {
+    for (let index = 0; index < events.length; index++) {
         let eventWithType = new EventType(events[index])
         eventArray.push(eventWithType)
     }
 
-    const eventList = eventArray.map((ev) => 
-        <Event 
-            name = {ev.title} 
-            date = {ev.date_published}
-            img = {ev.url} 
-            link = {ev.source}
-            description = {ev.news_description}
+    const eventList = eventArray.map((ev) =>
+        <Event
+            name={ev.title}
+            date={ev.date_published}
+            img={ev.url}
+            link={ev.source}
+            description={ev.news_description}
         />
     )
 
 
-    for (let index=0; index<posts.length; index++) {
+    for (let index = 0; index < posts.length; index++) {
         let postWithType = new PostType(posts[index])
         postArray.push(postWithType)
     }
-    
-    const postList = postArray.map((pst) => 
+
+    const postList = postArray.map((pst) =>
         <Post
-            title = {pst.title} 
-            date = {pst.date_posted}
+            title={pst.title}
+            date={pst.date_posted}
             // author = {pst.author}
-            description = {pst.post_description}
+            description={pst.post_description}
         />
     )
     useEffect(() => {
         axios.post(
             `${dataRoot}/login`, {
-                username: 'test@testing.test',
-                password: 'WordPass123'
-            }
-          ).then((response) => {
-                
-                let token = response.data.token;
-                let userID = response.data.id;
-                setToken(token)
-                setUserID(userID)
-                console.log(token)
-                
-          }, (error) => {
-            console.log(error);
-          });; 
-    },[])
-
-    
-    useEffect(() => {
-      axios.put(
-          `${dataRoot}/update-post/1`, {
-              author: userID,
-              title: 'changed titlee',
-              date_posted: '2021-05-01',
-              post_description: 'changed description',
-              
-          }, {headers: {'Authorization': `Token ${token}`}}
+            username: 'test@testing.test',
+            password: 'WordPass123'
+        }
         ).then((response) => {
-              
-              let token = response.data.token;;
-              setToken(token)
-              console.log(token)
-              
+
+            let token = response.data.token;
+            let userID = response.data.id;
+            setToken(token)
+            setUserID(userID)
+            console.log(token)
+
         }, (error) => {
-          console.log(error);
-        });; 
-    },[])
+            console.log(error);
+        });;
+    }, [])
+
+
+    useEffect(() => {
+        axios.put(
+            `${dataRoot}/update-post/1`, {
+            author: userID,
+            title: 'changed titlee',
+            date_posted: '2021-05-01',
+            post_description: 'changed description',
+
+        }, { headers: { 'Authorization': `Token ${token}` } }
+        ).then((response) => {
+
+            let token = response.data.token;;
+            setToken(token)
+            console.log(token)
+
+        }, (error) => {
+            console.log(error);
+        });;
+    }, [])
 
 
     const [displayPost, setDisplayPost] = useState(false)
@@ -150,9 +152,9 @@ function Dashboard() {
                     Community
         </div>
                 <div className="sparkMissionStatement">
-                Tech Start's community page helps University of Calgary students stay up to date with the latest news in technology and startups. We've partnered with the Hunter Hub to show news and events from within the University and from abroad.
+                    Tech Start's community page helps University of Calgary students stay up to date with the latest news in technology and startups. We've partnered with the Hunter Hub to show news and events from within the University and from abroad.
 
-In the "See what people are saying" section, you can post your ideas, projects, requests, and connect with other students. It's a great way to find projects, collaborators, or make connections with like-minded students!
+                    In the "See what people are saying" section, you can post your ideas, projects, requests, and connect with other students. It's a great way to find projects, collaborators, or make connections with like-minded students!
         </div>
                 <div className="sparkOuterGrid">
                     <div className="sparkMenuContainer sparkContentPage">
@@ -170,7 +172,7 @@ In the "See what people are saying" section, you can post your ideas, projects, 
                         <div className="sparkContentTitle">Whats the latest?:</div>
                         <div className="sparkInnerGrid">
                             {eventList}
-                    </div>
+                        </div>
                     </div>
                     <div className="sparkContentPage">
                         <div className="sparkContentTitle">
@@ -186,7 +188,7 @@ In the "See what people are saying" section, you can post your ideas, projects, 
                 </div>
             </div>
         </div>
-        
+
 
 
 

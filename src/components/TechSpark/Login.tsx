@@ -4,7 +4,7 @@ import axios from "axios";
 
 const dataRoot = "https://techstartbackend.herokuapp.com"
 
-function Login(props) {
+function Login(props: any) {
 
     const [tracker, setTracker] = React.useState(false)
     const [invalidUsername, setInvalidUsername] = React.useState(false)
@@ -12,22 +12,24 @@ function Login(props) {
     const [invalidLogin, setInvalidLogin] = React.useState(false)
     const firstUpdate = useRef(true);
     useLayoutEffect(() => {
+        let username = document.getElementById('loginUsername')
+        let password = document.getElementById('loginPassword')
         setInvalidLogin(false);
         if (firstUpdate.current) {
             firstUpdate.current = false;
             return;
         }
-        if (document.getElementById('loginUsername').value == "") {
+        if (!username) {
             console.log('Invalid Username')
             setInvalidUsername(true);
             setInvalidPassword(false);
             return;
         } else {
-            {
+            
                 setInvalidUsername(false);
-            }
+            
         }
-        if (document.getElementById('loginPassword').value == "") {
+        if (!password) {
             console.log('Invalid Password')
             setInvalidPassword(true);
             return;
@@ -36,8 +38,8 @@ function Login(props) {
         }
         axios.post(
             `${dataRoot}/login`, {
-            username: document.getElementById('loginUsername').value,
-            password: document.getElementById('loginPassword').value
+            username: (username as HTMLFormElement).value,
+            password: (password as HTMLFormElement).value
         }
         ).then((response) => {
 
@@ -53,7 +55,7 @@ function Login(props) {
         });
     }, [tracker]);
 
-    function handleLogin(event) { // The event parameter will automatically be passed by React's onClick - read more at https://reactjs.org/docs/events.html
+    function handleLogin(event: any) { // The event parameter will automatically be passed by React's onClick - read more at https://reactjs.org/docs/events.html
         event.preventDefault(); // This makes it so that pressing the button does not reload the page
         // Additionally, right now we are using document.getElementById to pass the results to the useEffect. This is theoretically functional, but it's not the best practice in React.
         // https://reactjs.org/docs/forms.html#handling-multiple-inputs This is a great alternative way of doing it using form names + state. 

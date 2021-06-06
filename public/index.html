@@ -35,31 +35,33 @@
 
 <body>
   <noscript>You need to enable JavaScript to load this website.</noscript>
-  <!--- SVGs for changing the fill of other SVGs to gradients. Referenced by url with the CSS fill property. -->
-  <svg width="0" height="0">
-    <radialGradient id="customSVGFromIndexDotHTMLInstagram" r="150%" cx="30%" cy="107%">
-      <stop stop-color="#fdf497" offset="0" />
-      <stop stop-color="#fdf497" offset="0.05" />
-      <stop stop-color="#fd5949" offset="0.45" />
-      <stop stop-color="#d6249f" offset="0.6" />
-      <stop stop-color="#285AEB" offset="0.9" />
-    </radialGradient>
-  </svg>
-  <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
-    <linearGradient id="customSVGFromIndexDotHTML" x1="400" y1="0" x2="0" y2="400" gradientUnits="userSpaceOnUse">
-      <stop offset="0" stop-color="#00b7ff" />
-      <stop offset="0.125" stop-color="#00c3fc" />
-      <stop offset="0.25" stop-color="#00ccf1" />
-      <stop offset="0.375" stop-color="#00d5de" />
-      <stop offset="0.5" stop-color="#00dbc7" />
-      <stop offset="0.625" stop-color="#26e0ac" />
-      <stop offset="0.75" stop-color="#6ee391" />
-      <stop offset="0.875" stop-color="#9ee478" />
-      <stop offset="1" stop-color="#c9e265" />
-    </linearGradient>
-  </svg>
   <!-- React inserts our app into the root div, here (see index.js)-->
   <div id="root"></div>
+  <div class="hiddenSVGs">
+    <!--- SVGs for changing the fill of other SVGs to gradients. Referenced by url with the CSS fill property. -->
+    <svg width="0" height="0">
+      <radialGradient id="customSVGFromIndexDotHTMLInstagram" r="150%" cx="30%" cy="107%">
+        <stop stop-color="#fdf497" offset="0" />
+        <stop stop-color="#fdf497" offset="0.05" />
+        <stop stop-color="#fd5949" offset="0.45" />
+        <stop stop-color="#d6249f" offset="0.6" />
+        <stop stop-color="#285AEB" offset="0.9" />
+      </radialGradient>
+    </svg>
+    <svg width="0" height="0" xmlns="http://www.w3.org/2000/svg">
+      <linearGradient id="customSVGFromIndexDotHTML" x1="400" y1="0" x2="0" y2="400" gradientUnits="userSpaceOnUse">
+        <stop offset="0" stop-color="#00b7ff" />
+        <stop offset="0.125" stop-color="#00c3fc" />
+        <stop offset="0.25" stop-color="#00ccf1" />
+        <stop offset="0.375" stop-color="#00d5de" />
+        <stop offset="0.5" stop-color="#00dbc7" />
+        <stop offset="0.625" stop-color="#26e0ac" />
+        <stop offset="0.75" stop-color="#6ee391" />
+        <stop offset="0.875" stop-color="#9ee478" />
+        <stop offset="1" stop-color="#c9e265" />
+      </linearGradient>
+    </svg>
+  </div>
   <!-- FIREBASE: Hosting the app -->
   <!-- The core Firebase JS SDK is always required and must be listed first -->
   <script src="/__/firebase/8.2.7/firebase-app.js"></script>

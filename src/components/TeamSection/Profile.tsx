@@ -2,7 +2,7 @@ import { useState } from 'react';
 import './Profile.css';
 import { ExecutiveMember, ProjectManager } from './TeamInformation';
 import ProfileDescription from './ProfileDescription';
-import SocialMedia from '../SocialMedia/SocialMedia';
+import SocialMedia, {SocialMediaColor} from '../SocialMedia/SocialMedia';
 
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -26,9 +26,9 @@ const Profile = (props: {
     profileClasses.push(props.class);
 
     const linkSectionClasses = ["LinksSection"];
-    if (containerState.hovered) linkSectionClasses.push("LinkSection--Hover");
-    if (props.col < 7) linkSectionClasses.push("LinkSection--Translate--Small");
-    if (props.carouselView){
+    // if (containerState.hovered) linkSectionClasses.push("LinkSection--Hover");
+    // if (props.col < 7) linkSectionClasses.push("LinkSection--Translate--Small");
+    if (props.carouselView) {
         profileClasses.push('profile--carousel');
         linkSectionClasses.push("LinkSection--CarouselView");
     }
@@ -65,23 +65,21 @@ const Profile = (props: {
                     </div>
                 } */}
             </div>
-            <ProfileDescription member={props.member} isCarousel={props.carouselView}/>
-            {props.carouselView &&
-                <div className={linkSectionClasses.join(' ')} >
-                    {props.member.linkedin.trim() !== "" &&
-                        <SocialMedia
-                            className="Profile-SocialMedia"
-                            noHoverColor={true}
-                            icon={faLinkedin}
-                            link={props.member.linkedin} />
-                    }
+            <div className={linkSectionClasses.join(' ')} >
+                {props.member.linkedin.trim() !== "" &&
                     <SocialMedia
-                        className="Profile-SocialMedia"
-                        noHoverColor={true}
+                        color={SocialMediaColor.Gradient}
+                        icon={faLinkedin}
+                        link={props.member.linkedin} />
+                }
+                {props.member.email.trim() !== "" &&
+                    <SocialMedia
+                        color={SocialMediaColor.Gradient}
                         icon={faEnvelope}
                         link={props.member.email} />
-                </div>
-            }
+                }
+            </div>
+            <ProfileDescription member={props.member} isCarousel={props.carouselView} />
         </div>
     );
 };

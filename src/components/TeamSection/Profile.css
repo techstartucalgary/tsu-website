@@ -33,16 +33,20 @@
 }
 
 .LinksSection {
-    visibility: hidden;
-    opacity:0;
+    /* visibility: hidden; */
+    /* opacity:0; */
     transition: 0.4s ease-in-out;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     align-items: center;  
     justify-content: center;
-    transform:translateY(-8.5vw);
-    font-size: 1vw;
+    /* transform:translateY(-8.5vw); */
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1rem;
+
+
 }
 
 .LinkSection--Translate--Small {
@@ -54,7 +58,7 @@
     opacity:1;
 }
 
-.LinkSection--CarouselView {
+/* .LinkSection--CarouselView {
     transform:translateY(1vw) !important;
 
 }
@@ -94,4 +98,4 @@
     .LinksSection {
         transform:translateY(-24vw);
     }
-}
+} */

@@ -5,13 +5,11 @@ const ProfileDescription = (props: any) => {
 
     return (
         <div className={profileDescClassName}>
-            <div className="Bio">
-                <h3 className="Bio__name">{props.member.name}</h3>
+                <h3 className="profileDescription__name">{props.member.name}</h3>
                 {props.member.project ?
-                    <h4 className="Bio__subtitle">{props.member.project}</h4>
+                    <h4 className="profileDescription__subtitle">{props.member.project}</h4>
                     :
-                    <h4 className="Bio__subtitle">{props.member.role}</h4>}
-            </div>
+                    <h4 className="profileDescription__subtitle">{props.member.role}</h4>}
         </div >
     )
 };

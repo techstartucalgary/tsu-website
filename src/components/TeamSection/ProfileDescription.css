@@ -1,36 +1,41 @@
 .ProfileDescription {
     width: 100%;
     display:inline-block;
+    align-self: center;
+    text-align: center;
+    margin-top: 1.5em;
 }
 
 .ProfileDescription--carousel{
     margin-top: 1.5em;
 }
 
-.Bio {
-    align-self: center;
-    text-align: center;
-} 
-
-/* NOTE: the following styles are based on those in App.css but tweaked to acommodate the
-         smaller font size of profile descriptions. */
-
-.Bio__name, .Bio__subtitle {
+.profileDescription__name, .profileDescription__subtitle {
     margin:0%;
     font-family: "Inter", Tahoma, sans-serif;
 }
 
-.Bio__name {
+.profileDescription__name {
     color: var(--primary-black);
     font-size: 1.5rem;
     font-weight: 900;
 }
 
-.Bio__subtitle {
+.profileDescription__subtitle {
     /* color: var(--primary-green); */
     color: var(--secondary-grey);
     font-weight: 300;
     font-size: 1.1rem;
+}
+
+@media (max-width: 950px) and (min-width: 650px){
+    .profileDescription__name{
+        font-size: 1.1rem;
+    }
+    
+    .profileDescription__subtitle{
+        font-size: 0.95rem;
+    }
 }
 
 /* @media (max-width:1500px){

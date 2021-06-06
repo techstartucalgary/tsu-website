@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const TeamSection = () => {
 
     const { width } = useViewport(); // get screen width
-    const breakpoint = 750; // set breakpoint
+    const breakpoint = 650; // set breakpoint
 
     // set headers and defaultView flag according to screen width
     let headers = [];
@@ -23,6 +23,7 @@ const TeamSection = () => {
 
     return (
         <div className="TeamSection">
+            <div className="TeamSection__margin">
             <h1 className="chonkyHeading chonkyHeading--lessMargin">Our Team</h1>
             <Divider />
 
@@ -34,9 +35,11 @@ const TeamSection = () => {
             </div>
 
             <h2 className={headers[1]} style={{ "textAlign": "center" }}><u>Executives</u></h2>
+            </div>
             <Team teamMembers={executiveTeam} defaultView={defaultView} />
-
+            <div className="TeamSection__margin">
             <h2 className={headers[1]} style={{ "textAlign": "center" }}><u>Project Managers</u></h2>
+            </div>
             <Team teamMembers={projectManagers} defaultView={defaultView} />
         </div>
     );

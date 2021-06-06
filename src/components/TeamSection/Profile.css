@@ -1,9 +1,14 @@
 .ProfileDiv {
-    width:100%;
-    height:100%;
+    width: clamp(150px, 20%, 300px);
+    margin: 0 1% 2.5rem;
     display:block;
     align-items: center;  
     justify-content: center; 
+}
+
+.profile--carousel{
+    width: 100%;
+    max-width: 400px;
 }
 
 .ProfileIconDiv{

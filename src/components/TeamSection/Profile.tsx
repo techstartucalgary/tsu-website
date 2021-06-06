@@ -22,13 +22,16 @@ const Profile = (props: {
         setContainerState({ hovered: toggledHoveredState });
     }
 
-    const ProfileClasses = ["ProfileDiv"];
-    ProfileClasses.push(props.class);
+    const profileClasses = ["ProfileDiv"];
+    profileClasses.push(props.class);
 
-    const LinkSectionClasses = ["LinksSection"];
-    if (containerState.hovered) LinkSectionClasses.push("LinkSection--Hover");
-    if (props.col < 7) LinkSectionClasses.push("LinkSection--Translate--Small");
-    if (props.carouselView) LinkSectionClasses.push("LinkSection--CarouselView");
+    const linkSectionClasses = ["LinksSection"];
+    if (containerState.hovered) linkSectionClasses.push("LinkSection--Hover");
+    if (props.col < 7) linkSectionClasses.push("LinkSection--Translate--Small");
+    if (props.carouselView){
+        profileClasses.push('profile--carousel');
+        linkSectionClasses.push("LinkSection--CarouselView");
+    }
 
     const preventDragHandler = (e: any) => e.preventDefault();
 
@@ -36,7 +39,7 @@ const Profile = (props: {
     if (props.carouselView) animationProps = [];
 
     return (
-        <div className={ProfileClasses.join(' ')} data-aos-anchor-placement={animationProps[1]} data-aos-duration={animationProps[2]}>
+        <div className={profileClasses.join(' ')} data-aos-anchor-placement={animationProps[1]} data-aos-duration={animationProps[2]}>
             <div className="ProfileIconDiv" onMouseEnter={toggleHoveredState} onMouseLeave={toggleHoveredState}>
 
                 <img
@@ -47,8 +50,8 @@ const Profile = (props: {
                     onDragStart={preventDragHandler} />
 
 
-                {!props.carouselView &&
-                    <div className={LinkSectionClasses.join(' ')} >
+                {/* {!props.carouselView &&
+                    <div className={linkSectionClasses.join(' ')} >
                         {props.member.linkedin.trim() !== "" &&
                             <SocialMedia
                                 className="Profile-SocialMedia"
@@ -60,11 +63,11 @@ const Profile = (props: {
                             icon={faEnvelope}
                             link={props.member.email} />
                     </div>
-                }
+                } */}
             </div>
             <ProfileDescription member={props.member} isCarousel={props.carouselView}/>
             {props.carouselView &&
-                <div className={LinkSectionClasses.join(' ')} >
+                <div className={linkSectionClasses.join(' ')} >
                     {props.member.linkedin.trim() !== "" &&
                         <SocialMedia
                             className="Profile-SocialMedia"

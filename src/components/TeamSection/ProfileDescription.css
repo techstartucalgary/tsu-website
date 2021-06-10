@@ -1,53 +1,47 @@
 .ProfileDescription {
     width: 100%;
     display:inline-block;
-}
-
-.Bio {
     align-self: center;
     text-align: center;
-} 
-
-/* NOTE: the following styles are based on those in App.css but tweaked to acommodate the
-         smaller font size of profile descriptions. */
-
-h3, h4 {
-    margin:0%;
+    /* margin-top: 1.5em; */
+    margin: 0%;
     font-family: "Inter", Tahoma, sans-serif;
 }
 
-h3 {
-    color: var(--primary-black);
+/* .ProfileDescription--carousel{
+    margin-top: 1.5em;
+} */
+
+.profileDescription__name {
+    color: var(--secondary-grey);
     font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0%;
+    /* To change the styling to gradient, uncomment the CSS below, and comment out the color rule at the top of this class */
+    /* background-clip: text;
+    background-color: var(--secondary-blue);
+    background-image: linear-gradient(45deg, var(--secondary-lime), var(--secondary-blue));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent; */
 }
 
-h4 {
-    color: var(--primary-green);
-    font-size: 1.2rem;
+.profileDescription__subtitle {
+    /* color: var(--primary-green); */
+    margin: 0%;
+    color: var(--secondary-grey);
+    font-weight: 300;
+    font-size: 1.1rem;
 }
 
-@media (max-width:1500px){
-    h3 {font-size: 1.2rem}
-    h4 {font-size: 1rem}
-}
-
-@media (max-width:1200px){
-    h3 {font-size: 1rem}
-    h4 {font-size: 0.8rem}
-}
-
-@media (max-width:1000px){
-    h3 {font-size: 0.8rem}
-    h4 {font-size: 0.6rem}
-}
-
-@media (max-width:750px){
-    h3 {font-size: 1.2rem}
-    h4 {font-size: 1rem}
-    .ProfileDescription {margin-top: 3%;}
-}
-
-@media (max-width:450px){
-    h3 {font-size: 1rem}
-    h4 {font-size: 0.8rem}
+@media (max-width: 950px) and (min-width: 650px){
+    .profileDescription__name{
+        font-size: 1.1rem;
+    }
+    
+    .profileDescription__subtitle{
+        font-size: 0.95rem;
+    }
 }

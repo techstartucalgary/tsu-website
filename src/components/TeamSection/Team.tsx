@@ -18,10 +18,11 @@ const Team = (props: { teamMembers: any, defaultView: boolean }) => {
     else if (containerState.members.length === 7) containerClasses.push("Container--size7");
     else if (containerState.members.length === 8) containerClasses.push("Container--size8");
     else if (containerState.members.length === 10) containerClasses.push("Container--size10");
+    // containerClasses.join(' ')
 
     return (
         props.defaultView === true ?
-            <div className={containerClasses.join(' ')}>
+            <div className="TeamContainer">
                 {
                     containerState.members.map((member: any) => {
                         return (

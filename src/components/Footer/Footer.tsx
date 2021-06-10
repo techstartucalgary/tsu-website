@@ -1,6 +1,6 @@
 import './Footer.css';
 import '../../App.css';
-import SocialMedia from '../SocialMedia/SocialMedia';
+import SocialMedia, { SocialMediaColor } from '../SocialMedia/SocialMedia';
 import HoverButton from '../HoverButton/HoverButton';
 import {
     faFacebook,
@@ -17,22 +17,22 @@ const Footer = () => (
 
         <div className="SocialMediaSection">
             <SocialMedia
-                footer={true}
+                color={SocialMediaColor.Black}
                 icon={faFacebook}
                 link="https://www.facebook.com/TechStartUCalgary/" />
 
             <SocialMedia
-                footer={true}
+                color={SocialMediaColor.Black}
                 icon={faInstagram}
                 link="https://www.instagram.com/techstartucalgary/" />
 
             <SocialMedia
-                footer={true}
+                color={SocialMediaColor.Black}
                 icon={faDiscord}
                 link="https://discord.gg/Sxj5QrxRPk" />
 
             <SocialMedia
-                footer={true}
+                color={SocialMediaColor.Black}
                 icon={faLinkedin}
                 link="https://www.linkedin.com/company/tech-start-ucalgary" />
         </div>

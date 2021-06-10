@@ -9,6 +9,7 @@
 .profile--carousel{
     width: 100%;
     max-width: 400px;
+    margin-bottom: 0;
 }
 
 .ProfileIconDiv{
@@ -33,15 +34,12 @@
 }
 
 .LinksSection {
-    /* visibility: hidden; */
-    /* opacity:0; */
     transition: 0.4s ease-in-out;
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
     align-items: center;  
     justify-content: center;
-    /* transform:translateY(-8.5vw); */
     margin-top: 0.5em;
     margin-bottom: 0.5em;
     font-size: 1rem;
@@ -57,45 +55,3 @@
     visibility:visible;
     opacity:1;
 }
-
-/* .LinkSection--CarouselView {
-    transform:translateY(1vw) !important;
-
-}
-
-@media (max-width:750px){
-    .LinksSection {
-        font-size: 3vw;
-        transform:translateY(-35vw);
-    }
-}
-
-@media (max-width:650px){
-    .LinksSection {
-        transform:translateY(-32vw);
-    }
-}
-
-@media (max-width:500px){
-    .LinksSection {
-        transform:translateY(-30vw);
-    }
-}
-
-@media (max-width:450px){
-    .LinksSection {
-        transform:translateY(-28vw);
-    }
-}
-  
-@media (max-width:400px){
-    .LinksSection {
-        transform:translateY(-26vw);
-    }
-}
-
-@media (max-width:350px){
-    .LinksSection {
-        transform:translateY(-24vw);
-    }
-} */

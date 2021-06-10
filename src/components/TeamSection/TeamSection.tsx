@@ -9,7 +9,7 @@ import { Link } from "react-router-dom";
 const TeamSection = () => {
 
     const { width } = useViewport(); // get screen width
-    const breakpoint = 650; // set breakpoint
+    const breakpoint = 600; // set breakpoint
 
     // set headers and defaultView flag according to screen width
     let headers = [];
@@ -24,21 +24,21 @@ const TeamSection = () => {
     return (
         <div className="TeamSection">
             <div className="TeamSection__margin">
-            <h1 className="chonkyHeading chonkyHeading--lessMargin">Our Team</h1>
-            <Divider />
+                <h1 className="chonkyHeading chonkyHeading--lessMargin">Our Team</h1>
+                <Divider />
 
-            <div className={"regularText " + headers[2]} style={{ "padding": "5px 0 24px", "textAlign": "center" }}>
-                <p>Tech Start is only possible thanks to our team of talented, passionate leaders. Interested in joining us?</p>
-                <div className="applyLinkDiv">
-                    <Link className="applyLink" to="/apply" > Find out what it takes to apply!</Link>
+                <div className={"regularText " + headers[2]} style={{ "padding": "5px 0 24px", "textAlign": "center" }}>
+                    <p>Tech Start is only possible thanks to our team of talented, passionate leaders. Interested in joining us?</p>
+                    <div className="applyLinkDiv">
+                        <Link className="applyLink" to="/apply" > Find out what it takes to apply!</Link>
+                    </div>
                 </div>
-            </div>
 
-            <h2 className={headers[1]} style={{ "textAlign": "center" }}><u>Executives</u></h2>
+                <h2 className={"thiccSubheading"} style={{ "textAlign": "center" }}><u>Executives</u></h2>
             </div>
             <Team teamMembers={executiveTeam} defaultView={defaultView} />
             <div className="TeamSection__margin">
-            <h2 className={headers[1]} style={{ "textAlign": "center" }}><u>Project Managers</u></h2>
+                <h2 className="thiccSubheading" style={{ "textAlign": "center" }}><u>Project Managers</u></h2>
             </div>
             <Team teamMembers={projectManagers} defaultView={defaultView} />
         </div>

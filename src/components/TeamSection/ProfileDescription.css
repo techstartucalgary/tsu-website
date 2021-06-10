@@ -8,9 +8,9 @@
     font-family: "Inter", Tahoma, sans-serif;
 }
 
-.ProfileDescription--carousel{
+/* .ProfileDescription--carousel{
     margin-top: 1.5em;
-}
+} */
 
 .profileDescription__name {
     color: var(--secondary-grey);
@@ -45,29 +45,3 @@
         font-size: 0.95rem;
     }
 }
-
-/* @media (max-width:1500px){
-    .Bio__name {font-size: 1.2rem}
-    .Bio__subtitle {font-size: 1rem}
-}
-
-@media (max-width:1200px){
-    .Bio__name {font-size: 1rem}
-    .Bio__subtitle {font-size: 0.8rem}
-}
-
-@media (max-width:1000px){
-    .Bio__name {font-size: 0.8rem}
-    .Bio__subtitle {font-size: 0.6rem}
-}
-
-@media (max-width:750px){
-    .Bio__name {font-size: 1.6em}
-    .Bio__subtitle {font-size: 1.2rem}
-    .ProfileDescription {margin-top: 3%;}
-}
-
-@media (max-width:450px){
-    .Bio__name {font-size: 1rem}
-    .Bio__subtitle {font-size: 0.8rem}
-} */

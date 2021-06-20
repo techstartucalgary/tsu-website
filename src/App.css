@@ -63,6 +63,11 @@
     -moz-text-fill-color: transparent;
 }
 
+.thiccSubheading--weak{
+    opacity: 0.95;
+    font-weight: 750;
+}
+
 
 .babyHeading{
     color: var(--primary-black);

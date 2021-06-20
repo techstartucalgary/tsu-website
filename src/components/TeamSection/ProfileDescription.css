@@ -45,3 +45,13 @@
         font-size: 0.95rem;
     }
 }
+
+@media (max-width: 350px){
+    .profileDescription__name{
+        font-size: 1.2rem;
+    }
+    
+    .profileDescription__subtitle{
+        font-size: 1rem;
+    }
+}

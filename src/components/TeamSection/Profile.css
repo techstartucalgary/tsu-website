@@ -29,7 +29,7 @@
 }
 
 .ProfileIcon:hover {
-    filter: brightness(70%);
+    filter: brightness(95%);
     transition: 0.4s ease-in-out;
 }
 

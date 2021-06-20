@@ -34,11 +34,11 @@ const TeamSection = () => {
                     </div>
                 </div>
 
-                <h2 className={"thiccSubheading"} style={{ "textAlign": "center" }}><u>Executives</u></h2>
+                <h2 className="thiccSubheading thiccSubheading--weak" style={{ "textAlign": "center" }}><u>Executives</u></h2>
             </div>
             <Team teamMembers={executiveTeam} defaultView={defaultView} />
             <div className="TeamSection__margin">
-                <h2 className="thiccSubheading" style={{ "textAlign": "center" }}><u>Project Managers</u></h2>
+                <h2 className="thiccSubheading thiccSubheading--weak" style={{ "textAlign": "center" }}><u>Project Managers</u></h2>
             </div>
             <Team teamMembers={projectManagers} defaultView={defaultView} />
         </div>

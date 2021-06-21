@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import Carousel from 'react-elastic-carousel';
-import Profile from './Profile/Profile';
+import Profile from './Profile';
 import './Team.css';
 
 const Team = (props: { teamMembers: any, defaultView: boolean }) => {
@@ -18,21 +18,22 @@ const Team = (props: { teamMembers: any, defaultView: boolean }) => {
     else if (containerState.members.length === 7) containerClasses.push("Container--size7");
     else if (containerState.members.length === 8) containerClasses.push("Container--size8");
     else if (containerState.members.length === 10) containerClasses.push("Container--size10");
+    // containerClasses.join(' ')
 
     return (
         props.defaultView === true ?
-            <div className={containerClasses.join(' ')}>
+            <div className="TeamContainer">
                 {
-                    containerState.members.map((member: any, i: number) => {
+                    containerState.members.map((member: any) => {
                         return (
                             <Profile
                                 className=""
-                                key={i}
+                                key={member.id}
                                 member={member}
                                 class={`Profile--${containerState.members.length}`}
                                 col={containerState.members.length}
                                 profilePic={member.image}
-                                alt={`member_${i}`}
+                                alt={member.image}
                                 carouselView={false}
                             />
                         );
@@ -40,18 +41,18 @@ const Team = (props: { teamMembers: any, defaultView: boolean }) => {
                 }
             </div>
             :
-            <Carousel className="Carousel" isRTL={true}>
-                {containerState.members.map((member: any, i: number) =>
+            <Carousel className="Carousel" isRTL={false}>
+                {containerState.members.map((member: any) =>
                     <Profile
                         className="Profile"
-                        key={i}
+                        key={member.id}
                         member={member}
                         class={`Profile-${containerState.members.length}`}
                         col={containerState.members.length}
                         carouselView={true}
 
                         profilePic={member.image}
-                        alt={`member_${i}`}
+                        alt={member.image}
                     />)}
             </Carousel>
     );

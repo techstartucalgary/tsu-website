@@ -143,7 +143,7 @@ input[id="registerLastName"],
 input[id="registerEmail"],
 input[id="registerPassword"] {
   width: 80%;
-  padding: 12px;
+  padding: 5px;
   margin-left: 5px;
   border: 1px solid #ccc;
   background-color: white;

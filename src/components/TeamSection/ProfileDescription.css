@@ -1,0 +1,57 @@
+.ProfileDescription {
+    width: 100%;
+    display:inline-block;
+    align-self: center;
+    text-align: center;
+    /* margin-top: 1.5em; */
+    margin: 0%;
+    font-family: "Inter", Tahoma, sans-serif;
+}
+
+/* .ProfileDescription--carousel{
+    margin-top: 1.5em;
+} */
+
+.profileDescription__name {
+    color: var(--secondary-grey);
+    font-size: 1.5rem;
+    font-weight: 900;
+    margin: 0%;
+    /* To change the styling to gradient, uncomment the CSS below, and comment out the color rule at the top of this class */
+    /* background-clip: text;
+    background-color: var(--secondary-blue);
+    background-image: linear-gradient(45deg, var(--secondary-lime), var(--secondary-blue));
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent; 
+    -moz-text-fill-color: transparent; */
+}
+
+.profileDescription__subtitle {
+    /* color: var(--primary-green); */
+    margin: 0%;
+    color: var(--secondary-grey);
+    font-weight: 300;
+    font-size: 1.1rem;
+}
+
+@media (max-width: 950px) and (min-width: 650px){
+    .profileDescription__name{
+        font-size: 1.1rem;
+    }
+    
+    .profileDescription__subtitle{
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 350px){
+    .profileDescription__name{
+        font-size: 1.2rem;
+    }
+    
+    .profileDescription__subtitle{
+        font-size: 1rem;
+    }
+}

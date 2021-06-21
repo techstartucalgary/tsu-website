@@ -1,6 +1,11 @@
+.TeamSection{
+    padding-bottom: 50px;
+}
+
 .TeamSection__margin {
-    margin: 0px 50px;
-    width: auto;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .applyLinkDiv {

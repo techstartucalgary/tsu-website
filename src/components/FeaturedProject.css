@@ -13,7 +13,7 @@
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
   /* background: linear-gradient(180deg, rgb(26, 25, 25), rgb(40, 46, 51)); */
-  background: linear-gradient(to top, #456A8E -10%, #060C12 70%);
+  background: linear-gradient(to top, #456a8e -10%, #060c12 70%);
   /* background: linear-gradient(to top, var(--secondary-blue) -10%, var(--primary-black) 70%); */
 }
 
@@ -36,9 +36,15 @@
 
 @media (max-width: 400px) {
   .project__button {
-    transform: scale(0.7);
     position: relative;
-    top: -20px;
+    top: -30px;
+    padding: 20px 20px;
+    font-size: initial;
+    transform: scale(0.5);
+  }
+
+  .project__content {
+    transform: translateY(-20px);
   }
 }
 
@@ -78,7 +84,6 @@
 
 .project__description--visible {
   opacity: 1;
-  
 }
 .featuredProjectImage {
   border-radius: 10px;

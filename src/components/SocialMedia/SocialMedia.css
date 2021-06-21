@@ -1,38 +1,42 @@
 .socialMediaIcon {
-    margin: 0 1em;
-    transition: 0.3s ease-in-out;
-    display: inline-block;
-    /* color: inherit; */
-    /* color: var(--secondary-grey); */
-    color: var(--primary-black);
+  margin: 0 1em;
+  transition: 0.3s ease-in-out;
+  display: inline-block;
+  /* color: inherit; */
+  /* color: var(--secondary-grey); */
+  color: black;
 }
 
 /* .socialMediaIcon a {
     color: inherit;
 } */
 .socialMediaIcon:hover {
-    transform: translateY(-0.25em);
-    box-shadow: 0 0.5em 0.5em -0.4em white; /* offset-x | offset-y | blur-radius | spread-radius | color*/
+  transform: translateY(-0.25em);
+  /*box-shadow: 0 0.2em 0.3em -0.4em rgb(177, 173, 173); offset-x | offset-y | blur-radius | spread-radius | color*/
 }
 
-.socialMediaIcon--gradient path{
-    fill: url("#customSVGFromIndexDotHTML");
+.socialMediaIcon--gradient path {
+  fill: url("#customSVGFromIndexDotHTML");
 }
 
-.socialMediaIcon--gradient, 
-.socialMediaIcon--gradient:before{
-    /* color: none; */
-    background-clip: text;
-    background-color: var(--secondary-blue);
-    background-image: linear-gradient(45deg, var(--secondary-lime), var(--secondary-blue));
-    background-size: 100%;
-    -webkit-background-clip: text;
-    -moz-background-clip: text;
-    -webkit-text-fill-color: transparent; 
-    -moz-text-fill-color: transparent;
-    display: initial;
+.socialMediaIcon--gradient,
+.socialMediaIcon--gradient:before {
+  /* color: none; */
+  background-clip: text;
+  background-color: var(--secondary-blue);
+  background-image: linear-gradient(
+    45deg,
+    var(--secondary-lime),
+    var(--secondary-blue)
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+  display: initial;
 }
 
-.socialMediaIcon--green{
-    color: var(--primary-green);
+.socialMediaIcon--green {
+  color: var(--primary-green);
 }

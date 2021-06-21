@@ -27,18 +27,21 @@ function ApplyPage() {
           </p>
         </div>
       </header>
+
       <div className="applyPage__introContainer">
+        <Blobbie
+          id={8}
+          width={400}
+          transform="translate(-40%, -30%)"
+          edge={true}
+        />
         <div className="applyPage__intro">
+
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">
             What We Do
           </h1>
           <Divider />
-          <Blobbie
-            id={8}
-            width={400}
-            transform="translate(-70%, -30%)"
-            edge={true}
-          />
+
           <div className="applyPage__introContents" data-aos="fade-down">
             <h2>
               Tech Start is a club based at the University of Calgary, directed

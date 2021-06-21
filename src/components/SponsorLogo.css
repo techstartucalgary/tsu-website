@@ -1,13 +1,14 @@
 .sponsorLogo {
   display: block;
   position: relative;
-  transform: scale(1.0);
+  transform: scale(1);
   transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
   text-decoration: none;
   margin: 20px;
+  transition: 3s;
 }
 
 .sponsorLogo:hover {
-  transform: scale(1.2);
+  /*transform: scale(1.2);*/
   opacity: 1;
 }

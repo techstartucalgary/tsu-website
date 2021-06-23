@@ -7,7 +7,6 @@
 
 .Blobbie {
   opacity: 0.6;
-  z-index: -1;
 }
 
 @media (max-width: 750px) {

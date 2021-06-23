@@ -247,7 +247,7 @@ html {
 .homePage__section--aboutUs {
   background-color: white;
   text-align: center;
-  z-index: -2;
+  /*z-index: -2;*/
 }
 
 .homePage__numberContainer {
@@ -285,7 +285,7 @@ html {
   background-color: white;
   padding-bottom: 150px;
   padding-top: 20px;
-  z-index: -2;
+  /*z-index: -2;*/
 }
 
 @media (max-width: 500px) {
@@ -303,5 +303,5 @@ html {
 .homePage__section--events {
   background: linear-gradient(to bottom, white 50%, rgb(19, 19, 19) 70%);
   padding-bottom: 20px;
-  z-index: -2;
+  /*z-index: -2;*/
 }

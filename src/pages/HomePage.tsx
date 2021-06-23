@@ -74,7 +74,7 @@ function HomePage() {
       </section>
 
       <section className="homePage__section homePage__section--events">
-        <Blobbie id={3} width={400} transform="translate(-55%, -40%)" edge={true} />
+        <Blobbie id={3} width={400} transform="translate(-35%, -70%)" edge={true} />
         <Blobbie id={8} width={350} transform="translate(75vw, 0vw)" edge={false} />
         <div className="homePage__container">
           <h1 className="chonkyHeading chonkyHeading--lessMargin">Events</h1>
@@ -92,8 +92,10 @@ function HomePage() {
       </section>
 
       <section className="homePage__section homePage__section--team">
-        <Blobbie id={2} width={300} transform="translate(80vw, -30%)" edge={true} />
+        <Blobbie id={2} width={300} transform="translate(80vw, 10%)" edge={true} />
         <Blobbie id={8} width={250} transform="translate(-10vw, 10vw)" edge={false} />
+        <Blobbie id={7} width={350} transform="translate(-10vw, 80vw)" edge={false} />
+        <Blobbie id={5} width={250} transform="translate(90vw, 80vw)" edge={false} />
         <TeamSection />
       </section>
 

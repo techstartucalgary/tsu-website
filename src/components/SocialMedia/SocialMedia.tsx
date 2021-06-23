@@ -33,7 +33,7 @@ const SocialMedia = (props: SocialMediaProps) => {
         <a
             href={props.link}
             className={socialMediaClasses.join(' ')}>
-            <FontAwesomeIcon icon={props.icon} size="2x"/>
+            <FontAwesomeIcon icon={props.icon} size="3x" />
         </a>
     );
 };

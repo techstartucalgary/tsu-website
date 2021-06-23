@@ -106,24 +106,24 @@ html {
   background-image: linear-gradient(
     rgb(89, 201, 209),
     var(--primary-green, rgb(106, 235, 80))
-    );
-    height: 80vh;
-  }
+  );
+  height: 80vh;
+}
 
-  @supports (background-blend-mode: multiply) {
-    .applyPage__showcase {
-      background-image: linear-gradient(
-        var(--primary-green, rgb(106, 235, 80)),
-        rgb(89, 201, 209)
-      );
-      background-size: cover;
-      background-blend-mode: multiply;
-      background-attachment: fixed;
-      background-repeat: repeat-x;
-      background-position: center center;
-    }
+@supports (background-blend-mode: multiply) {
+  .applyPage__showcase {
+    background-image: linear-gradient(
+      var(--primary-green, rgb(106, 235, 80)),
+      rgb(89, 201, 209)
+    );
+    background-size: cover;
+    background-blend-mode: multiply;
+    background-attachment: fixed;
+    background-repeat: repeat-x;
+    background-position: center center;
   }
-.applyPage__primary-wrapper{
+}
+.applyPage__primary-wrapper {
   position: relative;
   display: flex;
   flex-direction: column;

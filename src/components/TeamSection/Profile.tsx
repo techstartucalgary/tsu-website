@@ -35,7 +35,7 @@ const Profile = (props: {
 
     const preventDragHandler = (e: any) => e.preventDefault();
 
-    let animationProps = ["fade-up", "top-center", "3000"];
+    let animationProps = ["zoom-in", "top-center", "1500"];
     if (props.carouselView) animationProps = [];
 
     return (

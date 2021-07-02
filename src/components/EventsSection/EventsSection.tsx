@@ -27,7 +27,7 @@ const EventsSection = () => {
                 }
             </div>
 
-            <h2 className="thiccSubheading--white" style={{ "marginTop": "10%", "marginBottom": "10%" }}>Check out other events we've hosted in the past:</h2>
+            <h2 className="thiccSubheading--green" style={{ "marginTop": "5%", "marginBottom": "5%" }}>Check out events we've hosted in the past:</h2>
 
             <div className="pastEvents_container" style={{ textAlign: "left" }}>
                 {

@@ -37,7 +37,7 @@ function Register(props){
             }
           ).then((response) => {
                 
-                let data = response.data;
+                let data = response.data.json;
                 props.hide();
                 console.log(data)                
                 

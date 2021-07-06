@@ -1,5 +1,5 @@
 import "./Login.css"
-import React, { Component, useEffect, useLayoutEffect, useRef } from 'react';
+import React, { useLayoutEffect, useRef } from 'react';
 import axios from "axios";
 
 const dataRoot = "https://techstartbackend.herokuapp.com"
@@ -20,17 +20,15 @@ function Login(props: any) {
             return;
         }
         if (!username) {
-            console.log('Invalid Username')
+            // console.log('Invalid Username')
             setInvalidUsername(true);
             setInvalidPassword(false);
             return;
         } else {
-            
-                setInvalidUsername(false);
-            
+            setInvalidUsername(false);
         }
         if (!password) {
-            console.log('Invalid Password')
+            // console.log('Invalid Password')
             setInvalidPassword(true);
             return;
         } else {
@@ -45,7 +43,8 @@ function Login(props: any) {
 
             let token = response.data.token;
             props.hide();
-            console.log(token)
+            props.name(response.data.first);
+            // console.log(token)
 
         }, (error) => {
             console.log(error);

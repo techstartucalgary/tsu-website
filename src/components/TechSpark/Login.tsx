@@ -7,9 +7,10 @@ const dataRoot = "https://techstartbackend.herokuapp.com"
 function Login(props: any) {
 
     const [tracker, setTracker] = React.useState(false)
-    const [invalidUsername, setInvalidUsername] = React.useState(false)
-    const [invalidPassword, setInvalidPassword] = React.useState(false)
+    // const [invalidUsername, setInvalidUsername] = React.useState(false)
+    // const [invalidPassword, setInvalidPassword] = React.useState(false)
     const [invalidLogin, setInvalidLogin] = React.useState(false)
+    const [message, setMessage] = React.useState("")
     const firstUpdate = useRef(true);
     useLayoutEffect(() => {
         let username = document.getElementById('loginUsername')
@@ -20,20 +21,14 @@ function Login(props: any) {
             return;
         }
         if (!username) {
-            // console.log('Invalid Username')
-            setInvalidUsername(true);
-            setInvalidPassword(false);
+            setInvalidLogin(true);
+            setMessage("**You have entered an invalid username**");
             return;
-        } else {
-            setInvalidUsername(false);
-        }
-        if (!password) {
-            // console.log('Invalid Password')
-            setInvalidPassword(true);
+        } else if (!password) {
+            setInvalidLogin(true);
+            setMessage("**You have entered an invalid password**");
             return;
-        } else {
-            setInvalidPassword(false);
-        }
+        } 
         axios.post(
             `${dataRoot}/login`, {
             username: (username as HTMLFormElement).value,
@@ -41,14 +36,20 @@ function Login(props: any) {
         }
         ).then((response) => {
 
-            let token = response.data.token;
+            // let token = response.data.token;
             props.hide();
             props.name(response.data.first);
-            // console.log(token)
 
         }, (error) => {
-            console.log(error);
+            console.log("Error is ", error);
             setInvalidLogin(true);
+            if (error.response.data.username){
+                setMessage("**Username must not be blank**")
+            }else if (error.response.data.password){
+                setMessage("**Password must not be blank**")
+            } else if(error.response.data.non_field_errors){
+                setMessage("**" + error.response.data.non_field_errors + "**")
+            }
 
 
         });
@@ -92,17 +93,9 @@ function Login(props: any) {
                 <div id="clearLogin" />
                 
             </div>
-            {invalidUsername ?
-                    <div className = "alert"> 
-                    <p className = "alertMessage">**You have entered an invalid username**</p>
-                    </div>  : <div />}
-                {invalidPassword ?
-                    <div className = "alert">
-                        <p className = "alertMessage">**You have entered an invalid password**</p>
-                    </div> : <div />}
                 {invalidLogin ?
                     <div className = "alert">
-                        <p className = "alertMessage">**You have entered an invalid username or password**</p>
+                        <p className = "alertMessage">{message}</p>
                     </div>  : <div />}
         </div>
     );

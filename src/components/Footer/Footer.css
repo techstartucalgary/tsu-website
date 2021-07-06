@@ -1,15 +1,23 @@
 .Footer {
-  background-color: #99e755;
+  /*background-color: rgb(32, 32, 32);*/
   /* background-image: linear-gradient( #282A36, #99E755); */
-  color: var(--primary-black);
+  /*color: var(--primary-black);*/
   padding: 2rem 0rem;
-
+  color: black;
   font-size: clamp(0.8rem, calc(2vw + 0.2rem), 1rem);
   width: 100%;
   height: 5em;
   display: inline-flex;
   justify-content: center;
   align-items: center;
+
+  background-color: var(--secondary-blue);
+  background-image: linear-gradient(
+    45deg,
+    var(--secondary-lime),
+    var(--secondary-blue)
+  );
+  background-size: 100%;
 }
 
 .SocialMediaSection {
@@ -17,6 +25,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.Copyright {
+  text-align: center;
 }
 
 @media (max-width: 785px) {
@@ -39,22 +51,26 @@
   }
 }
 
+@media (max-width: 900px) {
+  .hoverButton {
+    width: 225px;
+  }
+}
+
 @media (max-width: 785px) {
   .hoverButton {
     width: 175px;
     margin-left: auto;
-    margin-right:auto;
+    margin-right: auto;
     transform: scale(0.8);
-
   }
 }
 
 @media (max-width: 785px) {
   .Copyright {
-    transform: translateY(-30px);
+    transform: translateY(-20px);
   }
 }
-
 
 @media (max-width: 555px) {
   .Footer {

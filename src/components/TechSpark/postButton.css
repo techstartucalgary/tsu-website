@@ -10,7 +10,7 @@ button.postButton{
     font-weight: 500;
     font-size: medium;
 }
-a{
+.postButton a{
     color:#282A36;
     text-decoration: none;
 }

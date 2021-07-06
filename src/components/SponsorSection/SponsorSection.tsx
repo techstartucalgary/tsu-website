@@ -14,8 +14,8 @@ const SponsorSection = () => {
             <h2 className={"chonkyHeading"}>Sponsors</h2>
 
             <div className="SponsorSection">
-                <SponsorLogo sponsorLink="https://www.arcurve.com/" sponsorImage={sponsorLogoArcurve} />
-                <SponsorLogo sponsorLink="https://www.ucalgary.ca/hunter-hub" sponsorImage={sponsorLogoHunterHub} />
+                <div className="SponsorLogo"><SponsorLogo sponsorLink="https://www.arcurve.com/" sponsorImage={sponsorLogoArcurve} /></div>
+                <div className="SponsorLogo"><SponsorLogo sponsorLink="https://www.ucalgary.ca/hunter-hub" sponsorImage={sponsorLogoHunterHub} /></div>
                 {/* <SponsorLogo sponsorLink="https://www.microsoft.com/" sponsorImage={sponsorLogoMicrosoft} />
                 <SponsorLogo sponsorLink="https://unity.com/" sponsorImage={sponsorLogoUnity} /> */}
             </div>
@@ -23,7 +23,7 @@ const SponsorSection = () => {
             <div style={{ "justifyContent": "center", "display": "flex" }}>
                 <HoverButton
                     darkMode={true}
-                    link="#"
+                    link="https://docs.google.com/document/d/1Ly6iRdTQ4qnBwi5RoeioUb4eF829P43uts6fJcDjROc/edit?usp=sharing"
                     text="Interested in sponsoring us? Check out our sponsorship package!"
                 />
             </div>

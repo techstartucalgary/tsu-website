@@ -91,7 +91,6 @@ html {
   font-family: "Consolas", monaco, monospace;
 }
 
-
 .homePage img {
   max-width: 100%;
   display: block;
@@ -219,7 +218,7 @@ html {
   .homePage__hero {
     /* background: fixed url("../images/blackbg2.jpg"),
       radial-gradient(rgb(75, 73, 73), rgb(61, 55, 55)); */
-    background: radial-gradient(rgb(0, 0, 0) 60%, var(--primary-green) 110%); 
+    background: radial-gradient(rgb(0, 0, 0) 60%, var(--primary-green) 110%);
     /* background: linear-gradient(0deg, #243949 0%, #517fa4 100%); */
     background-size: cover;
     background-blend-mode: multiply;
@@ -248,6 +247,7 @@ html {
 .homePage__section--aboutUs {
   background-color: white;
   text-align: center;
+  /*z-index: -2;*/
 }
 
 .homePage__numberContainer {
@@ -265,11 +265,16 @@ html {
 }
 
 .homePage__section--featuredProjects {
-  background-image: linear-gradient(to bottom, rgb(19, 19, 19), rgb(26, 26, 26));
+  background-image: linear-gradient(
+    to bottom,
+    rgb(19, 19, 19),
+    rgb(26, 26, 26)
+  );
   padding-top: 20px;
   text-align: center;
 }
-.homePage__section--team{
+.homePage__section--team {
+  padding-top: 20px;
   padding-bottom: 0px;
 }
 
@@ -280,6 +285,7 @@ html {
   background-color: white;
   padding-bottom: 150px;
   padding-top: 20px;
+  /*z-index: -2;*/
 }
 
 @media (max-width: 500px) {
@@ -295,6 +301,7 @@ html {
 }
 
 .homePage__section--events {
-  background: linear-gradient(to bottom, white 50%, rgb(19,19,19) 70%);
+  background: linear-gradient(to bottom, white 50%, rgb(19, 19, 19) 70%);
   padding-bottom: 20px;
+  /*z-index: -2;*/
 }

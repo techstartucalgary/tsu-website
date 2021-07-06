@@ -1,6 +1,11 @@
-# Getting Started with Create React App
+# About the website
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This website is built with React & TypeScript. To get started with your local dev environment, you will need to install node.js. 
+
+### Backend
+Also check out our backend, created by Richard Chow with Python and Django! https://github.com/Tech-Start-UCalgary/tsu-website-back-end
+
+______________
 
 ## Available Scripts
 

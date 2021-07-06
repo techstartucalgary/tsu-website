@@ -1,27 +1,28 @@
-.Blobbie--edge, .Blobbie--middle {
-    position:absolute;
-    height: auto;
-    opacity:0.59;
+.Blobbie--edge,
+.Blobbie--middle {
+  position: absolute;
+  height: auto;
+  opacity: 0.59;
 }
 
-.Blobbie{
-    opacity: 0.6;
+.Blobbie {
+  opacity: 0.6;
 }
 
-@media (max-width:750px){
-    .Blobbie--edge {
-        max-width:80vw !important;
-    }
-    .Blobbie--middle {
-        max-width:30vw !important;
-    }
+@media (max-width: 750px) {
+  .Blobbie--edge {
+    max-width: 80vw !important;
+  }
+  .Blobbie--middle {
+    max-width: 30vw !important;
+  }
 }
 
-@media (max-width:500px){
-    .Blobbie--edge {
-        max-width:70vw !important;
-    }
-    .Blobbie--middle {
-        max-width:20vw !important;
-    }
+@media (max-width: 500px) {
+  .Blobbie--edge {
+    max-width: 70vw !important;
+  }
+  .Blobbie--middle {
+    max-width: 20vw !important;
+  }
 }

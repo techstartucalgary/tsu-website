@@ -27,18 +27,22 @@ function ApplyPage() {
           </p>
         </div>
       </header>
+
       <div className="applyPage__introContainer">
+        <Blobbie
+          id={8}
+          width={400}
+          transform="translate(-40%, -30%)"
+          edge={true}
+        />
+        <Blobbie id={7} width={350} transform="translate(80vw, 20%)" edge={false} />
         <div className="applyPage__intro">
+
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">
             What We Do
           </h1>
           <Divider />
-          <Blobbie
-            id={8}
-            width={400}
-            transform="translate(-70%, -30%)"
-            edge={true}
-          />
+
           <div className="applyPage__introContents" data-aos="fade-down">
             <h2>
               Tech Start is a club based at the University of Calgary, directed
@@ -172,16 +176,17 @@ function ApplyPage() {
         <div className="applyPage__application">
           <Blobbie
             id={2}
-            width={190}
+            width={290}
             transform="translate(clamp(90vw, calc(5vw + 1rem), 40vw), 20%)"
             edge={false}
           />
           <Blobbie
-            id={2}
-            width={50}
+            id={3}
+            width={200}
             transform="translate(clamp(-70vw, calc(5vw + 1rem), 40vw), -15%)"
             edge={false}
           />
+
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">
             Applications
           </h1>

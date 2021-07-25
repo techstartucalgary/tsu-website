@@ -35,23 +35,29 @@ function ApplyPage() {
           transform="translate(-40%, -30%)"
           edge={true}
         />
-        <Blobbie id={7} width={350} transform="translate(80vw, 20%)" edge={false} />
+        <Blobbie
+          id={7}
+          width={350}
+          transform="translate(80vw, 20%)"
+          edge={false}
+        />
         <div className="applyPage__intro">
-
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">
             What We Do
           </h1>
           <Divider />
 
-          <div className="applyPage__introContents" data-aos="fade-down">
-            <h2>
-              Tech Start is a club based at the University of Calgary, directed
-              at software development and entrepreneurial thinking. This is
-              where innovation meets collaboration, and amazing projects are
-              brought into creation by student teams! Join an open community
-              that fuels learning and creativity, fellowship and meaningful
-              relationships, and experience and professional development.
-            </h2>
+          <div className="" data-aos="fade-down">
+            <p className="regularText regularText--largest">
+              Tech Start is a collaborative software development club at the
+              University of Calgary with a passion for startups. Every semester,
+              we create tech projects in teams with a focus on teaching our
+              members professional engineering skills and practices. Our
+              projects also explore aspects beyond programming, like design and
+              strategy, and there are opportunities to get involved regardless
+              of your skill level. Join our community to fuel your learning and
+              creativity, make awesome connections, and grow as a professional!
+            </p>
             <a href="http://eepurl.com/hnusUP" target="_blank">
               <button className="applyPage__btn">
                 Sign up to our mailing list

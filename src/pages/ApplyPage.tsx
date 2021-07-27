@@ -198,6 +198,7 @@ function ApplyPage() {
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project."
               status="closed"
+              closedStatus="Opens Early September 2021"
               applicationLink="https://forms.gle/3BD9dQ3TjcXzEqZN9"
             />
 
@@ -216,6 +217,7 @@ function ApplyPage() {
               description="Work behind the scenes to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               status="closed"
+              closedStatus="Opens Spring 2022"
               applicationLink="https://forms.gle/PQMbV5SWQfNe46GAA"
             />
           </ul>

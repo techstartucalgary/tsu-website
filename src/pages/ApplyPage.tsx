@@ -154,6 +154,18 @@ function ApplyPage() {
             <li>Additional team meetings may be arranged by your Project Manager when necessary</li>
             "
           />
+          <Accordion
+            title="How are projects directed?"
+            active={active}
+            setActive={setActive}
+            description="
+                The process of directing a projects either starts:
+                </br>
+                <li>Focused: Project managers can choose to focus their project on a specific idea or concept from the get-go. These ideas are pitched at the first Tech Start meeting and members may then decide to join that team if they are interested! The teams then brainstorm adaptations and improvements to the idea, alongside the technologies and platforms to work with!</li>
+                <li>Open-ended: Project managers decide what the project will be alongside their team after recruitment rather than prior to. Rather than starting with ideas, project managers begin with a certain understanding of which technologies and platforms to work with, keeping in mind their previous experiences. Then, based off that, the brainstorming process is experienced as a team, and together, they will pick a concept, purpose, and scope for the project according to their interests and platforms!</li>
+                In addition, project managers are given a guide along with support from the executive team to manage the timeline of their project, lead their team, and more!
+            "
+          />
         </div>
         <div className="applyPage__container applyPage__projectExample">
           <div className="applyPage__projectExampleText">

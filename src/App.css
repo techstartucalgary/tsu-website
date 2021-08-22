@@ -110,6 +110,10 @@
   font-size: 18px;
 }
 
+.regularText--largest {
+  font-size: 1.1rem;
+}
+
 @media (max-width: 535px) {
   :root {
     --regular-font: 14px;
@@ -132,4 +136,8 @@ p,
 .homePage__applyButtonBox {
   z-index: 10;
   position: relative;
+}
+
+.switch__label {
+  z-index: 11;
 }

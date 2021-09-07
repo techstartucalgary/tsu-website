@@ -11,6 +11,7 @@ import member_7 from './Images/Nurgul_Akhshatayeva.jpg'
 import member_8 from './Images/Markosch_Vacil_Godwin_Saure.jpg'
 import member_9 from './Images/Blank.jpg'
 import member_10 from './Images/Vidhi_Soni.jpeg'
+import member_11 from './Images/Mahdi_Varposhti.jpg'
 //import member_7 from './Images/Armeen_Rashidian.jpg'
 //import member_8 from './Images/Felix_Vaughan.jpg'
 //import member_9 from './Images/Darryl_Huët.jpg'
@@ -38,8 +39,6 @@ executiveTeam = [
 ];
 
 projectManagers = [
-  { id: 7, name: "Daniel Rashidian", project: "Resume Tracker", image: member_7, linkedin: "https://www.linkedin.com/in/armeen-rashidian-b12080195/", email: "mailto:armeenrn@gmail.com" },
-  { id: 9, name: "Darryl Huët", project: "Supply Me", image: member_9, linkedin: "https://www.linkedin.com/in/darrylhuet/", email: "mailto:darryl.huet1@ucalgary.ca" },
-    { id: 8, name: "Felix Vaughan", project: "Social Media Hub", image: member_8, linkedin: "", email: "mailto:ezamabusiness@gmail.com" },
-  { id: 0, name: "Joel Happ", project: "Tech Start Website", image: member_0, linkedin: "https://www.linkedin.com/in/joel-happ/", email: "mailto:joel.happ1@ucalgary.ca" },
+  { id: 11, name: "Mahdi Varposhti", project: " ", image: member_11, linkedin: "https://www.linkedin.com/in/mahdiva/", email: "mailto:mahdi.varposhti1@ucalgary.ca" },
+  
 ];

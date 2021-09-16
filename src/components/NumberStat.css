@@ -1,5 +1,4 @@
 .numberStat__number {
-  color: var(--primary-green);
   font-weight: 800;
   font-size: 4rem;
   transition: 0.5s ease;
@@ -8,6 +7,8 @@
 .numberStat__number:hover {
   transform: scale(1.1);
   color: rgb(49, 49, 49);
+  background-color: rgb(49, 49, 49);
+  background-image: linear-gradient(rgb(49, 49, 49), rgb(54, 54, 54));
 }
 
 .numberStat__stat {

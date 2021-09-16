@@ -5,6 +5,7 @@ import '../../App.css'
 import { executiveTeam, projectManagers } from './TeamInformation';
 import Divider from "components/Divider";
 import { Link } from "react-router-dom";
+import ApplyButtonPM from './ApplyButtonPM'
 
 const TeamSection = () => {
 
@@ -41,6 +42,7 @@ const TeamSection = () => {
                 <h2 className="thiccSubheading thiccSubheading--weak" style={{ "textAlign": "center" }}><u>Project Managers</u></h2>
             </div>
             <Team teamMembers={projectManagers} defaultView={defaultView} />
+            <ApplyButtonPM />
         </div>
     );
 }

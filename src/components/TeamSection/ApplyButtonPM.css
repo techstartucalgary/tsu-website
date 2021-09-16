@@ -2,8 +2,8 @@
   position: relative;
   height: 65px;
   width: 290px;
-  color: rgb(34, 32, 32);
-  background-color: var(--primary-green);
+  color: black;
+  background-color: #afe9d8;
   border-radius: 10px;
   display: flex;
   transition: transform 250ms ease-in-out;

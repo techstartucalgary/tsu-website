@@ -91,7 +91,7 @@
 }
 
 .navbar__content a:hover {
-  color: rgb(73, 209, 32);
+  color: var(--primary-green);
 }
 
 .navbar__nav-toggle:checked ~ nav {
@@ -147,7 +147,7 @@
     content: "";
     display: block;
     height: 5px;
-    background: rgb(73, 209, 32);
+    background: var(--primary-green);
     position: absolute;
     top: -0.75em;
     left: 0;

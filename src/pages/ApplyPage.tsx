@@ -21,9 +21,12 @@ function ApplyPage() {
         <div className="applyPage__spacing" data-aos="zoom-out-down"></div>
         <div className="applyPage__primary-wrapper">
           <h1 className="applyPage__primary-title">APPLY</h1>
-          <p className="applyPage__primary-description">
+          {/*<p className="applyPage__primary-description">
             Join a dynamic community dedicated to advancing software development
             and entrepreneurship at the University of Calgary.
+  </p>*/}
+          <p className="applyPage__primary-description">
+            Project member applications open Thursday, September 23rd, 2021 at our Launch Meeting!
           </p>
         </div>
       </header>
@@ -32,7 +35,7 @@ function ApplyPage() {
         <Blobbie
           id={8}
           width={400}
-          transform="translate(-40%, 10%)"
+          transform="translate(-40%, 20%)"
           edge={true}
         />
         <Blobbie id={7} width={350} transform="translate(83vw, 80%)" edge={false} />
@@ -217,7 +220,7 @@ function ApplyPage() {
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project."
               status="closed"
-              closedStatus="Opens Early September 2021"
+              closedStatus="Opens Thursday, September 23rd, 2021"
               applicationLink="https://forms.gle/3BD9dQ3TjcXzEqZN9"
             />
 

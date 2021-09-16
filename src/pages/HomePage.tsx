@@ -18,6 +18,7 @@ import SponsorSection from "components/SponsorSection/SponsorSection";
 import Blobbie from "components/Blobbie";
 import EventsSection from "components/EventsSection/EventsSection";
 import ProjectSection from 'components/ProjectSection';
+import ApplyButton from 'components/ApplyButton';
 
 function HomePage() {
 
@@ -65,11 +66,12 @@ function HomePage() {
             <NumberStat number={32} stat="members so far" />
             <NumberStat number={93} suffix={"%"} stat="enjoyed their involvement" />
           </div>
-          <div className="homePage__applyButtonBox"><Link to="/apply" className="homePage__applyButtonLink" >
+          {/*        <div className="homePage__applyButtonBox"><Link to="/apply" className="homePage__applyButtonLink" >
             <div className="homePage__applyButton">
               <div className="homePage__applyButtonArrow"> <span>&#62;</span><span>&#62;</span> </div>
               <div className="homePage__applyButtonText"> theTeam.join()</div>
-            </div></Link></div>
+        </div></Link></div>*/}
+          <ApplyButton />
         </div>
       </section>
 

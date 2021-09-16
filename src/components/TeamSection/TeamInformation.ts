@@ -9,10 +9,11 @@ import tyler_jpg from './Images/Tyler_Chan.jpg'
 import sareen_jpg from './Images/Sareen_Singh.jpg'
 import nurgul_jpg from './Images/Nurgul_Akhshatayeva.jpg'
 import godwin_jpg from './Images/Markosch_Vacil_Godwin_Saure.jpg'
-import terry_jpg from './Images/Blank.jpg'
+import terry_jpg from './Images/Terry.jpg'
 import vidhi_jpg from './Images/Vidhi_Soni.jpeg'
 import mahdi_jpg from './Images/Mahdi_Varposhti.jpg'
 import blank_jpg from './Images/Blank.jpeg'
+import zeyad_jpg from './Images/Zeyad.jpg'
 //import member_7 from './Images/Armeen_Rashidian.jpg'
 //import member_8 from './Images/Felix_Vaughan.jpg'
 //import member_9 from './Images/Darryl_Huët.jpg'
@@ -41,6 +42,7 @@ executiveTeam = [
 
 projectManagers = [
   { id: 11, name: "Mahdi Varposhti", project: " ", image: mahdi_jpg, linkedin: "https://www.linkedin.com/in/mahdiva/", email: "mailto:mahdi.varposhti1@ucalgary.ca" },
+  { id: 11, name: "Zeyad Omran", project: " ", image: zeyad_jpg, linkedin: "https://www.linkedin.com/in/zeyadomran", email: "mailto:zeyad.omran@ucalgary.ca" },
   { id: 12, name: "You?", project: "Apply now at techstartucalgary.com/apply!", image: blank_jpg, linkedin: " ", email: " " },
   
 ];

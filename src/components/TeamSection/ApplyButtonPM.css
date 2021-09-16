@@ -1,0 +1,29 @@
+.homePage__applyButtonPM {
+  position: relative;
+  height: 65px;
+  width: 290px;
+  color: rgb(34, 32, 32);
+  background-color: var(--primary-green);
+  border-radius: 10px;
+  display: flex;
+  transition: transform 250ms ease-in-out;
+  /* transition: width 250ms ease-in-out, height 250ms ease-in-out, font-size 250ms ease-in-out, opacity 250ms linear; */
+  transform: scale(0.9);
+  justify-content: center;
+  border-radius: 3px;
+
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  margin: auto;
+  align-items: center;
+}
+
+.homePage__applyButtonPM:hover {
+  transform: scale(1.1);
+}
+
+.homePage__applyButtonPMText {
+  font-family: "Inter", Tahoma, sans-serif;
+  font-weight: 700;
+  font-size: 30px;
+}

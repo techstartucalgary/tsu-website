@@ -32,10 +32,10 @@ function ApplyPage() {
         <Blobbie
           id={8}
           width={400}
-          transform="translate(-40%, -30%)"
+          transform="translate(-40%, 10%)"
           edge={true}
         />
-        <Blobbie id={7} width={350} transform="translate(80vw, 20%)" edge={false} />
+        <Blobbie id={7} width={350} transform="translate(83vw, 80%)" edge={false} />
         <div className="applyPage__intro">
 
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">

@@ -155,25 +155,23 @@ function ApplyPage() {
             "
           />
           <Accordion
-            title="How are projects directed?"
+            title="How do teams pick an idea for their project?"
             active={active}
             setActive={setActive}
             description="
-              The process of directing a projects either starts:
+              Your Project Manager will pick one of the following ways the decide the team's project focus:
               </br></br>
               <strong>Focused</strong></br>
-              Project managers can choose to focus their project on a specific idea or concept from the get-go. These ideas are pitched at the 
-              first Tech Start meeting and members may then decide to join that team if they are interested! The teams then brainstorm adaptations 
+              The project starts off with a specific idea or concept from the get-go. These ideas are pitched at the 
+              first Tech Start meeting to give you an idea of the types of projects your team will make! Then your team works together to brainstorm adaptations 
               and improvements to the idea, alongside the technologies and platforms to work with!
               </br></br>
               <strong>Open-Ended</strong></br>
-              Project managers decide what the project will be alongside their team after recruitment rather than prior to. Rather than starting 
-              with ideas, project managers begin with a certain understanding of which technologies and platforms to work with, keeping in mind 
-              their previous experiences. Then, based off that, the brainstorming process is experienced as a team, and together, they will pick 
-              a concept, purpose, and scope for the project according to their interests and platforms!
+              Rather than starting with ideas, projects start in mind with what technologies and platforms they will use, keeping in mind 
+              the project manager's previous experiences. Then, based off that, you as a team get to pick 
+              a concept, purpose, and scope for the project according to your interests and ideas!
               </br></br>
-              In addition, project managers are given a guide along with support from the executive team to manage the timeline of their project, lead their team, and more!
-            "
+              "
           />
         </div>
         <div className="applyPage__container applyPage__projectExample">
@@ -257,7 +255,11 @@ function ApplyPage() {
               experimental environment! Manage a project for 1 or 2 semesters and lead
               a team of 6-9 developers to create complex projects! Build your
               portfolio, gain industry-like experience, and learn about the
-              product life cycle from initial design to testing and deployment."
+              product life cycle from initial design to testing and deployment. 
+              As a project manager, you will be given a guide along with support from 
+              the executive team to manage the timeline of your project, lead your team, and more!
+              "
+              
           />
           <ApplyFAQSection
             question="What does the Executive Team do?"

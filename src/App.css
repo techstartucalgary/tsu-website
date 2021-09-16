@@ -1,10 +1,15 @@
 :root {
   /* CSS Variables with global scope */
-  --primary-green: #99e755;
-  --greyish-green: #85ed99;
+
+  /* This turquoise isn't from the new logo, but it's what makes the stuff on our site look good*/
+  --primary-green: #4dd6a8;
   --primary-black: #282a36;
+  /* Web gradient: secondary blue to lime */
   --secondary-blue: #00b7ff;
   --secondary-lime: #c9e265;
+  /* Turquoise gradient: (in primary logo variant)*/
+  --turquoise-green: #8bffa5;
+  --turquoise-blue: #70f0e8;
   --secondary-grey: rgba(34, 34, 34, 0.95);
   --chonky-header-size: 4.75rem;
   --thicc-subheading-size: 2.5rem;
@@ -67,6 +72,21 @@
   -moz-text-fill-color: transparent;
 }
 
+.gradient-text {
+  background-clip: text;
+  background-color: var(--secondary-blue);
+  background-image: linear-gradient(
+    45deg,
+    var(--secondary-lime),
+    var(--secondary-blue)
+  );
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
 .thiccSubheading--weak {
   opacity: 0.95;
   font-weight: 750;
@@ -110,6 +130,10 @@
   font-size: 18px;
 }
 
+.regularText--largest {
+  font-size: 1.1rem;
+}
+
 @media (max-width: 535px) {
   :root {
     --regular-font: 14px;
@@ -132,4 +156,8 @@ p,
 .homePage__applyButtonBox {
   z-index: 10;
   position: relative;
+}
+
+.switch__label {
+  z-index: 11;
 }

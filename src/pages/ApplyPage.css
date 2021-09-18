@@ -191,6 +191,11 @@ html {
   }
 }
 
+.applyPage__introContainer{
+  position: relative;
+  overflow: hidden;
+}
+
 .applyPage__intro {
   text-align: center;
   color: black;

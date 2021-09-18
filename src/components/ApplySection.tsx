@@ -14,7 +14,7 @@ function ApplySection(props: any) {
           <button className="applyPage__btn">Apply Now</button>
         </a>
       ) : (
-        <h4 className="applyPage__closed">Currently Closed</h4>
+        <h4 className="applyPage__closed">{props.closedStatus}</h4>
       )}
     </article>
   );

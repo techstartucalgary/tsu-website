@@ -25,8 +25,18 @@ const SponsorSection = () => {
             sponsorImage={sponsorLogoHunterHub}
           />
         </div>
-        {/* <SponsorLogo sponsorLink="https://www.microsoft.com/" sponsorImage={sponsorLogoMicrosoft} />
-                <SponsorLogo sponsorLink="https://unity.com/" sponsorImage={sponsorLogoUnity} /> */}
+        <div className="SponsorLogo">
+          <SponsorLogo
+            sponsorLink="https://www.microsoft.com/"
+            sponsorImage={sponsorLogoMicrosoft}
+          />
+        </div>
+        <div className="SponsorLogo">
+          <SponsorLogo
+            sponsorLink="https://unity.com/"
+            sponsorImage={sponsorLogoUnity}
+          />
+        </div>
       </div>
 
       <div style={{ justifyContent: "center", display: "flex" }}>

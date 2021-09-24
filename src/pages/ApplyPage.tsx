@@ -26,7 +26,7 @@ function ApplyPage() {
             and entrepreneurship at the University of Calgary.
   </p>*/}
           <p className="applyPage__primary-description">
-            Project member applications open Thursday, September 23rd, 2021 at our Launch Meeting!
+            Project member applications are open! Due Saturday, October 2nd at 11:59 pm.
           </p>
         </div>
       </header>

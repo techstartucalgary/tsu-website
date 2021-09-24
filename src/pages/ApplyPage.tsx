@@ -216,13 +216,12 @@ function ApplyPage() {
           <Divider />
           <ul className="applyPage__applicationUL">
             <ApplySection
-              term="1 semester"
+              term="1 to 2 semesters"
               role="Project Member"
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project."
-              status="closed"
-              closedStatus="Opens Thursday, September 23rd, 2021"
-              applicationLink="https://forms.gle/3BD9dQ3TjcXzEqZN9"
+              status="open"
+              applicationLink="https://forms.gle/yxVK3NRCyTjn1TxQ7"
             />
 
             <ApplySection
@@ -231,7 +230,7 @@ function ApplyPage() {
               description="Manage a project for 1 or 2 semesters and lead a team of 6-9
                     project members to create complex projects."
               status="open"
-              applicationLink="https://forms.gle/bFGzAFD1QWdCavGr5"
+              applicationLink="https://forms.gle/M4zFFDRj8tfV6Kgg6"
             />
 
             <ApplySection

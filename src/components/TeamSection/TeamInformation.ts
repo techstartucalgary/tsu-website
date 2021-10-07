@@ -14,6 +14,12 @@ import vidhi_jpg from './Images/Vidhi_Soni.jpeg'
 import mahdi_jpg from './Images/Mahdi_Varposhti.jpg'
 import blank_jpg from './Images/Blank.jpeg'
 import zeyad_jpg from './Images/Zeyad.jpg'
+import vivian_jpg from './Images/Vivian_Huynh_Headshot_3.jpg'
+import niyousha_jpg from './Images/niyousha.jpg'
+import davis_jpg from './Images/davis.jpg'
+import elgiz_jpg from './Images/elgiz.jpeg'
+import ali_jpg from './Images/ali.jpg'
+
 //import member_7 from './Images/Armeen_Rashidian.jpg'
 //import member_8 from './Images/Felix_Vaughan.jpg'
 //import member_9 from './Images/Darryl_Huët.jpg'
@@ -42,7 +48,12 @@ executiveTeam = [
 
 projectManagers = [
   { id: 11, name: "Mahdi Varposhti", project: " ", image: mahdi_jpg, linkedin: "https://www.linkedin.com/in/mahdiva/", email: "mailto:mahdi.varposhti1@ucalgary.ca" },
-  { id: 11, name: "Zeyad Omran", project: " ", image: zeyad_jpg, linkedin: "https://www.linkedin.com/in/zeyadomran", email: "mailto:zeyad.omran@ucalgary.ca" },
-  { id: 12, name: "You?", project: "Apply now at techstartucalgary.com/apply!", image: blank_jpg, linkedin: " ", email: " " },
+  { id: 12, name: "Zeyad Omran", project: " ", image: zeyad_jpg, linkedin: "https://www.linkedin.com/in/zeyadomran", email: "mailto:zeyad.omran@ucalgary.ca" },
+  { id: 13, name: "Niyousha Raeesinejad", project: " ", image: niyousha_jpg, linkedin: "https://www.linkedin.com/in/niyoushar/", email: "mailto:niyousha.raeesinejad@ucalgary.ca" },
+  { id: 14, name: "Elgiz Abbasov", project: " ", image: elgiz_jpg, linkedin: "https://www.linkedin.com/in/elgizabbasov", email: "mailto:elgiz.abbasov1@ucalgary.ca" },
+  { id: 15, name: "Davis Johnson", project: " ", image: davis_jpg, linkedin: "https://www.linkedin.com/in/davis-johnson-a86a841b0", email: "mailto:deivydasjohnson@gmail.com" },
+  { id: 16, name: "Vivian Huynh", project: " ", image: vivian_jpg, linkedin: "https://www.linkedin.com/in/vivian-huynh-yyc/", email: "mailto:vivian.huynh2@ucalgary.ca" },
+  { id: 17, name: "Ali Siddiqi", project: " ", image: ali_jpg, linkedin: "https://www.linkedin.com/in/ali-siddiqi/", email: "mailto:ali.siddiqi@ucalgary.ca" },
+  //{ id: 18, name: "You?", project: "Apply now at techstartucalgary.com/apply!", image: blank_jpg, linkedin: " ", email: " " },
   
 ];

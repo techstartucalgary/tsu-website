@@ -54,6 +54,6 @@ projectManagers = [
   { id: 15, name: "Davis Johnson", project: " ", image: davis_jpg, linkedin: "https://www.linkedin.com/in/davis-johnson-a86a841b0", email: "mailto:deivydasjohnson@gmail.com" },
   { id: 16, name: "Vivian Huynh", project: " ", image: vivian_jpg, linkedin: "https://www.linkedin.com/in/vivian-huynh-yyc/", email: "mailto:vivian.huynh2@ucalgary.ca" },
   { id: 17, name: "Ali Siddiqi", project: " ", image: ali_jpg, linkedin: "https://www.linkedin.com/in/ali-siddiqi/", email: "mailto:ali.siddiqi@ucalgary.ca" },
-  { id: 18, name: "You?", project: "Apply now at techstartucalgary.com/apply!", image: blank_jpg, linkedin: " ", email: " " },
+  //{ id: 18, name: "You?", project: "Apply now at techstartucalgary.com/apply!", image: blank_jpg, linkedin: " ", email: " " },
   
 ];

@@ -9,6 +9,8 @@ export type Event = {
   time: string;
   image: any;
   link: string;
+  // Will by default use "Register" as the link title. Use this prop to override that.
+  linkTitleOverride?: string;
 };
 
 export var upcomingEvents: Event[];
@@ -18,11 +20,12 @@ upcomingEvents = [
   {
     title: "Launch Meeting 2021",
     description:
-      "Join us for our launch meeting to find out what we do and how you can get involved! Venue TBA - follow our mail list to get updates.",
+      "Join us for our launch meeting to find out what we do and how you can get involved!",
     date: "Thursday, Sept 23, 2021",
     time: "6:00 - 7:00 PM MT",
     image: launchImage,
-    link: "http://eepurl.com/hnusUP",
+    link: "https://ucalgary.zoom.us/j/7269738862",
+    linkTitleOverride: "Zoom Link",
   },
 ];
 

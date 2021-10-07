@@ -13,6 +13,7 @@
   --secondary-grey: rgba(34, 34, 34, 0.95);
   --chonky-header-size: 4.75rem;
   --thicc-subheading-size: 2.5rem;
+  --babyHeading-size: 1.6rem;
   --chonky-header-weight: 900;
   --regular-font: 1rem;
   font-family: "Inter", Tahoma, sans-serif;
@@ -95,7 +96,7 @@
 .babyHeading {
   color: var(--primary-black);
   font-weight: 900;
-  font-size: 1.6rem;
+  font-size: var(--babyHeading-size);
   margin-block-start: 8px;
   margin-block-end: 8px;
   margin-inline-start: 0px;
@@ -139,6 +140,7 @@
     --regular-font: 14px;
     --chonky-header-size: 3.2rem;
     --thicc-subheading-size: 2.1rem;
+    --babyHeading-size: 1.4rem;
   }
 }
 
@@ -146,6 +148,7 @@
   :root {
     --chonky-header-size: 2.8rem;
     --thicc-subheading-size: 1.8rem;
+    --babyHeading-size: 1.2rem;
   }
 }
 

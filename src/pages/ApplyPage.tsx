@@ -21,9 +21,12 @@ function ApplyPage() {
         <div className="applyPage__spacing" data-aos="zoom-out-down"></div>
         <div className="applyPage__primary-wrapper">
           <h1 className="applyPage__primary-title">APPLY</h1>
-          <p className="applyPage__primary-description">
+          {/*<p className="applyPage__primary-description">
             Join a dynamic community dedicated to advancing software development
             and entrepreneurship at the University of Calgary.
+  </p>*/}
+          <p className="applyPage__primary-description">
+            Project member applications open Thursday, September 23rd, 2021 at our Launch Meeting!
           </p>
         </div>
       </header>
@@ -32,15 +35,10 @@ function ApplyPage() {
         <Blobbie
           id={8}
           width={400}
-          transform="translate(-40%, -30%)"
+          transform="translate(-40%, 20%)"
           edge={true}
         />
-        <Blobbie
-          id={7}
-          width={350}
-          transform="translate(80vw, 20%)"
-          edge={false}
-        />
+        <Blobbie id={7} width={350} transform="translate(83vw, 80%)" edge={false} />
         <div className="applyPage__intro">
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">
             What We Do
@@ -160,6 +158,25 @@ function ApplyPage() {
             <li>Additional team meetings may be arranged by your Project Manager when necessary</li>
             "
           />
+          <Accordion
+            title="How do teams pick an idea for their project?"
+            active={active}
+            setActive={setActive}
+            description="
+              Your Project Manager will pick one of the following ways the decide the team's project focus:
+              </br></br>
+              <strong>Focused</strong></br>
+              The project starts off with a specific idea or concept from the get-go. These ideas are pitched at the 
+              first Tech Start meeting to give you an idea of the types of projects your team will make! Then your team works together to brainstorm adaptations 
+              and improvements to the idea, alongside the technologies and platforms to work with!
+              </br></br>
+              <strong>Open-Ended</strong></br>
+              Rather than starting with ideas, projects start in mind with what technologies and platforms they will use, keeping in mind 
+              the project manager's previous experiences. Then, based off that, you as a team get to pick 
+              a concept, purpose, and scope for the project according to your interests and ideas!
+              </br></br>
+              "
+          />
         </div>
         <div className="applyPage__container applyPage__projectExample">
           <div className="applyPage__projectExampleText">
@@ -204,6 +221,7 @@ function ApplyPage() {
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project."
               status="closed"
+              closedStatus="Opens Thursday, September 23rd, 2021"
               applicationLink="https://forms.gle/3BD9dQ3TjcXzEqZN9"
             />
 
@@ -222,6 +240,7 @@ function ApplyPage() {
               description="Work behind the scenes to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               status="closed"
+              closedStatus="Opens Spring 2022"
               applicationLink="https://forms.gle/PQMbV5SWQfNe46GAA"
             />
           </ul>
@@ -240,7 +259,11 @@ function ApplyPage() {
               experimental environment! Manage a project for 1 or 2 semesters and lead
               a team of 6-9 developers to create complex projects! Build your
               portfolio, gain industry-like experience, and learn about the
-              product life cycle from initial design to testing and deployment."
+              product life cycle from initial design to testing and deployment. 
+              As a project manager, you will be given a guide along with support from 
+              the executive team to manage the timeline of your project, lead your team, and more!
+              "
+              
           />
           <ApplyFAQSection
             question="What does the Executive Team do?"

@@ -5,6 +5,14 @@ This website is built with React & TypeScript. To get started with your local de
 ### Backend
 Also check out our backend, created by Richard Chow with Python and Django! https://github.com/Tech-Start-UCalgary/tsu-website-back-end
 
+### Dev Team (Fall 2021)
+
+- Niyousha Raeesinejad - Project Manager
+- Sukriti Sharma - 
+- Ryan Sayers - 
+- Labib Afsar Ahmed - 
+- Takahiro Fujita (Tak) - 
+- Sahiti Akella - 
 ______________
 
 ## Available Scripts

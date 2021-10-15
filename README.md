@@ -12,7 +12,7 @@ Also check out our backend, created by Richard Chow with Python and Django! http
 - Ryan Sayers - 
 - Labib Afsar Ahmed - 
 - Takahiro Fujita (Tak) - 
-- Sahiti Akella - 
+- Sahiti Akella - Project Member
 ______________
 
 ## Available Scripts

@@ -8,7 +8,7 @@ Also check out our backend, created by Richard Chow with Python and Django! http
 ### Dev Team (Fall 2021)
 
 - Niyousha Raeesinejad - Project Manager
-- Sukriti Sharma - 
+- Sukriti Sharma - Web developer
 - Ryan Sayers - 
 - Labib Afsar Ahmed - 
 - Takahiro Fujita (Tak) - 

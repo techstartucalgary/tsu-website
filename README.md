@@ -10,7 +10,7 @@ Also check out our backend, created by Richard Chow with Python and Django! http
 - Niyousha Raeesinejad - Project Manager
 - Sukriti Sharma - 
 - Ryan Sayers - 
-- Labib Afsar Ahmed - 
+- Labib Afsar Ahmed - Web Developer
 - Takahiro Fujita (Tak) - 
 - Sahiti Akella - 
 ______________

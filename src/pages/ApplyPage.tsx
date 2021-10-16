@@ -26,7 +26,7 @@ function ApplyPage() {
             and entrepreneurship at the University of Calgary.
   </p>*/}
           <p className="applyPage__primary-description">
-            Project member applications open Thursday, September 23rd, 2021 at our Launch Meeting!
+            Teams have been recruited! Teams will meet weekly, Thursdays at 5:30 pm, at our dev nights. Join us for more general events! For more information, join our Discord.
           </p>
         </div>
       </header>
@@ -153,7 +153,7 @@ function ApplyPage() {
             active={active}
             setActive={setActive}
             description="
-            <li>Team members must be able to attend the majority of our weekly dev nights, which are held on Wednesdays from 5:30-8:30PM.</li>
+            <li>Team members must be able to attend the majority of our weekly dev nights, which are held on Thursdays from 5:30-8:30PM.</li>
             <li>Beyond the dev nights, you should expect to contribute a minimum of 1-2 hours of additional work per week</li>
             <li>Additional team meetings may be arranged by your Project Manager when necessary</li>
             "
@@ -216,13 +216,13 @@ function ApplyPage() {
           <Divider />
           <ul className="applyPage__applicationUL">
             <ApplySection
-              term="1 semester"
+              term="1 to 2 semesters"
               role="Project Member"
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project."
               status="closed"
-              closedStatus="Opens Thursday, September 23rd, 2021"
-              applicationLink="https://forms.gle/3BD9dQ3TjcXzEqZN9"
+              closedStatus="Recruitment Finished"
+              applicationLink="https://forms.gle/yxVK3NRCyTjn1TxQ7"
             />
 
             <ApplySection
@@ -230,8 +230,9 @@ function ApplyPage() {
               role="Project Manager"
               description="Manage a project for 1 or 2 semesters and lead a team of 6-9
                     project members to create complex projects."
-              status="open"
-              applicationLink="https://forms.gle/bFGzAFD1QWdCavGr5"
+              status="closed"
+              closedStatus="Recruitment Finished"
+              applicationLink="https://forms.gle/M4zFFDRj8tfV6Kgg6"
             />
 
             <ApplySection

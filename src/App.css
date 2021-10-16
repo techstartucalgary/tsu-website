@@ -164,3 +164,7 @@ p,
 .switch__label {
   z-index: 11;
 }
+
+a {
+  color: var(--primary-green);
+}

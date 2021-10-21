@@ -9,10 +9,10 @@ Also check out our backend, created by Richard Chow with Python and Django! http
 
 - Niyousha Raeesinejad - Project Manager
 - Sukriti Sharma - 
-- Ryan Sayers - 
+- Ryan Sayers - Developer
 - Labib Afsar Ahmed - Web Developer
 - Takahiro Fujita (Tak) - 
-- Sahiti Akella - 
+- Sahiti Akella - Project Member
 ______________
 
 ## Available Scripts

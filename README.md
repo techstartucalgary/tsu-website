@@ -11,7 +11,7 @@ Also check out our backend, created by Richard Chow with Python and Django! http
 - Sukriti Sharma - 
 - Ryan Sayers - Developer
 - Labib Afsar Ahmed - Web Developer
-- Takahiro Fujita (Tak) - 
+- Takahiro Fujita (Tak) - Software Developer
 - Sahiti Akella - Project Member
 ______________
 

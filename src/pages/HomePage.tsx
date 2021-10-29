@@ -65,13 +65,7 @@ function HomePage() {
             the art of collaboration. We're also the top spot on campus to meet
             fellow tech enthusiasts, aspiring entrepreneurs, and innovators.
           </p>
-          <p className="regularText">
-            Join our launch meeting on Thursday, Sept 23rd at{" "}
-            <a href="https://ucalgary.zoom.us/j/7269738862">
-              https://ucalgary.zoom.us/j/7269738862
-            </a>{" "}
-            for more info!
-          </p>
+          
           {/* <a
             href="https://linktr.ee/techstartuofc"
             target="blank"

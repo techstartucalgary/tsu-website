@@ -1,19 +1,19 @@
-button.postButton{
-    text-align: center;
-    background-color: #D3f5b6;
-    width: 300px;
-    height: 300px;
-    border:none;
-    border-radius: 25px;
-    vertical-align: middle;
-    font-family: 'Inter', Tahoma, sans-serif; 
-    font-weight: 500;
-    font-size: medium;
+button.postButton {
+  text-align: center;
+  background-color: #d3f5b6;
+  width: 300px;
+  height: 300px;
+  border: none;
+  border-radius: 25px;
+  vertical-align: middle;
+  font-family: "Inter", Tahoma, sans-serif;
+  font-weight: 500;
+  font-size: medium;
 }
-.postButton a{
-    color:#282A36;
-    text-decoration: none;
+.postButton a {
+  color: #282a36;
+  text-decoration: none;
 }
-.postButton__prompt{
-    font-size: large;
+.postButton__prompt {
+  font-size: large;
 }

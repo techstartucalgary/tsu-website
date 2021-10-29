@@ -5,14 +5,15 @@
   margin-bottom: 5%;
 }
 
-.eventImgLeft, .eventImgRight {
+.eventImgLeft,
+.eventImgRight {
   margin: 2%;
-  width:60%;
+  width: 60%;
 }
 
 .eventImgLeft {
   float: left;
-  clear:right;
+  clear: right;
 }
 
 .eventImgRight {
@@ -37,7 +38,8 @@
     margin-bottom: 0vh;
   }
 
-  .eventImgLeft, .eventImgRight {
+  .eventImgLeft,
+  .eventImgRight {
     width: 100%;
     float: none;
     margin: 0%;

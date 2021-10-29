@@ -17,33 +17,34 @@ import Lottie from "lottie-react";
 import "./Blobbie.css";
 
 const Blobbie = (props: any) => {
+  const blobbies = {
+    blobLottie1: blobLottie1,
+    blobLottie2: blobLottie2,
+    blobLottie3: blobLottie3,
+    blobLottie4: blobLottie4,
+    blobLottie5: blobLottie5,
+    blobLottie6: blobLottie6,
+    blobLottie7: blobLottie7,
+    blobLottie8: blobLottie8,
+    blobLottie9: blobLottie9,
+    blobLottie10: blobLottie10,
+    blobLottie11: blobLottie11,
+    blobLottie12: blobLottie12,
+    blobLottie13: blobLottie13,
+    blobLottie14: blobLottie14,
+    blobLottie15: blobLottie15,
+  };
 
-    const blobbies = {
-        blobLottie1: blobLottie1,
-        blobLottie2: blobLottie2,
-        blobLottie3: blobLottie3,
-        blobLottie4: blobLottie4,
-        blobLottie5: blobLottie5,
-        blobLottie6: blobLottie6,
-        blobLottie7: blobLottie7,
-        blobLottie8: blobLottie8,
-        blobLottie9: blobLottie9,
-        blobLottie10: blobLottie10,
-        blobLottie11: blobLottie11,
-        blobLottie12: blobLottie12,
-        blobLottie13: blobLottie13,
-        blobLottie14: blobLottie14,
-        blobLottie15: blobLottie15
-    }
+  const blobbieClass =
+    props.edge === true ? "Blobbie--edge" : "Blobbie--middle";
 
-    const blobbieClass = props.edge === true ? "Blobbie--edge" : "Blobbie--middle";
-
-    return (
-        <Lottie
-            className={"Blobbie " + blobbieClass}
-            animationData={eval(`blobbies.blobLottie${props.id}`)}
-            style={{ "width": props.width, "transform": props.transform }} />
-    );
+  return (
+    <Lottie
+      className={"Blobbie " + blobbieClass}
+      animationData={eval(`blobbies.blobLottie${props.id}`)}
+      style={{ width: props.width, transform: props.transform }}
+    />
+  );
 };
 
 export default Blobbie;

@@ -1,142 +1,134 @@
-.loginStyling{
-    height: 100%;
-    position: relative;
-    width: 80%;
-    padding-top: 10px;
-    padding-left: 20%;
-    padding-bottom: 20px;
+.loginStyling {
+  height: 100%;
+  position: relative;
+  width: 80%;
+  padding-top: 10px;
+  padding-left: 20%;
+  padding-bottom: 20px;
 }
 
-.loginHeading{
-    width: 80%;
-    text-align: center;
-    margin-left: 10%;
-    color: white;
-    font-size: 30px;
-    font-weight: bold;
+.loginHeading {
+  width: 80%;
+  text-align: center;
+  margin-left: 10%;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
 }
 
-
-.loginForm{
-    font-size: larger;
+.loginForm {
+  font-size: larger;
 }
 
-.loginDiv{
-    position: relative;
-    width: 80%;
-    padding: 10px;
-    margin: 12px auto;
-    border: 1px solid #ccc;
-    background-color: white;
-    color: grey;
-    border-radius: 12px;
-    box-sizing: border-box;
-    resize: vertical;
-    
+.loginDiv {
+  position: relative;
+  width: 80%;
+  padding: 10px;
+  margin: 12px auto;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: grey;
+  border-radius: 12px;
+  box-sizing: border-box;
+  resize: vertical;
 }
 
-.registerLink{
-    float: left;
-    font-weight: normal;
-    margin: 12px;
-    margin-left: 10%;
+.registerLink {
+  float: left;
+  font-weight: normal;
+  margin: 12px;
+  margin-left: 10%;
 }
 
-.registerSwitch{
-    color: white;
-    background-color: transparent;
-    cursor: pointer;
-    border: none;
-    float: right;
-    margin: 10px;
-    margin-right: 10%;
-    vertical-align: middle;
+.registerSwitch {
+  color: white;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  float: right;
+  margin: 10px;
+  margin-right: 10%;
+  vertical-align: middle;
 }
 
-.switchStyling{
-    margin-top: 10px;
+.switchStyling {
+  margin-top: 10px;
 }
 
-.alert{
-    background-color: #ffb6b9;
-    padding: 4px;
-    border-radius: 7px;
-    color: #282c34;
-    font-size: small;
-    text-align: center;
-    margin: 0px 10%;
+.alert {
+  background-color: #ffb6b9;
+  padding: 4px;
+  border-radius: 7px;
+  color: #282c34;
+  font-size: small;
+  text-align: center;
+  margin: 0px 10%;
 }
 
-.alertMessage{
-    margin: 0px;
+.alertMessage {
+  margin: 0px;
 }
 
-
-#clearLogin{
-    clear: both;
+#clearLogin {
+  clear: both;
 }
 
-input[id=loginUsername], input[id=loginPassword]{
-    width: 87%;
-    padding: 5px;
-    margin-left: 5px;
-    border: 1px solid #ccc;
-    background-color: white;
-    color: grey;
-    border-radius: 12px;
-    box-sizing: border-box;
-    border: none;
-    outline: none;
+input[id="loginUsername"],
+input[id="loginPassword"] {
+  width: 87%;
+  padding: 5px;
+  margin-left: 5px;
+  border: 1px solid #ccc;
+  background-color: white;
+  color: grey;
+  border-radius: 12px;
+  box-sizing: border-box;
+  border: none;
+  outline: none;
 }
 
-input[id=loginSubmit]{
-    width: 30%;
-    margin-left: 35%;
-    margin-top: 12px;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background-color: #99e755;
-    color: black;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;  
-    text-align: center;
-    
+input[id="loginSubmit"] {
+  width: 30%;
+  margin-left: 35%;
+  margin-top: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: #99e755;
+  color: black;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
 }
 
 @media (max-width: 830px) {
-    input[id=loginUsername], input[id=loginPassword]{
-        width: 80%;
-    }
-    
+  input[id="loginUsername"],
+  input[id="loginPassword"] {
+    width: 80%;
+  }
 }
 
 @media (max-width: 790px) {
-    .switchStyling{
-        display: block;
-        
-    }
-    .registerSwitch{
-        float: none;
-        margin-left: 10%;
-        margin-bottom: 7px;
-    }
-    .registerLink{
-        float: none;
-        margin-bottom: 0px;
-    }
-
-    
+  .switchStyling {
+    display: block;
+  }
+  .registerSwitch {
+    float: none;
+    margin-left: 10%;
+    margin-bottom: 7px;
+  }
+  .registerLink {
+    float: none;
+    margin-bottom: 0px;
+  }
 }
 
-
-@media (max-width:570px) {
-    .alertMessage{
-        font-size: smaller;
-    }
-    
+@media (max-width: 570px) {
+  .alertMessage {
+    font-size: smaller;
+  }
 }
 
-input:-webkit-autofill{
-    -webkit-box-shadow: 0 0 0 30px white inset !important;
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0 30px white inset !important;
 }

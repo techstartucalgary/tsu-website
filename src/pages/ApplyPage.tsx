@@ -26,7 +26,9 @@ function ApplyPage() {
             and entrepreneurship at the University of Calgary.
   </p>*/}
           <p className="applyPage__primary-description">
-            Teams have been recruited! Teams will meet weekly, Thursdays at 5:30 pm, at our dev nights. Join us for more general events! For more information, join our Discord.
+            Teams have been recruited! Teams will meet weekly, Thursdays at 5:30
+            pm, at our dev nights. Join us for more general events! For more
+            information, join our Discord.
           </p>
         </div>
       </header>
@@ -38,7 +40,12 @@ function ApplyPage() {
           transform="translate(-40%, 20%)"
           edge={true}
         />
-        <Blobbie id={7} width={350} transform="translate(83vw, 80%)" edge={false} />
+        <Blobbie
+          id={7}
+          width={350}
+          transform="translate(83vw, 80%)"
+          edge={false}
+        />
         <div className="applyPage__intro">
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">
             What We Do
@@ -264,7 +271,6 @@ function ApplyPage() {
               As a project manager, you will be given a guide along with support from 
               the executive team to manage the timeline of your project, lead your team, and more!
               "
-              
           />
           <ApplyFAQSection
             question="What does the Executive Team do?"

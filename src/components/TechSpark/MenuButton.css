@@ -1,21 +1,20 @@
-button.MenuButton{
-    text-align: center;
-    float: left;
-    display: inline-table;
-    background-color: #D3f5b6;
-    height: 50px;
-    min-width: 204px;
-    border: 1px #282A36;
-    border-radius: 25px;
-    padding-right: 35px;
-    padding-left: 35px;
-    padding-top: 13px;
-    padding-bottom: 35px;
-    vertical-align: middle;
-    font-family: 'Inter', Tahoma, sans-serif; 
-    font-weight: 600;
-    font-size: 1.3rem;
-    color: #282A36;
-    grid-column: span 1/1;
-
+button.MenuButton {
+  text-align: center;
+  float: left;
+  display: inline-table;
+  background-color: #d3f5b6;
+  height: 50px;
+  min-width: 204px;
+  border: 1px #282a36;
+  border-radius: 25px;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-top: 13px;
+  padding-bottom: 35px;
+  vertical-align: middle;
+  font-family: "Inter", Tahoma, sans-serif;
+  font-weight: 600;
+  font-size: 1.3rem;
+  color: #282a36;
+  grid-column: span 1/1;
 }

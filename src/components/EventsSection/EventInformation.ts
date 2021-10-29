@@ -16,9 +16,7 @@ export type Event = {
 export var upcomingEvents: Event[];
 export var pastEvents: Event[];
 
-upcomingEvents = [
-
-];
+upcomingEvents = [];
 
 pastEvents = [
   {
@@ -31,7 +29,7 @@ pastEvents = [
     link: "https://ucalgary.zoom.us/j/7269738862",
     linkTitleOverride: "Zoom Link",
   },
-  
+
   {
     title: "Alberta's Tech Horizon",
     description:

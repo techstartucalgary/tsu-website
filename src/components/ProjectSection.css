@@ -11,8 +11,8 @@
   padding-top: 50px;
 }
 
-@media(min-width: 1575px){
-  .projectSection{
+@media (min-width: 1575px) {
+  .projectSection {
     grid-template-columns: repeat(auto-fit, minmax(200px, 650px));
   }
 }

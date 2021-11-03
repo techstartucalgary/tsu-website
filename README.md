@@ -8,12 +8,11 @@ Also check out our backend, created by Richard Chow with Python and Django! http
 ### Contributers (Fall 2021)
 
 - Niyousha Raeesinejad - Project Manager
-- Sukriti Sharma - 
-- Ryan Sayers - 
-- Labib Afsar Ahmed - 
-- Takahiro Fujita (Tak) - 
-- Sahiti Akella - 
-______________
+- Sukriti Sharma - Web Developer
+- Ryan Sayers - Developer
+- Labib Afsar Ahmed - Web Developer
+- Takahiro Fujita (Tak) - Software Developer
+- Sahiti Akella - Project Member
 
 ## Available Scripts
 

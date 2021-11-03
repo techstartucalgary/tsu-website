@@ -1,57 +1,56 @@
 .ProfileDiv {
-    width: clamp(150px, 20%, 300px);
-    margin: 0 1% 2.5rem;
-    display:block;
-    align-items: center;  
-    justify-content: center; 
+  width: clamp(150px, 20%, 300px);
+  margin: 0 1% 2.5rem;
+  display: block;
+  align-items: center;
+  justify-content: center;
 }
 
-.profile--carousel{
-    width: 100%;
-    max-width: 400px;
-    margin-bottom: 0;
+.profile--carousel {
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 0;
 }
 
-.ProfileIconDiv{
-    width:100%;
-    transition: 0.4s ease-in-out;
+.ProfileIconDiv {
+  width: 100%;
+  transition: 0.4s ease-in-out;
 }
 
 .ProfileIcon {
-    width:100%;
-    height:100%;
-    
-    filter: brightness(100%);
-    transition: 0.4s ease-in-out;
-    background-size: cover;
-    background-color: white;
-    border-radius:50%;
+  width: 100%;
+  height: 100%;
+
+  filter: brightness(100%);
+  transition: 0.4s ease-in-out;
+  background-size: cover;
+  background-color: white;
+  border-radius: 50%;
 }
 
 .ProfileIcon:hover {
-    filter: brightness(95%);
-    transition: 0.4s ease-in-out;
+  filter: brightness(95%);
+  transition: 0.4s ease-in-out;
 }
 
 .LinksSection {
-    transition: 0.4s ease-in-out;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-template-rows: auto auto;
-    align-items: center;  
-    justify-content: center;
-    margin-top: 0.5em;
-    margin-bottom: 0.5em;
-    font-size: 1rem;
-
-
+  transition: 0.4s ease-in-out;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  font-size: 1rem;
 }
 
 .LinkSection--Translate--Small {
-    transform:translateY(-8vw);
+  transform: translateY(-8vw);
 }
 
-.LinkSection--Hover, .LinkSection--CarouselView {
-    visibility:visible;
-    opacity:1;
+.LinkSection--Hover,
+.LinkSection--CarouselView {
+  visibility: visible;
+  opacity: 1;
 }

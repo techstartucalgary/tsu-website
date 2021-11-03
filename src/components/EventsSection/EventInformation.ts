@@ -16,7 +16,9 @@ export type Event = {
 export var upcomingEvents: Event[];
 export var pastEvents: Event[];
 
-upcomingEvents = [
+upcomingEvents = [];
+
+pastEvents = [
   {
     title: "Launch Meeting 2021",
     description:
@@ -27,9 +29,7 @@ upcomingEvents = [
     link: "https://ucalgary.zoom.us/j/7269738862",
     linkTitleOverride: "Zoom Link",
   },
-];
 
-pastEvents = [
   {
     title: "Alberta's Tech Horizon",
     description:

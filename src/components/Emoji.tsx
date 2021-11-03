@@ -1,7 +1,4 @@
-
-
-  function Emoji(props:any){
-
+function Emoji(props: any) {
   return (
     <span
       className="emoji"
@@ -11,6 +8,7 @@
     >
       {props.symbol}
     </span>
-  ) }
+  );
+}
 
-  export default Emoji
+export default Emoji;

@@ -1,10 +1,13 @@
-import SponsorLogo from "../SponsorLogo";
 import sponsorLogoHunterHub from "images/sponsor-logo-hunter-hub.png";
 import sponsorLogoArcurve from "images/sponsor-logo-arcurve.png";
 import sponsorLogoUnity from "images/sponsor-logo-unity.png";
 import sponsorLogoMicrosoft from "images/sponsor-logo-microsoft.png";
-import "../../App.css";
+
 import HoverButton from "../HoverButton/HoverButton";
+import SponsorLogo from "../SponsorLogo";
+import SponsorshipPackage from "./SponsorshipPackage";
+
+import "../../App.css";
 import "./SponsorSection.css";
 
 const SponsorSection = () => {
@@ -45,6 +48,10 @@ const SponsorSection = () => {
           link="https://docs.google.com/document/d/1_1CGWNd5KkIIOPjVSkQzeEq6VI4YobRvu8_waBUBUJk/edit?usp=sharing"
           text="Interested in sponsoring us? Check out our sponsorship package!"
         />
+      </div>
+
+      <div className="SponsorshipPackageDiv">
+        <SponsorshipPackage />
       </div>
     </div>
   );

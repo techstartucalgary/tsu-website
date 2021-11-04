@@ -33,3 +33,7 @@
 .SponsorLogo:hover {
   transform: translateY(-0.25em);
 }
+
+.SponsorshipPackageDiv {
+  overflow: hidden;
+}

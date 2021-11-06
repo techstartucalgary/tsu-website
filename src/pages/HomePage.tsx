@@ -65,7 +65,7 @@ function HomePage() {
             the art of collaboration. We're also the top spot on campus to meet
             fellow tech enthusiasts, aspiring entrepreneurs, and innovators.
           </p>
-          
+
           {/* <a
             href="https://linktr.ee/techstartuofc"
             target="blank"

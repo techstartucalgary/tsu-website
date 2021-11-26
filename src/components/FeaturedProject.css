@@ -13,7 +13,7 @@
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
   /* background: linear-gradient(180deg, rgb(26, 25, 25), rgb(40, 46, 51)); */
-  background: linear-gradient(to top,var(--turquoise-blue) -20%, var(--turquoise-green) 70%);
+  background: linear-gradient(to top,var(--turquoise-blue), var(--turquoise-green));
   /* background: linear-gradient(to top, var(--secondary-blue) -10%, var(--primary-black) 70%); */
 }
 
@@ -49,7 +49,6 @@
 }
 
 .project__button {
-  border: 1px solid var(--primary-green);
   background-color: var(--secondary-grey);
   border-radius: 30px;
   width: 40%;
@@ -68,15 +67,17 @@
 }
 
 .project__button:hover{
-  
-  box-shadow: 2px 5px #4dd6a8;
-  transform: translateY(-0.3em);
-  color: black;
-  background-color: white;
+  box-shadow: 2px 4px #4dd6a8;
+  /*(--turquoise-green);*/
+  transform: translateY(-0.2em);
+}
+
+.project__content a:hover{
+  color: var(--turquoise-blue);
 }
 
 .project__button:focus{
-  color: black;
+  background-color: black;
 }
 
 .project__image--transparent {

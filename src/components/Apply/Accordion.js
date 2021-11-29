@@ -14,7 +14,7 @@ const Accordion = (props) => {
       >
         <div className="applyPage__accordionContainer">
           <p>{props.title}</p>
-          <span>{props.active === props.title ? "+" : "-"}</span>
+          <span>{props.active === props.title ? "-" : "+"}</span>
         </div>
       </div>
       <div

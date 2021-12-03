@@ -51,7 +51,7 @@ html {
   color: rgb(241, 244, 247);
   background-color: rgb(6, 7, 6);
   border-radius: 10px;
-  margin-top: 40px;
+  margin-top: 6vw;
   display: flex;
   transition: transform 250ms ease-in-out;
   /* transition: width 250ms ease-in-out, height 250ms ease-in-out, font-size 250ms ease-in-out, opacity 250ms linear; */
@@ -63,6 +63,12 @@ html {
   padding-top: 10px;
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.45);
   cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .homePage__applyButton {
+    margin-top: 10vw !important;
+  }
 }
 
 .homePage__applyButton:hover {

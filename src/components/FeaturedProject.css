@@ -36,15 +36,15 @@
 
 @media (max-width: 400px) {
   .project__button {
-    position: relative;
-    top: -30px;
+    position: center;
     padding: 20px 20px;
-    font-size: initial;
+    font-size: 4.5vw;
     transform: scale(0.5);
   }
 
   .project__content {
     transform: translateY(-20px);
+    font-size: 3.5vw;
   }
 }
 
@@ -66,14 +66,15 @@
   text-decoration: none;
 }
 
-.project__button:hover{
-  box-shadow: 2px 4px #4dd6a8;
-  /*(--turquoise-green);*/
-  transform: translateY(-0.2em);
-}
+@media (min-width: 400px){
+  .project__button:hover{
+    box-shadow: 2px 4px #4dd6a8;
+    transform: translateY(-0.2em);
+  }
 
-.project__content a:hover{
-  color: var(--turquoise-blue);
+  .project__content a:hover{
+    color: var(--turquoise-blue);
+  }
 }
 
 .project__button:focus{

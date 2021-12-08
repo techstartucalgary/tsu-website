@@ -7,6 +7,7 @@ import {
   faInstagram,
   faDiscord,
   faLinkedin,
+  faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => (
@@ -41,6 +42,11 @@ const Footer = () => (
         color={SocialMediaColor.Black}
         icon={faLinkedin}
         link="https://www.linkedin.com/company/tech-start-ucalgary"
+      />
+      <SocialMedia
+        color={SocialMediaColor.Black}
+        icon={faYoutube}
+        link="https://www.youtube.com/channel/UCIg1JPlWSXSwIdvqHKGiX9g"
       />
     </div>
     <p className="Copyright">

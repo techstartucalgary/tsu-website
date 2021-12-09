@@ -12,7 +12,7 @@
   background: none;
   /*color: var(--secondary-grey);*/
   border: 0.1rem solid;
-  padding: 1rem 1.5rem;
+  padding: 1rem 1rem;
   font-size: clamp(0.8rem, calc(2vw + 0.2rem), 1rem);
   transition: 0.3s ease-in-out;
   text-decoration: none;
@@ -44,13 +44,12 @@
   transform: translateY(-0.25rem);
 }
 
-@media (max-width: 785px) {
+@media (max-width: 900px) {
   .HoverButton,
   .HoverButton--DarkMode {
-    padding: 0.25rem 0.5rem;
+    padding: 0.5rem 1rem;
   }
   .HoverButtonDiv {
-    padding-top: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -59,5 +58,9 @@
   }
   .HoverButtonDiv .regularText {
     margin: 5px;
+  }
+
+  .HoverButtonDiv:hover .HoverButton:hover {
+    transform: none;
   }
 }

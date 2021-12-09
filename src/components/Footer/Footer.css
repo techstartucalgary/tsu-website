@@ -1,12 +1,9 @@
 .Footer {
-  /*background-color: rgb(32, 32, 32);*/
-  /* background-image: linear-gradient( #282A36, #99E755); */
-  /*color: var(--primary-black);*/
-  padding: 2rem 0rem;
+  padding: 3rem 1rem;
   color: black;
   font-size: clamp(0.8rem, calc(2vw + 0.2rem), 1rem);
-  width: 100%;
-  height: 5em;
+  width: -webkit-fill-available;
+  min-height: 5rem;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -21,61 +18,31 @@
 }
 
 .SocialMediaSection {
-  padding: 25px clamp(10px, 5vw, 150px);
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 3rem 2rem;
 }
 
 .Copyright {
   text-align: center;
 }
 
-@media (max-width: 785px) {
-  .Footer {
-    display: block;
-    padding: 0em;
-    height: 12rem;
-  }
-
-  .SocialMediaSection {
-    margin-top: 0em;
-    margin-bottom: 1.5em;
-    padding-top: 1em;
-  }
-
-  .Copyright {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+.SocialMediaSection .Copyright .hoverButton {
+  padding: 0rem 1rem;
 }
 
 @media (max-width: 900px) {
-  .hoverButton {
-    width: 225px;
-  }
-}
-
-@media (max-width: 785px) {
-  .hoverButton {
-    width: 175px;
-    margin-left: auto;
-    margin-right: auto;
-    transform: scale(0.8);
-  }
-}
-
-@media (max-width: 785px) {
-  .Copyright {
-    transform: translateY(-20px);
-  }
-}
-
-@media (max-width: 555px) {
   .Footer {
     display: block;
-    padding: 0em;
-    height: 10rem;
+  }
+  .SocialMediaSection {
+    padding: 3.5rem 1rem;
+  }
+}
+
+@media (max-width: 320px) {
+  .Footer {
+    font-size: 0.7rem;
   }
 }

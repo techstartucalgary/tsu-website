@@ -35,12 +35,7 @@ const TeamSection = () => {
             Tech Start is only possible thanks to our team of talented,
             passionate leaders. Interested in joining us?
           </p>
-          <div className="applyLinkDiv">
-            <Link className="applyLink" to="/apply">
-              {" "}
-              Find out what it takes to apply!
-            </Link>
-          </div>
+          <ApplyButtonPM />
         </div>
 
         <h2
@@ -60,7 +55,7 @@ const TeamSection = () => {
         </h2>
       </div>
       <Team teamMembers={projectManagers} defaultView={defaultView} />
-      <ApplyButtonPM />
+      
     </div>
   );
 };

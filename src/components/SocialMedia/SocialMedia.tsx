@@ -1,5 +1,6 @@
 import "./SocialMedia.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { IconDefinition } from "@fortawesome/fontawesome-common-types";
 
 export enum SocialMediaColor {
   Green,
@@ -10,7 +11,7 @@ export enum SocialMediaColor {
 interface SocialMediaProps {
   color: SocialMediaColor;
   link: string;
-  icon: any;
+  icon: IconDefinition;
 }
 
 const SocialMedia = (props: SocialMediaProps) => {

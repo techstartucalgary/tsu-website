@@ -28,7 +28,7 @@ export type ExecutiveMember = {
   id: number;
   name: string;
   role: string;
-  image: any;
+  image: string;
   linkedin: string;
   email: string;
 };
@@ -36,7 +36,7 @@ export type ProjectManager = {
   id: number;
   name: string;
   project: string;
-  image: any;
+  image: string;
   linkedin: string;
   email: string;
 };

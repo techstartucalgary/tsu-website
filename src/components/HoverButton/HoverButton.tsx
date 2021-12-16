@@ -1,7 +1,13 @@
 import "./HoverButton.css";
 import "../../App.css";
 
-const HoverButton = (props: any) => {
+type HoverButtonProps = {
+  darkMode: boolean;
+  link: string;
+  text: string;
+};
+
+const HoverButton = (props: HoverButtonProps) => {
   const HoverButtonClasses = ["regularText"];
 
   if (props.darkMode === true) HoverButtonClasses.push("HoverButton--DarkMode");

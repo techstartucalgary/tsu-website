@@ -5,12 +5,14 @@ import "./Team.css";
 
 const Team = (props: { teamMembers: any; defaultView: boolean }) => {
   const [containerState] = useState({
-    members: props.teamMembers, // array of objects
+    members: props.teamMembers,
   });
 
   /**
-   * The following if conditions are for setting the layout of the team section
+   * The following conditions are for setting the layout of the team section
    * according to the number of members for a default screen width.
+   *
+   * TODO refactor dynamic layout
    */
   let containerClasses = ["Container"]; // default layout of members
   if (containerState.members.length === 4)

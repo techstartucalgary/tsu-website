@@ -14,6 +14,7 @@ const Footer = () => (
   <div className="Footer">
     <div className="hoverButton">
       <HoverButton
+        darkMode={false}
         link="http://eepurl.com/hnusUP"
         text="Join our mailing list!"
       />

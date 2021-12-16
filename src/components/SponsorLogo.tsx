@@ -1,6 +1,11 @@
 import "./SponsorLogo.css";
 
-const SponsorLogo = (props: any) => {
+type SponsorLogoProps = {
+  sponsorLink: string;
+  sponsorImage: string;
+};
+
+const SponsorLogo = (props: SponsorLogoProps) => {
   return (
     <a
       href={props.sponsorLink}

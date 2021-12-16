@@ -16,7 +16,7 @@ import oneHub from "images/project/oneHub.png";
 export type Project = {
   id: number;
   name: string;
-  image: any;
+  image: string;
   github: string;
   website: URL;
   pmName: string;

@@ -7,16 +7,18 @@ import SocialMedia, { SocialMediaColor } from "../SocialMedia/SocialMedia";
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-const Profile = (props: {
+type ProfileProps = {
   className: string;
   key: number;
   member: ExecutiveMember | ProjectManager;
   class: string;
   col: number;
   carouselView: boolean;
-  profilePic: any;
+  profilePic: string;
   alt: string;
-}) => {
+};
+
+const Profile = (props: ProfileProps) => {
   const [containerState, setContainerState] = useState({
     hovered: false,
   });

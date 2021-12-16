@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProjectSection.css";
-import { OurProjects, Project } from "ProjectData";
+import { OurProjects } from "ProjectData";
 import FeaturedProject from "./FeaturedProject";
 
 function ProjectSection() {

@@ -18,7 +18,19 @@ const EventsSection = () => {
 
       <div className="upcomingEvents_container" style={{ textAlign: "left" }}>
         {upcomingEvents.map((event, i) => {
-          return <Event key={i} event={event} pastEvent={false} />;
+          return (
+            <Event
+              key={i}
+              title={event.title}
+              description={event.description}
+              date={event.date}
+              time={event.time}
+              image={event.image}
+              link={event.link}
+              linkTitleOverride={event.linkTitleOverride}
+              pastEvent={false}
+            />
+          );
         })}
       </div>
 
@@ -31,7 +43,19 @@ const EventsSection = () => {
 
       <div className="pastEvents_container" style={{ textAlign: "left" }}>
         {pastEvents.map((event, i) => {
-          return <Event key={i} event={event} pastEvent={true} />;
+          return (
+            <Event
+              key={i}
+              title={event.title}
+              description={event.description}
+              date={event.date}
+              time={event.time}
+              image={event.image}
+              link={event.link}
+              linkTitleOverride={event.linkTitleOverride}
+              pastEvent={true}
+            />
+          );
         })}
       </div>
     </div>

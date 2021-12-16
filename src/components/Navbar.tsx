@@ -1,33 +1,38 @@
 import "./Navbar.css";
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "images/tech-start-logo-white.png";
 import { Link as LinkScroll } from "react-scroll";
 
-function Header(props: any) {
+const Header = () => {
   const [navbarExpanded, setNavbarExpanded] = useState(false);
-  function toggleNavbarExpanded() {
-    setNavbarExpanded(!navbarExpanded);
-  }
-  function hideNavbar() {
-    setNavbarExpanded(false);
-    console.log("mouse");
-  }
 
-  function NavbarLink(props: any) {
-    return (
-      <li>
-        <a href="#">
-          <LinkScroll to={props.top} spy={true} offset={-80} duration={500}>
-            <Link onClick={hideNavbar} to={props.link}>
-              {" "}
-              {props.name}{" "}
-            </Link>
-          </LinkScroll>
-        </a>
-      </li>
-    );
-  }
+  const toggleNavbarExpanded = () => {
+    setNavbarExpanded(!navbarExpanded);
+  };
+
+  const hideNavbar = () => {
+    setNavbarExpanded(false);
+  };
+
+  type NavbarLinkProps = {
+    top: string;
+    link: string;
+    name: string;
+  };
+
+  const NavbarLink = (props: NavbarLinkProps) => (
+    <li>
+      <a href="#">
+        <LinkScroll to={props.top} spy={true} offset={-80} duration={500}>
+          <Link onClick={hideNavbar} to={props.link}>
+            {" "}
+            {props.name}{" "}
+          </Link>
+        </LinkScroll>
+      </a>
+    </li>
+  );
 
   return (
     <header className="navbar__container">
@@ -68,5 +73,5 @@ function Header(props: any) {
       <div className="navbar__placeholder"></div>
     </header>
   );
-}
+};
 export default Header;

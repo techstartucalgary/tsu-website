@@ -56,6 +56,7 @@ const Header = () => {
             <NavbarLink top="homePageTop" link="/" name="About" />
             <NavbarLink top="applyPageTop" link="/apply" name="Apply" />
             <NavbarLink top="docsPageTop" link="/resources" name="Resources" />
+            <NavbarLink top="teamPageTop" link="/team" name="Team" />
             {/* <NavbarLink
                         top="sparkPageTop"
                         link="/community"

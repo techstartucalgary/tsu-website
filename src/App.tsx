@@ -11,6 +11,7 @@ import Particles from "react-particles-js";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "components/ScrollToTop";
+import TeamPage from "pages/TeamPage";
 
 function App() {
   //
@@ -25,6 +26,9 @@ function App() {
         <Navbar />
         <div className="content">
           <Switch>
+            <Route path="/team">
+              <TeamPage />
+            </Route>
             <Route path="/resources">
               <DocsPage />
             </Route>

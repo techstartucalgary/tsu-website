@@ -148,26 +148,20 @@ function HomePage() {
         <Blobbie
           id={9}
           width={800}
-          transform="translate(-80%, -30%)"
+          transform="translate(-80%, -10%)"
           edge={true}
         />{" "}
         {/* translate is relative to previous div*/}
         <Blobbie
           id={2}
           width={150}
-          transform="translate(75vw, -50%)"
-          edge={false}
-        />
-        <Blobbie
-          id={2}
-          width={75}
-          transform="translate(85vw, 0%)"
+          transform="translate(80vw, 0)"
           edge={false}
         />
         <Blobbie
           id={7}
           width={350}
-          transform="translate(80vw, 60%)"
+          transform="translate(90vw, 30vw)"
           edge={false}
         />
         <SponsorSection />

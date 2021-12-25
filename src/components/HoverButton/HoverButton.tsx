@@ -1,5 +1,5 @@
-import "./HoverButton.css";
-import "../../App.css";
+import React from "react";
+import * as S from "./HoverButton.styles";
 
 type HoverButtonProps = {
   darkMode: boolean;
@@ -8,25 +8,18 @@ type HoverButtonProps = {
 };
 
 const HoverButton = (props: HoverButtonProps) => {
-  const HoverButtonClasses = ["regularText"];
-
-  if (props.darkMode === true) HoverButtonClasses.push("HoverButton--DarkMode");
-  else HoverButtonClasses.push("HoverButton");
-
   return (
-    <div className="HoverButtonDiv">
-      {
-        <a
-          href={props.link}
-          className={HoverButtonClasses.join(" ")}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {props.text}
-        </a>
-      }
-    </div>
+    <S.HoverButtonDiv>
+      <S.HoverButton
+        href={props.link}
+        darkMode={props.darkMode}
+        target="_blank"
+        rel="noreferrer"
+      >
+        {props.text}
+      </S.HoverButton>
+    </S.HoverButtonDiv>
   );
 };
 
-export default HoverButton;
+export default React.memo(HoverButton);

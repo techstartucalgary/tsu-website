@@ -1,8 +1,6 @@
 import { Project } from "ProjectData";
 import React, { useState } from "react";
-import { useTheme } from "styled-components";
 import "./FeaturedProject.css";
-import ProjectSection from "./ProjectSection";
 
 interface featuredProjectProps {
   project: Project;
@@ -34,7 +32,11 @@ function FeaturedProject(props: featuredProjectProps) {
 
       <div className={"project__content " + projectDescriptionClass}>
         {props.project.description}
-        <a className="project__button" href={props.project.github} target="_blank">
+        <a
+          className="project__button"
+          href={props.project.github}
+          target="_blank"
+        >
           <div>Visit Project →</div>
         </a>
       </div>
@@ -42,4 +44,4 @@ function FeaturedProject(props: featuredProjectProps) {
   );
 }
 
-export default FeaturedProject;
+export default React.memo(FeaturedProject);

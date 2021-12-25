@@ -10,7 +10,11 @@ type ApplySectionProps = {
 };
 
 const ApplySection = (props: ApplySectionProps) => (
-  <article className="applyPage__applicationContent" data-aos="fade-down">
+  <article
+    className="applyPage__applicationContent"
+    data-aos="fade-down"
+    data-aos-duration="1000"
+  >
     <li>
       <h3>{props.term}</h3>
       <h2>{props.role}</h2>

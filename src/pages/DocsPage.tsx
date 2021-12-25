@@ -5,9 +5,9 @@ import { lightTheme, darkTheme, GlobalStyles } from "types/Themes.js";
 import Emoji from "components/Emoji";
 import docsPage__logoblack from "images/tech-start-logo-black.png";
 import docsPage__logowhite from "images/tech-start-logo-white.png";
-import { faShower } from "@fortawesome/free-solid-svg-icons";
 import GuidesSection from "components/DocsPageSections/GuidesSection";
 import { Link as LinkScroll } from "react-scroll";
+import { motion } from "framer-motion/dist/framer-motion";
 
 function DocsPage() {
   const logo = { docsPage__logowhite, docsPage__logoblack };
@@ -149,7 +149,13 @@ function DocsPage() {
               </ul>
             </h2>
 
-            <img className="docsPage__logo" src={docsPage__logo}></img>
+            <motion.img
+              className="docsPage__logo"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 0.5 }}
+              src={docsPage__logo}
+            ></motion.img>
 
             {/* <h3 className="docsPage__title">techstart/docs</h3> */}
 

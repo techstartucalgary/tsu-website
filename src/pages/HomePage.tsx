@@ -4,8 +4,9 @@ import tsu_logo from "images/tech-start-logo-white.png";
 // CSS
 import "./HomePage.css";
 
+import { motion } from "framer-motion/dist/framer-motion";
+
 // React Components
-import TeamSection from "components/TeamSection/TeamSection";
 import NumberStat from "components/NumberStat";
 import Divider from "components/Divider";
 import Particle from "components/Particles";
@@ -21,11 +22,22 @@ function HomePage() {
       <header className="homePage__hero" id="homePageTop">
         <Particle />
         <div className="homePage__logoContainer">
-          <img className="homePage__logo" src={tsu_logo}></img>
+          <motion.img
+            className="homePage__logo"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5 }}
+            src={tsu_logo}
+          ></motion.img>
         </div>
-        <p className="homePage__headerSubtitle">
+        <motion.p
+          className="homePage__headerSubtitle"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+        >
           a tech club for dreamers and doers
-        </p>
+        </motion.p>
       </header>
 
       <section className="homePage__section homePage__section--aboutUs">
@@ -130,34 +142,6 @@ function HomePage() {
         </div>
         <Divider />
         <ProjectSection />
-      </section>
-
-      <section className="homePage__section homePage__section--team">
-        <Blobbie
-          id={2}
-          width={300}
-          transform="translate(80vw, 10%)"
-          edge={true}
-        />
-        <Blobbie
-          id={8}
-          width={250}
-          transform="translate(-10vw, 10vw)"
-          edge={false}
-        />
-        <Blobbie
-          id={7}
-          width={350}
-          transform="translate(-10vw, 80vw)"
-          edge={false}
-        />
-        <Blobbie
-          id={5}
-          width={250}
-          transform="translate(90vw, 80vw)"
-          edge={false}
-        />
-        <TeamSection />
       </section>
 
       <section className="homePage__section homePage__section--sponsors">

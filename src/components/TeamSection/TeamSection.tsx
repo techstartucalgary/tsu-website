@@ -1,10 +1,11 @@
+import React from "react";
+
 import Team from "./Team";
 import useViewport from "../UseViewport";
 import "./TeamSection.css";
 import "../../App.css";
 import { executiveTeam, projectManagers } from "./TeamInformation";
 import Divider from "components/Divider";
-import { Link } from "react-router-dom";
 import ApplyButtonPM from "./ApplyButtonPM";
 
 const TeamSection = () => {
@@ -55,9 +56,8 @@ const TeamSection = () => {
         </h2>
       </div>
       <Team teamMembers={projectManagers} defaultView={defaultView} />
-      
     </div>
   );
 };
 
-export default TeamSection;
+export default React.memo(TeamSection);

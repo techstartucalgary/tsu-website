@@ -15,4 +15,5 @@ export const TeamPage = styled.div`
   background-color: white;
   white-space: normal;
   overflow: hidden;
+  position: relative;
 `;

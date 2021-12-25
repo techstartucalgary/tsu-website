@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "images/tech-start-logo-white.png";
 import { Link as LinkScroll } from "react-scroll";
+import { motion } from "framer-motion/dist/framer-motion";
 
 const Header = () => {
   const [navbarExpanded, setNavbarExpanded] = useState(false);
@@ -47,12 +48,18 @@ const Header = () => {
         <a href="#">
           <LinkScroll to="homePageTop" spy={true} offset={-70} duration={500}>
             <Link to="/">
-              <img src={logo} alt="logo" className="navbar__logo" />
+              <motion.img
+                initial={{ y: -250 }}
+                animate={{ y: 0 }}
+                src={logo}
+                alt="logo"
+                className="navbar__logo"
+              />
             </Link>
           </LinkScroll>
         </a>
         <nav className="navbar__content ">
-          <ul>
+          <motion.ul initial={{ y: -250 }} animate={{ y: 0 }}>
             <NavbarLink top="homePageTop" link="/" name="About" />
             <NavbarLink top="applyPageTop" link="/apply" name="Apply" />
             <NavbarLink top="docsPageTop" link="/resources" name="Resources" />
@@ -62,7 +69,7 @@ const Header = () => {
                         link="/community"
                         name="Community"
                     /> */}
-          </ul>
+          </motion.ul>
         </nav>
         <label
           htmlFor="navbar__nav-toggle"

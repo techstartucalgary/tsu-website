@@ -58,11 +58,15 @@
 }
 
 .applyPage__accordionContent p {
-  margin: 0 15px 30px 15px;
+  margin: 0 15px 30px 0px;
   font-size: clamp(12px, calc(0.2vw + 12px), 16px);
   color: rgb(207, 207, 207);
   line-height: 23px;
   font-weight: 400;
+}
+
+.applyPage__accordionContent li {
+  margin-left: 10px;
 }
 
 .applyPage__projectIntroContainer {

@@ -52,7 +52,7 @@ function ApplyPage() {
           </h1>
           <Divider />
 
-          <div className="" data-aos="fade-down">
+          <div className="" data-aos="fade-down" data-aos-duration="1000">
             <p className="regularText regularText--largest">
               Tech Start is a collaborative software development club at the
               University of Calgary with a passion for startups. Every semester,
@@ -77,6 +77,7 @@ function ApplyPage() {
           src={joinProject}
           alt=""
           data-aos="fade-right"
+          data-aos-duration="1000"
         />
         <div className="applyPage__projectIntro">
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--white">

@@ -2,11 +2,11 @@ import React from "react";
 
 import Team from "./Team";
 import useViewport from "../UseViewport";
-import "./TeamSection.css";
+import * as S from "./TeamSection.styles";
 import "../../App.css";
 import { executiveTeam, projectManagers } from "./TeamInformation";
 import Divider from "components/Divider";
-import ApplyButtonPM from "./ApplyButtonPM";
+import HoverButton from "components/HoverButton/HoverButton";
 
 const TeamSection = () => {
   const { width } = useViewport(); // get screen width
@@ -23,8 +23,8 @@ const TeamSection = () => {
   }
 
   return (
-    <div className="TeamSection">
-      <div className="TeamSection__margin">
+    <S.TeamSection>
+      <S.TeamSection__margin>
         <h1 className="chonkyHeading chonkyHeading--lessMargin">Our Team</h1>
         <Divider />
 
@@ -36,7 +36,14 @@ const TeamSection = () => {
             Tech Start is only possible thanks to our team of talented,
             passionate leaders. Interested in joining us?
           </p>
-          <ApplyButtonPM />
+          <div style={{ justifyContent: "center", display: "flex" }}>
+            <HoverButton
+              darkMode={true}
+              link="/apply"
+              text={"Apply Now"}
+              linkIsInternal={true}
+            />
+          </div>
         </div>
 
         <h2
@@ -45,7 +52,7 @@ const TeamSection = () => {
         >
           <u>Executives</u>
         </h2>
-      </div>
+      </S.TeamSection__margin>
       <Team teamMembers={executiveTeam} defaultView={defaultView} />
       <div className="TeamSection__margin">
         <h2
@@ -56,7 +63,7 @@ const TeamSection = () => {
         </h2>
       </div>
       <Team teamMembers={projectManagers} defaultView={defaultView} />
-    </div>
+    </S.TeamSection>
   );
 };
 

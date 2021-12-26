@@ -57,6 +57,7 @@ const Event = (props: EventProps) => {
               darkMode={true}
               text={linkButtonText}
               link={props.link}
+              linkIsInternal={false}
             />
           </div>
         )}

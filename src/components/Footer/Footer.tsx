@@ -16,6 +16,7 @@ const Footer = () => (
       <HoverButton
         darkMode={false}
         link="http://eepurl.com/hnusUP"
+        linkIsInternal={false}
         text="Join our mailing list!"
       />
     </div>

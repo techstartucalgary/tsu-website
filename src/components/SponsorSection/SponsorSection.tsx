@@ -43,6 +43,7 @@ const SponsorSection = () => {
         <HoverButton
           darkMode={true}
           link="https://drive.google.com/file/d/1Es9AvtbGnGbvhsyh1Vp35qr8DptDiSMv/view"
+          linkIsInternal={false}
           text="Interested in sponsoring us? Check out our sponsorship package!"
         />
       </div>

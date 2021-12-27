@@ -4,7 +4,7 @@
  * All image sizes should be a 16:9 Aspect ratio
  */
 
-import { ProjectManager } from "components/TeamSection/TeamInformation";
+import { TeamMember } from "components/TeamSection/TeamInformation";
 
 import temp from "images/temp.jpg";
 import techStartWebsite from "images/project/techStartWebsite.png";

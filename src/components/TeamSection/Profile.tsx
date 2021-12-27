@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./Profile.css";
-import { ExecutiveMember, ProjectManager } from "./TeamInformation";
+import { TeamMember } from "./TeamInformation";
 import ProfileDescription from "./ProfileDescription";
 import SocialMedia, { SocialMediaColor } from "../SocialMedia/SocialMedia";
 
@@ -10,7 +10,7 @@ import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 type ProfileProps = {
   className: string;
   key: number;
-  member: ExecutiveMember | ProjectManager;
+  member: TeamMember;
   class: string;
   col: number;
   carouselView: boolean;

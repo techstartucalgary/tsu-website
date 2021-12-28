@@ -78,6 +78,10 @@ const Profile = (props: ProfileProps) => {
                     </div>
                 } */}
       </div>
+      <ProfileDescription
+        member={props.member}
+        isCarousel={props.carouselView}
+      />
       <div className={linkSectionClasses.join(" ")}>
         {props.member.linkedin.trim() !== "" && (
           <SocialMedia
@@ -94,10 +98,6 @@ const Profile = (props: ProfileProps) => {
           />
         )}
       </div>
-      <ProfileDescription
-        member={props.member}
-        isCarousel={props.carouselView}
-      />
     </div>
   );
 };

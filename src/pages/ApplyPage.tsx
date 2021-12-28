@@ -1,8 +1,7 @@
 import React, { useState } from "react";
+import { motion } from "framer-motion/dist/framer-motion";
+
 import "./ApplyPage.css";
-import gallery1 from "images/calgary.jpg";
-import gallery2 from "images/banana.jpg";
-import gallery3 from "images/temp.jpg";
 import projectExample from "images/teamphoto-techstartwebteam.png";
 import joinProject from "images/team.png";
 import ApplySection from "components/ApplySection";
@@ -20,16 +19,36 @@ function ApplyPage() {
       <header className="applyPage__showcase" id="applyPageTop">
         <div className="applyPage__spacing" data-aos="zoom-out-down"></div>
         <div className="applyPage__primary-wrapper">
-          <h1 className="applyPage__primary-title">APPLY</h1>
+          <motion.h1
+            className="applyPage__primary-title"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+          >
+            APPLY
+          </motion.h1>
           {/*<p className="applyPage__primary-description">
             Join a dynamic community dedicated to advancing software development
             and entrepreneurship at the University of Calgary.
   </p>*/}
-          <p className="applyPage__primary-description">
+          <motion.p
+            className="applyPage__primary-description"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1 }}
+          >
             Teams have been recruited! Teams will meet weekly, Thursdays at 5:30
             pm, at our dev nights. Join us for more general events! For more
-            information, join our Discord.
-          </p>
+            information, join our{" "}
+            {
+              <a href="https://discord.gg/Sxj5QrxRPk">
+                <b>
+                  <u>Discord</u>
+                </b>
+              </a>
+            }
+            .
+          </motion.p>
         </div>
       </header>
 
@@ -52,7 +71,7 @@ function ApplyPage() {
           </h1>
           <Divider />
 
-          <div className="" data-aos="fade-down" data-aos-duration="1000">
+          <div data-aos="fade-down" data-aos-duration="1000">
             <p className="regularText regularText--largest">
               Tech Start is a collaborative software development club at the
               University of Calgary with a passion for startups. Every semester,
@@ -63,6 +82,8 @@ function ApplyPage() {
               of your skill level. Join our community to fuel your learning and
               creativity, make awesome connections, and grow as a professional!
             </p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000">
             <a href="http://eepurl.com/hnusUP" target="_blank">
               <button className="applyPage__btn">
                 Sign up to our mailing list

@@ -7,6 +7,7 @@ import "../../App.css";
 import { executiveTeam, projectManagers } from "./TeamInformation";
 import Divider from "components/Divider";
 import HoverButton from "components/HoverButton/HoverButton";
+import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
 const TeamSection = () => {
   const { width } = useViewport(); // get screen width
@@ -38,7 +39,7 @@ const TeamSection = () => {
           </p>
           <div style={{ justifyContent: "center", display: "flex" }}>
             <HoverButton
-              darkMode={true}
+              mode={ButtonMode.GRADIENT}
               link="/apply"
               text={"Apply Now"}
               linkIsInternal={true}

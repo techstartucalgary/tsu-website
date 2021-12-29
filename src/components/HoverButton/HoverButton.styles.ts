@@ -1,13 +1,18 @@
 import styled from "styled-components/macro";
 
+export enum ButtonMode {
+  TRANSPARENT,
+  DARK,
+  GRADIENT,
+}
+
 interface HoverButtonStyleProps {
-  darkMode: boolean;
+  mode: ButtonMode;
 }
 
 export const HoverButton = styled.a<HoverButtonStyleProps>`
   float: right;
-  background: none;
-  border: 0.1rem solid;
+  border: ${(props) => props.mode === ButtonMode.TRANSPARENT && "0.1rem solid"};
   border-radius: 30px;
   padding: 1rem 1rem;
   font-size: clamp(0.8rem, calc(2vw + 0.2rem), 1rem);
@@ -15,11 +20,14 @@ export const HoverButton = styled.a<HoverButtonStyleProps>`
   text-decoration: none;
   text-align: center;
   color: ${(props) =>
-    props.darkMode ? "var(--primary-green)" : "var(--primary-black)"};
+    props.mode == ButtonMode.DARK ? "white" : "var(--primary-black)"};
+  background-color: ${(props) =>
+    props.mode == ButtonMode.DARK && "var(--primary-black)"};
+  background: ${(props) =>
+    props.mode == ButtonMode.GRADIENT &&
+    "linear-gradient(to top, var(--turquoise-blue), var(--turquoise-green))"};
 
   &: hover {
-    background-color: ${(props) =>
-      props.darkMode ? "var(--primary-green)" : ""};
     color: white;
     cursor: pointer;
     transform: translateY(-0.25rem);

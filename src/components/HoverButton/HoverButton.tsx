@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import * as S from "./HoverButton.styles";
 
 type HoverButtonProps = {
-  darkMode: boolean;
+  mode: S.ButtonMode;
   link: string;
   text: string;
   linkIsInternal: boolean;
@@ -11,7 +11,7 @@ type HoverButtonProps = {
 
 const HoverButtonComponent = (props: HoverButtonProps) => (
   <S.HoverButton
-    darkMode={props.darkMode}
+    mode={props.mode}
     target="_blank"
     rel="noreferrer"
     href={!props.linkIsInternal ? props.link : ""}

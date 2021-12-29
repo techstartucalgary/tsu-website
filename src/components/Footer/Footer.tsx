@@ -9,12 +9,13 @@ import {
   faLinkedin,
   faYoutube,
 } from "@fortawesome/free-brands-svg-icons";
+import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
 const Footer = () => (
   <div className="Footer">
     <div className="hoverButton">
       <HoverButton
-        darkMode={false}
+        mode={ButtonMode.TRANSPARENT}
         link="http://eepurl.com/hnusUP"
         linkIsInternal={false}
         text="Join our mailing list!"

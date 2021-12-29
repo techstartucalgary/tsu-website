@@ -6,6 +6,7 @@ import sponsorLogoMicrosoft from "images/sponsor-logo-microsoft.png";
 import "../../App.css";
 import HoverButton from "../HoverButton/HoverButton";
 import "./SponsorSection.css";
+import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
 const SponsorSection = () => {
   return (
@@ -41,7 +42,7 @@ const SponsorSection = () => {
 
       <div style={{ justifyContent: "center", display: "flex" }}>
         <HoverButton
-          darkMode={true}
+          mode={ButtonMode.DARK}
           link="https://drive.google.com/file/d/1Es9AvtbGnGbvhsyh1Vp35qr8DptDiSMv/view"
           linkIsInternal={false}
           text="Interested in sponsoring us? Check out our sponsorship package!"

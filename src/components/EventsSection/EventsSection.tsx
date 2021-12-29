@@ -1,11 +1,10 @@
 import { upcomingEvents, pastEvents } from "./EventInformation";
 import Event from "./Event/Event";
-import "./EventsSection.css";
-import "../../App.css";
+import * as S from "./EventsSection.styles";
 
 const EventsSection = () => {
   return (
-    <div className="eventsSection_container">
+    <S.EventsSectionContainer>
       <p className="regularText" style={{ marginBottom: "10%" }}>
         Every semester, Tech Start UCalgary organizes and hosts a range of
         events, both online and on campus. We cover a wide array of topics, from
@@ -16,7 +15,7 @@ const EventsSection = () => {
         the public - no club membership is required!
       </p>
 
-      <div className="upcomingEvents_container" style={{ textAlign: "left" }}>
+      <S.EventsContainer style={{ textAlign: "left" }}>
         {upcomingEvents.map((event, i) => {
           return (
             <Event
@@ -32,7 +31,7 @@ const EventsSection = () => {
             />
           );
         })}
-      </div>
+      </S.EventsContainer>
 
       <h2
         className="thiccSubheading"
@@ -41,7 +40,7 @@ const EventsSection = () => {
         Check out events we've hosted in the past:
       </h2>
 
-      <div className="pastEvents_container" style={{ textAlign: "left" }}>
+      <S.EventsContainer style={{ textAlign: "left" }}>
         {pastEvents.map((event, i) => {
           return (
             <Event
@@ -57,8 +56,8 @@ const EventsSection = () => {
             />
           );
         })}
-      </div>
-    </div>
+      </S.EventsContainer>
+    </S.EventsSectionContainer>
   );
 };
 

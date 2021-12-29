@@ -1,5 +1,6 @@
-import "./Event.css";
-import HoverButton from "../../HoverButton/HoverButton";
+import * as S from "./Event.styles";
+import HoverButton from "components/HoverButton/HoverButton";
+import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
 type EventProps = {
   key: number;
@@ -14,7 +15,7 @@ type EventProps = {
 };
 
 const Event = (props: EventProps) => {
-  const textClasses = ["babyHeading--green", "regularText", "eventText"];
+  const textClasses = ["babyHeading", "regularText"];
 
   const preventDragHandler = (e: any) => e.preventDefault();
 
@@ -23,18 +24,18 @@ const Event = (props: EventProps) => {
   const linkButtonText = props.linkTitleOverride || "Register";
 
   return (
-    <div className="event" data-aos={fadeDirection} data-aos-duration="2000">
+    <S.Event data-aos={fadeDirection} data-aos-duration="2000">
       {props.pastEvent ? (
-        <img
-          className="eventImgLeft"
+        <S.EventImage
+          imageLeft={true}
           src={props.image}
           key={props.key}
           alt={props.title}
           onDragStart={preventDragHandler}
         />
       ) : (
-        <img
-          className="eventImgRight"
+        <S.EventImage
+          imageLeft={false}
           src={props.image}
           key={props.key}
           alt={props.title}
@@ -42,27 +43,25 @@ const Event = (props: EventProps) => {
         />
       )}
 
-      <div className="eventText">
-        <p className="babyHeading babyHeading--green babyHeading--bolder">
-          {props.title}
-        </p>
+      <S.EventText>
+        <p className="babyHeading babyHeading--bolder">{props.title}</p>
         <p className={textClasses[1]}>{props.description}</p>
 
         {!props.pastEvent && (
-          <div className="datetime_Button_Div">
+          <S.DatetimeButtonDiv>
             <p className={textClasses[1]}>
               {props.date} | {props.time}
             </p>
             <HoverButton
-              darkMode={true}
+              mode={ButtonMode.TRANSPARENT}
               text={linkButtonText}
               link={props.link}
               linkIsInternal={false}
             />
-          </div>
+          </S.DatetimeButtonDiv>
         )}
-      </div>
-    </div>
+      </S.EventText>
+    </S.Event>
   );
 };
 

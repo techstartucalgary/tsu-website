@@ -1,46 +1,38 @@
 import { Project } from "ProjectData";
 import React, { useState } from "react";
-import "./FeaturedProject.css";
+import * as S from "./FeaturedProject.styles";
 
 interface featuredProjectProps {
   project: Project;
 }
 function FeaturedProject(props: featuredProjectProps) {
-  const [projectImageClass, setProjectImageClass] = useState("");
-  const [projectDescriptionClass, setprojectDescriptionClass] = useState("");
+  const [descriptionIsVisible, setDescriptionIsVisible] = useState(false);
 
   function mouseLeave() {
-    setProjectImageClass("");
-    setprojectDescriptionClass("");
+    setDescriptionIsVisible(false);
   }
   function mouseEnter() {
-    setProjectImageClass("project__image--transparent");
-    setprojectDescriptionClass("project__description--visible");
+    setDescriptionIsVisible(true);
   }
   return (
-    <div
-      className="project__container"
+    <S.ProjectContainer
       onMouseEnter={mouseEnter}
       onMouseLeave={mouseLeave}
       data-aos="zoom-in"
       data-aos-duration="2500"
     >
-      <img
+      <S.ProjectImage
         src={props.project.image}
-        className={"project__image " + projectImageClass}
+        isVisible={!descriptionIsVisible}
       />
 
-      <div className={"project__content " + projectDescriptionClass}>
+      <S.ProjectContent isVisible={descriptionIsVisible}>
         {props.project.description}
-        <a
-          className="project__button"
-          href={props.project.github}
-          target="_blank"
-        >
+        <S.ProjectButton href={props.project.github} target="_blank">
           <div>Visit Project →</div>
-        </a>
-      </div>
-    </div>
+        </S.ProjectButton>
+      </S.ProjectContent>
+    </S.ProjectContainer>
   );
 }
 

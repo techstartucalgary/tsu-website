@@ -1,4 +1,4 @@
-import "./SponsorLogo.css";
+import * as S from "./SponsorLogo.styles";
 
 type SponsorLogoProps = {
   sponsorLink: string;
@@ -7,9 +7,8 @@ type SponsorLogoProps = {
 
 const SponsorLogo = (props: SponsorLogoProps) => {
   return (
-    <a
+    <S.SponsorLogo
       href={props.sponsorLink}
-      className="sponsorLogo"
       target="blank"
       data-aos="zoom-in-up"
     >
@@ -20,7 +19,7 @@ const SponsorLogo = (props: SponsorLogoProps) => {
         data-aos-duration="1000"
         data-aos-easing="ease-in-out"
       />
-    </a>
+    </S.SponsorLogo>
   );
 };
 

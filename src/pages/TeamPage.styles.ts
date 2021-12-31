@@ -30,4 +30,10 @@ export const TeamPageHeader = styled.div`
       font:size: var(--regular-font);
     }
   }
+
+  & > div {
+    margin-top: 3vw;
+    justify-content: center;
+    display: flex;
+  }
 `;

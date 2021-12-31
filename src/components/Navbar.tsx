@@ -61,9 +61,9 @@ const Header = () => {
         <nav className="navbar__content ">
           <motion.ul initial={{ y: -250 }} animate={{ y: 0 }}>
             <NavbarLink top="homePageTop" link="/" name="About" />
+            <NavbarLink top="teamPageTop" link="/team" name="Team" />
             <NavbarLink top="applyPageTop" link="/apply" name="Apply" />
             <NavbarLink top="docsPageTop" link="/resources" name="Resources" />
-            <NavbarLink top="teamPageTop" link="/team" name="Team" />
             {/* <NavbarLink
                         top="sparkPageTop"
                         link="/community"

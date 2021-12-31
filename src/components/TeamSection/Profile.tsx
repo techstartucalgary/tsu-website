@@ -33,8 +33,6 @@ const Profile = (props: ProfileProps) => {
   profileClasses.push(props.class);
 
   const linkSectionClasses = ["LinksSection"];
-  // if (containerState.hovered) linkSectionClasses.push("LinkSection--Hover");
-  // if (props.col < 7) linkSectionClasses.push("LinkSection--Translate--Small");
   if (props.carouselView) {
     profileClasses.push("profile--carousel");
     linkSectionClasses.push("LinkSection--CarouselView");
@@ -63,21 +61,6 @@ const Profile = (props: ProfileProps) => {
           alt={props.alt}
           onDragStart={preventDragHandler}
         />
-
-        {/* {!props.carouselView &&
-                    <div className={linkSectionClasses.join(' ')} >
-                        {props.member.linkedin.trim() !== "" &&
-                            <SocialMedia
-                                className="Profile-SocialMedia"
-                                icon={faLinkedin}
-                                link={props.member.linkedin} />
-                        }
-                        <SocialMedia
-                            className="Profile-SocialMedia"
-                            icon={faEnvelope}
-                            link={props.member.email} />
-                    </div>
-                } */}
       </div>
       <div className={linkSectionClasses.join(" ")}>
         {props.member.linkedin.trim() !== "" && (

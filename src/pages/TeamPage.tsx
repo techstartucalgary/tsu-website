@@ -1,8 +1,8 @@
 import Blobbie from "components/Blobbie";
-import Divider from "components/Divider";
 import TeamSection from "components/TeamSection/TeamSection";
 import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
+import { motion } from "framer-motion/dist/framer-motion";
 import * as S from "./TeamPage.styles";
 
 const TeamPage = () => {
@@ -21,19 +21,34 @@ const TeamPage = () => {
         edge={false}
       />
       <S.TeamPageHeader>
-        <h1>Our Team</h1>
-        <p>
+        <motion.h1
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
+        >
+          Our Team
+        </motion.h1>
+        <motion.p
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1 }}
+        >
           Tech Start is only possible thanks to our team of talented, passionate
           leaders. Interested in joining us?
-        </p>
-        <div style={{ justifyContent: "center", display: "flex" }}>
+        </motion.p>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 1.5 }}
+        >
           <HoverButton
             mode={ButtonMode.GRADIENT}
+            glowOnHover={true}
             link="/apply"
             text={"Apply Now"}
             linkIsInternal={true}
           />
-        </div>
+        </motion.div>
       </S.TeamPageHeader>
       <TeamSection />
     </S.TeamPage>

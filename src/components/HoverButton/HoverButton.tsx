@@ -4,6 +4,7 @@ import * as S from "./HoverButton.styles";
 
 type HoverButtonProps = {
   mode: S.ButtonMode;
+  glowOnHover?: boolean;
   link: string;
   text: string;
   linkIsInternal: boolean;
@@ -12,6 +13,7 @@ type HoverButtonProps = {
 const HoverButtonComponent = (props: HoverButtonProps) => (
   <S.HoverButton
     mode={props.mode}
+    glowOnHover={props.glowOnHover}
     target="_blank"
     rel="noreferrer"
     href={!props.linkIsInternal ? props.link : ""}

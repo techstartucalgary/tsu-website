@@ -208,11 +208,7 @@ html {
 }
 
 .homePage__section--featuredProjects {
-  background-image: linear-gradient(
-    to bottom,
-    rgb(19, 19, 19),
-    rgb(26, 26, 26)
-  );
+  background-image: var(--dark-background);
   padding-top: 20px;
   text-align: center;
 }

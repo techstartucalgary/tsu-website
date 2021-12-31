@@ -1,5 +1,10 @@
 import styled, { css } from "styled-components/macro";
-import { SocialMediaColor } from "./SocialMedia";
+
+export enum SocialMediaColor {
+  Green = "Green",
+  Gradient = "Gradient",
+  Black = "Black",
+}
 
 const handleColor = (color: SocialMediaColor) => {
   switch (color) {

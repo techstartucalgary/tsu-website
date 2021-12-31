@@ -2,7 +2,8 @@ import { useState } from "react";
 import "./Profile.css";
 import { TeamMember } from "./TeamInformation";
 import ProfileDescription from "./ProfileDescription";
-import SocialMedia, { SocialMediaColor } from "../SocialMedia/SocialMedia";
+import SocialMedia from "components/SocialMedia/SocialMedia";
+import { SocialMediaColor } from "components/SocialMedia/SocialMedia.styles";
 
 import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -78,10 +79,6 @@ const Profile = (props: ProfileProps) => {
                     </div>
                 } */}
       </div>
-      <ProfileDescription
-        member={props.member}
-        isCarousel={props.carouselView}
-      />
       <div className={linkSectionClasses.join(" ")}>
         {props.member.linkedin.trim() !== "" && (
           <SocialMedia
@@ -98,6 +95,10 @@ const Profile = (props: ProfileProps) => {
           />
         )}
       </div>
+      <ProfileDescription
+        member={props.member}
+        isCarousel={props.carouselView}
+      />
     </div>
   );
 };

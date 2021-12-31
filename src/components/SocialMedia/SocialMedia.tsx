@@ -1,12 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { IconDefinition } from "@fortawesome/fontawesome-common-types";
-import { SocialMediaIcon } from "./SocialMedia.styles";
-
-export enum SocialMediaColor {
-  Green = "Green",
-  Gradient = "Gradient",
-  Black = "Black",
-}
+import { SocialMediaColor, SocialMediaIcon } from "./SocialMedia.styles";
 
 interface SocialMediaProps {
   color: SocialMediaColor;

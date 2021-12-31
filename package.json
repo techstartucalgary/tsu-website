@@ -24,7 +24,7 @@
     "@types/react-router-dom": "^5.1.7",
     "@types/react-scroll": "^1.8.2",
     "aos": "^2.3.4",
-    "axios": "^0.21.1",
+    "axios": "^0.21.4",
     "cors": "^2.8.5",
     "express": "^4.17.1",
     "framer-motion": "^4.1.17",
@@ -60,14 +60,19 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      ">0.3%",
+      "not ie 11",
       "not dead",
       "not op_mini all"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      ">0.3%",
+      "not ie 11",
+      "not dead",
+      "not op_mini all"
     ]
   },
   "devDependencies": {

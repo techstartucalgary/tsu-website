@@ -77,7 +77,7 @@ export const CurrentProjects: Project[] = [
     website: website,
     pmName: "Elgiz Abbasov",
     description:
-      "Born atiny fish in the ocean,try to survive and get stronger among other predators, be careful about the human waste in the ocean though!",
+      "Born a tiny fish in the ocean,try to survive and get stronger among other predators, be careful about the human waste in the ocean though!",
   },
   {
     id: 2,
@@ -86,6 +86,23 @@ export const CurrentProjects: Project[] = [
     website: website,
     pmName: "Zeyad Omran",
     description:
-      "a platform for students to connect with others in the same university to study together and make new connections",
+      "A platform for students to connect with others in the same university to study together and make new connections",
+  },
+  {
+    id: 3,
+    name: "Snowbot",
+    github: "",
+    website: website,
+    pmName: "Ali Siddiqi",
+    description: "A robot that autonomously clears snow on side walks",
+  },
+  {
+    id: 4,
+    name: "TechStart Ucalgary Website",
+    github: "https://github.com/Tech-Start-UCalgary/tsu-website",
+    website: website,
+    pmName: "Niyousha Raeesinejad",
+    description:
+      "Enhancement and maintenance of the TechStart UCalgary website",
   },
 ];

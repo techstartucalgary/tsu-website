@@ -30,7 +30,7 @@ export const HoverButton = styled.a<HoverButtonStyleProps>`
   &: hover {
     cursor: pointer;
     transform: translateY(-0.25rem);
-    box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4;
+    box-shadow: 0 5px 15px rgba(145, 92, 182, 0.4);
   }
 
   @media (max-width: 900px) {

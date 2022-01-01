@@ -5,8 +5,8 @@ function ApplySection(props: any) {
   return (
     <article className="applyPage__applicationContent" data-aos="fade-down">
       <li>
-        <h3>({props.term})</h3>
-        <h2>({props.role})</h2>
+        <h3>{props.term}</h3>
+        <h2>{props.role}</h2>
         <p>{props.description}</p>
       </li>
       {props.status === "open" ? (

@@ -13,7 +13,7 @@
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
   /* background: linear-gradient(180deg, rgb(26, 25, 25), rgb(40, 46, 51)); */
-  background: linear-gradient(to top, #456a8e -10%, #060c12 70%);
+  background: linear-gradient(to top,var(--turquoise-blue), var(--turquoise-green));
   /* background: linear-gradient(to top, var(--secondary-blue) -10%, var(--primary-black) 70%); */
 }
 
@@ -26,7 +26,7 @@
   right: 0;
   text-align: center;
   font-size: var(--regular-font);
-  color: white;
+  color: black;
   top: 30%;
   left: 10%;
   right: 10%;
@@ -49,8 +49,7 @@
 }
 
 .project__button {
-  border: 3px solid var(--primary-green);
-  background-color: rgb(43, 48, 53);
+  background-color: var(--secondary-grey);
   border-radius: 30px;
   width: 40%;
   height: 30px;
@@ -58,16 +57,29 @@
   margin: auto;
   margin-top: 20px;
   transition: 200ms;
+  display: block;
+  transition: 0.3s ease-in-out;
 }
 
 .project__content a {
   color: white;
   text-decoration: none;
 }
-.project__button:hover,
-.project__button:focus {
-  background-color: var(--primary-green);
+
+.project__button:hover{
+  box-shadow: 2px 4px #4dd6a8;
+  /*(--turquoise-green);*/
+  transform: translateY(-0.2em);
 }
+
+.project__content a:hover{
+  color: var(--turquoise-blue);
+}
+
+.project__button:focus{
+  background-color: black;
+}
+
 .project__image--transparent {
   opacity: 0;
 }

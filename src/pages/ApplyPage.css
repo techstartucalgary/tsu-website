@@ -50,7 +50,23 @@ html {
     background-position-x: -250px;
   }
 }
-
+.applyPage_mailinglist {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+  /*color: #fff; */
+  color: var(--clr-text, #fff);
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1rem;
+  padding: 0.7em 1.5em;
+  /*background-color: #6aeb50; */
+  background-color: var(--primary-green, #6aeb50);
+  border-radius: 0.1em;
+  box-shadow: 0 0 10px 0 #cfcfcf;
+  border: 2px solid transparent;
+  transition: transform 0.25s ease-in-out, opacity 0.25s linear;
+}
 .applyPage__btn {
   position: absolute;
   text-align: center;
@@ -85,6 +101,15 @@ html {
   color: white;
 }
 
+.applyPage_mailinglist:hover,
+.applyPage_mailinglist:focus,
+.applyPage_mailinglist::after {
+  transform: scale(1.03);
+  border: 2px solid var(--primary-green, rgb(106, 235, 80));
+  color: var(--primary-green, rgb(106, 235, 80));
+  background-color: white;
+  cursor: pointer;
+}
 .applyPage__btn:hover,
 .applyPage__btn:focus,
 .applyPage__btn::after {

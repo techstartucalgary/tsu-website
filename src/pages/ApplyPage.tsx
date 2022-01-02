@@ -64,7 +64,7 @@ function ApplyPage() {
               creativity, make awesome connections, and grow as a professional!
             </p>
             <a href="http://eepurl.com/hnusUP" target="_blank">
-              <button className="applyPage__btn">
+              <button className="applyPage_mailinglist">
                 Sign up to our mailing list
               </button>
             </a>

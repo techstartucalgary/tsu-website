@@ -1,9 +1,10 @@
-import { Project } from "ProjectData";
 import React, { useState } from "react";
 import * as S from "./FeaturedProject.styles";
 
 interface featuredProjectProps {
-  project: Project;
+  image?: string;
+  github: string;
+  description: string;
 }
 function FeaturedProject(props: featuredProjectProps) {
   const [descriptionIsVisible, setDescriptionIsVisible] = useState(false);
@@ -21,14 +22,11 @@ function FeaturedProject(props: featuredProjectProps) {
       data-aos="zoom-in"
       data-aos-duration="2500"
     >
-      <S.ProjectImage
-        src={props.project.image}
-        isVisible={!descriptionIsVisible}
-      />
+      <S.ProjectImage src={props.image} isVisible={!descriptionIsVisible} />
 
       <S.ProjectContent isVisible={descriptionIsVisible}>
-        {props.project.description}
-        <S.ProjectButton href={props.project.github} target="_blank">
+        {props.description}
+        <S.ProjectButton href={props.github} target="_blank">
           <div>Visit Project →</div>
         </S.ProjectButton>
       </S.ProjectContent>

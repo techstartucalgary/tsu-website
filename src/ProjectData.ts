@@ -98,11 +98,20 @@ export const CurrentProjects: Project[] = [
   },
   {
     id: 4,
-    name: "TechStart Ucalgary Website",
+    name: "TechStart Website",
     github: "https://github.com/Tech-Start-UCalgary/tsu-website",
     website: website,
     pmName: "Niyousha Raeesinejad",
     description:
       "Enhancement and maintenance of the TechStart UCalgary website",
+  },
+  {
+    id: 5,
+    name: "UofC Research",
+    github: "",
+    website: website,
+    pmName: "Davis Johnson",
+    description:
+      "A website dedicated for UoC students who are looking for research/project opportunities and want to do some extracurricular activities",
   },
 ];

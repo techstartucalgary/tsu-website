@@ -27,7 +27,7 @@ import ali_jpg from "./Images/ali.jpg";
 export type TeamMember = {
   id: number;
   name: string;
-  affiliation: string;
+  affiliation: string; // Affiliation refers to roles and projects for executives and PMs respectively
   image: string;
   linkedin: string;
   email: string;
@@ -142,7 +142,7 @@ projectManagers = [
   {
     id: 12,
     name: "Zeyad Omran",
-    affiliation: " ",
+    affiliation: "Amigo",
     image: zeyad_jpg,
     linkedin: "https://www.linkedin.com/in/zeyadomran",
     email: "mailto:zeyad.omran@ucalgary.ca",
@@ -150,7 +150,7 @@ projectManagers = [
   {
     id: 13,
     name: "Niyousha Raeesinejad",
-    affiliation: " ",
+    affiliation: "TechStart Website",
     image: niyousha_jpg,
     linkedin: "https://www.linkedin.com/in/niyoushar/",
     email: "mailto:niyousha.raeesinejad@ucalgary.ca",
@@ -158,7 +158,7 @@ projectManagers = [
   {
     id: 14,
     name: "Elgiz Abbasov",
-    affiliation: " ",
+    affiliation: "Aquavolution",
     image: elgiz_jpg,
     linkedin: "https://www.linkedin.com/in/elgizabbasov",
     email: "mailto:elgiz.abbasov1@ucalgary.ca",
@@ -166,7 +166,7 @@ projectManagers = [
   {
     id: 15,
     name: "Davis Johnson",
-    affiliation: " ",
+    affiliation: "UofC Research Website",
     image: davis_jpg,
     linkedin: "https://www.linkedin.com/in/davis-johnson-a86a841b0",
     email: "mailto:deivydasjohnson@gmail.com",
@@ -182,7 +182,7 @@ projectManagers = [
   {
     id: 17,
     name: "Ali Siddiqi",
-    affiliation: " ",
+    affiliation: "Snowbot",
     image: ali_jpg,
     linkedin: "https://www.linkedin.com/in/ali-siddiqi/",
     email: "mailto:ali.siddiqi@ucalgary.ca",

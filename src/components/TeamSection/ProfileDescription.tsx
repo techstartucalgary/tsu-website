@@ -1,23 +1,17 @@
-import "./ProfileDescription.css";
-import { TeamMember } from "./TeamInformation";
+import { ProfileDescriptionDiv } from "./ProfileDescription.styles";
 
 interface ProfileDescriptionProps {
   isCarousel: boolean;
-  member: TeamMember;
+  name: string;
+  affiliation: string;
 }
 
 const ProfileDescription = (props: ProfileDescriptionProps) => {
-  const profileDescClassName =
-    "ProfileDescription " +
-    (props.isCarousel ? "ProfileDescription--carousel" : "");
-
   return (
-    <div className={profileDescClassName}>
-      <h3 className="profileDescription__name">{props.member.name}</h3>
-      <h4 className="profileDescription__subtitle">
-        {props.member.affiliation}
-      </h4>
-    </div>
+    <ProfileDescriptionDiv>
+      <h3>{props.name}</h3>
+      <h4>{props.affiliation}</h4>
+    </ProfileDescriptionDiv>
   );
 };
 

@@ -8,14 +8,17 @@ export const ApplyButton = styled.div`
   color: var(--primary-green);
   background-color: var(--primary-black);
   border-radius: 30px;
+  margin-top: 10%;
   display: flex;
   transition: transform 250ms ease-in-out;
+  padding-top: 15px;
   padding-left: 2px;
   padding-right: 6px;
   justify-content: center;
   font-size: 20px;
   padding-top: 15px;
   cursor: pointer;
+  margin-bottom: -15%;
 
   &: hover {
     transform: scale(1.1);

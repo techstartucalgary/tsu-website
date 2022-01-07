@@ -85,7 +85,7 @@ function ApplyPage() {
           </div>
           <div data-aos="fade-up" data-aos-duration="1000">
             <a href="http://eepurl.com/hnusUP" target="_blank">
-              <button className="applyPage__btn">
+              <button className="applyPage_mailinglist">
                 Sign up to our mailing list
               </button>
             </a>

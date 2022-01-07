@@ -1,0 +1,47 @@
+.homePage__applyButton {
+  position: relative;
+  height: 65px;
+  width: 290px;
+  color: rgb(241, 244, 247);
+  background-color: rgb(6, 7, 6);
+  border-radius: 10px;
+  margin-top: 10%;
+  display: flex;
+  transition: transform 250ms ease-in-out;
+  /* transition: width 250ms ease-in-out, height 250ms ease-in-out, font-size 250ms ease-in-out, opacity 250ms linear; */
+  padding-left: 2px;
+  padding-right: 6px;
+  justify-content: center;
+  font-size: 20px;
+  border-radius: 3px;
+  padding-top: 15px;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.45);
+  cursor: pointer;
+  margin-bottom: -15%;
+}
+
+.homePage__applyButton:hover {
+  transform: scale(1.1);
+}
+
+.homePage__applyButtonArrow {
+  margin-left: 10px;
+  width: 20px;
+  animation: applyButtonArrow 1.4s ease-in-out infinite;
+  padding-top: 8px;
+}
+
+@keyframes applyButtonArrow {
+  0% {
+    transform: translateX(0px);
+  }
+  50% {
+    transform: translateX(20px);
+  }
+}
+
+.homePage__applyButtonText {
+  padding-top: 8px;
+  margin-left: 30px;
+  font-family: "Consolas", monaco, monospace;
+}

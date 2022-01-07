@@ -5,7 +5,7 @@ import { motion, useAnimation } from "framer-motion";
 
 const ApplyButton = () => {
   const animationControl = useAnimation();
-  const { inView, entry, ref } = useInView();
+  const { inView, ref } = useInView();
   if (inView) {
     animationControl.start({
       x: 0,

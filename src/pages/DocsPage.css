@@ -306,7 +306,7 @@ html {
   outline-style: solid;
 }
 .switch__label input:checked + .switch__span::after {
-  content: "\1F319";
+  content: "🌙";
   font-size: 17.5px;
   position: absolute;
   left: 55%;
@@ -314,7 +314,7 @@ html {
 }
 
 .switch__label input:not(:checked) + .switch__span::after {
-  content: "\1F506";
+  content: "🔆";
   font-size: 17.5px;
   position: absolute;
   right: 50%;

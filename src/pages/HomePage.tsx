@@ -63,9 +63,9 @@ function HomePage() {
             At Tech Start, our members learn to use new technologies, gain
             experience with professional development tools and methodologies,
             and master the art of collaboration. You do not need to know the
-            skills before hand! Here at Tech Start, we teach all nesssary skills
-            required for you to succeed here and in the industry. We're also the
-            top spot on campus to meet fellow tech enthusiasts, aspiring
+            skills before hand! Here at Tech Start, we teach all necessary
+            skills required for you to succeed here and in industry. We're also
+            the top spot on campus to meet fellow tech enthusiasts, aspiring
             entrepreneurs, and innovators.
           </p>
 

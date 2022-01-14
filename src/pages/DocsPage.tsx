@@ -8,6 +8,8 @@ import docsPage__logowhite from "images/tech-start-logo-white.png";
 import { faShower } from "@fortawesome/free-solid-svg-icons";
 import GuidesSection from "components/DocsPageSections/GuidesSection";
 import { Link as LinkScroll } from "react-scroll";
+import { faSun } from "@fortawesome/free-solid-svg-icons";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
 
 function DocsPage() {
   const logo = { docsPage__logowhite, docsPage__logoblack };
@@ -101,6 +103,8 @@ function DocsPage() {
               <label className="switch__label">
                 <input type="checkbox" onClick={() => themeToggler()}></input>
                 <span className="switch__span"></span>
+                
+                
               </label>
             </span>
 

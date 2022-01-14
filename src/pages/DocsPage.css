@@ -251,7 +251,7 @@ html {
   position: absolute;
   display: inline-block;
   height: 24px;
-  width: 55px;
+  width: 52px;
   top: 16px;
 }
 
@@ -263,8 +263,10 @@ html {
 
 .switch__span {
   position: absolute;
-
-  background-color: #4b4c4b;
+  background-color: #12b0e0;
+  outline-width: 2.5px;
+  outline-color: #097697;
+  outline-style: solid;
 
   cursor: pointer;
   top: 0;
@@ -276,25 +278,45 @@ html {
   border-top-right-radius: 35%;
   border-bottom-right-radius: 35%;
   transition: 0.4s;
+  display: inline;
 }
 
 .switch__span::before {
   content: "";
+  background-color: white;
 
   top: 3px;
   height: 18px;
   width: 18px;
-  background-color: white;
-
+  font-size: 21px;
   position: absolute;
+  bottom: 20px;
   border-radius: 50%;
   transition: 0.4s;
 }
 
 .switch__label input:checked + .switch__span::before {
-  transform: translateX(-16px);
+  transform: translateX(-21px);
 }
 
 .switch__label input:checked + .switch__span {
-  background-color: #bef992;
+  background-color: #6cbb5c;
+  outline-width: 2.5px;
+  outline-color: #5ba54d;
+  outline-style: solid;
+}
+.switch__label input:checked + .switch__span::after {
+  content: "\1F319";
+  font-size: 17.5px;
+  position: absolute;
+  left: 55%;
+  bottom: -2%;
+}
+
+.switch__label input:not(:checked) + .switch__span::after {
+  content: "\1F506";
+  font-size: 17.5px;
+  position: absolute;
+  right: 50%;
+  bottom: -3%;
 }

@@ -134,7 +134,7 @@ projectManagers = [
   {
     id: 11,
     name: "Mahdi Varposhti",
-    affiliation: " ",
+    affiliation: "NoteAId",
     image: mahdi_jpg,
     linkedin: "https://www.linkedin.com/in/mahdiva/",
     email: "mailto:mahdi.varposhti1@ucalgary.ca",
@@ -174,7 +174,7 @@ projectManagers = [
   {
     id: 16,
     name: "Vivian Huynh",
-    affiliation: " ",
+    affiliation: "Decision App",
     image: vivian_jpg,
     linkedin: "https://www.linkedin.com/in/vivian-huynh-yyc/",
     email: "mailto:vivian.huynh2@ucalgary.ca",

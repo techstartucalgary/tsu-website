@@ -114,4 +114,22 @@ export const CurrentProjects: Project[] = [
     description:
       "A website dedicated for UoC students who are looking for research/project opportunities and want to do some extracurricular activities",
   },
+  {
+    id: 6,
+    name: "NoteAId",
+    github: "https://github.com/Tech-Start-UCalgary/NoteAId",
+    website: website,
+    pmName: "Mahdi Varposhti",
+    description:
+      "A mobile app that helps students with studying for exams by summarizing their handwritten notes",
+  },
+  {
+    id: 7,
+    name: "Decision App",
+    github: "https://github.com/Tech-Start-UCalgary/NoteAId",
+    website: website,
+    pmName: "Mahdi Varposhti",
+    description:
+      "An app that helps groups make decisions when planning a social gathering. The first user of a group will generate a link to be shared with the rest of the group. Users can select their preferences and vote on their top activities.",
+  },
 ];

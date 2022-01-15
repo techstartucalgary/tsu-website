@@ -1,7 +1,6 @@
-import "./ApplySection.css";
+import { ApplicationContent } from "./ApplySection.styles";
 
 type ApplySectionProps = {
-  term: string;
   role: string;
   description: string;
   status: string;
@@ -10,13 +9,8 @@ type ApplySectionProps = {
 };
 
 const ApplySection = (props: ApplySectionProps) => (
-  <article
-    className="applyPage__applicationContent"
-    data-aos="fade-down"
-    data-aos-duration="1000"
-  >
+  <ApplicationContent data-aos="fade-down" data-aos-duration="1000">
     <li>
-      <h3>{props.term}</h3>
       <h2>{props.role}</h2>
       <p>{props.description}</p>
     </li>
@@ -27,6 +21,6 @@ const ApplySection = (props: ApplySectionProps) => (
     ) : (
       <h4 className="applyPage__closed">{props.closedStatus}</h4>
     )}
-  </article>
+  </ApplicationContent>
 );
 export default ApplySection;

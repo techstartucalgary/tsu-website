@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { motion } from "framer-motion/dist/framer-motion";
 
 import "./ApplyPage.css";
@@ -255,17 +255,15 @@ function ApplyPage() {
           <Divider />
           <ul className="applyPage__applicationUL">
             <ApplySection
-              term="1 to 2 semesters"
               role="Project Member"
               description="Work and grow as a developer, business strategist, or designer.
-                  Collaborate with team members on various platforms to build an exciting project."
+                  Collaborate with team members on various platforms to build an exciting project for 1 to 2 semesters."
               status="closed"
               closedStatus="Recruitment Finished"
               applicationLink="https://forms.gle/yxVK3NRCyTjn1TxQ7"
             />
 
             <ApplySection
-              term="1 to 2 semesters"
               role="Project Manager"
               description="Manage a project for 1 or 2 semesters and lead a team of 6-9
                     project members to create complex projects."
@@ -275,9 +273,8 @@ function ApplyPage() {
             />
 
             <ApplySection
-              term="1 academic year"
               role="Executive Team"
-              description="Work behind the scenes to organize project teams, run
+              description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               status="closed"
               closedStatus="Opens Spring 2022"

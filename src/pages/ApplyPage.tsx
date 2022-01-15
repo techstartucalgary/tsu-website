@@ -5,7 +5,6 @@ import "./ApplyPage.css";
 import projectExample from "images/teamphoto-techstartwebteam.png";
 import joinProject from "images/team.png";
 import ApplySection from "components/ApplySection";
-import ApplyFAQSection from "components/ApplyFAQSection";
 import Accordion from "../components/Apply/Accordion";
 import Blobbie from "components/Blobbie";
 import Divider from "components/Divider";
@@ -102,7 +101,7 @@ function ApplyPage() {
         />
         <div className="applyPage__projectIntro">
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--white">
-            Project FAQs
+            FAQ
           </h1>
           <Accordion
             title="What is a Tech Start project?"
@@ -152,8 +151,9 @@ function ApplyPage() {
               As a manager, you will be in charge of organizing, coordinating, and 
               leading the team to create complex projects! This involves leading
               weekly team meetings, leading the team vision, and guiding the project process. 
-              During the process, you will share and earn technical and professional 
-              experience!"
+              Build your portfolio, gain industry-like experience, and learn about the
+              product life cycle from initial design to testing and deployment. As a project manager, 
+              you will be given a guide along with support from the executive team to manage the timeline of your project, lead your team, and more!"
           />
           <Accordion
             title="Why join a project?"
@@ -205,6 +205,16 @@ function ApplyPage() {
               a concept, purpose, and scope for the project according to your interests and ideas!
               </br></br>
               "
+          />
+          <Accordion
+            title="What does the Executive Team do?"
+            active={active}
+            setActive={setActive}
+            description="The Executive Team runs behind the scenes to organize and maintain
+              project teams, run workshops and events, and much more. There are
+              many portfolios on the team, each essential to the carrying out
+              the entrepreneurial and inventive vision for the community. More
+              information on unique roles is in our application!"
           />
         </div>
         <div className="applyPage__container applyPage__projectExample">
@@ -274,34 +284,6 @@ function ApplyPage() {
               applicationLink="https://forms.gle/PQMbV5SWQfNe46GAA"
             />
           </ul>
-        </div>
-      </div>
-      <div className="applyPage__FAQ">
-        <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin chonkyHeading--white">
-          FAQ
-        </h1>
-        <Divider />
-        <div className="applyPage__FAQContents">
-          <ApplyFAQSection
-            question="What do the Project Managers do?"
-            answer="Consider applying to be a Project Manager! Take the opportunity to
-              pass on and earn experience leading in a professional and
-              experimental environment! Manage a project for 1 or 2 semesters and lead
-              a team of 6-9 developers to create complex projects! Build your
-              portfolio, gain industry-like experience, and learn about the
-              product life cycle from initial design to testing and deployment. 
-              As a project manager, you will be given a guide along with support from 
-              the executive team to manage the timeline of your project, lead your team, and more!
-              "
-          />
-          <ApplyFAQSection
-            question="What does the Executive Team do?"
-            answer="The Executive Team runs behind the scenes to organize and maintain
-              project teams, run workshops and events, and much more. There are
-              many portfolios on the team, each essential to the carrying out
-              the entrepreneurial and inventive vision for the community. More
-              information on unique roles is in our application!"
-          />
         </div>
       </div>
     </div>

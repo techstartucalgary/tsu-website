@@ -353,6 +353,7 @@ html {
   max-width: 1800px;
   justify-content: center;
   margin: 40px auto;
+  margin-bottom: 10%;
 }
 
 .applyPage__applicationUL {

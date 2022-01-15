@@ -9,6 +9,7 @@ import {
   faDiscord,
   faLinkedin,
   faYoutube,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
@@ -41,7 +42,11 @@ const Footer = () => (
         icon={faDiscord}
         link="https://discord.gg/Sxj5QrxRPk"
       />
-
+      <SocialMedia
+        color={SocialMediaColor.Black}
+        icon={faGithub}
+        link="https://github.com/Tech-Start-UCalgary"
+      />
       <SocialMedia
         color={SocialMediaColor.Black}
         icon={faLinkedin}

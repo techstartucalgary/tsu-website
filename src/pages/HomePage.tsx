@@ -62,11 +62,10 @@ function HomePage() {
           <p className="regularText">
             At Tech Start, our members learn to use new technologies, gain
             experience with professional development tools and methodologies,
-            and master the art of collaboration. You do not need to know the
-            skills before hand! Here at Tech Start, we teach all necessary
-            skills required for you to succeed here and in industry. We're also
-            the top spot on campus to meet fellow tech enthusiasts, aspiring
-            entrepreneurs, and innovators.
+            and master the art of collaboration. We give our members the support
+            and mentor ship to succeed here and in industry regardless of their
+            previous experiences. We're also the top spot on campus to meet
+            fellow tech enthusiasts, aspiring entrepreneurs, and innovators.
           </p>
 
           {/* <a

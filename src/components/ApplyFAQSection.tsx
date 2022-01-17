@@ -1,4 +1,4 @@
-import "./ApplyFAQSection.css";
+import * as S from "./ApplyFAQSection.styles";
 
 type ApplyFAQSectionProps = {
   question: string;
@@ -6,14 +6,10 @@ type ApplyFAQSectionProps = {
 };
 
 const ApplyFAQSection = (props: ApplyFAQSectionProps) => (
-  <article
-    className="applyPage_FAQSection"
-    data-aos="fade-right"
-    data-aos-duration="1000"
-  >
-    <h2 className="applyPage__FAQQuestion"> {props.question}</h2>
-    <p className="applyPage__FAQAnswer"> {props.answer}</p>
-  </article>
+  <S.FAQSection data-aos="fade-right" data-aos-duration="1000">
+    <S.FAQQuestion> {props.question}</S.FAQQuestion>
+    <S.FAQAnswer> {props.answer}</S.FAQAnswer>
+  </S.FAQSection>
 );
 
 export default ApplyFAQSection;

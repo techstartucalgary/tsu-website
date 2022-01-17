@@ -160,13 +160,13 @@ function ApplyPage() {
             active={active}
             setActive={setActive}
             description="
-            You will get
-            <li>to learn and exercise professional development and design practices </li>
-            <li>to experience the full cycle of developing a project from nothing </li>
-            <li>to experience and practice development, business, or design skills </li>
-            <li>to work collaboratively on a project and learn from those around you</li>
-            <li>to expand your portfolio by working on a team project</li>
-            <li>to make friendships and connections with UCalgary's best  </li>"
+            You will get to
+            <li>learn and exercise professional development and design practices </li>
+            <li>experience the full cycle of developing a project from nothing </li>
+            <li>experience and practice development, business, or design skills </li>
+            <li>work collaboratively on a project and learn from those around you</li>
+            <li>expand your portfolio by working on a team project</li>
+            <li>make friendships and connections with UCalgary's best  </li>"
           />
           <Accordion
             title="What is required to take part in a project?"

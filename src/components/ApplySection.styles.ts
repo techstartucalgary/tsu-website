@@ -8,28 +8,22 @@ export const ApplicationContent = styled.article`
   position: relative;
   margin: 1%;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 10%;
+  font-size: clamp(16px, calc(0.15vw + 16px), 22px);
+  line-height: 30px;
+  font-weight: 300;
 
-  & > h2 {
-    font-size: clamp(24px, calc(0.15vw + 24px), 30px);
-    font-weight: 500;
-    text-transform: capitalize;
-    line-height: 30px;
-  }
-
-  & > h3 {
-    font-size: clamp(16px, calc(0.15vw + 16px), 22px);
-    text-transform: capitalize;
-    line-height: 30px;
-    font-weight: 300;
-    margin-top: 10%;
-    margin-bottom: 0;
-  }
-
-  & > p {
-    font-size: clamp(16px, calc(0.15vw + 16px), 22px);
-    line-height: 30px;
-    font-weight: 300;
+  & > li > p {
+    margin-bottom: 10%;
+    @media (max-width: 1100px) {
+      margin-bottom: 20%;
+    }
+    @media (max-width: 800px) {
+      margin-bottom: 0;
+    }
+    @media (max-width: 400px) {
+      margin-bottom: 15%;
+    }
   }
 
   @media (min-width: 800px) {

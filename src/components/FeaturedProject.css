@@ -68,7 +68,7 @@
 
 @media (min-width: 400px){
   .project__button:hover{
-    box-shadow: 2px 4px #4dd6a8;
+    box-shadow: 2px 4px var(--primary-green);
     transform: translateY(-0.2em);
   }
 

@@ -252,6 +252,7 @@ html {
   display: inline-block;
   height: 24px;
   width: 52px;
+  cursor: pointer;
   top: 16px;
 }
 

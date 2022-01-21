@@ -286,8 +286,8 @@ html {
   background-color: white;
 
   top: 3px;
-  height: 18px;
-  width: 18px;
+  height: 18.5px;
+  width: 19px;
   font-size: 21px;
   position: absolute;
   bottom: 20px;
@@ -297,6 +297,7 @@ html {
 
 .switch__label input:checked + .switch__span::before {
   transform: translateX(-21px);
+  background-color: rgb(255, 213, 75);
 }
 
 .switch__label input:checked + .switch__span {
@@ -305,18 +306,21 @@ html {
   outline-color: #5ba54d;
   outline-style: solid;
 }
-.switch__label input:checked + .switch__span::after {
-  content: "🌙";
-  font-size: 17.5px;
+
+.faSun {
   position: absolute;
-  left: 55%;
-  bottom: -2%;
+  left: 9%;
+  top: 15%;
+  color: rgb(255, 213, 75);
+  font-size: 18px;
+  z-index: 1;
 }
 
-.switch__label input:not(:checked) + .switch__span::after {
-  content: "🔆";
-  font-size: 17.5px;
+.faMoon {
   position: absolute;
-  right: 50%;
-  bottom: -3%;
+  right: 14%;
+  top: 18%;
+  font-size: 15px;
+  color: white;
+  z-index: 1;
 }

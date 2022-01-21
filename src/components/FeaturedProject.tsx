@@ -35,7 +35,7 @@ function FeaturedProject(props: featuredProjectProps) {
       <div className={"project__content " + projectDescriptionClass}>
         {props.project.description}
         <a className="project__button" href={props.project.github} target="_blank">
-          <div>Visit Project →</div>
+          <div>Visit Project</div>
         </a>
       </div>
     </div>

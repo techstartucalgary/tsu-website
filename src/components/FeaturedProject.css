@@ -36,10 +36,16 @@
 
 @media (max-width: 400px) {
   .project__button {
-    position: center;
-    padding: 20px 20px;
-    font-size: 4.5vw;
-    transform: scale(0.5);
+  background-color: var(--secondary-grey);
+  border-radius: 30px;
+  width: 40%;
+  height: 30px;
+  padding-top: 7px;
+  margin: auto;
+  margin-top: 20px;
+  transition: 200ms;
+  display: block;
+  transition: 0.3s ease-in-out;
   }
 
   .project__content {

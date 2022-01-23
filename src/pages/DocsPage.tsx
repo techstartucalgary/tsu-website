@@ -103,8 +103,12 @@ function DocsPage() {
               {/*   <span className="switchSun"> <span style={theme === 'light' ? { color: '#ffc045' } : { color: 'grey' }}>☀</span></span>
               <div className="switchMoon"> <span style={theme === 'light' ? { color: 'grey' } : { color: 'white' }}>☾</span></div> */}
               <label className="switch__label">
-                <FontAwesomeIcon icon={faSun} className="faSun" />
-                <FontAwesomeIcon icon={faMoon} className="faMoon" />
+                {theme === "light" ? (
+                  <FontAwesomeIcon icon={faMoon} className="faMoon" />
+                ) : (
+                  <FontAwesomeIcon icon={faSun} className="faSun" />
+                )}
+
                 <input type="checkbox" onClick={() => themeToggler()}></input>
                 <span className="switch__span"></span>
               </label>

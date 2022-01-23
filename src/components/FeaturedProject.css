@@ -25,7 +25,7 @@
   bottom: 0;
   right: 0;
   text-align: center;
-  font-size: var(--regular-font);
+  font-size: 1rem;
   color: black;
   top: 30%;
   left: 10%;
@@ -36,15 +36,21 @@
 
 @media (max-width: 400px) {
   .project__button {
-    position: relative;
-    top: -30px;
-    padding: 20px 20px;
-    font-size: initial;
-    transform: scale(0.5);
+  background-color: var(--secondary-grey);
+  border-radius: 30px;
+  width: 40%;
+  height: 30px;
+  padding-top: 7px;
+  margin: auto;
+  margin-top: 20px;
+  transition: 200ms;
+  display: block;
+  transition: 0.3s ease-in-out;
   }
 
   .project__content {
     transform: translateY(-20px);
+    font-size: 3.5vw;
   }
 }
 
@@ -66,14 +72,15 @@
   text-decoration: none;
 }
 
-.project__button:hover{
-  box-shadow: 2px 4px #4dd6a8;
-  /*(--turquoise-green);*/
-  transform: translateY(-0.2em);
-}
+@media (min-width: 600px){
+  .project__button:hover{
+    box-shadow: 2px 4px var(--primary-green);
+    transform: translateY(-0.2em);
+  }
 
-.project__content a:hover{
-  color: var(--turquoise-blue);
+  .project__content a:hover{
+    color: var(--turquoise-blue);
+  }
 }
 
 .project__button:focus{

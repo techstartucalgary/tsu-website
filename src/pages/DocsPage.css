@@ -265,9 +265,6 @@ html {
 .switch__span {
   position: absolute;
   background-color: #12b0e0;
-  outline-width: 2.5px;
-  outline-color: #097697;
-  outline-style: solid;
 
   cursor: pointer;
   top: 0;
@@ -303,9 +300,6 @@ html {
 
 .switch__label input:checked + .switch__span {
   background-color: #6cbb5c;
-  outline-width: 2.5px;
-  outline-color: #5ba54d;
-  outline-style: solid;
 }
 
 .faSun {

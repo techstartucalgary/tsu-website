@@ -60,9 +60,11 @@ function HomePage() {
             software, design, and strategy to complete awesome projects.
           </p>
           <p className="regularText">
-            At Tech Start, our members learn new technologies, gain experience
-            with professional development tools and methodologies, and master
-            the art of collaboration. We're also the top spot on campus to meet
+            At Tech Start, our members learn to use new technologies, gain
+            experience with professional development tools and methodologies,
+            and master the art of collaboration. We give our members the support
+            and mentorship to succeed here and in industry regardless of their
+            previous experiences. We're also the top spot on campus to meet
             fellow tech enthusiasts, aspiring entrepreneurs, and innovators.
           </p>
 

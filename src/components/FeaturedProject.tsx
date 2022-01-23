@@ -27,7 +27,7 @@ function FeaturedProject(props: featuredProjectProps) {
       <S.ProjectContent isVisible={descriptionIsVisible}>
         {props.description}
         <S.ProjectButton href={props.github} target="_blank">
-          <div>Visit Project →</div>
+          <div>Visit Project</div>
         </S.ProjectButton>
       </S.ProjectContent>
     </S.ProjectContainer>

@@ -1,0 +1,123 @@
+.featuredProjectSection {
+  text-decoration: none;
+  color: white;
+}
+
+.featuredProject {
+  height: auto;
+}
+
+.project__container {
+  border-radius: 20px; /* Change this to image, probably */
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  /* background: linear-gradient(180deg, rgb(26, 25, 25), rgb(40, 46, 51)); */
+  background: linear-gradient(to top,var(--turquoise-blue), var(--turquoise-green));
+  /* background: linear-gradient(to top, var(--secondary-blue) -10%, var(--primary-black) 70%); */
+}
+
+.project__content {
+  /* We can change this, but position should be absolute still */
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+@media (max-width: 400px) {
+  .project__button {
+  background-color: var(--secondary-grey);
+  border-radius: 30px;
+  width: 40%;
+  height: 30px;
+  padding-top: 7px;
+  margin: auto;
+  margin-top: 20px;
+  transition: 200ms;
+  display: block;
+  transition: 0.3s ease-in-out;
+  }
+
+  .project__content {
+    transform: translateY(-20px);
+    font-size: 3.5vw;
+  }
+}
+
+.project__button {
+  background-color: var(--secondary-grey);
+  border-radius: 30px;
+  width: 40%;
+  height: 30px;
+  padding-top: 7px;
+  margin: auto;
+  margin-top: 20px;
+  transition: 200ms;
+  display: block;
+  transition: 0.3s ease-in-out;
+}
+
+.project__content a {
+  color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 600px){
+  .project__button:hover{
+    box-shadow: 2px 4px var(--primary-green);
+    transform: translateY(-0.2em);
+  }
+
+  .project__content a:hover{
+    color: var(--turquoise-blue);
+  }
+}
+
+.project__button:focus{
+  background-color: black;
+}
+
+.project__image--transparent {
+  opacity: 0;
+}
+.project__image {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  border-radius: 20px;
+  transition: 0.3s ease-in-out;
+}
+
+.project__description--visible {
+  opacity: 1;
+}
+.featuredProjectImage {
+  border-radius: 10px;
+  opacity: 1;
+}
+
+.featuredProjectDescription {
+  bottom: 150px;
+  position: relative;
+  opacity: 0;
+  padding: 10px;
+}
+
+.featuredProjectContainer {
+  height: 100%;
+  width: 100%;
+  background-color: lightsalmon;
+}

@@ -5,9 +5,12 @@ import { lightTheme, darkTheme, GlobalStyles } from "types/Themes.js";
 import Emoji from "components/Emoji";
 import docsPage__logoblack from "images/tech-start-logo-black.png";
 import docsPage__logowhite from "images/tech-start-logo-white.png";
+import { faSun } from "@fortawesome/free-solid-svg-icons";
+import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import GuidesSection from "components/DocsPageSections/GuidesSection";
 import { Link as LinkScroll } from "react-scroll";
-import { motion } from "framer-motion/dist/framer-motion";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { motion } from "framer-motion";
 
 function DocsPage() {
   const logo = { docsPage__logowhite, docsPage__logoblack };
@@ -96,9 +99,13 @@ function DocsPage() {
 
           <div className="docsPage__sections" id="docsPageTop">
             <span className="switch">
-              {/*   <span className="switchSun"> <span style={theme === 'light' ? { color: '#ffc045' } : { color: 'grey' }}>☀</span></span>
-              <div className="switchMoon"> <span style={theme === 'light' ? { color: 'grey' } : { color: 'white' }}>☾</span></div> */}
               <label className="switch__label">
+                {theme === "light" ? (
+                  <FontAwesomeIcon icon={faMoon} className="faMoon" />
+                ) : (
+                  <FontAwesomeIcon icon={faSun} className="faSun" />
+                )}
+
                 <input type="checkbox" onClick={() => themeToggler()}></input>
                 <span className="switch__span"></span>
               </label>

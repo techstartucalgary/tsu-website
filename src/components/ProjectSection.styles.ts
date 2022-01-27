@@ -1,4 +1,6 @@
-.projectSection {
+import styled from "styled-components/macro";
+
+export const ProjectSectionDiv = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
   margin-left: 20px;
@@ -9,10 +11,8 @@
   row-gap: 15px;
   padding-bottom: 10px;
   padding-top: 50px;
-}
 
-@media (min-width: 1575px) {
-  .projectSection {
+  @media (min-width: 1575px) {
     grid-template-columns: repeat(auto-fit, minmax(200px, 650px));
   }
-}
+`;

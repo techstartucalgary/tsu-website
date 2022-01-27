@@ -24,31 +24,23 @@ import ali_jpg from "./Images/ali.jpg";
 //import member_8 from './Images/Felix_Vaughan.jpg'
 //import member_9 from './Images/Darryl_Huët.jpg'
 
-export type ExecutiveMember = {
+export type TeamMember = {
   id: number;
   name: string;
-  role: string;
-  image: any;
-  linkedin: string;
-  email: string;
-};
-export type ProjectManager = {
-  id: number;
-  name: string;
-  project: string;
-  image: any;
+  affiliation: string; // Affiliation refers to roles and projects for executives and PMs respectively
+  image: string;
   linkedin: string;
   email: string;
 };
 
-export var executiveTeam: ExecutiveMember[];
-export var projectManagers: ProjectManager[];
+export var executiveTeam: TeamMember[];
+export var projectManagers: TeamMember[];
 
 executiveTeam = [
   {
     id: 0,
     name: "Joel Happ",
-    role: "Co-President",
+    affiliation: "Co-President",
     image: joel_jpg,
     linkedin: "https://www.linkedin.com/in/joel-happ/",
     email: "mailto:joel.happ1@ucalgary.ca",
@@ -56,7 +48,7 @@ executiveTeam = [
   {
     id: 1,
     name: "Naureen Othi",
-    role: "Co-President",
+    affiliation: "Co-President",
     image: naureen_jpg,
     linkedin: "https://www.linkedin.com/mwlite/in/naureen-othi",
     email: "mailto:naureen.othi@ucalgary.ca",
@@ -65,7 +57,7 @@ executiveTeam = [
   {
     id: 2,
     name: "Fedor Prokopchuk",
-    role: "VP Strategy",
+    affiliation: "VP Strategy",
     image: fedor_jpg,
     linkedin: "https://www.linkedin.com/in/fedor-prokopchuk-707668a6/",
     email: "mailto:fedor.prokopchuk@ucalgary.ca",
@@ -73,7 +65,7 @@ executiveTeam = [
   {
     id: 3,
     name: "Luke Hollinda",
-    role: "VP External",
+    affiliation: "VP External",
     image: luke_jpg,
     linkedin:
       "https://www.linkedin.com/in/luke-hollinda-89270a183/?originalSubdomain=ca",
@@ -82,7 +74,7 @@ executiveTeam = [
   {
     id: 4,
     name: "Amanda Nguyen",
-    role: "VP Community",
+    affiliation: "VP Community",
     image: amanda_jpg,
     linkedin: "https://www.linkedin.com/in/amanda-nguyen-b9146620b/",
     email: "mailto:amanda.nguyen1@ucalgary.ca",
@@ -90,7 +82,7 @@ executiveTeam = [
   {
     id: 5,
     name: "Tyler Chan",
-    role: "VP Communications",
+    affiliation: "VP Communications",
     image: tyler_jpg,
     linkedin: "https://www.linkedin.com/in/chan-tyler/",
     email: "mailto:tyler.chan@ucalgary.ca",
@@ -98,7 +90,7 @@ executiveTeam = [
   {
     id: 6,
     name: "Sareen Singh",
-    role: "VP Events",
+    affiliation: "VP Events",
     image: sareen_jpg,
     linkedin:
       "https://www.linkedin.com/in/sareen-singh-309b55173/?originalSubdomain=ca",
@@ -107,7 +99,7 @@ executiveTeam = [
   {
     id: 7,
     name: "Nurgul Akhshatayeva",
-    role: "VP Internal",
+    affiliation: "VP Internal",
     image: nurgul_jpg,
     linkedin: "https://www.linkedin.com/in/nurgul-akhshatayeva-6821b0205/",
     email: "mailto:nurgul.akhshatayeva@ucalgary.ca",
@@ -115,7 +107,7 @@ executiveTeam = [
   {
     id: 8,
     name: "Godwin Saure",
-    role: "VP Finance",
+    affiliation: "VP Finance",
     image: godwin_jpg,
     linkedin: "https://www.linkedin.com/in/godwin-saure/",
     email: "mailto:markosch.saure@ucalgary.ca",
@@ -123,7 +115,7 @@ executiveTeam = [
   {
     id: 9,
     name: "Terry Fu",
-    role: "VP Development",
+    affiliation: "VP Development",
     image: terry_jpg,
     linkedin: "https://www.linkedin.com/in/terryfu33/",
     email: "mailto:terry.fu@ucalgary.ca",
@@ -131,7 +123,7 @@ executiveTeam = [
   {
     id: 10,
     name: "Vidhi Soni",
-    role: "Jr VP External",
+    affiliation: "Jr VP External",
     image: vidhi_jpg,
     linkedin: "https://www.linkedin.com/in/vidhi-soni-5ba193196/",
     email: "mailto:vidhi.soni1@ucalgary.ca",
@@ -142,7 +134,7 @@ projectManagers = [
   {
     id: 11,
     name: "Mahdi Varposhti",
-    project: " ",
+    affiliation: "NoteAId",
     image: mahdi_jpg,
     linkedin: "https://www.linkedin.com/in/mahdiva/",
     email: "mailto:mahdi.varposhti1@ucalgary.ca",
@@ -150,7 +142,7 @@ projectManagers = [
   {
     id: 12,
     name: "Zeyad Omran",
-    project: " ",
+    affiliation: "Amigo",
     image: zeyad_jpg,
     linkedin: "https://www.linkedin.com/in/zeyadomran",
     email: "mailto:zeyad.omran@ucalgary.ca",
@@ -158,7 +150,7 @@ projectManagers = [
   {
     id: 13,
     name: "Niyousha Raeesinejad",
-    project: " ",
+    affiliation: "TechStart Website",
     image: niyousha_jpg,
     linkedin: "https://www.linkedin.com/in/niyoushar/",
     email: "mailto:niyousha.raeesinejad@ucalgary.ca",
@@ -166,7 +158,7 @@ projectManagers = [
   {
     id: 14,
     name: "Elgiz Abbasov",
-    project: " ",
+    affiliation: "Aquavolution",
     image: elgiz_jpg,
     linkedin: "https://www.linkedin.com/in/elgizabbasov",
     email: "mailto:elgiz.abbasov1@ucalgary.ca",
@@ -174,7 +166,7 @@ projectManagers = [
   {
     id: 15,
     name: "Davis Johnson",
-    project: " ",
+    affiliation: "UofC Research Website",
     image: davis_jpg,
     linkedin: "https://www.linkedin.com/in/davis-johnson-a86a841b0",
     email: "mailto:deivydasjohnson@gmail.com",
@@ -182,7 +174,7 @@ projectManagers = [
   {
     id: 16,
     name: "Vivian Huynh",
-    project: " ",
+    affiliation: "Decision App",
     image: vivian_jpg,
     linkedin: "https://www.linkedin.com/in/vivian-huynh-yyc/",
     email: "mailto:vivian.huynh2@ucalgary.ca",
@@ -190,10 +182,10 @@ projectManagers = [
   {
     id: 17,
     name: "Ali Siddiqi",
-    project: " ",
+    affiliation: "Snowbot",
     image: ali_jpg,
     linkedin: "https://www.linkedin.com/in/ali-siddiqi/",
     email: "mailto:ali.siddiqi@ucalgary.ca",
   },
-  //{ id: 18, name: "You?", project: "Apply now at techstartucalgary.com/apply!", image: blank_jpg, linkedin: " ", email: " " },
+  //{ id: 18, name: "You?", affiliation: "Apply now at techstartucalgary.com/apply!", image: blank_jpg, linkedin: " ", email: " " },
 ];

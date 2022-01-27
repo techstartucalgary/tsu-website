@@ -1,4 +1,6 @@
-.sponsorLogo {
+import styled from "styled-components/macro";
+
+export const SponsorLogo = styled.a`
   display: block;
   position: relative;
   transform: scale(1);
@@ -6,9 +8,8 @@
   text-decoration: none;
   margin: 20px;
   transition: 3s;
-}
 
-.sponsorLogo:hover {
-  /*transform: scale(1.2);*/
-  opacity: 1;
-}
+  &: hover {
+    opacity: 1;
+  }
+`;

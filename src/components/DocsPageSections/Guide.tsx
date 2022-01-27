@@ -1,11 +1,7 @@
-import React from "react";
-import { lightTheme, darkTheme, GlobalStyles } from "types/Themes.js";
-// Note: all CSS for this file is currently in TechGuides.css
-
 interface guideProps {
   guideName: string;
   link: string;
-  image: any;
+  image: string;
   description: string;
 }
 
@@ -14,16 +10,14 @@ interface guideProps {
  * @param props Should follow the interface above, guideProps
  * @returns A Guide React component
  */
-function Guide(props: guideProps) {
-  return (
-    <a href={props.link} className="guide" target="_blank">
-      <div className="guide__background">
-        <header className="guideName">{props.guideName}</header>
-        <img src={props.image} alt="" />
-        <p className="guideDescription">{props.description}</p>
-      </div>
-    </a>
-  );
-}
+const Guide = (props: guideProps) => (
+  <a href={props.link} className="guide" target="_blank">
+    <div className="guide__background">
+      <header className="guideName">{props.guideName}</header>
+      <img src={props.image} alt="" />
+      <p className="guideDescription">{props.description}</p>
+    </div>
+  </a>
+);
 
 export default Guide;

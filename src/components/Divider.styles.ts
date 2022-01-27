@@ -1,4 +1,6 @@
-.divider__gradient {
+import styled from "styled-components/macro";
+
+export const DividerGradient = styled.img`
   margin-left: auto;
   margin-right: auto;
   margin-top: -10px;
@@ -7,14 +9,8 @@
   width: min(30%, 250px);
   min-width: 175px;
   display: block;
-}
+`;
 
-.divider {
+export const DividerDiv = styled.div`
   width: 100%;
-}
-
-/* @media(max-width: 535px){
-    .divider__gradient{
-        margin-top: -40px;
-    }
-} */
+`;

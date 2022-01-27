@@ -1,17 +1,20 @@
-import React from "react";
-import "./ProjectSection.css";
-import { OurProjects, Project } from "ProjectData";
+import { ProjectSectionDiv } from "./ProjectSection.styles";
+import { PastProjects } from "ProjectData";
 import FeaturedProject from "./FeaturedProject";
 
-function ProjectSection() {
-  return (
-    <div className="projectSection">
-      <FeaturedProject project={OurProjects[0]} />
-      <FeaturedProject project={OurProjects[1]} />
-      <FeaturedProject project={OurProjects[2]} />
-      <FeaturedProject project={OurProjects[3]} />
-    </div>
-  );
-}
+const ProjectSection = () => (
+  <ProjectSectionDiv>
+    {PastProjects.map((project) => {
+      return (
+        <FeaturedProject
+          image={project.image}
+          github={project.github}
+          description={project.description}
+          key={project.id}
+        />
+      );
+    })}
+  </ProjectSectionDiv>
+);
 
 export default ProjectSection;

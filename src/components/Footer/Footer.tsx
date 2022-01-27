@@ -1,25 +1,30 @@
-import "./Footer.css";
+import * as S from "./Footer.styles";
 import "../../App.css";
-import SocialMedia, { SocialMediaColor } from "../SocialMedia/SocialMedia";
-import HoverButton from "../HoverButton/HoverButton";
+import SocialMedia from "components/SocialMedia/SocialMedia";
+import { SocialMediaColor } from "components/SocialMedia/SocialMedia.styles";
+import HoverButton from "components/HoverButton/HoverButton";
 import {
   faFacebook,
   faInstagram,
   faDiscord,
   faLinkedin,
   faYoutube,
+  faGithub,
 } from "@fortawesome/free-brands-svg-icons";
+import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
 const Footer = () => (
-  <div className="Footer">
-    <div className="hoverButton">
+  <S.Footer>
+    <S.HoverButtonDiv>
       <HoverButton
+        mode={ButtonMode.TRANSPARENT}
         link="http://eepurl.com/hnusUP"
+        linkIsInternal={false}
         text="Join our mailing list!"
       />
-    </div>
+    </S.HoverButtonDiv>
 
-    <div className="SocialMediaSection">
+    <S.SocialMediaSection>
       <SocialMedia
         color={SocialMediaColor.Black}
         icon={faFacebook}
@@ -37,7 +42,11 @@ const Footer = () => (
         icon={faDiscord}
         link="https://discord.gg/Sxj5QrxRPk"
       />
-
+      <SocialMedia
+        color={SocialMediaColor.Black}
+        icon={faGithub}
+        link="https://github.com/Tech-Start-UCalgary"
+      />
       <SocialMedia
         color={SocialMediaColor.Black}
         icon={faLinkedin}
@@ -48,11 +57,9 @@ const Footer = () => (
         icon={faYoutube}
         link="https://www.youtube.com/channel/UCIg1JPlWSXSwIdvqHKGiX9g"
       />
-    </div>
-    <p className="Copyright">
-      © {new Date().getFullYear()} Tech Start UCalgary
-    </p>
-  </div>
+    </S.SocialMediaSection>
+    <S.Copyright>© {new Date().getFullYear()} Tech Start UCalgary</S.Copyright>
+  </S.Footer>
 );
 
 export default Footer;

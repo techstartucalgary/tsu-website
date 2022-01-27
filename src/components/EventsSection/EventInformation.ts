@@ -7,7 +7,7 @@ export type Event = {
   description: string;
   date: string;
   time: string;
-  image: any;
+  image: string;
   link: string;
   // Will by default use "Register" as the link title. Use this prop to override that.
   linkTitleOverride?: string;

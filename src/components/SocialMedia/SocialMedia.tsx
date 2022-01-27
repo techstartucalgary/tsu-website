@@ -1,37 +1,18 @@
-import "./SocialMedia.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-export enum SocialMediaColor {
-  Green,
-  Gradient,
-  Black,
-}
+import { IconDefinition } from "@fortawesome/fontawesome-common-types";
+import { SocialMediaColor, SocialMediaIcon } from "./SocialMedia.styles";
 
 interface SocialMediaProps {
   color: SocialMediaColor;
   link: string;
-  icon: any;
+  icon: IconDefinition;
 }
 
 const SocialMedia = (props: SocialMediaProps) => {
-  const socialMediaClasses = ["socialMediaIcon"];
-  switch (props.color) {
-    case SocialMediaColor.Green:
-      socialMediaClasses.push("socialMediaIcon--green");
-      break;
-    case SocialMediaColor.Gradient:
-      socialMediaClasses.push("socialMediaIcon--gradient");
-      break;
-    case SocialMediaColor.Black:
-      break;
-    default:
-      break;
-  }
-
   return (
-    <a href={props.link} className={socialMediaClasses.join(" ")}>
+    <SocialMediaIcon color={props.color} href={props.link}>
       <FontAwesomeIcon icon={props.icon} size="3x" />
-    </a>
+    </SocialMediaIcon>
   );
 };
 

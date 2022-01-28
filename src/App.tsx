@@ -2,6 +2,8 @@ import HomePage from "pages/HomePage";
 import DocsPage from "pages/DocsPage";
 import SparkPage from "pages/SparkPage";
 import ApplyPage from "pages/ApplyPage";
+import TeamPage from "pages/TeamPage";
+
 import { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Navbar from "components/Navbar";
@@ -10,7 +12,6 @@ import "./App.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "components/ScrollToTop";
-import TeamPage from "pages/TeamPage";
 
 function App() {
   //

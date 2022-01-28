@@ -1,12 +1,10 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { motion } from "framer-motion/dist/framer-motion";
+
 import "./ApplyPage.css";
-import gallery1 from "images/calgary.jpg";
-import gallery2 from "images/banana.jpg";
-import gallery3 from "images/temp.jpg";
 import projectExample from "images/teamphoto-techstartwebteam.png";
 import joinProject from "images/team.png";
 import ApplySection from "components/ApplySection";
-import ApplyFAQSection from "components/ApplyFAQSection";
 import Accordion from "../components/Apply/Accordion";
 import Blobbie from "components/Blobbie";
 import Divider from "components/Divider";
@@ -20,16 +18,36 @@ function ApplyPage() {
       <header className="applyPage__showcase" id="applyPageTop">
         <div className="applyPage__spacing" data-aos="zoom-out-down"></div>
         <div className="applyPage__primary-wrapper">
-          <h1 className="applyPage__primary-title">APPLY</h1>
+          <motion.h1
+            className="applyPage__primary-title"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.5 }}
+          >
+            APPLY
+          </motion.h1>
           {/*<p className="applyPage__primary-description">
             Join a dynamic community dedicated to advancing software development
             and entrepreneurship at the University of Calgary.
   </p>*/}
-          <p className="applyPage__primary-description">
+          <motion.p
+            className="applyPage__primary-description"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1 }}
+          >
             Teams have been recruited! Teams will meet weekly, Thursdays at 5:30
             pm, at our dev nights. Join us for more general events! For more
-            information, join our Discord.
-          </p>
+            information, join our{" "}
+            {
+              <a href="https://discord.gg/Sxj5QrxRPk">
+                <b>
+                  <u>Discord</u>
+                </b>
+              </a>
+            }
+            .
+          </motion.p>
         </div>
       </header>
 
@@ -52,7 +70,7 @@ function ApplyPage() {
           </h1>
           <Divider />
 
-          <div className="" data-aos="fade-down">
+          <div data-aos="fade-down" data-aos-duration="1000">
             <p className="regularText regularText--largest">
               Tech Start is a collaborative software development club at the
               University of Calgary with a passion for startups. Every semester,
@@ -63,6 +81,8 @@ function ApplyPage() {
               of your skill level. Join our community to fuel your learning and
               creativity, make awesome connections, and grow as a professional!
             </p>
+          </div>
+          <div data-aos="fade-up" data-aos-duration="1000">
             <a href="http://eepurl.com/hnusUP" target="_blank">
               <button className="applyPage_mailinglist">
                 Sign up to our mailing list
@@ -77,10 +97,11 @@ function ApplyPage() {
           src={joinProject}
           alt=""
           data-aos="fade-right"
+          data-aos-duration="1000"
         />
         <div className="applyPage__projectIntro">
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--white">
-            Project FAQs
+            FAQ
           </h1>
           <Accordion
             title="What is a Tech Start project?"
@@ -130,21 +151,22 @@ function ApplyPage() {
               As a manager, you will be in charge of organizing, coordinating, and 
               leading the team to create complex projects! This involves leading
               weekly team meetings, leading the team vision, and guiding the project process. 
-              During the process, you will share and earn technical and professional 
-              experience!"
+              Build your portfolio, gain industry-like experience, and learn about the
+              product life cycle from initial design to testing and deployment. As a project manager, 
+              you will be given a guide along with support from the executive team to manage the timeline of your project, lead your team, and more!"
           />
           <Accordion
             title="Why join a project?"
             active={active}
             setActive={setActive}
             description="
-            You will get
-            <li>to learn and exercise professional development and design practices </li>
-            <li>to experience the full cycle of developing a project from nothing </li>
-            <li>to experience and practice development, business, or design skills </li>
-            <li>to work collaboratively on a project and learn from those around you</li>
-            <li>to expand your portfolio by working on a team project</li>
-            <li>to make friendships and connections with UCalgary's best  </li>"
+            You will get to
+            <li>learn and exercise professional development and design practices </li>
+            <li>experience the full cycle of developing a project from nothing </li>
+            <li>experience and practice development, business, or design skills </li>
+            <li>work collaboratively on a project and learn from those around you</li>
+            <li>expand your portfolio by working on a team project</li>
+            <li>make friendships and connections with UCalgary's best  </li>"
           />
           <Accordion
             title="What is required to take part in a project?"
@@ -183,6 +205,16 @@ function ApplyPage() {
               a concept, purpose, and scope for the project according to your interests and ideas!
               </br></br>
               "
+          />
+          <Accordion
+            title="What does the Executive Team do?"
+            active={active}
+            setActive={setActive}
+            description="The Executive Team runs behind the scenes to organize and maintain
+              project teams, run workshops and events, and much more. There are
+              many portfolios on the team, each essential to the carrying out
+              the entrepreneurial and inventive vision for the community. More
+              information on unique roles is in our application!"
           />
         </div>
         <div className="applyPage__container applyPage__projectExample">
@@ -223,17 +255,15 @@ function ApplyPage() {
           <Divider />
           <ul className="applyPage__applicationUL">
             <ApplySection
-              term="1 to 2 semesters"
               role="Project Member"
               description="Work and grow as a developer, business strategist, or designer.
-                  Collaborate with team members on various platforms to build an exciting project."
+                  Collaborate with team members on various platforms to build an exciting project for 1 to 2 semesters."
               status="closed"
               closedStatus="Recruitment Finished"
               applicationLink="https://forms.gle/yxVK3NRCyTjn1TxQ7"
             />
 
             <ApplySection
-              term="1 to 2 semesters"
               role="Project Manager"
               description="Manage a project for 1 or 2 semesters and lead a team of 6-9
                     project members to create complex projects."
@@ -243,43 +273,14 @@ function ApplyPage() {
             />
 
             <ApplySection
-              term="1 academic year"
               role="Executive Team"
-              description="Work behind the scenes to organize project teams, run
+              description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               status="closed"
               closedStatus="Opens Spring 2022"
               applicationLink="https://forms.gle/PQMbV5SWQfNe46GAA"
             />
           </ul>
-        </div>
-      </div>
-      <div className="applyPage__FAQ">
-        <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin chonkyHeading--white">
-          FAQ
-        </h1>
-        <Divider />
-        <div className="applyPage__FAQContents">
-          <ApplyFAQSection
-            question="What do the Project Managers do?"
-            answer="Consider applying to be a Project Manager! Take the opportunity to
-              pass on and earn experience leading in a professional and
-              experimental environment! Manage a project for 1 or 2 semesters and lead
-              a team of 6-9 developers to create complex projects! Build your
-              portfolio, gain industry-like experience, and learn about the
-              product life cycle from initial design to testing and deployment. 
-              As a project manager, you will be given a guide along with support from 
-              the executive team to manage the timeline of your project, lead your team, and more!
-              "
-          />
-          <ApplyFAQSection
-            question="What does the Executive Team do?"
-            answer="The Executive Team runs behind the scenes to organize and maintain
-              project teams, run workshops and events, and much more. There are
-              many portfolios on the team, each essential to the carrying out
-              the entrepreneurial and inventive vision for the community. More
-              information on unique roles is in our application!"
-          />
         </div>
       </div>
     </div>

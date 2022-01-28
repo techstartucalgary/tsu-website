@@ -16,7 +16,14 @@ import blobLottie15 from "images/lottie/bloblottie15.json";
 import Lottie from "lottie-react";
 import "./Blobbie.css";
 
-const Blobbie = (props: any) => {
+type BlobbieProps = {
+  edge: boolean;
+  id: number;
+  width: number;
+  transform: string;
+};
+
+const Blobbie = (props: BlobbieProps) => {
   const blobbies = {
     blobLottie1: blobLottie1,
     blobLottie2: blobLottie2,

@@ -1,23 +1,43 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import ApplySection from "./ApplySection";
-import "./ApplyButton.css";
+import * as S from "./ApplyButton.styles";
 
-function ApplyButton() {
+import { useInView } from "react-intersection-observer";
+import { motion, useAnimation } from "framer-motion";
+
+const ApplyButton = () => {
+  const animationControl = useAnimation();
+  const { inView, ref } = useInView();
+  if (inView) {
+    animationControl.start({
+      x: 0,
+      transition: {
+        duration: 0.7,
+        delay: 0.5,
+        type: "spring",
+        stiffness: 150,
+      },
+    });
+  }
+
   return (
-    <div className="homePage__applyButtonBox">
-      <Link to="/apply" className="homePage__applyButtonLink">
-        <div className="homePage__applyButton">
-          <div className="homePage__applyButtonArrow">
-            {" "}
-            <span>&#62;</span>
-            <span>&#62;</span>{" "}
-          </div>
-          <div className="homePage__applyButtonText"> theTeam.join()</div>
-        </div>
-      </Link>
+    <div ref={ref}>
+      <motion.div
+        className="homePage__applyButtonBox"
+        initial={{ x: "-100vw" }}
+        animate={animationControl}
+      >
+        <S.ApplyButtonLink to="/apply">
+          <S.ApplyButton>
+            <S.ApplyButtonArrow>
+              {" "}
+              <span>&#62;</span>
+              <span>&#62;</span>{" "}
+            </S.ApplyButtonArrow>
+            <S.ApplyButtonText> theTeam.join()</S.ApplyButtonText>
+          </S.ApplyButton>
+        </S.ApplyButtonLink>
+      </motion.div>
     </div>
   );
-}
+};
 
 export default ApplyButton;

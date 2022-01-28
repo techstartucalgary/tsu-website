@@ -1,15 +1,10 @@
-import React from "react";
 import dividerIMG from "images/divider.svg";
-import "./Divider.css";
+import * as S from "./Divider.styles";
 function Divider() {
   return (
-    <div className="divider">
-      <img
-        src={dividerIMG}
-        alt="gradient divider"
-        className="divider__gradient"
-      />
-    </div>
+    <S.DividerDiv>
+      <S.DividerGradient src={dividerIMG} alt="gradient divider" />
+    </S.DividerDiv>
   );
 }
 

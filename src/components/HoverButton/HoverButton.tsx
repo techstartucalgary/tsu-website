@@ -1,26 +1,36 @@
-import "./HoverButton.css";
-import "../../App.css";
+import React from "react";
+import { Link } from "react-router-dom";
+import * as S from "./HoverButton.styles";
 
-const HoverButton = (props: any) => {
-  const HoverButtonClasses = ["regularText"];
-
-  if (props.darkMode === true) HoverButtonClasses.push("HoverButton--DarkMode");
-  else HoverButtonClasses.push("HoverButton");
-
-  return (
-    <div className="HoverButtonDiv">
-      {
-        <a
-          href={props.link}
-          className={HoverButtonClasses.join(" ")}
-          target="_blank"
-          rel="noreferrer"
-        >
-          {props.text}
-        </a>
-      }
-    </div>
-  );
+type HoverButtonProps = {
+  mode: S.ButtonMode;
+  glowOnHover?: boolean;
+  link: string;
+  text: string;
+  linkIsInternal: boolean;
 };
 
-export default HoverButton;
+const HoverButtonComponent = (props: HoverButtonProps) => (
+  <S.HoverButton
+    mode={props.mode}
+    glowOnHover={props.glowOnHover}
+    target="_blank"
+    rel="noreferrer"
+    href={!props.linkIsInternal ? props.link : ""}
+  >
+    {props.text}
+  </S.HoverButton>
+);
+
+const HoverButton = (props: HoverButtonProps) => {
+  if (props.linkIsInternal) {
+    return (
+      <S.HoverButtonDiv>
+        <Link to={props.link}>{HoverButtonComponent(props)}</Link>
+      </S.HoverButtonDiv>
+    );
+  }
+  return <S.HoverButtonDiv>{HoverButtonComponent(props)}</S.HoverButtonDiv>;
+};
+
+export default React.memo(HoverButton);

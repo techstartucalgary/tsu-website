@@ -1,18 +1,25 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./NumberStat.css";
 import CountUp from "react-countup";
 import VisibilitySensor from "react-visibility-sensor";
 
-function NumberStat(props: any) {
+type NumberStatProps = {
+  number: number;
+  suffix?: string;
+  stat: string;
+};
+
+const NumberStat = (props: NumberStatProps) => {
   const [countupActive, setCountupActive] = useState(true);
   const [startNum, setStartNum] = useState(0);
 
-  function detectVisible(isVisible: boolean, start: any) {
+  const detectVisible = (isVisible: boolean, start: any) => {
     if (isVisible) {
       setCountupActive(false); // Disable countup, so it cannot change again
       start();
     }
-  }
+  };
+
   return (
     <div className="numberStat">
       <CountUp
@@ -41,6 +48,6 @@ function NumberStat(props: any) {
       <p className="numberStat__stat">{props.stat}</p>
     </div>
   );
-}
+};
 
 export default NumberStat;

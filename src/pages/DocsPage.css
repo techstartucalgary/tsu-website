@@ -251,7 +251,8 @@ html {
   position: absolute;
   display: inline-block;
   height: 24px;
-  width: 55px;
+  width: 52px;
+  cursor: pointer;
   top: 16px;
 }
 
@@ -263,8 +264,7 @@ html {
 
 .switch__span {
   position: absolute;
-
-  background-color: #4b4c4b;
+  background-color: #12b0e0;
 
   cursor: pointer;
   top: 0;
@@ -276,25 +276,46 @@ html {
   border-top-right-radius: 35%;
   border-bottom-right-radius: 35%;
   transition: 0.4s;
+  display: inline;
 }
 
 .switch__span::before {
   content: "";
-
-  top: 3px;
-  height: 18px;
-  width: 18px;
   background-color: white;
 
+  top: 3px;
+  height: 18.5px;
+  width: 19px;
+  font-size: 21px;
   position: absolute;
+  bottom: 20px;
   border-radius: 50%;
   transition: 0.4s;
 }
 
 .switch__label input:checked + .switch__span::before {
-  transform: translateX(-16px);
+  transform: translateX(-21px);
+  background-color: rgb(255, 213, 75);
 }
 
 .switch__label input:checked + .switch__span {
-  background-color: #bef992;
+  background-color: #6cbb5c;
+}
+
+.faSun {
+  position: absolute;
+  left: 9%;
+  top: 15%;
+  color: rgb(255, 213, 75);
+  font-size: 18px;
+  z-index: 1;
+}
+
+.faMoon {
+  position: absolute;
+  right: 14%;
+  top: 18%;
+  font-size: 15px;
+  color: white;
+  z-index: 1;
 }

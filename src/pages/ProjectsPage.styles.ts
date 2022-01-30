@@ -13,3 +13,22 @@ export const ProjectsPage = styled.div`
   overflow: hidden;
   position: relative;
 `;
+
+export const ProjectsPageHeader = styled.div`
+  display: flex;
+  background-image: var(--dark-background);
+  padding: 3em 0;
+  color: white;
+`;
+
+export const ProjectsPageHeaderItem = styled.div`
+  flex-basis: 50%;
+  flex-grow: 0;
+  flex-shrink: 0;
+  align-self: flex-end;
+  & > h1 {
+    font-size: 8vw;
+    text-align: left;
+    margin: 0;
+  }
+`;

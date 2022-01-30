@@ -2,6 +2,8 @@ import * as S from "./ProjectsPage.styles";
 import Lottie from "react-lottie";
 import teamproject from "../images/lottie/teamproject.json";
 import { motion } from "framer-motion/dist/framer-motion";
+import ProjectSection from "components/ProjectSection";
+import Divider from "components/Divider";
 
 const ProjectsPage = () => {
   const defaultOptions = {
@@ -34,6 +36,9 @@ const ProjectsPage = () => {
           </motion.h1>
         </S.ProjectsPageHeaderItem>
       </S.ProjectsPageHeader>
+      <h2 className="chonkyHeading chonkyHeading--lessMargin">Past Projects</h2>
+      <Divider />
+      <ProjectSection />
     </S.ProjectsPage>
   );
 };

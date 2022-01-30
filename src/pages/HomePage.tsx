@@ -114,16 +114,6 @@ const HomePage = () => (
       </div>
     </section>
 
-    <section className="homePage__section homePage__section--featuredProjects">
-      <div className="homePage__container homePage__container--noVert">
-        <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
-          Past Projects
-        </h2>
-      </div>
-      <Divider />
-      <ProjectSection />
-    </section>
-
     <section className="homePage__section homePage__section--sponsors">
       <Blobbie
         id={9}

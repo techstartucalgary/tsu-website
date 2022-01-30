@@ -3,6 +3,7 @@ import DocsPage from "pages/DocsPage";
 import SparkPage from "pages/SparkPage";
 import ApplyPage from "pages/ApplyPage";
 import TeamPage from "pages/TeamPage";
+import ProjectsPage from "pages/ProjectsPage";
 
 import { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -28,6 +29,9 @@ function App() {
           <Switch>
             <Route path="/team">
               <TeamPage />
+            </Route>
+            <Route path="/projects">
+              <ProjectsPage />
             </Route>
             <Route path="/resources">
               <DocsPage />

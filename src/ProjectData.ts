@@ -98,7 +98,7 @@ export const CurrentProjects: Project[] = [
     website: website,
     image: teamPlaceholder,
     pmName: "Ali Siddiqi",
-    description: "A robot that autonomously clears snow on side walks",
+    description: "A robot that autonomously clears snow on sidewalks",
   },
   {
     id: 4,
@@ -128,6 +128,6 @@ export const CurrentProjects: Project[] = [
     image: teamPlaceholder,
     pmName: "Mahdi Varposhti",
     description:
-      "An app that helps groups make decisions when planning a social gathering. The first user of a group will generate a link to be shared with the rest of the group. Users can select their preferences and vote on their top activities.",
+      "An app that helps groups make decisions when planning a social gathering. Users can select their preferences and vote on their top activities.",
   },
 ];

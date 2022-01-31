@@ -4,13 +4,11 @@
  * All image sizes should be a 16:9 Aspect ratio
  */
 
-import { TeamMember } from "components/TeamSection/TeamInformation";
-
-import temp from "images/temp.jpg";
 import techStartWebsite from "images/project/techStartWebsite.png";
 import supplyMe from "images/project/supplyMe4.png";
 import resumeTracker from "images/project/resumetracker.png";
 import oneHub from "images/project/oneHub.png";
+import aquavolution from "images/project/aquavolution.jpg";
 import teamPlaceholder from "images/project/team-placeholder.jpg";
 
 // Project type definition
@@ -76,7 +74,7 @@ export const CurrentProjects: Project[] = [
     name: "Aquavolution",
     github: "https://github.com/Tech-Start-UCalgary/Aquavolution",
     website: website,
-    image: teamPlaceholder,
+    image: aquavolution,
     pmName: "Elgiz Abbasov",
     description:
       "Born a tiny fish in the ocean,try to survive and get stronger among other predators, be careful about the human waste in the ocean though!",

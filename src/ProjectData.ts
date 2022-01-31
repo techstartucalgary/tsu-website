@@ -11,6 +11,7 @@ import techStartWebsite from "images/project/techStartWebsite.png";
 import supplyMe from "images/project/supplyMe4.png";
 import resumeTracker from "images/project/resumetracker.png";
 import oneHub from "images/project/oneHub.png";
+import teamPlaceholder from "images/project/team-placeholder.jpg";
 
 // Project type definition
 export type Project = {
@@ -75,6 +76,7 @@ export const CurrentProjects: Project[] = [
     name: "Aquavolution",
     github: "https://github.com/Tech-Start-UCalgary/Aquavolution",
     website: website,
+    image: teamPlaceholder,
     pmName: "Elgiz Abbasov",
     description:
       "Born a tiny fish in the ocean,try to survive and get stronger among other predators, be careful about the human waste in the ocean though!",
@@ -84,6 +86,7 @@ export const CurrentProjects: Project[] = [
     name: "Amigo",
     github: "https://github.com/Tech-Start-UCalgary/Amigo",
     website: website,
+    image: teamPlaceholder,
     pmName: "Zeyad Omran",
     description:
       "A platform for students to connect with others in the same university to study together and make new connections",
@@ -93,41 +96,36 @@ export const CurrentProjects: Project[] = [
     name: "Snowbot",
     github: "",
     website: website,
+    image: teamPlaceholder,
     pmName: "Ali Siddiqi",
     description: "A robot that autonomously clears snow on side walks",
   },
   {
     id: 4,
-    name: "TechStart Website",
-    github: "https://github.com/Tech-Start-UCalgary/tsu-website",
-    website: website,
-    pmName: "Niyousha Raeesinejad",
-    description:
-      "Enhancement and maintenance of the TechStart UCalgary website",
-  },
-  {
-    id: 5,
     name: "UofC Research",
     github: "",
     website: website,
+    image: teamPlaceholder,
     pmName: "Davis Johnson",
     description:
       "A website dedicated for UoC students who are looking for research/project opportunities and want to do some extracurricular activities",
   },
   {
-    id: 6,
+    id: 5,
     name: "NoteAId",
     github: "https://github.com/Tech-Start-UCalgary/NoteAId",
     website: website,
+    image: teamPlaceholder,
     pmName: "Mahdi Varposhti",
     description:
       "A mobile app that helps students with studying for exams by summarizing their handwritten notes",
   },
   {
-    id: 7,
+    id: 6,
     name: "Decision App",
     github: "https://github.com/Tech-Start-UCalgary/NoteAId",
     website: website,
+    image: teamPlaceholder,
     pmName: "Mahdi Varposhti",
     description:
       "An app that helps groups make decisions when planning a social gathering. The first user of a group will generate a link to be shared with the rest of the group. Users can select their preferences and vote on their top activities.",

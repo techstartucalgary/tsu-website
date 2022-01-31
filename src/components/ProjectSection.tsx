@@ -1,10 +1,14 @@
 import { ProjectSectionDiv } from "./ProjectSection.styles";
-import { PastProjects } from "ProjectData";
+import { Project } from "ProjectData";
 import FeaturedProject from "./FeaturedProject";
 
-const ProjectSection = () => (
+type ProjectSectionProps = {
+  projects: Project[];
+};
+
+const ProjectSection = (props: ProjectSectionProps) => (
   <ProjectSectionDiv>
-    {PastProjects.map((project) => {
+    {props.projects.map((project) => {
       return (
         <FeaturedProject
           image={project.image}

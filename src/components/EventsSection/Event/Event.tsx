@@ -21,13 +21,18 @@ const Event = (props: EventProps) => {
 
   const fadeDirection = props.pastEvent ? "fade-left" : "fade-right";
 
-  const linkButtonText = props.linkTitleOverride || "Register";
+  const linkButtonText =
+    props.linkTitleOverride || (props.pastEvent ? "Event Link" : "Register");
 
   return (
-    <S.Event data-aos={fadeDirection} data-aos-duration="2000">
+    <S.Event
+      data-aos={fadeDirection}
+      data-aos-duration="2000"
+      pastEvent={props.pastEvent}
+    >
       {props.pastEvent ? (
         <S.EventImage
-          imageLeft={true}
+          pastEvent={true}
           src={props.image}
           key={props.key}
           alt={props.title}
@@ -35,7 +40,7 @@ const Event = (props: EventProps) => {
         />
       ) : (
         <S.EventImage
-          imageLeft={false}
+          pastEvent={false}
           src={props.image}
           key={props.key}
           alt={props.title}
@@ -43,24 +48,25 @@ const Event = (props: EventProps) => {
         />
       )}
 
-      <S.EventText>
-        <p className="babyHeading babyHeading--bolder">{props.title}</p>
-        <p className={textClasses[1]}>{props.description}</p>
-
-        {!props.pastEvent && (
+      {!props.pastEvent && (
+        <S.EventText>
+          <p className="babyHeading babyHeading--bolder">{props.title}</p>
+          <p className={textClasses[1]}>{props.description}</p>
           <S.DatetimeButtonDiv>
             <p className={textClasses[1]}>
               {props.date} | {props.time}
             </p>
-            <HoverButton
-              mode={ButtonMode.TRANSPARENT}
-              text={linkButtonText}
-              link={props.link}
-              linkIsInternal={false}
-            />
+            <div>
+              <HoverButton
+                mode={ButtonMode.DARK}
+                text={linkButtonText}
+                link={props.link}
+                linkIsInternal={false}
+              />
+            </div>
           </S.DatetimeButtonDiv>
-        )}
-      </S.EventText>
+        </S.EventText>
+      )}
     </S.Event>
   );
 };

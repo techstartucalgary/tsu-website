@@ -20,7 +20,7 @@ upcomingEvents = [
   {
     title: "Funding the Next Unicorn",
     description:
-      "Are you interested in exploring the intersection between Venture Capital and Technology? Look no further than our new panel event, Funding the Next Unicorn. Funding the Next Unicorn is a panel event focused on exploring the role Venture Capital plays within the technology industry. Specifically the event topics will include an introduction into what VC is, how they find deal flow and evaluate potential investments, what they look for in early stage tech businesses, and what trends they find most interesting in the tech industry today.",
+      "This panel event focuses on exploring the role Venture Capital plays within the technology industry. Event topics include an introduction into what VC is, how they find deal flow and evaluate potential investments, what they look for in early stage tech businesses, and what trends they find most interesting in the tech industry today.",
     date: "Friday, February 4, 2022",
     time: "5:30 PM – 7:30 PM MST",
     image: Funding_the_Next_Unicorn_img,

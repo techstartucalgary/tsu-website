@@ -26,10 +26,11 @@ export const EventImage = styled.img<EventProps>`
   float: ${(props) => (props.pastEvent ? "right" : "left")};
   clear: ${(props) => (props.pastEvent ? "" : "right")};
 
-  @media (max-width: 750px) {
+  @media (max-width: 950px) {
     width: 100%;
     loat: none;
     margin: 0%;
+    margin-bottom: 5%;
   }
 `;
 

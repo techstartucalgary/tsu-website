@@ -15,7 +15,7 @@ const EventsSection = () => {
         the public - no club membership is required!
       </p>
 
-      <S.EventsContainer style={{ textAlign: "left" }}>
+      <S.EventsContainer pastEvent={false} style={{ textAlign: "left" }}>
         {upcomingEvents.map((event, i) => {
           return (
             <Event
@@ -40,7 +40,7 @@ const EventsSection = () => {
         Check out events we've hosted in the past:
       </h2>
 
-      <S.EventsContainer style={{ textAlign: "left" }}>
+      <S.EventsContainer pastEvent={true}>
         {pastEvents.map((event, i) => {
           return (
             <Event

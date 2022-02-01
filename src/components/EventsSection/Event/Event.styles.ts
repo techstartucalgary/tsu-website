@@ -1,10 +1,10 @@
 import styled from "styled-components/macro";
 
 interface EventProps {
-  imageLeft: boolean;
+  pastEvent: boolean;
 }
 
-export const Event = styled.div`
+export const Event = styled.div<EventProps>`
   background: linear-gradient(
     to top,
     var(--turquoise-blue),
@@ -13,14 +13,18 @@ export const Event = styled.div`
   padding: 3% 3%;
   margin-bottom: 5%;
   border-radius: 30px;
+
+  @media (min-width: 750px) {
+    flex: ${(props) => props.pastEvent && "1"};
+    margin: ${(props) => props.pastEvent && "auto 2%"};
+  }
 `;
 
 export const EventImage = styled.img<EventProps>`
-  margin: 2%;
-  width: 60%;
-
-  float: ${(props) => (props.imageLeft ? "left" : "right")};
-  clear: ${(props) => (props.imageLeft ? "right" : "")};
+  margin: ${(props) => (props.pastEvent ? "auto" : "2%")};
+  width: ${(props) => !props.pastEvent && "60%"};
+  float: ${(props) => (props.pastEvent ? "right" : "left")};
+  clear: ${(props) => (props.pastEvent ? "" : "right")};
 
   @media (max-width: 750px) {
     width: 100%;

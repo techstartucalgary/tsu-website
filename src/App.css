@@ -131,7 +131,7 @@
 .regularText--white {
   text-align: left;
   color: var(--secondary-grey);
-  font-size: var(--regular-font);
+  font-size: 1.2rem;
   margin: 20px 5px;
 }
 

@@ -1,18 +1,5 @@
 import styled from "styled-components/macro";
 
 export const ProjectSectionDiv = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
-  margin-left: 20px;
-  margin-right: 20px;
-  column-gap: 15px;
-  justify-content: center;
-  align-items: center;
-  row-gap: 15px;
-  padding-bottom: 10px;
-  padding-top: 50px;
-
-  @media (min-width: 1575px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 650px));
-  }
+  margin: 2% 5% 8% 5%;
 `;

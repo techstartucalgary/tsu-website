@@ -19,6 +19,7 @@ export const ProjectsPageHeader = styled.div`
   background-image: var(--dark-background);
   padding: 3em 0;
   color: white;
+  margin-bottom: 8%;
 `;
 
 export const ProjectsPageHeaderItem = styled.div`

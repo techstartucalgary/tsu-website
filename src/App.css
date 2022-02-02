@@ -16,7 +16,7 @@
   --thicc-subheading-size: 2.5rem;
   --babyHeading-size: 1.6rem;
   --chonky-header-weight: 900;
-  --regular-font: 1rem;
+  --regular-font: 1.2rem;
   font-family: "Inter", Tahoma, sans-serif;
 
   /* Section backgrounds*/
@@ -131,7 +131,7 @@
 .regularText--white {
   text-align: left;
   color: var(--secondary-grey);
-  font-size: 1.2rem;
+  font-size: var(--regular-font);
   margin: 20px 5px;
 }
 

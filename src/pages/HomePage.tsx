@@ -105,21 +105,14 @@ const HomePage = () => (
           idea to life. Each project team consists of software developers,
           business strategist, project designer, and a project manager.
         </p>
-        <p className="regularText">
-          Project ideas are formed and picked in two different ways by the
-          project manager. Focused projects start off with a specific idea or
-          concept from the get-go, then the team works together to brainstorm
-          adaptations and improvements to the idea. Open-Ended projects start in
-          mind with what technologies and platforms they will use and then based
-          on that, the team gets to pick a concept, purpose, and scope for the
-          project which interests them.
-        </p>
+
         <Blobbie
           id={2}
-          width={300}
-          transform="translate(75vw, -20%)"
+          width={100}
+          transform="translate(75vw, -10%)"
           edge={true}
         />
+
         <div className="homePage__applyButtonBox">
           <ApplyButton />
         </div>
@@ -139,6 +132,7 @@ const HomePage = () => (
         transform="translate(75vw, 0vw)"
         edge={false}
       />
+
       <div className="homePage__container">
         <h1 className="chonkyHeading chonkyHeading--lessMargin">Events</h1>
         <Divider />

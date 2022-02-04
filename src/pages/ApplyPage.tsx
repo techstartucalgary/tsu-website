@@ -177,7 +177,7 @@ function ApplyPage() {
             active={active}
             setActive={setActive}
             description="
-              Your Project Manager will pick one of the following ways the decide the team's project focus:
+              Your Project Manager will pick one of the following ways to decide the team's project focus:
               </br></br>
               <strong>Focused</strong></br>
               The project starts off with a specific idea or concept from the get-go. These ideas are pitched at the 

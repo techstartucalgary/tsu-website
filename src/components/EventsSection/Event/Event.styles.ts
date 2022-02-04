@@ -26,7 +26,7 @@ export const EventImage = styled.img<EventProps>`
   float: ${(props) => (props.pastEvent ? "right" : "left")};
   clear: ${(props) => (props.pastEvent ? "" : "right")};
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     width: 100%;
     loat: none;
     margin: 0%;
@@ -43,7 +43,8 @@ export const DatetimeButtonDiv = styled.div`
 `;
 
 export const EventText = styled.div`
-@media (max-width: 750px) {
-  padding: 0% 0%;
-  margin-top: 5%;
+  @media (max-width: 750px) {
+    padding: 0% 0%;
+    margin-top: 5%;
+  }
 `;

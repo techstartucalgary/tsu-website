@@ -104,21 +104,6 @@ function ApplyPage() {
             FAQ
           </h1>
           <Accordion
-            title="What is a Tech Start project?"
-            active={active}
-            setActive={setActive}
-            description="Our members form teams that gather together to
-                  brainstorm a project, and then work on that idea collaboratively 
-                  with 6-9 other creators over 1 or 2 semesters. During this time the
-                  projects evolve and shift, and our members get to experience
-                  the full lifecycle of bringing a complex project to life. Each
-                  team is lead by an experienced project manager who provides the
-                  expertise needed to execute on the team’s vision. We are also fortunate 
-                  enough to be supported by a number of companies who provide us with
-                  the resources necessary to build our projects and run events
-                  and workshops."
-          />
-          <Accordion
             title="What roles are there in a project?"
             active={active}
             setActive={setActive}

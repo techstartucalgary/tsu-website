@@ -92,6 +92,31 @@ const HomePage = () => (
           <ApplyButton />
         </div>
       </div>
+      <div className="homePage__container">
+        <h1 className="chonkyHeading chonkyHeading--lessMargin">
+          Techstart Projects.
+        </h1>
+        <Divider />
+        <p className="regularText" id="draft">
+          Our members form teams that gather together to brainstorm a project,
+          and then work on that idea collaboratively with 6~9 other creators
+          over the year. During this time, the projects evolve and shift, and
+          our members get to experience the full lifecycle of bringing a complex
+          idea to life. Each project team consists of software developers,
+          business strategist, project designer, and a project manager.
+        </p>
+
+        <Blobbie
+          id={2}
+          width={100}
+          transform="translate(75vw, -10%)"
+          edge={true}
+        />
+
+        <div className="homePage__applyButtonBox">
+          <ApplyButton />
+        </div>
+      </div>
     </section>
 
     <section className="homePage__section homePage__section--events">
@@ -107,6 +132,7 @@ const HomePage = () => (
         transform="translate(75vw, 0vw)"
         edge={false}
       />
+
       <div className="homePage__container">
         <h1 className="chonkyHeading chonkyHeading--lessMargin">Events</h1>
         <Divider />

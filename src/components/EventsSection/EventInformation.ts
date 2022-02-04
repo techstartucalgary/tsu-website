@@ -24,7 +24,7 @@ upcomingEvents = [
     date: "Friday, February 4, 2022",
     time: "5:30 PM – 7:30 PM MST",
     image: Funding_the_Next_Unicorn_img,
-    link: "https://docs.google.com/forms/d/e/1FAIpQLSfaJbGyalJgL0HgTasWNiwYhaoRv8sIflCGFAyg0pC4rHwYuw/viewform",
+    link: "https://linktr.ee/techstartuofc",
   },
 ];
 

@@ -238,3 +238,15 @@ html {
   padding-bottom: 8em;
   /*z-index: -2;*/
 }
+
+.homePage__section--projects {
+  background-image: var(--dark-background);
+  color: white;
+  padding: 3em 0em 8em 0em;
+}
+
+.homePage__section--projectButtonDiv {
+  margin-top: 5%;
+  display: flex;
+  justify-content: center;
+}

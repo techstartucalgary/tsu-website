@@ -10,6 +10,8 @@ import Blobbie from "components/Blobbie";
 import EventsSection from "components/EventsSection/EventsSection";
 import ProjectSection from "components/ProjectSection";
 import ApplyButton from "components/ApplyButton";
+import HoverButton from "components/HoverButton/HoverButton";
+import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
 const HomePage = () => (
   <div className="homePage">
@@ -56,7 +58,7 @@ const HomePage = () => (
       />
       <div className="homePage__container">
         <h1 className="chonkyHeading chonkyHeading--lessMargin">
-          We're the innovators on campus.
+          We're the innovators on campus!
         </h1>
         <Divider />
         <p className="regularText" id="draft">
@@ -92,12 +94,14 @@ const HomePage = () => (
           <ApplyButton />
         </div>
       </div>
+    </section>
+    <section className="homePage__section--projects">
       <div className="homePage__container">
-        <h1 className="chonkyHeading chonkyHeading--lessMargin">
-          Techstart Projects.
+        <h1 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
+          TechStart Projects
         </h1>
         <Divider />
-        <p className="regularText" id="draft">
+        <p className="regularText regularText--white" id="draft">
           Our members form teams that gather together to brainstorm a project,
           and then work on that idea collaboratively with 6~9 other creators
           over the year. During this time, the projects evolve and shift, and
@@ -105,20 +109,18 @@ const HomePage = () => (
           idea to life. Each project team consists of software developers,
           business strategist, project designer, and a project manager.
         </p>
-
-        <Blobbie
-          id={2}
-          width={100}
-          transform="translate(75vw, -10%)"
-          edge={true}
-        />
-
-        <div className="homePage__applyButtonBox">
-          <ApplyButton />
+        <div className="homePage__section--projectButtonDiv">
+          <HoverButton
+            mode={ButtonMode.GRADIENT}
+            glowOnHover={true}
+            link={"/projects"}
+            text={"Check out our projects!"}
+            linkIsInternal={true}
+          />
         </div>
       </div>
     </section>
-
+    <Blobbie id={2} width={100} transform="translate(75vw, -10%)" edge={true} />
     <section className="homePage__section homePage__section--events">
       <Blobbie
         id={3}

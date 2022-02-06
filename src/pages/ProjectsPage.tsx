@@ -20,21 +20,19 @@ const ProjectsPage = () => {
     <S.ProjectsPage id="projectsPageTop">
       <S.ProjectsPageHeader>
         <S.ProjectsPageHeaderItem>
-          <Lottie
-            options={defaultOptions}
-            height={"35vw"}
-            width={"35vw"}
-            style={{ margin: "0px 0px 0px 25%" }}
-          />
+          <S.LottieDiv>
+            <Lottie options={defaultOptions} />
+          </S.LottieDiv>
         </S.ProjectsPageHeaderItem>
         <S.ProjectsPageHeaderItem>
-          <motion.h1
+          <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            Our <br></br>Projects
-          </motion.h1>
+            <h1>Our </h1>
+            <h1>Projects</h1>
+          </motion.div>
         </S.ProjectsPageHeaderItem>
       </S.ProjectsPageHeader>
       <h2 className="chonkyHeading chonkyHeading--lessMargin">

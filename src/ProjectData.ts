@@ -5,11 +5,12 @@
  */
 
 import techStartWebsite from "images/project/techStartWebsite.png";
-import supplyMe from "images/project/supplyMe4.png";
+import supplyMe from "images/project/supplyMe.png";
 import resumeTracker from "images/project/resumetracker.png";
 import oneHub from "images/project/oneHub.png";
 import aquavolution from "images/project/aquavolution.jpg";
 import snowbot from "images/project/snowbot.jpg";
+import uofc_research from "images/project/uofc-research.png";
 import teamPlaceholder from "images/project/team-placeholder.jpg";
 
 // Project type definition
@@ -45,7 +46,7 @@ export const PastProjects: Project[] = [
     website: website,
     image: oneHub,
     description:
-      "A hub for your social media that shows you info and stats from your favorite social media sites. Switching apps is so 2020!",
+      "A hub for your social media that shows you info and stats from your favorite sites. Switching apps is so 2020!",
   },
   {
     id: 2,
@@ -104,7 +105,7 @@ export const CurrentProjects: Project[] = [
     name: "UofC Research",
     github: "",
     website: website,
-    image: teamPlaceholder,
+    image: uofc_research,
     pmName: "Davis Johnson",
     description:
       "A website dedicated for UoC students who are looking for extracurricular activities",

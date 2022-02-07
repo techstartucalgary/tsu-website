@@ -35,13 +35,15 @@ const ProjectsPage = () => {
           </motion.div>
         </S.ProjectsPageHeaderItem>
       </S.ProjectsPageHeader>
-      <h2 className="chonkyHeading chonkyHeading--lessMargin">
+      <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
         Current Projects
       </h2>
       <Divider />
       <ProjectSection projects={CurrentProjects} />
 
-      <h2 className="chonkyHeading chonkyHeading--lessMargin">Past Projects</h2>
+      <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
+        Past Projects
+      </h2>
       <Divider />
       <ProjectSection projects={PastProjects} />
     </S.ProjectsPage>

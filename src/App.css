@@ -25,6 +25,12 @@
     rgb(19, 19, 19),
     rgb(26, 26, 26)
   );
+
+  --gradient-background: linear-gradient(
+    to bottom,
+    var(--turquoise-blue),
+    var(--turquoise-green)
+  );
 }
 
 .chonkyHeading {

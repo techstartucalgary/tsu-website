@@ -8,7 +8,7 @@ export const ProjectsPage = styled.div`
   line-height: 1.5;
   height: 100%;
   padding: 0;
-  background-color: white;
+  background-image: var(--dark-background);
   white-space: normal;
   overflow: hidden;
   position: relative;
@@ -19,10 +19,10 @@ export const ProjectsPageHeader = styled.div`
     display: flex;
   }
 
-  background-image: var(--dark-background);
+  background-color: white;
   padding: 5em 0;
-  color: white;
-  margin-bottom: 8%;
+  color: var(--secondary-grey);
+  margin-bottom: 10%;
 `;
 
 export const ProjectsPageHeaderItem = styled.div`

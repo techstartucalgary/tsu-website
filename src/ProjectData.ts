@@ -5,10 +5,12 @@
  */
 
 import techStartWebsite from "images/project/techStartWebsite.png";
-import supplyMe from "images/project/supplyMe4.png";
+import supplyMe from "images/project/supplyMe.png";
 import resumeTracker from "images/project/resumetracker.png";
 import oneHub from "images/project/oneHub.png";
 import aquavolution from "images/project/aquavolution.jpg";
+import snowbot from "images/project/snowbot.jpg";
+import uofc_research from "images/project/uofc-research.png";
 import teamPlaceholder from "images/project/team-placeholder.jpg";
 
 // Project type definition
@@ -44,7 +46,7 @@ export const PastProjects: Project[] = [
     website: website,
     image: oneHub,
     description:
-      "A hub for your social media that shows you info and stats from your favorite social media sites. Switching apps is so 2020!",
+      "A hub for your social media that shows you info and stats from your favorite sites. Switching apps is so 2020!",
   },
   {
     id: 2,
@@ -77,7 +79,7 @@ export const CurrentProjects: Project[] = [
     image: aquavolution,
     pmName: "Elgiz Abbasov",
     description:
-      "Born a tiny fish in the ocean,try to survive and get stronger among other predators, be careful about the human waste in the ocean though!",
+      "Born a tiny fish, try to survive among other predators, be careful of the human waste in the ocean though!",
   },
   {
     id: 2,
@@ -87,14 +89,14 @@ export const CurrentProjects: Project[] = [
     image: teamPlaceholder,
     pmName: "Zeyad Omran",
     description:
-      "A platform for students to connect with others in the same university to study together and make new connections",
+      "A platform for students to connect with others in the same university to study together",
   },
   {
     id: 3,
     name: "Snowbot",
     github: "",
     website: website,
-    image: teamPlaceholder,
+    image: snowbot,
     pmName: "Ali Siddiqi",
     description: "A robot that autonomously clears snow on sidewalks",
   },
@@ -103,10 +105,10 @@ export const CurrentProjects: Project[] = [
     name: "UofC Research",
     github: "",
     website: website,
-    image: teamPlaceholder,
+    image: uofc_research,
     pmName: "Davis Johnson",
     description:
-      "A website dedicated for UoC students who are looking for research/project opportunities and want to do some extracurricular activities",
+      "A website dedicated for UoC students who are looking for extracurricular activities",
   },
   {
     id: 5,
@@ -126,6 +128,6 @@ export const CurrentProjects: Project[] = [
     image: teamPlaceholder,
     pmName: "Mahdi Varposhti",
     description:
-      "An app that helps groups make decisions when planning a social gathering. Users can select their preferences and vote on their top activities.",
+      "An app that helps groups make decisions when planning a social gathering by voting",
   },
 ];

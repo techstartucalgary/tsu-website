@@ -14,6 +14,7 @@ export const ProjectContainer = styled.div`
     var(--turquoise-blue),
     var(--turquoise-green)
   );
+  margin-bottom: 10%;
 `;
 
 export const ProjectContent = styled.div<FeaturedProjectProps>`

@@ -112,8 +112,8 @@ const HomePage = () => {
             TechStart Projects
           </h1>
           <Divider />
-          <div className="homepage__section--projects-div">
-            <div>
+          <div className="homepage__section--projects-description-div">
+            <div style={{ marginLeft: "10vw" }}>
               <p className="regularText regularText--white" id="draft">
                 Our members form teams that gather together to brainstorm a
                 project, and then work on that idea collaboratively with 6~9
@@ -123,7 +123,7 @@ const HomePage = () => {
                 consists of software developers, business strategist, project
                 designer, and a project manager.
               </p>
-              <div className="homePage__section--projectButtonDiv">
+              <div className="projectButtonDiv">
                 <HoverButton
                   mode={ButtonMode.GRADIENT}
                   glowOnHover={true}
@@ -133,8 +133,15 @@ const HomePage = () => {
                 />
               </div>
             </div>
+            <div />
+          </div>
+          <div className="homepage__section--projects-div">
+            <div />
             <div style={{ width: "25vw", height: "25vw" }}>
-              <Lottie options={rocketLottieOptions} />
+              <Lottie
+                options={rocketLottieOptions}
+                style={{ marginLeft: "15vw" }}
+              />
             </div>
           </div>
         </div>

@@ -242,16 +242,23 @@ html {
 .homePage__section--projects {
   background-image: var(--dark-background);
   color: white;
-  padding: 3em 0em 25em 0em;
+  padding: 3em 0em 8em 0em;
 }
 
-.homePage__section--projectButtonDiv {
-  margin-top: 5%;
-  float: left;
+.homepage__section--projects-description-div,
+.homepage__section--projects-div {
+  display: grid;
+}
+
+.homepage__section--projects-description-div {
+  grid-template-columns: 8fr 1fr;
 }
 
 .homepage__section--projects-div {
+  grid-template-columns: 1fr 1fr;
+}
+
+.projectButtonDiv {
+  margin-top: 3vw;
   float: left;
-  width: 75%;
-  display: -webkit-inline-box;
 }

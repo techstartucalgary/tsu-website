@@ -242,11 +242,16 @@ html {
 .homePage__section--projects {
   background-image: var(--dark-background);
   color: white;
-  padding: 3em 0em 8em 0em;
+  padding: 3em 0em 25em 0em;
 }
 
 .homePage__section--projectButtonDiv {
   margin-top: 5%;
-  display: flex;
-  justify-content: center;
+  float: left;
+}
+
+.homepage__section--projects-div {
+  float: left;
+  width: 75%;
+  display: -webkit-inline-box;
 }

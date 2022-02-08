@@ -7,7 +7,7 @@ import ProjectSection from "components/ProjectSection";
 import Divider from "components/Divider";
 
 const ProjectsPage = () => {
-  const defaultOptions = {
+  const teamProjectLottieOptions = {
     loop: true,
     autoplay: true,
     animationData: teamproject,
@@ -21,7 +21,7 @@ const ProjectsPage = () => {
       <S.ProjectsPageHeader>
         <S.ProjectsPageHeaderItem>
           <S.LottieDiv>
-            <Lottie options={defaultOptions} />
+            <Lottie options={teamProjectLottieOptions} />
           </S.LottieDiv>
         </S.ProjectsPageHeaderItem>
         <S.ProjectsPageHeaderItem>

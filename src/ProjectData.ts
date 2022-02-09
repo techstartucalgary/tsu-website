@@ -11,6 +11,7 @@ import oneHub from "images/project/oneHub.png";
 import aquavolution from "images/project/aquavolution.jpg";
 import snowbot from "images/project/snowbot.jpg";
 import uofc_research from "images/project/uofc-research.png";
+import amigo from "images/project/amigo.jpg";
 import teamPlaceholder from "images/project/team-placeholder.jpg";
 
 // Project type definition
@@ -86,7 +87,7 @@ export const CurrentProjects: Project[] = [
     name: "Amigo",
     github: "https://github.com/Tech-Start-UCalgary/Amigo",
     website: website,
-    image: teamPlaceholder,
+    image: amigo,
     pmName: "Zeyad Omran",
     description:
       "A platform for students to connect with others in the same university to study together",

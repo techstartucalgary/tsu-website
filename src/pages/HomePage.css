@@ -259,6 +259,6 @@ html {
 }
 
 .projectButtonDiv {
-  margin-top: 3vw;
-  float: left;
+  margin: 3vw 0 auto 5vw;
+  width: fit-content;
 }

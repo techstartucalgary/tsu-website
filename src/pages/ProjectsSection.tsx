@@ -3,6 +3,7 @@ import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import Lottie from "react-lottie";
 import rocket from "../images/lottie/rocket.json";
 import Divider from "components/Divider";
+import * as S from "./ProjectsSection.styles";
 
 export const ProjectsSection = () => {
   const rocketLottieOptions = {
@@ -15,13 +16,13 @@ export const ProjectsSection = () => {
   };
 
   return (
-    <section className="homePage__section--projects">
+    <S.ProjectsSection>
       <div className="homePage__container">
         <h1 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
           TechStart Projects
         </h1>
         <Divider />
-        <div className="homepage__section--projects-description-div">
+        <S.projectDescriptionDiv>
           <div style={{ marginLeft: "5vw" }}>
             <p className="regularText regularText--white" id="draft">
               Our members form teams that gather together to brainstorm a
@@ -34,9 +35,9 @@ export const ProjectsSection = () => {
             </p>
           </div>
           <div />
-        </div>
-        <div className="homepage__section--projects-div">
-          <div className="projectButtonDiv">
+        </S.projectDescriptionDiv>
+        <S.projectButtonLottieDiv>
+          <S.projectButtonDiv>
             <HoverButton
               mode={ButtonMode.GRADIENT}
               glowOnHover={true}
@@ -44,15 +45,15 @@ export const ProjectsSection = () => {
               text={"Check out our projects!"}
               linkIsInternal={true}
             />
-          </div>
+          </S.projectButtonDiv>
           <div style={{ width: "25vw", height: "25vw" }}>
             <Lottie
               options={rocketLottieOptions}
               style={{ marginLeft: "10vw" }}
             />
           </div>
-        </div>
+        </S.projectButtonLottieDiv>
       </div>
-    </section>
+    </S.ProjectsSection>
   );
 };

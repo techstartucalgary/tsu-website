@@ -81,7 +81,6 @@ export const ProjectsSection = () => {
           <S.projectButtonDiv_centered>
             <HoverButton
               mode={ButtonMode.GRADIENT}
-              glowOnHover={true}
               link={"/projects"}
               text={"Check out our projects!"}
               linkIsInternal={true}

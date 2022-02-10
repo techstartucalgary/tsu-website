@@ -20,3 +20,7 @@ export const projectButtonDiv = styled.div`
   margin: 3vw 0 auto 5vw;
   width: fit-content;
 `;
+
+export const projectButtonDiv_centered = styled.div`
+  margin-top: 10vw;
+`;

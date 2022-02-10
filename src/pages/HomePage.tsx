@@ -94,17 +94,14 @@ const HomePage = () => {
           </div>
         </div>
       </section>
-      <Blobbie
-        id={2}
-        width={100}
-        transform="translate(75vw, -10%)"
-        edge={true}
-      />
+
+      <ProjectsSection />
+
       <section className="homePage__section homePage__section--events">
         <Blobbie
           id={3}
           width={400}
-          transform="translate(-35%, -70%)"
+          transform="translate(-60%, 10%)"
           edge={true}
         />
         <Blobbie
@@ -120,8 +117,6 @@ const HomePage = () => {
           <EventsSection />
         </div>
       </section>
-
-      <ProjectsSection />
 
       <section className="homePage__section homePage__section--sponsors">
         <Blobbie

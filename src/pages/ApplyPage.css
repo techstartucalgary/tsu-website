@@ -164,10 +164,7 @@ html {
 
 @supports (background-blend-mode: multiply) {
   .applyPage__showcase {
-    background-image: linear-gradient(
-      var(--primary-green, rgb(142, 236, 130)),
-      rgb(100, 157, 211)
-    );
+    background-image: linear-gradient(var(--lightwash-green), var(--baby-blue));
     background-size: cover;
     background-blend-mode: multiply;
     background-attachment: fixed;

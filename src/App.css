@@ -7,6 +7,9 @@
   /* Web gradient: secondary blue to lime */
   --secondary-blue: #00b7ff;
   --secondary-lime: #c9e265;
+  /*Apply page gradient*/
+  --lightwash-green: #61c3d4;
+  --baby-blue: #437eb6;
   /* Turquoise gradient: (in primary logo variant)*/
   --turquoise-green: #8bffa5;
   --turquoise-blue: #70f0e8;

@@ -6,21 +6,32 @@ export const ProjectsSection = styled.section`
   padding: 3em 0em 8em 0em;
 `;
 
-export const projectDescriptionDiv = styled.div`
+export const ProjectDescriptionDiv = styled.div`
+  margin-top: 3vw;
   display: grid;
-  grid-template-columns: 8fr 1fr;
-`;
-
-export const projectButtonLottieDiv = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 1fr;
 `;
 
 export const projectButtonDiv = styled.div`
-  margin: 3vw 0 auto 5vw;
+  @media (max-width: 1000px) {
+    margin-top: 10vw;
+  }
+
+  @media (min-width: 1000px) {
+    margin: 3vw 0 0 0;
+    width: fit-content;
+  }
+`;
+
+export const ProjectsSectionItem = styled.div`
+  & > p {
+    text-align: left;
+    margin: 0;
+  }
   width: fit-content;
 `;
 
-export const projectButtonDiv_centered = styled.div`
-  margin-top: 10vw;
+export const LottieDiv = styled.div`
+  height: 25vw;
+  width: 25vw;
 `;

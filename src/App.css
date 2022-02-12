@@ -7,6 +7,9 @@
   /* Web gradient: secondary blue to lime */
   --secondary-blue: #00b7ff;
   --secondary-lime: #c9e265;
+  /*Apply page gradient*/
+  --lightwash-green: #61c3d4;
+  --baby-blue: #437eb6;
   /* Turquoise gradient: (in primary logo variant)*/
   --turquoise-green: #8bffa5;
   --turquoise-blue: #70f0e8;
@@ -16,7 +19,7 @@
   --thicc-subheading-size: 2.5rem;
   --babyHeading-size: 1.6rem;
   --chonky-header-weight: 900;
-  --regular-font: 1rem;
+  --regular-font: 1.2rem;
   font-family: "Inter", Tahoma, sans-serif;
 
   /* Section backgrounds*/

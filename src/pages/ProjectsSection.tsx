@@ -1,7 +1,6 @@
 import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import Lottie from "react-lottie";
-import rocket from "../images/lottie/rocket.json";
 import projectTeamLottie from "../images/lottie/projectTeamLottie.json";
 import Divider from "components/Divider";
 import * as S from "./ProjectsSection.styles";
@@ -10,10 +9,10 @@ import useViewport from "../components/UseViewport";
 export const ProjectsSection = () => {
   const { width } = useViewport(); // get screen width
 
-  const rocketLottieOptions = {
+  const projectTeamLottieOptions = {
     loop: true,
     autoplay: true,
-    animationData: rocket,
+    animationData: projectTeamLottie,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice",
     },
@@ -51,7 +50,7 @@ export const ProjectsSection = () => {
             <S.ProjectsSectionItem>
               <S.LottieDiv>
                 <Lottie
-                  options={rocketLottieOptions}
+                  options={projectTeamLottieOptions}
                   style={{ marginLeft: "5vw" }}
                 />
               </S.LottieDiv>
@@ -64,10 +63,9 @@ export const ProjectsSection = () => {
             TechStart Projects
           </h1>
           <Divider />
-          <Lottie
-            options={rocketLottieOptions}
-            style={{ marginBottom: "10vw" }}
-          />
+          <S.LottieDiv>
+            <Lottie options={projectTeamLottieOptions} />
+          </S.LottieDiv>
           <p className="regularText regularText--white" id="draft">
             Our members form teams that gather together to brainstorm a project,
             and then work on that idea collaboratively with 6~9 other creators

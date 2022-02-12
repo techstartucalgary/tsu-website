@@ -32,6 +32,13 @@ export const ProjectsSectionItem = styled.div`
 `;
 
 export const LottieDiv = styled.div`
-  height: 25vw;
-  width: 25vw;
+  height: 30vw;
+  width: 30vw;
+
+  @media (max-width: 1000px) {
+    margin: 0 0 10vw 12vw;
+    height: 60vw;
+    width: 60vw;
+    align-items: center;
+  }
 `;

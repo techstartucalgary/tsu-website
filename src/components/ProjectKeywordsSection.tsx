@@ -1,96 +1,81 @@
 import * as S from "./ProjectKeywordsSection.styles";
-import businessStrategyLottie from "../images/lottie/businessStrategy_lottie.json";
-import designLottie from "../images/lottie/design_lottie.json";
-import programmingLottie from "../images/lottie/programming_lottie.json";
-import projectManagementLottie from "../images/lottie/projectManagement_lottie.json";
-import requirementsEngineeringLottie from "../images/lottie/requirementsEngineering_lottie.json";
+import { NewlineText } from "utility/Helpers";
 import Lottie from "react-lottie";
+import {
+  businessStrategyLottieOptions,
+  designLottieOptions,
+  programmingLottieOptions,
+  projectManagementLottieOptions,
+  requirementsEngineeringLottieOptions,
+} from "utility/LottieOptions";
+import useViewport from "./UseViewport";
 
 const ProjectKeywordsSection = () => {
-  const businessStrategyLottieOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: businessStrategyLottie,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
-  const designLottieOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: designLottie,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
-  const programmingLottieOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: programmingLottie,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
-  const projectManagementLottieOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: projectManagementLottie,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
-  const requirementsEngineeringLottieOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: requirementsEngineeringLottie,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   const lottieDiv = (options: any) => (
-    <S.LottieDiv data-aos="fade-left" data-aos-duration="1000">
+    <S.LottieDiv data-aos="fade-left" data-aos-duration="800">
       <Lottie options={options} />
     </S.LottieDiv>
   );
 
   const projectKeyword = (keyword: JSX.Element[]) => (
-    <h3
+    <S.Keyword
       className="babyHeading babyHeading--white"
       data-aos="fade-right"
-      data-aos-duration="1000"
+      data-aos-duration="800"
     >
       {keyword}
-    </h3>
+    </S.Keyword>
   );
 
-  const NewlineText = (text: string) => {
-    const oldText = text;
-    const newText = oldText.split("\n").map((str) => <p>{str}</p>);
-
-    return newText;
-  };
+  const { width } = useViewport(); // get screen width
 
   return (
     <S.ProjectKeywordsSectionDiv>
-      {projectKeyword(NewlineText("Business\nStrategy"))}
-      {lottieDiv(businessStrategyLottieOptions)}
+      {width > 1000 ? (
+        <div>
+          <S.GridItem>
+            {projectKeyword(NewlineText("Business\nStrategy"))}
+            {lottieDiv(businessStrategyLottieOptions)}
+          </S.GridItem>
 
-      {projectKeyword(NewlineText("Design"))}
-      {lottieDiv(designLottieOptions)}
+          <S.GridItem>
+            {projectKeyword(NewlineText("Design"))}
+            {lottieDiv(designLottieOptions)}
+          </S.GridItem>
 
-      {projectKeyword(NewlineText("Programming"))}
-      {lottieDiv(programmingLottieOptions)}
+          <S.GridItem>
+            {projectKeyword(NewlineText("Programming"))}
+            {lottieDiv(programmingLottieOptions)}
+          </S.GridItem>
 
-      {projectKeyword(NewlineText("Project\nManagement"))}
-      {lottieDiv(projectManagementLottieOptions)}
+          <S.GridItem>
+            {projectKeyword(NewlineText("Project\nManagement"))}
+            {lottieDiv(projectManagementLottieOptions)}
+          </S.GridItem>
 
-      {projectKeyword(NewlineText("Requirements\nEngineering"))}
-      {lottieDiv(requirementsEngineeringLottieOptions)}
+          <S.GridItem>
+            {projectKeyword(NewlineText("Requirements\nEngineering"))}
+            {lottieDiv(requirementsEngineeringLottieOptions)}
+          </S.GridItem>
+        </div>
+      ) : (
+        <div>
+          {projectKeyword(NewlineText("Business\nStrategy"))}
+          {lottieDiv(businessStrategyLottieOptions)}
+
+          {projectKeyword(NewlineText("Design"))}
+          {lottieDiv(designLottieOptions)}
+
+          {projectKeyword(NewlineText("Programming"))}
+          {lottieDiv(programmingLottieOptions)}
+
+          {projectKeyword(NewlineText("Project\nManagement"))}
+          {lottieDiv(projectManagementLottieOptions)}
+
+          {projectKeyword(NewlineText("Requirements\nEngineering"))}
+          {lottieDiv(requirementsEngineeringLottieOptions)}
+        </div>
+      )}
     </S.ProjectKeywordsSectionDiv>
   );
 };

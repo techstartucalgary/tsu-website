@@ -1,28 +1,20 @@
 import * as S from "./ProjectsPage.styles";
 import Lottie from "react-lottie";
-import teamproject from "../images/lottie/teamproject.json";
+import { teamProjectLottieOptions } from "utility/LottieOptions";
 import { motion } from "framer-motion/dist/framer-motion";
 import { CurrentProjects, PastProjects } from "ProjectData";
 import ProjectSection from "components/ProjectSection";
 import Divider from "components/Divider";
 import ProjectKeywordsSection from "components/ProjectKeywordsSection";
+import { NewlineText } from "utility/Helpers";
 
 const ProjectsPage = () => {
-  const defaultOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: teamproject,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   return (
     <S.ProjectsPage id="projectsPageTop">
       <S.ProjectsPageHeader>
         <S.ProjectsPageHeaderItem>
           <S.LottieDiv>
-            <Lottie options={defaultOptions} />
+            <Lottie options={teamProjectLottieOptions} />
           </S.LottieDiv>
         </S.ProjectsPageHeaderItem>
         <S.ProjectsPageHeaderItem>
@@ -31,8 +23,7 @@ const ProjectsPage = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h1>Our </h1>
-            <h1>Projects</h1>
+            {NewlineText("Our\nProjects")}
           </motion.div>
         </S.ProjectsPageHeaderItem>
       </S.ProjectsPageHeader>

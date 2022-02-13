@@ -48,9 +48,9 @@ export const ProjectsPageHeaderItem = styled.div`
     }
   }
 
-  & > div > h1 {
-    white-space: pre;
+  & > div > p {
     font-size: 15vw;
+    font-weight: bold;
     @media (min-width: 750px) {
       font-size: 8vw;
       text-align: left;

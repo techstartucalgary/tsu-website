@@ -12,6 +12,10 @@ export const ProjectsPage = styled.div`
   white-space: normal;
   overflow: hidden;
   position: relative;
+
+  & > h2 {
+    padding: 0 3vw;
+  }
 `;
 
 export const ProjectsPageHeader = styled.div`
@@ -22,7 +26,10 @@ export const ProjectsPageHeader = styled.div`
   background-color: white;
   padding: 5em 0;
   color: var(--secondary-grey);
-  margin-bottom: 10%;
+  margin-bottom: 15%;
+  @media (max-width: 750px) {
+    margin-bottom: 25%;
+  }
 `;
 
 export const ProjectsPageHeaderItem = styled.div`

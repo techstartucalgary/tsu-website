@@ -5,6 +5,7 @@ import { motion } from "framer-motion/dist/framer-motion";
 import { CurrentProjects, PastProjects } from "ProjectData";
 import ProjectSection from "components/ProjectSection";
 import Divider from "components/Divider";
+import ProjectKeywordsSection from "components/ProjectKeywordsSection";
 
 const ProjectsPage = () => {
   const defaultOptions = {
@@ -35,6 +36,15 @@ const ProjectsPage = () => {
           </motion.div>
         </S.ProjectsPageHeaderItem>
       </S.ProjectsPageHeader>
+
+      <h2
+        className="thiccSubheading thiccSubheading--gradient"
+        style={{ textAlign: "center" }}
+      >
+        Check out cool things our project teams do!
+      </h2>
+      <ProjectKeywordsSection />
+
       <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
         Current Projects
       </h2>

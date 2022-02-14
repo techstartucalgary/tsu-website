@@ -23,7 +23,7 @@ const ProjectsPage = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            {NewlineText("Our\nProjects")}
+            {NewlineText("Our \nProjects")}
           </motion.div>
         </S.ProjectsPageHeaderItem>
       </S.ProjectsPageHeader>

@@ -51,6 +51,7 @@ export const ProjectsPageHeaderItem = styled.div`
   & > div > p {
     font-size: 15vw;
     font-weight: bold;
+    white-space: pre;
     @media (min-width: 750px) {
       font-size: 8vw;
       text-align: left;

@@ -60,7 +60,7 @@ const ProjectKeywordsSection = () => {
           </S.GridItem>
 
           <S.GridItem>
-            {projectKeyword(NewlineText("Web\nDevelopment"))}
+            {projectKeyword(NewlineText("Web/Mobile\nDevelopment"))}
             {lottieDiv(webDevelopmentLottieOptions)}
           </S.GridItem>
         </div>
@@ -81,7 +81,7 @@ const ProjectKeywordsSection = () => {
           {projectKeyword(NewlineText("Requirements\nEngineering"))}
           {lottieDiv(handshakeLottieOptions)}
 
-          {projectKeyword(NewlineText("Web\nDevelopment"))}
+          {projectKeyword(NewlineText("Web/Mobile\nDevelopment"))}
           {lottieDiv(webDevelopmentLottieOptions)}
         </div>
       )}

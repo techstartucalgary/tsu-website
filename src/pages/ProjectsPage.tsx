@@ -31,6 +31,8 @@ const ProjectsPage = () => {
       <h2
         className="thiccSubheading thiccSubheading--gradient"
         style={{ textAlign: "center" }}
+        data-aos="fade-up"
+        data-aos-duration="800"
       >
         Check out cool things our project teams do!
       </h2>

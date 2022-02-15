@@ -4,9 +4,10 @@ import Lottie from "react-lottie";
 import {
   businessStrategyLottieOptions,
   designLottieOptions,
+  handshakeLottieOptions,
   programmingLottieOptions,
   projectManagementLottieOptions,
-  requirementsEngineeringLottieOptions,
+  webDevelopmentLottieOptions,
 } from "utility/LottieOptions";
 import useViewport from "./UseViewport";
 
@@ -21,7 +22,7 @@ const ProjectKeywordsSection = () => {
     <S.Keyword
       className="babyHeading babyHeading--white"
       data-aos="fade-right"
-      data-aos-duration="800"
+      data-aos-duration="1000"
     >
       {keyword}
     </S.Keyword>
@@ -55,7 +56,12 @@ const ProjectKeywordsSection = () => {
 
           <S.GridItem>
             {projectKeyword(NewlineText("Requirements\nEngineering"))}
-            {lottieDiv(requirementsEngineeringLottieOptions)}
+            {lottieDiv(handshakeLottieOptions)}
+          </S.GridItem>
+
+          <S.GridItem>
+            {projectKeyword(NewlineText("Web\nDevelopment"))}
+            {lottieDiv(webDevelopmentLottieOptions)}
           </S.GridItem>
         </div>
       ) : (
@@ -73,7 +79,10 @@ const ProjectKeywordsSection = () => {
           {lottieDiv(projectManagementLottieOptions)}
 
           {projectKeyword(NewlineText("Requirements\nEngineering"))}
-          {lottieDiv(requirementsEngineeringLottieOptions)}
+          {lottieDiv(handshakeLottieOptions)}
+
+          {projectKeyword(NewlineText("Web\nDevelopment"))}
+          {lottieDiv(webDevelopmentLottieOptions)}
         </div>
       )}
     </S.ProjectKeywordsSectionDiv>

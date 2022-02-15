@@ -1,13 +1,13 @@
 import styled from "styled-components/macro";
 
 export const ProjectKeywordsSectionDiv = styled.div`
-  padding: 5vw 3vw;
+  padding: 7vw 3vw;
 
   & > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     text-align: right;
-    padding-right: 10vw;
+    padding-right: 12vw;
 
     @media (max-width: 1000px) {
       grid-template-columns: 1fr 1.1fr;
@@ -20,7 +20,6 @@ export const ProjectKeywordsSectionDiv = styled.div`
   }
 
   & > h3 > p {
-    margin: 0 3vw 0 0;
   }
 `;
 
@@ -30,8 +29,16 @@ export const GridItem = styled.div`
 `;
 
 export const Keyword = styled.h3`
-  margin-top: 25%;
+  margin-top: 20%;
   margin-right: 10%;
+
+  @media (max-width: 1000px) {
+    margin-top: 25%;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 1rem;
+  }
 
   & > p {
     margin: 0;
@@ -39,11 +46,11 @@ export const Keyword = styled.h3`
 `;
 
 export const LottieDiv = styled.div`
-  width: 20vw;
-  height: 20vw;
+  width: 15vw;
+  height: 15vw;
 
   @media (max-width: 1000px) {
-    width: 35vw;
-    height: 35vw;
+    width: 30vw;
+    height: 30vw;
   }
 `;

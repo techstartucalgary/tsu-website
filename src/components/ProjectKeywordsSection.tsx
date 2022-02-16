@@ -45,8 +45,8 @@ const ProjectKeywordsSection = () => {
           </S.GridItem>
 
           <S.GridItem>
-            {projectKeyword(NewlineText("Programming"))}
-            {lottieDiv(programmingLottieOptions)}
+            {projectKeyword(NewlineText("Requirements\nEngineering"))}
+            {lottieDiv(handshakeLottieOptions)}
           </S.GridItem>
 
           <S.GridItem>
@@ -55,8 +55,8 @@ const ProjectKeywordsSection = () => {
           </S.GridItem>
 
           <S.GridItem>
-            {projectKeyword(NewlineText("Requirements\nEngineering"))}
-            {lottieDiv(handshakeLottieOptions)}
+            {projectKeyword(NewlineText("Programming"))}
+            {lottieDiv(programmingLottieOptions)}
           </S.GridItem>
 
           <S.GridItem>
@@ -72,14 +72,14 @@ const ProjectKeywordsSection = () => {
           {projectKeyword(NewlineText("Design"))}
           {lottieDiv(designLottieOptions)}
 
-          {projectKeyword(NewlineText("Programming"))}
-          {lottieDiv(programmingLottieOptions)}
+          {projectKeyword(NewlineText("Requirements\nEngineering"))}
+          {lottieDiv(handshakeLottieOptions)}
 
           {projectKeyword(NewlineText("Project\nManagement"))}
           {lottieDiv(projectManagementLottieOptions)}
 
-          {projectKeyword(NewlineText("Requirements\nEngineering"))}
-          {lottieDiv(handshakeLottieOptions)}
+          {projectKeyword(NewlineText("Programming"))}
+          {lottieDiv(programmingLottieOptions)}
 
           {projectKeyword(NewlineText("Web/Mobile\nDevelopment"))}
           {lottieDiv(webDevelopmentLottieOptions)}

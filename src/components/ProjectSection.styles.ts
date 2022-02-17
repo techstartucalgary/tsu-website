@@ -15,4 +15,12 @@ export const ProjectSectionDiv = styled.div`
     display: grid;
     margin-left: 7%;
   }
+
+  @media (max-width: 1055px) {
+    margin-left: 8%;
+  }
+
+  @media (max-width: 600px) {
+    margin-left: 11%;
+  }
 `;

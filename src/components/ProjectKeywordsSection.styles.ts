@@ -13,6 +13,10 @@ export const ProjectKeywordsSectionDiv = styled.div`
       grid-template-columns: 1fr 1.1fr;
       padding-right: 0;
     }
+
+    @media (max-width: 500px) {
+      padding-left: 10vw;
+    }
   }
 
   & > h3 {

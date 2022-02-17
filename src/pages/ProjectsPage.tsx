@@ -1,21 +1,14 @@
 import * as S from "./ProjectsPage.styles";
 import Lottie from "react-lottie";
-import teamproject from "../images/lottie/teamproject.json";
+import { teamProjectLottieOptions } from "utility/LottieOptions";
 import { motion } from "framer-motion/dist/framer-motion";
 import { CurrentProjects, PastProjects } from "ProjectData";
 import ProjectSection from "components/ProjectSection";
 import Divider from "components/Divider";
+import ProjectKeywordsSection from "components/ProjectKeywordsSection";
+import { NewlineText } from "utility/Helpers";
 
 const ProjectsPage = () => {
-  const teamProjectLottieOptions = {
-    loop: true,
-    autoplay: true,
-    animationData: teamproject,
-    rendererSettings: {
-      preserveAspectRatio: "xMidYMid slice",
-    },
-  };
-
   return (
     <S.ProjectsPage id="projectsPageTop">
       <S.ProjectsPageHeader>
@@ -30,11 +23,21 @@ const ProjectsPage = () => {
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <h1>Our </h1>
-            <h1>Projects</h1>
+            {NewlineText("Our \nProjects")}
           </motion.div>
         </S.ProjectsPageHeaderItem>
       </S.ProjectsPageHeader>
+
+      <h2
+        className="thiccSubheading thiccSubheading--gradient"
+        style={{ textAlign: "center" }}
+        data-aos="fade-up"
+        data-aos-duration="800"
+      >
+        Check out cool things our project teams do!
+      </h2>
+      <ProjectKeywordsSection />
+
       <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
         Current Projects
       </h2>

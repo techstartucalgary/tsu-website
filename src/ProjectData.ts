@@ -11,7 +11,9 @@ import oneHub from "images/project/oneHub.png";
 import aquavolution from "images/project/aquavolution.jpg";
 import snowbot from "images/project/snowbot.jpg";
 import uofc_research from "images/project/uofc-research.png";
-import teamPlaceholder from "images/project/team-placeholder.jpg";
+import amigo from "images/project/amigo.jpg";
+import noteAid from "images/project/noteAid.jpg";
+import decisionApp from "images/project/decisionApp.jpg";
 
 // Project type definition
 export type Project = {
@@ -86,7 +88,7 @@ export const CurrentProjects: Project[] = [
     name: "Amigo",
     github: "https://github.com/Tech-Start-UCalgary/Amigo",
     website: website,
-    image: teamPlaceholder,
+    image: amigo,
     pmName: "Zeyad Omran",
     description:
       "A platform for students to connect with others in the same university to study together",
@@ -115,7 +117,7 @@ export const CurrentProjects: Project[] = [
     name: "NoteAId",
     github: "https://github.com/Tech-Start-UCalgary/NoteAId",
     website: website,
-    image: teamPlaceholder,
+    image: noteAid,
     pmName: "Mahdi Varposhti",
     description:
       "A mobile app that helps students with studying for exams by summarizing their handwritten notes",
@@ -125,7 +127,7 @@ export const CurrentProjects: Project[] = [
     name: "Decision App",
     github: "https://github.com/Tech-Start-UCalgary/NoteAId",
     website: website,
-    image: teamPlaceholder,
+    image: decisionApp,
     pmName: "Mahdi Varposhti",
     description:
       "An app that helps groups make decisions when planning a social gathering by voting",

@@ -192,6 +192,20 @@ function ApplyPage() {
               "
           />
           <Accordion
+            title="Do we try to monetize projects?"
+            active={active}
+            setActive={setActive}
+            description="
+            Tech Start projects are themed around startups and entrepreneurship. 
+            Our teams use entrepreneurial thinking to guide their decision making and design their 
+            project around fulfilling a specific market niche and meeting the needs of a target audience. 
+            Despite this theme, Tech Start projects are not about building real startups - instead, 
+            we're focused on teaching skills, providing mentorship, and building projects that can boost 
+            your portfolio and your career. That said, if you want to pursue your project as a real entrepreneurial 
+            venture and monetize it outside of Tech Start, we're able to provide support and direct you to resources 
+            that you can use."
+          />
+          <Accordion
             title="What does the Executive Team do?"
             active={active}
             setActive={setActive}

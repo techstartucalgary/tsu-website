@@ -1,6 +1,6 @@
 import Alberta_Tech_Horizon_img from "./EventImages/Alberta_Tech_Horizon.jpeg";
 import Building_a_Brand_and_Business_img from "./EventImages/Building_a_Brand_and_Business.jpeg";
-import launchImage from "./EventImages/tsulaunchimage.png";
+import Funding_the_Next_Unicorn_img from "./EventImages/Funding_The_Next_Unicorn.jpg";
 
 export type Event = {
   title: string;
@@ -16,20 +16,19 @@ export type Event = {
 export var upcomingEvents: Event[];
 export var pastEvents: Event[];
 
-upcomingEvents = [];
+upcomingEvents = [
+  {
+    title: "Funding the Next Unicorn",
+    description:
+      "This panel event focuses on exploring the role Venture Capital plays within the technology industry. Event topics include an introduction into what VC is, how they find deal flow and evaluate potential investments, what they look for in early stage tech businesses, and what trends they find most interesting in the tech industry today.",
+    date: "Friday, February 4, 2022",
+    time: "5:30 PM – 7:30 PM MST",
+    image: Funding_the_Next_Unicorn_img,
+    link: "https://docs.google.com/forms/d/e/1FAIpQLSfaJbGyalJgL0HgTasWNiwYhaoRv8sIflCGFAyg0pC4rHwYuw/viewform",
+  },
+];
 
 pastEvents = [
-  {
-    title: "Launch Meeting 2021",
-    description:
-      "Join us for our launch meeting to find out what we do and how you can get involved!",
-    date: "Thursday, Sept 23, 2021",
-    time: "6:00 - 7:00 PM MT",
-    image: launchImage,
-    link: "https://ucalgary.zoom.us/j/7269738862",
-    linkTitleOverride: "Zoom Link",
-  },
-
   {
     title: "Alberta's Tech Horizon",
     description:

@@ -104,21 +104,6 @@ function ApplyPage() {
             FAQ
           </h1>
           <Accordion
-            title="What is a Tech Start project?"
-            active={active}
-            setActive={setActive}
-            description="Our members form teams that gather together to
-                  brainstorm a project, and then work on that idea collaboratively 
-                  with 6-9 other creators over 1 or 2 semesters. During this time the
-                  projects evolve and shift, and our members get to experience
-                  the full lifecycle of bringing a complex project to life. Each
-                  team is lead by an experienced project manager who provides the
-                  expertise needed to execute on the team’s vision. We are also fortunate 
-                  enough to be supported by a number of companies who provide us with
-                  the resources necessary to build our projects and run events
-                  and workshops."
-          />
-          <Accordion
             title="What roles are there in a project?"
             active={active}
             setActive={setActive}
@@ -192,7 +177,7 @@ function ApplyPage() {
             active={active}
             setActive={setActive}
             description="
-              Your Project Manager will pick one of the following ways the decide the team's project focus:
+              Your Project Manager will pick one of the following ways to decide the team's project focus:
               </br></br>
               <strong>Focused</strong></br>
               The project starts off with a specific idea or concept from the get-go. These ideas are pitched at the 
@@ -205,6 +190,20 @@ function ApplyPage() {
               a concept, purpose, and scope for the project according to your interests and ideas!
               </br></br>
               "
+          />
+          <Accordion
+            title="Do we try to monetize projects?"
+            active={active}
+            setActive={setActive}
+            description="
+            Tech Start projects are themed around startups and entrepreneurship. 
+            Our teams use entrepreneurial thinking to guide their decision making and design their 
+            project around fulfilling a specific market niche and meeting the needs of a target audience. 
+            Despite this theme, Tech Start projects are not about building real startups - instead, 
+            we're focused on teaching skills, providing mentorship, and building projects that can boost 
+            your portfolio and your career. That said, if you want to pursue your project as a real entrepreneurial 
+            venture and monetize it outside of Tech Start, we're able to provide support and direct you to resources 
+            that you can use."
           />
           <Accordion
             title="What does the Executive Team do?"

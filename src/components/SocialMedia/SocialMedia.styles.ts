@@ -49,4 +49,8 @@ export const SocialMediaIcon = styled.a<{ color: SocialMediaColor }>`
     transform: translateY(-0.25em);
     box-shadow: 0 0.2em 0.3em -0.4em rgb(177, 173, 173);
   }
+
+  @media (max-width: 400px) {
+    margin: 0 0.5em;
+  }
 `;

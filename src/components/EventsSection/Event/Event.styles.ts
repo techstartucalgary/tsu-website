@@ -1,10 +1,10 @@
 import styled from "styled-components/macro";
 
 interface EventProps {
-  imageLeft: boolean;
+  pastEvent: boolean;
 }
 
-export const Event = styled.div`
+export const Event = styled.div<EventProps>`
   background: linear-gradient(
     to top,
     var(--turquoise-blue),
@@ -13,19 +13,24 @@ export const Event = styled.div`
   padding: 3% 3%;
   margin-bottom: 5%;
   border-radius: 30px;
+
+  @media (min-width: 750px) {
+    flex: ${(props) => props.pastEvent && "1"};
+    margin: ${(props) => props.pastEvent && "auto 2%"};
+  }
 `;
 
 export const EventImage = styled.img<EventProps>`
-  margin: 2%;
-  width: 60%;
+  margin: ${(props) => (props.pastEvent ? "auto" : "2%")};
+  width: ${(props) => !props.pastEvent && "60%"};
+  float: ${(props) => (props.pastEvent ? "right" : "left")};
+  clear: ${(props) => (props.pastEvent ? "" : "right")};
 
-  float: ${(props) => (props.imageLeft ? "left" : "right")};
-  clear: ${(props) => (props.imageLeft ? "right" : "")};
-
-  @media (max-width: 750px) {
+  @media (max-width: 1100px) {
     width: 100%;
     loat: none;
     margin: 0%;
+    margin-bottom: 5%;
   }
 `;
 
@@ -38,7 +43,8 @@ export const DatetimeButtonDiv = styled.div`
 `;
 
 export const EventText = styled.div`
-@media (max-width: 750px) {
-  padding: 0% 0%;
-  margin-top: 5%;
+  @media (max-width: 750px) {
+    padding: 0% 0%;
+    margin-top: 5%;
+  }
 `;

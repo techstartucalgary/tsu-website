@@ -17,6 +17,7 @@ export const Footer = styled.div`
     var(--secondary-blue)
   );
   background-size: 100%;
+  width: -moz-available;
 
   @media (max-width: 900px) {
     display: block;

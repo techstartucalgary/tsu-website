@@ -60,7 +60,7 @@ export const ProjectsSection = () => {
       ) : (
         <div className="homePage__container">
           <h1 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
-            TechStart Projects
+            Tech Start Projects
           </h1>
           <Divider />
           <S.LottieDiv>

@@ -14,6 +14,14 @@ export const ProjectDescriptionDiv = styled.div`
   margin-top: 3vw;
   display: grid;
   grid-template-columns: 2fr 1fr;
+
+  @media (min-width: 1201px) {
+    grid-template-columns: 2fr 1.1fr;
+  }
+
+  @media (min-width: 1401px) {
+    grid-template-columns: 2fr 1.2fr;
+  }
 `;
 
 export const projectButtonDiv = styled.div`

@@ -13,7 +13,7 @@
   /* Turquoise gradient: (in primary logo variant)*/
   --turquoise-green: #8bffa5;
   --turquoise-blue: #70f0e8;
-  --secondary-grey: rgba(34, 34, 34, 0.95);
+  --secondary-grey: #222222f2;
   --title-size: clamp(1.4rem, calc(15vw + 1rem), 8rem);
   --chonky-header-size: 4.75rem;
   --thicc-subheading-size: 2.5rem;
@@ -27,6 +27,12 @@
     to bottom,
     rgb(19, 19, 19),
     rgb(26, 26, 26)
+  );
+
+  --gradient-background: linear-gradient(
+    to bottom,
+    var(--turquoise-blue),
+    var(--turquoise-green)
   );
 }
 
@@ -79,6 +85,8 @@
   background-image: linear-gradient(
     45deg,
     var(--secondary-lime),
+    var(--turquoise-green),
+    var(--turquoise-blue),
     var(--secondary-blue)
   );
   background-size: 100%;

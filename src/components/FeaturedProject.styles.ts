@@ -7,13 +7,14 @@ interface FeaturedProjectProps {
 export const ProjectContainer = styled.div`
   border-radius: 20px;
   position: relative;
-  width: 100%;
+  width: 95%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
   background: linear-gradient(
     to top,
     var(--turquoise-blue),
     var(--turquoise-green)
   );
+  margin-bottom: 10%;
 `;
 
 export const ProjectContent = styled.div<FeaturedProjectProps>`

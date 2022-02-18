@@ -1,18 +1,26 @@
 import styled from "styled-components/macro";
 
 export const ProjectSectionDiv = styled.div`
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 500px));
-  margin-left: 20px;
-  margin-right: 20px;
-  column-gap: 15px;
-  justify-content: center;
-  align-items: center;
-  row-gap: 15px;
-  padding-bottom: 10px;
-  padding-top: 50px;
+  margin: 5% 5% 10% 5%;
 
-  @media (min-width: 1575px) {
-    grid-template-columns: repeat(auto-fit, minmax(200px, 650px));
+  @media (min-width: 1300px) {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  @media (min-width: 1055px) and (max-width: 1300px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media (min-width: 1055px) {
+    display: grid;
+    margin-left: 7%;
+  }
+
+  @media (max-width: 1055px) {
+    margin-left: 8%;
+  }
+
+  @media (max-width: 600px) {
+    margin-left: 11%;
   }
 `;

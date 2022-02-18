@@ -4,13 +4,16 @@
  * All image sizes should be a 16:9 Aspect ratio
  */
 
-import { TeamMember } from "components/TeamSection/TeamInformation";
-
-import temp from "images/temp.jpg";
 import techStartWebsite from "images/project/techStartWebsite.png";
-import supplyMe from "images/project/supplyMe4.png";
+import supplyMe from "images/project/supplyMe.png";
 import resumeTracker from "images/project/resumetracker.png";
 import oneHub from "images/project/oneHub.png";
+import aquavolution from "images/project/aquavolution.jpg";
+import snowbot from "images/project/snowbot.jpg";
+import uofc_research from "images/project/uofc-research.png";
+import amigo from "images/project/amigo.jpg";
+import noteAid from "images/project/noteAid.jpg";
+import decisionApp from "images/project/decisionApp.jpg";
 
 // Project type definition
 export type Project = {
@@ -45,7 +48,7 @@ export const PastProjects: Project[] = [
     website: website,
     image: oneHub,
     description:
-      "A hub for your social media that shows you info and stats from your favorite social media sites. Switching apps is so 2020!",
+      "A hub for your social media that shows you info and stats from your favorite sites. Switching apps is so 2020!",
   },
   {
     id: 2,
@@ -75,61 +78,58 @@ export const CurrentProjects: Project[] = [
     name: "Aquavolution",
     github: "https://github.com/Tech-Start-UCalgary/Aquavolution",
     website: website,
+    image: aquavolution,
     pmName: "Elgiz Abbasov",
     description:
-      "Born a tiny fish in the ocean,try to survive and get stronger among other predators, be careful about the human waste in the ocean though!",
+      "Born a tiny fish, try to survive among other predators, be careful of the human waste in the ocean though!",
   },
   {
     id: 2,
     name: "Amigo",
     github: "https://github.com/Tech-Start-UCalgary/Amigo",
     website: website,
+    image: amigo,
     pmName: "Zeyad Omran",
     description:
-      "A platform for students to connect with others in the same university to study together and make new connections",
+      "A platform for students to connect with others in the same university to study together",
   },
   {
     id: 3,
     name: "Snowbot",
     github: "",
     website: website,
+    image: snowbot,
     pmName: "Ali Siddiqi",
-    description: "A robot that autonomously clears snow on side walks",
+    description: "A robot that autonomously clears snow on sidewalks",
   },
   {
     id: 4,
-    name: "TechStart Website",
-    github: "https://github.com/Tech-Start-UCalgary/tsu-website",
-    website: website,
-    pmName: "Niyousha Raeesinejad",
-    description:
-      "Enhancement and maintenance of the TechStart UCalgary website",
-  },
-  {
-    id: 5,
     name: "UofC Research",
     github: "",
     website: website,
+    image: uofc_research,
     pmName: "Davis Johnson",
     description:
-      "A website dedicated for UoC students who are looking for research/project opportunities and want to do some extracurricular activities",
+      "A website dedicated for UoC students who are looking for extracurricular activities",
   },
   {
-    id: 6,
+    id: 5,
     name: "NoteAId",
     github: "https://github.com/Tech-Start-UCalgary/NoteAId",
     website: website,
+    image: noteAid,
     pmName: "Mahdi Varposhti",
     description:
       "A mobile app that helps students with studying for exams by summarizing their handwritten notes",
   },
   {
-    id: 7,
+    id: 6,
     name: "Decision App",
     github: "https://github.com/Tech-Start-UCalgary/NoteAId",
     website: website,
+    image: decisionApp,
     pmName: "Mahdi Varposhti",
     description:
-      "An app that helps groups make decisions when planning a social gathering. The first user of a group will generate a link to be shared with the rest of the group. Users can select their preferences and vote on their top activities.",
+      "An app that helps groups make decisions when planning a social gathering by voting",
   },
 ];

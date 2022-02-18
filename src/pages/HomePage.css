@@ -31,7 +31,7 @@ html {
 }
 
 .homePage__applyButtonBox {
-  padding-top: 3vw;
+  padding: 2vw 0 4vw 0;
   position: relative;
   height: fit-content;
   justify-content: center;
@@ -237,4 +237,28 @@ html {
 .homePage__section--events {
   padding-bottom: 8em;
   /*z-index: -2;*/
+}
+
+.homePage__section--projects {
+  background-image: var(--dark-background);
+  color: white;
+  padding: 3em 0em 8em 0em;
+}
+
+.homepage__section--projects-description-div,
+.homepage__section--projects-div {
+  display: grid;
+}
+
+.homepage__section--projects-description-div {
+  grid-template-columns: 8fr 1fr;
+}
+
+.homepage__section--projects-div {
+  grid-template-columns: 1fr 1fr;
+}
+
+.projectButtonDiv {
+  margin: 3vw 0 auto 5vw;
+  width: fit-content;
 }

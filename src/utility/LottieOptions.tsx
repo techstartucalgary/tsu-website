@@ -3,8 +3,18 @@ import designLottie from "../images/lottie/design_lottie.json";
 import webDevelopmentLottie from "../images/lottie/web_development_lottie.json";
 import programmingLottie from "../images/lottie/programming_lottie.json";
 import projectManagementLottie from "../images/lottie/projectManagement_lottie.json";
+import projectTeamLottie from "../images/lottie/projectTeamLottie.json";
 import handshakeLottie from "../images/lottie/handshake_lottie.json";
 import teamproject from "../images/lottie/teamproject.json";
+
+export const projectTeamLottieOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: projectTeamLottie,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 
 export const teamProjectLottieOptions = {
   loop: true,

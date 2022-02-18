@@ -5,7 +5,7 @@ export const ApplyButton = styled.div`
   position: relative;
   height: 50px;
   width: 290px;
-  color: var(--primary-green);
+  color: white;
   background-color: var(--primary-black);
   border-radius: 30px;
   margin-top: 10%;
@@ -21,7 +21,7 @@ export const ApplyButton = styled.div`
   margin-bottom: -15%;
 
   &: hover {
-    transform: scale(1.1);
+    transform: scale(1.05);
   }
 `;
 

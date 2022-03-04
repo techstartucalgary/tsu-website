@@ -29,8 +29,11 @@ export const SponsorButtonDiv = styled.div`
 `;
 
 export const SponsorCallToActionDiv = styled.div`
-  justify-content: center;
-  text-align: center;
+  & > p {
+    justify-content: center;
+    text-align: center;
+    font-size: 20px;
+    color: var(--secondary-grey);
+  }
   margin-bottom: 5%;
-  text-indent: 15em;
 `;

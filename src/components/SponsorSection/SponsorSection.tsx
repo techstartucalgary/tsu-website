@@ -24,11 +24,13 @@ const SponsorSection = () => {
       </S.SponsorSection>
 
       <S.SponsorCallToActionDiv>
-        <p className="regularText regularText--black">
+        <p>
           Interested in sponsoring us? Reach out via our&nbsp;
-          <a href="external@techstartucalgary.com" target="_blank">
-            external email
-          </a>
+          <b>
+            <a href="external@techstartucalgary.com" target="_blank">
+              external email
+            </a>
+          </b>
           !
         </p>
       </S.SponsorCallToActionDiv>

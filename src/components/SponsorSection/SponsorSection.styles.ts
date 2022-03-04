@@ -32,7 +32,7 @@ export const SponsorCallToActionDiv = styled.div`
   & > p {
     justify-content: center;
     text-align: center;
-    font-size: 20px;
+    font-size: 1.2rem;
     color: var(--secondary-grey);
   }
   margin-bottom: 5%;

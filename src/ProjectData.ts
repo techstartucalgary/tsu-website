@@ -83,6 +83,7 @@ export const CurrentProjects: Project[] = [
     description:
       "Born a tiny fish, try to survive among other predators, be careful of the human waste in the ocean though!",
   },
+  /*
   {
     id: 2,
     name: "Amigo",
@@ -93,6 +94,7 @@ export const CurrentProjects: Project[] = [
     description:
       "A platform for students to connect with others in the same university to study together",
   },
+  */
   {
     id: 3,
     name: "Snowbot",

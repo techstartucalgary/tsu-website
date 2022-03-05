@@ -139,6 +139,7 @@ projectManagers = [
     linkedin: "https://www.linkedin.com/in/mahdiva/",
     email: "mailto:mahdi.varposhti1@ucalgary.ca",
   },
+  /*
   {
     id: 12,
     name: "Zeyad Omran",
@@ -147,6 +148,7 @@ projectManagers = [
     linkedin: "https://www.linkedin.com/in/zeyadomran",
     email: "mailto:zeyad.omran@ucalgary.ca",
   },
+  */
   {
     id: 13,
     name: "Niyousha Raeesinejad",

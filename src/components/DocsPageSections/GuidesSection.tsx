@@ -3,6 +3,7 @@ import imgDjango from "images/django.png";
 import imgGit from "images/git.png";
 import imgWebDev from "images/webdev.png";
 import imgReact from "images/react.png";
+import imgApi from "images/api.png";
 import { GlobalStyles } from "types/Themes.js";
 import Guide from "./Guide";
 
@@ -36,6 +37,13 @@ const GuidesSection = () => (
       link="https://docs.google.com/document/d/1zR7VWVDxNo0xo5aTxR0EjeY1YgI1NIjT7wlC1GKE7bQ/edit"
       image={imgReact}
       description="Learn the essentials of React, hooks, APIs, Redux, and React Native!"
+    />
+
+    <Guide
+      guideName="API Guide"
+      link="https://docs.google.com/document/d/1ntKUGBy_6iPiZ1689uh4Q5C-crG5LhsXDKpY76WGwTE/edit"
+      image={imgApi}
+      description="Learn about types of APIs, Rest APIs, Postman, and GraphQL!"
     />
   </section>
 );

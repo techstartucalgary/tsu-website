@@ -10,27 +10,31 @@ export const Event = styled.div<EventProps>`
     var(--turquoise-blue),
     var(--turquoise-green)
   );
-  padding: 3% 3%;
+  padding: 1.5% 1.5%;
+  @media (max-width: 1100px) {
+    padding: ${(props) => !props.pastEvent && "3% 3%"};
+  }
+
   margin-bottom: 5%;
   border-radius: 30px;
 
   @media (min-width: 750px) {
     flex: ${(props) => props.pastEvent && "1"};
-    margin: ${(props) => props.pastEvent && "auto 2%"};
+    margin: ${(props) => props.pastEvent && "auto 1%"};
   }
 `;
 
 export const EventImage = styled.img<EventProps>`
+  border-radius: 20px;
   margin: ${(props) => (props.pastEvent ? "auto" : "2%")};
-  width: ${(props) => !props.pastEvent && "60%"};
-  float: ${(props) => (props.pastEvent ? "right" : "left")};
+  width: ${(props) => (props.pastEvent ? "100%" : "60%")};
+  float: ${(props) => !props.pastEvent && "left"};
   clear: ${(props) => (props.pastEvent ? "" : "right")};
 
   @media (max-width: 1100px) {
     width: 100%;
-    loat: none;
     margin: 0%;
-    margin-bottom: 5%;
+    margin-bottom: ${(props) => !props.pastEvent && "5%"};
   }
 `;
 
@@ -45,6 +49,5 @@ export const DatetimeButtonDiv = styled.div`
 export const EventText = styled.div`
   @media (max-width: 750px) {
     padding: 0% 0%;
-    margin-top: 5%;
   }
 `;

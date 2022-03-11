@@ -7,6 +7,7 @@ interface FeaturedProjectProps {
 export const ProjectContainer = styled.div`
   border-radius: 20px;
   position: relative;
+  justify-content: center;
   width: 95%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
   background: linear-gradient(
@@ -17,13 +18,14 @@ export const ProjectContainer = styled.div`
   margin-bottom: 10%;
 `;
 
-export const ProjectContent = styled.div<FeaturedProjectProps>`
-  /* We can change this, but position should be absolute still */
+export const ProjectTitle = styled.div<FeaturedProjectProps>`
   position: absolute;
   text-align: center;
-  font-size: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
   color: black;
-  top: 30%;
+  top: 20%;
   left: 10%;
   right: 10%;
   transition: 0.3s ease-in-out;
@@ -31,6 +33,30 @@ export const ProjectContent = styled.div<FeaturedProjectProps>`
 
   @media (max-width: 450px) {
     font-size: 3.5vw;
+    bottom: 25%;
+  }
+  @media (max-width: 525px) {
+    top: 15%;
+  }
+`;
+
+export const ProjectContent = styled.div<FeaturedProjectProps>`
+  /* We can change this, but position should be absolute still */
+  position: absolute;
+  text-align: center;
+  font-size: 1rem;
+  color: black;
+  top: 40%;
+  left: 10%;
+  right: 10%;
+  transition: 0.3s ease-in-out;
+  opacity: ${(props) => (props.isVisible ? 1 : 0)};
+
+  @media (max-width: 450px) {
+    font-size: 3.5vw;
+  }
+  @media (max-width: 500px) {
+    top: 35%;
   }
 `;
 

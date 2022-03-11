@@ -63,7 +63,7 @@ export const PastProjects: Project[] = [
   {
     id: 3,
     name: "Resume Tracker",
-    github: "https://github.com/armeenrn/ResumeTrackerApp",
+    github: "",
     pmName: "Daniel Rashidian",
     website: website,
     image: resumeTracker,

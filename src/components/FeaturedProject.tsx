@@ -32,9 +32,11 @@ function FeaturedProject(props: featuredProjectProps) {
 
       <S.ProjectContent isVisible={descriptionIsVisible}>
         {props.description}
+        {props.github !== "" &&
         <S.ProjectButton href={props.github} target="_blank">
           <div>Visit Project</div>
         </S.ProjectButton>
+}
       </S.ProjectContent>
     </S.ProjectContainer>
   );

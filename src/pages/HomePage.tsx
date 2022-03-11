@@ -55,16 +55,9 @@ const HomePage = () => {
           transform="translate(clamp(80vw, calc(5vw + 1rem), -30vw), -30%)"
           edge={false}
         />
-<<<<<<< HEAD
-<<<<<<< HEAD
-        <div className="homePage__container">
-          <h1 className="chonkyHeading chonkyHeading--lessMargin">
-            We're the innovators on campus.
-=======
         <div className="homePage__container">
           <h1 className="chonkyHeading chonkyHeading--lessMargin">
             We're the innovators on campus!
->>>>>>> eb14e400c8b206fc6978ac6b5f408d0b9bc205c6
           </h1>
           <Divider />
           <p className="regularText" id="draft">
@@ -74,21 +67,6 @@ const HomePage = () => {
             software, design, and strategy to complete awesome projects.
           </p>
           <p className="regularText">
-<<<<<<< HEAD
-            At Tech Start, our members learn to use new technologies, gain experience
-            with professional development tools and methodologies, and master
-            the art of collaboration. You do not need to know the skills before hand! Here at Tech Start, we teach 
-            all nesssary skills required for you to succeed here and in the industry. We're also the top spot on campus to meet
-            fellow tech enthusiasts, aspiring entrepreneurs, and innovators.
-          </p>
-
-          {/* <a
-            href="https://linktr.ee/techstartuofc"
-            target="blank"
-          >
-            <button className="homePage__btn">Visit our Linktree</button>
-          </a> */}
-=======
             At Tech Start, our members learn to use new technologies, gain
             experience with professional development tools and methodologies,
             and master the art of collaboration. We give our members the support
@@ -96,24 +74,11 @@ const HomePage = () => {
             previous experiences. We're also the top spot on campus to meet
             fellow tech enthusiasts, aspiring entrepreneurs, and innovators.
           </p>
->>>>>>> eb14e400c8b206fc6978ac6b5f408d0b9bc205c6
           <Blobbie
             id={2}
             width={300}
             transform="translate(75vw, -20%)"
             edge={true}
-<<<<<<< HEAD
-=======
-        <div className="homePage__numberContainer">
-          <NumberStat number={10} stat="projects so far" />
-          <NumberStat number={92} stat="members so far" />
-          <NumberStat
-            number={93}
-            suffix={"%"}
-            stat="enjoyed their involvement"
->>>>>>> 4360adcd73cdf24414f925fd93c3dbc2802acc71
-=======
->>>>>>> eb14e400c8b206fc6978ac6b5f408d0b9bc205c6
           />
           <div className="homePage__numberContainer">
             <NumberStat number={10} stat="projects so far" />

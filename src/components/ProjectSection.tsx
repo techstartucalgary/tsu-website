@@ -57,6 +57,7 @@ const ProjectSection = (props: ProjectSectionProps) => {
               <FeaturedProject
                 image={project.image}
                 github={project.github}
+                name={project.name}
                 description={project.description}
                 key={project.id}
               />
@@ -69,6 +70,7 @@ const ProjectSection = (props: ProjectSectionProps) => {
             <FeaturedProject
               image={project.image}
               github={project.github}
+              name={project.name}
               description={project.description}
               key={project.id}
             />

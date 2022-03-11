@@ -17,13 +17,31 @@ export const ProjectContainer = styled.div`
   margin-bottom: 10%;
 `;
 
+export const ProjectTitle = styled.div<FeaturedProjectProps>`
+  position: absolute;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  top: 25%;
+  left: 10%;
+  right: 10%;
+  transition: 0.3s ease-in-out;
+  opacity: ${(props) => (props.isVisible ? 1 : 0)};
+
+  @media (max-width: 450px) {
+    font-size: 3.5vw;
+  }
+`;
+
 export const ProjectContent = styled.div<FeaturedProjectProps>`
   /* We can change this, but position should be absolute still */
   position: absolute;
   text-align: center;
   font-size: 1rem;
   color: black;
-  top: 30%;
+  top: 40%; /*was 30 */
   left: 10%;
   right: 10%;
   transition: 0.3s ease-in-out;

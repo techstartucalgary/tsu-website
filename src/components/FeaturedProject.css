@@ -13,7 +13,11 @@
   width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
   /* background: linear-gradient(180deg, rgb(26, 25, 25), rgb(40, 46, 51)); */
-  background: linear-gradient(to top,var(--turquoise-blue), var(--turquoise-green));
+  background: linear-gradient(
+    to top,
+    var(--turquoise-blue),
+    var(--turquoise-green)
+  );
   /* background: linear-gradient(to top, var(--secondary-blue) -10%, var(--primary-black) 70%); */
 }
 
@@ -36,16 +40,16 @@
 
 @media (max-width: 400px) {
   .project__button {
-  background-color: var(--secondary-grey);
-  border-radius: 30px;
-  width: 40%;
-  height: 30px;
-  padding-top: 7px;
-  margin: auto;
-  margin-top: 20px;
-  transition: 200ms;
-  display: block;
-  transition: 0.3s ease-in-out;
+    background-color: var(--secondary-grey);
+    border-radius: 30px;
+    width: 40%;
+    height: 30px;
+    padding-top: 7px;
+    margin: auto;
+    margin-top: 20px;
+    transition: 200ms;
+    display: block;
+    transition: 0.3s ease-in-out;
   }
 
   .project__content {
@@ -72,18 +76,18 @@
   text-decoration: none;
 }
 
-@media (min-width: 600px){
-  .project__button:hover{
+@media (min-width: 600px) {
+  .project__button:hover {
     box-shadow: 2px 4px var(--primary-green);
     transform: translateY(-0.2em);
   }
 
-  .project__content a:hover{
+  .project__content a:hover {
     color: var(--turquoise-blue);
   }
 }
 
-.project__button:focus{
+.project__button:focus {
   background-color: black;
 }
 
@@ -107,6 +111,13 @@
 .featuredProjectImage {
   border-radius: 10px;
   opacity: 1;
+}
+
+.featuredProjectName {
+  bottom: 150px;
+  position: relative;
+  opacity: 0;
+  padding: 10px;
 }
 
 .featuredProjectDescription {

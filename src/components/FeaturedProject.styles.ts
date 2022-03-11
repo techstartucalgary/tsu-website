@@ -25,7 +25,7 @@ export const ProjectTitle = styled.div<FeaturedProjectProps>`
   font-weight: bold;
   font-style: italic;
   color: black;
-  top: 25%;
+  top: 20%;
   left: 10%;
   right: 10%;
   transition: 0.3s ease-in-out;
@@ -54,7 +54,9 @@ export const ProjectContent = styled.div<FeaturedProjectProps>`
 
   @media (max-width: 450px) {
     font-size: 3.5vw;
-    top: 30%;
+  }
+  @media (max-width: 500px) {
+    top: 35%;
   }
 `;
 

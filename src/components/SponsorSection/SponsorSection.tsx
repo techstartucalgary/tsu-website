@@ -25,7 +25,7 @@ const SponsorSection = () => {
 
       <S.SponsorCallToActionDiv>
         <p>
-          Interested in sponsoring us? Reach out via our&nbsp;
+          Interested in sponsoring us? Reach out at&nbsp;
           <b>
             <a href="external@techstartucalgary.com" target="_blank">
               external email

@@ -21,6 +21,7 @@ export const Event = styled.div<EventProps>`
   @media (min-width: 750px) {
     flex: ${(props) => props.pastEvent && "1"};
     margin: ${(props) => props.pastEvent && "auto 1%"};
+    margin-top: ${(props) => props.pastEvent && "10%"};
   }
 `;
 

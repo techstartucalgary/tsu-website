@@ -66,6 +66,7 @@ const HomePage = () => {
             technology to solve them. Every semester, our teams combine
             software, design, and strategy to complete awesome projects.
           </p>
+
           <p className="regularText">
             At Tech Start, our members learn to use new technologies, gain
             experience with professional development tools and methodologies,
@@ -74,6 +75,7 @@ const HomePage = () => {
             previous experiences. We're also the top spot on campus to meet
             fellow tech enthusiasts, aspiring entrepreneurs, and innovators.
           </p>
+
           <Blobbie
             id={2}
             width={300}

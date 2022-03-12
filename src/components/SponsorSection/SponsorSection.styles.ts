@@ -6,7 +6,7 @@ export const SponsorSection = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 10%;
+  margin-bottom: 7%;
 
   & > * {
     flex-basis: 30%;
@@ -25,4 +25,15 @@ export const SponsorLogoDiv = styled.div`
 export const SponsorButtonDiv = styled.div`
   justify-content: center;
   display: flex;
+  margin-bottom: 1%;
+`;
+
+export const SponsorCallToActionDiv = styled.div`
+  & > p {
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--secondary-grey);
+  }
+  margin-bottom: 5%;
 `;

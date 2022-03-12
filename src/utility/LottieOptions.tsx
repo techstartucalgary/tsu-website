@@ -6,13 +6,22 @@ import projectManagementLottie from "../images/lottie/projectManagement_lottie.j
 import projectTeamLottie from "../images/lottie/projectTeamLottie.json";
 import handshakeLottie from "../images/lottie/handshake_lottie.json";
 import teamproject from "../images/lottie/teamproject.json";
+import applyPageTeamLottie from "../images/lottie/applyPageTeamLottie.json";
 
+export const applyPageTeamLottieOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: applyPageTeamLottie,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
 export const projectTeamLottieOptions = {
   loop: true,
   autoplay: true,
   animationData: projectTeamLottie,
   rendererSettings: {
-    preserveAspectRatio: "xMidYMid slice",
+    preserveAspectRatio: "xMidYMin slice",
   },
 };
 

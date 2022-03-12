@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion/dist/framer-motion";
 
+import Lottie from "react-lottie";
+import * as S from "./ProjectsSection.styles";
 import "./ApplyPage.css";
+import { applyPageTeamLottieOptions } from "utility/LottieOptions";
 import projectExample from "images/teamphoto-techstartwebteam.png";
 import joinProject from "images/team.png";
 import ApplySection from "components/ApplySection";
@@ -99,6 +102,9 @@ function ApplyPage() {
           data-aos="fade-right"
           data-aos-duration="1000"
         />
+        <S.LottieDiv>
+          <Lottie options={applyPageTeamLottieOptions} />
+        </S.LottieDiv>
         <div className="applyPage__projectIntro">
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--white">
             FAQ

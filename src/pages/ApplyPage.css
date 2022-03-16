@@ -2,9 +2,6 @@ html {
   scroll-behavior: smooth;
 }
 
-.LottieDiv {
-  position: absolute;
-}
 .applyPage {
   border: none;
   box-sizing: border-box;

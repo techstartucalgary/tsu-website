@@ -95,16 +95,9 @@ function ApplyPage() {
         </div>
       </div>
       <div className="applyPage__container applyPage__projectIntroContainer">
-       {/*  <img
-          className="applyPage__projectIntroImg"
-          src={joinProject}
-          alt=""
-          data-aos="fade-right"
-          data-aos-duration="1000"
-          /> */ }
-          <div className="LottieDiv" />
-            <Lottie options = {applyPageTeamLottieOptions} />
-          </div>
+        <div className="applyPage__projectIntroImg">
+          <Lottie options={applyPageTeamLottieOptions} />
+        </div>
         <div className="applyPage__projectIntro">
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--white">
             FAQ

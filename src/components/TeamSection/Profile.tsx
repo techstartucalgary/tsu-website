@@ -3,16 +3,12 @@ import { TeamMember } from "./TeamInformation";
 import ProfileDescription from "./ProfileDescription";
 import SocialMedia from "components/SocialMedia/SocialMedia";
 import { SocialMediaColor } from "components/SocialMedia/SocialMedia.styles";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 type ProfileProps = {
-  className: string;
   key: number;
   member: TeamMember;
-  class: string;
-  col: number;
-  carouselView: boolean;
+  mobileView: boolean;
   profilePic: string;
   alt: string;
 };
@@ -22,10 +18,9 @@ const Profile = (props: ProfileProps) => {
 
   return (
     <S.ProfileDiv
-      className={props.class}
-      data-aos={!props.carouselView && "zoom-in"}
-      data-aos-duration={!props.carouselView && "1500"}
-      carouselView={props.carouselView}
+      data-aos={!props.mobileView && "zoom-in"}
+      data-aos-duration={!props.mobileView && "1500"}
+      mobileView={props.mobileView}
     >
       <S.ProfileIconDiv>
         <img
@@ -39,19 +34,13 @@ const Profile = (props: ProfileProps) => {
       <S.LinksSection>
         <SocialMedia
           color={SocialMediaColor.Gradient}
-          icon={faLinkedin}
+          icon={faLinkedinIn}
           link={props.member.linkedin}
-        />
-        <SocialMedia
-          color={SocialMediaColor.Gradient}
-          icon={faEnvelope}
-          link={props.member.email}
         />
       </S.LinksSection>
       <ProfileDescription
         name={props.member.name}
         affiliation={props.member.affiliation}
-        isCarousel={props.carouselView}
       />
     </S.ProfileDiv>
   );

@@ -42,6 +42,7 @@ export const SocialMediaIcon = styled.a<{ color: SocialMediaColor }>`
   transition: 0.3s ease-in-out;
   display: inline-block;
   color: ${(color) => handleColor(color.color)};
+  z-index: 1;
 
   ${(color) => color.color === SocialMediaColor.Gradient && GradientStyles};
 

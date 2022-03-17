@@ -14,13 +14,14 @@ const TeamSection = () => {
 
   return (
     <S.TeamSection>
+      {/*Toggle Button*/}
       <h2>Executives</h2>
       <Divider />
-      <Team teamMembers={executiveTeam} defaultView={defaultView} />
+      <Team teamMembers={executiveTeam} desktopView={defaultView} />
       <h2>Project Managers</h2>
       <Divider />
 
-      <Team teamMembers={projectManagers} defaultView={defaultView} />
+      <Team teamMembers={projectManagers} desktopView={defaultView} />
     </S.TeamSection>
   );
 };

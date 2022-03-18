@@ -274,9 +274,10 @@ html {
 .applyPage__projectIntroImg {
   object-fit: cover;
   width: 24vw;
-  height: auto;
-  padding: 5% 3% 5% 3%;
-  margin-left: 5%;
+  height: 30vw;
+  padding: 2.5% 0% 0% 0%;
+  margin-left: 7%;
+  margin-top: clamp(5vw, calc(15vw + 1rem), 20vw);
   display: inline-block;
 }
 .applyPage__projectIntro {

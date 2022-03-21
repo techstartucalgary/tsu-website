@@ -37,6 +37,14 @@ export const EventImage = styled.img<EventProps>`
     margin: 0%;
     margin-bottom: ${(props) => !props.pastEvent && "5%"};
   }
+  &: hover {
+    box-shadow: ${(props) =>
+      props.pastEvent &&
+      "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px"};
+
+    transition: ${(props) => props.pastEvent && "all 0.3s ease-in-out"};
+    transform: ${(props) => props.pastEvent && "scale(1.025)"};
+  }
 `;
 
 export const DatetimeButtonDiv = styled.div`

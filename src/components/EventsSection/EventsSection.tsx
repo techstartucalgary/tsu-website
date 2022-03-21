@@ -34,9 +34,9 @@ const EventsSection = () => {
 
       <h2
         className="thiccSubheading"
-        style={{ marginTop: "5%", marginBottom: "5%" }}
+        style={{ marginTop: "5%", marginBottom: "0%" }}
       >
-        Check out other events we've hosted in the past:
+        Check out events we've hosted in the past:
       </h2>
 
       <S.EventsContainer pastEvent={true}>

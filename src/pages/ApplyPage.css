@@ -277,7 +277,9 @@ html {
   height: 30vw;
   padding: 2.5% 0% 0% 0%;
   margin-left: 7%;
-  margin-top: clamp(5vw, calc(15vw + 1rem), 20vw);
+  /*margin-top: clamp(5vw, calc(0vw - 5rem), 20vw); */
+  min-width: 10vw;
+  min-height: 10vw;
   display: inline-block;
 }
 .applyPage__projectIntro {

@@ -1,6 +1,7 @@
 html {
   scroll-behavior: smooth;
 }
+
 .applyPage {
   border: none;
   box-sizing: border-box;
@@ -273,9 +274,11 @@ html {
 .applyPage__projectIntroImg {
   object-fit: cover;
   width: 24vw;
-  height: auto;
-  padding: 5% 3% 5% 3%;
-  margin-left: 5%;
+  height: 30vw;
+  padding: 2.5% 0% 0% 0%;
+  margin-left: 7%;
+  min-width: 10vw;
+  min-height: 10vw;
   display: inline-block;
 }
 .applyPage__projectIntro {

@@ -27,13 +27,15 @@ const Event = (props: EventProps) => {
       pastEvent={props.pastEvent}
     >
       {props.pastEvent ? (
-        <S.EventImage
-          pastEvent={true}
-          src={props.image}
-          key={props.key}
-          alt={props.title}
-          onDragStart={preventDragHandler}
-        />
+        <a href={props.link}>
+          <S.EventImage
+            pastEvent={true}
+            src={props.image}
+            key={props.key}
+            alt={props.title}
+            onDragStart={preventDragHandler}
+          />
+        </a>
       ) : (
         <S.EventImage
           pastEvent={false}

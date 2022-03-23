@@ -10,8 +10,6 @@ import resumeTracker from "images/project/resumetracker.png";
 import oneHub from "images/project/oneHub.png";
 import aquavolution from "images/project/aquavolution.jpg";
 import snowbot from "images/project/snowbot.jpg";
-import uofc_research from "images/project/uofc-research.png";
-import amigo from "images/project/amigo.jpg";
 import noteAid from "images/project/noteAid.jpg";
 import decisionApp from "images/project/decisionApp.jpg";
 
@@ -83,6 +81,7 @@ export const CurrentProjects: Project[] = [
     description:
       "Born a tiny fish, try to survive among other predators, be careful of the human waste in the ocean though!",
   },
+  /*
   {
     id: 2,
     name: "Amigo",
@@ -93,6 +92,7 @@ export const CurrentProjects: Project[] = [
     description:
       "A platform for students to connect with others in the same university to study together",
   },
+  */
   {
     id: 3,
     name: "Snowbot",
@@ -103,17 +103,7 @@ export const CurrentProjects: Project[] = [
     description: "A robot that autonomously clears snow on sidewalks",
   },
   {
-    id: 4,
-    name: "UofC Research",
-    github: "",
-    website: website,
-    image: uofc_research,
-    pmName: "Davis Johnson",
-    description:
-      "A website dedicated for UoC students who are looking for extracurricular activities",
-  },
-  {
-    id: 5,
+    id: 3,
     name: "NoteAId",
     github: "https://github.com/Tech-Start-UCalgary/NoteAId",
     website: website,
@@ -123,12 +113,12 @@ export const CurrentProjects: Project[] = [
       "A mobile app that helps students with studying for exams by summarizing their handwritten notes",
   },
   {
-    id: 6,
+    id: 4,
     name: "Decision App",
     github: "https://github.com/Tech-Start-UCalgary/NoteAId",
     website: website,
     image: decisionApp,
-    pmName: "Mahdi Varposhti",
+    pmName: "Vivian Huynh",
     description:
       "An app that helps groups make decisions when planning a social gathering by voting",
   },

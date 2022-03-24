@@ -27,9 +27,7 @@ const SponsorSection = () => {
         <p>
           Interested in sponsoring us? Reach out at&nbsp;
           <b>
-            <a href="external@techstartucalgary.com" target="_blank">
-              external email
-            </a>
+            <a href="mailto:external@techstartucalgary.com">external email</a>
           </b>
           !
         </p>

@@ -10,10 +10,10 @@ const ApplyButton = () => {
     animationControl.start({
       x: 0,
       transition: {
-        duration: 0.7,
-        delay: 0.5,
+        duration: 0.4,
+        delay: 0.0,
         type: "spring",
-        stiffness: 150,
+        stiffness: 70,
       },
     });
   }

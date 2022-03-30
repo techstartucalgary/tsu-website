@@ -141,19 +141,18 @@ function ApplyPage() {
               internships, and co-op placements.
               </br></br>
               <strong>Project Designer</strong></br>
-              As a designer at Tech Start, you will be in charge of making the
+              As a designer, you will be in charge of making the
               attractive, creative interfaces that provide great user experiences.
               This role requires creativity, a practical and user-friendly perspective, 
               and an eye for art! This usually involves planning out the design and 
               working on the front-end for the majority of projects.
               </br></br>
               <strong>Project Manager</strong> (separate application)</br>
-              As a manager, you will be in charge of organizing, coordinating, and 
+              As a project manager, you will be in charge of organizing, coordinating, and 
               leading the team to create complex projects! This involves leading
               weekly team meetings, leading the team vision, and guiding the project process. 
-              Build your portfolio, gain industry-like experience, and learn about the
-              product life cycle from initial design to testing and deployment. As a project manager, 
-              you will be given a guide along with support from the executive team to manage the timeline of your project, lead your team, and more!"
+              You will be given a guide along with support from the executive team to manage the 
+              timeline of your project, lead your team, and more!"
           />
           <Accordion
             title="Why join a project?"
@@ -182,9 +181,11 @@ function ApplyPage() {
             active={active}
             setActive={setActive}
             description="
-            <li>Team members must be able to attend the majority of our weekly dev nights, which are held on Thursdays from 5:30-8:30PM.</li>
-            <li>Beyond the dev nights, you should expect to contribute a minimum of 1-2 hours of additional work per week</li>
-            <li>Additional team meetings may be arranged by your Project Manager when necessary</li>
+            Team members must be able to attend the majority of our weekly dev nights, which are held on Thursdays from 5:30-8:30PM.
+            </br></br>
+            Beyond the dev nights, you should expect to contribute a minimum of 1-2 hours of additional work per week.
+            </br></br>
+            Additional team meetings may be arranged by your Project Manager when necessary.
             "
           />
           <Accordion

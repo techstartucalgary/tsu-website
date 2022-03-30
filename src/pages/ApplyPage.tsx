@@ -1,7 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion/dist/framer-motion";
 
+import Lottie from "react-lottie";
+import * as S from "./ProjectsSection.styles";
 import "./ApplyPage.css";
+import { applyPageTeamLottieOptions } from "utility/LottieOptions";
 import projectExample from "images/teamphoto-techstartwebteam.png";
 import joinProject from "images/team.png";
 import ApplySection from "components/ApplySection";
@@ -92,32 +95,13 @@ function ApplyPage() {
         </div>
       </div>
       <div className="applyPage__container applyPage__projectIntroContainer">
-        <img
-          className="applyPage__projectIntroImg"
-          src={joinProject}
-          alt=""
-          data-aos="fade-right"
-          data-aos-duration="1000"
-        />
+        <div className="applyPage__projectIntroImg">
+          <Lottie options={applyPageTeamLottieOptions} />
+        </div>
         <div className="applyPage__projectIntro">
           <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--white">
             FAQ
           </h1>
-          <Accordion
-            title="What is a Tech Start project?"
-            active={active}
-            setActive={setActive}
-            description="Our members form teams that gather together to
-                  brainstorm a project, and then work on that idea collaboratively 
-                  with 6-9 other creators over 1 or 2 semesters. During this time the
-                  projects evolve and shift, and our members get to experience
-                  the full lifecycle of bringing a complex project to life. Each
-                  team is lead by an experienced project manager who provides the
-                  expertise needed to execute on the team’s vision. We are also fortunate 
-                  enough to be supported by a number of companies who provide us with
-                  the resources necessary to build our projects and run events
-                  and workshops."
-          />
           <Accordion
             title="What roles are there in a project?"
             active={active}
@@ -193,7 +177,7 @@ function ApplyPage() {
             active={active}
             setActive={setActive}
             description="
-              Your Project Manager will pick one of the following ways the decide the team's project focus:
+              Your Project Manager will pick one of the following ways to decide the team's project focus:
               </br></br>
               <strong>Focused</strong></br>
               The project starts off with a specific idea or concept from the get-go. These ideas are pitched at the 
@@ -206,6 +190,20 @@ function ApplyPage() {
               a concept, purpose, and scope for the project according to your interests and ideas!
               </br></br>
               "
+          />
+          <Accordion
+            title="Do we try to monetize projects?"
+            active={active}
+            setActive={setActive}
+            description="
+            Tech Start projects are themed around startups and entrepreneurship. 
+            Our teams use entrepreneurial thinking to guide their decision making and design their 
+            project around fulfilling a specific market niche and meeting the needs of a target audience. 
+            Despite this theme, Tech Start projects are not about building real startups - instead, 
+            we're focused on teaching skills, providing mentorship, and building projects that can boost 
+            your portfolio and your career. That said, if you want to pursue your project as a real entrepreneurial 
+            venture and monetize it outside of Tech Start, we're able to provide support and direct you to resources 
+            that you can use."
           />
           <Accordion
             title="What does the Executive Team do?"
@@ -268,18 +266,18 @@ function ApplyPage() {
               role="Project Manager"
               description="Manage a project for 1 or 2 semesters and lead a team of 6-9
                     project members to create complex projects."
-              status="closed"
-              closedStatus="Recruitment Finished"
-              applicationLink="https://forms.gle/M4zFFDRj8tfV6Kgg6"
+              status="open"
+              closedStatus=""
+              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScHj9FcIK4ApPqyMiXf_PLlQ43FpI7EB5gmz7SJFGczU9xIkg/viewform"
             />
 
             <ApplySection
               role="Executive Team"
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
-              status="closed"
-              closedStatus="Opens Spring 2022"
-              applicationLink="https://forms.gle/PQMbV5SWQfNe46GAA"
+              status="open"
+              closedStatus=""
+              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSdk7hbechdpXn6NzIzW4EGI5avrrkPgGmDT4ArZ9xz2BHLIGw/viewform"
             />
           </ul>
         </div>

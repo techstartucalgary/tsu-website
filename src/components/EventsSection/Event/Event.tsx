@@ -10,7 +10,6 @@ type EventProps = {
   time: string;
   image: string;
   link: string;
-  linkTitleOverride?: string;
   pastEvent: boolean;
 };
 
@@ -21,9 +20,6 @@ const Event = (props: EventProps) => {
 
   const fadeDirection = props.pastEvent ? "fade-left" : "fade-right";
 
-  const linkButtonText =
-    props.linkTitleOverride || (props.pastEvent ? "Event Link" : "Register");
-
   return (
     <S.Event
       data-aos={fadeDirection}
@@ -31,13 +27,15 @@ const Event = (props: EventProps) => {
       pastEvent={props.pastEvent}
     >
       {props.pastEvent ? (
-        <S.EventImage
-          pastEvent={true}
-          src={props.image}
-          key={props.key}
-          alt={props.title}
-          onDragStart={preventDragHandler}
-        />
+        <a href={props.link}>
+          <S.EventImage
+            pastEvent={true}
+            src={props.image}
+            key={props.key}
+            alt={props.title}
+            onDragStart={preventDragHandler}
+          />
+        </a>
       ) : (
         <S.EventImage
           pastEvent={false}
@@ -59,7 +57,7 @@ const Event = (props: EventProps) => {
             <div>
               <HoverButton
                 mode={ButtonMode.DARK}
-                text={linkButtonText}
+                text={"Event Link"}
                 link={props.link}
                 linkIsInternal={false}
               />

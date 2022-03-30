@@ -7,13 +7,37 @@ interface FeaturedProjectProps {
 export const ProjectContainer = styled.div`
   border-radius: 20px;
   position: relative;
-  width: 100%;
+  justify-content: center;
+  width: 95%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
   background: linear-gradient(
     to top,
     var(--turquoise-blue),
     var(--turquoise-green)
   );
+  margin-bottom: 10%;
+`;
+
+export const ProjectTitle = styled.div<FeaturedProjectProps>`
+  position: absolute;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  top: 20%;
+  left: 10%;
+  right: 10%;
+  transition: 0.3s ease-in-out;
+  opacity: ${(props) => (props.isVisible ? 1 : 0)};
+
+  @media (max-width: 450px) {
+    font-size: 3.5vw;
+    bottom: 25%;
+  }
+  @media (max-width: 525px) {
+    top: 15%;
+  }
 `;
 
 export const ProjectContent = styled.div<FeaturedProjectProps>`
@@ -22,7 +46,7 @@ export const ProjectContent = styled.div<FeaturedProjectProps>`
   text-align: center;
   font-size: 1rem;
   color: black;
-  top: 30%;
+  top: 40%;
   left: 10%;
   right: 10%;
   transition: 0.3s ease-in-out;
@@ -30,6 +54,9 @@ export const ProjectContent = styled.div<FeaturedProjectProps>`
 
   @media (max-width: 450px) {
     font-size: 3.5vw;
+  }
+  @media (max-width: 500px) {
+    top: 35%;
   }
 `;
 

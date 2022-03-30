@@ -20,10 +20,6 @@ import davis_jpg from "./Images/davis.jpg";
 import elgiz_jpg from "./Images/elgiz.jpeg";
 import ali_jpg from "./Images/ali.jpg";
 
-//import member_7 from './Images/Armeen_Rashidian.jpg'
-//import member_8 from './Images/Felix_Vaughan.jpg'
-//import member_9 from './Images/Darryl_Huët.jpg'
-
 export type TeamMember = {
   id: number;
   name: string;
@@ -139,6 +135,7 @@ projectManagers = [
     linkedin: "https://www.linkedin.com/in/mahdiva/",
     email: "mailto:mahdi.varposhti1@ucalgary.ca",
   },
+  /*
   {
     id: 12,
     name: "Zeyad Omran",
@@ -147,6 +144,7 @@ projectManagers = [
     linkedin: "https://www.linkedin.com/in/zeyadomran",
     email: "mailto:zeyad.omran@ucalgary.ca",
   },
+  */
   {
     id: 13,
     name: "Niyousha Raeesinejad",
@@ -165,14 +163,6 @@ projectManagers = [
   },
   {
     id: 15,
-    name: "Davis Johnson",
-    affiliation: "UofC Research Website",
-    image: davis_jpg,
-    linkedin: "https://www.linkedin.com/in/davis-johnson-a86a841b0",
-    email: "mailto:deivydasjohnson@gmail.com",
-  },
-  {
-    id: 16,
     name: "Vivian Huynh",
     affiliation: "Decision App",
     image: vivian_jpg,
@@ -180,7 +170,7 @@ projectManagers = [
     email: "mailto:vivian.huynh2@ucalgary.ca",
   },
   {
-    id: 17,
+    id: 16,
     name: "Ali Siddiqi",
     affiliation: "Snowbot",
     image: ali_jpg,

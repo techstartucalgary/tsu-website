@@ -10,27 +10,40 @@ export const Event = styled.div<EventProps>`
     var(--turquoise-blue),
     var(--turquoise-green)
   );
-  padding: 3% 3%;
+  padding: 1.5% 1.5%;
+  @media (max-width: 1100px) {
+    padding: ${(props) => !props.pastEvent && "3% 3%"};
+  }
+
   margin-bottom: 5%;
   border-radius: 30px;
 
   @media (min-width: 750px) {
     flex: ${(props) => props.pastEvent && "1"};
-    margin: ${(props) => props.pastEvent && "auto 2%"};
+    margin: ${(props) => props.pastEvent && "auto 1%"};
+    margin-top: ${(props) => props.pastEvent && "10%"};
   }
 `;
 
 export const EventImage = styled.img<EventProps>`
+  border-radius: 20px;
   margin: ${(props) => (props.pastEvent ? "auto" : "2%")};
-  width: ${(props) => !props.pastEvent && "60%"};
-  float: ${(props) => (props.pastEvent ? "right" : "left")};
+  width: ${(props) => (props.pastEvent ? "100%" : "60%")};
+  float: ${(props) => !props.pastEvent && "left"};
   clear: ${(props) => (props.pastEvent ? "" : "right")};
 
-  @media (max-width: 950px) {
+  @media (max-width: 1100px) {
     width: 100%;
-    loat: none;
     margin: 0%;
-    margin-bottom: 5%;
+    margin-bottom: ${(props) => !props.pastEvent && "5%"};
+  }
+  &: hover {
+    box-shadow: ${(props) =>
+      props.pastEvent &&
+      "rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px"};
+
+    transition: ${(props) => props.pastEvent && "all 0.3s ease-in-out"};
+    transform: ${(props) => props.pastEvent && "scale(1.025)"};
   }
 `;
 
@@ -43,7 +56,7 @@ export const DatetimeButtonDiv = styled.div`
 `;
 
 export const EventText = styled.div`
-@media (max-width: 750px) {
-  padding: 0% 0%;
-  margin-top: 5%;
+  @media (max-width: 750px) {
+    padding: 0% 0%;
+  }
 `;

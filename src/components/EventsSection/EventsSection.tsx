@@ -1,4 +1,4 @@
-import { upcomingEvents, pastEvents } from "./EventInformation";
+import { highlightedEvents, pastEvents } from "./EventInformation";
 import Event from "./Event/Event";
 import * as S from "./EventsSection.styles";
 
@@ -16,7 +16,7 @@ const EventsSection = () => {
       </p>
 
       <S.EventsContainer pastEvent={false} style={{ textAlign: "left" }}>
-        {upcomingEvents.map((event, i) => {
+        {highlightedEvents.map((event, i) => {
           return (
             <Event
               key={i}
@@ -26,7 +26,6 @@ const EventsSection = () => {
               time={event.time}
               image={event.image}
               link={event.link}
-              linkTitleOverride={event.linkTitleOverride}
               pastEvent={false}
             />
           );
@@ -35,7 +34,7 @@ const EventsSection = () => {
 
       <h2
         className="thiccSubheading"
-        style={{ marginTop: "5%", marginBottom: "5%" }}
+        style={{ marginTop: "5%", marginBottom: "0%" }}
       >
         Check out events we've hosted in the past:
       </h2>
@@ -51,7 +50,6 @@ const EventsSection = () => {
               time={event.time}
               image={event.image}
               link={event.link}
-              linkTitleOverride={event.linkTitleOverride}
               pastEvent={true}
             />
           );

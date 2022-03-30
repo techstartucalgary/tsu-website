@@ -18,7 +18,7 @@ export const ApplicationContent = styled.article`
     @media (max-width: 1100px) {
       margin-bottom: 20%;
     }
-    @media (max-width: 800px) {
+    @media (max-width: 799px) {
       margin-bottom: 0;
     }
     @media (max-width: 400px) {

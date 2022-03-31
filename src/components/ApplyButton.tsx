@@ -11,7 +11,7 @@ const ApplyButton = () => {
       x: 0,
       transition: {
         duration: 0.4,
-        delay: 0.0,
+        delay: 0.1,
         type: "spring",
         stiffness: 70,
       },

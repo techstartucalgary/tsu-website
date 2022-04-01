@@ -138,27 +138,40 @@ html {
 
 .homePage__headerSubtitle {
   font-size: 3rem;
-  font-size: clamp(0.8rem, calc(5vw + 1rem), 4.5rem);
+  font-size: 5vw;
   color: white;
   z-index: 3;
   pointer-events: none;
   /*adjust size to window*/
   line-height: 1.1;
   font-weight: 700;
-  margin-bottom: 300px;
+  margin-top: 0%;
+  margin-bottom: 100%;
 }
 
 /**** Hero (Landing Page) *****/
 
 .homePage__hero {
   text-align: center;
-  height: clamp(700px, 100vh, 1200px);
+  height: 60vw;
   display: flex;
   flex-direction: column;
   /* background: radial-gradient(rgb(0, 0, 0), var(--secondary-grey));  */
   background-image: linear-gradient(rgb(0, 0, 0), var(--primary-black));
   position: relative;
 }
+
+@media (max-width: 950px) {
+   .homePage__hero {
+     text-align: center;
+     height: 70vw;
+     display: flex;
+     flex-direction: column;
+     /* background: radial-gradient(rgb(0, 0, 0), var(--secondary-grey));  */
+     background-image: linear-gradient(rgb(0, 0, 0), var(--primary-black));
+     position: relative;
+   }
+ }
 
 /* @supports (background-blend-mode: multiply) {
   .homePage__hero {

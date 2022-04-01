@@ -138,7 +138,7 @@ html {
 
 .homePage__headerSubtitle {
   font-size: 3rem;
-  font-size: 5vw; /*clamp(0.8rem, calc(5vw + 1rem), 4.5rem);*/
+  font-size: 5vw;
   color: white;
   z-index: 3;
   pointer-events: none;

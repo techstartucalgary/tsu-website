@@ -1,4 +1,5 @@
 import "./Navbar.css";
+import * as S from "./Navbar.styles";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "images/tech-start-logo-white.png";
@@ -36,29 +37,24 @@ const Header = () => {
   );
 
   return (
-    <header className="navbar__container">
-      <div className="navbar">
-        <input
+    <S.NavbarContainer>
+      <S.Navbar>
+        <S.Navbar_NavToggle
           type="checkbox"
           checked={navbarExpanded}
           onClick={toggleNavbarExpanded}
           id="navbar__nav-toggle"
-          className="navbar__nav-toggle"
         />
         <a href="#">
           <LinkScroll to="homePageTop" spy={true} offset={-70} duration={500}>
             <Link to="/">
-              <motion.img
-                initial={{ y: -250 }}
-                animate={{ y: 0 }}
-                src={logo}
-                alt="logo"
-                className="navbar__logo"
-              />
+              <motion.div initial={{ y: -250 }} animate={{ y: 0 }}>
+                <S.NavbarLogo src={logo} alt="logo" />
+              </motion.div>
             </Link>
           </LinkScroll>
         </a>
-        <nav className="navbar__content ">
+        <S.NavbarContent>
           <motion.ul initial={{ y: -250 }} animate={{ y: 0 }}>
             <NavbarLink top="homePageTop" link="/" name="About" />
             <NavbarLink top="teamPageTop" link="/team" name="Team" />
@@ -69,22 +65,14 @@ const Header = () => {
             />
             <NavbarLink top="applyPageTop" link="/apply" name="Apply" />
             <NavbarLink top="docsPageTop" link="/resources" name="Resources" />
-            {/* <NavbarLink
-                        top="sparkPageTop"
-                        link="/community"
-                        name="Community"
-                    /> */}
           </motion.ul>
-        </nav>
-        <label
-          htmlFor="navbar__nav-toggle"
-          className="navbar__nav-toggle-label"
-        >
+        </S.NavbarContent>
+        <S.Navbar_NavToggle_Label htmlFor="navbar__nav-toggle">
           <span></span>
-        </label>
-      </div>
-      <div className="navbar__placeholder"></div>
-    </header>
+        </S.Navbar_NavToggle_Label>
+      </S.Navbar>
+      <S.NavbarPlaceholder />
+    </S.NavbarContainer>
   );
 };
 export default Header;

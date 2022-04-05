@@ -1,7 +1,6 @@
 import { ProfileDescriptionDiv } from "./ProfileDescription.styles";
 
 interface ProfileDescriptionProps {
-  isCarousel: boolean;
   name: string;
   affiliation: string;
 }

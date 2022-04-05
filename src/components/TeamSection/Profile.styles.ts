@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 
 interface ProfileStyleProps {
-  carouselView: boolean;
+  mobileView: boolean;
 }
 
 export const ProfileDiv = styled.div<ProfileStyleProps>`
@@ -11,9 +11,9 @@ export const ProfileDiv = styled.div<ProfileStyleProps>`
   align-items: center;
   justify-content: center;
 
-  width: ${(props) => props.carouselView && "100%"};
-  max-width: ${(props) => props.carouselView && "400px"};
-  margin-bottom: ${(props) => props.carouselView && 0};
+  width: ${(props) => props.mobileView && "100%"};
+  max-width: ${(props) => props.mobileView && "400px"};
+  margin-bottom: ${(props) => props.mobileView && 0};
 `;
 
 export const ProfileIconDiv = styled.div`
@@ -27,17 +27,19 @@ export const ProfileIconDiv = styled.div`
     background-size: cover;
     background-color: white;
     border-radius: 50%;
+    position: relative;
   }
 `;
 
 export const LinksSection = styled.div`
   transition: 0.4s ease-in-out;
-  display: grid;
-  grid-template-columns: auto auto;
-  grid-template-rows: auto auto;
+  display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  font-size: 1rem;
+  transform: translate(150%, -50%);
+  font-size: 0.9rem;
+  background-color: rgb(213, 245, 227);
+  border-radius: 50%;
+  height: 60px;
+  width: 60px;
 `;

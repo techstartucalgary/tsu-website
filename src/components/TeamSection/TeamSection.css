@@ -1,0 +1,70 @@
+.team_switch {
+  overflow-y: hidden;
+  white-space: nowrap;
+  position: absolute;
+  height: 200px;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  padding-left: 0;
+  width: 200px;
+
+  right: 5%;
+  transform-origin: 200px;
+}
+
+.team_switch_label {
+  position: absolute;
+  display: inline-block;
+  height: 24px;
+  width: 52px;
+  cursor: pointer;
+  top: 16px;
+}
+
+.team_switch_label input {
+  opacity: 0%;
+  height: 0;
+  width: 0;
+}
+
+.team_switch_span {
+  position: absolute;
+  background-color: #12b0e0;
+
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-top-left-radius: 35%;
+  border-bottom-left-radius: 35%;
+  border-top-right-radius: 35%;
+  border-bottom-right-radius: 35%;
+  transition: 0.4s;
+  display: inline;
+}
+
+.team_switch_span::before {
+  content: "";
+  background-color: white;
+
+  top: 3px;
+  height: 18.5px;
+  width: 19px;
+  font-size: 21px;
+  position: absolute;
+  bottom: 20px;
+  border-radius: 50%;
+  transition: 0.4s;
+}
+
+.team_switch_label input:checked + .team_switch_span::before {
+  transform: translateX(-21px);
+  background-color: rgb(255, 213, 75);
+}
+
+.team_switch_label input:checked + .team_switch_span {
+  background-color: #6cbb5c;
+}

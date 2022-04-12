@@ -4,7 +4,8 @@
  * All image sizes should be a 16:9 Aspect ratio
  */
 
-import techStartWebsite from "images/project/techStartWebsite.png";
+import techStartWebsitePast from "images/project/techStartWebsite-past.svg";
+import techStartWebsiteNew from "images/project/techStartWebsite-new.png";
 import supplyMe from "images/project/supplyMe.png";
 import resumeTracker from "images/project/resumetracker.png";
 import oneHub from "images/project/oneHub.png";
@@ -34,7 +35,7 @@ export const PastProjects: Project[] = [
     github: "https://github.com/Tech-Start-UCalgary/tsu-website",
     pmName: "Joel Happ",
     website: website,
-    image: techStartWebsite,
+    image: techStartWebsitePast,
     description:
       "We built this website from scratch with React, TypeScript, and a Django backend!",
   },
@@ -72,6 +73,15 @@ export const PastProjects: Project[] = [
 
 export const CurrentProjects: Project[] = [
   {
+    id: 0,
+    name: "Tech Start Website",
+    github: "https://github.com/Tech-Start-UCalgary/tsu-website",
+    pmName: "Niyousha Raeesinejad",
+    website: website,
+    image: techStartWebsiteNew,
+    description: "We made some cool upgrades to the TechStart Website!",
+  },
+  {
     id: 1,
     name: "Aquavolution",
     github: "https://github.com/Tech-Start-UCalgary/Aquavolution",
@@ -81,18 +91,6 @@ export const CurrentProjects: Project[] = [
     description:
       "Born a tiny fish, try to survive among other predators, be careful of the human waste in the ocean though!",
   },
-  /*
-  {
-    id: 2,
-    name: "Amigo",
-    github: "https://github.com/Tech-Start-UCalgary/Amigo",
-    website: website,
-    image: amigo,
-    pmName: "Zeyad Omran",
-    description:
-      "A platform for students to connect with others in the same university to study together",
-  },
-  */
   {
     id: 3,
     name: "Snowbot",

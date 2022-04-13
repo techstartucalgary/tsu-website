@@ -4,11 +4,6 @@ import Team from "./Team";
 import useViewport from "../UseViewport";
 import * as S from "./TeamSection.styles";
 import { executiveTeam, projectManagers } from "./TeamInformation";
-import { LinksSection } from "./Profile.styles";
-import Profile from "./Profile";
-import { SocialMediaColor } from "components/SocialMedia/SocialMedia.styles";
-import { ProjectsPage } from "pages/ProjectsPage.styles";
-import SocialMedia from "components/SocialMedia/SocialMedia";
 
 const TeamSection = () => {
   const [toggle, setToggled] = useState(false);
@@ -34,9 +29,17 @@ const TeamSection = () => {
         </S.ToggleButtonLabel>
       </S.ToggleButtonWrapper>
       {toggle ? (
-        <Team teamMembers={projectManagers} desktopView={defaultView} />
+        <Team
+          teamMembers={projectManagers}
+          desktopView={defaultView}
+          isExec={false}
+        />
       ) : (
-        <Team teamMembers={executiveTeam} desktopView={defaultView} />
+        <Team
+          teamMembers={executiveTeam}
+          desktopView={defaultView}
+          isExec={true}
+        />
       )}
     </S.TeamSection>
   );

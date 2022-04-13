@@ -1,30 +1,5 @@
 import styled, { css } from "styled-components/macro";
-
-export enum SocialMediaColor {
-  Green = "Green",
-  Gradient = "Gradient",
-  Black = "Black",
-  ToggleGreen = "ToggleGreen",
-  ToggleBlue = "ToggleBlue",
-  White = "White",
-}
-
-const handleColor = (color: SocialMediaColor) => {
-  switch (color) {
-    case SocialMediaColor.Black:
-      return "black";
-    case SocialMediaColor.Green:
-      return "var(--primary-green)";
-    case SocialMediaColor.ToggleGreen:
-      return "var(--toggle-green)";
-    case SocialMediaColor.ToggleBlue:
-      return "var(--toggle-blue)";
-    case SocialMediaColor.White:
-      return "white";
-    default:
-      return "";
-  }
-};
+import { SocialMediaColor, handleColor } from "utility/SharedStyles";
 
 const GradientStyles = css`
   background-clip: text;

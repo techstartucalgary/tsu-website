@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { SocialMediaColor } from "components/SocialMedia/SocialMedia.styles";
+import { SocialMediaColor, handleColor } from "../../utility/SharedStyles";
 
 interface ProfileStyleProps {
   mobileView: boolean;
@@ -33,7 +33,7 @@ export const ProfileIconDiv = styled.div`
   }
 `;
 
-export const LinksSection = styled.div`
+export const LinksSection = styled.div<{ backgroundColor: SocialMediaColor }>`
   transition: 0.4s ease-in-out;
   display: flex;
   align-items: center;
@@ -90,7 +90,8 @@ export const LinksSection = styled.div`
     font-size: 1rem;
   }
   font-size: 0.9rem;
-  background-color: rgb(213, 245, 227);
+  background-color: ${(backgroundColor) =>
+    handleColor(backgroundColor.backgroundColor)};
   border-radius: 50%;
   height: 60px;
   width: 60px;

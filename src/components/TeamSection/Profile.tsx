@@ -2,7 +2,7 @@ import * as S from "./Profile.styles";
 import { TeamMember } from "./TeamInformation";
 import ProfileDescription from "./ProfileDescription";
 import SocialMedia from "components/SocialMedia/SocialMedia";
-import { SocialMediaColor } from "components/SocialMedia/SocialMedia.styles";
+import { SocialMediaColor } from "../../utility/SharedStyles";
 import { faBlackberry, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 type ProfileProps = {
@@ -11,6 +11,7 @@ type ProfileProps = {
   mobileView: boolean;
   profilePic: string;
   alt: string;
+  isExec: boolean;
 };
 
 const Profile = (props: ProfileProps) => {
@@ -31,7 +32,13 @@ const Profile = (props: ProfileProps) => {
         />
       </S.ProfileIconDiv>
 
-      <S.LinksSection>
+      <S.LinksSection
+        backgroundColor={
+          props.isExec
+            ? SocialMediaColor.ToggleGreen
+            : SocialMediaColor.ToggleBlue
+        }
+      >
         <SocialMedia
           color={SocialMediaColor.Gradient}
           icon={faLinkedinIn}

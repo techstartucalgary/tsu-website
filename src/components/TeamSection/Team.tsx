@@ -1,9 +1,12 @@
+import { SocialMediaColor } from "components/SocialMedia/SocialMedia.styles";
 import { useState } from "react";
 
 import Profile from "./Profile";
 import * as S from "./Team.styles";
 import "./Team.styles.ts";
 import { TeamMember } from "./TeamInformation";
+import TeamSection from "./TeamSection";
+import { ToggleButton } from "./TeamSection.styles";
 
 type TeamProps = {
   teamMembers: TeamMember[];

@@ -7,6 +7,9 @@ interface TeamStyledProps {
 /**Default layout*/
 export const TeamContainer = styled.div<TeamStyledProps>`
   display: ${(props) => (props.mobileView ? "grid" : "flex")};
+  @media (max-width: 400px) {
+    grid-template-columns: 1fr};
+  }
   grid-template-columns: ${(props) => props.mobileView && "1fr 1fr"};
   column-gap: ${(props) => props.mobileView && "10px"};
   flex-wrap: ${(props) => !props.mobileView && "wrap"};
@@ -14,7 +17,6 @@ export const TeamContainer = styled.div<TeamStyledProps>`
   margin-top: 50px;
   margin-left: auto;
   margin-right: auto;
-
   justify-content: center;
   max-width: 1400px;
   position: relative;

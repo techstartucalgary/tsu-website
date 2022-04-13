@@ -3,7 +3,7 @@ import { TeamMember } from "./TeamInformation";
 import ProfileDescription from "./ProfileDescription";
 import SocialMedia from "components/SocialMedia/SocialMedia";
 import { SocialMediaColor } from "components/SocialMedia/SocialMedia.styles";
-import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faBlackberry, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 type ProfileProps = {
   key: number;

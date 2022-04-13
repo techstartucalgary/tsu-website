@@ -4,6 +4,11 @@ import Team from "./Team";
 import useViewport from "../UseViewport";
 import * as S from "./TeamSection.styles";
 import { executiveTeam, projectManagers } from "./TeamInformation";
+import { LinksSection } from "./Profile.styles";
+import Profile from "./Profile";
+import { SocialMediaColor } from "components/SocialMedia/SocialMedia.styles";
+import { ProjectsPage } from "pages/ProjectsPage.styles";
+import SocialMedia from "components/SocialMedia/SocialMedia";
 
 const TeamSection = () => {
   const [toggle, setToggled] = useState(false);
@@ -22,7 +27,10 @@ const TeamSection = () => {
           onClick={() => handleChange()}
         />
         <S.ToggleButtonLabel htmlFor="checkbox">
-          {toggle ? <p>Project Managers</p> : <p>Executives</p>}
+          <S.PMText>
+            Project Managers &emsp; &emsp; &emsp;&emsp;&emsp; Executives
+            <S.Slider></S.Slider>
+          </S.PMText>
         </S.ToggleButtonLabel>
       </S.ToggleButtonWrapper>
       {toggle ? (

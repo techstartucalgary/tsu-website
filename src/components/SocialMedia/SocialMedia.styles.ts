@@ -4,6 +4,9 @@ export enum SocialMediaColor {
   Green = "Green",
   Gradient = "Gradient",
   Black = "Black",
+  ToggleGreen = "ToggleGreen",
+  ToggleBlue = "ToggleBlue",
+  White = "White",
 }
 
 const handleColor = (color: SocialMediaColor) => {
@@ -12,6 +15,12 @@ const handleColor = (color: SocialMediaColor) => {
       return "black";
     case SocialMediaColor.Green:
       return "var(--primary-green)";
+    case SocialMediaColor.ToggleGreen:
+      return "var(--toggle-green)";
+    case SocialMediaColor.ToggleBlue:
+      return "var(--toggle-blue)";
+    case SocialMediaColor.White:
+      return "white";
     default:
       return "";
   }

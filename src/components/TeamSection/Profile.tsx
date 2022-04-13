@@ -40,7 +40,7 @@ const Profile = (props: ProfileProps) => {
         }
       >
         <SocialMedia
-          color={SocialMediaColor.Gradient}
+          color={SocialMediaColor.White}
           icon={faLinkedinIn}
           link={props.member.linkedin}
         />

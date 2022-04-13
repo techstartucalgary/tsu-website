@@ -1,21 +1,5 @@
 import styled, { css } from "styled-components/macro";
-
-export enum SocialMediaColor {
-  Green = "Green",
-  Gradient = "Gradient",
-  Black = "Black",
-}
-
-const handleColor = (color: SocialMediaColor) => {
-  switch (color) {
-    case SocialMediaColor.Black:
-      return "black";
-    case SocialMediaColor.Green:
-      return "var(--primary-green)";
-    default:
-      return "";
-  }
-};
+import { SocialMediaColor, handleColor } from "utility/SharedStyles";
 
 const GradientStyles = css`
   background-clip: text;
@@ -42,6 +26,7 @@ export const SocialMediaIcon = styled.a<{ color: SocialMediaColor }>`
   transition: 0.3s ease-in-out;
   display: inline-block;
   color: ${(color) => handleColor(color.color)};
+  z-index: 1;
 
   ${(color) => color.color === SocialMediaColor.Gradient && GradientStyles};
 

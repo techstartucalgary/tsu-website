@@ -14,6 +14,8 @@
   --turquoise-green: #8bffa5;
   --turquoise-blue: #70f0e8;
   --secondary-grey: #222222f2;
+  --toggle-green: #4dd6a8;
+  --toggle-blue: #61c3d4;
   --title-size: clamp(1.4rem, calc(15vw + 1rem), 8rem);
   --chonky-header-size: 4.75rem;
   --thicc-subheading-size: 2.5rem;

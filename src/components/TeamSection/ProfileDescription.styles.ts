@@ -5,7 +5,7 @@ export const ProfileDescriptionDiv = styled.div`
   display: inline-block;
   align-self: center;
   text-align: center;
-  margin: 0%;
+  margin: -20%;
   font-family: "Inter", Tahoma, sans-serif;
 
   & > h3 {

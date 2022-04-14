@@ -3,6 +3,14 @@ import * as S from "./ApplyButton.styles";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
+/*type ApplyButtonProps = {
+  x: number;
+  duration: number;
+  delay: number;
+  type: string;
+  stiffness: number;
+}; */
+
 const ApplyButton = () => {
   const animationControl = useAnimation();
   const { inView, ref } = useInView();

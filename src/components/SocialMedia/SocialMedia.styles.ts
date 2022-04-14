@@ -31,7 +31,7 @@ export const SocialMediaIcon = styled.a<{ color: SocialMediaColor }>`
   ${(color) => color.color === SocialMediaColor.Gradient && GradientStyles};
 
   &: hover {
-    transform: translateY(-0.25em);
+    transform: translateY(-0.2em);
     box-shadow: 0 0.2em 0.3em -0.4em rgb(177, 173, 173);
   }
 

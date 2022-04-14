@@ -1,3 +1,4 @@
+import React from "react";
 import Profile from "./Profile";
 import * as S from "./Team.styles";
 import "./Team.styles.ts";
@@ -27,4 +28,4 @@ const Team = (props: TeamProps) => {
   );
 };
 
-export default Team;
+export default React.memo(Team);

@@ -1,9 +1,10 @@
+import React from "react";
 import * as S from "./Profile.styles";
 import { TeamMember } from "./TeamInformation";
 import ProfileDescription from "./ProfileDescription";
 import SocialMedia from "components/SocialMedia/SocialMedia";
 import { SocialMediaColor } from "../../utility/SharedStyles";
-import { faBlackberry, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 type ProfileProps = {
   key: number;
@@ -53,4 +54,4 @@ const Profile = (props: ProfileProps) => {
   );
 };
 
-export default Profile;
+export default React.memo(Profile);

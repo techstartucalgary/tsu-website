@@ -20,7 +20,7 @@ export const TeamSection = styled.div`
 
 export const ToggleButtonWrapper = styled.div`
   position: relative;
-  margin-top: -20px;
+  margin-top: 2%;
   margin-left: -5%;
 `;
 

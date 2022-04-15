@@ -1,26 +1,42 @@
 import React from "react";
-
+import { useState } from "react";
 import Team from "./Team";
 import useViewport from "../UseViewport";
 import * as S from "./TeamSection.styles";
 import { executiveTeam, projectManagers } from "./TeamInformation";
-import Divider from "components/Divider";
 
 const TeamSection = () => {
-  const { width } = useViewport(); // get screen width
+  const [toggle, setToggled] = useState(false);
+  const handleChange = () => setToggled(!toggle);
 
   // set defaultView flag according to screen width cutoff value
+  const { width } = useViewport(); // get screen width
   let defaultView = width > 600 ? true : false;
+
+  const getTeamMembers = () => {
+    return toggle ? projectManagers : executiveTeam;
+  };
 
   return (
     <S.TeamSection>
-      <h2>Executives</h2>
-      <Divider />
-      <Team teamMembers={executiveTeam} defaultView={defaultView} />
-      <h2>Project Managers</h2>
-      <Divider />
-
-      <Team teamMembers={projectManagers} defaultView={defaultView} />
+      <S.ToggleButtonWrapper>
+        <S.ToggleButton
+          id="checkbox"
+          type="checkbox"
+          onClick={() => handleChange()}
+        />
+        <S.ToggleButtonLabel htmlFor="checkbox">
+          <S.PMText>
+            Project Managers &emsp; &emsp; &emsp;&emsp;&emsp; Executives
+            <S.Slider></S.Slider>
+          </S.PMText>
+        </S.ToggleButtonLabel>
+      </S.ToggleButtonWrapper>
+      <Team
+        teamMembers={getTeamMembers()}
+        desktopView={defaultView}
+        isExec={!toggle}
+      />
     </S.TeamSection>
   );
 };

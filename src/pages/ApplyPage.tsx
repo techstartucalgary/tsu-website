@@ -109,34 +109,26 @@ function ApplyPage() {
             description="<strong>Project Software Developer</strong></br>
               As a developer, you will learn to architect and build awesome
               projects and participate in team events. You want
-              to collaborate with a team to build awesome software and learn
-              professional development practices. Work together with
-              other developers on different platforms, collaborating
-              cross-functionally to build a project that you and your teammates
-              will decide on at the start of the semester.
+              to collaborate with your team to build awesome software and learn
+              professional development practices.
               </br></br>
               <strong>Business Strategist</strong></br>
               As a strategist, you will focus on the business side of the
               project, working alongside the Executive VP Strategy to learn
-              and develop a business deliverable (i.e. a business plan, a business 
-              canvas, a short report, a pitch, any combination of those, etc.) at 
-              the end of the term. Ideally, this would be something that is tangible 
-              and you can save for your portfolio to share with future employers, 
-              internships, and co-op placements.
+              and develop a business deliverable i.e. business plan, business 
+              canvas, report, and/or pitch at the end of the term. This can be saved
+              for your portfolio to share with future employers.
               </br></br>
               <strong>Project Designer</strong></br>
               As a designer, you will be in charge of making the
-              attractive, creative interfaces that provide great user experiences.
-              This role requires creativity, a practical and user-friendly perspective, 
-              and an eye for art! This usually involves planning out the design and 
-              working on the front-end for the majority of projects.
+              attractive, creative interfaces that provide great user experiences for the front-end
+              of your project. This role requires creativity, a practical and user-friendly 
+              perspective, and an eye for art!
               </br></br>
               <strong>Project Manager</strong> (separate application)</br>
               As a project manager, you will be in charge of organizing, coordinating, and 
               leading the team to create complex projects! This involves leading
-              weekly team meetings, leading the team vision, and guiding the project process. 
-              You will be given a guide along with support from the executive team to manage the 
-              timeline of your project, lead your team, and more!"
+              weekly team meetings, leading the team vision, and guiding the project process."
           />
           <Accordion
             title="Why join a project?"

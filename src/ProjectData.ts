@@ -12,7 +12,7 @@ import oneHub from "images/project/oneHub.png";
 import aquavolution from "images/project/aquavolution.jpg";
 import snowbot from "images/project/snowbot.jpg";
 import noteAid from "images/project/noteAid.jpg";
-import decisionApp from "images/project/decisionApp.jpg";
+import whereTo from "images/project/whereTo.jpg";
 
 // Project type definition
 export type Project = {
@@ -74,15 +74,6 @@ export const PastProjects: Project[] = [
 export const CurrentProjects: Project[] = [
   {
     id: 0,
-    name: "Tech Start Website",
-    github: "https://github.com/Tech-Start-UCalgary/tsu-website",
-    pmName: "Niyousha Raeesinejad",
-    website: website,
-    image: techStartWebsiteNew,
-    description: "We made some cool upgrades to the TechStart Website!",
-  },
-  {
-    id: 1,
     name: "Aquavolution",
     github: "https://github.com/Tech-Start-UCalgary/Aquavolution",
     website: website,
@@ -90,6 +81,15 @@ export const CurrentProjects: Project[] = [
     pmName: "Elgiz Abbasov",
     description:
       "Born a tiny fish, try to survive among other predators, be careful of the human waste in the ocean though!",
+  },
+  {
+    id: 1,
+    name: "Tech Start Website",
+    github: "https://github.com/Tech-Start-UCalgary/tsu-website",
+    pmName: "Niyousha Raeesinejad",
+    website: website,
+    image: techStartWebsiteNew,
+    description: "We made some cool upgrades to the TechStart Website!",
   },
   {
     id: 3,
@@ -112,10 +112,10 @@ export const CurrentProjects: Project[] = [
   },
   {
     id: 4,
-    name: "Decision App",
-    github: "https://github.com/Tech-Start-UCalgary/NoteAId",
+    name: "Where To?",
+    github: "https://github.com/Tech-Start-UCalgary/decision-frontend",
     website: website,
-    image: decisionApp,
+    image: whereTo,
     pmName: "Vivian Huynh",
     description:
       "An app that helps groups make decisions when planning a social gathering by voting",

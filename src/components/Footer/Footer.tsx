@@ -1,7 +1,7 @@
 import * as S from "./Footer.styles";
 import "../../App.css";
 import SocialMedia from "components/SocialMedia/SocialMedia";
-import { SocialMediaColor } from "components/SocialMedia/SocialMedia.styles";
+import { SocialMediaColor } from "../../utility/SharedStyles";
 import HoverButton from "components/HoverButton/HoverButton";
 import {
   faFacebook,

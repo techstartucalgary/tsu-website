@@ -4,6 +4,7 @@ export const TeamSection = styled.div`
   padding: 5vw;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 5%;
   text-align: center;
 
   & > h2 {

@@ -76,5 +76,4 @@ export const HTML_Container = styled.div`
   font-size: clamp(12px, calc(0.2vw + 12px), 16px);
   line-height: 23px;
   font-weight: 400;
-  overflow: auto;
 `;

@@ -21,7 +21,7 @@ const Profile = (props: ProfileProps) => {
   return (
     <S.ProfileDiv
       data-aos={!props.mobileView && "zoom-in"}
-      data-aos-duration={!props.mobileView && "1500"}
+      data-aos-duration={!props.mobileView && "1000"}
       mobileView={props.mobileView}
     >
       <S.ProfileIconDiv>

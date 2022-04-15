@@ -13,6 +13,10 @@ const TeamSection = () => {
   const { width } = useViewport(); // get screen width
   let defaultView = width > 600 ? true : false;
 
+  const getTeamMembers = () => {
+    return toggle ? projectManagers : executiveTeam;
+  };
+
   return (
     <S.TeamSection>
       <S.ToggleButtonWrapper>
@@ -28,19 +32,11 @@ const TeamSection = () => {
           </S.PMText>
         </S.ToggleButtonLabel>
       </S.ToggleButtonWrapper>
-      {toggle ? (
-        <Team
-          teamMembers={projectManagers}
-          desktopView={defaultView}
-          isExec={false}
-        />
-      ) : (
-        <Team
-          teamMembers={executiveTeam}
-          desktopView={defaultView}
-          isExec={true}
-        />
-      )}
+      <Team
+        teamMembers={getTeamMembers()}
+        desktopView={defaultView}
+        isExec={!toggle}
+      />
     </S.TeamSection>
   );
 };

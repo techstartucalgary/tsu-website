@@ -1,8 +1,6 @@
 import joel_jpg from "./Images/Joel_Happ.jpeg";
 import naureen_jpg from "./Images/Naureen_Othi.jpg";
 import fedor_jpg from "./Images/Fedor_Prokopchuk.jpg";
-//import member_1 from './Images/Valeriya_Volkova.png'
-//import member_2 from './Images/Arpith_Indukuri.jpg'
 import luke_jpg from "./Images/Luke_Hollinda.jpg";
 import amanda_jpg from "./Images/Amanda_Nguyen.jpg";
 import tyler_jpg from "./Images/Tyler_Chan.jpg";
@@ -12,11 +10,8 @@ import godwin_jpg from "./Images/Markosch_Vacil_Godwin_Saure.jpg";
 import terry_jpg from "./Images/Terry.jpg";
 import vidhi_jpg from "./Images/Vidhi_Soni.jpeg";
 import mahdi_jpg from "./Images/Mahdi_Varposhti.jpg";
-import blank_jpg from "./Images/Blank.jpeg";
-import zeyad_jpg from "./Images/Zeyad.jpg";
 import vivian_jpg from "./Images/Vivian_Huynh_Headshot_3.jpg";
 import niyousha_jpg from "./Images/niyousha.jpg";
-import davis_jpg from "./Images/davis.jpg";
 import elgiz_jpg from "./Images/elgiz.jpeg";
 import ali_jpg from "./Images/ali.jpg";
 
@@ -135,16 +130,6 @@ projectManagers = [
     linkedin: "https://www.linkedin.com/in/mahdiva/",
     email: "mailto:mahdi.varposhti1@ucalgary.ca",
   },
-  /*
-  {
-    id: 12,
-    name: "Zeyad Omran",
-    affiliation: "Amigo",
-    image: zeyad_jpg,
-    linkedin: "https://www.linkedin.com/in/zeyadomran",
-    email: "mailto:zeyad.omran@ucalgary.ca",
-  },
-  */
   {
     id: 13,
     name: "Niyousha Raeesinejad",
@@ -164,7 +149,7 @@ projectManagers = [
   {
     id: 15,
     name: "Vivian Huynh",
-    affiliation: "Decision App",
+    affiliation: "Where To?",
     image: vivian_jpg,
     linkedin: "https://www.linkedin.com/in/vivian-huynh-yyc/",
     email: "mailto:vivian.huynh2@ucalgary.ca",

@@ -3,15 +3,32 @@ import * as S from "./ApplyButton.styles";
 import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
-/*type ApplyButtonProps = {
+type ApplyButtonProps = {
   x: number;
   duration: number;
   delay: number;
   type: string;
   stiffness: number;
-}; */
+};
 
-const ApplyButton = () => {
+const ApplyButton = (props: ApplyButtonProps) => {
+  <S.ApplyButton
+  const animationControl = useAnimation();
+  const { inView, ref } = useInView();
+  if (inView) {
+    animationControl.start({
+      x: {props.x}
+      transition: {
+        duration: {props.duration}
+        delay: {props.delay}
+        type: {props.type}
+        stiffness: {props.stiffness}
+      },
+    });
+    </S.ApplyButton>
+  }
+
+  /*const ApplyButton = () => {
   const animationControl = useAnimation();
   const { inView, ref } = useInView();
   if (inView) {
@@ -25,7 +42,7 @@ const ApplyButton = () => {
       },
     });
   }
-
+ */
   return (
     <div ref={ref}>
       <motion.div

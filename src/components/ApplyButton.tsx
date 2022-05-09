@@ -4,59 +4,45 @@ import { useInView } from "react-intersection-observer";
 import { motion, useAnimation } from "framer-motion";
 
 type ApplyButtonProps = {
-  x: number;
+  initialPointX: number;
+  finalPointX: number;
   duration: number;
   delay: number;
-  type: string;
+  motionType: string;
   stiffness: number;
+  hasSlidingArrows: boolean;
 };
 
 const ApplyButton = (props: ApplyButtonProps) => {
-  <S.ApplyButton
   const animationControl = useAnimation();
   const { inView, ref } = useInView();
   if (inView) {
     animationControl.start({
-      x: {props.x}
+      x: props.finalPointX,
       transition: {
-        duration: {props.duration}
-        delay: {props.delay}
-        type: {props.type}
-        stiffness: {props.stiffness}
-      },
-    });
-    </S.ApplyButton>
-  }
-
-  /*const ApplyButton = () => {
-  const animationControl = useAnimation();
-  const { inView, ref } = useInView();
-  if (inView) {
-    animationControl.start({
-      x: 0,
-      transition: {
-        duration: 0.4,
-        delay: 0.1,
-        type: "spring",
-        stiffness: 70,
+        duration: props.duration,
+        delay: props.delay,
+        type: props.motionType,
+        stiffness: props.stiffness,
       },
     });
   }
- */
   return (
     <div ref={ref}>
       <motion.div
         className="homePage__applyButtonBox"
-        initial={{ x: "-100vw" }}
+        initial={{ x: props.initialPointX }}
         animate={animationControl}
       >
         <S.ApplyButtonLink to="/apply">
           <S.ApplyButton>
-            <S.ApplyButtonArrow>
-              {" "}
-              <span>&#62;</span>
-              <span>&#62;</span>{" "}
-            </S.ApplyButtonArrow>
+            {props.hasSlidingArrows && (
+              <S.ApplyButtonArrow>
+                {" "}
+                <span>&#62;</span>
+                <span>&#62;</span>{" "}
+              </S.ApplyButtonArrow>
+            )}
             <S.ApplyButtonText> theTeam.join()</S.ApplyButtonText>
           </S.ApplyButton>
         </S.ApplyButtonLink>

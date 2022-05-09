@@ -9,7 +9,8 @@ import SponsorSection from "components/SponsorSection/SponsorSection";
 import Blobbie from "components/Blobbie";
 import EventsSection from "components/EventsSection/EventsSection";
 import { ProjectsSection } from "./ProjectsSection";
-import ApplyButton from "components/ApplyButton";
+import CustomButton from "components/CustomButton";
+import { ButtonMode } from "components/CustomButton.styles";
 
 const HomePage = () => {
   return (
@@ -92,7 +93,19 @@ const HomePage = () => {
             />
           </div>
           <div className="homePage__applyButtonBox">
-            <ApplyButton />
+            <CustomButton
+              initialPointX={-1500}
+              finalPointX={0}
+              duration={0.4}
+              delay={0.1}
+              motionType={"spring"}
+              stiffness={70}
+              hasSlidingArrows={true}
+              mode={ButtonMode.DARK}
+              text={"theTeamJoin.()"}
+              link={"/apply"}
+              linkIsInternal={true}
+            />
           </div>
         </div>
       </section>

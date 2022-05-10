@@ -1,7 +1,7 @@
 import Blobbie from "components/Blobbie";
 import TeamSection from "components/TeamSection/TeamSection";
-import HoverButton from "components/HoverButton/HoverButton";
-import { ButtonMode } from "components/HoverButton/HoverButton.styles";
+import CustomButton from "components/CustomButton";
+import { ButtonMode } from "components/CustomButton.styles";
 import { motion } from "framer-motion/dist/framer-motion";
 import * as S from "./TeamPage.styles";
 
@@ -41,7 +41,7 @@ const TeamPage = () => {
           animate={{ opacity: 1 }}
           transition={{ delay: 1.5 }}
         >
-          <HoverButton
+          <CustomButton
             mode={ButtonMode.GRADIENT}
             glowOnHover={true}
             link="/apply"

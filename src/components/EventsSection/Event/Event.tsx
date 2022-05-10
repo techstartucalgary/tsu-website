@@ -1,6 +1,6 @@
 import * as S from "./Event.styles";
-import HoverButton from "components/HoverButton/HoverButton";
-import { ButtonMode } from "components/HoverButton/HoverButton.styles";
+import CustomButton from "components/CustomButton";
+import { ButtonMode } from "components/CustomButton.styles";
 
 type EventProps = {
   key: number;
@@ -55,7 +55,7 @@ const Event = (props: EventProps) => {
               {props.date} | {props.time}
             </p>
             <div>
-              <HoverButton
+              <CustomButton
                 mode={ButtonMode.DARK}
                 text={"Event Link"}
                 link={props.link}

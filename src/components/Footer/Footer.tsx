@@ -2,7 +2,8 @@ import * as S from "./Footer.styles";
 import "../../App.css";
 import SocialMedia from "components/SocialMedia/SocialMedia";
 import { SocialMediaColor } from "components/SocialMedia/SocialMedia.styles";
-import HoverButton from "components/HoverButton/HoverButton";
+import CustomButton from "components/CustomButton";
+import { ButtonMode } from "components/CustomButton.styles";
 import {
   faFacebook,
   faInstagram,
@@ -11,12 +12,11 @@ import {
   faYoutube,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
-import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
 const Footer = () => (
   <S.Footer>
     <S.HoverButtonDiv>
-      <HoverButton
+      <CustomButton
         mode={ButtonMode.TRANSPARENT}
         link="http://eepurl.com/hnusUP"
         linkIsInternal={false}

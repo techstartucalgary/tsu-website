@@ -1,9 +1,9 @@
 import SponsorLogo from "components/SponsorLogo";
-import HoverButton from "../HoverButton/HoverButton";
 import { Sponsor, SponsorList } from "./SponsorsInfo";
-import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import * as S from "./SponsorSection.styles";
 import Divider from "components/Divider";
+import CustomButton from "components/CustomButton";
+import { ButtonMode } from "components/CustomButton.styles";
 
 const SponsorSection = () => {
   return (
@@ -34,7 +34,7 @@ const SponsorSection = () => {
       </S.SponsorCallToActionDiv>
       <div>
         <S.SponsorButtonDiv>
-          <HoverButton
+          <CustomButton
             mode={ButtonMode.DARK}
             link="https://drive.google.com/file/d/1Es9AvtbGnGbvhsyh1Vp35qr8DptDiSMv/view"
             linkIsInternal={false}

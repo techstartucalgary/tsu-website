@@ -1,10 +1,10 @@
-import HoverButton from "components/HoverButton/HoverButton";
-import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import Lottie from "react-lottie";
 import Divider from "components/Divider";
 import * as S from "./ProjectsSection.styles";
 import useViewport from "../components/UseViewport";
 import { projectTeamLottieOptions } from "utility/LottieOptions";
+import CustomButton from "components/CustomButton";
+import { ButtonMode } from "components/CustomButton.styles";
 
 export const ProjectsSection = () => {
   const { width } = useViewport(); // get screen width
@@ -38,7 +38,7 @@ export const ProjectsSection = () => {
               </p>
 
               <S.projectButtonDiv>
-                <HoverButton
+                <CustomButton
                   mode={ButtonMode.GRADIENT}
                   glowOnHover={true}
                   link={"/projects"}
@@ -83,7 +83,7 @@ export const ProjectsSection = () => {
             network with the tech community on campus.
           </p>
           <S.projectButtonDiv>
-            <HoverButton
+            <CustomButton
               mode={ButtonMode.GRADIENT}
               link={"/projects"}
               text={"Check out our projects!"}

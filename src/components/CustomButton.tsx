@@ -3,13 +3,13 @@ import { motion, useAnimation } from "framer-motion";
 import * as S from "./CustomButton.styles";
 
 type CustomButtonProps = {
-  initialPointX: number;
-  finalPointX: number;
-  duration: number;
-  delay: number;
-  motionType: string;
-  stiffness: number;
-  hasSlidingArrows: boolean;
+  initialPointX?: number;
+  finalPointX?: number;
+  duration?: number;
+  delay?: number;
+  motionType?: string;
+  stiffness?: number;
+  hasSlidingArrows?: boolean;
   mode: S.ButtonMode;
   text: string;
   link: string;

@@ -1,9 +1,9 @@
 import "./GuidesSection.css";
-import imgDjango from "images/django.png";
-import imgGit from "images/git.png";
-import imgWebDev from "images/webdev.png";
-import imgReact from "images/react.png";
-import imgApi from "images/api.png";
+import imgDjango from "images/guides/django.png";
+import imgGit from "images/guides/git.png";
+import imgWebDev from "images/guides/webdev.png";
+import imgReact from "images/guides/react.png";
+import imgApi from "images/guides/api.png";
 import { GlobalStyles } from "types/Themes.js";
 import Guide from "./Guide";
 

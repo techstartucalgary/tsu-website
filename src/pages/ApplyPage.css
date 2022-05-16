@@ -307,7 +307,7 @@ html {
 
 .applyPage__projectExample {
   justify-content: block;
-  margin-bottom: 5%;
+  margin-bottom: 3%;
 }
 
 .applyPage__projectExample img {
@@ -324,6 +324,7 @@ html {
   margin-right: auto;
   text-align: center;
   position: relative;
+  margin-bottom: 3%;
 }
 .applyPage__projectExampleText h1 {
   font-size: clamp(24px, calc(0.4vw + 24px), 30px);

@@ -1,8 +1,8 @@
-import sponsorLogoHunterHub from "images/sponsor-logo-hunter-hub.png";
-import sponsorLogoArcurve from "images/sponsor-logo-arcurve.png";
-import sponsorLogoUnity from "images/sponsor-logo-unity.png";
-import sponsorLogoMicrosoft from "images/sponsor-logo-microsoft.png";
-import sponsorGalatea from "images/sponsor-logo-galatea.png";
+import sponsorLogoHunterHub from "images/sponsors/sponsor-logo-hunter-hub.png";
+import sponsorLogoArcurve from "images/sponsors/sponsor-logo-arcurve.png";
+import sponsorLogoUnity from "images/sponsors/sponsor-logo-unity.png";
+import sponsorLogoMicrosoft from "images/sponsors/sponsor-logo-microsoft.png";
+import sponsorGalatea from "images/sponsors/sponsor-logo-galatea.png";
 
 export type Sponsor = {
   sponsorLink: string;

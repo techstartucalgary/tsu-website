@@ -1,5 +1,5 @@
-import Funding_the_Next_Unicorn_img from "./EventImages/Funding_The_Next_Unicorn.jpg";
-import Internship_Panel_img from "./EventImages/internship_panel.jpg";
+import Funding_the_Next_Unicorn_img from "../../images/events/Funding_The_Next_Unicorn.jpg";
+import Internship_Panel_img from "../../images/events/Internship_Panel.jpg";
 
 export type Event = {
   title: string;

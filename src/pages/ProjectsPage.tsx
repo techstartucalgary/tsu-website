@@ -2,10 +2,13 @@ import * as S from "./ProjectsPage.styles";
 import Lottie from "react-lottie";
 import { teamProjectLottieOptions } from "utility/LottieOptions";
 import { motion } from "framer-motion/dist/framer-motion";
-import { CurrentProjects, PastProjects } from "ProjectData";
-import ProjectSection from "components/ProjectSection";
+import {
+  CurrentProjects,
+  PastProjects,
+} from "components/ProjectSection/ProjectData";
+import ProjectSection from "components/ProjectSection/ProjectSection";
 import Divider from "components/Divider";
-import ProjectKeywordsSection from "components/ProjectKeywordsSection";
+import ProjectKeywordsSection from "components/ProjectSection/ProjectKeywordsSection";
 import { NewlineText } from "utility/Helpers";
 
 const ProjectsPage = () => {
@@ -38,17 +41,24 @@ const ProjectsPage = () => {
       </h2>
       <ProjectKeywordsSection />
 
-      <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
+      {/*       <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
         Current Projects
       </h2>
       <Divider />
       <ProjectSection projects={CurrentProjects} />
-
+ */}
       <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
         Past Projects
       </h2>
       <Divider />
       <ProjectSection projects={PastProjects} />
+      <h3
+        className="gradient-text"
+        style={{ textAlign: "center", marginBottom: "7%" }}
+      >
+        Have an idea for a project? Apply to be a Project Manager{" "}
+        {<a href="/apply">HERE</a>}!
+      </h3>
     </S.ProjectsPage>
   );
 };

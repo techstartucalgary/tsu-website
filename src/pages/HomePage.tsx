@@ -8,7 +8,7 @@ import Particle from "components/Particles";
 import SponsorSection from "components/SponsorSection/SponsorSection";
 import Blobbie from "components/Blobbie";
 import EventsSection from "components/EventsSection/EventsSection";
-import { ProjectsSection } from "./ProjectsSection";
+import { ProjectsSection } from "../components/ProjectSection/ProjectsSection";
 import ApplyButton from "components/ApplyButton";
 
 const HomePage = () => {

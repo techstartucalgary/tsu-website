@@ -2,17 +2,15 @@ import { useState } from "react";
 import { motion } from "framer-motion/dist/framer-motion";
 
 import Lottie from "react-lottie";
-import * as S from "./ProjectsSection.styles";
 import "./ApplyPage.css";
 import { applyPageTeamLottieOptions } from "utility/LottieOptions";
-import projectExample from "images/teamphoto-techstartwebteam.png";
-import joinProject from "images/team.png";
+import projectExample from "images/execs_showcase_2022.jpg";
 import ApplySection from "components/ApplySection";
 import Accordion from "../components/Apply/Accordion";
 import Blobbie from "components/Blobbie";
 import Divider from "components/Divider";
 
-function ApplyPage() {
+const ApplyPage = () => {
   const [active, setActive] = useState("");
   return (
     <div className="applyPage">
@@ -248,18 +246,18 @@ function ApplyPage() {
             <ApplySection
               role="Project Member"
               description="Work and grow as a developer, business strategist, or designer.
-                  Collaborate with team members on various platforms to build an exciting project for 1 to 2 semesters."
-              status="closed"
-              closedStatus="Recruitment Finished"
+                  Collaborate with team members on various platforms to build an exciting project for 1 academic year."
+              statusIsOpen={false}
+              closedStatus="Stay tuned for openings!"
               applicationLink="https://forms.gle/yxVK3NRCyTjn1TxQ7"
             />
 
             <ApplySection
               role="Project Manager"
-              description="Manage a project for 1 or 2 semesters and lead a team of 6-9
+              description="Manage a project for 1 year and lead a team of 6-9
                     project members to create complex projects."
-              status="closed"
-              closedStatus="Recruitment Finished"
+              statusIsOpen={false}
+              closedStatus="Stay tuned for openings!"
               applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScHj9FcIK4ApPqyMiXf_PLlQ43FpI7EB5gmz7SJFGczU9xIkg/viewform"
             />
 
@@ -267,8 +265,8 @@ function ApplyPage() {
               role="Executive Team"
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
-              status="closed"
-              closedStatus="Recruitment Finished"
+              statusIsOpen={false}
+              closedStatus="Stay tuned for openings!"
               applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSdk7hbechdpXn6NzIzW4EGI5avrrkPgGmDT4ArZ9xz2BHLIGw/viewform"
             />
           </ul>
@@ -276,6 +274,6 @@ function ApplyPage() {
       </div>
     </div>
   );
-}
+};
 
 export default ApplyPage;

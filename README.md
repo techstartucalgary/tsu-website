@@ -1,20 +1,71 @@
-# About the website
+# Tech Start UCalgary Official Website
 
-This website is built with React & TypeScript. To get started with your local dev environment, you will need to install node.js. 
+- [Tech Start UCalgary Official Website](#tech-start-ucalgary-official-website)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [How to Contribute](#how-to-contribute)
+    - [Active Contributors (F22/W23)](#active-contributors-f22w23)
+  - [Maintenance](#maintenance)
+  - [How to Build, Test, and Run](#how-to-build-test-and-run)
+    - [`npm start`](#npm-start)
+    - [`npm test`](#npm-test)
+    - [`npm run build`](#npm-run-build)
+    - [`npm run eject`](#npm-run-eject)
+  - [Learn More](#learn-more)
+    - [Code Splitting](#code-splitting)
+    - [Analyzing the Bundle Size](#analyzing-the-bundle-size)
+    - [Making a Progressive Web App](#making-a-progressive-web-app)
+    - [Advanced Configuration](#advanced-configuration)
+    - [Deployment](#deployment)
+    - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
 
-### Backend
-Also check out our backend, created by Richard Chow with Python and Django! https://github.com/Tech-Start-UCalgary/tsu-website-back-end
+## Description
 
-### Contributers (Fall 2021)
+This is the official website for Tech Start UCalgary, a student driven club which focuses on software development, technology, and entrepreneurship at the University of Calgary.
 
-- Niyousha Raeesinejad - Project Manager
-- Sukriti Sharma - Web Developer
-- Ryan Sayers - Developer
-- Labib Afsar Ahmed - Web Developer
-- Takahiro Fujita (Tak) - Software Developer
-- Sahiti Akella - Project Member
+This website is built with React & TypeScript.
 
-## Available Scripts
+Also check out our backend, created with Python and
+Django! https://github.com/Tech-Start-UCalgary/tsu-website-back-end
+
+## Installation
+
+To get started with your local dev environment, you will need to install node.js.
+
+To abide by our code structure and formatting guidelines, please install Prettier as a dependency and plugin. You can refer to this [issue](https://github.com/Tech-Start-UCalgary/tsu-website/issues/251) for further instructions.
+
+Ensure you have installed all dependencies before running the app locally: `npm install`
+
+## How to Contribute
+
+Before making any feature changes, ensure that there has been an issue created and added to our [project board](https://github.com/orgs/Tech-Start-UCalgary/projects/1/views/4) to track the work.
+
+To make a feature change:
+
+1. Switch to our `dev` branch: `git checkout dev`
+2. Pull our latest dev changes so that you are up to date with the branch: `git pull origin dev`
+3. Create and switch to your own branch (which should be a descriptive name of your feature change): `git checkout -b FeatureChange`
+4. Make your code changes
+5. Add all your changed files: `git add --all`. Alternatively, you can add selected files as well.
+6. Commit your changes: `git commit -m "Short and informative description of changes"`
+7. Push your changes to your remote branch: `git push origin YourBranchName`
+8. Create new pull request on GitHub. Make sure to change your target branch to `dev`, assign all active contributors as reviewers, assign yourself as the assignee, and include a brief description of your changes.
+9. Once your PR has been created, go to your issue, click on "Linked pull requests", and select your PR to link to your issue. You can refer to this [PR](https://github.com/Tech-Start-UCalgary/tsu-website/pull/303) as an example.
+10. You will be able to merge your PR once you receive at least 2 approvals from your reviewers.
+11. After you have merged your PR, please delete your remote branch.
+12. An admin will review and deploy your changes to the website by pushing your changes to the `main` branch.
+
+### Active Contributors (F22/W23)
+
+- Sahiti Akella
+- Sukriti Sharma
+- Niyousha Raeesinejad
+
+## Maintenance
+
+Please refer to our [Maintenance Guide](./maintenance-guide.md).
+
+## How to Build, Test, and Run
 
 In the project directory, you can run:
 

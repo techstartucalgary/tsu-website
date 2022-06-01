@@ -51,7 +51,7 @@ To make a feature change:
 7. Push your changes to your remote branch: `git push origin YourBranchName`
 8. Create new pull request on GitHub. Make sure to change your target branch to `dev`, assign all active contributors as reviewers, assign yourself as the assignee, and include a brief description of your changes.
 9. Once your PR has been created, go to your issue, click on "Linked pull requests", and select your PR to link to your issue. You can refer to this [PR](https://github.com/Tech-Start-UCalgary/tsu-website/pull/303) as an example.
-10. You will be able to merge your PR once you receive at least 2 approvals from your reviewers.
+10. Add all relevant reviewers to your PR; at minimum this should include the Presidents, VP Communications, and VP Development. You will be able to merge your PR once you receive at least 2 approvals from your reviewers.
 11. After you have merged your PR, please delete your remote branch.
 12. An admin will review and deploy your changes to the website by pushing your changes to the `main` branch.
 
@@ -59,6 +59,7 @@ To make a feature change:
 
 - Sahiti Akella
 - Sukriti Sharma
+- Tyler Chan
 - Niyousha Raeesinejad
 
 ## Maintenance

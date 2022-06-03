@@ -118,7 +118,7 @@ executiveTeam = [
   {
     id: 11,
     name: "Joel Happ",
-    affiliation: "Chairman",
+    affiliation: "Founder & Chairman",
     image: joel_jpg,
     linkedin: "https://www.linkedin.com/in/joel-happ/",
     email: "mailto:joel.happ1@ucalgary.ca",

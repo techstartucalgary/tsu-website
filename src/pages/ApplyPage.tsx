@@ -248,7 +248,7 @@ const ApplyPage = () => {
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project for 1 academic year."
               statusIsOpen={false}
-              closedStatus="Stay tuned for openings!"
+              closedStatus="Opens September 2022"
               applicationLink="https://forms.gle/yxVK3NRCyTjn1TxQ7"
             />
 
@@ -256,7 +256,7 @@ const ApplyPage = () => {
               role="Project Manager"
               description="Manage a project for 1 year and lead a team of 6-9
                     project members to create complex projects."
-              statusIsOpen={false}
+              statusIsOpen={true}
               closedStatus="Stay tuned for openings!"
               applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScHj9FcIK4ApPqyMiXf_PLlQ43FpI7EB5gmz7SJFGczU9xIkg/viewform"
             />
@@ -266,7 +266,7 @@ const ApplyPage = () => {
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               statusIsOpen={false}
-              closedStatus="Stay tuned for openings!"
+              closedStatus="Opens Spring 2023"
               applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSdk7hbechdpXn6NzIzW4EGI5avrrkPgGmDT4ArZ9xz2BHLIGw/viewform"
             />
           </ul>

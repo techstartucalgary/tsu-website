@@ -266,7 +266,7 @@ const ApplyPage = () => {
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               statusIsOpen={false}
-              closedStatus="Stay tuned for openings!"
+              closedStatus="Opens Spring 2023"
               applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSdk7hbechdpXn6NzIzW4EGI5avrrkPgGmDT4ArZ9xz2BHLIGw/viewform"
             />
           </ul>

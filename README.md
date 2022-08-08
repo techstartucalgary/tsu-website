@@ -58,7 +58,6 @@ To make a feature change:
 ### Active Contributors (F22/W23)
 
 - Sahiti Akella
-- Sukriti Sharma
 - Tyler Chan
 - Niyousha Raeesinejad
 

@@ -8,7 +8,7 @@ import carol_jpg from "../../images/team/Carol_Wang.jpg";
 import kevin_jpg from "../../images/team/Kevin_Amado.jpg";
 import sahiti_jpg from "../../images/team/Sahiti_Akella.jpg";
 import rajpreet_jpg from "../../images/team/Rajpreet_Gill.jpg";
-import mya_jpg from "../../images/team/Mya_Gill.jpg";
+import mya_jpg from "../../images/team/Mya_Gill.jpeg";
 import labib_jpg from "../../images/team/Labib_Ahmed.jpg";
 import emir_jpg from "../../images/team/Selcuk_Emir_Avci.jpg";
 

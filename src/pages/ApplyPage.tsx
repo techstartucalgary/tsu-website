@@ -256,8 +256,8 @@ const ApplyPage = () => {
               role="Project Manager"
               description="Manage a project for 1 year and lead a team of 6-9
                     project members to create complex projects."
-              statusIsOpen={true}
-              closedStatus="Stay tuned for openings!"
+              statusIsOpen={false}
+              closedStatus="Opens Spring 2023"
               applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScHj9FcIK4ApPqyMiXf_PLlQ43FpI7EB5gmz7SJFGczU9xIkg/viewform"
             />
 

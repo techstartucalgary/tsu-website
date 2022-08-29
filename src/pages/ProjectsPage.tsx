@@ -52,13 +52,16 @@ const ProjectsPage = () => {
       </h2>
       <Divider />
       <ProjectSection projects={PastProjects} />
-      <h3
-        className="gradient-text"
-        style={{ textAlign: "center", marginBottom: "7%" }}
-      >
-        Have an idea for a project? Apply to be a Project Manager{" "}
-        {<a href="/apply">HERE</a>}!
-      </h3>
+
+      {/*
+        <h3
+          className="gradient-text"
+          style={{ textAlign: "center", marginBottom: "7%" }}
+        >
+          Have an idea for a project? Apply to be a Project Manager{" "}
+          {<a href="/apply">HERE</a>}!
+        </h3>
+*/}
     </S.ProjectsPage>
   );
 };

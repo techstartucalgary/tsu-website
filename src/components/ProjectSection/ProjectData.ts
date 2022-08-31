@@ -13,7 +13,7 @@ import snowbot from "images/projects/snowbot.jpg";
 import noteAid from "images/projects/noteAid.jpg";
 import whereTo from "images/projects/whereTo.jpg";
 import teamPlaceHolder from "images/projects/team-placeholder.jpg";
-import lifeLine from "images/projects/lifeline.png";
+import lifeLine from "images/projects/lifeline.jpeg";
 
 // Project type definition
 export type Project = {
@@ -143,6 +143,7 @@ export const CurrentProjects: Project[] = [
   },
   {
     id: 3,
+<<<<<<< HEAD
     name: "Lifeline",
     github: "https://github.com/techstartucalgary/lifeline",
     pmName: "Timothy Macphail",
@@ -150,6 +151,15 @@ export const CurrentProjects: Project[] = [
     image: lifeLine,
     description:
       "Lifeline uses AI to extract and organize deadlines from course documents for you to download.",
+=======
+    name: "LifeLine",
+    github: "https://github.com/techstartucalgary/LifeLine",
+    pmName: "Tim Macphail",
+    website: website,
+    image: lifeLine,
+    description:
+      "A much-needed lifeline to help students never miss a deadline.",
+>>>>>>> 85bdd7ddb16eb4d024c518f5ee61abbbb2b76837
   },
   {
     id: 4,

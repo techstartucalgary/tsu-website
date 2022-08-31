@@ -30,6 +30,7 @@ export const ProfileIconDiv = styled.div`
     border-radius: 50%;
     position: relative;
     margin-top: 15px;
+    aspect-ratio: 1/1;
   }
 `;
 

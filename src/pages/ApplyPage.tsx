@@ -37,9 +37,9 @@ const ApplyPage = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
           >
-            Application to join project teams will open on September 19th. Teams
-            will meet on Thursdays at 5:30 pm, at our weekly dev nights starting
-            October 13th. For more information, join our{" "}
+            Applications for project members are open! Teams will meet on
+            Thursdays at 5:30 pm, at our weekly dev nights starting October
+            13th. For more information, join our{" "}
             {
               <a href="https://discord.gg/Sxj5QrxRPk">
                 <b>

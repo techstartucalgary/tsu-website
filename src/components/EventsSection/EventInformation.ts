@@ -1,5 +1,6 @@
 import Funding_the_Next_Unicorn_img from "../../images/events/Funding_The_Next_Unicorn.jpg";
 import Internship_Panel_img from "../../images/events/Internship_Panel.jpg";
+import Tech_Start_Logo_Black_img from "../../images/tech-start-logo-black.png";
 
 export type Event = {
   title: string;
@@ -13,7 +14,17 @@ export type Event = {
 export var highlightedEvents: Event[];
 export var pastEvents: Event[];
 
-highlightedEvents = [];
+highlightedEvents = [
+  {
+    title: "Launch Night",
+    description:
+      "Join us this September as we kickoff the new school year! Our launch night will be your opportunity to learn more about our club!",
+    date: "Friday, September 23, 2022",
+    time: "6:00 PM – 7:30 PM",
+    image: Tech_Start_Logo_Black_img,
+    link: "https://www.eventbrite.ca/e/tech-start-launch-night-2022-tickets-423095107857",
+  },
+];
 
 pastEvents = [
   {

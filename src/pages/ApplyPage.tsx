@@ -92,6 +92,65 @@ const ApplyPage = () => {
           </div>
         </div>
       </div>
+      <div className="applyPage__projectExample">
+        <div className="applyPage__projectExampleText">
+          <h1>
+            Join a project to make new friends, gain new skills, and supercharge
+            your portfolio!
+          </h1>
+        </div>
+        <img src={projectExample} alt="The Tech Start website team" />
+      </div>
+
+      <div className="applyPage__container applyPage__applicationContainer">
+        <div className="applyPage__application">
+          <Blobbie
+            id={2}
+            width={290}
+            transform="translate(clamp(90vw, calc(5vw + 1rem), 40vw), 20%)"
+            edge={false}
+          />
+          <Blobbie
+            id={3}
+            width={200}
+            transform="translate(clamp(-70vw, calc(5vw + 1rem), 40vw), -15%)"
+            edge={false}
+          />
+
+          <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">
+            Applications
+          </h1>
+          <Divider />
+          <ul className="applyPage__applicationUL">
+            <ApplySection
+              role="Project Member"
+              description="Work and grow as a developer, business strategist, or designer.
+                  Collaborate with team members on various platforms to build an exciting project for 1 academic year."
+              statusIsOpen={true}
+              closedStatus="Opens September 2022"
+              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScB5pRpZNwYsVQTU9spMb4SnclbepceMH3FhU43NOpuU2GCVg/viewform"
+            />
+
+            <ApplySection
+              role="Project Manager"
+              description="Manage a project for 1 year and lead a team of 6-9
+                    project members to create complex projects."
+              statusIsOpen={false}
+              closedStatus="Opens Spring 2023"
+              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScHj9FcIK4ApPqyMiXf_PLlQ43FpI7EB5gmz7SJFGczU9xIkg/viewform"
+            />
+
+            <ApplySection
+              role="Executive Team"
+              description="Work behind the scenes for 1 academic year to organize project teams, run
+                  workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
+              statusIsOpen={false}
+              closedStatus="Recruitment Finished"
+              applicationLink=""
+            />
+          </ul>
+        </div>
+      </div>
       <div className="applyPage__container applyPage__projectIntroContainer">
         <div className="applyPage__projectIntroImg">
           <Lottie options={applyPageTeamLottieOptions} />
@@ -205,71 +264,6 @@ const ApplyPage = () => {
               the entrepreneurial and inventive vision for the community. More
               information on unique roles is in our application!"
           />
-        </div>
-        <div className="applyPage__container applyPage__projectExample">
-          <div className="applyPage__projectExampleText">
-            <h1>
-              Join a project to make new friends, gain new skills, and
-              supercharge your portfolio!
-            </h1>
-          </div>
-          <img src={projectExample} alt="The Tech Start website team" />
-        </div>
-        <Blobbie
-          id={2}
-          width={130}
-          transform="translate(-30%, 70%)"
-          edge={false}
-        />
-      </div>
-
-      <div className="applyPage__container applyPage__applicationContainer">
-        <div className="applyPage__application">
-          <Blobbie
-            id={2}
-            width={290}
-            transform="translate(clamp(90vw, calc(5vw + 1rem), 40vw), 20%)"
-            edge={false}
-          />
-          <Blobbie
-            id={3}
-            width={200}
-            transform="translate(clamp(-70vw, calc(5vw + 1rem), 40vw), -15%)"
-            edge={false}
-          />
-
-          <h1 className="chonkyHeading chonkyHeading--dynamic chonkyHeading--lessMargin">
-            Applications
-          </h1>
-          <Divider />
-          <ul className="applyPage__applicationUL">
-            <ApplySection
-              role="Project Member"
-              description="Work and grow as a developer, business strategist, or designer.
-                  Collaborate with team members on various platforms to build an exciting project for 1 academic year."
-              statusIsOpen={true}
-              closedStatus="Opens September 2022"
-              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScB5pRpZNwYsVQTU9spMb4SnclbepceMH3FhU43NOpuU2GCVg/viewform"
-            />
-
-            <ApplySection
-              role="Project Manager"
-              description="Manage a project for 1 year and lead a team of 6-9
-                    project members to create complex projects."
-              statusIsOpen={false}
-              closedStatus="Opens Spring 2023"
-              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScHj9FcIK4ApPqyMiXf_PLlQ43FpI7EB5gmz7SJFGczU9xIkg/viewform"
-            />
-
-            <ApplySection
-              role="Executive Team"
-              description="Work behind the scenes for 1 academic year to organize project teams, run
-                  workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
-              statusIsOpen={false}
-              closedStatus="Recruitment Finished"
-              applicationLink=""
-            />
-          </ul>
         </div>
       </div>
     </div>

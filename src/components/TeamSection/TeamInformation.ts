@@ -10,7 +10,7 @@ import sahiti_jpg from "../../images/team/Sahiti_Akella.jpg";
 import rajpreet_jpg from "../../images/team/Rajpreet_Gill.jpg";
 import mya_jpg from "../../images/team/Mya_Gill.jpeg";
 import labib_jpg from "../../images/team/Labib_Ahmed.jpg";
-import emir_jpg from "../../images/team/Selcuk_Emir_Avci.jpg";
+import nathan_jpg from "../../images/team/Nathan_Karbonik.jpg";
 import ben_jpg from "../../images/team/Ben_Schmidt.jpeg";
 import nurgul_jpg from "../../images/team/Nurgul_Akhshatayeva.jpg";
 import madeline_jpg from "../../images/team/Madeline_Mazurek.jpg";
@@ -115,11 +115,11 @@ executiveTeam = [
   },
   {
     id: 10,
-    name: "Selcuk Emir Avci",
+    name: "Nathan Karbonik",
     affiliation: "VP External",
-    image: emir_jpg,
-    linkedin: "https://www.linkedin.com/in/selcukemiravci/",
-    email: "mailto:selcuk.avci@ucalgary.ca",
+    image: nathan_jpg,
+    linkedin: "https://www.linkedin.com/in/nathan-karbonik/",
+    email: "mailto:nathan.karbonik@ucalgary.ca",
   },
   {
     id: 11,

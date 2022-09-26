@@ -18,11 +18,11 @@ highlightedEvents = [
   {
     title: "Launch Night",
     description:
-      "Join us this September as we kickoff the new school year! Our launch night will be your opportunity to learn more about our club!",
+      "We kicked off the school year at our launch night! To learn more about our club, visit the link to watch the recording!",
     date: "Friday, September 23, 2022",
     time: "6:00 PM – 7:30 PM",
     image: Tech_Start_Logo_Black_img,
-    link: "https://www.eventbrite.ca/e/tech-start-launch-night-2022-tickets-423095107857",
+    link: "https://www.youtube.com/watch?v=HYO2QcGiB-I",
   },
 ];
 

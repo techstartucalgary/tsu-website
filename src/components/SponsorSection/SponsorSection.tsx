@@ -9,7 +9,7 @@ const SponsorSection = () => {
   return (
     <div className="homePage__container">
       <h2 className={"chonkyHeading chonkyHeading--lessMargin"}>
-        Our Sponsors and Where We Work
+        Sponsors and Employers
       </h2>
       <Divider />
       <S.SponsorSection>

@@ -8,7 +8,9 @@ import Divider from "components/Divider";
 const SponsorSection = () => {
   return (
     <div className="homePage__container">
-      <h2 className={"chonkyHeading chonkyHeading--lessMargin"}>Sponsors</h2>
+      <h2 className={"chonkyHeading chonkyHeading--lessMargin"}>
+        Our Sponsors and Where We Work
+      </h2>
       <Divider />
       <S.SponsorSection>
         {SponsorList.map((sponsor: Sponsor) => {

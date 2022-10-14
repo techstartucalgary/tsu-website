@@ -17,6 +17,8 @@ import madeline_jpg from "../../images/team/Madeline_Mazurek.jpg";
 import leo_jpg from "../../images/team/Leo_Wei.jpg";
 import tim_jpg from "../../images/team/Tim_Macphail.jpg";
 import nemanja_jpg from "../../images/team/Nemanja_Grujic.jpg";
+import ben_shi_jpg from "../../images/team/Ben_Shi.jpg";
+import noel_jpg from "../../images/team/Noel_Thomas.jpg";
 
 export type TeamMember = {
   id: number;
@@ -67,6 +69,23 @@ executiveTeam = [
   },
   {
     id: 4,
+    name: "Noel Thomas",
+    affiliation: "Co-VP Events",
+    image: noel_jpg,
+    linkedin: "https://www.linkedin.com/in/noelfranthomas/",
+    email: "mailto:noel.thomas@ucalgary.ca",
+  },
+  {
+    id: 5,
+    name: "Ben Shi",
+    affiliation: "Jr VP Events",
+    image: ben_shi_jpg,
+    linkedin: "https://www.linkedin.com/in/ben-shi-228651189",
+    email: "mailto:ben.shi@ucalgary.ca",
+  },
+
+  {
+    id: 6,
     name: "Carol Wang",
     affiliation: "VP Internal",
     image: carol_jpg,
@@ -74,7 +93,7 @@ executiveTeam = [
     email: "mailto:carol.wang2@ucalgary.ca",
   },
   {
-    id: 5,
+    id: 7,
     name: "Tyler Chan",
     affiliation: "VP Communications",
     image: tyler_jpg,
@@ -82,7 +101,7 @@ executiveTeam = [
     email: "mailto:tyler.chan@ucalgary.ca",
   },
   {
-    id: 6,
+    id: 8,
     name: "Sahiti Akella",
     affiliation: "Jr VP Communications",
     image: sahiti_jpg,
@@ -90,7 +109,7 @@ executiveTeam = [
     email: "mailto:sahiti.akella@ucalgary.ca",
   },
   {
-    id: 7,
+    id: 9,
     name: "Kevin Amado",
     affiliation: "VP Development",
     image: kevin_jpg,
@@ -98,7 +117,7 @@ executiveTeam = [
     email: "mailto:kevin.amadorueda@ucalgary.ca",
   },
   {
-    id: 8,
+    id: 10,
     name: "Mya Gill",
     affiliation: "VP Community",
     image: mya_jpg,
@@ -106,7 +125,7 @@ executiveTeam = [
     email: "mailto:mya.gill@ucalgary.ca",
   },
   {
-    id: 9,
+    id: 11,
     name: "Labib Afshar Ahmed",
     affiliation: "VP Finance",
     image: labib_jpg,
@@ -114,7 +133,7 @@ executiveTeam = [
     email: "mailto:labibafsar.ahmed@ucalgary.ca",
   },
   {
-    id: 10,
+    id: 12,
     name: "Nathan Karbonik",
     affiliation: "VP External",
     image: nathan_jpg,
@@ -122,7 +141,7 @@ executiveTeam = [
     email: "mailto:nathan.karbonik@ucalgary.ca",
   },
   {
-    id: 11,
+    id: 13,
     name: "Joel Happ",
     affiliation: "Founder & Chairman",
     image: joel_jpg,

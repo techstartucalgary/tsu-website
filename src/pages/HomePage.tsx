@@ -86,7 +86,7 @@ const HomePage = () => {
             <NumberStat number={14} stat="projects so far" />
             <NumberStat number={150} stat="members so far" />
             <NumberStat
-              number={93}
+              number={96}
               suffix={"%"}
               stat="enjoyed their involvement"
             />

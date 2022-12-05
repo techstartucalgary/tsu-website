@@ -57,7 +57,7 @@ const Event = (props: EventProps) => {
             <div>
               <HoverButton
                 mode={ButtonMode.DARK}
-                text={"Go to Event"}
+                text={"Check it Out!"}
                 link={props.link}
                 linkIsInternal={false}
               />

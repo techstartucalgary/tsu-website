@@ -1,6 +1,7 @@
 import Funding_the_Next_Unicorn_img from "../../images/events/Funding_The_Next_Unicorn.jpg";
 import Internship_Panel_img from "../../images/events/Internship_Panel.jpg";
 import Tech_Start_Logo_Black_img from "../../images/tech-start-logo-black.png";
+import Galatea_Tech_Talk_img from "../../images/events/Galatea_Tech_Talk.jpg";
 
 export type Event = {
   title: string;
@@ -16,13 +17,13 @@ export var pastEvents: Event[];
 
 highlightedEvents = [
   {
-    title: "Launch Night",
+    title: "Tech Talk with Galatea",
     description:
-      "We kicked off the school year at our launch night! To learn more about our club, visit the link to watch the recording!",
-    date: "Friday, September 23, 2022",
-    time: "6:00 PM – 7:30 PM",
-    image: Tech_Start_Logo_Black_img,
-    link: "https://www.youtube.com/watch?v=HYO2QcGiB-I",
+      "An exclusive Tech Talk with Galatea Technologies Inc. on leveraging AI and ML in conventional logistics workflows to build sustainable industry and supply chains!",
+    date: "Thursday, December 1, 2022",
+    time: "5:30 PM – 6:30 PM",
+    image: Galatea_Tech_Talk_img,
+    link: "https://www.linkedin.com/posts/tech-start-ucalgary_yesterday-we-had-an-exclusive-tech-talk-with-activity-7004661727279673344-Z_Ld?utm_source=share&utm_medium=member_desktop",
   },
 ];
 

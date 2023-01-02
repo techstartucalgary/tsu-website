@@ -7,6 +7,7 @@ import projectTeamLottie from "../images/lottie/projectTeamLottie.json";
 import handshakeLottie from "../images/lottie/handshake_lottie.json";
 import teamproject from "../images/lottie/teamproject.json";
 import applyPageTeamLottie from "../images/lottie/applyPageTeamLottie.json";
+import merchPageAnimation from "../images/lottie/merchPageAnimation.json";
 
 export const applyPageTeamLottieOptions = {
   loop: true,
@@ -83,6 +84,15 @@ export const handshakeLottieOptions = {
   loop: true,
   autoplay: true,
   animationData: handshakeLottie,
+  rendererSettings: {
+    preserveAspectRatio: "xMidYMid slice",
+  },
+};
+
+export const merchPageLottieOptions = {
+  loop: true,
+  autoplay: true,
+  animationData: merchPageAnimation,
   rendererSettings: {
     preserveAspectRatio: "xMidYMid slice",
   },

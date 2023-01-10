@@ -59,17 +59,9 @@ executiveTeam = [
     linkedin: "https://www.linkedin.com/in/fedor-prokopchuk-707668a6/",
     email: "mailto:fedor.prokopchuk@ucalgary.ca",
   },
+
   {
     id: 3,
-    name: "Sareen Singh",
-    affiliation: "Advisor",
-    image: sareen_jpg,
-    linkedin:
-      "https://www.linkedin.com/in/sareen-singh-309b55173/?originalSubdomain=ca",
-    email: "mailto:sareen.singh@ucalgary.ca",
-  },
-  {
-    id: 4,
     name: "Noel Thomas",
     affiliation: "Co-VP Events",
     image: noel_jpg,
@@ -77,7 +69,7 @@ executiveTeam = [
     email: "mailto:noel.thomas@ucalgary.ca",
   },
   {
-    id: 5,
+    id: 4,
     name: "Ben Shi",
     affiliation: "Jr VP Events",
     image: ben_shi_jpg,
@@ -86,7 +78,7 @@ executiveTeam = [
   },
 
   {
-    id: 6,
+    id: 5,
     name: "Carol Wang",
     affiliation: "VP Internal",
     image: carol_jpg,
@@ -94,7 +86,7 @@ executiveTeam = [
     email: "mailto:carol.wang2@ucalgary.ca",
   },
   {
-    id: 7,
+    id: 6,
     name: "Tyler Chan",
     affiliation: "VP Communications",
     image: tyler_jpg,
@@ -102,7 +94,7 @@ executiveTeam = [
     email: "mailto:tyler.chan@ucalgary.ca",
   },
   {
-    id: 8,
+    id: 7,
     name: "Sahiti Akella",
     affiliation: "Jr VP Communications",
     image: sahiti_jpg,
@@ -111,7 +103,7 @@ executiveTeam = [
   },
 
   {
-    id: 9,
+    id: 8,
     name: "Estefy Caballero",
     affiliation: "Media Commissioner",
     image: estefy_jpeg,
@@ -119,7 +111,7 @@ executiveTeam = [
     email: "",
   },
   {
-    id: 10,
+    id: 9,
     name: "Kevin Amado",
     affiliation: "VP Development",
     image: kevin_jpg,
@@ -127,7 +119,7 @@ executiveTeam = [
     email: "mailto:kevin.amadorueda@ucalgary.ca",
   },
   {
-    id: 11,
+    id: 10,
     name: "Mya Gill",
     affiliation: "VP Community",
     image: mya_jpg,
@@ -135,7 +127,7 @@ executiveTeam = [
     email: "mailto:mya.gill@ucalgary.ca",
   },
   {
-    id: 12,
+    id: 11,
     name: "Labib Afshar Ahmed",
     affiliation: "VP Finance",
     image: labib_jpg,
@@ -143,12 +135,21 @@ executiveTeam = [
     email: "mailto:labibafsar.ahmed@ucalgary.ca",
   },
   {
-    id: 13,
+    id: 12,
     name: "Nathan Karbonik",
     affiliation: "VP External",
     image: nathan_jpg,
     linkedin: "https://www.linkedin.com/in/nathan-karbonik/",
     email: "mailto:nathan.karbonik@ucalgary.ca",
+  },
+  {
+    id: 13,
+    name: "Sareen Singh",
+    affiliation: "Advisor",
+    image: sareen_jpg,
+    linkedin:
+      "https://www.linkedin.com/in/sareen-singh-309b55173/?originalSubdomain=ca",
+    email: "mailto:sareen.singh@ucalgary.ca",
   },
   {
     id: 14,

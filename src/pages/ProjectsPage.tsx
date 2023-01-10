@@ -41,12 +41,12 @@ const ProjectsPage = () => {
       </h2>
       <ProjectKeywordsSection />
 
-      {/*       <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
+      <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
         Current Projects
       </h2>
       <Divider />
       <ProjectSection projects={CurrentProjects} />
- */}
+
       <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
         Past Projects
       </h2>

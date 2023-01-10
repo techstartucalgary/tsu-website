@@ -19,6 +19,7 @@ import tim_jpg from "../../images/team/Tim_Macphail.jpg";
 import nemanja_jpg from "../../images/team/Nemanja_Grujic.jpg";
 import ben_shi_jpg from "../../images/team/Ben_Shi.jpg";
 import noel_jpg from "../../images/team/Noel_Thomas.jpg";
+import estefy_jpeg from "../../images/team/Estefy_Caballero.jpeg";
 
 export type TeamMember = {
   id: number;
@@ -61,7 +62,7 @@ executiveTeam = [
   {
     id: 3,
     name: "Sareen Singh",
-    affiliation: "VP Events",
+    affiliation: "Advisor",
     image: sareen_jpg,
     linkedin:
       "https://www.linkedin.com/in/sareen-singh-309b55173/?originalSubdomain=ca",
@@ -108,8 +109,17 @@ executiveTeam = [
     linkedin: "https://www.linkedin.com/in/sahiti-akella/",
     email: "mailto:sahiti.akella@ucalgary.ca",
   },
+
   {
     id: 9,
+    name: "Estefy Caballero",
+    affiliation: "Media Commissioner",
+    image: estefy_jpeg,
+    linkedin: "https://www.linkedin.com/in/estefy-caballero-864aab25a",
+    email: "",
+  },
+  {
+    id: 10,
     name: "Kevin Amado",
     affiliation: "VP Development",
     image: kevin_jpg,
@@ -117,7 +127,7 @@ executiveTeam = [
     email: "mailto:kevin.amadorueda@ucalgary.ca",
   },
   {
-    id: 10,
+    id: 11,
     name: "Mya Gill",
     affiliation: "VP Community",
     image: mya_jpg,
@@ -125,7 +135,7 @@ executiveTeam = [
     email: "mailto:mya.gill@ucalgary.ca",
   },
   {
-    id: 11,
+    id: 12,
     name: "Labib Afshar Ahmed",
     affiliation: "VP Finance",
     image: labib_jpg,
@@ -133,7 +143,7 @@ executiveTeam = [
     email: "mailto:labibafsar.ahmed@ucalgary.ca",
   },
   {
-    id: 12,
+    id: 13,
     name: "Nathan Karbonik",
     affiliation: "VP External",
     image: nathan_jpg,
@@ -141,7 +151,7 @@ executiveTeam = [
     email: "mailto:nathan.karbonik@ucalgary.ca",
   },
   {
-    id: 13,
+    id: 14,
     name: "Joel Happ",
     affiliation: "Founder & Chairman",
     image: joel_jpg,

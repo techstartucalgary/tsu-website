@@ -63,7 +63,7 @@ executiveTeam = [
   {
     id: 3,
     name: "Noel Thomas",
-    affiliation: "Co-VP Events",
+    affiliation: "VP Events",
     image: noel_jpg,
     linkedin: "https://www.linkedin.com/in/noelfranthomas/",
     email: "mailto:noel.thomas@ucalgary.ca",

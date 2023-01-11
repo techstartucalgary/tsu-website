@@ -4,6 +4,8 @@ import MerchCollection from "./Merch";
 import useViewport from "../UseViewport";
 import * as S from "./MerchSection.styles";
 import { merchList } from "./MerchData";
+import Divider from "components/Divider";
+import MerchTeamPhoto from "../../images/merch/MerchTeamPhoto.jpeg";
 
 const MerchSection = () => {
   const { width } = useViewport();
@@ -15,6 +17,15 @@ const MerchSection = () => {
 
   return (
     <S.MerchSection>
+      <h4
+        style={{ textAlign: "center" }}
+        data-aos="fade-up"
+        data-aos-duration="600"
+      >
+        Get in style with Tech Start!
+      </h4>
+      <img src={MerchTeamPhoto} alt="Tech Start Execs Merch Photo" />
+      <Divider />
       <MerchCollection merchItems={getMerch()} desktopView={defaultView} />
     </S.MerchSection>
   );

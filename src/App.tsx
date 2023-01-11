@@ -4,6 +4,7 @@ import SparkPage from "pages/SparkPage";
 import ApplyPage from "pages/ApplyPage";
 import TeamPage from "pages/TeamPage";
 import ProjectsPage from "pages/ProjectsPage";
+import MerchPage from "pages/MerchPage";
 
 import { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
@@ -32,6 +33,9 @@ function App() {
             </Route>
             <Route path="/projects">
               <ProjectsPage />
+            </Route>
+            <Route path="/merch">
+              <MerchPage />
             </Route>
             <Route path="/resources">
               <DocsPage />

@@ -19,6 +19,7 @@ import tim_jpg from "../../images/team/Tim_Macphail.jpg";
 import nemanja_jpg from "../../images/team/Nemanja_Grujic.jpg";
 import ben_shi_jpg from "../../images/team/Ben_Shi.jpg";
 import noel_jpg from "../../images/team/Noel_Thomas.jpg";
+import estefy_jpeg from "../../images/team/Estefy_Caballero.jpeg";
 
 export type TeamMember = {
   id: number;
@@ -58,25 +59,17 @@ executiveTeam = [
     linkedin: "https://www.linkedin.com/in/fedor-prokopchuk-707668a6/",
     email: "mailto:fedor.prokopchuk@ucalgary.ca",
   },
+
   {
     id: 3,
-    name: "Sareen Singh",
-    affiliation: "VP Events",
-    image: sareen_jpg,
-    linkedin:
-      "https://www.linkedin.com/in/sareen-singh-309b55173/?originalSubdomain=ca",
-    email: "mailto:sareen.singh@ucalgary.ca",
-  },
-  {
-    id: 4,
     name: "Noel Thomas",
-    affiliation: "Co-VP Events",
+    affiliation: "VP Events",
     image: noel_jpg,
     linkedin: "https://www.linkedin.com/in/noelfranthomas/",
     email: "mailto:noel.thomas@ucalgary.ca",
   },
   {
-    id: 5,
+    id: 4,
     name: "Ben Shi",
     affiliation: "Jr VP Events",
     image: ben_shi_jpg,
@@ -85,7 +78,7 @@ executiveTeam = [
   },
 
   {
-    id: 6,
+    id: 5,
     name: "Carol Wang",
     affiliation: "VP Internal",
     image: carol_jpg,
@@ -93,7 +86,7 @@ executiveTeam = [
     email: "mailto:carol.wang2@ucalgary.ca",
   },
   {
-    id: 7,
+    id: 6,
     name: "Tyler Chan",
     affiliation: "VP Communications",
     image: tyler_jpg,
@@ -101,12 +94,21 @@ executiveTeam = [
     email: "mailto:tyler.chan@ucalgary.ca",
   },
   {
-    id: 8,
+    id: 7,
     name: "Sahiti Akella",
     affiliation: "Jr VP Communications",
     image: sahiti_jpg,
     linkedin: "https://www.linkedin.com/in/sahiti-akella/",
     email: "mailto:sahiti.akella@ucalgary.ca",
+  },
+
+  {
+    id: 8,
+    name: "Estefy Caballero",
+    affiliation: "Media Commissioner",
+    image: estefy_jpeg,
+    linkedin: "https://www.linkedin.com/in/estefy-caballero-864aab25a",
+    email: "",
   },
   {
     id: 9,
@@ -142,6 +144,15 @@ executiveTeam = [
   },
   {
     id: 13,
+    name: "Sareen Singh",
+    affiliation: "Advisor",
+    image: sareen_jpg,
+    linkedin:
+      "https://www.linkedin.com/in/sareen-singh-309b55173/?originalSubdomain=ca",
+    email: "mailto:sareen.singh@ucalgary.ca",
+  },
+  {
+    id: 14,
     name: "Joel Happ",
     affiliation: "Founder & Chairman",
     image: joel_jpg,

@@ -4,7 +4,7 @@ import { motion } from "framer-motion/dist/framer-motion";
 import Lottie from "react-lottie";
 import "./ApplyPage.css";
 import { applyPageTeamLottieOptions } from "utility/LottieOptions";
-import projectExample from "images/execs_showcase_2022.jpg";
+import projectExample from "images/2022_project_members.png";
 import ApplySection from "components/ApplySection";
 import Accordion from "../components/Apply/Accordion";
 import Blobbie from "components/Blobbie";
@@ -37,9 +37,8 @@ const ApplyPage = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
           >
-            Applications for project members are open! Teams will meet on
-            Thursdays at 5:30 pm, at our weekly dev nights starting October
-            13th. For more information, join our{" "}
+            Applications for project members are closed! Teams meet on Thursdays
+            at 5:30pm, at our weekly dev nights. For more information, join our{" "}
             {
               <a href="https://discord.gg/Sxj5QrxRPk">
                 <b>
@@ -99,7 +98,7 @@ const ApplyPage = () => {
             your portfolio!
           </h1>
         </div>
-        <img src={projectExample} alt="The Tech Start website team" />
+        <img src={projectExample} alt="Tech Start Members" />
       </div>
 
       <div className="applyPage__container applyPage__applicationContainer">
@@ -126,9 +125,9 @@ const ApplyPage = () => {
               role="Project Member"
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project for 1 academic year."
-              statusIsOpen={true}
-              closedStatus="Opens September 2022"
-              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScB5pRpZNwYsVQTU9spMb4SnclbepceMH3FhU43NOpuU2GCVg/viewform"
+              statusIsOpen={false}
+              closedStatus="Recruitment Finished"
+              applicationLink=""
             />
 
             <ApplySection
@@ -136,17 +135,17 @@ const ApplyPage = () => {
               description="Manage a project for 1 year and lead a team of 6-9
                     project members to create complex projects."
               statusIsOpen={false}
-              closedStatus="Opens Spring 2023"
-              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScHj9FcIK4ApPqyMiXf_PLlQ43FpI7EB5gmz7SJFGczU9xIkg/viewform"
+              closedStatus="Recruitment Finished"
+              applicationLink=""
             />
 
             <ApplySection
               role="Executive Team"
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
-              statusIsOpen={false}
+              statusIsOpen={true}
               closedStatus="Recruitment Finished"
-              applicationLink=""
+              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScFFE8ax9UcIiqo28bUU2tsih7tev24diU8pU7CDJUVy5klMg/viewform"
             />
           </ul>
         </div>

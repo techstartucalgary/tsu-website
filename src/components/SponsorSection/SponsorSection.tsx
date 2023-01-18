@@ -1,6 +1,6 @@
 import SponsorLogo from "components/SponsorLogo";
 import HoverButton from "../HoverButton/HoverButton";
-import { Sponsor, SponsorList } from "./SponsorsInfo";
+import { PartnerList, Sponsor, SponsorList } from "./SponsorsInfo";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import * as S from "./SponsorSection.styles";
 import Divider from "components/Divider";
@@ -9,7 +9,7 @@ const SponsorSection = () => {
   return (
     <div className="homePage__container">
       <h2 className={"chonkyHeading chonkyHeading--lessMargin"}>
-        Sponsors and Employers
+        Our Sponsors and Partners
       </h2>
       <Divider />
       <S.SponsorSection>
@@ -19,6 +19,17 @@ const SponsorSection = () => {
               <SponsorLogo
                 sponsorLink={sponsor.sponsorLink}
                 sponsorImage={sponsor.sponsorImage}
+              />
+            </S.SponsorLogoDiv>
+          );
+        })}
+
+        {PartnerList.map((partner: Sponsor) => {
+          return (
+            <S.SponsorLogoDiv>
+              <SponsorLogo
+                sponsorLink={partner.sponsorLink}
+                sponsorImage={partner.sponsorImage}
               />
             </S.SponsorLogoDiv>
           );

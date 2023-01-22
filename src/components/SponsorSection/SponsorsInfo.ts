@@ -6,17 +6,18 @@ import sponsorPason from "images/sponsors/sponsor-logo-pason.svg";
 import sponsorIEEE from "images/sponsors/sponsor-logo-ieee.png";
 import partnerSchulichIgnite from "images/sponsors/partner-logo-schulich-ignite.png";
 import partnerAcRobotics from "images/sponsors/partner-logo-ac-robotics.png";
-import partnerPlatformCalgary from "images/sponsors/partner-logo-platform-calgary.png";
 import partnerThinAirLabs from "images/sponsors/partner-logo-thin-air-labs.png";
 import partnerBCG from "images/sponsors/partner-logo-bcg.jpg";
 import partnerTC from "images/sponsors/partner-logo-tc.png";
+import guestBCW from "images/sponsors/guest-logo-bitcoinwell.svg";
+import guestRallie from "images/sponsors/guest-logo-rallie.png";
 
-export type Sponsor = {
+export type Organization = {
   sponsorLink: string;
   sponsorImage: string;
 };
 
-export const SponsorList: Sponsor[] = [
+export const SponsorList: Organization[] = [
   {
     sponsorLink: "https://www.pason.com/",
     sponsorImage: sponsorPason,
@@ -26,10 +27,6 @@ export const SponsorList: Sponsor[] = [
     sponsorImage: sponsorLogoArcurve,
   },
   {
-    sponsorLink: "https://www.ieee.org/",
-    sponsorImage: sponsorIEEE,
-  },
-  {
     sponsorLink: "https://galateatech.com/",
     sponsorImage: sponsorGalatea,
   },
@@ -37,13 +34,9 @@ export const SponsorList: Sponsor[] = [
     sponsorLink: "https://www.ucalgary.ca/hunter-hub",
     sponsorImage: sponsorLogoHunterHub,
   },
-  {
-    sponsorLink: "https://www.microsoft.com/",
-    sponsorImage: sponsorLogoMicrosoft,
-  },
 ];
 
-export const PartnerList: Sponsor[] = [
+export const CollabList: Organization[] = [
   {
     sponsorLink: "https://www.acrobotics.ca/",
     sponsorImage: partnerAcRobotics,
@@ -53,9 +46,16 @@ export const PartnerList: Sponsor[] = [
     sponsorImage: partnerSchulichIgnite,
   },
   {
-    sponsorLink: "https://www.platformcalgary.com/",
-    sponsorImage: partnerPlatformCalgary,
+    sponsorLink: "https://www.ieee.org/",
+    sponsorImage: sponsorIEEE,
   },
+  {
+    sponsorLink: "https://www.microsoft.com/",
+    sponsorImage: sponsorLogoMicrosoft,
+  },
+];
+
+export const GuestList: Organization[] = [
   {
     sponsorLink: "https://www.thinairlabs.ca/",
     sponsorImage: partnerThinAirLabs,
@@ -67,5 +67,13 @@ export const PartnerList: Sponsor[] = [
   {
     sponsorLink: "https://www.tcenergy.com/",
     sponsorImage: partnerTC,
+  },
+  {
+    sponsorLink: "https://bitcoinwell.com/",
+    sponsorImage: guestBCW,
+  },
+  {
+    sponsorLink: "https://www.ralliefinance.com/",
+    sponsorImage: guestRallie,
   },
 ];

@@ -45,7 +45,7 @@ const Footer = () => (
       <SocialMedia
         color={SocialMediaColor.Black}
         icon={faGithub}
-        link="https://github.com/Tech-Start-UCalgary"
+        link="https://github.com/techstartucalgary"
       />
       <SocialMedia
         color={SocialMediaColor.Black}

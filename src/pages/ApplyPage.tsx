@@ -5,6 +5,7 @@ import Lottie from "react-lottie";
 import "./ApplyPage.css";
 import { applyPageTeamLottieOptions } from "utility/LottieOptions";
 import projectExample from "images/2022_project_members.png";
+import interim_showcase_2023 from "images/Interim_Showcase_2023.jpeg";
 import ApplySection from "components/ApplySection";
 import Accordion from "../components/Apply/Accordion";
 import Blobbie from "components/Blobbie";
@@ -98,7 +99,7 @@ const ApplyPage = () => {
             your portfolio!
           </h1>
         </div>
-        <img src={projectExample} alt="Tech Start Members" />
+        <img src={interim_showcase_2023} alt="Tech Start Members" />
       </div>
 
       <div className="applyPage__container applyPage__applicationContainer">

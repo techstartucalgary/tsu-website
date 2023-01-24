@@ -3,6 +3,7 @@ import Internship_Panel_img from "../../images/events/Internship_Panel.jpg";
 import Tech_Start_Logo_Black_img from "../../images/tech-start-logo-black.png";
 import Galatea_Tech_Talk_img from "../../images/events/Galatea_Tech_Talk.jpg";
 import Interim_Showcase_Judges_img from "../../images/events/Interim_Showcase_Judges.jpeg";
+import Arcurve_Lunch_Learn_img from "../../images/events/Arcurve_Lunch_Learn.jpeg";
 
 export type Event = {
   title: string;
@@ -29,6 +30,15 @@ highlightedEvents = [
 ];
 
 pastEvents = [
+  {
+    title: "Arcurve PM Lunch and Learn",
+    description:
+      "A Lunch and Learn where our Project Managers learned the key aspects of using scrum for project development, and the benefits it offers to ensure optimal efficiency is achieved in agile software developmental projects!",
+    date: "Monday, December 12, 2022",
+    time: "",
+    image: Arcurve_Lunch_Learn_img,
+    link: "https://www.linkedin.com/posts/tech-start-ucalgary_yesterday-we-had-a-lunch-and-learn-with-arcurve-activity-7008539528407764992-sYGH?utm_source=share&utm_medium=member_desktop",
+  },
   {
     title: "Tech Talk with Galatea",
     description:

@@ -146,7 +146,7 @@ const ApplyPage = () => {
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               statusIsOpen={true}
               closedStatus="Recruitment Finished"
-              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScFFE8ax9UcIiqo28bUU2tsih7tev24diU8pU7CDJUVy5klMg/viewform"
+              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScn1ByuMe3BE8RYcE54VA88WVI8I-fjzSxZ-oI5I-zsI9h71A/viewform"
             />
           </ul>
         </div>

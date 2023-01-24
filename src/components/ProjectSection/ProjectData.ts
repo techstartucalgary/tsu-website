@@ -144,7 +144,7 @@ export const CurrentProjects: Project[] = [
   {
     id: 3,
     name: "Lifeline",
-    github: "https://lifeline.techstartucalgary.com/",
+    github: "https://github.com/techstartucalgary/lifeline",
     pmName: "Timothy Macphail",
     website: website,
     image: lifeLine,

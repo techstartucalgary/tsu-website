@@ -13,7 +13,7 @@ import snowbot from "images/projects/snowbot.jpg";
 import noteAid from "images/projects/noteAid.jpg";
 import whereTo from "images/projects/whereTo.jpg";
 import teamPlaceHolder from "images/projects/team-placeholder.jpg";
-import lifeLine from "images/projects/lifeline.jpeg";
+import lifeLine from "images/projects/lifeline.png";
 
 // Project type definition
 export type Project = {

@@ -10,6 +10,8 @@ import {
   faLinkedin,
   faYoutube,
   faGithub,
+  faTiktok,
+  faReddit,
 } from "@fortawesome/free-brands-svg-icons";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
@@ -27,12 +29,6 @@ const Footer = () => (
     <S.SocialMediaSection>
       <SocialMedia
         color={SocialMediaColor.Black}
-        icon={faFacebook}
-        link="https://www.facebook.com/TechStartUCalgary/"
-      />
-
-      <SocialMedia
-        color={SocialMediaColor.Black}
         icon={faInstagram}
         link="https://www.instagram.com/techstartucalgary/"
       />
@@ -45,7 +41,7 @@ const Footer = () => (
       <SocialMedia
         color={SocialMediaColor.Black}
         icon={faGithub}
-        link="https://github.com/Tech-Start-UCalgary"
+        link="https://github.com/techstartucalgary"
       />
       <SocialMedia
         color={SocialMediaColor.Black}
@@ -56,6 +52,16 @@ const Footer = () => (
         color={SocialMediaColor.Black}
         icon={faYoutube}
         link="https://www.youtube.com/channel/UCIg1JPlWSXSwIdvqHKGiX9g"
+      />
+      <SocialMedia
+        color={SocialMediaColor.Black}
+        icon={faTiktok}
+        link="https://www.tiktok.com/@techstartuofc"
+      />
+      <SocialMedia
+        color={SocialMediaColor.Black}
+        icon={faReddit}
+        link="https://www.reddit.com/user/TechStartUCalgary"
       />
     </S.SocialMediaSection>
     <S.Copyright>© {new Date().getFullYear()} Tech Start UCalgary</S.Copyright>

@@ -4,6 +4,7 @@ import Tech_Start_Logo_Black_img from "../../images/tech-start-logo-black.png";
 import Galatea_Tech_Talk_img from "../../images/events/Galatea_Tech_Talk.jpg";
 import Interim_Showcase_Judges_img from "../../images/events/Interim_Showcase_Judges.jpeg";
 import Arcurve_Lunch_Learn_img from "../../images/events/Arcurve_Lunch_Learn.jpeg";
+import Blockchain_Panel_img from "../../images/events/Blockchain_Panel.jpeg";
 
 export type Event = {
   title: string;
@@ -18,6 +19,16 @@ export var highlightedEvents: Event[];
 export var pastEvents: Event[];
 
 highlightedEvents = [
+  {
+    title: "Blockchain Panel",
+    description:
+      "Join us for an enlightening panel discussion on the future of blockchain technology. Our esteemed panel of experts will delve into the various applications and implications of this revolutionary technology. ",
+    date: "Friday, February 3, 2023",
+    time: "6:30 PM – 7:30 PM",
+    image: Blockchain_Panel_img,
+    link: "https://events.vtools.ieee.org/m/344006",
+  },
+
   {
     title: "Interim Showcase 2023",
     description:

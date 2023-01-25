@@ -143,13 +143,13 @@ export const CurrentProjects: Project[] = [
   },
   {
     id: 3,
-    name: "LifeLine",
-    github: "https://github.com/techstartucalgary/LifeLine",
-    pmName: "Tim Macphail",
+    name: "Lifeline",
+    github: "https://github.com/techstartucalgary/lifeline",
+    pmName: "Timothy Macphail",
     website: website,
     image: lifeLine,
     description:
-      "A much-needed lifeline to help students never miss a deadline.",
+      "Lifeline uses AI to extract and organize deadlines from course documents for you to download.",
   },
   {
     id: 4,

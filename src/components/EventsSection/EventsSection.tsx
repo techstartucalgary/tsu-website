@@ -15,7 +15,7 @@ const EventsSection = () => {
         the public - no club membership is required!
       </p>
 
-      <S.EventsContainer pastEvent={false} style={{ textAlign: "left" }}>
+      <S.EventsContainer style={{ textAlign: "left" }}>
         {highlightedEvents.map((event, i) => {
           return (
             <Event
@@ -39,7 +39,7 @@ const EventsSection = () => {
         Check out events we've hosted in the past:
       </h2>
 
-      <S.EventsContainer pastEvent={true}>
+      <S.EventsContainer>
         {pastEvents.map((event, i) => {
           return (
             <Event
@@ -50,7 +50,7 @@ const EventsSection = () => {
               time={event.time}
               image={event.image}
               link={event.link}
-              pastEvent={true}
+              pastEvent={false}
             />
           );
         })}

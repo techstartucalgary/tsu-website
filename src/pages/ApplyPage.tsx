@@ -5,6 +5,7 @@ import Lottie from "react-lottie";
 import "./ApplyPage.css";
 import { applyPageTeamLottieOptions } from "utility/LottieOptions";
 import projectExample from "images/2022_project_members.png";
+import interim_showcase_2023 from "images/Interim_Showcase_2023.jpeg";
 import ApplySection from "components/ApplySection";
 import Accordion from "../components/Apply/Accordion";
 import Blobbie from "components/Blobbie";
@@ -98,7 +99,7 @@ const ApplyPage = () => {
             your portfolio!
           </h1>
         </div>
-        <img src={projectExample} alt="Tech Start Members" />
+        <img src={interim_showcase_2023} alt="Tech Start Members" />
       </div>
 
       <div className="applyPage__container applyPage__applicationContainer">
@@ -145,7 +146,7 @@ const ApplyPage = () => {
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               statusIsOpen={true}
               closedStatus="Recruitment Finished"
-              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScFFE8ax9UcIiqo28bUU2tsih7tev24diU8pU7CDJUVy5klMg/viewform"
+              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScn1ByuMe3BE8RYcE54VA88WVI8I-fjzSxZ-oI5I-zsI9h71A/viewform"
             />
           </ul>
         </div>

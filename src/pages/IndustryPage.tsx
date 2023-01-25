@@ -7,7 +7,6 @@ import {
   SponsorList,
 } from "../components/SponsorSection/SponsorsInfo";
 import Divider from "components/Divider";
-import Blobbie from "components/Blobbie";
 import { motion } from "framer-motion";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import HoverButton from "components/HoverButton/HoverButton";
@@ -15,18 +14,6 @@ import HoverButton from "components/HoverButton/HoverButton";
 const IndustryPage = () => {
   return (
     <div className="homePage">
-      <Blobbie
-        id={2}
-        width={300}
-        transform="translate(80vw, 0vw)"
-        edge={true}
-      />
-      <Blobbie
-        id={8}
-        width={250}
-        transform="translate(-10vw, 10vw)"
-        edge={false}
-      />
       <S.IndustryPageHeader>
         <motion.h1
           initial={{ opacity: 0 }}

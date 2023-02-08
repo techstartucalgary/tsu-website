@@ -12,6 +12,8 @@ import aquavolution from "images/projects/aquavolution.jpg";
 import snowbot from "images/projects/snowbot.jpg";
 import noteAid from "images/projects/noteAid.jpg";
 import whereTo from "images/projects/whereTo.jpg";
+import teamPlaceHolder from "images/projects/team-placeholder.jpg";
+import lifeLine from "images/projects/lifeline.jpeg";
 
 // Project type definition
 export type Project = {
@@ -109,4 +111,63 @@ export const PastProjects: Project[] = [
   },
 ];
 
-export const CurrentProjects: Project[] = [];
+export const CurrentProjects: Project[] = [
+  {
+    id: 0,
+    name: "Bandist",
+    github: "https://github.com/techstartucalgary/Bandist",
+    website: website,
+    image: teamPlaceHolder,
+    pmName: "Nurgul Akhshatayeva",
+    description:
+      "A cross-platform application for music enthusiasts to get notified of the latest concerts of their favorite artists.",
+  },
+  {
+    id: 1,
+    name: "CyberHire",
+    github: "https://github.com/techstartucalgary/CyberHire",
+    website: website,
+    image: teamPlaceHolder,
+    pmName: "Ben Schmidt",
+    description: "A platform for employers and applicants to connect.",
+  },
+  {
+    id: 2,
+    name: "EasyMeal",
+    github: "https://github.com/techstartucalgary/EasyMeal",
+    website: website,
+    image: teamPlaceHolder,
+    pmName: "Nemanja Grujic",
+    description:
+      "EasyMeal generates recipes for you based on your budget and tastes.",
+  },
+  {
+    id: 3,
+    name: "Lifeline",
+    github: "https://github.com/techstartucalgary/lifeline",
+    pmName: "Timothy Macphail",
+    website: website,
+    image: lifeLine,
+    description:
+      "Lifeline uses AI to extract and organize deadlines from course documents for you to download.",
+  },
+  {
+    id: 4,
+    name: "AiRM",
+    github: "https://github.com/techstartucalgary/RoboticArm",
+    pmName: "Leo Wei",
+    website: website,
+    image: teamPlaceHolder,
+    description:
+      "Robotic arm using reinforcement learning to help robots learn and adapt to new environments.",
+  },
+  {
+    id: 5,
+    name: "TechstArcade",
+    github: "https://github.com/techstartucalgary/techstarcade",
+    pmName: "Madeline Mazurek",
+    website: website,
+    image: teamPlaceHolder,
+    description: "Retro style mini games in a arcade style chrome extension.",
+  },
+];

@@ -67,8 +67,14 @@ const Header = () => {
               link="/projects"
               name="Projects"
             />
+            <NavbarLink
+              top="industryPageTop"
+              link="/industry"
+              name="Industry"
+            />
             <NavbarLink top="applyPageTop" link="/apply" name="Apply" />
             <NavbarLink top="docsPageTop" link="/resources" name="Resources" />
+            <NavbarLink top="merchPageTop" link="/merch" name="Merch" />
             {/* <NavbarLink
                         top="sparkPageTop"
                         link="/community"

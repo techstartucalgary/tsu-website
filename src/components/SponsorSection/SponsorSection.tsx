@@ -1,6 +1,6 @@
 import SponsorLogo from "components/SponsorLogo";
 import HoverButton from "../HoverButton/HoverButton";
-import { Sponsor, SponsorList } from "./SponsorsInfo";
+import { Organization, SponsorList } from "./SponsorsInfo";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import * as S from "./SponsorSection.styles";
 import Divider from "components/Divider";
@@ -8,10 +8,12 @@ import Divider from "components/Divider";
 const SponsorSection = () => {
   return (
     <div className="homePage__container">
-      <h2 className={"chonkyHeading chonkyHeading--lessMargin"}>Sponsors</h2>
+      <h2 className={"chonkyHeading chonkyHeading--lessMargin"}>
+        Our Sponsors
+      </h2>
       <Divider />
       <S.SponsorSection>
-        {SponsorList.map((sponsor: Sponsor) => {
+        {SponsorList.map((sponsor: Organization) => {
           return (
             <S.SponsorLogoDiv>
               <SponsorLogo
@@ -22,7 +24,6 @@ const SponsorSection = () => {
           );
         })}
       </S.SponsorSection>
-
       <S.SponsorCallToActionDiv>
         <p>
           Interested in sponsoring us? Reach out at&nbsp;
@@ -38,7 +39,7 @@ const SponsorSection = () => {
         <S.SponsorButtonDiv>
           <HoverButton
             mode={ButtonMode.DARK}
-            link="https://drive.google.com/file/d/1Es9AvtbGnGbvhsyh1Vp35qr8DptDiSMv/view"
+            link="https://drive.google.com/file/d/1jWvy6qz8WgXZLGQZGX5NvQTQyTcE-q9W/view?usp=share_link"
             linkIsInternal={false}
             text="Check out our sponsorship package!"
           />

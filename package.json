@@ -36,6 +36,7 @@
     "react-countup": "^4.3.3",
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
+    "react-image-gallery": "^1.2.11",
     "react-intersection-observer": "^8.33.1",
     "react-lottie": "^1.2.3",
     "react-multi-carousel": "^2.6.5",
@@ -78,6 +79,7 @@
     ]
   },
   "devDependencies": {
+    "@types/react-image-gallery": "^1.2.0",
     "@types/react-lottie": "^1.2.6",
     "@types/styled-components": "^5.1.9"
   }

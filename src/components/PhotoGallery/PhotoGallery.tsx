@@ -1,27 +1,31 @@
-import React, { useState } from "react";
-import * as S from "./PhotoGallery.styles";
-import { photos } from "./PhotoGalleryList";
+import React from "react";
+import axios from "axios";
+import "react-image-gallery/styles/css/image-gallery.css";
+import ImageGallery from "react-image-gallery";
 
-const PhotoGallery: React.FC = () => {
-  const [currentPhoto, setCurrentPhoto] = useState(photos[0]);
+const PhotoGallery = () => {
+  const [images, setImages] = React.useState<any[]>([]);
 
-  return (
-    <S.PhotoGalleryContainer>
-      <S.CurrentPhotoContainer>
-        <S.CurrentPhoto src={currentPhoto.url} alt={currentPhoto.caption} />
-      </S.CurrentPhotoContainer>
-      <S.PhotoThumbnailsContainer>
-        {photos.map((photo) => (
-          <S.Thumbnail
-            key={photo.id}
-            src={photo.url}
-            alt={photo.caption}
-            onClick={() => setCurrentPhoto(photo)}
-          />
-        ))}
-      </S.PhotoThumbnailsContainer>
-    </S.PhotoGalleryContainer>
-  );
+  React.useEffect(() => {
+    const call = async () => {
+      const response = await axios.get(
+        "https://google-photos-album-demo2.glitch.me/4eXXxxG3rYwQVf948" // TODO add our own Google Photos API
+      );
+      if (response.data && response.data.length > 0) {
+        console.log(response.data);
+        setImages(
+          response.data.map((url: string) => ({
+            key: url,
+            original: `${url}=w1024`,
+            thumbnail: `${url}=w100`,
+          }))
+        );
+      }
+    };
+    call();
+  }, []);
+
+  return images ? <ImageGallery items={images} /> : null;
 };
 
 export default PhotoGallery;

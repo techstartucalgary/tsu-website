@@ -270,6 +270,7 @@ const ApplyPage = () => {
               statusIsOpen={false}
               closedStatus="Opens Spring 2023"
               applicationLink=""
+
             />
           </ul>
         </div>

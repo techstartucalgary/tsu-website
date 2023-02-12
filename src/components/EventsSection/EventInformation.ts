@@ -7,6 +7,7 @@ import Arcurve_Lunch_Learn_img from "../../images/events/Arcurve_Lunch_Learn.jpe
 import Blockchain_Panel_img from "../../images/events/Blockchain_Panel.jpeg";
 import MicrosoftTechTalk_img from "../../images/events/MicrosoftTechTalk.jpeg";
 
+
 export type Event = {
   title: string;
   description: string;

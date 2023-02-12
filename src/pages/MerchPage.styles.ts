@@ -41,18 +41,21 @@ export const MerchPageHeader = styled.div`
   }
 `;
 export const MerchPageHeaderItem = styled.div`
-  @media (min-width: 750px) {
+  @media (min-width: 900px) {
     flex-basis: 50%;
     flex-grow: 0;
     flex-shrink: 0;
     align-self: flex-end;
     margin-right: 40%;
+    & > div > h1 {
+      float: left;
+    }
   }
 
   & > div {
-    @media (max-width: 749px) {
+    @media (max-width: 899px) {
       margin-top: 5%;
-      display: flex;
+      display: block;
       justify-content: center;
     }
   }
@@ -61,7 +64,7 @@ export const MerchPageHeaderItem = styled.div`
     font-size: 15vw;
     font-weight: bold;
     white-space: pre;
-    @media (min-width: 750px) {
+    @media (min-width: 900px) {
       font-size: 8vw;
       text-align: left;
       margin-top: -40%;
@@ -71,7 +74,7 @@ export const MerchPageHeaderItem = styled.div`
 `;
 
 export const LottieDiv = styled.div`
-  @media (min-width: 750px) {
+  @media (min-width: 900px) {
     height: 30vw;
     width: 40vw;
     margin: 0vw -80vw 0px 25%;

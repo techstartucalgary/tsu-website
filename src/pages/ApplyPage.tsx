@@ -10,6 +10,7 @@ import ApplySection from "components/ApplySection";
 import Accordion from "../components/Apply/Accordion";
 import Blobbie from "components/Blobbie";
 import Divider from "components/Divider";
+import { faBullseye } from "@fortawesome/free-solid-svg-icons";
 
 const ApplyPage = () => {
   const [active, setActive] = useState("");
@@ -165,7 +166,7 @@ const ApplyPage = () => {
             active={active}
             setActive={setActive}
             description="
-            Team members must be able to attend the majority of our weekly dev nights, which are held on Thursdays from 5:30-8:30PM.
+            Team members must be able to attend the majority of our weekly dev nights, which are held on Thursdays from 5:30-7:30PM.
             </br></br>
             Beyond the dev nights, you should expect to contribute a minimum of 1-2 hours of additional work per week.
             </br></br>
@@ -266,9 +267,9 @@ const ApplyPage = () => {
               role="Executive Team"
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
-              statusIsOpen={true}
-              closedStatus=""
-              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSezTaetPK1ghEbmwPWK5DqJO3CBigKzdnKqqDviO7XFokBC4A/viewform"
+              statusIsOpen={false}
+              closedStatus="Opens Spring 2023"
+              applicationLink=""
             />
           </ul>
         </div>

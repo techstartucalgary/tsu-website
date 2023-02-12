@@ -5,6 +5,8 @@ import Galatea_Tech_Talk_img from "../../images/events/Galatea_Tech_Talk.jpg";
 import Interim_Showcase_Judges_img from "../../images/events/Interim_Showcase_Judges.jpeg";
 import Arcurve_Lunch_Learn_img from "../../images/events/Arcurve_Lunch_Learn.jpeg";
 import Blockchain_Panel_img from "../../images/events/Blockchain_Panel.jpeg";
+import MicrosoftTechTalk_img from "../../images/events/MicrosoftTechTalk.jpeg";
+
 
 export type Event = {
   title: string;
@@ -19,6 +21,16 @@ export var highlightedEvents: Event[];
 export var pastEvents: Event[];
 
 highlightedEvents = [
+  {
+    title: "Microsoft Tech Talk",
+    description:
+      "We are very excited to be hosting our second tech talk: Meeting Microsoft!  Join us virtually Feb. 15th from 6:30 - 8:00 pm for an opportunity to hear from a Microsoft Software Developer, Software Engineering Manager, Product Manager, and Designer!",
+    date: "Wednesday, February 15, 2023",
+    time: "6:30 PM – 8:00 PM",
+    image: MicrosoftTechTalk_img,
+    link: "https://www.eventbrite.ca/e/meeting-microsoft-a-tech-talk-by-tech-start-tickets-536694346237",
+  },
+
   {
     title: "Blockchain Panel",
     description:

@@ -49,10 +49,6 @@ export const CollabList: Organization[] = [
     sponsorLink: "https://www.ieee.org/",
     sponsorImage: sponsorIEEE,
   },
-  {
-    sponsorLink: "https://www.microsoft.com/",
-    sponsorImage: sponsorLogoMicrosoft,
-  },
 ];
 
 export const GuestList: Organization[] = [
@@ -75,5 +71,11 @@ export const GuestList: Organization[] = [
   {
     sponsorLink: "https://www.ralliefinance.com/",
     sponsorImage: guestRallie,
+
+  },
+
+  {
+    sponsorLink: "https://www.microsoft.com/",
+    sponsorImage: sponsorLogoMicrosoft,
   },
 ];

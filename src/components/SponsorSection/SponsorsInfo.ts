@@ -71,7 +71,6 @@ export const GuestList: Organization[] = [
   {
     sponsorLink: "https://www.ralliefinance.com/",
     sponsorImage: guestRallie,
-
   },
 
   {

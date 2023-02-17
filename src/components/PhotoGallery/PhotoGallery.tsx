@@ -25,7 +25,9 @@ const PhotoGallery = () => {
     call();
   }, []);
 
-  return images ? <ImageGallery items={images} /> : null;
+  return images ? (
+    <ImageGallery items={images} infinite={true} lazyLoad={true} />
+  ) : null;
 };
 
 export default PhotoGallery;

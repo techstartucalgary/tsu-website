@@ -6,69 +6,95 @@ import Arcurve_Lunch_Learn_img from "../../images/events/Arcurve_Lunch_Learn.jpe
 
 interface Photo {
   id: number;
-  url: string;
+  src: string;
   caption: string;
+  width: number;
+  height: number;
 }
 
-export const photos: Photo[] = [
+export const galleryPhotos: Photo[] = [
   {
     id: 1,
-    url: MerchTeamPhoto,
+    src: MerchTeamPhoto,
     caption: "Photo 1",
+    width: 3,
+    height: 2,
   },
   {
     id: 2,
-    url: projectExample,
+    src: projectExample,
     caption: "Photo 2",
+    width: 4,
+    height: 3,
   },
   {
     id: 3,
-    url: Galatea_Tech_Talk_img,
+    src: Galatea_Tech_Talk_img,
     caption: "Photo 3",
+    width: 4,
+    height: 3,
   },
   {
     id: 4,
-    url: Interim_Showcase_Judges_img,
+    src: Interim_Showcase_Judges_img,
     caption: "Photo 4",
+    width: 4,
+    height: 3,
   },
   {
     id: 5,
-    url: Arcurve_Lunch_Learn_img,
+    src: Arcurve_Lunch_Learn_img,
     caption: "Photo 5",
+    width: 4,
+    height: 3,
   },
   {
     id: 6,
-    url: MerchTeamPhoto,
+    src: MerchTeamPhoto,
     caption: "Photo 6",
+    width: 5,
+    height: 3,
   },
   {
     id: 7,
-    url: projectExample,
+    src: projectExample,
     caption: "Photo 7",
+    width: 4,
+    height: 3,
   },
   {
     id: 8,
-    url: Galatea_Tech_Talk_img,
+    src: Galatea_Tech_Talk_img,
     caption: "Photo 8",
+    width: 4,
+    height: 3,
   },
   {
     id: 9,
-    url: Interim_Showcase_Judges_img,
+    src: Interim_Showcase_Judges_img,
     caption: "Photo 9",
+    width: 4,
+    height: 3,
   },
   {
     id: 10,
-    url: Arcurve_Lunch_Learn_img,
+    src: Arcurve_Lunch_Learn_img,
     caption: "Photo 10",
+    width: 4,
+    height: 3,
   },
   {
     id: 11,
-    url: Galatea_Tech_Talk_img,
+    src: Galatea_Tech_Talk_img,
     caption: "Photo 11",
+    width: 4,
+    height: 3,
   },
   {
     id: 12,
-    url: Interim_Showcase_Judges_img,
+    src: Interim_Showcase_Judges_img,
     caption: "Photo 12",
+    width: 4,
+    height: 3,
   },
 ];

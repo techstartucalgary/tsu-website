@@ -1,33 +1,33 @@
 import React from "react";
 import axios from "axios";
-import "react-image-gallery/styles/css/image-gallery.css";
-import ImageGallery from "react-image-gallery";
+import Gallery from "react-photo-gallery";
+import { shuffleArray } from "utility/Helpers";
 
 const PhotoGallery = () => {
   const [images, setImages] = React.useState<any[]>([]);
 
-  React.useEffect(() => {
-    const call = async () => {
-      const response = await axios.get(
-        "https://google-photos-album-demo2.glitch.me/4eXXxxG3rYwQVf948" // TODO add our own Google Photos API
+  async function fetchImages() {
+    let response = await axios.get(
+      "https://google-photos-album-demo2.glitch.me/SkVei5N56poqTh8g8"
+    );
+    console.log(response.data);
+    if (response.data && response.data.length > 0) {
+      const shuffledResponseData = shuffleArray(response.data);
+      setImages(
+        shuffledResponseData.map((url: string) => ({
+          src: url,
+          width: 4,
+          height: 3,
+        }))
       );
-      if (response.data && response.data.length > 0) {
-        console.log(response.data);
-        setImages(
-          response.data.map((url: string) => ({
-            key: url,
-            original: `${url}=w1024`,
-            thumbnail: `${url}=w100`,
-          }))
-        );
-      }
-    };
-    call();
+    }
+  }
+
+  React.useEffect(() => {
+    fetchImages();
   }, []);
 
-  return images ? (
-    <ImageGallery items={images} infinite={true} lazyLoad={true} />
-  ) : null;
+  return images ? <Gallery photos={images} /> : null;
 };
 
 export default PhotoGallery;

@@ -4,8 +4,6 @@ import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import { motion } from "framer-motion/dist/framer-motion";
 import * as S from "./GalleryPage.styles";
-import Gallery from "react-photo-gallery";
-import { galleryPhotos } from "components/PhotoGallery/PhotoGalleryList";
 
 const GalleryPage = () => {
   return (
@@ -52,8 +50,7 @@ const GalleryPage = () => {
           />
         </motion.div>
       </S.GalleryPageHeader>
-      {/* <PhotoGallery /> */}
-      <Gallery photos={galleryPhotos} direction={"column"} />;
+      <PhotoGallery />
     </S.GalleryPage>
   );
 };

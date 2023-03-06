@@ -28,7 +28,7 @@
     "axios": "^0.21.4",
     "cors": "^2.8.5",
     "express": "^4.18.2",
-    "framer-motion": "^4.1.17",
+    "framer-motion": "^10.0.1",
     "lottie-react": "^2.4.0",
     "material-design-icons": "^3.0.1",
     "packages": "0.0.8",

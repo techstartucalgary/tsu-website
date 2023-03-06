@@ -1,5 +1,5 @@
 import MerchSection from "components/MerchSection/MerchSection";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 import * as S from "./MerchPage.styles";
 import Lottie from "react-lottie";
 import { merchPageLottieOptions } from "utility/LottieOptions";

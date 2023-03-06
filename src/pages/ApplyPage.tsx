@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 
 import Lottie from "react-lottie";
 import "./ApplyPage.css";

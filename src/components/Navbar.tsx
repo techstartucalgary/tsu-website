@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "images/tech-start-logo-white.png";
 import { Link as LinkScroll } from "react-scroll";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [navbarExpanded, setNavbarExpanded] = useState(false);

@@ -27,7 +27,7 @@ highlightedEvents = [
     date: "Wednesday, February 15, 2023",
     time: "6:30 PM – 8:00 PM",
     image: MicrosoftTechTalk_img,
-    link: "https://www.eventbrite.ca/e/meeting-microsoft-a-tech-talk-by-tech-start-tickets-536694346237",
+    link: "https://youtu.be/a9MefhxE81w",
   },
 
   {

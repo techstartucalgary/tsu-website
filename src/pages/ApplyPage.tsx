@@ -252,6 +252,7 @@ const ApplyPage = () => {
               statusIsOpen={false}
               closedStatus="Opens September 2022"
               applicationLink="https://forms.gle/yxVK3NRCyTjn1TxQ7"
+              deadline=""
             />
 
             <ApplySection
@@ -261,6 +262,7 @@ const ApplyPage = () => {
               statusIsOpen={false}
               closedStatus="Opens Spring 2023"
               applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScHj9FcIK4ApPqyMiXf_PLlQ43FpI7EB5gmz7SJFGczU9xIkg/viewform"
+              deadline=""
             />
 
             <ApplySection
@@ -270,6 +272,7 @@ const ApplyPage = () => {
               statusIsOpen={false}
               closedStatus="Opens Spring 2023"
               applicationLink=""
+              deadline=""
             />
           </ul>
         </div>

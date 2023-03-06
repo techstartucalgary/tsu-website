@@ -6,6 +6,7 @@ type ApplySectionProps = {
   statusIsOpen: boolean;
   applicationLink: string;
   closedStatus: string;
+  deadline: string;
 };
 
 const ApplySection = (props: ApplySectionProps) => (
@@ -21,6 +22,7 @@ const ApplySection = (props: ApplySectionProps) => (
     ) : (
       <h4 className="applyPage__closed">{props.closedStatus}</h4>
     )}
+    <h5>{props.deadline}</h5>
   </ApplicationContent>
 );
 export default ApplySection;

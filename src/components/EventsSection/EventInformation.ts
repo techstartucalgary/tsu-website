@@ -6,6 +6,7 @@ import Interim_Showcase_Judges_img from "../../images/events/Interim_Showcase_Ju
 import Arcurve_Lunch_Learn_img from "../../images/events/Arcurve_Lunch_Learn.jpeg";
 import Blockchain_Panel_img from "../../images/events/Blockchain_Panel.jpeg";
 import MicrosoftTechTalk_img from "../../images/events/MicrosoftTechTalk.jpeg";
+import FinalShowcase2023_img from "../../images/events/FinalShowcase2023.png";
 
 export type Event = {
   title: string;
@@ -20,6 +21,15 @@ export var highlightedEvents: Event[];
 export var pastEvents: Event[];
 
 highlightedEvents = [
+  {
+    title: "Final Showcase 2023",
+    description:
+      "Passionate about tech or business strategy? Want to learn about current project at TechStart? Join us at Calgary Central Library for our Final Showcase where you will be able to network with over 20 industry experts and club members! ",
+    date: "Saturday, April 29, 2023",
+    time: "12:00 - 3:30PM",
+    image: FinalShowcase2023_img,
+    link: "https://www.eventbrite.ca/e/tech-start-ucalgary-final-showcase-tickets-546390407417",
+  },
   {
     title: "Microsoft Tech Talk",
     description:
@@ -39,7 +49,9 @@ highlightedEvents = [
     image: Blockchain_Panel_img,
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7027933893559271424",
   },
+];
 
+pastEvents = [
   {
     title: "Interim Showcase 2023",
     description:
@@ -49,9 +61,6 @@ highlightedEvents = [
     image: Interim_Showcase_Judges_img,
     link: "https://www.linkedin.com/posts/tech-start-ucalgary_industry-software-softwareengineer-activity-7020268933291155456-wr59/?utm_source=share&utm_medium=member_desktop",
   },
-];
-
-pastEvents = [
   {
     title: "Arcurve PM Lunch and Learn",
     description:

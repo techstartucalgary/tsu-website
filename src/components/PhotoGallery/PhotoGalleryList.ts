@@ -1,32 +1,100 @@
+import MerchTeamPhoto from "../../images/merch/MerchTeamPhoto.jpeg";
+import projectExample from "images/2022_project_members.png";
+import Galatea_Tech_Talk_img from "../../images/events/Galatea_Tech_Talk.jpg";
+import Interim_Showcase_Judges_img from "../../images/events/Interim_Showcase_Judges.jpeg";
+import Arcurve_Lunch_Learn_img from "../../images/events/Arcurve_Lunch_Learn.jpeg";
+
 interface Photo {
-  image: string;
-  title: string;
-  description: string;
+  id: number;
+  src: string;
+  caption: string;
+  width: number;
+  height: number;
 }
 
 export const galleryPhotos: Photo[] = [
   {
-    image:
-      "https://images.unsplash.com/photo-1475778057357-d35f37fa89dd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80",
-    title: "Nature 01",
-    description: "This picture is taken from unsplash.com",
+    id: 1,
+    src: MerchTeamPhoto,
+    caption: "Photo 1",
+    width: 3,
+    height: 2,
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1502675135487-e971002a6adb?ixlib=rb-1.2.1&auto=format&fit=crop&w=668&q=80",
-    title: "Nature 02",
-    description: "This picture is taken from unsplash.com",
+    id: 2,
+    src: projectExample,
+    caption: "Photo 2",
+    width: 4,
+    height: 3,
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1501862700950-18382cd41497?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=894&q=80",
-    title: "Nature 03",
-    description: "This picture is taken from unsplash.com",
+    id: 3,
+    src: Galatea_Tech_Talk_img,
+    caption: "Photo 3",
+    width: 4,
+    height: 3,
   },
   {
-    image:
-      "https://images.unsplash.com/photo-1532040675891-5991e7e3d0cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80",
-    title: "Nature 04",
-    description: "This picture is taken from unsplash.com",
+    id: 4,
+    src: Interim_Showcase_Judges_img,
+    caption: "Photo 4",
+    width: 4,
+    height: 3,
+  },
+  {
+    id: 5,
+    src: Arcurve_Lunch_Learn_img,
+    caption: "Photo 5",
+    width: 4,
+    height: 3,
+  },
+  {
+    id: 6,
+    src: MerchTeamPhoto,
+    caption: "Photo 6",
+    width: 5,
+    height: 3,
+  },
+  {
+    id: 7,
+    src: projectExample,
+    caption: "Photo 7",
+    width: 4,
+    height: 3,
+  },
+  {
+    id: 8,
+    src: Galatea_Tech_Talk_img,
+    caption: "Photo 8",
+    width: 4,
+    height: 3,
+  },
+  {
+    id: 9,
+    src: Interim_Showcase_Judges_img,
+    caption: "Photo 9",
+    width: 4,
+    height: 3,
+  },
+  {
+    id: 10,
+    src: Arcurve_Lunch_Learn_img,
+    caption: "Photo 10",
+    width: 4,
+    height: 3,
+  },
+  {
+    id: 11,
+    src: Galatea_Tech_Talk_img,
+    caption: "Photo 11",
+    width: 4,
+    height: 3,
+  },
+  {
+    id: 12,
+    src: Interim_Showcase_Judges_img,
+    caption: "Photo 12",
+    width: 4,
+    height: 3,
   },
 ];

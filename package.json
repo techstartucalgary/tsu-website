@@ -1,6 +1,6 @@
 {
   "name": "tsu-website",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "private": true,
   "dependencies": {
     "@fortawesome/fontawesome-common-types": "^6.3.0",

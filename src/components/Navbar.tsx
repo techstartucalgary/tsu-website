@@ -75,6 +75,7 @@ const Header = () => {
             <NavbarLink top="applyPageTop" link="/apply" name="Apply" />
             <NavbarLink top="merchPageTop" link="/merch" name="Merch" />
             <NavbarLink top="galleryPageTop" link="/gallery" name="Gallery" />
+            <NavbarLink top="docsPageTop" link="/resources" name="Resources" />
           </motion.ul>
         </nav>
         <label

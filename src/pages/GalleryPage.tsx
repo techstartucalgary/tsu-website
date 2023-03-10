@@ -1,13 +1,13 @@
 import Blobbie from "components/Blobbie";
-import TeamSection from "components/TeamSection/TeamSection";
+import PhotoGallery from "components/PhotoGallery/PhotoGallery";
 import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import { motion } from "framer-motion";
-import * as S from "./TeamPage.styles";
+import * as S from "./GalleryPage.styles";
 
-const TeamPage = () => {
+const GalleryPage = () => {
   return (
-    <S.TeamPage id="teamPageTop">
+    <S.GalleryPage id="galleryPageTop">
       <Blobbie
         id={2}
         width={300}
@@ -20,21 +20,21 @@ const TeamPage = () => {
         transform="translate(-10vw, 10vw)"
         edge={false}
       />
-      <S.TeamPageHeader>
+      <S.GalleryPageHeader>
         <motion.h1
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.5 }}
         >
-          Our Team
+          Gallery
         </motion.h1>
         <motion.p
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 1 }}
         >
-          Tech Start is only possible thanks to our team of talented, passionate
-          leaders. Interested in joining us?
+          Capturing the Memories: A Look Inside Tech Start! <br /> Interested in
+          joining us?
         </motion.p>
         <motion.div
           initial={{ opacity: 0 }}
@@ -49,10 +49,10 @@ const TeamPage = () => {
             linkIsInternal={true}
           />
         </motion.div>
-      </S.TeamPageHeader>
-      <TeamSection />
-    </S.TeamPage>
+      </S.GalleryPageHeader>
+      <PhotoGallery />
+    </S.GalleryPage>
   );
 };
 
-export default TeamPage;
+export default GalleryPage;

@@ -4,7 +4,6 @@ import SocialMedia from "components/SocialMedia/SocialMedia";
 import { SocialMediaColor } from "../../utility/SharedStyles";
 import HoverButton from "components/HoverButton/HoverButton";
 import {
-  faFacebook,
   faInstagram,
   faDiscord,
   faLinkedin,

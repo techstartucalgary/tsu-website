@@ -1,10 +1,9 @@
 import { useState } from "react";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 
 import Lottie from "react-lottie";
 import "./ApplyPage.css";
 import { applyPageTeamLottieOptions } from "utility/LottieOptions";
-import projectExample from "images/2022_project_members.png";
 import interim_showcase_2023 from "images/Interim_Showcase_2023.jpeg";
 import ApplySection from "components/ApplySection";
 import Accordion from "../components/Apply/Accordion";
@@ -85,7 +84,7 @@ const ApplyPage = () => {
             </p>
           </div>
           <div data-aos="fade-up" data-aos-duration="1000">
-            <a href="http://eepurl.com/hnusUP" target="_blank">
+            <a href="http://eepurl.com/hnusUP" target="_blank" rel="noreferrer">
               <button className="applyPage_mailinglist">
                 Sign up to our mailing list
               </button>

@@ -15,7 +15,7 @@ const ApplySection = (props: ApplySectionProps) => (
       <p>{props.description}</p>
     </li>
     {props.statusIsOpen ? (
-      <a href={props.applicationLink} target="_blank">
+      <a href={props.applicationLink} rel="noreferrer" target="_blank">
         <button className="applyPage__btn">Apply Now</button>
       </a>
     ) : (

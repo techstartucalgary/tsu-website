@@ -11,6 +11,7 @@ export const NewlineText = (text: string) => {
   return newText;
 };
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 export const shuffleArray = (array: any[]) => {
   let currentIndex = array.length,
     randomIndex;

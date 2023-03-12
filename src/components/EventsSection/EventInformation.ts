@@ -1,25 +1,19 @@
-import Funding_the_Next_Unicorn_img from "../../images/events/Funding_The_Next_Unicorn.jpg";
-import Internship_Panel_img from "../../images/events/Internship_Panel.jpg";
-import Tech_Start_Logo_Black_img from "../../images/tech-start-logo-black.png";
 import Galatea_Tech_Talk_img from "../../images/events/Galatea_Tech_Talk.jpg";
 import Interim_Showcase_Judges_img from "../../images/events/Interim_Showcase_Judges.jpeg";
 import Arcurve_Lunch_Learn_img from "../../images/events/Arcurve_Lunch_Learn.jpeg";
 import Blockchain_Panel_img from "../../images/events/Blockchain_Panel.jpeg";
 import MicrosoftTechTalk_img from "../../images/events/MicrosoftTechTalk.jpeg";
 
-export type Event = {
+export interface Event {
   title: string;
   description: string;
   date: string;
   time: string;
   image: string;
   link: string;
-};
+}
 
-export var highlightedEvents: Event[];
-export var pastEvents: Event[];
-
-highlightedEvents = [
+export const highlightedEvents: Event[] = [
   {
     title: "Microsoft Tech Talk",
     description:
@@ -51,7 +45,7 @@ highlightedEvents = [
   },
 ];
 
-pastEvents = [
+export const pastEvents: Event[] = [
   {
     title: "Arcurve PM Lunch and Learn",
     description:

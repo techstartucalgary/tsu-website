@@ -3,6 +3,7 @@ import Interim_Showcase_Judges_img from "../../images/events/Interim_Showcase_Ju
 import Arcurve_Lunch_Learn_img from "../../images/events/Arcurve_Lunch_Learn.jpeg";
 import Blockchain_Panel_img from "../../images/events/Blockchain_Panel.jpeg";
 import MicrosoftTechTalk_img from "../../images/events/MicrosoftTechTalk.jpeg";
+import FinalShowcase2023_img from "../../images/events/FinalShowcase2023.png";
 
 export interface Event {
   title: string;
@@ -15,13 +16,22 @@ export interface Event {
 
 export const highlightedEvents: Event[] = [
   {
+    title: "Final Showcase 2023",
+    description:
+      "Passionate about tech or business strategy? Want to learn about current project at TechStart? Join us at Calgary Central Library for our Final Showcase where you will be able to network with over 20 industry experts and club members! ",
+    date: "Saturday, April 29, 2023",
+    time: "12:00 - 3:30PM",
+    image: FinalShowcase2023_img,
+    link: "https://www.eventbrite.ca/e/tech-start-ucalgary-final-showcase-tickets-546390407417",
+  },
+  {
     title: "Microsoft Tech Talk",
     description:
       "We are very excited to be hosting our second tech talk: Meeting Microsoft!  Join us virtually Feb. 15th from 6:30 - 8:00 pm for an opportunity to hear from a Microsoft Software Developer, Software Engineering Manager, Product Manager, and Designer!",
     date: "Wednesday, February 15, 2023",
     time: "6:30 PM – 8:00 PM",
     image: MicrosoftTechTalk_img,
-    link: "https://www.eventbrite.ca/e/meeting-microsoft-a-tech-talk-by-tech-start-tickets-536694346237",
+    link: "https://youtu.be/a9MefhxE81w",
   },
 
   {
@@ -33,7 +43,6 @@ export const highlightedEvents: Event[] = [
     image: Blockchain_Panel_img,
     link: "https://www.linkedin.com/feed/update/urn:li:activity:7027933893559271424",
   },
-
   {
     title: "Interim Showcase 2023",
     description:

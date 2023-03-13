@@ -2,6 +2,7 @@ import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
+import "./particles.css";
 
 const Particle = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -22,18 +23,9 @@ const Particle = () => {
   return (
     <Particles
       id="tsparticles"
+      className="particle_container"
       init={particlesInit}
       loaded={particlesLoaded}
-      style={{
-        zIndex: 1,
-        position: "absolute",
-        top: 0,
-        bottom: 0,
-        left: 0,
-        margin: 0,
-        width: "100%",
-        height: "100%",
-      }}
       options={{
         particles: {
           number: {

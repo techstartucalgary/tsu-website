@@ -9,6 +9,7 @@ import ApplySection from "components/ApplySection";
 import Accordion from "../components/Apply/Accordion";
 import Blobbie from "components/Blobbie";
 import Divider from "components/Divider";
+import { faBullseye } from "@fortawesome/free-solid-svg-icons";
 
 const ApplyPage = () => {
   const [active, setActive] = useState("");

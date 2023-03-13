@@ -35,6 +35,16 @@ export const highlightedEvents: Event[] = [
   },
 
   {
+    title: "Microsoft Tech Talk",
+    description:
+      "We are very excited to be hosting our second tech talk: Meeting Microsoft!  Join us virtually Feb. 15th from 6:30 - 8:00 pm for an opportunity to hear from a Microsoft Software Developer, Software Engineering Manager, Product Manager, and Designer!",
+    date: "Wednesday, February 15, 2023",
+    time: "6:30 PM – 8:00 PM",
+    image: MicrosoftTechTalk_img,
+    link: "https://www.eventbrite.ca/e/meeting-microsoft-a-tech-talk-by-tech-start-tickets-536694346237",
+  },
+
+  {
     title: "Blockchain Panel",
     description:
       "We hosted an enlightening panel discussion on the future of blockchain technology. Our esteemed panel of experts delved into the various applications and implications of this revolutionary technology. ",

@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { Component, useEffect, useState } from "react";
 import "./SparkPage.css";
 import axios from "axios";
@@ -30,7 +31,7 @@ function Dashboard() {
     axios.get(`${dataRoot}/news`).then(
       (response) => {
         if (response.status === 200) {
-          let data = response.data;
+          const data = response.data;
           setEvents(data);
         }
       },
@@ -45,7 +46,7 @@ function Dashboard() {
     axios.get(`${dataRoot}/post`).then(
       (response) => {
         if (response.status === 200) {
-          let data = response.data;
+          const data = response.data;
           setPosts(data);
         }
       },
@@ -59,7 +60,7 @@ function Dashboard() {
   const eventArray = [];
   const postArray = [];
   for (let index = 0; index < events.length; index++) {
-    let eventWithType = new EventType(events[index]);
+    const eventWithType = new EventType(events[index]);
     eventArray.push(eventWithType);
   }
 
@@ -74,7 +75,7 @@ function Dashboard() {
   ));
 
   for (let index = 0; index < posts.length; index++) {
-    let postWithType = new PostType(posts[index]);
+    const postWithType = new PostType(posts[index]);
     postArray.push(postWithType);
   }
 
@@ -94,8 +95,8 @@ function Dashboard() {
       })
       .then(
         (response) => {
-          let token = response.data.token;
-          let userID = response.data.id;
+          const token = response.data.token;
+          const userID = response.data.id;
           setToken(token);
           setUserID(userID);
           console.log(token);
@@ -120,7 +121,7 @@ function Dashboard() {
       )
       .then(
         (response) => {
-          let token = response.data.token;
+          const token = response.data.token;
           setToken(token);
           console.log(token);
         },

@@ -4,10 +4,11 @@ import Gallery from "react-photo-gallery-react17";
 import { shuffleArray } from "utility/Helpers";
 
 const PhotoGallery = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const [images, setImages] = React.useState<any[]>([]);
 
   async function fetchImages() {
-    let response = await axios.get(
+    const response = await axios.get(
       "https://google-photos-album-demo2.glitch.me/SkVei5N56poqTh8g8"
     );
     console.log(response.data);

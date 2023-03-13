@@ -1,6 +1,7 @@
 import styled from "styled-components/macro";
 
 export const Footer = styled.div`
+  position: absolute;
   padding: 3rem 1rem;
   color: black;
   font-size: clamp(0.8rem, calc(2vw + 0.2rem), 1rem);
@@ -10,12 +11,7 @@ export const Footer = styled.div`
   justify-content: center;
   align-items: center;
 
-  background-color: var(--secondary-blue);
-  background-image: linear-gradient(
-    45deg,
-    var(--secondary-lime),
-    var(--secondary-blue)
-  );
+  background-color: var(--primary-black);
   background-size: 100%;
   width: -moz-available;
 
@@ -42,6 +38,7 @@ export const SocialMediaSection = styled.div`
 export const Copyright = styled.p`
   text-align: center;
   padding: 0rem 1rem;
+  color: white;
 `;
 
 export const HoverButtonDiv = styled.div`

@@ -162,16 +162,16 @@ html {
 }
 
 @media (max-width: 950px) {
-   .homePage__hero {
-     text-align: center;
-     height: 70vw;
-     display: flex;
-     flex-direction: column;
-     /* background: radial-gradient(rgb(0, 0, 0), var(--secondary-grey));  */
-     background-image: linear-gradient(rgb(0, 0, 0), var(--primary-black));
-     position: relative;
-   }
- }
+  .homePage__hero {
+    text-align: center;
+    height: 70vw;
+    display: flex;
+    flex-direction: column;
+    /* background: radial-gradient(rgb(0, 0, 0), var(--secondary-grey));  */
+    background-image: linear-gradient(rgb(0, 0, 0), var(--primary-black));
+    position: relative;
+  }
+}
 
 /* @supports (background-blend-mode: multiply) {
   .homePage__hero {
@@ -248,6 +248,7 @@ html {
 }
 
 .homePage__section--events {
+  background-color: white;
   padding-bottom: 8em;
   /*z-index: -2;*/
 }

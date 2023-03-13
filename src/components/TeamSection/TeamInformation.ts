@@ -3,7 +3,6 @@ import fedor_jpg from "../../images/team/Fedor_Prokopchuk.jpg";
 import tyler_jpg from "../../images/team/Tyler_Chan.jpg";
 import sareen_jpg from "../../images/team/Sareen_Singh.jpg";
 import niyousha_jpg from "../../images/team/Niyousha_Raeesinejad.jpg";
-import blank_jpg from "../../images/team/Blank.jpeg";
 import carol_jpg from "../../images/team/Carol_Wang.jpg";
 import kevin_jpg from "../../images/team/Kevin_Amado.jpg";
 import sahiti_jpg from "../../images/team/Sahiti_Akella.jpg";
@@ -31,10 +30,7 @@ export type TeamMember = {
   email: string;
 };
 
-export var executiveTeam: TeamMember[];
-export var projectManagers: TeamMember[];
-
-executiveTeam = [
+export const executiveTeam: TeamMember[] = [
   {
     id: 0,
     name: "Niyousha Raeesinejad",
@@ -172,7 +168,7 @@ executiveTeam = [
   },
 ];
 
-projectManagers = [
+export const projectManagers: TeamMember[] = [
   {
     id: 0,
     name: "Ben Schmidt",

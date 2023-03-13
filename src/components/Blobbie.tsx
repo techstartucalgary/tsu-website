@@ -24,6 +24,7 @@ type BlobbieProps = {
 };
 
 const Blobbie = (props: BlobbieProps) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const blobbies = {
     blobLottie1: blobLottie1,
     blobLottie2: blobLottie2,

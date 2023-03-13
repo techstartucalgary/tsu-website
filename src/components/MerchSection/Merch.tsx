@@ -11,6 +11,7 @@ type MerchProps = {
 const Merch = (props: MerchProps) => {
   return (
     <S.MerchContainer mobileView={!props.desktopView}>
+      {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
       {props.merchItems.map((member: any) => {
         return (
           <MerchItem

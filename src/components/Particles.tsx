@@ -1,12 +1,32 @@
-import React from "react";
-import Particles from "react-particles-js";
-import "./Particles.css";
+import { useCallback } from "react";
+import type { Container, Engine } from "tsparticles-engine";
+import Particles from "react-tsparticles";
+import { loadFull } from "tsparticles";
+import "./particles.css";
 
-function Particle() {
+const Particle = () => {
+  const particlesInit = useCallback(async (engine: Engine) => {
+    console.log(engine);
+
+    // you can initialize the tsParticles instance (engine) here, adding custom shapes or presets
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    await loadFull(engine);
+  }, []);
+
+  const particlesLoaded = useCallback(
+    async (container: Container | undefined) => {
+      await console.log(container);
+    },
+    []
+  );
   return (
     <Particles
+      id="tsparticles"
       className="particle_container"
-      params={{
+      init={particlesInit}
+      loaded={particlesLoaded}
+      options={{
         particles: {
           number: {
             value: 125,
@@ -62,7 +82,7 @@ function Particle() {
           },
           move: {
             enable: true,
-            speed: 3,
+            speed: 4,
             direction: "none",
             random: false,
             straight: false,
@@ -118,6 +138,6 @@ function Particle() {
       }}
     />
   );
-}
+};
 
 export default Particle;

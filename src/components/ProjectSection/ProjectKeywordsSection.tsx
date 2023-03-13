@@ -12,6 +12,7 @@ import {
 import useViewport from "../UseViewport";
 
 const ProjectKeywordsSection = () => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const lottieDiv = (options: any) => (
     <S.LottieDiv data-aos="fade-left" data-aos-duration="800">
       <Lottie options={options} />

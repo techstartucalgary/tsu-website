@@ -1,4 +1,4 @@
-import { highlightedEvents, pastEvents } from "./EventInformation";
+import { highlightedEvents } from "./EventInformation";
 import Event from "./Event/Event";
 import * as S from "./EventsSection.styles";
 
@@ -32,7 +32,7 @@ const EventsSection = () => {
         })}
       </S.EventsContainer>
 
-      <S.EventsContainer>
+      {/* <S.EventsContainer>
         {pastEvents.map((event, i) => {
           return (
             <Event
@@ -47,7 +47,7 @@ const EventsSection = () => {
             />
           );
         })}
-      </S.EventsContainer>
+      </S.EventsContainer> */}
     </S.EventsSectionContainer>
   );
 };

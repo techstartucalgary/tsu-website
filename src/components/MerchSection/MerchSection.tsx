@@ -1,5 +1,4 @@
 import React from "react";
-import { useState } from "react";
 import MerchCollection from "./Merch";
 import useViewport from "../UseViewport";
 import * as S from "./MerchSection.styles";
@@ -8,7 +7,7 @@ import MerchTeamPhoto from "../../images/merch/MerchTeamPhoto.jpeg";
 
 const MerchSection = () => {
   const { width } = useViewport();
-  let defaultView = width > 600 ? true : false;
+  const defaultView = width > 600 ? true : false;
 
   const getMerch = () => {
     return merchList;

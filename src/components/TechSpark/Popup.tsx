@@ -1,8 +1,8 @@
-import React from "react";
 import PostCreation from "components/TechSpark/PostCreation";
 import "./Popup.css";
 import SignIn from "./SignIn";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function Popup(props: any) {
   function hideChild() {
     console.log("Popup hidden");

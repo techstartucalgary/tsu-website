@@ -5,11 +5,10 @@ import { lightTheme, darkTheme, GlobalStyles } from "types/Themes.js";
 import Emoji from "components/Emoji";
 import docsPage__logoblack from "images/tech-start-logo-black.png";
 import docsPage__logowhite from "images/tech-start-logo-white.png";
-import { faSun } from "@fortawesome/free-solid-svg-icons";
-import { faMoon } from "@fortawesome/free-solid-svg-icons";
 import GuidesSection from "components/DocsPageSections/GuidesSection";
 import { Link as LinkScroll } from "react-scroll";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
 import { motion } from "framer-motion";
 
 function DocsPage() {
@@ -40,6 +39,7 @@ function DocsPage() {
             <a
               href="https://drive.google.com/drive/u/2/folders/1xYYzdgP9Asac6FP_omsDuCq0mEoaE8UY"
               target="_blank"
+              rel="noreferrer"
             >
               here
             </a>
@@ -63,6 +63,7 @@ function DocsPage() {
             <a
               href="https://github.com/Tech-Start-UCalgary/tsu-website/issues"
               target="_blank"
+              rel="noreferrer"
             >
               GitHub repository
             </a>
@@ -72,7 +73,11 @@ function DocsPage() {
             <Emoji symbol="📗 " />
             Guide Contributions: If you would like to contribute to our guides,
             you can reach out to us over{" "}
-            <a href="https://discord.gg/Sxj5QrxRPk" target="_blank">
+            <a
+              href="https://discord.gg/Sxj5QrxRPk"
+              target="_blank"
+              rel="noreferrer"
+            >
               Discord
             </a>
             , or leave a comment on the guide about minor changes.
@@ -81,7 +86,11 @@ function DocsPage() {
             <Emoji symbol="📩 " />
             Other Suggestions: Please feel free to reach out to us over other
             concerns over one of the public channels in our{" "}
-            <a href="https://discord.gg/Sxj5QrxRPk" target="_blank">
+            <a
+              href="https://discord.gg/Sxj5QrxRPk"
+              target="_blank"
+              rel="noreferrer"
+            >
               Discord
             </a>
             .

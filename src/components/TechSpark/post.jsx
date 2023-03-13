@@ -1,3 +1,5 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
+/* eslint-disable no-undef */
 import React, { useState, View } from "react";
 import "./post.css";
 import { MdKeyboardArrowDown } from "react-icons/md";

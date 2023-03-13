@@ -5,6 +5,7 @@ export class PostType {
   post_description!: string;
   title!: string;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(eventResponse: any) {
     this.author = eventResponse.author;
     this.date_posted = eventResponse.date_posted;

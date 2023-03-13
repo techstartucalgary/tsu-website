@@ -4,7 +4,6 @@ import SocialMedia from "components/SocialMedia/SocialMedia";
 import { SocialMediaColor } from "../../utility/SharedStyles";
 import HoverButton from "components/HoverButton/HoverButton";
 import {
-  faFacebook,
   faInstagram,
   faDiscord,
   faLinkedin,
@@ -19,7 +18,7 @@ const Footer = () => (
   <S.Footer>
     <S.HoverButtonDiv>
       <HoverButton
-        mode={ButtonMode.TRANSPARENT}
+        mode={ButtonMode.GRADIENT}
         link="http://eepurl.com/hnusUP"
         linkIsInternal={false}
         text="Join our mailing list!"
@@ -28,38 +27,38 @@ const Footer = () => (
 
     <S.SocialMediaSection>
       <SocialMedia
-        color={SocialMediaColor.Black}
+        color={SocialMediaColor.Gradient}
         icon={faInstagram}
         link="https://www.instagram.com/techstartucalgary/"
       />
 
       <SocialMedia
-        color={SocialMediaColor.Black}
+        color={SocialMediaColor.Gradient}
         icon={faDiscord}
         link="https://discord.gg/Sxj5QrxRPk"
       />
       <SocialMedia
-        color={SocialMediaColor.Black}
+        color={SocialMediaColor.Gradient}
         icon={faGithub}
         link="https://github.com/techstartucalgary"
       />
       <SocialMedia
-        color={SocialMediaColor.Black}
+        color={SocialMediaColor.Gradient}
         icon={faLinkedin}
         link="https://www.linkedin.com/company/tech-start-ucalgary"
       />
       <SocialMedia
-        color={SocialMediaColor.Black}
+        color={SocialMediaColor.Gradient}
         icon={faYoutube}
         link="https://www.youtube.com/channel/UCIg1JPlWSXSwIdvqHKGiX9g"
       />
       <SocialMedia
-        color={SocialMediaColor.Black}
+        color={SocialMediaColor.Gradient}
         icon={faTiktok}
         link="https://www.tiktok.com/@techstartuofc"
       />
       <SocialMedia
-        color={SocialMediaColor.Black}
+        color={SocialMediaColor.Gradient}
         icon={faReddit}
         link="https://www.reddit.com/user/TechStartUCalgary"
       />

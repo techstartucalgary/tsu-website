@@ -11,7 +11,7 @@ const TeamSection = () => {
 
   // set defaultView flag according to screen width cutoff value
   const { width } = useViewport(); // get screen width
-  let defaultView = width > 600 ? true : false;
+  const defaultView = width > 600 ? true : false;
 
   const getTeamMembers = () => {
     return toggle ? projectManagers : executiveTeam;

@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import "./Register.css";
 import "./SignIn.css";
 import logo from "images/tech-start-logo-white.png";

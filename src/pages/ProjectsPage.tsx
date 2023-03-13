@@ -1,7 +1,7 @@
 import * as S from "./ProjectsPage.styles";
 import Lottie from "react-lottie";
 import { teamProjectLottieOptions } from "utility/LottieOptions";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 import {
   CurrentProjects,
   PastProjects,

@@ -1,6 +1,6 @@
-import React, { Component } from "react";
 import "./postButton.css";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function PostButton(props: any) {
   function buttonClicked() {
     props.showPost();

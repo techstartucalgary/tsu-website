@@ -16,6 +16,7 @@ type EventProps = {
 const Event = (props: EventProps) => {
   const textClasses = ["babyHeading", "regularText"];
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const preventDragHandler = (e: any) => e.preventDefault();
 
   const fadeDirection = props.pastEvent ? "fade-left" : "fade-right";

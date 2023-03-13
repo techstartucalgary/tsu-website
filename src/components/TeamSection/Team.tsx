@@ -12,6 +12,7 @@ type TeamProps = {
 const Team = (props: TeamProps) => {
   return (
     <S.TeamContainer mobileView={!props.desktopView}>
+      {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
       {props.teamMembers.map((member: any) => {
         return (
           <Profile

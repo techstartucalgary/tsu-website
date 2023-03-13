@@ -13,6 +13,7 @@ const NumberStat = (props: NumberStatProps) => {
   const [countupActive, setCountupActive] = useState(true);
   const [startNum, setStartNum] = useState(0);
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const detectVisible = (isVisible: boolean, start: any) => {
     if (isVisible) {
       setCountupActive(false); // Disable countup, so it cannot change again

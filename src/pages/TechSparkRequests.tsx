@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import React, { Component, useEffect } from "react";
 import "./SparkPage.css";
 import axios from "axios";

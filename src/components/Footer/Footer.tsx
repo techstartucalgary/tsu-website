@@ -2,7 +2,6 @@ import * as S from "./Footer.styles";
 import "../../App.css";
 import SocialMedia from "components/SocialMedia/SocialMedia";
 import { SocialMediaColor } from "../../utility/SharedStyles";
-import HoverButton from "components/HoverButton/HoverButton";
 import {
   faInstagram,
   faDiscord,
@@ -12,18 +11,10 @@ import {
   faTiktok,
   faReddit,
 } from "@fortawesome/free-brands-svg-icons";
-import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
 const Footer = () => (
   <S.Footer>
-    <S.HoverButtonDiv>
-      <HoverButton
-        mode={ButtonMode.GRADIENT}
-        link="http://eepurl.com/hnusUP"
-        linkIsInternal={false}
-        text="Join our mailing list!"
-      />
-    </S.HoverButtonDiv>
+
 
     <S.SocialMediaSection>
       <SocialMedia

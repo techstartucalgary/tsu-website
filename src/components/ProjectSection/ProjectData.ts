@@ -12,7 +12,6 @@ import aquavolution from "images/projects/aquavolution.jpg";
 import snowbot from "images/projects/snowbot.jpg";
 import noteAid from "images/projects/noteAid.jpg";
 import whereTo from "images/projects/whereTo.jpg";
-import teamPlaceHolder from "images/projects/team-placeholder.jpg";
 import lifeLine from "images/projects/lifeline.png";
 import easyMeal from "images/projects/easymeal.jpg";
 import airm from "images/projects/AiRM.png";

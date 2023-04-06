@@ -83,9 +83,13 @@ const ApplyPage = () => {
             </p>
           </div>
           <div data-aos="fade-up" data-aos-duration="1000">
-            <a href="http://eepurl.com/hnusUP" target="_blank" rel="noreferrer">
-              <button className="applyPage_mailinglist">
-                Sign up to our mailing list
+            <a
+              href="https://linktr.ee/techstartuofc"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <button className="applyPage_linkTree">
+                Check out our Link Tree!
               </button>
             </a>
           </div>

@@ -14,6 +14,7 @@ import noteAid from "images/projects/noteAid.jpg";
 import whereTo from "images/projects/whereTo.jpg";
 import teamPlaceHolder from "images/projects/team-placeholder.jpg";
 import lifeLine from "images/projects/lifeline.png";
+import easyMeal from "images/projects/easymeal.jpg";
 import airm from "images/projects/AiRM.png";
 import techstarcade from "images/projects/Techstarcade.jpg";
 import bandist from "images/projects/Bandist.jpg";
@@ -140,7 +141,7 @@ export const CurrentProjects: Project[] = [
     name: "EasyMeal",
     github: "https://github.com/techstartucalgary/EasyMeal",
     website: website,
-    image: teamPlaceHolder,
+    image: easyMeal,
     pmName: "Nemanja Grujic",
     description:
       "EasyMeal generates recipes for you based on your budget and tastes.",

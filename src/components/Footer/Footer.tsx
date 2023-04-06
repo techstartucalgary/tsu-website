@@ -19,9 +19,9 @@ const Footer = () => (
     <S.HoverButtonDiv>
       <HoverButton
         mode={ButtonMode.GRADIENT}
-        link="http://eepurl.com/hnusUP"
+        link="https://linktr.ee/techstartuofc"
         linkIsInternal={false}
-        text="Join our mailing list!"
+        text="Check out our Link Tree!"
       />
     </S.HoverButtonDiv>
 

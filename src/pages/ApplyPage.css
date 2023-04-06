@@ -51,7 +51,7 @@ html {
     background-position-x: -250px;
   }
 }
-.applyPage_mailinglist {
+.applyPage_linkTree {
   display: inline-block;
   text-align: center;
   text-decoration: none;
@@ -103,9 +103,9 @@ html {
   color: white;
 }
 
-.applyPage_mailinglist:hover,
-.applyPage_mailinglist:focus,
-.applyPage_mailinglist::after {
+.applyPage_linkTree:hover,
+.applyPage_linkTree:focus,
+.applyPage_linkTree::after {
   transform: scale(1.03);
   border: 2px solid var(--primary-green, rgb(106, 235, 80));
   color: var(--primary-green, rgb(106, 235, 80));

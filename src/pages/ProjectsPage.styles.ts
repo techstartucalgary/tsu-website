@@ -67,3 +67,9 @@ export const LottieDiv = styled.div`
     margin: 0px 0px 0px 25%;
   }
 `;
+
+export const IdeaSubmitButtonDiv = styled.div`
+  justify-content: center;
+  display: flex;
+  margin-bottom: 1%;
+`;

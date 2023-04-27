@@ -15,6 +15,7 @@ import "./App.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
 import ScrollToTop from "components/ScrollToTop";
+import GalleryPage from "pages/GalleryPage";
 
 function App() {
   //
@@ -40,6 +41,9 @@ function App() {
             </Route>
             <Route path="/merch">
               <MerchPage />
+            </Route>
+            <Route path="/gallery">
+              <GalleryPage />
             </Route>
             <Route path="/resources">
               <DocsPage />

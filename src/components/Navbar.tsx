@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "images/tech-start-logo-white.png";
 import { Link as LinkScroll } from "react-scroll";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 
 const Header = () => {
   const [navbarExpanded, setNavbarExpanded] = useState(false);
@@ -73,13 +73,9 @@ const Header = () => {
               name="Industry"
             />
             <NavbarLink top="applyPageTop" link="/apply" name="Apply" />
-            <NavbarLink top="docsPageTop" link="/resources" name="Resources" />
             <NavbarLink top="merchPageTop" link="/merch" name="Merch" />
-            {/* <NavbarLink
-                        top="sparkPageTop"
-                        link="/community"
-                        name="Community"
-                    /> */}
+            <NavbarLink top="galleryPageTop" link="/gallery" name="Gallery" />
+            <NavbarLink top="docsPageTop" link="/resources" name="Resources" />
           </motion.ul>
         </nav>
         <label

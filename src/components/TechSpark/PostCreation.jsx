@@ -1,6 +1,6 @@
-import React from "react";
 import "./PostCreation.css";
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 function PostCreation(props) {
   return (
     <div className="postCreationStyling">

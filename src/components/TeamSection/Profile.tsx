@@ -16,6 +16,7 @@ type ProfileProps = {
 };
 
 const Profile = (props: ProfileProps) => {
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const preventDragHandler = (e: any) => e.preventDefault();
 
   return (

@@ -1,4 +1,3 @@
-import ComingSoon from "../../images/merch/ComingSoon.jpeg";
 import BlackHoodie from "../../images/merch/BlackHoodie.jpeg";
 import BlackBeanie from "../../images/merch/BlackBeanie.jpeg";
 import ToteBag from "../../images/merch/ToteBag.jpeg";

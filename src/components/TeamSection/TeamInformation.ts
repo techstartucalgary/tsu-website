@@ -3,7 +3,6 @@ import fedor_jpg from "../../images/team/Fedor_Prokopchuk.jpg";
 import tyler_jpg from "../../images/team/Tyler_Chan.jpg";
 import sareen_jpg from "../../images/team/Sareen_Singh.jpg";
 import niyousha_jpg from "../../images/team/Niyousha_Raeesinejad.jpg";
-import blank_jpg from "../../images/team/Blank.jpeg";
 import carol_jpg from "../../images/team/Carol_Wang.jpg";
 import kevin_jpg from "../../images/team/Kevin_Amado.jpg";
 import sahiti_jpg from "../../images/team/Sahiti_Akella.jpg";
@@ -20,6 +19,7 @@ import nemanja_jpg from "../../images/team/Nemanja_Grujic.jpg";
 import ben_shi_jpg from "../../images/team/Ben_Shi.jpg";
 import noel_jpg from "../../images/team/Noel_Thomas.jpg";
 import estefy_jpeg from "../../images/team/Estefy_Caballero.jpeg";
+import rachel_jpg from "../../images/team/Rachel_Renegado.jpg";
 
 export type TeamMember = {
   id: number;
@@ -30,10 +30,7 @@ export type TeamMember = {
   email: string;
 };
 
-export var executiveTeam: TeamMember[];
-export var projectManagers: TeamMember[];
-
-executiveTeam = [
+export const executiveTeam: TeamMember[] = [
   {
     id: 0,
     name: "Niyousha Raeesinejad",
@@ -118,8 +115,18 @@ executiveTeam = [
     linkedin: "https://www.linkedin.com/in/kamadorueda/",
     email: "mailto:kevin.amadorueda@ucalgary.ca",
   },
+
   {
     id: 10,
+    name: "Rachel Renegado",
+    affiliation: "Senior Software Advisor",
+    image: rachel_jpg,
+    linkedin: "https://www.linkedin.com/in/rachel-renegado-544409201",
+    email: "",
+  },
+
+  {
+    id: 11,
     name: "Mya Gill",
     affiliation: "VP Community",
     image: mya_jpg,
@@ -127,7 +134,7 @@ executiveTeam = [
     email: "mailto:mya.gill@ucalgary.ca",
   },
   {
-    id: 11,
+    id: 12,
     name: "Labib Afshar Ahmed",
     affiliation: "VP Finance",
     image: labib_jpg,
@@ -135,7 +142,7 @@ executiveTeam = [
     email: "mailto:labibafsar.ahmed@ucalgary.ca",
   },
   {
-    id: 12,
+    id: 13,
     name: "Nathan Karbonik",
     affiliation: "VP External",
     image: nathan_jpg,
@@ -143,7 +150,7 @@ executiveTeam = [
     email: "mailto:nathan.karbonik@ucalgary.ca",
   },
   {
-    id: 13,
+    id: 14,
     name: "Sareen Singh",
     affiliation: "Advisor",
     image: sareen_jpg,
@@ -152,7 +159,7 @@ executiveTeam = [
     email: "mailto:sareen.singh@ucalgary.ca",
   },
   {
-    id: 14,
+    id: 15,
     name: "Joel Happ",
     affiliation: "Founder & Chairman",
     image: joel_jpg,
@@ -161,7 +168,7 @@ executiveTeam = [
   },
 ];
 
-projectManagers = [
+export const projectManagers: TeamMember[] = [
   {
     id: 0,
     name: "Ben Schmidt",

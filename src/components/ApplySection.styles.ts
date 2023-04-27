@@ -26,6 +26,10 @@ export const ApplicationContent = styled.article`
     }
   }
 
+  & > h5 {
+    text-shadow: 0.5px 0.5px gray;
+  }
+
   @media (min-width: 800px) {
     position: relative;
     min-height: max-content;

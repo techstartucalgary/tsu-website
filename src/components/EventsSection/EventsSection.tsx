@@ -1,4 +1,4 @@
-import { highlightedEvents, pastEvents } from "./EventInformation";
+import { highlightedEvents } from "./EventInformation";
 import Event from "./Event/Event";
 import * as S from "./EventsSection.styles";
 
@@ -32,14 +32,7 @@ const EventsSection = () => {
         })}
       </S.EventsContainer>
 
-      <h2
-        className="thiccSubheading"
-        style={{ marginTop: "5%", marginBottom: "0%" }}
-      >
-        Check out events we've hosted in the past:
-      </h2>
-
-      <S.EventsContainer>
+      {/* <S.EventsContainer>
         {pastEvents.map((event, i) => {
           return (
             <Event
@@ -54,7 +47,7 @@ const EventsSection = () => {
             />
           );
         })}
-      </S.EventsContainer>
+      </S.EventsContainer> */}
     </S.EventsSectionContainer>
   );
 };

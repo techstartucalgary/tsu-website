@@ -1,5 +1,5 @@
 import MerchSection from "components/MerchSection/MerchSection";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 import * as S from "./MerchPage.styles";
 import Lottie from "react-lottie";
 import { merchPageLottieOptions } from "utility/LottieOptions";
@@ -15,22 +15,16 @@ const MerchPage = () => {
           </S.LottieDiv>
         </S.MerchPageHeaderItem>
         <S.MerchPageHeaderItem>
-          <motion.h1
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.5 }}
-          ></motion.h1>
-          <motion.p
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ delay: 1 }}
-          ></motion.p>
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.75 }}
           >
             {NewlineText("Our Products")}
+            <br />
+            <h1 className="thiccSubheading thiccSubheading--gradient">
+              Get in style with Tech Start!
+            </h1>
           </motion.div>
         </S.MerchPageHeaderItem>
       </S.MerchPageHeader>

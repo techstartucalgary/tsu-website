@@ -2,7 +2,7 @@ import Blobbie from "components/Blobbie";
 import TeamSection from "components/TeamSection/TeamSection";
 import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 import * as S from "./TeamPage.styles";
 
 const TeamPage = () => {

@@ -7,6 +7,7 @@ export class EventType {
   title!: string;
   url!: string;
 
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   constructor(eventResponse: any) {
     this.category = eventResponse.category;
     this.date_published = eventResponse.date_published;

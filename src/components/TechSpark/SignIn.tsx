@@ -1,8 +1,9 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import Login from "./Login";
 import Register from "./Register";
 import "./SignIn.css";
 
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
 function SignIn(props: any) {
   const [isLoginMode, setIsLoginMode] = useState(true);
 

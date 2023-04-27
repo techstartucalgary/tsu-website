@@ -12,8 +12,12 @@ import aquavolution from "images/projects/aquavolution.jpg";
 import snowbot from "images/projects/snowbot.jpg";
 import noteAid from "images/projects/noteAid.jpg";
 import whereTo from "images/projects/whereTo.jpg";
-import teamPlaceHolder from "images/projects/team-placeholder.jpg";
-import lifeLine from "images/projects/lifeline.jpeg";
+import lifeLine from "images/projects/lifeline.png";
+import easyMeal from "images/projects/easymeal.jpg";
+import airm from "images/projects/AiRM.png";
+import techstarcade from "images/projects/Techstarcade.jpg";
+import bandist from "images/projects/Bandist.jpg";
+import cyberHire from "images/projects/CyberHire.jpg";
 
 // Project type definition
 export type Project = {
@@ -117,7 +121,7 @@ export const CurrentProjects: Project[] = [
     name: "Bandist",
     github: "https://github.com/techstartucalgary/Bandist",
     website: website,
-    image: teamPlaceHolder,
+    image: bandist,
     pmName: "Nurgul Akhshatayeva",
     description:
       "A cross-platform application for music enthusiasts to get notified of the latest concerts of their favorite artists.",
@@ -127,7 +131,7 @@ export const CurrentProjects: Project[] = [
     name: "CyberHire",
     github: "https://github.com/techstartucalgary/CyberHire",
     website: website,
-    image: teamPlaceHolder,
+    image: cyberHire,
     pmName: "Ben Schmidt",
     description: "A platform for employers and applicants to connect.",
   },
@@ -136,7 +140,7 @@ export const CurrentProjects: Project[] = [
     name: "EasyMeal",
     github: "https://github.com/techstartucalgary/EasyMeal",
     website: website,
-    image: teamPlaceHolder,
+    image: easyMeal,
     pmName: "Nemanja Grujic",
     description:
       "EasyMeal generates recipes for you based on your budget and tastes.",
@@ -157,7 +161,7 @@ export const CurrentProjects: Project[] = [
     github: "https://github.com/techstartucalgary/RoboticArm",
     pmName: "Leo Wei",
     website: website,
-    image: teamPlaceHolder,
+    image: airm,
     description:
       "Robotic arm using reinforcement learning to help robots learn and adapt to new environments.",
   },
@@ -167,7 +171,7 @@ export const CurrentProjects: Project[] = [
     github: "https://github.com/techstartucalgary/techstarcade",
     pmName: "Madeline Mazurek",
     website: website,
-    image: teamPlaceHolder,
+    image: techstarcade,
     description: "Retro style mini games in a arcade style chrome extension.",
   },
 ];

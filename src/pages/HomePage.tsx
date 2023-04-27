@@ -1,6 +1,6 @@
 import tsu_logo from "images/tech-start-logo-white.png";
 import "./HomePage.css";
-import { motion } from "framer-motion/dist/framer-motion";
+import { motion } from "framer-motion";
 
 import NumberStat from "components/NumberStat";
 import Divider from "components/Divider";

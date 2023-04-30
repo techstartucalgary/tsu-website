@@ -3,7 +3,7 @@ import Interim_Showcase_Judges_img from "../../images/events/Interim_Showcase_Ju
 import Arcurve_Lunch_Learn_img from "../../images/events/Arcurve_Lunch_Learn.jpeg";
 import Blockchain_Panel_img from "../../images/events/Blockchain_Panel.jpeg";
 import MicrosoftTechTalk_img from "../../images/events/MicrosoftTechTalk.jpeg";
-import FinalShowcase2023_img from "../../images/events/FinalShowcase2023.png";
+import FinalShowcase2023_img from "../../images/events/final_showcase.jpg";
 
 export interface Event {
   title: string;
@@ -18,16 +18,16 @@ export const highlightedEvents: Event[] = [
   {
     title: "Final Showcase 2023",
     description:
-      "Passionate about tech innovation or business strategy? Want to learn about current projects at Tech Start? Join us at our end-of-year Showcase where you will be able to network with over 20 industry experts and project teams! ",
+      "We wrapped up Tech Start's 2022/2023 season with our final showcase event, where our project teams wowed our industry judges, sponsors, and special guests with their innovative solutions, delivering their pitches with confidence and enthusiasm. ",
     date: "Saturday, April 29, 2023",
     time: "12:00 - 3:30PM",
     image: FinalShowcase2023_img,
-    link: "https://www.eventbrite.ca/e/tech-start-ucalgary-final-showcase-tickets-546390407417",
+    link: "https://www.linkedin.com/posts/tech-start-ucalgary_softwareengineering-technology-programming-activity-7058565315751772161-hVgw?utm_source=share&utm_medium=member_desktop",
   },
   {
     title: "Microsoft Tech Talk",
     description:
-      "We are very excited to be hosting our second tech talk: Meeting Microsoft!  Join us virtually Feb. 15th from 6:30 - 8:00 pm for an opportunity to hear from a Microsoft Software Developer, Software Engineering Manager, Product Manager, and Designer!",
+      "Our second tech talk featured Microsoft! We had the great opportunity to hear the stories of a Microsoft Software Developer, Software Engineering Manager, Product Manager, and Designer!",
     date: "Wednesday, February 15, 2023",
     time: "6:30 PM – 8:00 PM",
     image: MicrosoftTechTalk_img,

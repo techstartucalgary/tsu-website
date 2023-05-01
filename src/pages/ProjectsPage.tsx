@@ -115,6 +115,13 @@ const ProjectsPage = () => {
       <ProjectKeywordsSection />
 
       {/* <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
+        className="gradient-text"
+        style={{ textAlign: "center", marginBottom: "7%" }}
+      >
+        Have an idea for a project? Apply to be a Project Manager{" "}
+        {<a href="/apply">HERE</a>}!
+      </h2>
+      <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
         Current Projects
       </h2>
       <Divider />

@@ -84,7 +84,6 @@ export const FinalShowcaseWinnerDescription = styled.div`
   max-width: 1400px;
   display: grid;
 
-
   @media (min-width: 1550px) {
     grid-template-columns: 1fr 1fr;
   }
@@ -117,11 +116,11 @@ export const FinalShowcaseWinnerImage = styled.div`
     margin-right: auto;
     margin-top: 25px;
   }
-    @media (max-width: 1055px) {
-      & > div > img {
+  @media (max-width: 1055px) {
+    & > div > img {
       width: 80vw;
-      }
     }
+  }
 `;
 
 export const FinalShowcaseWinnerLinkedInButtonDiv = styled.div`

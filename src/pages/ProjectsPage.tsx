@@ -31,6 +31,32 @@ const ProjectsPage = () => {
         </S.ProjectsPageHeaderItem>
       </S.ProjectsPageHeader>
 
+      <div data-aos="fade-up" data-aos-duration="800">
+        <h2
+          className="thiccSubheading thiccSubheading--gradient"
+          style={{ textAlign: "center", marginBottom: "2%" }}
+        >
+          From Ideation to Implementation
+        </h2>
+        <h3
+          className="regularText--white"
+          style={{ textAlign: "center", marginBottom: "3%" }}
+        >
+          Explore the diverse talents of our community, and witness innovation
+          in action. <br></br> Have an idea for a cool project you'd like to
+          bring to life with Tech Start?
+        </h3>
+        <S.IdeaSubmitButtonDiv>
+          <HoverButton
+            mode={ButtonMode.GRADIENT}
+            text={"Share your Idea!"}
+            link="https://forms.gle/ErpgSLjsUvEoKn6YA"
+            linkIsInternal={false}
+          />
+        </S.IdeaSubmitButtonDiv>
+      </div>
+
+      <ProjectKeywordsSection />
       <h2
         className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin"
         style={{ marginTop: "0px" }}
@@ -115,6 +141,13 @@ const ProjectsPage = () => {
       <ProjectKeywordsSection />
 
       {/* <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
+        className="gradient-text"
+        style={{ textAlign: "center", marginBottom: "7%" }}
+      >
+        Have an idea for a project? Apply to be a Project Manager{" "}
+        {<a href="/apply">HERE</a>}!
+      </h2>
+      <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
         Current Projects
       </h2>
       <Divider />

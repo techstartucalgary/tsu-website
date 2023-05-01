@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Lottie from "react-lottie";
 import "./ApplyPage.css";
 import { applyPageTeamLottieOptions } from "utility/LottieOptions";
-import interim_showcase_2023 from "images/Interim_Showcase_2023.jpeg";
+import final_showcase_2023 from "images/final_showcase_teams.jpg";
 import ApplySection from "components/ApplySection";
 import Accordion from "../components/Apply/Accordion";
 import Blobbie from "components/Blobbie";
@@ -37,8 +37,8 @@ const ApplyPage = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
           >
-            Applications for project members are closed! Teams meet on Thursdays
-            at 5:30pm, at our weekly dev nights. For more information, join our{" "}
+            Apply below to be a Project Manager or Executive! For more
+            information, join our{" "}
             {
               <a href="https://discord.gg/Sxj5QrxRPk">
                 <b>
@@ -102,7 +102,7 @@ const ApplyPage = () => {
             your portfolio!
           </h1>
         </div>
-        <img src={interim_showcase_2023} alt="Tech Start Members" />
+        <img src={final_showcase_2023} alt="Tech Start Members" />
       </div>
 
       <div className="applyPage__container applyPage__projectIntroContainer">
@@ -252,7 +252,7 @@ const ApplyPage = () => {
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project for 1 academic year."
               statusIsOpen={false}
-              closedStatus="Opens September 2022"
+              closedStatus="Opens September 2023"
               applicationLink="https://forms.gle/yxVK3NRCyTjn1TxQ7"
               deadline=""
             />
@@ -261,9 +261,9 @@ const ApplyPage = () => {
               role="Project Manager"
               description="Manage a project for 1 year and lead a team of 6-9
                     project members to create complex projects."
-              statusIsOpen={false}
+              statusIsOpen={true}
               closedStatus="Opens Spring 2023"
-              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScHj9FcIK4ApPqyMiXf_PLlQ43FpI7EB5gmz7SJFGczU9xIkg/viewform"
+              applicationLink="https://forms.gle/oH3i7eKkLg2WfXEXA"
               deadline=""
             />
 
@@ -271,9 +271,9 @@ const ApplyPage = () => {
               role="Executive Team"
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
-              statusIsOpen={false}
+              statusIsOpen={true}
               closedStatus="Opens Spring 2023"
-              applicationLink=""
+              applicationLink="https://forms.gle/RVD7dffPyCCB4BuR9"
               deadline=""
             />
           </ul>

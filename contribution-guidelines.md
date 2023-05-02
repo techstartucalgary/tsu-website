@@ -115,7 +115,7 @@ If you are making non-code contributions to the Tech Start UCalgary website, suc
 
 ## 📃Code of Conduct
 
-Please note that all contributors are expected to adhere to the Tech Start UCalgary Code of Conduct, which can be found in the CODE_OF_CONDUCT.md file in this repository.
+Please note that all contributors are expected to adhere to the [Tech Start UCalgary Code of Conduct](CODE_OF_CONDUCT.md)
 
 ## 📩Contact Us
 

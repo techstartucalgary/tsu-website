@@ -163,7 +163,7 @@ export const PastProjects: Project[] = [
   },
   {
     id: 13,
-    name: "Tech Start Website",
+    name: "TSU Website",
     github: "https://github.com/Tech-Start-UCalgary/tsu-website",
     pmName: "Joel Happ, Niyousha Raeesinejad",
     website: website,

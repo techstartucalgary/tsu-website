@@ -29,8 +29,8 @@ function DocsPage() {
         <ul className="sectionContent">
           <li>
             <Emoji symbol="👩🏽‍💻 " />
-            Club Name: Refer to the club as "Tech Start UCalgary" or "Tech
-            Start", but avoid the acronyms "TS" and "TSU".
+            Club Name: Refer to the club as "Tech Start UCalgary", "Tech
+            Start", or "TSU".
           </li>
           <li>
             <Emoji symbol="🖥️ " />

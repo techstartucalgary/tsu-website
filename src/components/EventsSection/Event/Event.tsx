@@ -10,7 +10,6 @@ type EventProps = {
   time: string;
   image: string;
   link: string;
-  pastEvent: boolean;
 };
 
 const Event = (props: EventProps) => {
@@ -19,53 +18,34 @@ const Event = (props: EventProps) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const preventDragHandler = (e: any) => e.preventDefault();
 
-  const fadeDirection = props.pastEvent ? "fade-left" : "fade-right";
+  const fadeDirection = "fade-right";
 
   return (
-    <S.Event
-      data-aos={fadeDirection}
-      data-aos-duration="2000"
-      pastEvent={props.pastEvent}
-    >
-      {props.pastEvent ? (
-        <a href={props.link}>
-          <S.EventImage
-            pastEvent={true}
-            src={props.image}
-            key={props.key}
-            alt={props.title}
-            onDragStart={preventDragHandler}
-          />
-        </a>
-      ) : (
-        <S.EventImage
-          pastEvent={false}
-          src={props.image}
-          key={props.key}
-          alt={props.title}
-          onDragStart={preventDragHandler}
-        />
-      )}
+    <S.Event data-aos={fadeDirection} data-aos-duration="2000">
+      <S.EventImage
+        src={props.image}
+        key={props.key}
+        alt={props.title}
+        onDragStart={preventDragHandler}
+      />
 
-      {!props.pastEvent && (
-        <S.EventText>
-          <p className="babyHeading babyHeading--bolder">{props.title}</p>
-          <p className={textClasses[1]}>{props.description}</p>
-          <S.DatetimeButtonDiv>
-            <p className={textClasses[1]}>
-              {props.date} | {props.time}
-            </p>
-            <div>
-              <HoverButton
-                mode={ButtonMode.DARK}
-                text={"Check it Out!"}
-                link={props.link}
-                linkIsInternal={false}
-              />
-            </div>
-          </S.DatetimeButtonDiv>
-        </S.EventText>
-      )}
+      <S.EventText>
+        <p className="babyHeading babyHeading--bolder">{props.title}</p>
+        <p className={textClasses[1]}>{props.description}</p>
+        <S.DatetimeButtonDiv>
+          <p className={textClasses[1]}>
+            {props.date} | {props.time}
+          </p>
+          <div>
+            <HoverButton
+              mode={ButtonMode.DARK}
+              text={"Check it Out!"}
+              link={props.link}
+              linkIsInternal={false}
+            />
+          </div>
+        </S.DatetimeButtonDiv>
+      </S.EventText>
     </S.Event>
   );
 };

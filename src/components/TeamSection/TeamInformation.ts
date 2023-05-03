@@ -10,16 +10,11 @@ import rajpreet_jpg from "../../images/team/Rajpreet_Gill.jpg";
 import mya_jpg from "../../images/team/Mya_Gill.jpeg";
 import labib_jpg from "../../images/team/Labib_Ahmed.jpg";
 import nathan_jpg from "../../images/team/Nathan_Karbonik.jpg";
-import ben_jpg from "../../images/team/Ben_Schmidt.jpeg";
-import nurgul_jpg from "../../images/team/Nurgul_Akhshatayeva.jpg";
-import madeline_jpg from "../../images/team/Madeline_Mazurek.jpg";
-import leo_jpg from "../../images/team/Leo_Wei.jpg";
-import tim_jpg from "../../images/team/Tim_Macphail.jpg";
-import nemanja_jpg from "../../images/team/Nemanja_Grujic.jpg";
 import ben_shi_jpg from "../../images/team/Ben_Shi.jpg";
 import noel_jpg from "../../images/team/Noel_Thomas.jpg";
 import estefy_jpeg from "../../images/team/Estefy_Caballero.jpeg";
 import rachel_jpg from "../../images/team/Rachel_Renegado.jpg";
+import blank_jpg from "../../images/team/Blank.jpeg";
 
 export type TeamMember = {
   id: number;
@@ -171,56 +166,10 @@ export const executiveTeam: TeamMember[] = [
 export const projectManagers: TeamMember[] = [
   {
     id: 0,
-    name: "Ben Schmidt",
-    affiliation: "Project Manager",
-    image: ben_jpg,
-    linkedin: "https://linkedin.com/in/benschmidt2343",
-    email: "mailto:benjamin.schmidt@ucalgary.ca",
-  },
-
-  {
-    id: 1,
-    name: "Leo Wei",
-    affiliation: "Project Manager",
-    image: leo_jpg,
-    linkedin: "https://www.linkedin.com/in/leo-wei/",
-    email: "mailto:hanzhe.wei@ucalgary.ca ",
-  },
-
-  {
-    id: 2,
-    name: "Madeline Mazurek",
-    affiliation: "Project Manager",
-    image: madeline_jpg,
-    linkedin: "https://www.linkedin.com/in/madeline-mazurek/",
-    email: "mailto:madeline.mazurek@ucalgary.ca",
-  },
-
-  {
-    id: 3,
-    name: "Nemanja Grujic",
-    affiliation: "Project Manager",
-    image: nemanja_jpg,
-    linkedin: "https://www.linkedin.com/in/nemanja-grujic-5828a1213",
-    email: "mailto:nemanja.grujic@ucalgary.ca ",
-  },
-
-  {
-    id: 4,
-    name: "Nurgul Akhshatayeva",
-    affiliation: "Project Manager",
-    image: nurgul_jpg,
-    linkedin: "https://www.linkedin.com/in/nurgul-akhshatayeva-6821b0205/",
-    email: "mailto:nurgul.akhshatayeva@ucalgary.ca ",
-  },
-
-  {
-    id: 5,
-    name: "Tim Macphail",
-    affiliation: "Project Manager",
-    image: tim_jpg,
-    linkedin:
-      "https://www.linkedin.com/in/timothy-macphail?originalSubdomain=ca",
-    email: "mailto:timothy.macphail@ucalgary.ca ",
+    name: "You?",
+    affiliation: "Apply now at techstartucalgary.com/apply!",
+    image: blank_jpg,
+    linkedin: " ",
+    email: " ",
   },
 ];

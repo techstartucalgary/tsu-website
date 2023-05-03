@@ -27,7 +27,8 @@ const SponsorSection = () => {
       <S.SponsorCallToActionDiv>
         <p>
           Special thank you to our industry sponsors, collaboration partners,
-          and featured guests. <br/>Interested? Reach out at&nbsp;
+          and featured guests. <br />
+          Interested? Reach out at&nbsp;
           <b>
             <a href="mailto:external@techstartucalgary.com">
               external@techstartucalgary.com
@@ -40,7 +41,7 @@ const SponsorSection = () => {
         <S.SponsorButtonDiv>
           <HoverButton
             mode={ButtonMode.DARK}
-            link="https://drive.google.com/file/d/1jWvy6qz8WgXZLGQZGX5NvQTQyTcE-q9W/view?usp=share_link"
+            link="https://drive.google.com/file/d/1vLCezy7kFW-ZzZnWu_9P0MX7iK_wpzx1/view?usp=share_link"
             linkIsInternal={false}
             text="Check out our sponsorship package!"
           />

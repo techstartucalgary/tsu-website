@@ -20,7 +20,7 @@ To contribute to our website, please see our [Contribution Guidelines](contribut
 
 ## 🎉Join Our Community
 
-To stay up-to-date with the latest news and events from Tech Start UCalgary, follow us on [Instagram](https://www.linkedin.com/company/tech-start-ucalgary) and [LinkedIn](https://www.linkedin.com/company/tech-start-ucalgary), and join our [Discord server](https://discord.gg/Sxj5QrxRPk)!
+To stay up-to-date with the latest news and events from Tech Start UCalgary, follow us on [Instagram](https://www.instagram.com/techstartucalgary/) and [LinkedIn](https://www.linkedin.com/company/tech-start-ucalgary), and join our [Discord server](https://discord.gg/Sxj5QrxRPk)!
 
 If you have any questions or feedback about our website or community, please don't hesitate to [contact our team](mailto:info@techstartucalgary.com).
 

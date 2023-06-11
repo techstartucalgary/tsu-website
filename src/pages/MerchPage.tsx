@@ -20,11 +20,7 @@ const MerchPage = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 0.75 }}
           >
-            {NewlineText("Our Products")}
-            <br />
-            <h1 className="thiccSubheading thiccSubheading--gradient">
-              Get in style with Tech Start!
-            </h1>
+            {NewlineText("Our Merch")}
           </motion.div>
         </S.MerchPageHeaderItem>
       </S.MerchPageHeader>

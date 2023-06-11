@@ -102,17 +102,21 @@ const ProjectsPage = () => {
           in action. <br></br> Have an idea for a cool project you'd like to
           bring to life with Tech Start?
         </h3>
-        <S.IdeaSubmitButtonDiv>
+        <S.WrapDiv>
           <HoverButton
             mode={ButtonMode.GRADIENT}
             text={"Share your Idea!"}
             link="https://forms.gle/ErpgSLjsUvEoKn6YA"
             linkIsInternal={false}
           />
-        </S.IdeaSubmitButtonDiv>
+        </S.WrapDiv>
       </div>
 
       <ProjectKeywordsSection />
+
+      <S.WrapDiv>
+        <iframe src="https://github.com/sponsors/techstartucalgary/card" title="Sponsor techstartucalgary" height="225" width="600" style={{borderRadius: 20, border: 0}}></iframe>
+      </S.WrapDiv>
 
       <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
         Past Projects

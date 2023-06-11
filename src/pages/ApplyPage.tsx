@@ -9,6 +9,8 @@ import ApplySection from "components/ApplySection";
 import Accordion from "../components/Apply/Accordion";
 import Blobbie from "components/Blobbie";
 import Divider from "components/Divider";
+import HoverButton from "components/HoverButton/HoverButton";
+import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
 const ApplyPage = () => {
   const [active, setActive] = useState("");
@@ -82,16 +84,14 @@ const ApplyPage = () => {
               creativity, make awesome connections, and grow as a professional!
             </p>
           </div>
-          <div data-aos="fade-up" data-aos-duration="1000">
-            <a
-              href="https://linktr.ee/techstartuofc"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <button className="applyPage_linkTree">
-                Check out our Link Tree!
-              </button>
-            </a>
+          <div style={{display: "flex", justifyContent: "center"}}>
+             <HoverButton
+                  mode={ButtonMode.DARK}
+                  glowOnHover={false}
+                  link={"https://linktr.ee/techstartuofc"}
+                  text={"Check out our Link Tree!"}
+                  linkIsInternal={false}
+                />
           </div>
         </div>
       </div>
@@ -252,7 +252,7 @@ const ApplyPage = () => {
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project for 1 academic year."
               statusIsOpen={false}
-              closedStatus="Opens September 2023"
+              closedStatus="Opens Fall 2023"
               applicationLink="https://forms.gle/yxVK3NRCyTjn1TxQ7"
               deadline=""
             />
@@ -271,9 +271,9 @@ const ApplyPage = () => {
               role="Executive Team"
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
-              statusIsOpen={true}
-              closedStatus="Opens Spring 2023"
-              applicationLink="https://forms.gle/RVD7dffPyCCB4BuR9"
+              statusIsOpen={false}
+              closedStatus="Opens Fall 2023"
+              applicationLink=""
               deadline=""
             />
           </ul>

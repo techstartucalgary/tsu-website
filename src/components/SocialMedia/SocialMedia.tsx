@@ -11,9 +11,14 @@ interface SocialMediaProps {
 
 const SocialMedia = (props: SocialMediaProps) => {
   return (
-    <SocialMediaIcon color={props.color} href={props.link}>
-      <FontAwesomeIcon icon={props.icon} size="3x" />
-    </SocialMediaIcon>
+    props.link === " " ? 
+      <SocialMediaIcon color={props.color}>
+        <FontAwesomeIcon icon={props.icon} size="3x" />
+      </SocialMediaIcon>
+      :
+      <SocialMediaIcon color={props.color} href={props.link}>
+        <FontAwesomeIcon icon={props.icon} size="3x" />
+      </SocialMediaIcon>
   );
 };
 

@@ -46,14 +46,10 @@ const Footer = () => (
         icon={faTiktok}
         link="https://www.tiktok.com/@techstartuofc"
       />
-      <SocialMedia
-        color={SocialMediaColor.Gradient}
-        icon={faReddit}
-        link="https://www.reddit.com/user/TechStartUCalgary"
-      />
-                <iframe src="https://github.com/sponsors/techstartucalgary/button" title="Sponsor techstartucalgary" height="32" width="114" style={{border: 0, borderRadius: "6px", margin: "2%"}}></iframe>
-
     </S.SocialMediaSection>
+    <S.SponsorIFrameDiv>
+      <iframe src="https://github.com/sponsors/techstartucalgary/button" title="Sponsor techstartucalgary" height="32" width="114" style={{ border: 0, borderRadius: "6px", margin: "2%" }}></iframe>
+    </S.SponsorIFrameDiv>
     <S.Copyright>© {new Date().getFullYear()} Tech Start UCalgary</S.Copyright>
   </S.Footer>
 );

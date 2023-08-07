@@ -1,19 +1,20 @@
 import joel_jpg from "../../images/team/Joel_Happ.jpeg";
 import fedor_jpg from "../../images/team/Fedor_Prokopchuk.jpg";
 import tyler_jpg from "../../images/team/Tyler_Chan.jpg";
-import sareen_jpg from "../../images/team/Sareen_Singh.jpg";
 import niyousha_jpg from "../../images/team/Niyousha_Raeesinejad.jpg";
 import carol_jpg from "../../images/team/Carol_Wang.jpg";
-import kevin_jpg from "../../images/team/Kevin_Amado.jpg";
-import sahiti_jpg from "../../images/team/Sahiti_Akella.jpg";
 import rajpreet_jpg from "../../images/team/Rajpreet_Gill.jpg";
-import mya_jpg from "../../images/team/Mya_Gill.jpeg";
 import labib_jpg from "../../images/team/Labib_Ahmed.jpg";
 import nathan_jpg from "../../images/team/Nathan_Karbonik.jpg";
-import ben_shi_jpg from "../../images/team/Ben_Shi.jpg";
-import noel_jpg from "../../images/team/Noel_Thomas.jpg";
 import estefy_jpeg from "../../images/team/Estefy_Caballero.jpeg";
+import enioluwafe_jpg from "../../images/team/Enioluwafe_Balogun.jpg";
+import maheen_jpg from "../../images/team/Maheen_Raza.jpg";
+import leo_jpg from "../../images/team/Leo_Wei.jpg";
 import rachel_jpg from "../../images/team/Rachel_Renegado.jpg";
+import janita_jpg from "../../images/team/Janita_Mahum.jpg";
+import abod_jpg from "../../images/team/Abod_Abbas.jpg";
+import sajwal_jpg from "../../images/team/Sajwal Pageni.jpg";
+import ben_jpg from "../../images/team/Ben_Schmidt.jpg";
 import blank_jpg from "../../images/team/Blank.jpeg";
 
 export type TeamMember = {
@@ -22,7 +23,6 @@ export type TeamMember = {
   affiliation: string; // Affiliation refers to roles and projects for executives and PMs respectively
   image: string;
   linkedin: string;
-  email: string;
 };
 
 export const executiveTeam: TeamMember[] = [
@@ -32,134 +32,119 @@ export const executiveTeam: TeamMember[] = [
     affiliation: "Co-President",
     image: niyousha_jpg,
     linkedin: "https://www.linkedin.com/in/niyoushar/",
-    email: "mailto:niyousha.raeesinejad@ucalgary.ca",
   },
   {
     id: 1,
-    name: "Rajpreet Gill",
-    affiliation: "Co-President",
-    image: rajpreet_jpg,
-    linkedin: "https://www.linkedin.com/in/rajpreet-gill/",
-    email: "mailto:rajpreet.gill@ucalgary.ca",
-  },
-
-  {
-    id: 2,
-    name: "Fedor Prokopchuk",
-    affiliation: "VP Strategy",
-    image: fedor_jpg,
-    linkedin: "https://www.linkedin.com/in/fedor-prokopchuk-707668a6/",
-    email: "mailto:fedor.prokopchuk@ucalgary.ca",
-  },
-
-  {
-    id: 3,
-    name: "Noel Thomas",
-    affiliation: "VP Events",
-    image: noel_jpg,
-    linkedin: "https://www.linkedin.com/in/noelfranthomas/",
-    email: "mailto:noel.thomas@ucalgary.ca",
-  },
-  {
-    id: 4,
-    name: "Ben Shi",
-    affiliation: "Jr VP Events",
-    image: ben_shi_jpg,
-    linkedin: "https://www.linkedin.com/in/ben-shi-228651189",
-    email: "mailto:ben.shi@ucalgary.ca",
-  },
-
-  {
-    id: 5,
-    name: "Carol Wang",
-    affiliation: "VP Internal",
-    image: carol_jpg,
-    linkedin: "https://www.linkedin.com/in/carol-wang3116/",
-    email: "mailto:carol.wang2@ucalgary.ca",
-  },
-  {
-    id: 6,
     name: "Tyler Chan",
-    affiliation: "VP Communications",
+    affiliation: "Co-President",
     image: tyler_jpg,
     linkedin: "https://www.linkedin.com/in/chan-tyler/",
-    email: "mailto:tyler.chan@ucalgary.ca",
   },
   {
-    id: 7,
-    name: "Sahiti Akella",
-    affiliation: "Jr VP Communications",
-    image: sahiti_jpg,
-    linkedin: "https://www.linkedin.com/in/sahiti-akella/",
-    email: "mailto:sahiti.akella@ucalgary.ca",
+    id: 2,
+    name: "Rachel Renegado",
+    affiliation: "VP Internal",
+    image: rachel_jpg,
+    linkedin: "https://www.linkedin.com/in/rachel-renegado-544409201",
   },
-
   {
-    id: 8,
-    name: "Estefy Caballero",
-    affiliation: "Media Commissioner",
-    image: estefy_jpeg,
-    linkedin: "https://www.linkedin.com/in/estefy-caballero-864aab25a",
-    email: "",
+    id: 3,
+    name: "Nathan Karbonik",
+    affiliation: "External Advisor",
+    image: nathan_jpg,
+    linkedin: "https://www.linkedin.com/in/nathan-karbonik/",
   },
   {
     id: 9,
-    name: "Kevin Amado",
-    affiliation: "VP Development",
-    image: kevin_jpg,
-    linkedin: "https://www.linkedin.com/in/kamadorueda/",
-    email: "mailto:kevin.amadorueda@ucalgary.ca",
+    name: "Leo Wei",
+    affiliation: "Co-VP Events",
+    image: leo_jpg,
+    linkedin: "https://www.linkedin.com/in/leo-wei/",
   },
-
   {
     id: 10,
-    name: "Rachel Renegado",
-    affiliation: "Senior Software Advisor",
-    image: rachel_jpg,
-    linkedin: "https://www.linkedin.com/in/rachel-renegado-544409201",
-    email: "",
+    name: "Janita Mahum",
+    affiliation: "VP Design",
+    image: janita_jpg,
+    linkedin: "https://www.linkedin.com/in/janita-mahum-a5484a1b9/",
+  },
+  {
+    id: 13,
+    name: "Fedor Prokopchuk",
+    affiliation: "Business Strategy Advisor",
+    image: fedor_jpg,
+    linkedin: "https://www.linkedin.com/in/fedor-prokopchuk-707668a6/",
+  },
+  {
+    id: 4,
+    name: "Carol Wang",
+    affiliation: "VP Community",
+    image: carol_jpg,
+    linkedin: "https://www.linkedin.com/in/carol-wang3116/",
+  },
+  {
+    id: 5,
+    name: "Enioluwafe Balogun",
+    affiliation: "Co-VP Communications",
+    image: enioluwafe_jpg,
+    linkedin: "https://www.linkedin.com/in/enioluwafe-balogun/",
+  },
+  {
+    id: 11,
+    name: "Abod Abbas",
+    affiliation: "Senior Technical Advisor",
+    image: abod_jpg,
+    linkedin: "https://www.linkedin.com/in/abod-a-427274198/",
+  },
+  {
+    id: 6,
+    name: "Estefy Caballero",
+    affiliation: "Co-VP Communications",
+    image: estefy_jpeg,
+    linkedin: "https://www.linkedin.com/in/estefy-caballero-864aab25a",
+  },
+    {
+    id: 16,
+    name: "Ben Schmidt",
+    affiliation: "VP Development",
+    image: ben_jpg,
+    linkedin: "https://www.linkedin.com/in/benschmidt2343/",
   },
 
   {
-    id: 11,
-    name: "Mya Gill",
-    affiliation: "VP Community",
-    image: mya_jpg,
-    linkedin: "https://www.linkedin.com/in/mya-gill-71a8451b8/",
-    email: "mailto:mya.gill@ucalgary.ca",
-  },
-  {
-    id: 12,
+    id: 7,
     name: "Labib Afshar Ahmed",
     affiliation: "VP Finance",
     image: labib_jpg,
     linkedin: "https://www.linkedin.com/in/labib-afsar-ahmed/",
-    email: "mailto:labibafsar.ahmed@ucalgary.ca",
   },
   {
-    id: 13,
-    name: "Nathan Karbonik",
-    affiliation: "VP External",
-    image: nathan_jpg,
-    linkedin: "https://www.linkedin.com/in/nathan-karbonik/",
-    email: "mailto:nathan.karbonik@ucalgary.ca",
+    id: 12,
+    name: "Sajwal Pageni",
+    affiliation: "VP Strategy",
+    image: sajwal_jpg,
+    linkedin: "https://www.linkedin.com/in/sajwal/",
+  },
+  {
+    id: 8,
+    name: "Maheen Raza",
+    affiliation: "Co-VP Events",
+    image: maheen_jpg,
+    linkedin: "https://www.linkedin.com/in/maheen-raza-40b780229/",
   },
   {
     id: 14,
-    name: "Sareen Singh",
-    affiliation: "Advisor",
-    image: sareen_jpg,
-    linkedin:
-      "https://www.linkedin.com/in/sareen-singh-309b55173/?originalSubdomain=ca",
-    email: "mailto:sareen.singh@ucalgary.ca",
-  },
-  {
-    id: 15,
     name: "Joel Happ",
     affiliation: "Founder & Chairman",
     image: joel_jpg,
     linkedin: "https://www.linkedin.com/in/joel-happ/",
-    email: "mailto:joel.happ1@ucalgary.ca",
+  },
+  {
+    id: 15,
+    name: "Rajpreet Gill",
+    affiliation: "Board Member",
+    image: rajpreet_jpg,
+    linkedin: "https://www.linkedin.com/in/rajpreet-gill/",
   },
 ];
 
@@ -170,6 +155,5 @@ export const projectManagers: TeamMember[] = [
     affiliation: "Apply now at techstartucalgary.com/apply!",
     image: blank_jpg,
     linkedin: " ",
-    email: " ",
   },
 ];

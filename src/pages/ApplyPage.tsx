@@ -261,9 +261,9 @@ const ApplyPage = () => {
               role="Project Manager"
               description="Manage a project for 1 year and lead a team of 6-9
                     project members to create complex projects."
-              statusIsOpen={true}
-              closedStatus="Opens Spring 2023"
-              applicationLink="https://forms.gle/oH3i7eKkLg2WfXEXA"
+              statusIsOpen={false}
+              closedStatus="APPLICATIONS CLOSED"
+              applicationLink=""
               deadline=""
             />
 
@@ -272,7 +272,7 @@ const ApplyPage = () => {
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               statusIsOpen={false}
-              closedStatus="Opens Fall 2023"
+              closedStatus="APPLICATIONS CLOSED"
               applicationLink=""
               deadline=""
             />

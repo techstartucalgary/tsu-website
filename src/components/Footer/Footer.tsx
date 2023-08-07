@@ -9,7 +9,6 @@ import {
   faYoutube,
   faGithub,
   faTiktok,
-  faReddit
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => (

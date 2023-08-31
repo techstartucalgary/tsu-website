@@ -26,7 +26,7 @@ import wilbur_jpg from "../../images/team/Wilbur_Elbouni.jpg";
 import naman_jpg from "../../images/team/Naman_Bhoj.jpg";
 import lujaina_jpg from "../../images/team/Lujaina_ Eldelebshany.jpg";
 import hamza_jpg from "../../images/team/Hamza_Afzaal.jpg";
-import blank_jpg from "../../images/team/Blank.jpeg";
+// import blank_jpg from "../../images/team/Blank.jpeg";
 
 export type TeamMember = {
   id: number;

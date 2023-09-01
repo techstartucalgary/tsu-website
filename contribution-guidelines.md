@@ -28,8 +28,6 @@ Thank you for your interest in contributing to the Tech Start UCalgary website r
 | Name                 | GitHub Profile                                  |
 |----------------------|-------------------------------------------------|
 | Niyousha Raeesinejad | [Niyousha99](https://github.com/Niyousha99)     |
-| Sahiti Akella        | [Sahitiakella](https://github.com/Sahitiakella) |
-| Rachel Renegado      | [racherene](https://github.com/racherene)       |
 
 
 There are several types of contributions that you can make to this repository:

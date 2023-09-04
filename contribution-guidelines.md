@@ -29,7 +29,7 @@ Thank you for your interest in contributing to the Tech Start UCalgary website r
 | Name                 | GitHub Profile                                  |
 |----------------------|-------------------------------------------------|
 | Niyousha Raeesinejad | [Niyousha99](https://github.com/Niyousha99)     |
-
+| Isaiah Asaolu | [Isaiah](https://github.com/IsaiahA21)     |
 
 There are several types of contributions that you can make to this repository:
 

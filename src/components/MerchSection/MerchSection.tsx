@@ -1,22 +1,20 @@
 import React from "react";
-import MerchCollection from "./Merch";
-import useViewport from "../UseViewport";
 import * as S from "./MerchSection.styles";
-import { merchList } from "./MerchData";
 import MerchTeamPhoto from "../../images/merch/MerchTeamPhoto.jpeg";
 
 const MerchSection = () => {
-  const { width } = useViewport();
-  const defaultView = width > 600 ? true : false;
+  // const { width } = useViewport();
+  // const defaultView = width > 600 ? true : false;
 
-  const getMerch = () => {
-    return merchList;
-  };
+  // const getMerch = () => {
+  //   return merchList;
+  // };
 
   return (
-    <S.MerchSection>
+    <S.MerchSection data-aos="fade-up" >
       <img src={MerchTeamPhoto} alt="Tech Start Execs Merch Photo" />
-      <MerchCollection merchItems={getMerch()} desktopView={defaultView} />
+      <h1 style={{ fontFamily: "consolas" }}>STAY TUNED</h1>
+      {/* <MerchCollection merchItems={getMerch()} desktopView={defaultView} /> */}
     </S.MerchSection>
   );
 };

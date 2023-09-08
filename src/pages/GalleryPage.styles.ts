@@ -8,14 +8,13 @@ export const GalleryPage = styled.div`
   line-height: 1.5;
   height: 100%;
   padding: 0;
-  background-color: white;
+  background: var(--dark-background);
   white-space: normal;
   overflow: hidden;
   position: relative;
 `;
 
 export const GalleryPageHeader = styled.div`
-  background-image: var(--dark-background);
   padding: 3em 0;
   text-align: center;
   color: white;

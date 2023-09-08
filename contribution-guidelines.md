@@ -22,6 +22,7 @@ Thank you for your interest in contributing to the Tech Start UCalgary website r
 | -------------------- | ------------------------------------------- |
 | Joel Happ            | [Jhappy77](https://github.com/Jhappy77)     |
 | Niyousha Raeesinejad | [Niyousha99](https://github.com/Niyousha99) |
+| Ben Schmidt          | [Anidion](https://github.com/Anidion)       |
 
 ## 👩‍💻Active Contributors
 

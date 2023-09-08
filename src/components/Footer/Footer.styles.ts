@@ -17,6 +17,7 @@ export const Footer = styled.div`
 
   @media (max-width: 900px) {
     display: block;
+
   }
 
   @media (max-width: 320px) {
@@ -39,6 +40,12 @@ export const Copyright = styled.p`
   text-align: center;
   padding: 0rem 1rem;
   color: white;
+`;
+
+export const SponsorIFrameDiv = styled(Copyright)`
+  @media (max-width: 900px) {
+    margin-bottom: 2rem;
+  }
 `;
 
 export const HoverButtonDiv = styled.div`

@@ -15,7 +15,7 @@ export const highlightedEvents: Event[] = [
   {
     title: "Final Showcase 2023",
     description:
-      "We wrapped up Tech Start's 2022/2023 season with our final showcase event, where our project teams wowed our industry judges, sponsors, and special guests with their innovative solutions, delivering their pitches with confidence and enthusiasm. ",
+      "We wrapped up Tech Start's 2022/2023 season with our final showcase event, where our project teams wowed our industry judges, sponsors, and special guests with their innovative solutions!",
     date: "Saturday, April 29, 2023",
     time: "12:00 - 3:30PM",
     image: FinalShowcase2023_img,

@@ -1,6 +1,7 @@
 import Interim_Showcase_Judges_img from "../../images/events/Interim_Showcase_Judges.jpeg";
 import MicrosoftTechTalk_img from "../../images/events/MicrosoftTechTalk.jpeg";
 import FinalShowcase2023_img from "../../images/events/final_showcase.jpg";
+import LaunchNight2023_img from "../../images/events/Launch_night-2023.jpeg";
 
 export interface Event {
   title: string;
@@ -12,6 +13,15 @@ export interface Event {
 }
 
 export const highlightedEvents: Event[] = [
+  {
+    title: "Launch Night 2023",
+    description:
+      "We’re excited to begin this new Tech Start Season! Our project managers will be pitching their incredible projects awaiting your involvement - Join us to learn more about TechStart, and to meet this year’s Tech Start executive team.",
+    date: "Friday, September 22, 2023",
+    time: "5:30 - 7:00PM",
+    image: LaunchNight2023_img,
+    link: "",
+  },
   {
     title: "Final Showcase 2023",
     description:

@@ -18,11 +18,13 @@ Thank you for your interest in contributing to the Tech Start UCalgary website r
 
 ## 👩‍⚖️ Admins
 
-| Name                 | GitHub Profile                              |
-| -------------------- | ------------------------------------------- |
-| Joel Happ            | [Jhappy77](https://github.com/Jhappy77)     |
-| Niyousha Raeesinejad | [Niyousha99](https://github.com/Niyousha99) |
-| Ben Schmidt          | [Anidion](https://github.com/Anidion)       |
+| Name                 | GitHub Profile                                    |
+| -------------------- | ------------------------------------------------- |
+| Joel Happ            | [Jhappy77](https://github.com/Jhappy77)           |
+| Niyousha Raeesinejad | [Niyousha99](https://github.com/Niyousha99)       |
+| Ben Schmidt          | [Anidion](https://github.com/Anidion)             |
+| Wai Ka Wong          | [Wongsitu](https://github.com/wongsitu/)          |
+| Abod Abbas           | [Abodthedude25](https://github.com/abodthedude25) |
 
 ## 👩‍💻Active Contributors
 

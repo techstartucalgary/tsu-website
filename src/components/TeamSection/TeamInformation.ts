@@ -9,7 +9,6 @@ import nathan_jpg from "../../images/team/Nathan_Karbonik.jpg";
 import ana_jpg from "../../images/team/Ana_Laura.jpg";
 import estefy_jpeg from "../../images/team/Estefy_Caballero.jpeg";
 import enioluwafe_jpg from "../../images/team/Enioluwafe_Balogun.jpg";
-import maham_jpg from "../../images/team/Maham_Jamal.jpg";
 import maheen_jpg from "../../images/team/Maheen_Raza.jpg";
 import leo_jpg from "../../images/team/Leo_Wei.jpg";
 import rachel_jpg from "../../images/team/Rachel_Renegado.jpg";

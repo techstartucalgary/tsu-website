@@ -16,7 +16,7 @@ export const highlightedEvents: Event[] = [
   {
     title: "Launch Night 2023",
     description:
-      "We’re excited to begin this new Tech Start Season! Our project managers will be pitching their incredible projects awaiting your involvement - Join us to learn more about TechStart, and to meet this year’s Tech Start executive team.",
+      "We're excited to kick off a thrilling new Tech Start Season! Our Project Managers will be pitching their projects and they're eager for you to be part of the action. Join us to learn more about what TechStart has in store for the this year and connect with our Executive Team.",
     date: "Friday, September 22, 2023",
     time: "5:30 - 7:00PM",
     image: LaunchNight2023_img,

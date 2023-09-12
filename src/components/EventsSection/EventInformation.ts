@@ -20,7 +20,7 @@ export const highlightedEvents: Event[] = [
     date: "Friday, September 22, 2023",
     time: "5:30 - 7:00PM",
     image: LaunchNight2023_img,
-    link: "",
+    link: "https://www.instagram.com/p/CxGRmQ6LVGw/?hl=en",
   },
   {
     title: "Final Showcase 2023",

@@ -191,7 +191,7 @@ export const executiveTeam: TeamMember[] = [
     name: "Mahan Jamal",
     affiliation: "Media Commissioner",
     image: Mahan_jpg,
-    linkedin: "https://www.linkedin.com/",
+    linkedin: "https://www.linkedin.com/in/maham-jamal-126a04258",
   }
 ];
 
@@ -229,7 +229,7 @@ export const projectManagers: TeamMember[] = [
     name: "Naman Bhoj",
     affiliation: "Project Manager",
     image: naman_jpg,
-    linkedin: "https://www.linkedin.com/in/naman-b-3032a6154//",
+    linkedin: "https://www.linkedin.com/in/naman-bhoj-3032a6154",
   },
   {
     id: 5,

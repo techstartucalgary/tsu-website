@@ -25,7 +25,7 @@ import wilbur_jpg from "../../images/team/Wilbur_Elbouni.jpg";
 import naman_jpg from "../../images/team/Naman_Bhoj.jpg";
 import lujaina_jpg from "../../images/team/Lujaina_ Eldelebshany.jpg";
 import hamza_jpg from "../../images/team/Hamza_Afzaal.jpg";
-// import blank_jpg from "../../images/team/Blank.jpeg";
+import Mahan_jpg from "../../images/team/Maham_Jamal.jpg";
 
 export type TeamMember = {
   id: number;
@@ -186,6 +186,13 @@ export const executiveTeam: TeamMember[] = [
     image: rajpreet_jpg,
     linkedin: "https://www.linkedin.com/in/rajpreet-gill/",
   },
+  {
+    id: 21,
+    name: "Mahan Jamal",
+    affiliation: "Media Commissioner",
+    image: Mahan_jpg,
+    linkedin: "https://www.linkedin.com/",
+  }
 ];
 
 export const projectManagers: TeamMember[] = [

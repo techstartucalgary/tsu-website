@@ -25,7 +25,7 @@ import wilbur_jpg from "../../images/team/Wilbur_Elbouni.jpg";
 import naman_jpg from "../../images/team/Naman_Bhoj.jpg";
 import lujaina_jpg from "../../images/team/Lujaina_ Eldelebshany.jpg";
 import hamza_jpg from "../../images/team/Hamza_Afzaal.jpg";
-// import blank_jpg from "../../images/team/Blank.jpeg";
+import Maham_jpg from "../../images/team/Maham_Jamal.jpg";
 
 export type TeamMember = {
   id: number;
@@ -92,51 +92,57 @@ export const executiveTeam: TeamMember[] = [
     image: enioluwafe_jpg,
     linkedin: "https://www.linkedin.com/in/enioluwafe-balogun/",
   },
-
   {
     id: 8,
+    name: "Maham Jamal",
+    affiliation: "Media Commissioner",
+    image: Maham_jpg,
+    linkedin: "https://www.linkedin.com/in/maham-jamal-126a04258",
+  },
+  {
+    id: 9,
     name: "Leo Wei",
     affiliation: "Co-VP Events",
     image: leo_jpg,
     linkedin: "https://www.linkedin.com/in/leo-wei/",
   },
   {
-    id: 9,
+    id: 10,
     name: "Maheen Raza",
     affiliation: "Co-VP Events",
     image: maheen_jpg,
     linkedin: "https://www.linkedin.com/in/maheen-raza-40b780229/",
   },
   {
-    id: 10,
+    id: 11,
     name: "Labib Afshar Ahmed",
     affiliation: "VP Finance",
     image: labib_jpg,
     linkedin: "https://www.linkedin.com/in/labib-afsar-ahmed/",
   },
   {
-    id: 11,
+    id: 12,
     name: "Janita Mahum",
     affiliation: "VP Design",
     image: janita_jpg,
     linkedin: "https://www.linkedin.com/in/janita-mahum-a5484a1b9/",
   },
   {
-    id: 12,
+    id: 13,
     name: "Ben Schmidt",
     affiliation: "VP Development",
     image: ben_jpg,
     linkedin: "https://www.linkedin.com/in/benschmidt2343/",
   },
   {
-    id: 13,
+    id: 14,
     name: "Abod Abbas",
     affiliation: "Senior Technical Advisor",
     image: abod_jpg,
     linkedin: "https://www.linkedin.com/in/abod-a-427274198/",
   },
   {
-    id: 14,
+    id: 15,
     name: "Wai Ka Wong",
     affiliation: "Technical Advisor",
     image: waika_jpg,
@@ -144,28 +150,28 @@ export const executiveTeam: TeamMember[] = [
   },
 
   {
-    id: 15,
+    id: 16,
     name: "Sajwal Pageni",
     affiliation: "VP Strategy",
     image: sajwal_jpg,
     linkedin: "https://www.linkedin.com/in/sajwal/",
   },
   {
-    id: 16,
+    id: 17,
     name: "Fedor Prokopchuk",
     affiliation: "Business Strategy Advisor",
     image: fedor_jpg,
     linkedin: "https://www.linkedin.com/in/fedor-prokopchuk-707668a6/",
   },
   {
-    id: 17,
+    id: 18,
     name: "Sahiti Akella",
     affiliation: "Web Developer",
     image: sahiti_jpg,
     linkedin: "https://www.linkedin.com/in/sahiti-akella/",
   },
   {
-    id: 18,
+    id: 19,
     name: "Isaiah Asaolu",
     affiliation: "Web Developer",
     image: isaiah_jpg,
@@ -173,19 +179,20 @@ export const executiveTeam: TeamMember[] = [
   },
 
   {
-    id: 19,
+    id: 20,
     name: "Joel Happ",
     affiliation: "Founder & Chairman",
     image: joel_jpg,
     linkedin: "https://www.linkedin.com/in/joel-happ/",
   },
   {
-    id: 20,
+    id: 21,
     name: "Rajpreet Gill",
     affiliation: "Board Member",
     image: rajpreet_jpg,
     linkedin: "https://www.linkedin.com/in/rajpreet-gill/",
   },
+
 ];
 
 export const projectManagers: TeamMember[] = [
@@ -222,7 +229,7 @@ export const projectManagers: TeamMember[] = [
     name: "Naman Bhoj",
     affiliation: "Project Manager",
     image: naman_jpg,
-    linkedin: "https://www.linkedin.com/in/naman-b-3032a6154//",
+    linkedin: "https://www.linkedin.com/in/naman-bhoj-3032a6154",
   },
   {
     id: 5,

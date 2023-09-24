@@ -40,13 +40,4 @@ export const highlightedEvents: Event[] = [
     image: MicrosoftTechTalk_img,
     link: "https://youtu.be/a9MefhxE81w",
   },
-  {
-    title: "Interim Showcase 2023",
-    description:
-      "We had our first interim showcase at Platform Calgary, where our 6 amazing development teams pitched their projects to industry judges!",
-    date: "Saturday, January 14, 2023",
-    time: "11:00 AM – 2:00 PM",
-    image: Interim_Showcase_Judges_img,
-    link: "https://www.linkedin.com/posts/tech-start-ucalgary_industry-software-softwareengineer-activity-7020268933291155456-wr59/?utm_source=share&utm_medium=member_desktop",
-  },
 ];

@@ -1,4 +1,3 @@
-import Interim_Showcase_Judges_img from "../../images/events/Interim_Showcase_Judges.jpeg";
 import MicrosoftTechTalk_img from "../../images/events/MicrosoftTechTalk.jpeg";
 import FinalShowcase2023_img from "../../images/events/final_showcase.jpg";
 import LaunchNight2023_img from "../../images/events/Launch_night_2023.jpeg";

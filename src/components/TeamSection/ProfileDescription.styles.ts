@@ -9,7 +9,7 @@ export const ProfileDescriptionDiv = styled.div`
   font-family: "Inter", Tahoma, sans-serif;
 
   & > h3 {
-    color: var(--secondary-grey);
+    color: white;
     font-size: 1.5rem;
     font-weight: 900;
     margin: 0%;
@@ -21,7 +21,7 @@ export const ProfileDescriptionDiv = styled.div`
 
   & > h4 {
     margin: 0%;
-    color: var(--secondary-grey);
+    color: white;
     font-weight: 300;
     font-size: 1.1rem;  
     @media (max-width: 950px) and (min-width: 650px) {

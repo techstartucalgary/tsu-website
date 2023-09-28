@@ -8,17 +8,17 @@ export const TeamPage = styled.div`
   line-height: 1.5;
   height: 100%;
   padding: 0;
-  background-color: white;
+  background-image: var(--dark-background);;
   white-space: normal;
   overflow: hidden;
   position: relative;
 `;
 
 export const TeamPageHeader = styled.div`
-  background-image: var(--dark-background);
+  background-color: white;
   padding: 3em 0;
   text-align: center;
-  color: white;
+  color: var(--secondary-grey);
 
   & > h1 {
     font-size: var(--title-size);

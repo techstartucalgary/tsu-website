@@ -84,14 +84,14 @@ const ApplyPage = () => {
               creativity, make awesome connections, and grow as a professional!
             </p>
           </div>
-          <div style={{display: "flex", justifyContent: "center"}}>
-             <HoverButton
-                  mode={ButtonMode.DARK}
-                  glowOnHover={false}
-                  link={"https://linktr.ee/techstartuofc"}
-                  text={"Check out our Link Tree!"}
-                  linkIsInternal={false}
-                />
+          <div style={{ display: "flex", justifyContent: "center" }}>
+            <HoverButton
+              mode={ButtonMode.DARK}
+              glowOnHover={false}
+              link={"https://linktr.ee/techstartuofc"}
+              text={"Check out our Link Tree!"}
+              linkIsInternal={false}
+            />
           </div>
         </div>
       </div>
@@ -251,9 +251,9 @@ const ApplyPage = () => {
               role="Project Member"
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project for 1 academic year."
-              statusIsOpen={false}
+              statusIsOpen={true}
               closedStatus="Opens Fall 2023"
-              applicationLink="https://forms.gle/yxVK3NRCyTjn1TxQ7"
+              applicationLink="https://forms.gle/Su73KRH6e5XF9BFd6"
               deadline=""
             />
 
@@ -261,9 +261,9 @@ const ApplyPage = () => {
               role="Project Manager"
               description="Manage a project for 1 year and lead a team of 6-9
                     project members to create complex projects."
-              statusIsOpen={true}
-              closedStatus="Opens Spring 2023"
-              applicationLink="https://forms.gle/oH3i7eKkLg2WfXEXA"
+              statusIsOpen={false}
+              closedStatus="APPLICATIONS CLOSED"
+              applicationLink=""
               deadline=""
             />
 
@@ -272,7 +272,7 @@ const ApplyPage = () => {
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               statusIsOpen={false}
-              closedStatus="Opens Fall 2023"
+              closedStatus="APPLICATIONS CLOSED"
               applicationLink=""
               deadline=""
             />

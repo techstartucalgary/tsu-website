@@ -43,7 +43,7 @@ const TeamPage = () => {
         >
           <HoverButton
             mode={ButtonMode.GRADIENT}
-            glowOnHover={true}
+            glowOnHover={false}
             link="/apply"
             text={"Apply Now"}
             linkIsInternal={true}

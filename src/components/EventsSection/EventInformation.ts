@@ -1,6 +1,6 @@
-import Interim_Showcase_Judges_img from "../../images/events/Interim_Showcase_Judges.jpeg";
 import MicrosoftTechTalk_img from "../../images/events/MicrosoftTechTalk.jpeg";
 import FinalShowcase2023_img from "../../images/events/final_showcase.jpg";
+import LaunchNight2023_img from "../../images/events/Launch_night_2023.jpeg";
 
 export interface Event {
   title: string;
@@ -12,6 +12,15 @@ export interface Event {
 }
 
 export const highlightedEvents: Event[] = [
+  {
+    title: "Launch Night 2023",
+    description:
+      "We kick off a thrilling new Tech Start Season! Our Project Managers pitched their projects and they're eager for you to be part of the action. Join us to learn more about what TechStart has in store for this year.",
+    date: "Friday, September 22, 2023",
+    time: "5:30 - 7:00PM",
+    image: LaunchNight2023_img,
+    link: "https://www.instagram.com/p/CxjG39nSR0G/?hl=en",
+  },
   {
     title: "Final Showcase 2023",
     description:
@@ -29,14 +38,5 @@ export const highlightedEvents: Event[] = [
     time: "6:30 PM – 8:00 PM",
     image: MicrosoftTechTalk_img,
     link: "https://youtu.be/a9MefhxE81w",
-  },
-  {
-    title: "Interim Showcase 2023",
-    description:
-      "We had our first interim showcase at Platform Calgary, where our 6 amazing development teams pitched their projects to industry judges!",
-    date: "Saturday, January 14, 2023",
-    time: "11:00 AM – 2:00 PM",
-    image: Interim_Showcase_Judges_img,
-    link: "https://www.linkedin.com/posts/tech-start-ucalgary_industry-software-softwareengineer-activity-7020268933291155456-wr59/?utm_source=share&utm_medium=member_desktop",
   },
 ];

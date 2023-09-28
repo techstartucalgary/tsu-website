@@ -8,6 +8,8 @@ import { ImageListItem } from "@mui/material";
 import { GalleryImage, GalleryImages } from "./PhotoInformation";
 import { shuffleArray } from 'utility/Helpers';
 
+const images = shuffleArray(GalleryImages);
+
 const PhotoGallery = () => {
   /*
  const [images, setImages] = useState(GalleryImages);
@@ -43,7 +45,6 @@ const PhotoGallery = () => {
   // set defaultView flag according to screen width cutoff value
   const { width } = useViewport(); // get screen width
   const cols = width > 600 ? 3 : 2;
-  const images = shuffleArray(GalleryImages);
 
   return (
     <ImageList variant="woven" cols={cols} gap={10}>

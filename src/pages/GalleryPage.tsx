@@ -51,7 +51,7 @@ const GalleryPage = () => {
         </motion.div>
       </S.GalleryPageHeader>
       <div
-        style={{ margin: "0 2%" }}
+        style={{ margin: "auto 2%" }}
         data-aos="fade-up"
         data-aos-offset="200"
         data-aos-delay="50"

@@ -164,7 +164,7 @@ export const GalleryImages: GalleryImage[] = [
         src: outing,
     },
     {
-        id: 25,
+        id: 26,
         title: "Blockchain Panel",
         src: blockchain,
     },

@@ -166,13 +166,20 @@ export const executiveTeam: TeamMember[] = [
   },
   {
     id: 18,
+    name: "Brian Nguyen",
+    affiliation: "Senior Web Developer",
+    image: brian_jpg,
+    linkedin: "https://www.linkedin.com/in/nguyennbrian/",
+  },
+  {
+    id: 19,
     name: "Sahiti Akella",
     affiliation: "Web Developer",
     image: sahiti_jpg,
     linkedin: "https://www.linkedin.com/in/sahiti-akella/",
   },
   {
-    id: 19,
+    id: 20,
     name: "Isaiah Asaolu",
     affiliation: "Web Developer",
     image: isaiah_jpg,
@@ -180,25 +187,18 @@ export const executiveTeam: TeamMember[] = [
   },
 
   {
-    id: 20,
+    id: 21,
     name: "Joel Happ",
     affiliation: "Founder & Chairman",
     image: joel_jpg,
     linkedin: "https://www.linkedin.com/in/joel-happ/",
   },
   {
-    id: 21,
+    id: 22,
     name: "Rajpreet Gill",
     affiliation: "Board Member",
     image: rajpreet_jpg,
     linkedin: "https://www.linkedin.com/in/rajpreet-gill/",
-  },
-  {
-    id: 22,
-    name: "Brian Nguyen",
-    affiliation: "Senior Website Developer",
-    image: brian_jpg,
-    linkedin: "https://www.linkedin.com/in/nguyennbrian/",
   },
 ];
 

@@ -26,6 +26,7 @@ import naman_jpg from "../../images/team/Naman_Bhoj.jpg";
 import lujaina_jpg from "../../images/team/Lujaina_ Eldelebshany.jpg";
 import hamza_jpg from "../../images/team/Hamza_Afzaal.jpg";
 import Maham_jpg from "../../images/team/Maham_Jamal.jpg";
+import brian_jpg from "../../images/team/Brian_Nguyen.jpg";
 
 export type TeamMember = {
   id: number;
@@ -192,7 +193,13 @@ export const executiveTeam: TeamMember[] = [
     image: rajpreet_jpg,
     linkedin: "https://www.linkedin.com/in/rajpreet-gill/",
   },
-
+  {
+    id: 22,
+    name: "Brian Nguyen",
+    affiliation: "Senior Website Developer",
+    image: brian_jpg,
+    linkedin: "https://www.linkedin.com/in/rajpreet-gill/",
+  },
 ];
 
 export const projectManagers: TeamMember[] = [

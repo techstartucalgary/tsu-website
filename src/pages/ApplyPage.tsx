@@ -251,8 +251,8 @@ const ApplyPage = () => {
               role="Project Member"
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project for 1 academic year."
-              statusIsOpen={true}
-              closedStatus="Opens Fall 2023"
+              statusIsOpen={false}
+              closedStatus="APPLICATIONS CLOSED"
               applicationLink="https://forms.gle/Su73KRH6e5XF9BFd6"
               deadline=""
             />

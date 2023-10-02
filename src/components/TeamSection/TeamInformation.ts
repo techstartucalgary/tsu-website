@@ -198,7 +198,7 @@ export const executiveTeam: TeamMember[] = [
     name: "Brian Nguyen",
     affiliation: "Senior Website Developer",
     image: brian_jpg,
-    linkedin: "https://www.linkedin.com/in/rajpreet-gill/",
+    linkedin: "https://www.linkedin.com/in/nguyennbrian/",
   },
 ];
 

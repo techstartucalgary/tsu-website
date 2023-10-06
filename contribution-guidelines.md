@@ -48,9 +48,9 @@ There are several types of contributions that you can make to this repository:
 To get started contributing to the Tech Start UCalgary website, please follow these steps:
 
 1. Clone the repository to your local machine.
-2. Switch to our `dev` branch: `git checkout dev`.
-3. Pull our latest dev changes so that you are up to date with the branch: `git pull origin dev`.
-4. Create and switch to your own branch (which should be a descriptive name of your feature change): `git checkout -b name-of-feature-change`.
+2. Make sure you're on our `main` branch: `git checkout main`.
+3. Pull our latest changes so that you are up to date with the branch: `git pull origin main`.
+4. Create and switch to your own branch (which should be a descriptive name of your feature change): `git checkout -b your-name/name-of-feature-change`.
 5. Make your code changes.
 6. Add all your changed files: `git add --all`. Alternatively, you can add selected files as well.
 7. Sign off and commit your changes along with a short and informative description of changes : `git commit -s`.
@@ -58,8 +58,9 @@ To get started contributing to the Tech Start UCalgary website, please follow th
 9. Create new pull request on GitHub. Make sure to set your target branch to `dev`, assign yourself as the assignee, and include a brief description of your changes.
 10. Once your PR has been created, go to your issue, click on "Linked pull requests", and select your PR to link to your issue. You can refer to this [past PR](https://github.com/Tech-Start-UCalgary/tsu-website/pull/303) as an example.
 11. Add all relevant reviewers to your PR; at minimum this should include the Presidents, VP Communications, VP Development, any any relevant active contributors. You will be able to merge your PR once you receive at least 2 approvals from your reviewers.
-12. After you have merged your PR to `dev`, please delete your remote branch.
-13. An admin will review and deploy your changes to the website by pushing your changes from `dev` to the `main` branch.
+12. Firebase will automatically host your branch so everyone can test it. Please ensure you do thorough testing to catch any bugs.
+13. An admin will review and deploy your changes to the website by pushing your changes from your branch to the `main` branch.
+14. After you have merged your PR to `main`, please delete your remote branch.
 
 ## 🧪 How to Build, Test, and Run
 

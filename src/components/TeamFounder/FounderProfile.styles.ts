@@ -11,6 +11,7 @@ export const ProfileDiv = styled.div<ProfileStyleProps>`
   display: block;
   align-items: center;
   justify-content: center;
+
   width: ${(props) => props.mobileView && "100%"};
   max-width: ${(props) => props.mobileView && "400px"};
   margin-bottom: ${(props) => props.mobileView && 0};

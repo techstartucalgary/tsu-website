@@ -4,6 +4,8 @@ import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import { motion } from "framer-motion";
 import * as S from "./TeamPage.styles";
+import FounderSection from "../components/TeamFounder/FounderSection";
+
 
 const TeamPage = () => {
   return (
@@ -50,6 +52,8 @@ const TeamPage = () => {
           />
         </motion.div>
       </S.TeamPageHeader>
+      {/* founder section */}
+      <FounderSection />
       <TeamSection />
     </S.TeamPage>
   );

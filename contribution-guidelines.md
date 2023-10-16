@@ -28,11 +28,11 @@ Thank you for your interest in contributing to the Tech Start UCalgary website r
 
 ## 👩‍💻Active Contributors
 
-| Name                 | GitHub Profile                                  |
-| -------------------- | ----------------------------------------------- |
-| Sahiti Akella        | [Sahitiakella](https://github.com/Sahitiakella) |
-| Isaiah Asaolu        | [Isaiah](https://github.com/IsaiahA21)          |
-| Brian Nguyen         | [brian-ngyn](https://github.com/brian-ngyn)     |
+| Name          | GitHub Profile                                  |
+| ------------- | ----------------------------------------------- |
+| Sahiti Akella | [Sahitiakella](https://github.com/Sahitiakella) |
+| Isaiah Asaolu | [Isaiah](https://github.com/IsaiahA21)          |
+| Brian Nguyen  | [brian-ngyn](https://github.com/brian-ngyn)     |
 
 There are several types of contributions that you can make to this repository:
 
@@ -56,7 +56,7 @@ To get started contributing to the Tech Start UCalgary website, please follow th
 9. Create new pull request on GitHub. Make sure to set your target branch to `dev`, assign yourself as the assignee, and include a brief description of your changes.
 10. Once your PR has been created, go to your issue, click on "Linked pull requests", and select your PR to link to your issue. You can refer to this [past PR](https://github.com/Tech-Start-UCalgary/tsu-website/pull/303) as an example.
 11. Add all relevant reviewers to your PR; at minimum this should include the Presidents, VP Communications, VP Development, any any relevant active contributors. You will be able to merge your PR once you receive at least 2 approvals from your reviewers.
-12. Firebase will automatically host your branch so everyone can test it. Please ensure you do thorough testing to catch any bugs.
+12. Vercel will automatically host your branch so everyone can test it. Please ensure you do thorough testing to catch any bugs.
 13. An admin will review and deploy your changes to the website by pushing your changes from your branch to the `main` branch.
 14. After you have merged your PR to `main`, please delete your remote branch.
 

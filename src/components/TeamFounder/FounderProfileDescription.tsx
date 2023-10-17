@@ -1,4 +1,4 @@
-import { ProfileDescriptionDiv } from "./FounderProfileDescription.styles";
+import { ProfileDescriptionDiv } from "../TeamSection/ProfileDescription.styles";
 
 interface ProfileDescriptionProps {
   name: string;
@@ -11,7 +11,7 @@ const ProfileDescription = (props: ProfileDescriptionProps) => {
     <ProfileDescriptionDiv>
       <h3>{props.name}</h3>
       <h4>{props.affiliation}</h4>
-      <br/>
+      <br />
       <h4>{props.description}</h4>
     </ProfileDescriptionDiv>
   );

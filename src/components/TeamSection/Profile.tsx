@@ -5,19 +5,38 @@ import ProfileDescription from "./ProfileDescription";
 import SocialMedia from "components/SocialMedia/SocialMedia";
 import { SocialMediaColor } from "../../utility/SharedStyles";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
+import { FounderInfo } from "../TeamFounder/FounderInformation";
+import FounderProfileDescription from "../TeamFounder/FounderProfileDescription";
 
-type ProfileProps = {
+//common props for both team and founder profile
+type CommonProfileProps = {
   key: number;
-  member: TeamMember;
   mobileView: boolean;
   profilePic: string;
   alt: string;
+};
+
+// props for team profile
+type ProfileProps = CommonProfileProps & {
+  member: TeamMember;
   isExec: boolean;
 };
 
-const Profile = (props: ProfileProps) => {
+// props for founder profile
+type FounderProfileProps = CommonProfileProps & {
+  member: FounderInfo;
+};
+
+// handle whether to render team or founder profile
+const Profile = (props: ProfileProps | FounderProfileProps) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const preventDragHandler = (e: any) => e.preventDefault();
+
+  //  type assertion to tell TypeScript that isExec exists for ProfileProps
+  const isExecForProfile = (props as ProfileProps).isExec;
+
+  //type assertion to tell TypeScript that description exists for FounderProfileProps
+  const descriptionForFounder = (props as FounderProfileProps).member.description;
 
   return (
     <S.ProfileDiv
@@ -33,12 +52,15 @@ const Profile = (props: ProfileProps) => {
           onDragStart={preventDragHandler}
         />
       </S.ProfileIconDiv>
-
+      
       <S.LinksSection
+      
         backgroundColor={
-          props.isExec
-            ? SocialMediaColor.ToggleGreen
-            : SocialMediaColor.ToggleBlue
+          isExecForProfile !== undefined
+            ? isExecForProfile
+              ? SocialMediaColor.ToggleBlue
+              : SocialMediaColor.ToggleGreen
+            : SocialMediaColor.ToggleGreen
         }
       >
         <SocialMedia
@@ -47,10 +69,20 @@ const Profile = (props: ProfileProps) => {
           link={props.member.linkedin}
         />
       </S.LinksSection>
-      <ProfileDescription
-        name={props.member.name}
-        affiliation={props.member.affiliation}
-      />
+      
+      {/*If description exist, then use FounderProfileDescription */}
+      {descriptionForFounder ? (
+        <FounderProfileDescription
+          name={props.member.name}
+          affiliation={props.member.affiliation}
+          description={descriptionForFounder}
+        />
+      ) : (
+          <ProfileDescription
+            name={props.member.name}
+            affiliation={props.member.affiliation}
+          />
+      )}
     </S.ProfileDiv>
   );
 };

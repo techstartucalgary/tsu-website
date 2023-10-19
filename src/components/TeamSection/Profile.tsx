@@ -39,10 +39,10 @@ const Profile = (props: ProfileProps | FounderProfileProps) => {
   const descriptionForFounder = (props as FounderProfileProps).member.description;
 
   return (
-    <S.ProfileDiv
+    <S.MainProfileContainer
       data-aos={!props.mobileView && "zoom-in"}
       data-aos-duration={!props.mobileView && "1000"}
-      mobileView={props.mobileView}
+    // mobileView={props.mobileView}
     >
       <S.ProfileIconDiv>
         <img
@@ -52,9 +52,9 @@ const Profile = (props: ProfileProps | FounderProfileProps) => {
           onDragStart={preventDragHandler}
         />
       </S.ProfileIconDiv>
-      
+
       <S.LinksSection
-      
+
         backgroundColor={
           isExecForProfile !== undefined
             ? isExecForProfile
@@ -69,7 +69,7 @@ const Profile = (props: ProfileProps | FounderProfileProps) => {
           link={props.member.linkedin}
         />
       </S.LinksSection>
-      
+
       {/*If description exist, then use FounderProfileDescription */}
       {descriptionForFounder ? (
         <FounderProfileDescription
@@ -78,12 +78,12 @@ const Profile = (props: ProfileProps | FounderProfileProps) => {
           description={descriptionForFounder}
         />
       ) : (
-          <ProfileDescription
-            name={props.member.name}
-            affiliation={props.member.affiliation}
-          />
+        <ProfileDescription
+          name={props.member.name}
+          affiliation={props.member.affiliation}
+        />
       )}
-    </S.ProfileDiv>
+    </S.MainProfileContainer>
   );
 };
 

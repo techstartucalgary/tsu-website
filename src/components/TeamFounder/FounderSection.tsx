@@ -1,6 +1,5 @@
 import React from "react";
 import { founder } from "../TeamSection/TeamInformation"
-import * as S from "../TeamSection/Team.styles";
 import useViewport from "../UseViewport";
 import * as F from "./FounderSection.styles";
 

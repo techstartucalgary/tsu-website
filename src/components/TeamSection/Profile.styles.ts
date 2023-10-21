@@ -5,13 +5,6 @@ interface ProfileStyleProps {
   mobileView: boolean;
 }
 
-export const MainProfileContainer = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 2.5rem;
-`;
-
 export const ProfileDiv = styled.div<ProfileStyleProps>`
   width: clamp(150px, 20%, 300px);
   margin: 0 1% 2.5rem;
@@ -45,6 +38,10 @@ export const LinksSection = styled.div<{ backgroundColor: SocialMediaColor }>`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: aboslute;
+  bottom: 0;
+  right: 0;
 
   @media (min-width: 320px) and (max-width: 350px) {
     transform: translate(300%, -80%);

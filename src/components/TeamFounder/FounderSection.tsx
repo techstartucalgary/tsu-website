@@ -1,28 +1,25 @@
 import React from "react";
-import { founder } from "./FounderInformation";
-// import FounderProfile from "./FounderPro file";
-import Profile  from "components/TeamSection/Profile";
+import { founder } from "../TeamSection/TeamInformation"
 import * as S from "../TeamSection/Team.styles";
-import * as T from "../TeamSection/TeamSection.styles";
 import useViewport from "../UseViewport";
-
+import * as F from "./FounderSection.styles";
 
 const FounderSection = () => {
 
   const { width } = useViewport(); // get screen width
   const defaultView = width > 600 ? true : false;
   return (
-    <T.TeamSection>
-      <S.TeamContainer mobileView={!defaultView}>
-        <Profile
-          key={founder.id}
-          member={founder}
-          profilePic={founder.image}
-          alt={founder.image}
-          mobileView={!defaultView}
-        />
-      </S.TeamContainer>
-    </T.TeamSection>
+    <F.FounderContainer mobileView={!defaultView}>
+
+      <F.FounderImageContainer>
+        <F.FounderImg src={founder.image} />
+      </F.FounderImageContainer>
+      <F.Paragraph >
+        {founder.name}<br />
+        {founder.affiliation}<br /><br />
+        {founder.description}<br />
+      </F.Paragraph>
+    </F.FounderContainer>
   );
 };
 

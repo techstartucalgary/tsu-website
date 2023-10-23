@@ -3,13 +3,9 @@ import styled from "styled-components/macro";
 interface TeamStyledProps {
     mobileView: boolean;
 }
-export const Paragraph = styled.p`
-  color: white;
-`;
 
 export const FounderImg = styled.img`
   border-radius: 80%;
-
 `;
 
 export const FounderImageContainer = styled.div`

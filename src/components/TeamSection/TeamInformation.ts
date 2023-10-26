@@ -46,7 +46,7 @@ export const founder: FounderInfo = {
   id: 1,
   name: "Joel Happ",
   affiliation: "Founder & Chairman",
-  description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  description: "During the heart of the pandemic and his undergrad years of software engineering, Joel founded Tech Start UCalgary, envisioning a collaborative hub for students and tech enthusiasts to ideate, create, and grow together outside the classroom. His aim was to foster a vibrant, inclusive community where innovation meets passion, laying the groundwork for tech-driven progress within the University of Calgary!",
   image: joel_jpg,
   linkedin: "https://www.linkedin.com/in/joel-happ/",
 };

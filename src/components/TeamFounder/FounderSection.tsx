@@ -2,7 +2,7 @@ import React from "react";
 import { founder } from "../TeamSection/TeamInformation"
 import useViewport from "../UseViewport";
 import * as F from "./FounderSection.styles";
-import  "../../App.css";
+import "../../App.css";
 
 const FounderSection = () => {
 
@@ -14,11 +14,11 @@ const FounderSection = () => {
       <F.FounderImageContainer>
         <F.FounderImg src={founder.image} />
       </F.FounderImageContainer>
-      <p className="regularText--white" >
-        {founder.name}<br />
-        {founder.affiliation}<br /><br />
+      <div className="regularText--white" >
+        <span style={{ fontWeight: "bold", fontSize: "30px" }}>{founder.name}</span><br />
+        <span style={{ fontStyle: "italic" }}>{founder.affiliation}</span><br /><br />
         {founder.description}<br />
-    </p >
+      </div >
     </F.FounderContainer>
   );
 };

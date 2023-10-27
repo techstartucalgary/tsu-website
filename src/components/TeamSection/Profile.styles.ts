@@ -11,7 +11,6 @@ export const ProfileDiv = styled.div<ProfileStyleProps>`
   display: block;
   align-items: center;
   justify-content: center;
-
   width: ${(props) => props.mobileView && "100%"};
   max-width: ${(props) => props.mobileView && "400px"};
   margin-bottom: ${(props) => props.mobileView && 0};
@@ -39,6 +38,10 @@ export const LinksSection = styled.div<{ backgroundColor: SocialMediaColor }>`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  position: aboslute;
+  bottom: 0;
+  right: 0;
 
   @media (min-width: 320px) and (max-width: 350px) {
     transform: translate(300%, -80%);

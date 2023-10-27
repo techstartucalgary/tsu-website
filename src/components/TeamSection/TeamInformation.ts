@@ -1,4 +1,3 @@
-import joel_jpg from "../../images/team/Joel_Happ.jpeg";
 import fedor_jpg from "../../images/team/Fedor_Prokopchuk.jpg";
 import tyler_jpg from "../../images/team/Tyler_Chan.jpg";
 import niyousha_jpg from "../../images/team/Niyousha_Raeesinejad.jpg";
@@ -27,6 +26,7 @@ import lujaina_jpg from "../../images/team/Lujaina_ Eldelebshany.jpg";
 import hamza_jpg from "../../images/team/Hamza_Afzaal.jpg";
 import Maham_jpg from "../../images/team/Maham_Jamal.jpg";
 import brian_jpg from "../../images/team/Brian_Nguyen.jpg";
+import joel_jpg from "../../images/team/Joel_Happ.jpeg";
 
 export type TeamMember = {
   id: number;
@@ -34,6 +34,21 @@ export type TeamMember = {
   affiliation: string; // Affiliation refers to roles and projects for executives and PMs respectively
   image: string;
   linkedin: string;
+};
+
+type FounderDescription = {
+  description: string;
+};
+
+export type FounderInfo = TeamMember & FounderDescription;
+
+export const founder: FounderInfo = {
+  id: 1,
+  name: "Joel Happ",
+  affiliation: "Founder & Chairman",
+  description: "During the heart of the pandemic and his undergrad years of software engineering, Joel founded Tech Start UCalgary, envisioning a collaborative hub for students and tech enthusiasts to ideate, create, and grow together outside the classroom. His aim was to foster a vibrant, inclusive community where innovation meets passion, laying the groundwork for tech-driven progress within the University of Calgary!",
+  image: joel_jpg,
+  linkedin: "https://www.linkedin.com/in/joel-happ/",
 };
 
 export const executiveTeam: TeamMember[] = [
@@ -185,16 +200,8 @@ export const executiveTeam: TeamMember[] = [
     image: isaiah_jpg,
     linkedin: "https://www.linkedin.com/in/isaiah-a-2001/",
   },
-
   {
     id: 21,
-    name: "Joel Happ",
-    affiliation: "Founder & Chairman",
-    image: joel_jpg,
-    linkedin: "https://www.linkedin.com/in/joel-happ/",
-  },
-  {
-    id: 22,
     name: "Rajpreet Gill",
     affiliation: "Board Member",
     image: rajpreet_jpg,

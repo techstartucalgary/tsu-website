@@ -6,18 +6,23 @@ import SocialMedia from "components/SocialMedia/SocialMedia";
 import { SocialMediaColor } from "../../utility/SharedStyles";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
+
+// props for team profile
 type ProfileProps = {
   key: number;
-  member: TeamMember;
   mobileView: boolean;
   profilePic: string;
   alt: string;
+  member: TeamMember;
   isExec: boolean;
 };
+
+
 
 const Profile = (props: ProfileProps) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const preventDragHandler = (e: any) => e.preventDefault();
+
 
   return (
     <S.ProfileDiv
@@ -35,6 +40,7 @@ const Profile = (props: ProfileProps) => {
       </S.ProfileIconDiv>
 
       <S.LinksSection
+
         backgroundColor={
           props.isExec
             ? SocialMediaColor.ToggleGreen
@@ -47,6 +53,7 @@ const Profile = (props: ProfileProps) => {
           link={props.member.linkedin}
         />
       </S.LinksSection>
+
       <ProfileDescription
         name={props.member.name}
         affiliation={props.member.affiliation}

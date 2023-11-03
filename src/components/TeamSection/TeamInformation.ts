@@ -213,14 +213,14 @@ export const projectManagers: TeamMember[] = [
   {
     id: 0,
     name: "Aarsh Shah",
-    affiliation: "Project Manager",
+    affiliation: "CampusBuddy",
     image: aarsh_jpg,
     linkedin: "https://www.linkedin.com/in/aarsh-shah-0a84161a9/",
   },
   {
     id: 1,
     name: "Hilton Luu",
-    affiliation: "Project Manager",
+    affiliation: "Loyalty Rewards Platform for Small Businesses",
     image: hilton_jpg,
     linkedin: "https://www.linkedin.com/in/hilton-luu/",
   },
@@ -241,7 +241,7 @@ export const projectManagers: TeamMember[] = [
   {
     id: 4,
     name: "Naman Bhoj",
-    affiliation: "Project Manager",
+    affiliation: "FYR - For Your Research",
     image: naman_jpg,
     linkedin: "https://www.linkedin.com/in/naman-bhoj-3032a6154",
   },

@@ -234,7 +234,7 @@ export const projectManagers: TeamMember[] = [
   {
     id: 3,
     name: "Wilbur Elbouni",
-    affiliation: "Project Manager",
+    affiliation: "Achevio",
     image: wilbur_jpg,
     linkedin: "https://www.linkedin.com/in/wilbur-elbouni-3ba923213/",
   },

@@ -220,7 +220,7 @@ export const projectManagers: TeamMember[] = [
   {
     id: 1,
     name: "Hilton Luu",
-    affiliation: "Loyalty Rewards Platform for Small Businesses",
+    affiliation: "Loyalty Rewards",
     image: hilton_jpg,
     linkedin: "https://www.linkedin.com/in/hilton-luu/",
   },

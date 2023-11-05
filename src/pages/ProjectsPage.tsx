@@ -3,7 +3,9 @@ import Lottie from "react-lottie";
 import { teamProjectLottieOptions } from "utility/LottieOptions";
 import { motion } from "framer-motion";
 import { PastProjects } from "components/ProjectSection/ProjectData";
+import { TopProjects } from "components/ProjectSection/ProjectData";
 import ProjectSection from "components/ProjectSection/ProjectSection";
+import TopProjectSection from "components/ProjectSection/TopProjectSection";
 import Divider from "components/Divider";
 import ProjectKeywordsSection from "components/ProjectSection/ProjectKeywordsSection";
 import { NewlineText } from "utility/Helpers";
@@ -116,6 +118,12 @@ const ProjectsPage = () => {
       <S.WrapDiv>
         <iframe src="https://github.com/sponsors/techstartucalgary/card" title="Sponsor techstartucalgary" height="225" width="600" style={{ borderRadius: 20, border: 0 }}></iframe>
       </S.WrapDiv>
+      <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
+        Featured Projects
+      </h2>
+      <Divider />
+      <TopProjectSection topProjects={TopProjects} />
+
       <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
         Past Projects
       </h2>

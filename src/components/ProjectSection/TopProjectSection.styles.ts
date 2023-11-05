@@ -27,6 +27,7 @@ export const TopProjectSectionDiv = styled.div`
 
   @media (max-width: 1055px) {
     margin-left: 8%;
+    grid-gap: 20px;
   }
 
   @media (max-width: 600px) {

@@ -1,6 +1,6 @@
 import styled from "styled-components/macro";
 
-export const TopProjectSectionDiv = styled.div`
+export const FeaturedProjectSectionDiv = styled.div`
   margin: 5% 5% 10% 5%;
 
   justify-content: center;

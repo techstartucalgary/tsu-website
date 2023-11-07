@@ -4,114 +4,170 @@ interface FeaturedProjectProps {
   isVisible?: boolean;
 }
 
-export const ProjectContainer = styled.div`
+export const FeaturedProjectContainer = styled.div`
   border-radius: 20px;
   position: relative;
-  justify-content: center;
-  width: 95%;
+  justify-content: space-between;
+  width: 100%;
   padding-top: 56.25%; /* 16:9 Aspect Ratio */
-  background: linear-gradient(
-    to top,
-    var(--turquoise-blue),
-    var(--turquoise-green)
-  );
-  margin-bottom: 10%;
+  background: white;
+  padding-top: 35%;
+  margin-bottom: 2%;
+
+  @media (max-width: 900px) {
+    width: 50%;
+    height:250px;
+    margin: 0 auto;
+  }
+  @media (max-width: 660px) {
+    width: 60%;
+    height:280px;
+  }
+  @media (max-width: 500px) {
+    width: 70%;
+    height:270px;
+  }
+  @media (max-width: 400px) {
+    width: 80%;
+  }
+ 
 `;
 
-export const ProjectTitle = styled.div<FeaturedProjectProps>`
+export const FeaturedProjectTitle = styled.div<FeaturedProjectProps>`
   position: absolute;
-  text-align: center;
+  text-align: left;
   font-size: 2rem;
   font-weight: bold;
-  font-style: italic;
   color: black;
   top: 20%;
   left: 10%;
   right: 10%;
   transition: 0.3s ease-in-out;
-  opacity: ${(props) => (props.isVisible ? 1 : 0)};
 
-  @media (max-width: 450px) {
-    font-size: 3.5vw;
-    bottom: 25%;
+  @media (min-width: 900px) and (max-width:1100px) {
+       top: 9%;
   }
-  @media (max-width: 525px) {
-    top: 15%;
+   @media (max-width: 900px) {
+    font-size: 1.5rem;
+    top: 10%;
   }
+  @media (min-width: 250px) and (max-width:320px) {
+     font-size: 1.5rem;
+  }
+  
 `;
 
-export const ProjectContent = styled.div<FeaturedProjectProps>`
-  /* We can change this, but position should be absolute still */
+export const FeaturedProjectYear = styled.div<FeaturedProjectProps>`
   position: absolute;
-  text-align: center;
+  text-align: left;
+  font-style: italic;
   font-size: 1rem;
   color: black;
-  top: 40%;
+  top: 33%;
   left: 10%;
   right: 10%;
   transition: 0.3s ease-in-out;
-  opacity: ${(props) => (props.isVisible ? 1 : 0)};
 
-  @media (max-width: 450px) {
-    font-size: 3.5vw;
+  @media (min-width: 900px) and (max-width:1100px) {
+       top: 25%;
+  }
+   @media (max-width: 900px) {
+    font-size: 1rem;
+    top: 18%;
+  }
+  @media (min-width: 250px) and (max-width:320px) {
+     font-size: 0.8rem;
+     top: 19%;
+  }
+ 
+`;
+
+
+
+export const FeaturedProjectContent = styled.div<FeaturedProjectProps>`
+  /* We can change this, but position should be absolute still */
+  position: absolute;
+  text-align: left;
+  font-size: 1rem;
+  color: black;
+  top: 45%;
+  left: 10%;
+  right: 15%; 
+  width: 35%;
+
+  transition: 0.3s ease-in-out;
+
+   @media (min-width: 900px) and (max-width:930px) {
+        font-size: 0.8rem;
+  }
+    @media (max-width: 900px) {
+    font-size: 0.9rem;
+    top: 25%;
+    width: 90%;
+  }
+   @media (max-width: 660px) {
+    font-size: 0.8rem;
+  }
+   @media (max-width: 500px) {
+    font-size: 0.7rem;
+  }
+ 
+`;
+
+
+export const FeaturedProjectImageContainer = styled.a`
+  position: absolute;
+  justify-content:center;
+  align-items:center;
+  top: 0;
+  height: 65%;
+  width: 40%;
+  margin-left:55%;
+  margin-top: 7%;
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+  
+
+   @media (max-width: 900px) {
+        height: 40%;
+        margin-left:5%;
+        margin-top: 75%;
+        width: 100%;
+        margin-left:0%;
+  }
+  @media (max-width: 800px) {
+        margin-top: 80%;
+  }
+  @media (max-width: 730px) {
+        margin-top: 85%;
+  }
+  @media (max-width: 660px) {
+        height: 40%;
+        margin-top: 85%;
+  }
+  @media (max-width: 550px) {
+        height: 35%;
+        margin-top: 95%;
   }
   @media (max-width: 500px) {
-    top: 35%;
+        margin-top: 90%;
+  }
+  @media (max-width: 400px) {
+        margin-top: 85%;
+  }
+  @media (max-width: 350px) {
+        margin-top: 95%;
+  }
+   @media (max-width: 325px) {
+        margin-top: 105%;
   }
 `;
 
-export const ProjectImage = styled.img<FeaturedProjectProps>`
+export const FeaturedProjectImage = styled.img<FeaturedProjectProps>`
   position: absolute;
   top: 0;
-  left: 0;
   height: 100%;
   width: 100%;
-  border-radius: 20px;
   transition: 0.3s ease-in-out;
-  opacity: ${(props) => (props.isVisible ? 1 : 0)};
-`;
-
-export const ProjectButton = styled.a`
-  background-color: var(--secondary-grey);
-  border-radius: 30px;
-  width: 40%;
-  height: 30px;
-  padding-top: 7px;
-  margin: auto;
-  margin-top: 20px;
-  transition: 200ms;
-  display: block;
-  transition: 0.3s ease-in-out;
-  color: white;
-  text-decoration: none;
-
-  &: hover {
-    @media (min-width: 600px) {
-      color: var(--turquoise-blue);
-      box-shadow: 2px 4px var(--primary-green);
-      transform: translateY(-0.2em);
-    }
-  }
-
-  &: focus {
-    background-color: black;
-  }
-
-  @media (max-width: 450px) {
-    position: relative;
-    top: -30px;
-    padding: 0px 20px;
-    font-size: 5vw;
-    transform: scale(0.5);
-    background-color: var(--secondary-grey);
-    border-radius: 30px;
-    width: 50%;
-    height: 40px;
-    padding-top: 7px;
-    margin: auto;
-    margin-top: 15%;
-    transition: 200ms;
-    display: block;
-    transition: 0.3s ease-in-out;
-  }
+  opacity: 1;
 `;

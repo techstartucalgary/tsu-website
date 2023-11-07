@@ -29,6 +29,7 @@ export type Project = {
   pmName: string;
   description: string;
   year: string;
+  featured: boolean;
 };
 
 const website = new URL("https://tech-start-website.web.app/");
@@ -45,6 +46,7 @@ export const PastProjects: Project[] = [
     year: "",
     description:
       "A cross-platform application for music enthusiasts to get notified of the latest concerts of their favorite artists.",
+    featured: false,
   },
   {
     id: 1,
@@ -55,6 +57,7 @@ export const PastProjects: Project[] = [
     pmName: "Ben Schmidt",
     year: "",
     description: "A platform for employers and applicants to connect.",
+    featured: false,
   },
   {
     id: 2,
@@ -66,111 +69,10 @@ export const PastProjects: Project[] = [
     year: "",
     description:
       "Lifeline uses AI to extract and organize deadlines from course documents for you to download.",
+    featured: false,
   },
   {
     id: 3,
-    name: "AiRM",
-    github: "https://github.com/techstartucalgary/RoboticArm",
-    pmName: "Leo Wei",
-    website: website,
-    image: airm,
-    year: "",
-    description:
-      "Robotic arm using reinforcement learning to help robots learn and adapt to new environments.",
-  },
-  {
-    id: 4,
-    name: "TechstArcade",
-    github: "https://github.com/techstartucalgary/techstarcade",
-    pmName: "Madeline Mazurek",
-    website: website,
-    image: techstarcade,
-    year: "",
-    description: "Retro style mini games in a arcade style chrome extension.",
-  },
-  {
-    id: 5,
-    name: "NoteAId",
-    github: "https://github.com/Tech-Start-UCalgary/NoteAId",
-    website: website,
-    image: noteAid,
-    pmName: "Mahdi Varposhti",
-    year: "",
-    description:
-      "A mobile app that helps students with studying for exams by summarizing their handwritten notes",
-  },
-  {
-    id: 6,
-    name: "Where To?",
-    github: "https://github.com/Tech-Start-UCalgary/decision-frontend",
-    website: website,
-    image: whereTo,
-    pmName: "Vivian Huynh",
-    year: "",
-    description:
-      "An app that helps groups make decisions when planning a social gathering by voting",
-  },
-  {
-    id: 7,
-    name: "Snowbot",
-    github: "",
-    website: website,
-    image: snowbot,
-    pmName: "Ali Siddiqi",
-    year: "",
-    description: "A robot that autonomously clears snow on sidewalks",
-  },
-  {
-    id: 8,
-    name: "OneApp",
-    github: "https://github.com/glassthunder/TECHSTART",
-    pmName: "Felix Vaughan",
-    website: website,
-    image: oneHub,
-    year: "",
-    description:
-      "A hub for your social media that shows you info and stats from your favorite sites. Switching apps is so 2020!",
-  },
-  {
-    id: 9,
-    name: "SupplyMe",
-    github: "https://github.com/Tech-Start-UCalgary/SupplyMe",
-    pmName: "Darryl Huët",
-    website: website,
-    image: supplyMe,
-    year: "",
-    description:
-      "An app that uses the Ethereum blockchain with QR Codes to track package and parcel transfers",
-  },
-  {
-    id: 10,
-    name: "Resume Tracker",
-    github: "",
-    pmName: "Daniel Rashidian",
-    website: website,
-    image: resumeTracker,
-    year: "",
-    description:
-      "Resume Tracker rates your resume and provides feedback on how to improve it",
-  },
-  {
-    id: 11,
-    name: "TSU Website",
-    github: "https://github.com/Tech-Start-UCalgary/tsu-website",
-    pmName: "Joel Happ, Niyousha Raeesinejad",
-    website: website,
-    image: techStartWebsite,
-    year: "",
-    description:
-      "We built this website from scratch with React, TypeScript, and a Django backend!",
-  },
-];
-
-export const CurrentProjects: Project[] = [];
-
-export const TopProjects: Project[] = [
-  {
-    id: 0,
     name: "EasyMeal",
     github: "https://github.com/techstartucalgary/EasyMeal",
     website: website,
@@ -179,9 +81,45 @@ export const TopProjects: Project[] = [
     year: "2022-2023",
     description:
       "EasyMeal generates recipes for you based on your budget and tastes.",
+    featured: true,
   },
   {
-    id: 1,
+    id: 4,
+    name: "AiRM",
+    github: "https://github.com/techstartucalgary/RoboticArm",
+    pmName: "Leo Wei",
+    website: website,
+    image: airm,
+    year: "",
+    description:
+      "Robotic arm using reinforcement learning to help robots learn and adapt to new environments.",
+    featured: false,
+  },
+  {
+    id: 5,
+    name: "TechstArcade",
+    github: "https://github.com/techstartucalgary/techstarcade",
+    pmName: "Madeline Mazurek",
+    website: website,
+    image: techstarcade,
+    year: "",
+    description: "Retro style mini games in a arcade style chrome extension.",
+    featured: false,
+  },
+  {
+    id: 6,
+    name: "NoteAId",
+    github: "https://github.com/Tech-Start-UCalgary/NoteAId",
+    website: website,
+    image: noteAid,
+    pmName: "Mahdi Varposhti",
+    year: "",
+    description:
+      "A mobile app that helps students with studying for exams by summarizing their handwritten notes",
+    featured: false,
+  },
+  {
+    id: 7,
     name: "Aquavolution",
     github: "https://github.com/Tech-Start-UCalgary/Aquavolution",
     website: website,
@@ -190,5 +128,79 @@ export const TopProjects: Project[] = [
     year: "2021-2022",
     description:
       "Born a tiny fish, try to survive among other predators, be careful of the human waste in the ocean though!",
+    featured: true,
+  },
+  {
+    id: 8,
+    name: "Where To?",
+    github: "https://github.com/Tech-Start-UCalgary/decision-frontend",
+    website: website,
+    image: whereTo,
+    pmName: "Vivian Huynh",
+    year: "",
+    description:
+      "An app that helps groups make decisions when planning a social gathering by voting",
+    featured: false,
+  },
+  {
+    id: 9,
+    name: "Snowbot",
+    github: "",
+    website: website,
+    image: snowbot,
+    pmName: "Ali Siddiqi",
+    year: "",
+    description: "A robot that autonomously clears snow on sidewalks",
+    featured: false,
+  },
+  {
+    id: 10,
+    name: "OneApp",
+    github: "https://github.com/glassthunder/TECHSTART",
+    pmName: "Felix Vaughan",
+    website: website,
+    image: oneHub,
+    year: "",
+    description:
+      "A hub for your social media that shows you info and stats from your favorite sites. Switching apps is so 2020!",
+    featured: false,
+  },
+  {
+    id: 11,
+    name: "SupplyMe",
+    github: "https://github.com/Tech-Start-UCalgary/SupplyMe",
+    pmName: "Darryl Huët",
+    website: website,
+    image: supplyMe,
+    year: "",
+    description:
+      "An app that uses the Ethereum blockchain with QR Codes to track package and parcel transfers",
+    featured: false,
+  },
+  {
+    id: 12,
+    name: "Resume Tracker",
+    github: "",
+    pmName: "Daniel Rashidian",
+    website: website,
+    image: resumeTracker,
+    year: "",
+    description:
+      "Resume Tracker rates your resume and provides feedback on how to improve it",
+    featured: false,
+  },
+  {
+    id: 13,
+    name: "TSU Website",
+    github: "https://github.com/Tech-Start-UCalgary/tsu-website",
+    pmName: "Joel Happ, Niyousha Raeesinejad",
+    website: website,
+    image: techStartWebsite,
+    year: "",
+    description:
+      "We built this website from scratch with React, TypeScript, and a Django backend!",
+    featured: false,
   },
 ];
+
+export const CurrentProjects: Project[] = [];

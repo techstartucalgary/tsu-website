@@ -17,7 +17,7 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "aos": "^2.3.4",
-    "axios": "^1.4.0",
+    "axios": "^1.6.0",
     "cors": "^2.8.5",
     "express": "^4.18.2",
     "framer-motion": "6.5.1",

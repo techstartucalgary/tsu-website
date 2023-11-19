@@ -10,6 +10,7 @@ export const MerchItemDiv = styled.div<MerchItemStyleProps>`
   display: block;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 
   width: ${(props) => props.mobileView && "100%"};
   max-width: ${(props) => props.mobileView && "400px"};

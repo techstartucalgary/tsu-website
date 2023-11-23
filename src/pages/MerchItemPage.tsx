@@ -78,7 +78,7 @@ const merchItemPage = () => {
                   ))}
                 </div>
               </S.merchItemColors>
-              <button
+              <a
                 style={{
                   marginTop: "36px",
                   width: "75%",
@@ -88,10 +88,14 @@ const merchItemPage = () => {
                   border: "none",
                   padding: "12px",
                   borderRadius: "10px",
+                  textAlign: "center",
+                  textDecorationLine: "none",
                 }}
+                href="https://docs.google.com/forms/d/e/1FAIpQLSfpXS4hisen7IBvMGZnrfYWH600W_vpJwW0-b7blsA-D5Dq2w/viewform"
+                target="_blank"
               >
                 Buy Now
-              </button>
+              </a>
             </S.MerchItemItemDetails>
           </S.MerchItemPageContent>
         </S.MerchItemPageContainer>

@@ -27,12 +27,12 @@ const PhotoGallery = () => {
 
   const fetchImagesFromAlbum = async (apiKey: string, albumId: string) => {
     try {
-      const response = await axios.post(`https://photos.app.goo.gl/weUSkUpoxSRmALmo7`,
-        {
-          headers: {
-            Authorization: `Bearer ${apiKey}`,
-          },
-        }
+      const response = await axios.get(`https://photos.app.goo.gl/weUSkUpoxSRmALmo7`,
+        // {
+        //   headers: {
+        //     Authorization: `Bearer ${apiKey}`,
+        //   },
+        // }
       );
       console.log(response.data)
       // eslint-disable-next-line

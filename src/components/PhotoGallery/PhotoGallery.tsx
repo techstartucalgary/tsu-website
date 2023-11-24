@@ -1,7 +1,7 @@
 /*
 WIP: Pending oAuth verification from Google APIs 
 Fow now we're using a static folder for our gallery images
-*/
+
 import ImageList from '@mui/material/ImageList';
 import useViewport from 'components/UseViewport';
 import { ImageListItem } from "@mui/material";
@@ -28,7 +28,7 @@ const PhotoGallery = () => {
 
   const fetchImagesFromAlbum = async (apiKey: string, albumId: string) => {
     try {
-      const response = await axios.get(`https://photos.app.goo.gl/weUSkUpoxSRmALmo7?Api_key={apiKey}`);
+      const response = await axios.get(`https://photos.app.goo.gl/weUSkUpoxSRmALmo7?Api_key=${apiKey}`);
       console.log(response.data)
       // eslint-disable-next-line
       const images = response.data.mediaItems.map((item: any) => item.baseUrl);
@@ -56,8 +56,39 @@ const PhotoGallery = () => {
           />
         </ImageListItem>
       ))}
-    </ImageList>*/
+    </ImageList>
   );
+};
+
+export default PhotoGallery;
+*/
+/*
+WIP: Pending oAuth verification from Google APIs 
+Fow now we're using a static folder for our gallery images
+*/
+import ImageList from '@mui/material/ImageList';
+import useViewport from 'components/UseViewport';
+import { ImageListItem } from "@mui/material";
+import { GalleryImage, GalleryImages } from "./PhotoInformation";
+import { shuffleArray } from 'utility/Helpers';
+import axios from 'axios';
+import { useEffect, useState } from 'react';
+
+
+const PhotoGallery = () => {
+  const [photos, SetPhotos] = useState([]);// photos will be an array of objects
+
+  useEffect(() => {
+    const getGooglePhotos = async () => {
+      // intialize google api
+      await gapi.client.init({
+        apiKey: "AIzaSyBho8ig2yKNuA7qJlIDgjjVklzVmaFXWsw",
+        clientId: "881622108956-4hdip7te04f802jm4t54696v1f1ti9d0.apps.googleusercontent.com",
+        discoveryDocs: ['https://photoslibrary.googleapis.com/$discovery/rest?version=v1'],
+        scope: 'https://www.googleapis.com/auth/photoslibrary.readonly',
+      });
+    }
+  }, []);
 };
 
 export default PhotoGallery;

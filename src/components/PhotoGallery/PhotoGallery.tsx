@@ -18,7 +18,8 @@ const PhotoGallery = () => {
 
   useEffect(() => {
     // const clientID = '881622108956-r53m6cfoolr0c1kaidu4ib9eqkv3q3kk.apps.googleusercontent.com';
-    const apiKey = 'AIzaSyDpXsNzgNPKqTsBi6c9-dLCWoc1J-Ps58U';
+    let apiKey = 'AIzaSyDpXsNzgNPKqTsBi6c9-dLCWoc1J-Ps58U';
+    apiKey = "AIzaSyBho8ig2yKNuA7qJlIDgjjVklzVmaFXWsw";
     const albumId = 'SkVei5N56poqTh8g8';
 
     fetchImagesFromAlbum(apiKey, albumId);
@@ -27,13 +28,7 @@ const PhotoGallery = () => {
 
   const fetchImagesFromAlbum = async (apiKey: string, albumId: string) => {
     try {
-      const response = await axios.get(`https://photos.app.goo.gl/weUSkUpoxSRmALmo7`,
-        // {
-        //   headers: {
-        //     Authorization: `Bearer ${apiKey}`,
-        //   },
-        // }
-      );
+      const response = await axios.get(`https://photos.app.goo.gl/weUSkUpoxSRmALmo7?Api_key={apiKey}`);
       console.log(response.data)
       // eslint-disable-next-line
       const images = response.data.mediaItems.map((item: any) => item.baseUrl);

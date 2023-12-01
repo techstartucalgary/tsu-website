@@ -7,7 +7,7 @@ import useViewport from 'components/UseViewport';
 import { ImageListItem } from "@mui/material";
 import { GalleryImage, GalleryImages } from "./PhotoInformation";
 import { shuffleArray } from 'utility/Helpers';
-import axios from 'axios';
+// import axios from 'axios';
 import { useEffect, useRef, useState } from 'react';
 
 const images = shuffleArray(GalleryImages);
@@ -52,6 +52,8 @@ const PhotoGallery = () => {
       const start = () => {
         gapi.auth2.init({
           client_id: "881622108956-r53m6cfoolr0c1kaidu4ib9eqkv3q3kk.apps.googleusercontent.com",
+          scope: "email",
+
           // apiKey: "AIzaSyBho8ig2yKNuA7qJlIDgjjVklzVmaFXWsw",
           // clientId: "881622108956-4hdip7te04f802jm4t54696v1f1ti9d0.apps.googleusercontent.com",
           // discoveryDocs: ['https://photoslibrary.googleapis.com/$discovery/rest?version=v1'],

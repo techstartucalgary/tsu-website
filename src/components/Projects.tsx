@@ -2,27 +2,23 @@ import React, { useState } from "react";
 import * as S from "./Projects.styles";
 
 interface projectProps {
-  image?: string;
+  image: string;
   github: string;
   description: string;
   name: string;
 }
-function Project(props: projectProps) {
+const Project = (props: projectProps) => {
   const [descriptionIsVisible, setDescriptionIsVisible] = useState(false);
   const [nameIsVisible, setNameIsVisible] = useState(false);
 
-  function mouseLeave() {
-    setDescriptionIsVisible(false);
-    setNameIsVisible(false);
-  }
-  function mouseEnter() {
-    setDescriptionIsVisible(true);
-    setNameIsVisible(true);
+  const toggleProjectDetails = () => {
+    setDescriptionIsVisible(!descriptionIsVisible);
+    setNameIsVisible(!nameIsVisible);
   }
   return (
     <S.ProjectContainer
-      onMouseEnter={mouseEnter}
-      onMouseLeave={mouseLeave}
+      onMouseEnter={toggleProjectDetails}
+      onMouseLeave={toggleProjectDetails}
       data-aos="zoom-in"
       data-aos-duration="2500"
     >
@@ -32,10 +28,9 @@ function Project(props: projectProps) {
 
       <S.ProjectContent isVisible={descriptionIsVisible}>
         {props.description}
-        {props.github !== "" &&
-          <S.ProjectButton href={props.github} target="_blank">
-            <div>Visit Project</div>
-          </S.ProjectButton>
+        {<S.ProjectButton href={props.github} target="_blank">
+          <div>Visit Project</div>
+        </S.ProjectButton>
         }
       </S.ProjectContent>
     </S.ProjectContainer>

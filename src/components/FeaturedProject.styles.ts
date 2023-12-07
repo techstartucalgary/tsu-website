@@ -114,9 +114,17 @@ export const FeaturedProjectContent = styled.div<FeaturedProjectProps>`
  
 `;
 
-
-export const FeaturedProjectImageContainer = styled.a`
+export const FeaturedProjectImage = styled.img<FeaturedProjectProps>`
   position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  opacity: 1;
+`;
+
+export const FeaturedProjectMediaContainer = styled.div`
+ position: absolute;
   justify-content:center;
   align-items:center;
   top: 0;
@@ -161,13 +169,4 @@ export const FeaturedProjectImageContainer = styled.a`
    @media (max-width: 325px) {
         margin-top: 105%;
   }
-`;
-
-export const FeaturedProjectImage = styled.img<FeaturedProjectProps>`
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  transition: 0.3s ease-in-out;
-  opacity: 1;
 `;

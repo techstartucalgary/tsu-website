@@ -82,36 +82,36 @@ export const FeaturedProjectYear = styled.div<FeaturedProjectProps>`
  
 `;
 
-
-
 export const FeaturedProjectContent = styled.div<FeaturedProjectProps>`
-  /* We can change this, but position should be absolute still */
   position: absolute;
   text-align: left;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: black;
   top: 45%;
   left: 10%;
   right: 15%; 
   width: 35%;
-
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   transition: 0.3s ease-in-out;
 
-   @media (min-width: 900px) and (max-width:930px) {
-        font-size: 0.8rem;
-  }
-    @media (max-width: 900px) {
-    font-size: 0.9rem;
-    top: 25%;
+  @media (max-width: 900px) {
+    left: 50%;
+    transform: translateX(-50%);
     width: 90%;
+    top: 25%;
   }
-   @media (max-width: 660px) {
+
+  @media (min-width: 900px) and (max-width: 930px) {
     font-size: 0.8rem;
   }
-   @media (max-width: 500px) {
+  @media (max-width: 660px) {
+    font-size: 0.8rem;
+  }
+  @media (max-width: 500px) {
     font-size: 0.7rem;
   }
- 
 `;
 
 export const FeaturedProjectImage = styled.img<FeaturedProjectProps>`
@@ -123,26 +123,30 @@ export const FeaturedProjectImage = styled.img<FeaturedProjectProps>`
   opacity: 1;
 `;
 
-export const FeaturedProjectMediaContainer = styled.div`
- position: absolute;
-  justify-content:center;
-  align-items:center;
+export const FeaturedProjectMediaContainer = styled.div<FeaturedProjectProps>`
+  position: absolute;
+  justify-content: center;
+  align-items: center;
   top: 0;
   height: 65%;
   width: 40%;
-  margin-left:55%;
+  margin-left: 55%;
   margin-top: 7%;
   transition: 0.3s ease-in-out;
   opacity: 1;
+  z-index: 0;
   
 
-   @media (max-width: 900px) {
-        height: 40%;
-        margin-left:5%;
-        margin-top: 75%;
-        width: 100%;
-        margin-left:0%;
+    @media (max-width: 900px) {
+    height: 40%;
+    margin-left: 5%;
+    margin-top: auto; /* Auto means it will be positioned at the bottom */
+    width: 98.9%;
+    margin-left: 0%;
+    top: auto;
+    bottom: 0;
   }
+
   @media (max-width: 800px) {
         margin-top: 80%;
   }

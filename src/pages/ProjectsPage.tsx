@@ -118,9 +118,6 @@ const ProjectsPage = () => {
         </S.WrapDiv>
       </div>
       <ProjectKeywordsSection />
-      <S.WrapDiv>
-        <iframe src="https://github.com/sponsors/techstartucalgary/card" title="Sponsor techstartucalgary" height="225" width="600" style={{ borderRadius: 20, border: 0 }}></iframe>
-      </S.WrapDiv>
       <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
         Featured Projects
       </h2>

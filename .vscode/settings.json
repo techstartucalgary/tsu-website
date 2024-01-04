@@ -2,12 +2,10 @@
   "editor.formatOnSave": true,
   "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
+    "source.fixAll.eslint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": [
-    "Blobbie"
-  ],
+  "cSpell.words": ["Blobbie"],
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },

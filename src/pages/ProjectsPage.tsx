@@ -1,9 +1,11 @@
 import * as S from "./ProjectsPage.styles";
+import { useState } from "react";
 import Lottie from "react-lottie";
 import { teamProjectLottieOptions } from "utility/LottieOptions";
 import { motion } from "framer-motion";
 import { PastProjects } from "components/ProjectSection/ProjectData";
 import ProjectSection from "components/ProjectSection/ProjectSection";
+import FeaturedProjectSection from "components/ProjectSection/FeaturedProjectSection";
 import Divider from "components/Divider";
 import ProjectKeywordsSection from "components/ProjectSection/ProjectKeywordsSection";
 import { NewlineText } from "utility/Helpers";
@@ -12,6 +14,9 @@ import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import WinningTeamPhoto from "../images/final_showcase_winner.jpg";
 
 const ProjectsPage = () => {
+  const [featuredProjects] = useState(
+    PastProjects.filter((project) => project.featured === true)
+  );
   return (
     <S.ProjectsPage id="projectsPageTop">
       <S.ProjectsPageHeader>
@@ -113,9 +118,12 @@ const ProjectsPage = () => {
         </S.WrapDiv>
       </div>
       <ProjectKeywordsSection />
-      <S.WrapDiv>
-        <iframe src="https://github.com/sponsors/techstartucalgary/card" title="Sponsor techstartucalgary" height="225" width="600" style={{ borderRadius: 20, border: 0 }}></iframe>
-      </S.WrapDiv>
+      <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
+        Featured Projects
+      </h2>
+      <Divider />
+      <FeaturedProjectSection featuredProjects={featuredProjects} />
+
       <h2 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
         Past Projects
       </h2>

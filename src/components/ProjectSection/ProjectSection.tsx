@@ -1,6 +1,6 @@
 import * as S from "./ProjectSection.styles";
 import { Project } from "components/ProjectSection/ProjectData";
-import FeaturedProject from "../FeaturedProject";
+import Projects from "../Projects";
 import useViewport from "../UseViewport";
 
 import Carousel from "react-multi-carousel";
@@ -55,7 +55,7 @@ const ProjectSection = (props: ProjectSectionProps) => {
         >
           {props.projects.map((project) => {
             return (
-              <FeaturedProject
+              <Projects
                 image={project.image}
                 github={project.github}
                 name={project.name}
@@ -68,7 +68,7 @@ const ProjectSection = (props: ProjectSectionProps) => {
       ) : (
         props.projects.map((project) => {
           return (
-            <FeaturedProject
+            <Projects
               image={project.image}
               github={project.github}
               name={project.name}

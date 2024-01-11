@@ -5,9 +5,7 @@
     "source.fixAll.eslint": true
   },
   "editor.defaultFormatter": "esbenp.prettier-vscode",
-  "cSpell.words": [
-    "Blobbie"
-  ],
+  "cSpell.words": ["Blobbie"],
   "[typescriptreact]": {
     "editor.defaultFormatter": "vscode.typescript-language-features"
   },

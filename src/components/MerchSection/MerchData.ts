@@ -1,5 +1,5 @@
-import BlackHoodie from "../../images/merch/BlackHoodie.jpeg";
-import BlackShortSleeve from "../../images/merch/BlackShortSleeve.jpeg";
+import BasicCrewneck from "../../images/merch/BasicCrewneck.jpg";
+import BasicCrewneckWithSleevePrint from "../../images/merch/BasicCrewneckWithSleevePrint.jpg";
 
 export type MerchComponents = {
   id: number;
@@ -16,7 +16,7 @@ export const merchList: MerchComponents[] = [
     id: 0,
     item: "Original Basic Crewneck",
     price: "$29.95 CAD",
-    image: BlackHoodie,
+    image: BasicCrewneck,
     description: "placeholder descripton",
     sizes: ["S", "M", "L", "XL"],
     colors: ["Black"],
@@ -25,7 +25,7 @@ export const merchList: MerchComponents[] = [
     id: 1,
     item: "Crewneck with Sleeve Print",
     price: "$49.99 CAD",
-    image: BlackShortSleeve,
+    image: BasicCrewneckWithSleevePrint,
     description: "placeholder descripton",
     sizes: ["S", "M", "L", "XL"],
     colors: ["Black"],

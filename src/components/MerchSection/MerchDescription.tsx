@@ -8,8 +8,8 @@ interface MerchDescriptionProps {
 const MerchDescription = (props: MerchDescriptionProps) => {
   return (
     <MerchDescriptionDiv>
-      <h3>{props.item}</h3>
-      <h4>{props.price}</h4>
+      <h2>{props.item}</h2>
+      <h3>{props.price}</h3>
     </MerchDescriptionDiv>
   );
 };

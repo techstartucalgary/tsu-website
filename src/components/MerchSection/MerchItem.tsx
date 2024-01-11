@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React from "react";
 import * as S from "./MerchItem.styles";
 import { MerchComponents } from "./MerchData";
 import MerchDescription from "./MerchDescription";
-import { useHistory } from "react-router";
+import BuyNowButton from "components/BuyNowButton";
 
 export type MerchItemProps = {
   member: MerchComponents;
@@ -13,7 +13,6 @@ export type MerchItemProps = {
 const MerchItem = (props: MerchItemProps) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const preventDragHandler = (e: any) => e.preventDefault();
-  const history = useHistory();
 
   return (
     <>
@@ -21,7 +20,6 @@ const MerchItem = (props: MerchItemProps) => {
         data-aos={!props.mobileView && "zoom-in"}
         data-aos-duration={!props.mobileView && "1000"}
         mobileView={props.mobileView}
-        onClick={() => history.push(`/merch/item/${props.member.id}`)}
       >
         <S.MerchItemIconDiv>
           <img
@@ -32,6 +30,7 @@ const MerchItem = (props: MerchItemProps) => {
         </S.MerchItemIconDiv>
 
         <MerchDescription item={props.member.item} price={props.member.price} />
+        <BuyNowButton />
       </S.MerchItemDiv>
     </>
   );

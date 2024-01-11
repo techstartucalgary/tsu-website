@@ -14,8 +14,8 @@ export type MerchComponents = {
 export const merchList: MerchComponents[] = [
   {
     id: 0,
-    item: "Crewneck",
-    price: "$10.00 CAD",
+    item: "Original Basic Crewneck",
+    price: "$29.95 CAD",
     image: BlackHoodie,
     description: "placeholder descripton",
     sizes: ["S", "M", "L", "XL"],
@@ -23,8 +23,8 @@ export const merchList: MerchComponents[] = [
   },
   {
     id: 1,
-    item: "T-Shirt",
-    price: "$10.00 CAD",
+    item: "Crewneck with Sleeve Print",
+    price: "$49.99 CAD",
     image: BlackShortSleeve,
     description: "placeholder descripton",
     sizes: ["S", "M", "L", "XL"],

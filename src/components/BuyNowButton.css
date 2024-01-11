@@ -1,0 +1,12 @@
+.buy-now--button {
+  margin-top: 36px;
+  width: 75%;
+  background-color: #50abed;
+  color: white;
+  outline: none;
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  text-align: center;
+  text-decoration-line: none;
+}

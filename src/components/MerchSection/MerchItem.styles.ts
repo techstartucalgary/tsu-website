@@ -7,10 +7,10 @@ interface MerchItemStyleProps {
 export const MerchItemDiv = styled.div<MerchItemStyleProps>`
   width: clamp(150px, 20%, 300px);
   margin: 0 1% 2.5rem;
-  display: block;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
 
   width: ${(props) => props.mobileView && "100%"};
   max-width: ${(props) => props.mobileView && "400px"};

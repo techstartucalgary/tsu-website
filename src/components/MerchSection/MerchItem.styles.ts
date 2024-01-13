@@ -8,6 +8,7 @@ export const MerchItemDiv = styled.div<MerchItemStyleProps>`
   width: clamp(150px, 20%, 300px);
   margin: 0 1% 2.5rem;
   display: flex;
+  row-gap: 0.75rem;
   flex-direction: column;
   align-items: center;
   justify-content: center;

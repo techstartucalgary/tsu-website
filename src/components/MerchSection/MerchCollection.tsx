@@ -1,22 +1,23 @@
 import React from "react";
 import MerchItem from "./MerchItem";
 import * as S from "./Merch.styles";
-import { MerchComponents } from "./MerchData";
+import { type MerchProperties } from "./MerchData";
 
-type MerchProps = {
-  merchItems: MerchComponents[];
+type MerchCollectionProps = {
+  merchItems: MerchProperties[];
   desktopView: boolean;
 };
-const Merch = (props: MerchProps) => {
+
+const MerchCollection = (props: MerchCollectionProps) => {
   return (
     <S.MerchContainer mobileView={!props.desktopView}>
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-      {props.merchItems.map((member: any, index: number) => {
+      {props.merchItems.map((metchItem: MerchProperties) => {
         return (
           <MerchItem
-            key={index}
-            member={member}
-            profilePic={member.image}
+            key={metchItem.id}
+            member={metchItem}
+            profilePic={metchItem.image}
             mobileView={!props.desktopView}
           />
         );
@@ -25,4 +26,4 @@ const Merch = (props: MerchProps) => {
   );
 };
 
-export default React.memo(Merch);
+export default React.memo(MerchCollection);

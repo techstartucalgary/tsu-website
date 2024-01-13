@@ -1,7 +1,7 @@
 import BasicCrewneck from "../../images/merch/BasicCrewneck.jpg";
 import BasicCrewneckWithSleevePrint from "../../images/merch/BasicCrewneckWithSleevePrint.jpg";
 
-export type MerchComponents = {
+export type MerchProperties = {
   id: number;
   item: string;
   price: string;
@@ -11,7 +11,7 @@ export type MerchComponents = {
   colors: string[];
 };
 
-export const merchList: MerchComponents[] = [
+export const merchList: MerchProperties[] = [
   {
     id: 0,
     item: "Original Basic Crewneck",

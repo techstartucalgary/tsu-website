@@ -16,8 +16,8 @@ const MerchCollection = (props: MerchCollectionProps) => {
         return (
           <MerchItem
             key={metchItem.id}
-            member={metchItem}
-            profilePic={metchItem.image}
+            merch={metchItem}
+            image={metchItem.image}
             mobileView={!props.desktopView}
           />
         );

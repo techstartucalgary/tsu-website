@@ -6,9 +6,9 @@ import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
 export type MerchItemProps = {
-  member: MerchProperties;
+  merch: MerchProperties;
   mobileView: boolean;
-  profilePic: string;
+  image: string;
 };
 
 const MerchItem = (props: MerchItemProps) => {
@@ -23,13 +23,13 @@ const MerchItem = (props: MerchItemProps) => {
     >
       <S.MerchItemIconDiv>
         <img
-          src={props.profilePic}
-          key={props.member.id}
+          src={props.image}
+          key={props.merch.id}
           onDragStart={preventDragHandler}
         />
       </S.MerchItemIconDiv>
 
-      <MerchDescription item={props.member.item} price={props.member.price} />
+      <MerchDescription item={props.merch.item} price={props.merch.price} />
       <HoverButton
         mode={ButtonMode.GRADIENT}
         text={"Buy Now"}

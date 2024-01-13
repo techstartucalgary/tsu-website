@@ -4,8 +4,9 @@ export const MerchSection = styled.div`
   padding: 5vw;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5%;
+  padding-bottom: 10%;
   text-align: center;
+  height: 100%;
 
   & > h4 {
     font-size: var(--babyHeading-size);

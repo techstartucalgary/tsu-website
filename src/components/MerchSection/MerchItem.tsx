@@ -1,13 +1,14 @@
 import React from "react";
 import * as S from "./MerchItem.styles";
-import { MerchComponents } from "./MerchData";
+import { type MerchProperties } from "./MerchData";
 import MerchDescription from "./MerchDescription";
+import HoverButton from "components/HoverButton/HoverButton";
+import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
-type MerchItemProps = {
-  key: number;
-  member: MerchComponents;
+export type MerchItemProps = {
+  merch: MerchProperties;
   mobileView: boolean;
-  profilePic: string;
+  image: string;
 };
 
 const MerchItem = (props: MerchItemProps) => {
@@ -22,13 +23,19 @@ const MerchItem = (props: MerchItemProps) => {
     >
       <S.MerchItemIconDiv>
         <img
-          src={props.profilePic}
-          key={props.key}
+          src={props.image}
+          key={props.merch.id}
           onDragStart={preventDragHandler}
         />
       </S.MerchItemIconDiv>
 
-      <MerchDescription item={props.member.item} price={props.member.price} />
+      <MerchDescription item={props.merch.item} price={props.merch.price} />
+      <HoverButton
+        mode={ButtonMode.GRADIENT}
+        text={"Buy Now"}
+        link="https://docs.google.com/forms/d/e/1FAIpQLSfpXS4hisen7IBvMGZnrfYWH600W_vpJwW0-b7blsA-D5Dq2w/viewform"
+        linkIsInternal={false}
+      />
     </S.MerchItemDiv>
   );
 };

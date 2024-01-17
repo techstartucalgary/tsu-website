@@ -7,7 +7,9 @@ interface MerchItemStyleProps {
 export const MerchItemDiv = styled.div<MerchItemStyleProps>`
   width: clamp(150px, 20%, 300px);
   margin: 0 1% 2.5rem;
-  display: block;
+  display: flex;
+  row-gap: 0.75rem;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 
@@ -22,12 +24,11 @@ export const MerchItemIconDiv = styled.div`
 
   & > img {
     width: 100%;
-    height: 100%;
+    height: auto;
     transition: 0.4s ease-in-out;
     background-size: cover;
     background-color: white;
     position: relative;
     margin-top: 15px;
-    aspect-ratio: 1.5 / 2;
   }
 `;

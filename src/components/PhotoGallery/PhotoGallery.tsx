@@ -20,18 +20,15 @@ const PhotoGallery = () => {
   }, []);
   return (
     <div>
-      <h1 style={{ color: 'white' }}>Photos baby</h1>
-      <ul>
-        {photos.map((photo, index) => (
-          <li key={index}>
-            <img
-              src={photo}
-              alt={'photo #${index}'}
-              style={{ width: '300px', height: 'auto' }}
-            />
-          </li>
+      <div style={{ columnCount: 3, columnGap: 24, maxWidth: 1024, margin: 'auto' }}>
+        {photos.map((photo) => (
+          <img
+            src={photo}
+            alt={'photo #${index}'}
+            style={{ width: '100%', height: 'auto', marginBottom: 24 }}
+          />
         ))}
-      </ul>
+      </div>
     </div>
   )
 };

@@ -13,10 +13,10 @@ const Team = (props: TeamProps) => {
   return (
     <S.TeamContainer mobileView={!props.desktopView}>
       {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
-      {props.teamMembers.map((member: any) => {
+      {props.teamMembers.map((member: TeamMember) => {
         return (
           <Profile
-            key={member.name}
+            key={member.id}
             member={member}
             profilePic={member.image}
             alt={member.image}

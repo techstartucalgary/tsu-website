@@ -16,7 +16,7 @@ const Team = (props: TeamProps) => {
       {props.teamMembers.map((member: any) => {
         return (
           <Profile
-            key={member.id}
+            key={member.name}
             member={member}
             profilePic={member.image}
             alt={member.image}

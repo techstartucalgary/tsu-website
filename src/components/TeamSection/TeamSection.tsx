@@ -7,7 +7,6 @@ import { executiveTeam, projectManagers } from "./TeamInformation";
 
 const TeamSection = () => {
   const [toggle, setToggled] = useState(false);
-  const handleChange = () => setToggled(!toggle);
 
   // set defaultView flag according to screen width cutoff value
   const { width } = useViewport(); // get screen width
@@ -23,7 +22,7 @@ const TeamSection = () => {
         <S.ToggleButton
           id="checkbox"
           type="checkbox"
-          onClick={() => handleChange()}
+          onClick={() => setToggled(prev => !prev)}
         />
         <S.ToggleButtonLabel htmlFor="checkbox">
           <S.PMText>

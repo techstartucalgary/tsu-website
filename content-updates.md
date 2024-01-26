@@ -79,7 +79,7 @@ For example:
   />
 ```
 ### Gallery
-Everything relayed to gallery can be found under [src/components/PhotoGallery](https://github.com/Tech-Start-UCalgary/tsu-website/tree/main/src/components/PhotoGallery)
+Everything related to gallery can be found under [src/components/PhotoGallery](https://github.com/Tech-Start-UCalgary/tsu-website/tree/main/src/components/PhotoGallery)
 
 To Add a new picture visit [TechStart Google Photos Album](https://photos.app.goo.gl/SkVei5N56poqTh8g8)
  - Ask the administrator(s) for credential

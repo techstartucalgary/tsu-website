@@ -8,7 +8,7 @@ This guide documents how and when to update different content on the Tech Start 
     - [Events](#events)
     - [Sponsors](#sponsors)
     - [Social Media](#social-media)
-      [Gallery](#gallery)
+    - [Gallery](#gallery)
   - [Team Page](#team-page)
     - [Profile Pictures](#profile-pictures)
     - [Executives](#executives)

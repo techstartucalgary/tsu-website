@@ -8,6 +8,7 @@ This guide documents how and when to update different content on the Tech Start 
     - [Events](#events)
     - [Sponsors](#sponsors)
     - [Social Media](#social-media)
+      [Gallery](#gallery)
   - [Team Page](#team-page)
     - [Profile Pictures](#profile-pictures)
     - [Executives](#executives)
@@ -77,6 +78,14 @@ For example:
     link="https://www.instagram.com/techstartucalgary/"
   />
 ```
+### Gallery
+Everything relayed to gallery can be found under [src/components/PhotoGallery](https://github.com/Tech-Start-UCalgary/tsu-website/tree/main/src/components/PhotoGallery)
+
+To Add a new picture visit [TechStart Google Photos Album](https://photos.app.goo.gl/SkVei5N56poqTh8g8)
+ - Ask the administrator(s) for credential
+ - click add new
+
+To make changes to the server, visit [tsuServer](https://github.com/techstartucalgary/tsuServer)
 
 ## Team Page
 

@@ -2,7 +2,8 @@ import React from "react";
 import Profile from "./Profile";
 import * as S from "./Team.styles";
 import "./Team.styles.ts";
-import { TeamMember } from "./TeamInformation";
+import { type TeamMember } from "./TeamInformation";
+import { executiveTeam } from "./TeamInformation";
 
 type TeamProps = {
   teamMembers: TeamMember[];
@@ -16,7 +17,7 @@ const Team = (props: TeamProps) => {
       {props.teamMembers.map((member: TeamMember) => {
         return (
           <Profile
-            key={member.id}
+            key={props.isExec ? member.id : member.id + executiveTeam.length}
             member={member}
             profilePic={member.image}
             alt={member.image}

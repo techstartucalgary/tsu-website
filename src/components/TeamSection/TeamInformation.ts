@@ -211,42 +211,42 @@ export const executiveTeam: TeamMember[] = [
 
 export const projectManagers: TeamMember[] = [
   {
-    id: 22,
+    id: 0,
     name: "Aarsh Shah",
     affiliation: "CampusBuddy",
     image: aarsh_jpg,
     linkedin: "https://www.linkedin.com/in/aarsh-shah-0a84161a9/",
   },
   {
-    id: 23,
+    id: 1,
     name: "Hilton Luu",
     affiliation: "LocaLoyalty",
     image: hilton_jpg,
     linkedin: "https://www.linkedin.com/in/hilton-luu/",
   },
   {
-    id: 24,
+    id: 2,
     name: "Lujaina Eldelebshany",
     affiliation: "Fashion App",
     image: lujaina_jpg,
     linkedin: "https://www.linkedin.com/in/lujaina-eldelebshany-0029bb1b3/",
   },
   {
-    id: 25,
+    id: 3,
     name: "Wilbur Elbouni",
     affiliation: "Achevio",
     image: wilbur_jpg,
     linkedin: "https://www.linkedin.com/in/wilbur-elbouni-3ba923213/",
   },
   {
-    id: 26,
+    id: 4,
     name: "Naman Bhoj",
     affiliation: "For Your Research",
     image: naman_jpg,
     linkedin: "https://www.linkedin.com/in/naman-bhoj-3032a6154",
   },
   {
-    id: 27,
+    id: 5,
     name: "Hamza Afzaal",
     affiliation: "CraftXR",
     image: hamza_jpg,

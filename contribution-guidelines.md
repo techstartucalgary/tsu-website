@@ -48,7 +48,7 @@ To get started contributing to the Tech Start UCalgary website, please follow th
 1. Clone the repository to your local machine.
 2. Make sure you're on our `main` branch: `git checkout main`.
 3. Pull our latest changes so that you are up-to-date with the branch: `git pull origin main`.
-4. Create a `.env.local` in the root of the project. Add the following `REACT_APP_PIC_API_URL=https://tsu-server.vercel.app/api` Or to connect to the local server `REACT_APP_PIC_API_URL=http://localhost:3001/api/gallery`
+4. Create a `.env.local` in the root of the project. Add the following `REACT_APP_PIC_API_URL=https://tsu-server.vercel.app/api` Or to connect to the local server `REACT_APP_PIC_API_URL=http://localhost:3001/api/`
 5. Create and switch to your own branch (which should be a descriptive name of your feature change): `git checkout -b your-name/name-of-feature-change`.
 6. Make your code changes.
 7. Add all your changed files: `git add --all`. Alternatively, you can add selected files as well.

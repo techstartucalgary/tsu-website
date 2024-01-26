@@ -1,5 +1,6 @@
 import axios from 'axios';
 import { useEffect, useState } from 'react';
+import { PicturesContainer } from './PhotoGallery.styles';
 
 const PhotoGallery = () => {
   const [photosURL, setPhotosURL] = useState([]);// photos will be an array of objects
@@ -23,8 +24,7 @@ const PhotoGallery = () => {
 
   }, []);
   return (
-    <div>
-      <div style={{ columnCount: 3, columnGap: 24, maxWidth: 1024, margin: 'auto' }}>
+    <PicturesContainer>
         {photosURL.map((photo, index) => (
           <img
             src={photo}
@@ -32,8 +32,7 @@ const PhotoGallery = () => {
             style={{ width: '100%', height: 'auto', marginBottom: 24, backgroundColor: "white" }}
           />
         ))}
-      </div>
-    </div>
+      </PicturesContainer>
   )
 };
 

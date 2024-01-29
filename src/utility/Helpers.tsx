@@ -6,7 +6,7 @@
  */
 export const NewlineText = (text: string) => {
   const oldText = text;
-  const newText = oldText.split("\n").map((str) => <p>{str}</p>);
+  const newText = oldText.split("\n").map((str, index) => <p key={index}>{str}</p>);
 
   return newText;
 };

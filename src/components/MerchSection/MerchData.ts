@@ -1,51 +1,33 @@
-import BlackHoodie from "../../images/merch/BlackHoodie.jpeg";
-import BlackBeanie from "../../images/merch/BlackBeanie.jpeg";
-import ToteBag from "../../images/merch/ToteBag.jpeg";
-import BlackShortSleeve from "../../images/merch/BlackShortSleeve.jpeg";
-import MousePad1 from "../../images/merch/MousePad1.jpeg";
+import BasicCrewneck from "../../images/merch/BasicCrewneck.jpg";
+import BasicCrewneckWithSleevePrint from "../../images/merch/BasicCrewneckWithSleevePrint.jpg";
 
-export type MerchComponents = {
+export type MerchProperties = {
   id: number;
   item: string;
   price: string;
   image: string;
   description: string;
+  sizes: string[];
+  colors: string[];
 };
 
-export const merchList: MerchComponents[] = [
+export const merchList: MerchProperties[] = [
   {
     id: 0,
-    item: "Hoodie",
-    price: "$49.99",
-    image: BlackHoodie,
-    description: "Available in White and Black",
+    item: "Original Basic Crewneck",
+    price: "$29.95 CAD",
+    image: BasicCrewneck,
+    description: "placeholder descripton",
+    sizes: ["S", "M", "L", "XL"],
+    colors: ["Black"],
   },
   {
     id: 1,
-    item: "Short Sleeve T-Shirt",
-    price: "$25.99",
-    image: BlackShortSleeve,
-    description: "Available in White and Black",
-  },
-  {
-    id: 2,
-    item: "Gaming Mouse Pad (36in x 18in)",
-    price: "$35.99",
-    image: MousePad1,
-    description: "Varying Designs",
-  },
-  {
-    id: 3,
-    item: "Eco Tote Bag",
-    price: "$39.99",
-    image: ToteBag,
-    description: "",
-  },
-  {
-    id: 4,
-    item: "Beanie",
-    price: "$29.99",
-    image: BlackBeanie,
-    description: "Available in White and Black",
+    item: "Crewneck with Sleeve Print",
+    price: "$49.99 CAD",
+    image: BasicCrewneckWithSleevePrint,
+    description: "placeholder descripton",
+    sizes: ["S", "M", "L", "XL"],
+    colors: ["Black"],
   },
 ];

@@ -83,7 +83,7 @@ export const executiveTeam: TeamMember[] = [
   {
     id: 4,
     name: "Ana Laura Espinosa Garza",
-    affiliation: "Jr. VP External",
+    affiliation: "VP External",
     image: ana_jpg,
     linkedin: "https://www.linkedin.com/in/ana-laura-espinosa-garza-136a281b0/",
   },

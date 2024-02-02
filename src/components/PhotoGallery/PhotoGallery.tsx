@@ -3,7 +3,7 @@ import { useCallback, useEffect, useState } from "react";
 import { PicturesContainer, Image } from "./PhotoGallery.styles";
 
 const PhotoGallery = () => {
-  const [photosURL, setPhotosURL] = useState([]); // photos will be an array of objects
+  const [photosURL, setPhotosURL] = useState<string[]>([]); // photos will be an array of objects
   //memoize a getAlbum to prevent unnecessary re-renders.
   const getAlbum = useCallback(async () => {
     const galleryPicsURL = process.env.REACT_APP_PIC_API_URL;
@@ -11,8 +11,8 @@ const PhotoGallery = () => {
       if (!galleryPicsURL) {
         throw new Error("URL is not defined");
       }
-      const response = await axios.get(`${galleryPicsURL}/gallery`);
-      const { data } = response;
+      const { data } = await axios.get<string[]>(`${galleryPicsURL}/gallery`);
+
       if (!data.length) {
         throw new Error("No images found");
       }
@@ -27,7 +27,7 @@ const PhotoGallery = () => {
 
   useEffect(() => {
     getAlbum();
-  }, []);
+  }, [getAlbum]);
   return (
     <PicturesContainer>
       {photosURL.map((photo, index) => (

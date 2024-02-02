@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const PicturesContainer = styled.div`
-// mobile
+    // mobile
     column-count: 1;
     column-gap: 24;
     max-width: 1024px;
@@ -16,4 +16,11 @@ export const PicturesContainer = styled.div`
     @media(min-width: 1024px){
         column-count: 3;
     }
+`
+
+export const Image = styled.img`
+    width: 100%;
+    height: auto;
+    margin-bottom: 24px;
+    background-color: white;
 `

@@ -1,6 +1,8 @@
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
-import { PicturesContainer, Image } from "./PhotoGallery.styles";
+import { PicturesContainer } from "./PhotoGallery.styles";
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import Loading from "components/Loading";
 
 const PhotoGallery = () => {
   const [photosURL, setPhotosURL] = useState<string[]>([]); // photos will be an array of objects
@@ -28,12 +30,28 @@ const PhotoGallery = () => {
   useEffect(() => {
     getAlbum();
   }, [getAlbum]);
+
   return (
-    <PicturesContainer>
-      {photosURL.map((photo, index) => (
-        <Image src={photo} key={index} />
-      ))}
-    </PicturesContainer>
+    <>
+      {
+        photosURL.length ===0 ?
+        (
+          <Loading />
+        ):
+        (
+          <PicturesContainer>
+          {photosURL.map((photo, index) => (
+            <LazyLoadImage
+              height="auto"
+              key={index}
+              src={photo}
+              width="100%" 
+            />
+          ))}
+          </PicturesContainer>
+        )
+      }
+      </>
   );
 };
 

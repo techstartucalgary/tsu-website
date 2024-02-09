@@ -26,7 +26,7 @@ export const PicturesContainer = styled.div`
   // desktop
   @media (min-width: 1024px) {
     column-count: 3;
-  }
+  } 
 `;
 
 export const Image = styled.img`

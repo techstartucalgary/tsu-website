@@ -3,6 +3,11 @@ import { useCallback, useEffect, useState } from "react";
 import { PicturesContainer } from "./PhotoGallery.styles";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Loading from "components/Loading";
+import { motion } from "framer-motion";
+import Blobbie from "components/Blobbie";
+import HoverButton from "components/HoverButton/HoverButton";
+import { ButtonMode } from "components/HoverButton/HoverButton.styles";
+import * as S from "../../pages/GalleryPage.styles"
 
 const PhotoGallery = () => {
   const [photosURL, setPhotosURL] = useState<string[]>([]); // photos will be an array of objects
@@ -39,16 +44,40 @@ const PhotoGallery = () => {
           <Loading />
         ):
         (
-          <PicturesContainer>
-          {photosURL.map((photo, index) => (
-            <LazyLoadImage
-              height="auto"
-              key={index}
-              src={photo}
-              width="100%" 
-            />
-          ))}
-          </PicturesContainer>
+        <>
+          <S.GalleryPageHeader>
+            <motion.p
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1 }}
+            >
+              Capturing the Memories: A Look Inside Tech Start! <br /> Interested in
+              joining us?
+            </motion.p>
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.5 }}
+            >
+              <HoverButton
+                mode={ButtonMode.GRADIENT}
+                glowOnHover={true}
+                link="/apply"
+                text={"Apply Now"}
+                linkIsInternal={true}
+              />
+            </motion.div>
+            </S.GalleryPageHeader>
+            <PicturesContainer>
+                  {photosURL.map((photo, index) => (
+                    <LazyLoadImage
+                      height="auto"
+                      key={index}
+                      src={photo}
+                      width="100%" />
+                  ))}
+            </PicturesContainer> 
+        </>
         )
       }
       </>

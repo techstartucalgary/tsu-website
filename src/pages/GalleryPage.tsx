@@ -28,28 +28,9 @@ const GalleryPage = () => {
         >
           Gallery
         </motion.h1>
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1 }}
-        >
-          Capturing the Memories: A Look Inside Tech Start! <br /> Interested in
-          joining us?
-        </motion.p>
-        <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.5 }}
-        >
-          <HoverButton
-            mode={ButtonMode.GRADIENT}
-            glowOnHover={true}
-            link="/apply"
-            text={"Apply Now"}
-            linkIsInternal={true}
-          />
-        </motion.div>
+
       </S.GalleryPageHeader>
+
         <PhotoGallery />
     </S.GalleryPage>
   );

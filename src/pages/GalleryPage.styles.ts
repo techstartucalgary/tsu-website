@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import * as S from "./GalleryPage.styles";
 
 export const GalleryPage = styled.div`
   scroll-behavior: smooth;
@@ -15,7 +16,6 @@ export const GalleryPage = styled.div`
 `;
 
 export const GalleryPageHeader = styled.div`
-  padding: 3em 0;
   text-align: center;
   color: white;
 

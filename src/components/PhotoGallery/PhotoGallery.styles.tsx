@@ -5,7 +5,7 @@ export const PicturesContainer = styled.div`
   column-count: 1;
   column-gap: 24;
   max-width: 1024px;
-  margin: auto;
+  margin:2em auto;
   min-height: 100vh;
   color: white
   style={{ margin: "auto 2%" }}

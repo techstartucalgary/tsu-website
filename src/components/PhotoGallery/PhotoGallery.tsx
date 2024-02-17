@@ -3,8 +3,6 @@ import { useCallback, useEffect, useState } from "react";
 import { PicturesContainer,PicturesHeader } from "./PhotoGallery.styles";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Loading from "components/Loading";
-import { motion } from "framer-motion";
-import Blobbie from "components/Blobbie";
 import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import * as S from "../../pages/GalleryPage.styles"

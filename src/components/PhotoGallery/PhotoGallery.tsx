@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
-import { PicturesContainer } from "./PhotoGallery.styles";
+import { PicturesContainer,PicturesHeader } from "./PhotoGallery.styles";
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Loading from "components/Loading";
 import { motion } from "framer-motion";
@@ -44,21 +44,17 @@ const PhotoGallery = () => {
           <Loading />
         ):
         (
-        <>
+        <PicturesHeader
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5 }}
+        >
           <S.GalleryPageHeader>
-            <motion.p
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1 }}
-            >
+            <p>
               Capturing the Memories: A Look Inside Tech Start! <br /> Interested in
               joining us?
-            </motion.p>
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              transition={{ delay: 1.5 }}
-            >
+            </p>
+            <div>
               <HoverButton
                 mode={ButtonMode.GRADIENT}
                 glowOnHover={true}
@@ -66,7 +62,7 @@ const PhotoGallery = () => {
                 text={"Apply Now"}
                 linkIsInternal={true}
               />
-            </motion.div>
+            </div>
             </S.GalleryPageHeader>
             <PicturesContainer>
                   {photosURL.map((photo, index) => (
@@ -77,7 +73,7 @@ const PhotoGallery = () => {
                       width="100%" />
                   ))}
             </PicturesContainer> 
-        </>
+        </PicturesHeader>
         )
       }
       </>

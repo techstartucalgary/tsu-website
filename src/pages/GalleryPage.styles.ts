@@ -1,5 +1,4 @@
 import styled from "styled-components/macro";
-import * as S from "./GalleryPage.styles";
 
 export const GalleryPage = styled.div`
   scroll-behavior: smooth;

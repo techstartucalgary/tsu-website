@@ -1,11 +1,11 @@
 import axios from "axios";
 import { useCallback, useEffect, useState } from "react";
-import { PicturesContainer,PicturesHeader } from "./PhotoGallery.styles";
-import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { PicturesContainer, PicturesHeader } from "./PhotoGallery.styles";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 import Loading from "components/Loading";
 import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
-import * as S from "../../pages/GalleryPage.styles"
+import * as S from "../../pages/GalleryPage.styles";
 
 const PhotoGallery = () => {
   const [photosURL, setPhotosURL] = useState<string[]>([]); // photos will be an array of objects
@@ -36,12 +36,9 @@ const PhotoGallery = () => {
 
   return (
     <>
-      {
-        photosURL.length ===0 ?
-        (
-          <Loading />
-        ):
-        (
+      {photosURL.length === 0 ? (
+        <Loading />
+      ) : (
         <PicturesHeader
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
@@ -49,8 +46,8 @@ const PhotoGallery = () => {
         >
           <S.GalleryPageHeader>
             <p>
-              Capturing the Memories: A Look Inside Tech Start! <br /> Interested in
-              joining us?
+              Capturing the Memories: A Look Inside Tech Start! <br />{" "}
+              Interested in joining us?
             </p>
             <div>
               <HoverButton
@@ -61,20 +58,20 @@ const PhotoGallery = () => {
                 linkIsInternal={true}
               />
             </div>
-            </S.GalleryPageHeader>
-            <PicturesContainer>
-                  {photosURL.map((photo, index) => (
-                    <LazyLoadImage
-                      height="auto"
-                      key={index}
-                      src={photo}
-                      width="100%" />
-                  ))}
-            </PicturesContainer> 
+          </S.GalleryPageHeader>
+          <PicturesContainer>
+            {photosURL.map((photo, index) => (
+              <LazyLoadImage
+                height="auto"
+                key={index}
+                src={photo}
+                width="100%"
+              />
+            ))}
+          </PicturesContainer>
         </PicturesHeader>
-        )
-      }
-      </>
+      )}
+    </>
   );
 };
 

@@ -6,10 +6,13 @@ export const PicturesContainer = styled.div`
   column-count: 1;
   column-gap: 24;
   max-width: 1024px;
-  margin:2em auto;
+  margin: 2em auto;
 
-  style={{ margin: "auto 2%" }}
-
+  style= {
+     {
+      margin: "auto 2%";
+    }
+  }
 
   // ipad
   @media (min-width: 768px) {
@@ -19,7 +22,7 @@ export const PicturesContainer = styled.div`
   // desktop
   @media (min-width: 1024px) {
     column-count: 3;
-  } 
+  }
 `;
 
 export const Image = styled.img`

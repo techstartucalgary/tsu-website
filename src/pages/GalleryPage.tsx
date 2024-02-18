@@ -1,7 +1,5 @@
 import Blobbie from "components/Blobbie";
 import PhotoGallery from "components/PhotoGallery/PhotoGallery";
-import HoverButton from "components/HoverButton/HoverButton";
-import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import { motion } from "framer-motion";
 import * as S from "./GalleryPage.styles";
 
@@ -28,10 +26,9 @@ const GalleryPage = () => {
         >
           Gallery
         </motion.h1>
-
       </S.GalleryPageHeader>
 
-        <PhotoGallery />
+      <PhotoGallery />
     </S.GalleryPage>
   );
 };

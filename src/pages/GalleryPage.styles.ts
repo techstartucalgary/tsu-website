@@ -15,7 +15,6 @@ export const GalleryPage = styled.div`
 `;
 
 export const GalleryPageHeader = styled.div`
-  padding: 3em 0;
   text-align: center;
   color: white;
 

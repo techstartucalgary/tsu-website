@@ -1,11 +1,18 @@
 import styled from "styled-components";
+import { motion } from "framer-motion";
 
 export const PicturesContainer = styled.div`
   // mobile
   column-count: 1;
   column-gap: 24;
   max-width: 1024px;
-  margin: auto;
+  margin: 2em auto;
+
+  style= {
+     {
+      margin: "auto 2%";
+    }
+  }
 
   // ipad
   @media (min-width: 768px) {
@@ -22,5 +29,18 @@ export const Image = styled.img`
   width: 100%;
   height: auto;
   margin-bottom: 24px;
-  background-color: white;
+  background-color: grey;
 `;
+
+export const PicturesHeader = styled(motion.div)`
+  data-aos="fade-up"
+  data-aos-offset="200"
+  data-aos-delay="50"
+  data-aos-duration="1000"
+  data-aos-easing="ease-in-out"
+  data-aos-mirror="true"
+  data-aos-once="false"
+  data-aos-anchor-placement="top"
+  color: white
+  min-height: 100vh;
+  `;

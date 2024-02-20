@@ -34,7 +34,7 @@ function FeaturedProject(props: featuredProjectProps) {
                         style={{ pointerEvents: "none" }}
                         width="100%"
                         height="100%"
-                        src={`https://www.youtube.com/embed/${props.videoEmbedID}&autoplay=1&mute=1`}
+                        src={`https://www.youtube.com/embed/${props.videoEmbedID}?autoplay=1&mute=1&playlist=${props.videoEmbedID}&loop=1&controls=0`}
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     >

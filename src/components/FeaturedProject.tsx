@@ -31,6 +31,7 @@ function FeaturedProject(props: featuredProjectProps) {
             {props.videoEmbedID ? (
                 <S.FeaturedProjectMediaContainer>
                     <iframe
+                        style={{ pointerEvents: "none" }}
                         width="100%"
                         height="100%"
                         src={`https://www.youtube.com/embed/${props.videoEmbedID}&autoplay=1&mute=1`}

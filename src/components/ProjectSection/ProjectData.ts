@@ -86,7 +86,7 @@ export const PastProjects: Project[] = [
     description:
       "EasyMeal generates recipes for you based on your budget and tastes.",
     featured: true,
-    videoEmbedID: "jk-dVia1yqo?si=EvrRU-eIRVZqDZe1",
+    videoEmbedID: "jk-dVia1yqo",
   },
   {
     id: 4,
@@ -137,7 +137,7 @@ export const PastProjects: Project[] = [
     description:
       "Born a tiny fish, try to survive among other predators, be careful of the human waste in the ocean though!",
     featured: true,
-    videoEmbedID: "9SqZWb1-tw0?si=jR5YadwqZOBUAJVJ",
+    videoEmbedID: "9SqZWb1-tw0",
   },
   {
     id: 8,

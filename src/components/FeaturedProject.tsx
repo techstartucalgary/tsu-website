@@ -10,6 +10,7 @@ interface featuredProjectProps {
     name: string;
     year: string;
     videoEmbedID: string;
+    autoplay: boolean;
 }
 function FeaturedProject(props: featuredProjectProps) {
     return (
@@ -33,7 +34,7 @@ function FeaturedProject(props: featuredProjectProps) {
                     <iframe
                         width="100%"
                         height="100%"
-                        src={`https://www.youtube.com/embed/${props.videoEmbedID}`}
+                        src={`https://www.youtube.com/embed/${props.videoEmbedID}&autoplay=${props.autoplay ? 1 : 0}&mute=1`}
                         title="YouTube video player"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     >

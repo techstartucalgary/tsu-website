@@ -22,6 +22,7 @@ const FeaturedProjectSection = (props: FeaturedProjectSectionProps) => {
                     key={project.id}
                     year={project.year}
                     videoEmbedID={project.videoEmbedID}
+                    autoplay={project.autoplay}
                 />
             ))}
         </S.FeaturedProjectSectionDiv>

@@ -31,6 +31,7 @@ export type Project = {
   year: string;
   featured: boolean;
   videoEmbedID: string;
+  autoplay: boolean;
 };
 
 const website = new URL("https://tech-start-website.web.app/");
@@ -49,6 +50,7 @@ export const PastProjects: Project[] = [
       "A cross-platform application for music enthusiasts to get notified of the latest concerts of their favorite artists.",
     featured: false,
     videoEmbedID: "",
+    autoplay: false,
   },
   {
     id: 1,
@@ -61,6 +63,7 @@ export const PastProjects: Project[] = [
     description: "A platform for employers and applicants to connect.",
     featured: false,
     videoEmbedID: "",
+    autoplay: false,
   },
   {
     id: 2,
@@ -74,6 +77,7 @@ export const PastProjects: Project[] = [
       "Lifeline uses AI to extract and organize deadlines from course documents for you to download.",
     featured: false,
     videoEmbedID: "",
+    autoplay: false,
   },
   {
     id: 3,
@@ -87,6 +91,7 @@ export const PastProjects: Project[] = [
       "EasyMeal generates recipes for you based on your budget and tastes.",
     featured: true,
     videoEmbedID: "jk-dVia1yqo?si=EvrRU-eIRVZqDZe1",
+    autoplay: true,
   },
   {
     id: 4,
@@ -100,6 +105,7 @@ export const PastProjects: Project[] = [
       "Robotic arm using reinforcement learning to help robots learn and adapt to new environments.",
     featured: false,
     videoEmbedID: "",
+    autoplay: false,
   },
   {
     id: 5,
@@ -112,6 +118,7 @@ export const PastProjects: Project[] = [
     description: "Retro style mini games in a arcade style chrome extension.",
     featured: false,
     videoEmbedID: "",
+    autoplay: false,
   },
   {
     id: 6,
@@ -125,6 +132,7 @@ export const PastProjects: Project[] = [
       "A mobile app that helps students with studying for exams by summarizing their handwritten notes",
     featured: false,
     videoEmbedID: "",
+    autoplay: false,
   },
   {
     id: 7,
@@ -138,6 +146,7 @@ export const PastProjects: Project[] = [
       "Born a tiny fish, try to survive among other predators, be careful of the human waste in the ocean though!",
     featured: true,
     videoEmbedID: "9SqZWb1-tw0?si=jR5YadwqZOBUAJVJ",
+    autoplay: false,
   },
   {
     id: 8,
@@ -151,6 +160,7 @@ export const PastProjects: Project[] = [
       "An app that helps groups make decisions when planning a social gathering by voting",
     featured: false,
     videoEmbedID: "",
+    autoplay: false,
   },
   {
     id: 9,
@@ -163,6 +173,7 @@ export const PastProjects: Project[] = [
     description: "A robot that autonomously clears snow on sidewalks",
     featured: false,
     videoEmbedID: "",
+    autoplay: false,
   },
   {
     id: 10,
@@ -176,6 +187,7 @@ export const PastProjects: Project[] = [
       "A hub for your social media that shows you info and stats from your favorite sites. Switching apps is so 2020!",
     featured: false,
     videoEmbedID: "",
+    autoplay: false,
   },
   {
     id: 11,
@@ -189,6 +201,7 @@ export const PastProjects: Project[] = [
       "An app that uses the Ethereum blockchain with QR Codes to track package and parcel transfers",
     featured: false,
     videoEmbedID: "",
+    autoplay: false,
   },
   {
     id: 12,
@@ -202,6 +215,7 @@ export const PastProjects: Project[] = [
       "Resume Tracker rates your resume and provides feedback on how to improve it",
     featured: false,
     videoEmbedID: "",
+    autoplay: false,
   },
   {
     id: 13,
@@ -215,6 +229,7 @@ export const PastProjects: Project[] = [
       "We built this website from scratch with React, TypeScript, and a Django backend!",
     featured: false,
     videoEmbedID: "",
+    autoplay: false,
   },
 ];
 

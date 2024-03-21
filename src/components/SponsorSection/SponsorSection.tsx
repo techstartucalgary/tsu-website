@@ -1,9 +1,9 @@
-import SponsorLogo from "components/SponsorLogo";
+import SponsorLogo from "../SponsorLogo";
 import HoverButton from "../HoverButton/HoverButton";
 import { Organization, SponsorList } from "./SponsorsInfo";
-import { ButtonMode } from "components/HoverButton/HoverButton.styles";
+import { ButtonMode } from "../HoverButton/HoverButton.styles";
 import * as S from "./SponsorSection.styles";
-import Divider from "components/Divider";
+import Divider from "../Divider";
 
 const SponsorSection = () => {
   return (

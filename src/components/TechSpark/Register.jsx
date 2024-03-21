@@ -2,8 +2,7 @@
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import "./Register.css";
 import "./SignIn.css";
-import logo from "images/tech-start-logo-white.png";
-import React, { Component, useEffect, useRef, useLayoutEffect } from "react";
+import React, { useRef, useLayoutEffect } from "react";
 import axios from "axios";
 
 const dataRoot = "https://techstartbackend.herokuapp.com";

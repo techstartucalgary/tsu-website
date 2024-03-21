@@ -1,5 +1,5 @@
 import styled, { css } from "styled-components/macro";
-import { SocialMediaColor, handleColor } from "utility/SharedStyles";
+import { SocialMediaColor, handleColor } from "../../utility/SharedStyles";
 
 const GradientStyles = css`
   background-clip: text;

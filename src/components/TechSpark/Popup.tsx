@@ -1,4 +1,4 @@
-import PostCreation from "components/TechSpark/PostCreation";
+import PostCreation from "./PostCreation";
 import "./Popup.css";
 import SignIn from "./SignIn";
 

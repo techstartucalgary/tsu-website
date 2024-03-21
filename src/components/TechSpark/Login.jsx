@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 /* eslint-disable @typescript-eslint/no-unused-vars */
 import "./Login.css";
-import React, { Component, useEffect, useLayoutEffect, useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import axios from "axios";
 
 const dataRoot = "https://techstartbackend.herokuapp.com";

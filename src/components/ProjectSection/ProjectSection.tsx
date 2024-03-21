@@ -1,5 +1,5 @@
 import * as S from "./ProjectSection.styles";
-import { Project } from "components/ProjectSection/ProjectData";
+import { Project } from "./ProjectData";
 import Projects from "../Projects";
 import useViewport from "../UseViewport";
 

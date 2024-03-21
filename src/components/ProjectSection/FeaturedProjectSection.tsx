@@ -1,5 +1,5 @@
 import * as S from "./FeaturedProjectSection.styles";
-import { Project } from "../ProjectSection/ProjectData";
+import { Project } from "./ProjectData";
 import FeaturedProject from "../FeaturedProject";
 
 import "react-multi-carousel/lib/styles.css";

@@ -1,10 +1,10 @@
-import HoverButton from "components/HoverButton/HoverButton";
-import { ButtonMode } from "components/HoverButton/HoverButton.styles";
+import HoverButton from "../HoverButton/HoverButton";
+import { ButtonMode } from "../HoverButton/HoverButton.styles";
 import Lottie from "react-lottie";
-import Divider from "components/Divider";
+import Divider from "../Divider";
 import * as S from "./ProjectsSection.styles";
-import useViewport from "../../components/UseViewport";
-import { projectTeamLottieOptions } from "utility/LottieOptions";
+import useViewport from "../UseViewport";
+import { projectTeamLottieOptions } from "../../utility/LottieOptions";
 
 /* Projects section on the homepage */
 export const ProjectsSection = () => {

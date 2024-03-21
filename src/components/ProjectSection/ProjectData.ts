@@ -4,20 +4,20 @@
  * All image sizes should be a 16:9 Aspect ratio
  */
 
-import techStartWebsite from "images/projects/techStartWebsite.png";
-import supplyMe from "images/projects/supplyMe.png";
-import resumeTracker from "images/projects/resumetracker.png";
-import oneHub from "images/projects/oneHub.png";
-import aquavolution from "images/projects/aquavolution.jpg";
-import snowbot from "images/projects/snowbot.jpg";
-import noteAid from "images/projects/noteAid.jpg";
-import whereTo from "images/projects/whereTo.jpg";
-import lifeLine from "images/projects/lifeline.png";
-import easyMeal from "images/projects/easymeal.jpg";
-import airm from "images/projects/AiRM.png";
-import techstarcade from "images/projects/Techstarcade.jpg";
-import bandist from "images/projects/Bandist.jpg";
-import cyberHire from "images/projects/CyberHire.jpg";
+import techStartWebsite from "../../images/projects/techStartWebsite.png";
+import supplyMe from "../../images/projects/supplyMe.png";
+import resumeTracker from "../../images/projects/resumetracker.png";
+import oneHub from "../../images/projects/oneHub.png";
+import aquavolution from "../../images/projects/aquavolution.jpg";
+import snowbot from "../../images/projects/snowbot.jpg";
+import noteAid from "../../images/projects/noteAid.jpg";
+import whereTo from "../../images/projects/whereTo.jpg";
+import lifeLine from "../../images/projects/lifeline.png";
+import easyMeal from "../../images/projects/easymeal.jpg";
+import airm from "../../images/projects/AiRM.png";
+import techstarcade from "../../images/projects/Techstarcade.jpg";
+import bandist from "../../images/projects/Bandist.jpg";
+import cyberHire from "../../images/projects/CyberHire.jpg";
 
 // Project type definition
 export type Project = {

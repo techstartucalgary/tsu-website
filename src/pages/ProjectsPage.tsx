@@ -1,16 +1,16 @@
 import * as S from "./ProjectsPage.styles";
 import { useState } from "react";
 import Lottie from "react-lottie";
-import { teamProjectLottieOptions } from "utility/LottieOptions";
+import { teamProjectLottieOptions } from "../utility/LottieOptions";
 import { motion } from "framer-motion";
-import { PastProjects } from "components/ProjectSection/ProjectData";
-import ProjectSection from "components/ProjectSection/ProjectSection";
-import FeaturedProjectSection from "components/ProjectSection/FeaturedProjectSection";
-import Divider from "components/Divider";
-import ProjectKeywordsSection from "components/ProjectSection/ProjectKeywordsSection";
-import { NewlineText } from "utility/Helpers";
-import HoverButton from "components/HoverButton/HoverButton";
-import { ButtonMode } from "components/HoverButton/HoverButton.styles";
+import { PastProjects } from "../components/ProjectSection/ProjectData";
+import ProjectSection from "../components/ProjectSection/ProjectSection";
+import FeaturedProjectSection from "../components/ProjectSection/FeaturedProjectSection";
+import Divider from "../components/Divider";
+import ProjectKeywordsSection from "../components/ProjectSection/ProjectKeywordsSection";
+import { NewlineText } from "../utility/Helpers";
+import HoverButton from "../components/HoverButton/HoverButton";
+import { ButtonMode } from "../components/HoverButton/HoverButton.styles";
 import WinningTeamPhoto from "../images/final_showcase_winner.jpg";
 
 const ProjectsPage = () => {

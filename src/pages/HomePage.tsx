@@ -1,15 +1,15 @@
-import tsu_logo from "images/tech-start-logo-white.png";
+import tsu_logo from "../images/tech-start-logo-white.png";
 import "./HomePage.css";
 import { motion } from "framer-motion";
 
-import NumberStat from "components/NumberStat";
-import Divider from "components/Divider";
-import Particle from "components/Particles";
-import SponsorSection from "components/SponsorSection/SponsorSection";
-import Blobbie from "components/Blobbie";
-import EventsSection from "components/EventsSection/EventsSection";
+import NumberStat from "../components/NumberStat";
+import Divider from "../components/Divider";
+import Particle from "../components/Particles";
+import SponsorSection from "../components/SponsorSection/SponsorSection";
+import Blobbie from "../components/Blobbie";
+import EventsSection from "../components/EventsSection/EventsSection";
 import { ProjectsSection } from "../components/ProjectSection/ProjectsSection";
-import ApplyButton from "components/ApplyButton";
+import ApplyButton from "../components/ApplyButton";
 
 const HomePage = () => {
   return (

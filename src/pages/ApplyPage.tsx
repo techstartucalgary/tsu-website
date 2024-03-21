@@ -3,14 +3,14 @@ import { motion } from "framer-motion";
 
 import Lottie from "react-lottie";
 import "./ApplyPage.css";
-import { applyPageTeamLottieOptions } from "utility/LottieOptions";
-import final_showcase_2023 from "images/final_showcase_teams.jpg";
-import ApplySection from "components/ApplySection";
+import { applyPageTeamLottieOptions } from "../utility/LottieOptions";
+import final_showcase_2023 from "../images/final_showcase_teams.jpg";
+import ApplySection from "../components/ApplySection";
 import Accordion from "../components/Apply/Accordion";
-import Blobbie from "components/Blobbie";
-import Divider from "components/Divider";
-import HoverButton from "components/HoverButton/HoverButton";
-import { ButtonMode } from "components/HoverButton/HoverButton.styles";
+import Blobbie from "../components/Blobbie";
+import Divider from "../components/Divider";
+import HoverButton from "../components/HoverButton/HoverButton";
+import { ButtonMode } from "../components/HoverButton/HoverButton.styles";
 
 const ApplyPage = () => {
   const [active, setActive] = useState("");

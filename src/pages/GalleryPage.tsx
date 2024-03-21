@@ -1,5 +1,5 @@
-import Blobbie from "components/Blobbie";
-import PhotoGallery from "components/PhotoGallery/PhotoGallery";
+import Blobbie from "../components/Blobbie";
+import PhotoGallery from "../components/PhotoGallery/PhotoGallery";
 import { motion } from "framer-motion";
 import * as S from "./GalleryPage.styles";
 

@@ -1,9 +1,9 @@
-import MerchSection from "components/MerchSection/MerchSection";
+import MerchSection from "../components/MerchSection/MerchSection";
 import { motion } from "framer-motion";
 import * as S from "./MerchPage.styles";
 import Lottie from "react-lottie";
-import { merchPageLottieOptions } from "utility/LottieOptions";
-import { NewlineText } from "utility/Helpers";
+import { merchPageLottieOptions } from "../utility/LottieOptions";
+import { NewlineText } from "../utility/Helpers";
 
 const MerchPage = () => {
   return (

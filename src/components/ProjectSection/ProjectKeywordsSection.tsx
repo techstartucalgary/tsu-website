@@ -1,5 +1,5 @@
 import * as S from "./ProjectKeywordsSection.styles";
-import { NewlineText } from "utility/Helpers";
+import { NewlineText } from "../../utility/Helpers";
 import Lottie from "react-lottie";
 import {
   businessStrategyLottieOptions,

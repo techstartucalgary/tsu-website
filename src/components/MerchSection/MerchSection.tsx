@@ -2,7 +2,7 @@ import React from "react";
 import * as S from "./MerchSection.styles";
 import MerchCollection from "./MerchCollection";
 import { merchList } from "./MerchData";
-import useViewport from "components/UseViewport";
+import useViewport from "../UseViewport";
 
 const MerchSection = () => {
   const { width } = useViewport();

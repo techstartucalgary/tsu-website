@@ -2,8 +2,8 @@ import React from "react";
 import * as S from "./MerchItem.styles";
 import { type MerchProperties } from "./MerchData";
 import MerchDescription from "./MerchDescription";
-import HoverButton from "components/HoverButton/HoverButton";
-import { ButtonMode } from "components/HoverButton/HoverButton.styles";
+import HoverButton from "../HoverButton/HoverButton";
+import { ButtonMode } from "../HoverButton/HoverButton.styles";
 
 export type MerchItemProps = {
   merch: MerchProperties;

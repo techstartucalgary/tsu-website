@@ -1,20 +1,20 @@
-import HomePage from "pages/HomePage";
-import DocsPage from "pages/DocsPage";
-import SparkPage from "pages/SparkPage";
-import ApplyPage from "pages/ApplyPage";
-import TeamPage from "pages/TeamPage";
-import ProjectsPage from "pages/ProjectsPage";
-import MerchPage from "pages/MerchPage";
+import HomePage from "./pages/HomePage";
+import DocsPage from "./pages/DocsPage";
+import SparkPage from "./pages/SparkPage";
+import ApplyPage from "./pages/ApplyPage";
+import TeamPage from "./pages/TeamPage";
+import ProjectsPage from "./pages/ProjectsPage";
+import MerchPage from "./pages/MerchPage";
 
 import { useEffect } from "react";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import Navbar from "components/Navbar";
-import Footer from "components/Footer/Footer";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer/Footer";
 import "./App.css";
 import Aos from "aos";
 import "aos/dist/aos.css";
-import ScrollToTop from "components/ScrollToTop";
-import GalleryPage from "pages/GalleryPage";
+import ScrollToTop from "./components/ScrollToTop";
+import GalleryPage from "./pages/GalleryPage";
 
 function App() {
   //

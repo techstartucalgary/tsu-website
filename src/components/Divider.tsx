@@ -1,4 +1,4 @@
-import dividerIMG from "images/divider.svg";
+import dividerIMG from "../images/divider.svg";
 import * as S from "./Divider.styles";
 function Divider() {
   return (

@@ -1,5 +1,5 @@
 import React from "react";
-import HoverButton from "components/HoverButton/HoverButton";
+import HoverButton from "./HoverButton/HoverButton";
 import * as S from "./FeaturedProject.styles";
 import { ButtonMode } from "./HoverButton/HoverButton.styles";
 

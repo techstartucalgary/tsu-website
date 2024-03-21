@@ -1,6 +1,6 @@
 import * as S from "./Footer.styles";
 import "../../App.css";
-import SocialMedia from "components/SocialMedia/SocialMedia";
+import SocialMedia from "../SocialMedia/SocialMedia";
 import { SocialMediaColor } from "../../utility/SharedStyles";
 import {
   faInstagram,

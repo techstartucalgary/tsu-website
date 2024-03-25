@@ -28,6 +28,7 @@ import Maham_jpg from "../../images/team/Maham_Jamal.jpg";
 import brian_jpg from "../../images/team/Brian_Nguyen.jpg";
 import joel_jpg from "../../images/team/Joel_Happ.jpeg";
 import cindy_jpg from "../../images/team/Cindy_Cheng.jpg";
+import azlfa_jpg from "../../images/team/Azlfa_Anwar.jpeg";
 
 export type TeamMember = {
   id: number;
@@ -139,34 +140,41 @@ export const executiveTeam: TeamMember[] = [
   },
   {
     id: 12,
+    name: "Azlfa Anwar",
+    affiliation: "Jr. VP Events",
+    image: azlfa_jpg,
+    linkedin: "https://www.linkedin.com/in/azlfa-anwar-20a040218/",
+  },
+  {
+    id: 13,
     name: "Labib Afshar Ahmed",
     affiliation: "VP Finance",
     image: labib_jpg,
     linkedin: "https://www.linkedin.com/in/labib-afsar-ahmed/",
   },
   {
-    id: 13,
+    id: 14,
     name: "Janita Mahum",
     affiliation: "VP Design",
     image: janita_jpg,
     linkedin: "https://www.linkedin.com/in/janita-mahum-a5484a1b9/",
   },
   {
-    id: 14,
+    id: 15,
     name: "Ben Schmidt",
     affiliation: "VP Development",
     image: ben_jpg,
     linkedin: "https://www.linkedin.com/in/benschmidt2343/",
   },
   {
-    id: 15,
+    id: 16,
     name: "Abod Abbas",
     affiliation: "Senior Technical Advisor",
     image: abod_jpg,
     linkedin: "https://www.linkedin.com/in/abod-a-427274198/",
   },
   {
-    id: 16,
+    id: 17,
     name: "Wai Ka Wong",
     affiliation: "Technical Advisor",
     image: waika_jpg,
@@ -174,42 +182,42 @@ export const executiveTeam: TeamMember[] = [
   },
 
   {
-    id: 17,
+    id: 18,
     name: "Sajwal Pageni",
     affiliation: "VP Strategy",
     image: sajwal_jpg,
     linkedin: "https://www.linkedin.com/in/sajwal/",
   },
   {
-    id: 18,
+    id: 19,
     name: "Fedor Prokopchuk",
     affiliation: "Business Strategy Advisor",
     image: fedor_jpg,
     linkedin: "https://www.linkedin.com/in/fedor-prokopchuk-707668a6/",
   },
   {
-    id: 19,
+    id: 20,
     name: "Brian Nguyen",
     affiliation: "Senior Web Developer",
     image: brian_jpg,
     linkedin: "https://www.linkedin.com/in/nguyennbrian/",
   },
   {
-    id: 20,
+    id: 21,
     name: "Sahiti Akella",
     affiliation: "Web Developer",
     image: sahiti_jpg,
     linkedin: "https://www.linkedin.com/in/sahiti-akella/",
   },
   {
-    id: 21,
+    id: 22,
     name: "Isaiah Asaolu",
     affiliation: "Web Developer",
     image: isaiah_jpg,
     linkedin: "https://www.linkedin.com/in/isaiah-a-2001/",
   },
   {
-    id: 22,
+    id: 23,
     name: "Rajpreet Gill",
     affiliation: "Board Member",
     image: rajpreet_jpg,

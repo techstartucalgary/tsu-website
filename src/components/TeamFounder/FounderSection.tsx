@@ -1,8 +1,8 @@
 import React from "react";
-import { founder } from "../TeamSection/TeamInformation"
+import { founder } from "components/TeamSection/TeamInformation"
 import useViewport from "../UseViewport";
 import * as F from "./FounderSection.styles";
-import "../../App.css";
+import "App.css";
 
 const FounderSection = () => {
 

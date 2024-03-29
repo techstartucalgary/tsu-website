@@ -1,6 +1,6 @@
-import LaunchNight2023_img from "../../images/events/Launch_night_2023.jpeg";
-import PasonTechTalk_img from "../../images/events/PasonTechTalk.jpg";
-import IEEExTechStart_img from "../../images/events/IEEExTechStart.jpg";
+import LaunchNight2023_img from "images/events/Launch_night_2023.jpeg";
+import PasonTechTalk_img from "images/events/PasonTechTalk.jpg";
+import IEEExTechStart_img from "images/events/IEEExTechStart.jpg";
 
 export interface Event {
   title: string;

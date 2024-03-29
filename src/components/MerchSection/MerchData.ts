@@ -1,5 +1,5 @@
-import BasicCrewneck from "../../images/merch/BasicCrewneck.jpg";
-import BasicCrewneckWithSleevePrint from "../../images/merch/BasicCrewneckWithSleevePrint.jpg";
+import BasicCrewneck from "images/merch/BasicCrewneck.jpg";
+import BasicCrewneckWithSleevePrint from "images/merch/BasicCrewneckWithSleevePrint.jpg";
 
 export type MerchProperties = {
   id: number;

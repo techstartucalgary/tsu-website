@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import Team from "./Team";
 import useViewport from "../UseViewport";
 import * as S from "./TeamSection.styles";

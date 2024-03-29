@@ -3,7 +3,7 @@ import * as S from "./Profile.styles";
 import { TeamMember } from "./TeamInformation";
 import ProfileDescription from "./ProfileDescription";
 import SocialMedia from "components/SocialMedia/SocialMedia";
-import { SocialMediaColor } from "../../utility/SharedStyles";
+import { SocialMediaColor } from "utility/SharedStyles";
 import { faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 
 

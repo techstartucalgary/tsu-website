@@ -3,7 +3,7 @@ import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import Lottie from "react-lottie";
 import Divider from "components/Divider";
 import * as S from "./ProjectsSection.styles";
-import useViewport from "../../components/UseViewport";
+import useViewport from "components/UseViewport";
 import { projectTeamLottieOptions } from "utility/LottieOptions";
 
 /* Projects section on the homepage */

@@ -9,7 +9,7 @@ import {
   projectManagementLottieOptions,
   webDevelopmentLottieOptions,
 } from "utility/LottieOptions";
-import useViewport from "../UseViewport";
+import useViewport from "components/UseViewport";
 
 const ProjectKeywordsSection = () => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any

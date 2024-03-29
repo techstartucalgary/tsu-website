@@ -6,7 +6,7 @@ import "./ApplyPage.css";
 import { applyPageTeamLottieOptions } from "utility/LottieOptions";
 import final_showcase_2023 from "images/final_showcase_teams.jpg";
 import ApplySection from "components/ApplySection";
-import Accordion from "../components/Apply/Accordion";
+import Accordion from "components/Apply/Accordion";
 import Blobbie from "components/Blobbie";
 import Divider from "components/Divider";
 import HoverButton from "components/HoverButton/HoverButton";

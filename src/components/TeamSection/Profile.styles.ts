@@ -1,5 +1,5 @@
 import styled from "styled-components/macro";
-import { SocialMediaColor, handleColor } from "../../utility/SharedStyles";
+import { SocialMediaColor, handleColor } from "utility/SharedStyles";
 
 interface ProfileStyleProps {
   mobileView: boolean;

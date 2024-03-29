@@ -1,5 +1,5 @@
 import SponsorLogo from "components/SponsorLogo";
-import HoverButton from "../HoverButton/HoverButton";
+import HoverButton from "components/HoverButton/HoverButton";
 import { Organization, SponsorList } from "./SponsorsInfo";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import * as S from "./SponsorSection.styles";

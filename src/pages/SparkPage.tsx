@@ -3,14 +3,14 @@ import React, { Component, useEffect, useState } from "react";
 import "./SparkPage.css";
 import axios from "axios";
 import PostButton from "components/TechSpark/postButton";
-import Event from "../components/TechSpark/Event";
-import Login from "../components/TechSpark/Login";
-import SignIn from "../components/TechSpark/SignIn";
+import Event from "components/TechSpark/Event";
+import Login from "components/TechSpark/Login";
+import SignIn from "components/TechSpark/SignIn";
 import Popup from "components/TechSpark/Popup";
-import Register from "../components/TechSpark/Register";
+import Register from "components/TechSpark/Register";
 import MenuButton from "components/TechSpark/MenuButton";
 import Post from "components/TechSpark/post";
-import { EventType } from "../components/TechSpark/EventType";
+import { EventType } from "components/TechSpark/EventType";
 import { PostType } from "./PostType";
 
 function Dashboard() {

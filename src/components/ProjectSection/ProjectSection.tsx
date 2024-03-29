@@ -1,7 +1,7 @@
 import * as S from "./ProjectSection.styles";
 import { Project } from "components/ProjectSection/ProjectData";
-import Projects from "../Projects";
-import useViewport from "../UseViewport";
+import Projects from "components/Projects";
+import useViewport from "components/UseViewport";
 
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";

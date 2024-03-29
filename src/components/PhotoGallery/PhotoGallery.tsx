@@ -5,7 +5,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import Loading from "components/Loading";
 import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
-import * as S from "../../pages/GalleryPage.styles";
+import * as S from "pages/GalleryPage.styles";
 
 const PhotoGallery = () => {
   const [photosURL, setPhotosURL] = useState<string[]>([]); // photos will be an array of objects

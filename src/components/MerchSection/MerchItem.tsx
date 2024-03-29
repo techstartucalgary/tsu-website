@@ -4,7 +4,6 @@ import { type MerchProperties } from "./MerchData";
 import MerchDescription from "./MerchDescription";
 import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
-
 export type MerchItemProps = {
   merch: MerchProperties;
   mobileView: boolean;

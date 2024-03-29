@@ -11,7 +11,7 @@ import ProjectKeywordsSection from "components/ProjectSection/ProjectKeywordsSec
 import { NewlineText } from "utility/Helpers";
 import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
-import WinningTeamPhoto from "../images/final_showcase_winner.jpg";
+import WinningTeamPhoto from "images/final_showcase_winner.jpg";
 
 const ProjectsPage = () => {
   const [featuredProjects] = useState(

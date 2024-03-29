@@ -1,13 +1,13 @@
-import businessStrategyLottie from "../images/lottie/businessStrategy_lottie.json";
-import designLottie from "../images/lottie/design_lottie.json";
-import webDevelopmentLottie from "../images/lottie/web_development_lottie.json";
-import programmingLottie from "../images/lottie/programming_lottie.json";
-import projectManagementLottie from "../images/lottie/projectManagement_lottie.json";
-import projectTeamLottie from "../images/lottie/projectTeamLottie.json";
-import handshakeLottie from "../images/lottie/handshake_lottie.json";
-import teamproject from "../images/lottie/teamproject.json";
-import applyPageTeamLottie from "../images/lottie/applyPageTeamLottie.json";
-import merchPageAnimation from "../images/lottie/merchPageAnimation.json";
+import businessStrategyLottie from "images/lottie/businessStrategy_lottie.json";
+import designLottie from "images/lottie/design_lottie.json";
+import webDevelopmentLottie from "images/lottie/web_development_lottie.json";
+import programmingLottie from "images/lottie/programming_lottie.json";
+import projectManagementLottie from "images/lottie/projectManagement_lottie.json";
+import projectTeamLottie from "images/lottie/projectTeamLottie.json";
+import handshakeLottie from "images/lottie/handshake_lottie.json";
+import teamproject from "images/lottie/teamproject.json";
+import applyPageTeamLottie from "images/lottie/applyPageTeamLottie.json";
+import merchPageAnimation from "images/lottie/merchPageAnimation.json";
 
 export const applyPageTeamLottieOptions = {
   loop: true,

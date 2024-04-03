@@ -1,6 +1,7 @@
-import LaunchNight2023_img from "../../images/events/Launch_night_2023.jpeg";
+import FinalShowcase24_img from "../../images/events/Final_Showcase_24.jpg";
 import PasonTechTalk_img from "../../images/events/PasonTechTalk.jpg";
 import IEEExTechStart_img from "../../images/events/IEEExTechStart.jpg";
+
 
 export interface Event {
   title: string;
@@ -12,6 +13,15 @@ export interface Event {
 }
 
 export const highlightedEvents: Event[] = [
+  {
+    title: "Final Showcase 2024",
+    description:
+      "Come celebrate the remarkable progress our teams have achieved this school year in bringing their software development projects to life through technology and entrepreneurship! Network with esteemed faculty, industry guests, project managers, and our executive team. Lunch and refreshments will be provided for all attendees!",
+    date: "Saturday, April 27, 2024",
+    time: "12:00 - 4:00PM",
+    image: FinalShowcase24_img,
+    link: "https://www.eventbrite.ca/e/techstarts-final-showcase-tickets-823300141887",
+  },
   {
     title: "IEEE x TechStart",
     description:
@@ -30,13 +40,5 @@ export const highlightedEvents: Event[] = [
     image: PasonTechTalk_img,
     link: "https://www.linkedin.com/posts/tech-start-ucalgary_at-our-last-dev-night-we-hosted-a-tech-talk-activity-7130289774577254400-ESeU?utm_source=share&utm_medium=member_desktop",
   },
-  {
-    title: "Launch Night 2023",
-    description:
-      "We kicked off a thrilling new Tech Start Season! Our Project Managers pitched their projects and they're eager for you to be part of the action. Join us to learn more about what TechStart has in store for this year.",
-    date: "Friday, September 22, 2023",
-    time: "5:30 - 7:00PM",
-    image: LaunchNight2023_img,
-    link: "https://www.instagram.com/p/CxjG39nSR0G/?hl=en",
-  },
+
 ];

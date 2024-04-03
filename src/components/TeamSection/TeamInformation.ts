@@ -24,7 +24,6 @@ import wilbur_jpg from "../../images/team/Wilbur_Elbouni.jpg";
 import naman_jpg from "../../images/team/Naman_Bhoj.jpg";
 import lujaina_jpg from "../../images/team/Lujaina_ Eldelebshany.jpg";
 import hamza_jpg from "../../images/team/Hamza_Afzaal.jpg";
-import Maham_jpg from "../../images/team/Maham_Jamal.jpg";
 import brian_jpg from "../../images/team/Brian_Nguyen.jpg";
 import joel_jpg from "../../images/team/Joel_Happ.jpeg";
 import cindy_jpg from "../../images/team/Cindy_Cheng.jpg";
@@ -182,7 +181,7 @@ export const executiveTeam: TeamMember[] = [
     linkedin: "https://www.linkedin.com/in/abod-a-427274198/",
   },
   {
-    id: 11,
+    id: 18,
     name: "Wai Ka Wong",
     affiliation: "Technical Advisor",
     image: waika_jpg,

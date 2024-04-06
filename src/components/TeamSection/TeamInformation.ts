@@ -24,10 +24,11 @@ import wilbur_jpg from "../../images/team/Wilbur_Elbouni.jpg";
 import naman_jpg from "../../images/team/Naman_Bhoj.jpg";
 import lujaina_jpg from "../../images/team/Lujaina_ Eldelebshany.jpg";
 import hamza_jpg from "../../images/team/Hamza_Afzaal.jpg";
-import Maham_jpg from "../../images/team/Maham_Jamal.jpg";
 import brian_jpg from "../../images/team/Brian_Nguyen.jpg";
 import joel_jpg from "../../images/team/Joel_Happ.jpeg";
 import cindy_jpg from "../../images/team/Cindy_Cheng.jpg";
+import azlfa_jpg from "../../images/team/Azlfa_Anwar.jpeg";
+import abdirahman_jpg from "../../images/team/Abdirahman_Omar.jpg";
 
 export type TeamMember = {
   id: number;
@@ -70,103 +71,117 @@ export const executiveTeam: TeamMember[] = [
   {
     id: 2,
     name: "Rachel Renegado",
-    affiliation: "VP Internal",
+    affiliation: "President Elect / VP Internal",
     image: rachel_jpg,
     linkedin: "https://www.linkedin.com/in/rachel-renegado-544409201",
   },
   {
     id: 3,
+    name: "Labib Afshar Ahmed",
+    affiliation: "President Elect / VP Finance",
+    image: labib_jpg,
+    linkedin: "https://www.linkedin.com/in/labib-afsar-ahmed/",
+  },
+  {
+    id: 4,
+    name: "Aarsh Shah",
+    affiliation: "President Elect",
+    image: aarsh_jpg,
+    linkedin: "https://www.linkedin.com/in/aarsh-shah-0a84161a9/",
+  },
+  {
+    id: 5,
+    name: "Abdirahman Omar",
+    affiliation: "President Elect",
+    image: abdirahman_jpg,
+    linkedin: "https://www.linkedin.com/in/abdirahman-omar/",
+  },
+  {
+    id: 6,
     name: "Nathan Karbonik",
     affiliation: "External Advisor",
     image: nathan_jpg,
     linkedin: "https://www.linkedin.com/in/nathan-karbonik/",
   },
   {
-    id: 4,
+    id: 7,
     name: "Ana Laura Espinosa Garza",
     affiliation: "VP External",
     image: ana_jpg,
     linkedin: "https://www.linkedin.com/in/ana-laura-espinosa-garza-136a281b0/",
   },
   {
-    id: 5,
+    id: 8,
     name: "Cindy Cheng",
     affiliation: "Jr. VP External",
     image: cindy_jpg,
     linkedin: "https://www.linkedin.com/in/cindy-cheng-66328a2b8/"
   },
   {
-    id: 6,
+    id: 9,
     name: "Carol Wang",
     affiliation: "VP Community",
     image: carol_jpg,
     linkedin: "https://www.linkedin.com/in/carol-wang3116/",
   },
   {
-    id: 7,
+    id: 10,
     name: "Estefy Caballero",
     affiliation: "Co-VP Communications",
     image: estefy_jpeg,
     linkedin: "https://www.linkedin.com/in/estefy-caballero-864aab25a",
   },
   {
-    id: 8,
+    id: 11,
     name: "Enioluwafe Balogun",
     affiliation: "Co-VP Communications",
     image: enioluwafe_jpg,
     linkedin: "https://www.linkedin.com/in/enioluwafe-balogun/",
   },
   {
-    id: 9,
-    name: "Maham Jamal",
-    affiliation: "Media Commissioner",
-    image: Maham_jpg,
-    linkedin: "https://www.linkedin.com/in/maham-jamal-126a04258",
-  },
-  {
-    id: 10,
+    id: 12,
     name: "Leo Wei",
     affiliation: "Co-VP Events",
     image: leo_jpg,
     linkedin: "https://www.linkedin.com/in/leo-wei/",
   },
   {
-    id: 11,
+    id: 13,
     name: "Maheen Raza",
     affiliation: "Co-VP Events",
     image: maheen_jpg,
     linkedin: "https://www.linkedin.com/in/maheen-raza-40b780229/",
   },
   {
-    id: 12,
-    name: "Labib Afshar Ahmed",
-    affiliation: "VP Finance",
-    image: labib_jpg,
-    linkedin: "https://www.linkedin.com/in/labib-afsar-ahmed/",
+    id: 14,
+    name: "Azlfa Anwar",
+    affiliation: "Jr. VP Events",
+    image: azlfa_jpg,
+    linkedin: "https://www.linkedin.com/in/azlfa-anwar-20a040218/",
   },
   {
-    id: 13,
+    id: 15,
     name: "Janita Mahum",
     affiliation: "VP Design",
     image: janita_jpg,
     linkedin: "https://www.linkedin.com/in/janita-mahum-a5484a1b9/",
   },
   {
-    id: 14,
+    id: 16,
     name: "Ben Schmidt",
     affiliation: "VP Development",
     image: ben_jpg,
     linkedin: "https://www.linkedin.com/in/benschmidt2343/",
   },
   {
-    id: 15,
+    id: 17,
     name: "Abod Abbas",
     affiliation: "Senior Technical Advisor",
     image: abod_jpg,
     linkedin: "https://www.linkedin.com/in/abod-a-427274198/",
   },
   {
-    id: 16,
+    id: 18,
     name: "Wai Ka Wong",
     affiliation: "Technical Advisor",
     image: waika_jpg,
@@ -174,42 +189,42 @@ export const executiveTeam: TeamMember[] = [
   },
 
   {
-    id: 17,
+    id: 19,
     name: "Sajwal Pageni",
     affiliation: "VP Strategy",
     image: sajwal_jpg,
     linkedin: "https://www.linkedin.com/in/sajwal/",
   },
   {
-    id: 18,
+    id: 20,
     name: "Fedor Prokopchuk",
     affiliation: "Business Strategy Advisor",
     image: fedor_jpg,
     linkedin: "https://www.linkedin.com/in/fedor-prokopchuk-707668a6/",
   },
   {
-    id: 19,
+    id: 21,
     name: "Brian Nguyen",
     affiliation: "Senior Web Developer",
     image: brian_jpg,
     linkedin: "https://www.linkedin.com/in/nguyennbrian/",
   },
   {
-    id: 20,
+    id: 22,
     name: "Sahiti Akella",
     affiliation: "Web Developer",
     image: sahiti_jpg,
     linkedin: "https://www.linkedin.com/in/sahiti-akella/",
   },
   {
-    id: 21,
+    id: 23,
     name: "Isaiah Asaolu",
     affiliation: "Web Developer",
     image: isaiah_jpg,
     linkedin: "https://www.linkedin.com/in/isaiah-a-2001/",
   },
   {
-    id: 22,
+    id: 24,
     name: "Rajpreet Gill",
     affiliation: "Board Member",
     image: rajpreet_jpg,

@@ -271,7 +271,7 @@ const ApplyPage = () => {
               role="Executive Team"
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
-              statusIsOpen={true}
+              statusIsOpen={false}
               closedStatus="APPLICATIONS CLOSED"
               applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSdqb7zmvlrpQGKnEQuq0ywdJmDAAPYoWYqCVHwQBlvfkN6w0Q/viewform"
               deadline=""

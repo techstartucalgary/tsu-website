@@ -4,10 +4,18 @@ import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 import { motion } from "framer-motion";
 import * as S from "./TeamPage.styles";
-import FounderSection from "../components/TeamFounder/FounderSection";
+import * as T from "components/TeamSection/TeamSection.styles";
+import FounderSection from "components/TeamFounder/FounderSection";
+import Team from "components/TeamSection/Team";
+import { boardMembers } from "components/TeamSection/TeamInformation";
+import useViewport from "components/UseViewport";
+import Divider from "components/Divider";
 
 
 const TeamPage = () => {
+  // set defaultView flag according to screen width cutoff value
+  const { width } = useViewport(); // get screen width
+  const defaultView = width > 600 ? true : false;
   return (
     <S.TeamPage id="teamPageTop">
       <Blobbie
@@ -52,9 +60,20 @@ const TeamPage = () => {
           />
         </motion.div>
       </S.TeamPageHeader>
-      {/* founder section */}
+
+      <h1 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">
+        The Board
+      </h1>
+      <Divider />
       <FounderSection />
-      <TeamSection />
+      <T.TeamSection>
+        <Team
+          teamMembers={boardMembers}
+          desktopView={defaultView}
+          isExec={true}
+        />
+      </T.TeamSection>
+      <TeamSection desktopView={defaultView} />
     </S.TeamPage>
   );
 };

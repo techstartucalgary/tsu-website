@@ -21,6 +21,7 @@ const Project = (props: projectProps) => {
       onMouseLeave={toggleProjectDetails}
       data-aos="zoom-in"
       data-aos-duration="2500"
+      href={props.github} target="_blank"
     >
       <S.ProjectImage src={props.image} isVisible={!descriptionIsVisible} />
 
@@ -28,10 +29,7 @@ const Project = (props: projectProps) => {
 
       <S.ProjectContent isVisible={descriptionIsVisible}>
         {props.description}
-        {<S.ProjectButton href={props.github} target="_blank">
-          <div>Visit Project</div>
-        </S.ProjectButton>
-        }
+
       </S.ProjectContent>
     </S.ProjectContainer>
   );

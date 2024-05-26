@@ -53,27 +53,27 @@ const ProjectSection = (props: ProjectSectionProps) => {
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-50-px"
         >
-          {props.projects.map((project) => {
+          {props.projects.map((project, index) => {
             return (
               <Projects
                 image={project.image}
                 github={project.github}
                 name={project.name}
                 description={project.description}
-                key={project.id}
+                key={index}
               />
             );
           })}
         </Carousel>
       ) : (
-        props.projects.map((project) => {
+        props.projects.map((project, index) => {
           return (
             <Projects
               image={project.image}
               github={project.github}
               name={project.name}
               description={project.description}
-              key={project.id}
+              key={index}
             />
           );
         })

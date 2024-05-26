@@ -16,7 +16,7 @@ export const highlightedEvents: Event[] = [
   {
     title: "Final Showcase 2024",
     description:
-      "Come celebrate the remarkable progress our teams have achieved this school year in bringing their software development projects to life through technology and entrepreneurship! Network with esteemed faculty, industry guests, project managers, and our executive team. Lunch and refreshments will be provided for all attendees!",
+      "Our 2024 Final Showcase was an astounding success, pushing our club to new heights and setting even higher standards for what project teams are able to achieve. Congratulations to all the project teams for their achievements this year! ",
     date: "Saturday, April 27, 2024",
     time: "12:00 - 4:00PM",
     image: FinalShowcase24_img,

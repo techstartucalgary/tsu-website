@@ -93,7 +93,7 @@ export const FeaturedProjectContent = styled.div<FeaturedProjectProps>`
   width: 35%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
   transition: 0.3s ease-in-out;
 
   @media (max-width: 900px) {
@@ -101,6 +101,8 @@ export const FeaturedProjectContent = styled.div<FeaturedProjectProps>`
     transform: translateX(-50%);
     width: 90%;
     top: 25%;
+    text-align: center;
+    align-items: center;
   }
 
   @media (min-width: 900px) and (max-width: 930px) {

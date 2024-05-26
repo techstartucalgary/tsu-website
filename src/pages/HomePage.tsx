@@ -83,10 +83,10 @@ const HomePage = () => {
             edge={true}
           />
           <div className="homePage__numberContainer">
-            <NumberStat number={14} stat="projects so far" />
-            <NumberStat number={150} stat="members so far" />
+            <NumberStat number={20} stat="projects so far" />
+            <NumberStat number={230} stat="members so far" />
             <NumberStat
-              number={98}
+              number={99}
               suffix={"%"}
               stat="enjoyed their involvement"
             />

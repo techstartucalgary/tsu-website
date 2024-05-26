@@ -4,7 +4,7 @@ interface ProjectProps {
   isVisible?: boolean;
 }
 
-export const ProjectContainer = styled.div`
+export const ProjectContainer = styled.a`
   border-radius: 20px;
   position: relative;
   justify-content: center;
@@ -69,49 +69,4 @@ export const ProjectImage = styled.img<ProjectProps>`
   border-radius: 20px;
   transition: 0.3s ease-in-out;
   opacity: ${(props) => (props.isVisible ? 1 : 0)};
-`;
-
-export const ProjectButton = styled.a`
-  background-color: var(--secondary-grey);
-  border-radius: 30px;
-  width: 40%;
-  height: 30px;
-  padding-top: 7px;
-  margin: auto;
-  margin-top: 20px;
-  transition: 200ms;
-  display: block;
-  transition: 0.3s ease-in-out;
-  color: white;
-  text-decoration: none;
-
-  &: hover {
-    @media (min-width: 600px) {
-      color: var(--turquoise-blue);
-      box-shadow: 2px 4px var(--primary-green);
-      transform: translateY(-0.2em);
-    }
-  }
-
-  &: focus {
-    background-color: black;
-  }
-
-  @media (max-width: 450px) {
-    position: relative;
-    top: -30px;
-    padding: 0px 20px;
-    font-size: 5vw;
-    transform: scale(0.5);
-    background-color: var(--secondary-grey);
-    border-radius: 30px;
-    width: 50%;
-    height: 40px;
-    padding-top: 7px;
-    margin: auto;
-    margin-top: 15%;
-    transition: 200ms;
-    display: block;
-    transition: 0.3s ease-in-out;
-  }
 `;

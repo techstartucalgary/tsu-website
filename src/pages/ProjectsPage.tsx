@@ -11,11 +11,13 @@ import ProjectKeywordsSection from "components/ProjectSection/ProjectKeywordsSec
 import { NewlineText } from "utility/Helpers";
 import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
-import WinningTeamPhoto from "../images/final_showcase_winner.jpg";
 
 const ProjectsPage = () => {
   const [featuredProjects] = useState(
     PastProjects.filter((project) => project.featured === true)
+  );
+  const [bestOverallProjects] = useState(
+    PastProjects.filter((project) => project.showcaseWinner === true)
   );
   return (
     <S.ProjectsPage id="projectsPageTop">
@@ -40,55 +42,53 @@ const ProjectsPage = () => {
         className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin"
         style={{ marginTop: "0px" }}
       >
-        Final Showcase 2023
+        Final Showcase Winners
       </h2>
-      <Divider />
+      <p className="regularText regularText--white" style={{ padding: "0 10%", textAlign: "center" }}>
+        Each year, one project is awarded the title of Best
+        Overall Project at the Tech Start Final Showcase. The project
+        group achieving the award for Best Overall Project is recognized
+        for receiving the highest overall points in the 4 judging
+        categories: Technical Functionality, User Friendliness, Presentation Quality, and Business Strategy.
+      </p>
       <S.FinalShowcaseWinnerSection>
-        <div data-aos="fade-up" data-aos-duration="800">
-          <h2
-            className="thiccSubheading thiccSubheading--gradient"
-            style={{ textAlign: "center" }}
-          >
-            Best Overall Project
-          </h2>
-          <div data-aos="flip-left"></div>
-          <S.FinalShowcaseWinnerDescription>
-            <span>
-              <h1
-                className="babyHeading--white"
-                style={{ textAlign: "left", marginBottom: "3%" }}
-              >
-                Congratulations EasyMeal!
-              </h1>
-              <p className="regularText regularText--white">
-                On April 29th, 2023, EasyMeal was awarded the title of Best
-                Overall Project at the Tech Start Final Showcase. The project
-                group achieving the award for Best Overall Project is recognized
-                for receiving the highest overall points in the 4 judging
-                categories listed as follows:
-                <ul>
-                  <li> Technical Functionality </li>
-                  <li> User Friendliness </li>
-                  <li> Presentation Quality </li>
-                  <li> Business & Strategy </li>
-                </ul>
-              </p>
-              <S.FinalShowcaseWinnerLinkedInButtonDiv>
-                <HoverButton
-                  mode={ButtonMode.GRADIENT}
-                  text={"Learn More"}
-                  link="https://www.linkedin.com/feed/update/urn:li:activity:7058573838405550080?utm_source=share&utm_medium=member_desktop"
-                  linkIsInternal={false}
-                />
-              </S.FinalShowcaseWinnerLinkedInButtonDiv>
-            </span>
-            <S.FinalShowcaseWinnerImage>
-              <div data-aos="flip-left">
-                <img src={WinningTeamPhoto} alt="Easy Meal Team" />
-              </div>
-            </S.FinalShowcaseWinnerImage>
-          </S.FinalShowcaseWinnerDescription>
-        </div>
+        {bestOverallProjects.map((project) => (
+          <div data-aos="fade-up" data-aos-duration="800">
+            <h2
+              className="thiccSubheading thiccSubheading--gradient"
+              style={{ textAlign: "center" }}
+            >
+              <Divider />
+              {project.year}
+            </h2>
+            <div data-aos="flip-left"></div>
+            <S.FinalShowcaseWinnerDescription>
+              <span>
+                <h1
+                  className="babyHeading--white"
+                >
+                  Congratulations {project.name}!
+                </h1>
+                <p className="regularText regularText--white">
+                  {project.description}
+                </p>
+                <S.FinalShowcaseWinnerLinkedInButtonDiv>
+                  <HoverButton
+                    mode={ButtonMode.GRADIENT}
+                    text={"Learn More"}
+                    link={project.winnerPost as string}
+                    linkIsInternal={false}
+                  />
+                </S.FinalShowcaseWinnerLinkedInButtonDiv>
+              </span>
+              <S.FinalShowcaseWinnerImage>
+                <div data-aos="flip-left">
+                  <img src={project.teamPic} alt={project.name} />
+                </div>
+              </S.FinalShowcaseWinnerImage>
+            </S.FinalShowcaseWinnerDescription>
+          </div>
+        ))}
       </S.FinalShowcaseWinnerSection>
 
       <div data-aos="fade-up" data-aos-duration="800">

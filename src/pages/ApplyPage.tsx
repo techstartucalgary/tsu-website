@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Lottie from "react-lottie";
 import "./ApplyPage.css";
 import { applyPageTeamLottieOptions } from "utility/LottieOptions";
-import final_showcase_2023 from "images/final_showcase_teams.jpg";
+import final_showcase_2023 from "images/execs_24.jpg";
 import ApplySection from "components/ApplySection";
 import Accordion from "../components/Apply/Accordion";
 import Blobbie from "components/Blobbie";

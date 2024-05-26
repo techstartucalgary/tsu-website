@@ -50,7 +50,7 @@ export const executiveTeam: TeamMember[] = [
   {
     id: 1,
     name: "Aarsh Shah",
-    affiliation: "President Elect",
+    affiliation: "Co-President",
     image: aarsh_jpg,
     linkedin: "https://www.linkedin.com/in/aarsh-shah-0a84161a9/",
   },

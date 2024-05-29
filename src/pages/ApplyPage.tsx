@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 import Lottie from "react-lottie";
 import "./ApplyPage.css";
 import { applyPageTeamLottieOptions } from "utility/LottieOptions";
-import final_showcase_2023 from "images/execs_24.jpg";
+import execs_24 from "images/execs_24.jpg";
 import ApplySection from "components/ApplySection";
 import Accordion from "../components/Apply/Accordion";
 import Blobbie from "components/Blobbie";
@@ -102,7 +102,7 @@ const ApplyPage = () => {
             your portfolio!
           </h1>
         </div>
-        <img src={final_showcase_2023} alt="Tech Start Members" />
+        <img src={execs_24} alt="Tech Start Members" />
       </div>
 
       <div className="applyPage__container applyPage__projectIntroContainer">

@@ -4,7 +4,6 @@ export const TeamSection = styled.div`
   padding: 5vw;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 5%;
   text-align: center;
 
   & > h2 {
@@ -96,26 +95,26 @@ export const ToggleButton = styled.input`
   }
 `;
 
-export const PMText = styled.p`
+export const TeamCategoryText = styled.p`
   font-size: 1em;
   margin-left: -20px;
-  margin-top: 15px;
   font-family: "Inter", Tahoma, sans-serif;
   color: white;
   font-weight: 500;
+  
   @media (min-width: 320px) and (max-width: 475px) {
     font-size: 0.65em;
     color: white;
-    margin-top: 15px;
   }
 `;
 
 export const Slider = styled.p`
   font-size: 1em;
   margin-left: 200px;
-  margin-top: 56px;
-  @media (min-width: 320px) and (max-width: 475px) {
-    margin-top: -15px;
+  height: 24px;
+  @media (max-width: 475px) {
+    height: 0;
+    margin-top: -10px;
   }
   font-weight: 500;
 `;

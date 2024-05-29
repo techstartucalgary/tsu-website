@@ -16,24 +16,24 @@ const Project = (props: projectProps) => {
     setNameIsVisible(!nameIsVisible);
   }
   return (
+    <a href={props.github} target="_blank">
     <S.ProjectContainer
       onMouseEnter={toggleProjectDetails}
       onMouseLeave={toggleProjectDetails}
       data-aos="zoom-in"
       data-aos-duration="2500"
     >
+
       <S.ProjectImage src={props.image} isVisible={!descriptionIsVisible} />
 
       <S.ProjectTitle isVisible={nameIsVisible}>{props.name}</S.ProjectTitle>
 
       <S.ProjectContent isVisible={descriptionIsVisible}>
         {props.description}
-        {<S.ProjectButton href={props.github} target="_blank">
-          <div>Visit Project</div>
-        </S.ProjectButton>
-        }
+
       </S.ProjectContent>
     </S.ProjectContainer>
+    </a>
   );
 }
 

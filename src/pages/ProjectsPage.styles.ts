@@ -76,29 +76,25 @@ export const WrapDiv = styled.div`
 
 export const FinalShowcaseWinnerSection = styled.div`
   display: flex;
+  flex-direction: column;
   justify-content: center;
 `;
 
 export const FinalShowcaseWinnerDescription = styled.div`
-  margin: 5% 5% 5% 5%;
+  margin: 5%;
   max-width: 1400px;
   display: grid;
 
-  @media (min-width: 1550px) {
+  @media (max-width: 900px) {
+    & > span > * {
+      text-align: center;
+    }
+  }
+
+  @media (min-width: 900px) {
     grid-template-columns: 1fr 1fr;
   }
 
-  @media (min-width: 1055px) and (max-width: 1550px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (max-width: 1055px) {
-    margin-left: 8%;
-  }
-
-  @media (max-width: 600px) {
-    margin-left: 11%;
-  }
 `;
 
 export const FinalShowcaseWinnerImage = styled.div`
@@ -110,16 +106,11 @@ export const FinalShowcaseWinnerImage = styled.div`
   & > div > img {
     object-fit: cover;
     display: block;
-    width: 50vw;
+    width: 100%;
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 25px;
-  }
-  @media (max-width: 1055px) {
-    & > div > img {
-      width: 80vw;
-    }
   }
 `;
 
@@ -127,4 +118,8 @@ export const FinalShowcaseWinnerLinkedInButtonDiv = styled.div`
   justify-content: left;
   display: flex;
   margin-bottom: 1%;
+
+  @media (max-width: 900px) {
+    justify-content: center;
+  }
 `;

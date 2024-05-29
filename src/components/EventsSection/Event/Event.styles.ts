@@ -24,7 +24,7 @@ export const EventImage = styled.img`
 
   @media (max-width: 1100px) {
     width: 100%;
-    margin: 0%;
+    margin: 0 0 3% 0;
   }
 `;
 

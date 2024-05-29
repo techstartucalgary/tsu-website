@@ -1,16 +1,15 @@
 import React from "react";
 import { useState } from "react";
 import Team from "./Team";
-import useViewport from "../UseViewport";
 import * as S from "./TeamSection.styles";
 import { executiveTeam, projectManagers } from "./TeamInformation";
 
-const TeamSection = () => {
-  const [toggle, setToggled] = useState(false);
+type TeamSectionProps = {
+  desktopView: boolean;
+};
 
-  // set defaultView flag according to screen width cutoff value
-  const { width } = useViewport(); // get screen width
-  const defaultView = width > 600 ? true : false;
+const TeamSection = (props: TeamSectionProps) => {
+  const [toggle, setToggled] = useState(false);
 
   const getTeamMembers = () => {
     return toggle ? projectManagers : executiveTeam;
@@ -25,15 +24,15 @@ const TeamSection = () => {
           onClick={() => setToggled(prev => !prev)}
         />
         <S.ToggleButtonLabel htmlFor="checkbox">
-          <S.PMText>
+          <S.TeamCategoryText>
             Project Managers &emsp; &emsp; &emsp;&emsp;&emsp; Executives
             <S.Slider></S.Slider>
-          </S.PMText>
+          </S.TeamCategoryText>
         </S.ToggleButtonLabel>
       </S.ToggleButtonWrapper>
       <Team
         teamMembers={getTeamMembers()}
-        desktopView={defaultView}
+        desktopView={props.desktopView}
         isExec={!toggle}
       />
     </S.TeamSection>

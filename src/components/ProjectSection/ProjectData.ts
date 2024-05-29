@@ -18,10 +18,17 @@ import airm from "images/projects/AiRM.png";
 import techstarcade from "images/projects/Techstarcade.jpg";
 import bandist from "images/projects/Bandist.jpg";
 import cyberHire from "images/projects/CyberHire.jpg";
+import achevio from "images/projects/Achevio.png"
+import campusBuddy from "images/projects/CampusBuddy.jpg";
+import locaLoyalty from "images/projects/LocaLoyalty.png";
+import craftXR from "images/projects/Craftxr.jpg";
+import reThread from "images/projects/Rethread.png";
+import fyr from "images/projects/ForYourResearch.jpg";
+import easyMealTeam from "images/showcaseWinners/2023_best_overall.jpg";
+import localoyaltyTeam from "images/showcaseWinners/2024_best_overall.jpg";
 
 // Project type definition
 export type Project = {
-  id: number;
   name: string;
   image: string;
   github: string;
@@ -30,6 +37,9 @@ export type Project = {
   description: string;
   year: string;
   featured: boolean;
+  showcaseWinner: boolean;
+  teamPic?: string;
+  winnerPost?: string,
   videoEmbedID: string;
 };
 
@@ -38,7 +48,86 @@ const website = new URL("https://tech-start-website.web.app/");
 // An array of our projects, which is used in the Projects page
 export const PastProjects: Project[] = [
   {
-    id: 0,
+    name: "Achevio",
+    github: "https://github.com/techstartucalgary/achevio/",
+    website: website,
+    image: achevio,
+    pmName: "Wilbur Elbouni",
+    year: "2023-2024",
+    description:
+      "A new take on social media where you join goal-focused communities.",
+    featured: false,
+    showcaseWinner: false,
+    videoEmbedID: "",
+  },
+  {
+    name: "CraftXR",
+    github: "https://github.com/techstartucalgary/",
+    website: website,
+    image: craftXR,
+    pmName: "Hamza Afzaal",
+    year: "2023-2024",
+    description:
+      "A tool for building immersive experiences.",
+    featured: false,
+    showcaseWinner: false,
+    videoEmbedID: "",
+  },
+  {
+    name: "CampusBuddy",
+    github: "https://github.com/techstartucalgary/CampusBuddy",
+    website: website,
+    image: campusBuddy,
+    pmName: "Aarsh Shah",
+    year: "2023-2024",
+    description:
+      "A mobile app that bridges the gaps that students face on a day to day basis.",
+    featured: false,
+    showcaseWinner: false,
+    videoEmbedID: "",
+  },
+  {
+    name: "LocaLoyalty",
+    github: "https://github.com/techstartucalgary/LocaLoyalty",
+    website: website,
+    image: locaLoyalty,
+    pmName: "Hilton Luu",
+    year: "2023-2024",
+    description:
+      "A platform for small businesses to create and launch their own loyalty program through the form of virtual stamp cards.",
+    featured: false,
+    showcaseWinner: true,
+    teamPic: localoyaltyTeam,
+    winnerPost: "https://www.linkedin.com/posts/tech-start-ucalgary_our-2024-final-showcase-was-an-astounding-activity-7190521165465948160-JCqf?utm_source=share",
+    videoEmbedID: "",
+  },
+  {
+    name: "reThread",
+    github: "https://github.com/techstartucalgary/Rethread",
+    website: website,
+    image: reThread,
+    pmName: "Aarsh Shah",
+    year: "2023-2024",
+    description:
+      "An app that educates and rewards consumers based on how sustainable their fashion consumption choices are.",
+    featured: false,
+    showcaseWinner: false,
+    videoEmbedID: "",
+  },
+  {
+    name: "For Your Research",
+    github: "https://github.com/techstartucalgary/For-Your-Research",
+    website: website,
+    image: fyr,
+    pmName: "Naman Bhoj",
+    year: "2023-2024",
+    description:
+      "Helping you iterate faster in your research processes from collection to analysis of scientific literature.",
+    featured: false,
+    showcaseWinner: false,
+    videoEmbedID: "",
+  },
+  {
     name: "Bandist",
     github: "https://github.com/techstartucalgary/Bandist",
     website: website,
@@ -48,10 +137,10 @@ export const PastProjects: Project[] = [
     description:
       "A cross-platform application for music enthusiasts to get notified of the latest concerts of their favorite artists.",
     featured: false,
+    showcaseWinner: false,
     videoEmbedID: "",
   },
   {
-    id: 1,
     name: "CyberHire",
     github: "https://github.com/techstartucalgary/CyberHire",
     website: website,
@@ -60,10 +149,10 @@ export const PastProjects: Project[] = [
     year: "2022-2023",
     description: "A platform for employers and applicants to connect.",
     featured: false,
+    showcaseWinner: false,
     videoEmbedID: "",
   },
   {
-    id: 2,
     name: "Lifeline",
     github: "https://github.com/techstartucalgary/lifeline",
     pmName: "Timothy Macphail",
@@ -73,10 +162,10 @@ export const PastProjects: Project[] = [
     description:
       "Lifeline uses AI to extract and organize deadlines from course documents for you to download.",
     featured: false,
+    showcaseWinner: false,
     videoEmbedID: "",
   },
   {
-    id: 3,
     name: "EasyMeal",
     github: "https://github.com/techstartucalgary/EasyMeal",
     website: website,
@@ -86,10 +175,12 @@ export const PastProjects: Project[] = [
     description:
       "EasyMeal generates recipes for you based on your budget and tastes.",
     featured: true,
+    showcaseWinner: true,
+    teamPic: easyMealTeam,
+    winnerPost: "https://www.linkedin.com/feed/update/urn:li:activity:7058573838405550080/?utm_source=share",
     videoEmbedID: "jk-dVia1yqo",
   },
   {
-    id: 4,
     name: "AiRM",
     github: "https://github.com/techstartucalgary/RoboticArm",
     pmName: "Leo Wei",
@@ -99,10 +190,10 @@ export const PastProjects: Project[] = [
     description:
       "Robotic arm using reinforcement learning to help robots learn and adapt to new environments.",
     featured: false,
+    showcaseWinner: false,
     videoEmbedID: "",
   },
   {
-    id: 5,
     name: "TechstArcade",
     github: "https://github.com/techstartucalgary/techstarcade",
     pmName: "Madeline Mazurek",
@@ -111,10 +202,10 @@ export const PastProjects: Project[] = [
     year: "2022-2023",
     description: "Retro style mini games in a arcade style chrome extension.",
     featured: false,
+    showcaseWinner: false,
     videoEmbedID: "",
   },
   {
-    id: 6,
     name: "NoteAId",
     github: "https://github.com/Tech-Start-UCalgary/NoteAId",
     website: website,
@@ -124,10 +215,10 @@ export const PastProjects: Project[] = [
     description:
       "A mobile app that helps students with studying for exams by summarizing their handwritten notes",
     featured: false,
+    showcaseWinner: false,
     videoEmbedID: "",
   },
   {
-    id: 7,
     name: "Aquavolution",
     github: "https://github.com/Tech-Start-UCalgary/Aquavolution",
     website: website,
@@ -137,10 +228,10 @@ export const PastProjects: Project[] = [
     description:
       "Born a tiny fish, try to survive among other predators, be careful of the human waste in the ocean though!",
     featured: true,
+    showcaseWinner: false,
     videoEmbedID: "9SqZWb1-tw0",
   },
   {
-    id: 8,
     name: "Where To?",
     github: "https://github.com/Tech-Start-UCalgary/decision-frontend",
     website: website,
@@ -150,10 +241,10 @@ export const PastProjects: Project[] = [
     description:
       "An app that helps groups make decisions when planning a social gathering by voting",
     featured: false,
+    showcaseWinner: false,
     videoEmbedID: "",
   },
   {
-    id: 9,
     name: "Snowbot",
     github: "",
     website: website,
@@ -162,10 +253,10 @@ export const PastProjects: Project[] = [
     year: "2021-2022",
     description: "A robot that autonomously clears snow on sidewalks",
     featured: false,
+    showcaseWinner: false,
     videoEmbedID: "",
   },
   {
-    id: 10,
     name: "OneApp",
     github: "https://github.com/glassthunder/TECHSTART",
     pmName: "Felix Vaughan",
@@ -175,10 +266,10 @@ export const PastProjects: Project[] = [
     description:
       "A hub for your social media that shows you info and stats from your favorite sites. Switching apps is so 2020!",
     featured: false,
+    showcaseWinner: false,
     videoEmbedID: "",
   },
   {
-    id: 11,
     name: "SupplyMe",
     github: "https://github.com/Tech-Start-UCalgary/SupplyMe",
     pmName: "Darryl Huët",
@@ -188,10 +279,10 @@ export const PastProjects: Project[] = [
     description:
       "An app that uses the Ethereum blockchain with QR Codes to track package and parcel transfers",
     featured: false,
+    showcaseWinner: false,
     videoEmbedID: "",
   },
   {
-    id: 12,
     name: "Resume Tracker",
     github: "2020-2021",
     pmName: "Daniel Rashidian",
@@ -201,10 +292,10 @@ export const PastProjects: Project[] = [
     description:
       "Resume Tracker rates your resume and provides feedback on how to improve it",
     featured: false,
+    showcaseWinner: false,
     videoEmbedID: "",
   },
   {
-    id: 13,
     name: "TSU Website",
     github: "https://github.com/Tech-Start-UCalgary/tsu-website",
     pmName: "Joel Happ, Niyousha Raeesinejad",
@@ -214,6 +305,7 @@ export const PastProjects: Project[] = [
     description:
       "We built this website from scratch with React, TypeScript, and a Django backend!",
     featured: false,
+    showcaseWinner: false,
     videoEmbedID: "",
   },
 ];

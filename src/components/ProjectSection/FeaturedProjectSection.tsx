@@ -13,13 +13,13 @@ const FeaturedProjectSection = (props: FeaturedProjectSectionProps) => {
 
     return (
         <S.FeaturedProjectSectionDiv>
-            {props.featuredProjects.map((project) => (
+            {props.featuredProjects.map((project, index) => (
                 <FeaturedProject
                     image={project.image}
                     github={project.github}
                     name={project.name}
                     description={project.description}
-                    key={project.id}
+                    key={index}
                     year={project.year}
                     videoEmbedID={project.videoEmbedID}
                 />

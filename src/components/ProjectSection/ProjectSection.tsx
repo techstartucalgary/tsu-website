@@ -49,31 +49,30 @@ const ProjectSection = (props: ProjectSectionProps) => {
           transitionDuration={500}
           containerClass="carousel-container"
           removeArrowOnDeviceType={["desktop", "tablet", "mobile"]}
-          // deviceType={this.props.deviceType}
           dotListClass="custom-dot-list-style"
           itemClass="carousel-item-padding-50-px"
         >
-          {props.projects.map((project) => {
+          {props.projects.map((project, index) => {
             return (
               <Projects
                 image={project.image}
                 github={project.github}
                 name={project.name}
                 description={project.description}
-                key={project.id}
+                key={index}
               />
             );
           })}
         </Carousel>
       ) : (
-        props.projects.map((project) => {
+        props.projects.map((project, index) => {
           return (
             <Projects
               image={project.image}
               github={project.github}
               name={project.name}
               description={project.description}
-              key={project.id}
+              key={index}
             />
           );
         })

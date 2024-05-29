@@ -273,7 +273,7 @@ const ApplyPage = () => {
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               statusIsOpen={true}
               closedStatus="APPLICATIONS CLOSED"
-              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSdqb7zmvlrpQGKnEQuq0ywdJmDAAPYoWYqCVHwQBlvfkN6w0Q/viewform"
+              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLScQXNzAtDaXuTcm-lfXiaDCgRCwcVrLPgsnff1ltH7wXcc7tg/viewform"
               deadline=""
             />
           </ul>

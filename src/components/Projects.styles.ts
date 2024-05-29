@@ -4,7 +4,7 @@ interface ProjectProps {
   isVisible?: boolean;
 }
 
-export const ProjectContainer = styled.a`
+export const ProjectContainer = styled.div`
   border-radius: 20px;
   position: relative;
   justify-content: center;

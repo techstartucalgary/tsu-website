@@ -112,8 +112,9 @@ export const Slider = styled.p`
   font-size: 1em;
   margin-left: 200px;
   height: 24px;
-  @media (min-width: 320px) and (max-width: 475px) {
-    margin-top: -15px;
+  @media (max-width: 475px) {
+    height: 0;
+    margin-top: -10px;
   }
   font-weight: 500;
 `;

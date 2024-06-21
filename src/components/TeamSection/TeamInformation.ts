@@ -4,9 +4,8 @@ import carol_jpg from "../../images/team/Carol_Wang.jpg";
 import rajpreet_jpg from "../../images/team/Rajpreet_Gill.jpg";
 import labib_jpg from "../../images/team/Labib_Ahmed.jpg";
 import ana_jpg from "../../images/team/Ana_Laura.jpg";
-import estefy_jpeg from "../../images/team/Estefy_Caballero.jpeg";
+import estefy_jpeg from "../../images/team/Estefy_Caballero.jpg";
 import maheen_jpg from "../../images/team/Maheen_Raza.jpg";
-import rachel_jpg from "../../images/team/Rachel_Renegado.jpg";
 import ben_jpg from "../../images/team/Ben_Schmidt.jpg";
 import aarsh_jpg from "../../images/team/Aarsh_Shah.jpg";
 import hilton_jpg from "../../images/team/Hilton_Luu.jpg";
@@ -15,6 +14,13 @@ import naman_jpg from "../../images/team/Naman_Bhoj.jpg";
 import lujaina_jpg from "../../images/team/Lujaina_ Eldelebshany.jpg";
 import hamza_jpg from "../../images/team/Hamza_Afzaal.jpg";
 import joel_jpg from "../../images/team/Joel_Happ.jpeg";
+import rachel_jpg from "../../images/team/Rachel_Renegado.jpg";
+import brian_jpg from "../../images/team/Brian_Nguyen.jpg";
+import esther_jpg from "../../images/team/Esther_Thompson.jpg";
+import ivan_jpg from "../../images/team/Ivan_Imshenetskyy.jpg";
+import mehrnaz_jpg from "../../images/team/Mehrnaz_Zafari.jpg";
+import parsa_jpg from "../../images/team/Parsa_Kargari.jpg";
+import youssef_jpg from "../../images/team/Youssef_Hamed.jpg";
 
 export type TeamMember = {
   id: number;
@@ -64,38 +70,80 @@ export const executiveTeam: TeamMember[] = [
   {
     id: 3,
     name: "Labib Afshar Ahmed",
-    affiliation: "Co-VP Finance",
+    affiliation: "VP Finance",
     image: labib_jpg,
     linkedin: "https://www.linkedin.com/in/labib-afsar-ahmed/",
   },
   {
     id: 4,
+    name: "Ivan Imshenetskyy",
+    affiliation: "Co-VP Finance",
+    image: ivan_jpg,
+    linkedin: "https://www.linkedin.com/in/imivani/",
+  },
+  {
+    id: 5,
     name: "Ana Laura Espinosa Garza",
     affiliation: "VP External",
     image: ana_jpg,
     linkedin: "https://www.linkedin.com/in/ana-laura-espinosa-garza-136a281b0/",
   },
   {
-    id: 5,
+    id: 6,
     name: "Carol Wang",
     affiliation: "VP Community",
     image: carol_jpg,
     linkedin: "https://www.linkedin.com/in/carol-wang3116/",
   },
   {
-    id: 6,
+    id: 7,
     name: "Estefy Caballero",
-    affiliation: "Co-VP Communications",
+    affiliation: "VP Communications",
     image: estefy_jpeg,
     linkedin: "https://www.linkedin.com/in/estefy-caballero-864aab25a",
   },
   {
-    id: 7,
+    id: 8,
+    name: "Esther Thompson",
+    affiliation: "Jr VP Communications",
+    image: esther_jpg,
+    linkedin: "https://www.linkedin.com/in/esther-thompson-2436911b4/",
+  },
+  {
+    id: 9,
     name: "Ben Schmidt",
-    affiliation: "VP Development",
+    affiliation: "Co-VP Development",
     image: ben_jpg,
     linkedin: "https://www.linkedin.com/in/benschmidt2343/",
   },
+  {
+    id: 10,
+    name: "Youssef Hamed",
+    affiliation: "Co-VP Development",
+    image: youssef_jpg,
+    linkedin: "https://www.linkedin.com/in/youssef-walid-hamed/",
+  },
+  {
+    id: 11,
+    name: "Brian Nguyen",
+    affiliation: "Senior Web Developer",
+    image: brian_jpg,
+    linkedin: "https://www.linkedin.com/in/nguyennbrian/",
+  },
+  {
+    id: 12,
+    name: "Parsa Kargari",
+    affiliation: "Technical Advisor",
+    image: parsa_jpg,
+    linkedin: "https://www.linkedin.com/in/parsa-kargari/",
+  },
+  {
+    id: 13,
+    name: "Mehrnaz Zafari",
+    affiliation: "Cloud Advisor",
+    image: mehrnaz_jpg,
+    linkedin: "https://www.linkedin.com/in/mehrnaz-zafari/",
+  }
 ];
 
 export const projectManagers: TeamMember[] = [
@@ -133,6 +181,13 @@ export const projectManagers: TeamMember[] = [
     affiliation: "For Your Research",
     image: naman_jpg,
     linkedin: "https://www.linkedin.com/in/naman-bhoj-3032a6154",
+  },
+  {
+    id: 5,
+    name: "Hamza Afzaal",
+    affiliation: "CraftXR",
+    image: hamza_jpg,
+    linkedin: "https://www.linkedin.com/in/ammerhamza/",
   },
   {
     id: 5,

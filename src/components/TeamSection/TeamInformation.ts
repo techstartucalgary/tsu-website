@@ -189,13 +189,6 @@ export const projectManagers: TeamMember[] = [
     image: hamza_jpg,
     linkedin: "https://www.linkedin.com/in/ammerhamza/",
   },
-  {
-    id: 5,
-    name: "Hamza Afzaal",
-    affiliation: "CraftXR",
-    image: hamza_jpg,
-    linkedin: "https://www.linkedin.com/in/ammerhamza/",
-  },
 ];
 
 export const boardMembers: TeamMember[] = [

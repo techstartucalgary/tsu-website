@@ -23,6 +23,7 @@ export const ProfileIconDiv = styled.div`
   & > img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     transition: 0.4s ease-in-out;
     background-size: cover;
     background-color: white;

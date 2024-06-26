@@ -1,6 +1,3 @@
-import mehrnaz_jpg from "../../images/team/Mehrnaz_Zafari.jpg";
-import parsa_jpg from "../../images/team/Parsa_Kargari.jpg";
-import youssef_jpg from "../../images/team/Youssef_Hamed.jpg";
 import teamData from "./teamMembers.json";
 
 // dynamically import image based on the imageName parameter

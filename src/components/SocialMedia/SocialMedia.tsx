@@ -16,7 +16,7 @@ const SocialMedia = (props: SocialMediaProps) => {
         <FontAwesomeIcon icon={props.icon} size="3x" />
       </SocialMediaIcon>
       :
-      <SocialMediaIcon color={props.color} href={props.link}>
+      <SocialMediaIcon color={props.color} href={props.link} target="_blank">
         <FontAwesomeIcon icon={props.icon} size="3x" />
       </SocialMediaIcon>
   );

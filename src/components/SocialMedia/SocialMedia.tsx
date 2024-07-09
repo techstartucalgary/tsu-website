@@ -7,18 +7,22 @@ interface SocialMediaProps {
   color: SocialMediaColor;
   link: string;
   icon: IconDefinition;
+  target?: string;
 }
 
 const SocialMedia = (props: SocialMediaProps) => {
-  return (
-    props.link === " " ? 
-      <SocialMediaIcon color={props.color}>
-        <FontAwesomeIcon icon={props.icon} size="3x" />
-      </SocialMediaIcon>
-      :
-      <SocialMediaIcon color={props.color} href={props.link}>
-        <FontAwesomeIcon icon={props.icon} size="3x" />
-      </SocialMediaIcon>
+  return props.link === " " ? (
+    <SocialMediaIcon color={props.color}>
+      <FontAwesomeIcon icon={props.icon} size="3x" />
+    </SocialMediaIcon>
+  ) : (
+    <SocialMediaIcon
+      color={props.color}
+      href={props.link}
+      target={props.target}
+    >
+      <FontAwesomeIcon icon={props.icon} size="3x" />
+    </SocialMediaIcon>
   );
 };
 

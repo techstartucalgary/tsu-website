@@ -23,7 +23,11 @@ This guide documents how and when to update different content on the Tech Start 
     - [Applications](#applications)
   - [Resources Page](#resources-page)
     - [Guides](#guides)
+<<<<<<< HEAD
   - [Playwright Tests](#playwright-tests)
+=======
+  - [Plawright Tests](#plawright-tests)
+>>>>>>> 1d655a9 (additonal updates to documentation)
     - [Installing Plawright](#installing-plawright)
     - [How to run tests](#how-to-run-the-tests)
     - [To view test results](#to-view-the-test-results)
@@ -225,6 +229,7 @@ Example:
 
 ## Plawright Tests
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 ### Installing Plawright
 
@@ -266,22 +271,33 @@ For example, to generate test code for the Tech Start UCalgary website with a vi
 npx playwright codegen --viewport-size=1600,900 https://techstartucalgary.com
 ```
 =======
+=======
+
+>>>>>>> 1d655a9 (additonal updates to documentation)
 ### Installing Plawright
+
 Here are 2 helpful links to get you started with Plawright
 [Plawright Getting Started ](https://playwright.dev/docs/intro) Or [Getting Started with Playwright and VS Code](https://www.youtube.com/watch?v=Xz6lhEzgI5I)
 
 ### How to run the tests
+
 This will run all the tests in the tests folder
+
 ```bash
 npx playwright test
 ```
+
 This will run the test cases in the HomePage.test.ts file on the chromium browser
+
 ```bash
 npx playwright test tests/homePage/HomePage.test.ts --project=chromium
 ```
+
 ### To view the test results
+
 Either navigate to the `playwright-report` folder and open the generated `report.html` file in the browser\
 or run the following command to open the report.html file in the browser
+
 ```bash
 npx playwright show-report
 ```

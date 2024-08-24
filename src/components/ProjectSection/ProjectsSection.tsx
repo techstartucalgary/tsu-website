@@ -84,7 +84,7 @@ export const ProjectsSection = () => {
             network with the tech community on campus.
           </p>
           <S.projectButtonDiv>
-            <HoverButton
+            <HoverButton 
               mode={ButtonMode.GRADIENT}
               link={"/projects"}
               text={"Check out our projects!"}

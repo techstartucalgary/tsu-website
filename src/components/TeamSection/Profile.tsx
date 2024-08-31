@@ -14,7 +14,7 @@ type ProfileProps = {
   profilePic: string;
   alt: string;
   member: TeamMember;
-  isExec: boolean;
+  activeCategory: string;
 };
 
 
@@ -42,9 +42,11 @@ const Profile = (props: ProfileProps) => {
       <S.LinksSection
 
         backgroundColor={
-          props.isExec
+          props.activeCategory === "executives"
             ? SocialMediaColor.ToggleGreen
-            : SocialMediaColor.ToggleBlue
+            : props.activeCategory === "projectManagers"
+            ? SocialMediaColor.ToggleBlue
+            : SocialMediaColor.ToggleYellow
         }
       >
         <SocialMedia

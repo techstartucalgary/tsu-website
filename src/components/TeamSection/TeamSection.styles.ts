@@ -19,15 +19,31 @@ export const TeamSection = styled.div`
 `;
 
 export const ToggleButtonWrapper = styled.div`
+  display: flex;
   position: relative;
   margin-top: 2%;
   margin-left: -5%;
+  justify-content: center;
+  align-items: center;
 `;
 
 export const ToggleButtonLabel = styled.label`
   overflow-y: hidden;
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   position: relative;
+  font-size: 1.5em;
+  margin: 0 10px;
+  font-family: "Inter", Tahoma, sans-serif;
+  color: white;
+  font-weight: 400;
+  z-index: 2;
+  
+  @media (min-width: 320px) and (max-width: 475px) {
+    font-size: 0.65em;
+    color: white;
+  }
   @media (min-width: 351px) and (max-width: 475px) {
     width: 280px;
     height: 40px;
@@ -46,75 +62,17 @@ export const ToggleButtonLabel = styled.label`
   border-radius: 50px;
   background: #4dd6a8;
   cursor: pointer;
-  &::after {
-    transform: translate(200px, -35px);
-    content: "";
-    display: block;
-    border-radius: 50px;
-    background-color: #49b893;
-    @media (min-width: 320px) and (max-width: 475px) {
-      width: 140px;
-      height: 30px;
-      margin-left: -65px;
-      margin-top: 23px;
-    }
-    width: 210px;
-    height: 40px;
-    margin-left: 10px;
-    margin-top: -57px;
-    box-shadow: 1px 3px 3px 1px rgba(0, 0, 0, 0.2);
-    transition: 0.8s;
-  }
 `;
 
 export const ToggleButton = styled.input`
   opacity: 0;
   z-index: 1;
   border-radius: 15px;
+  left: 0;
+  top: 0;
   width: 42px;
   height: 26px;
   &:checked + ${ToggleButtonLabel} {
     background: #61c3d4;
-    &::after {
-      content: "";
-      border-radius: 50px;
-      background-color: #59acba;
-      width: 200px;
-      height: 40px;
-      @media (min-width: 320px) and (max-width: 475px) {
-        width: 130px;
-        height: 30px;
-        margin-left: 5px;
-        margin-top: 23px;
-      }
-      margin-left: 5px;
-      margin-top: -57px;
-      transition: 0.8s;
-      transform: translateY(-35px);
-    }
   }
-`;
-
-export const TeamCategoryText = styled.p`
-  font-size: 1em;
-  margin-left: -20px;
-  font-family: "Inter", Tahoma, sans-serif;
-  color: white;
-  font-weight: 500;
-  
-  @media (min-width: 320px) and (max-width: 475px) {
-    font-size: 0.65em;
-    color: white;
-  }
-`;
-
-export const Slider = styled.p`
-  font-size: 1em;
-  margin-left: 200px;
-  height: 24px;
-  @media (max-width: 475px) {
-    height: 0;
-    margin-top: -10px;
-  }
-  font-weight: 500;
 `;

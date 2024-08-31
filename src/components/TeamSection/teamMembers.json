@@ -131,6 +131,20 @@
       "linkedin": "https://www.linkedin.com/in/ammerhamza/"
     }
   ],
+  "alumniTeam": [
+    {
+      "name": "Janita",
+      "affiliation": "Alumni VP Design",
+      "imagePath": "Niyousha_Raeesinejad.jpg",
+      "linkedin": "https://www.linkedin.com/in/niyoushar/"
+    },
+    {
+      "name": "Sajwal",
+      "affiliation": "Alumni VP Strategy",
+      "imagePath": "Tyler_Chan.jpg",
+      "linkedin": "https://www.linkedin.com/in/chan-tyler/"
+    }
+  ],
   "boardMembers": [
     {
       "name": "Niyousha Raeesinejad",

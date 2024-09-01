@@ -31,7 +31,7 @@ export const executiveTeam: TeamMember[] = teamData.executiveTeam.map((exec, ind
     image: importImage(exec.imagePath)
   }));
 
-export const projectManagers: TeamMember[] = teamData.projectManagers.length > 0 ? 
+export const projectManagers: TeamMember[] = teamData.projectManagers?.length ? 
   teamData.projectManagers.map((pm: any, index: number) => ({
     id: index,
     name: pm.name,

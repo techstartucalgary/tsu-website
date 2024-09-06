@@ -27,52 +27,48 @@ export const ToggleButtonWrapper = styled.div`
   align-items: center;
 `;
 
-export const ToggleButtonLabel = styled.label`
-  overflow-y: hidden;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+export const SliderWrapper = styled.div<{ selectedCategory: "executives" | "projectManagers" | "alumni" }>`
   position: relative;
-  font-size: 1.5em;
-  margin: 0 10px;
-  font-family: "Inter", Tahoma, sans-serif;
-  color: white;
-  font-weight: 400;
-  z-index: 2;
-  
-  @media (min-width: 320px) and (max-width: 475px) {
-    font-size: 0.65em;
-    color: white;
-  }
-  @media (min-width: 351px) and (max-width: 475px) {
-    width: 280px;
-    height: 40px;
-    margin-left: 0%;
-    margin-top: 5%;
-  }
-  @media (min-width: 320px) and (max-width: 350px) {
-    width: 280px;
-    height: 40px;
-    margin-left: 5%;
-    margin-top: -5%;
-  }
-  margin-left: 0%;
-  width: 425px;
-  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  height: 60px;
+  background-color: ${({ selectedCategory }) =>
+    selectedCategory === "executives" ? "rgb(77, 214, 168)" :
+      selectedCategory === "projectManagers" ? "rgb(97, 195, 212)" :
+        "#c9e265"};
   border-radius: 50px;
-  background: #4dd6a8;
-  cursor: pointer;
+  padding: 5px;
 `;
 
-export const ToggleButton = styled.input`
-  opacity: 0;
-  z-index: 1;
-  border-radius: 15px;
-  left: 0;
-  top: 0;
-  width: 42px;
-  height: 26px;
-  &:checked + ${ToggleButtonLabel} {
-    background: #61c3d4;
+export const SliderOption = styled.div`
+  flex: 1;
+  text-align: center;
+  cursor: pointer;
+  padding: 10px 5px;
+  font-weight: 500;
+  font-size: 1.5em;
+  color: #fff;
+  z-index: 2;
+
+  @media (max-width: 700px) {
+    font-size: 1.2em;
   }
+`;
+
+export const SliderPosition = styled.div<{ selectedCategory: "executives" | "projectManagers" | "alumni" }>`
+  position: absolute;
+  top: 5px;
+  left: ${({ selectedCategory }) =>
+    selectedCategory === "executives" ? "5px" :
+      selectedCategory === "projectManagers" ? "calc(33.3% + 5px)" : "calc(66.6% + 5px)"};
+  width: calc(33.3% - 10px);
+  height: calc(100% - 10px);
+  background-color: ${({ selectedCategory }) =>
+    selectedCategory === "executives" ? "rgb(77, 214, 168)" :
+      selectedCategory === "projectManagers" ? "rgb(97, 195, 212)" :
+        "#c9e265"};
+  border-radius: 50px;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 3px 3px;
+  transition: left 0.8s ease;
 `;

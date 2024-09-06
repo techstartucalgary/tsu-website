@@ -2,8 +2,7 @@ import React from "react";
 import Profile from "./Profile";
 import * as S from "./Team.styles";
 import "./Team.styles.ts";
-import { type TeamMember } from "./TeamInformation";
-import { executiveTeam, projectManagers, alumniTeam } from "./TeamInformation";
+import { type TeamMember, executiveTeam, projectManagers, alumniTeam } from "./TeamInformation";
 
 type TeamProps = {
   teamMembers: TeamMember[];

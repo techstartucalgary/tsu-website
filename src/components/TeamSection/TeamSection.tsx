@@ -25,34 +25,18 @@ const TeamSection = (props: TeamSectionProps) => {
   return (
     <S.TeamSection>
       <S.ToggleButtonWrapper>
-        <S.ToggleButton
-          id="executives"
-          type="radio"
-          checked={selectedCategory === "executives"}
-          onChange={() => setSelectedCategory("executives")}
-        />
-        <S.ToggleButtonLabel htmlFor="executives">
-          Executives
-        </S.ToggleButtonLabel>
-        <S.ToggleButton
-          id="projectManagers"
-          type="radio"
-          checked={selectedCategory === "projectManagers"}
-          onChange={() => setSelectedCategory("projectManagers")}
-        />
-        <S.ToggleButtonLabel htmlFor="projectManagers">
-          Project Managers
-        </S.ToggleButtonLabel>
-
-        <S.ToggleButton
-          id="alumni"
-          type="radio"
-          checked={selectedCategory === "alumni"}
-          onChange={() => setSelectedCategory("alumni")}
-        />
-        <S.ToggleButtonLabel htmlFor="alumni">
-          Alumni
-        </S.ToggleButtonLabel>
+        <S.SliderWrapper selectedCategory={selectedCategory}>
+          <S.SliderPosition selectedCategory={selectedCategory} />
+          <S.SliderOption onClick={() => setSelectedCategory("executives")}>
+            Executives
+          </S.SliderOption>
+          <S.SliderOption onClick={() => setSelectedCategory("projectManagers")}>
+            Project Managers
+          </S.SliderOption>
+          <S.SliderOption onClick={() => setSelectedCategory("alumni")}>
+            Alumni
+          </S.SliderOption>
+        </S.SliderWrapper>
       </S.ToggleButtonWrapper>
       <Team
         teamMembers={getTeamMembers()}

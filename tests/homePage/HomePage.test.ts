@@ -5,19 +5,12 @@ import { test, expect } from '@playwright/test';
  */
 
 test('Should display Logo', async ({ page }) => {
-<<<<<<< HEAD
     await page.goto("/");
     // Find the logo image by class
     const logo = page.locator('img.homePage__logo');
     await expect(logo).toBeVisible();
     await page.close();
 
-=======
-    await page.goto("http://localhost:3000");
-    // Find the logo image by class
-    const logo = page.locator('img.homePage__logo');
-    await expect(logo).toBeVisible();
->>>>>>> b557bc4 (setup PlayWright tests)
 });
 
 
@@ -25,7 +18,6 @@ test('Should display Logo', async ({ page }) => {
  * Test join team button
  */
 test('join button should navigate to Apply page', async function ({ page }) {
-<<<<<<< HEAD
     await page.goto("/");
 
     // Wait for the join team button to be visible before clicking
@@ -47,19 +39,11 @@ test('join button should navigate to Apply page', async function ({ page }) {
 
     await expect(page).toHaveURL(/.*apply/)
     await page.close();
-=======
-    await page.goto("http://localhost:3000");
-
-    // find the join team button
-    page.getByRole('link', { name: 'theTeam.join()' }).click();
-    await expect(page).toHaveURL(/.*apply/)
->>>>>>> b557bc4 (setup PlayWright tests)
 });
 
 /**
  * Test checkout project button
  */
-<<<<<<< HEAD
 test('join button should navigate to Project page', async function ({ page }) {
     await page.goto('/');
     await page.getByText('Check out our projects!').click();
@@ -96,9 +80,3 @@ test('sponsorship button should navigate to Sponsorship pdf ', async ({ page }, 
     await newPage.close();
     await page.close();
 });
-=======
-
-/**
- * Test sponsorship button
- */
->>>>>>> b557bc4 (setup PlayWright tests)

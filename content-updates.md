@@ -228,9 +228,10 @@ Example:
 ### Installing Plawright
 
 Here are 2 helpful links to get you started with Plawright
-[Plawright Getting Started ](https://playwright.dev/docs/intro) Or [Getting Started with Playwright and VS Code](https://www.youtube.com/watch?v=Xz6lhEzgI5I)
+[Plawright Getting Started ](https://playwright.dev/docs/intro) Or [Getting Started with Playwright and VS Code](https://www.youtube.com/watch?v=Xz6lhEzgI5I). 
+The second link is a video tutorial that will guide you through the process of setting up Plawright with VS Code, writing tests, and running them using the IDE.
 
-### How to run the tests
+### How to run the tests using the terminal
 
 This will run all the tests in the tests folder
 
@@ -251,4 +252,12 @@ or run the following command to open the report.html file in the browser
 
 ```bash
 npx playwright show-report
+```
+
+### Create tests using Playwright Recorder
+
+You can either click "Record new" or use the terminal command `npx playwright codegen <url>` to generate test code for a specific URL and a specific viewport size.\
+For example, to generate test code for the Tech Start UCalgary website with a viewport size of 1600x900, run the following command:
+```bash
+npx playwright codegen --viewport-size=1600,900 https://techstartucalgary.com
 ```

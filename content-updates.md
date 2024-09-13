@@ -23,11 +23,7 @@ This guide documents how and when to update different content on the Tech Start 
     - [Applications](#applications)
   - [Resources Page](#resources-page)
     - [Guides](#guides)
-<<<<<<< HEAD
   - [Playwright Tests](#playwright-tests)
-=======
-  - [Plawright Tests](#plawright-tests)
->>>>>>> 1d655a9 (additonal updates to documentation)
     - [Installing Plawright](#installing-plawright)
     - [How to run tests](#how-to-run-the-tests)
     - [To view test results](#to-view-the-test-results)
@@ -228,7 +224,7 @@ Example:
 ```
 
 ## Plawright Tests
-<<<<<<< HEAD
+
 <<<<<<< HEAD
 
 ### Installing Plawright
@@ -270,10 +266,9 @@ For example, to generate test code for the Tech Start UCalgary website with a vi
 ```bash
 npx playwright codegen --viewport-size=1600,900 https://techstartucalgary.com
 ```
-=======
+
 =======
 
->>>>>>> 1d655a9 (additonal updates to documentation)
 ### Installing Plawright
 
 Here are 2 helpful links to get you started with Plawright
@@ -301,4 +296,5 @@ or run the following command to open the report.html file in the browser
 ```bash
 npx playwright show-report
 ```
->>>>>>> b64dc11 (refactor: Updated documentation to include how to run Playwright tests)
+
+> > > > > > > b64dc11 (refactor: Updated documentation to include how to run Playwright tests)

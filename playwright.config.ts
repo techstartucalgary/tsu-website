@@ -34,7 +34,7 @@ export default defineConfig({
 <<<<<<< HEAD
   reporter: [
     ['html', { outputFolder: 'playwright-reports', open: 'never' }],
-  ['list']],
+    ['list']],
 =======
   reporter: 'html',
 >>>>>>> b557bc4 (setup PlayWright tests)

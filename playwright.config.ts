@@ -35,17 +35,26 @@ export default defineConfig({
   projects: [
     {
       name: 'chromium',
-      use: { ...devices['Desktop Chrome'] },
+      use: {
+        ...devices['Desktop Chrome'],
+        viewport: { width: 1600, height: 900 }, // Simulating 90% zoom by using larger resolution
+      },
     },
 
     {
       name: 'firefox',
-      use: { ...devices['Desktop Firefox'] },
+      use: {
+        ...devices['Desktop Firefox'],
+        viewport: { width: 1600, height: 900 }, // Simulating 90% zoom by using larger resolution
+      },
     },
 
     {
       name: 'webkit',
-      use: { ...devices['Desktop Safari'] },
+      use: {
+        ...devices['Desktop Safari'],
+        viewport: { width: 1600, height: 900 }, // Simulating 90% zoom by using larger resolution
+      },
     },
 
     /* Test against mobile viewports. */

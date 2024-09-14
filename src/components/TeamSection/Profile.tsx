@@ -25,8 +25,7 @@ const Profile = (props: ProfileProps) => {
   
   // memoize the test data id so its not recalcaulated on every render but only when the member name changes
   const testDataId = useMemo( () => {
-     console.log("memoizing test data id");
-    `profile-image-${props.member.name.replace(/\s/g, "-").toLowerCase()}`
+    return `profile-image-${props.member.name.replace(/\s/g, "-").toLowerCase()}`
   },  [props.member.name]);
 
   return (

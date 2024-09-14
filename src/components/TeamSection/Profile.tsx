@@ -22,7 +22,7 @@ type ProfileProps = {
 const Profile = (props: ProfileProps) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const preventDragHandler = (e: any) => e.preventDefault();
-
+  const testDataId = `profile-image-${props.member.name.replace(/\s/g, "-").toLowerCase()}`;
 
   return (
     <S.ProfileDiv
@@ -36,6 +36,7 @@ const Profile = (props: ProfileProps) => {
           key={props.key}
           alt={props.alt}
           onDragStart={preventDragHandler}
+          data-testid={testDataId}
         />
       </S.ProfileIconDiv>
 

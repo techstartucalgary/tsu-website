@@ -41,7 +41,7 @@ const SponsorSection = () => {
         <S.SponsorButtonDiv>
           <HoverButton
             mode={ButtonMode.DARK}
-            link="https://drive.google.com/file/d/1vLCezy7kFW-ZzZnWu_9P0MX7iK_wpzx1/view?usp=share_link"
+            link="https://drive.google.com/file/d/1yy5uBqSD0DrG2PsMuXg0en8dV3r-wULJ/view"
             linkIsInternal={false}
             text="Check out our sponsorship package!"
           />

@@ -17,7 +17,18 @@ type ProfileProps = {
   activeCategory: string;
 };
 
-
+const getBackgroundColor = (category: string): SocialMediaColor => {
+  switch (category) {
+    case 'executives':
+      return SocialMediaColor.ToggleGreen;
+    case 'projectManagers':
+      return SocialMediaColor.ToggleBlue;
+    case 'alumni':
+      return SocialMediaColor.ToggleYellow;
+    default:
+      return SocialMediaColor.ToggleBlue;
+  }
+}
 
 const Profile = (props: ProfileProps) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -39,16 +50,7 @@ const Profile = (props: ProfileProps) => {
         />
       </S.ProfileIconDiv>
 
-      <S.LinksSection
-
-        backgroundColor={
-          props.activeCategory === "executives"
-            ? SocialMediaColor.ToggleGreen
-            : props.activeCategory === "projectManagers"
-            ? SocialMediaColor.ToggleBlue
-            : SocialMediaColor.ToggleYellow
-        }
-      >
+      <S.LinksSection backgroundColor={getBackgroundColor(props.activeCategory)}>
         <SocialMedia
           color={SocialMediaColor.White}
           icon={faLinkedinIn}

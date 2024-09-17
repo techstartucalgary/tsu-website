@@ -7,7 +7,7 @@ export enum SocialMediaColor {
   Black = "Black",
   ToggleGreen = "ToggleGreen",
   ToggleBlue = "ToggleBlue",
-  ToggleYellow ="ToggleYellow",
+  ToggleYellow = "ToggleYellow",
   White = "White",
 }
 

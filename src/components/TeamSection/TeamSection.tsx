@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useCallback } from "react";
 import { useState } from "react";
 import Team from "./Team";
 import * as S from "./TeamSection.styles";
@@ -11,7 +11,7 @@ type TeamSectionProps = {
 const TeamSection = (props: TeamSectionProps) => {
   const [selectedCategory, setSelectedCategory] = useState<"executives" | "projectManagers" | "alumni">("executives");
 
-  const getTeamMembers = () => {
+  const getTeamMembers = useCallback(() => {
     switch (selectedCategory) {
       case "projectManagers":
         return projectManagers;
@@ -20,7 +20,7 @@ const TeamSection = (props: TeamSectionProps) => {
       default:
         return executiveTeam;
     }
-  };
+  }, [selectedCategory]);
 
   return (
     <S.TeamSection>

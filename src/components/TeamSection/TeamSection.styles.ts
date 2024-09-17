@@ -1,5 +1,19 @@
 import styled from "styled-components/macro";
 
+// helper function 
+const getStylesForCategory = (category: "executives" | "projectManagers" | "alumni") => {
+  switch (category) {
+    case "executives":
+      return { backgroundColor: "rgb(77, 214, 168)", left: "5px" };
+    case "projectManagers":
+      return { backgroundColor: "rgb(97, 195, 212)", left: "calc(33.3% + 5px)" };
+    case "alumni":
+      return { backgroundColor: "#c9e265", left: "calc(66.6% + 5px)" };
+    default:
+      return { backgroundColor: "rgb(77, 214, 168)", left: "5px" }; // Default to executives
+  }
+};
+
 export const TeamSection = styled.div`
   padding: 5vw;
   margin-left: auto;
@@ -43,6 +57,9 @@ export const SliderWrapper = styled.div<{ selectedCategory: "executives" | "proj
 
 export const SliderOption = styled.div`
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
   cursor: pointer;
   padding: 10px 5px;
@@ -60,15 +77,12 @@ export const SliderPosition = styled.div<{ selectedCategory: "executives" | "pro
   position: absolute;
   top: 5px;
   left: ${({ selectedCategory }) =>
-    selectedCategory === "executives" ? "5px" :
-      selectedCategory === "projectManagers" ? "calc(33.3% + 5px)" : "calc(66.6% + 5px)"};
+    getStylesForCategory(selectedCategory).left};
   width: calc(33.3% - 10px);
   height: calc(100% - 10px);
   background-color: ${({ selectedCategory }) =>
-    selectedCategory === "executives" ? "rgb(77, 214, 168)" :
-      selectedCategory === "projectManagers" ? "rgb(97, 195, 212)" :
-        "#c9e265"};
+    getStylesForCategory(selectedCategory).backgroundColor};
   border-radius: 50px;
   box-shadow: rgba(0, 0, 0, 0.2) 3px 3px 3px 3px;
-  transition: left 0.8s ease;
+  transition: left 0.8s ease, background-color 0.2s ease-in-out;
 `;

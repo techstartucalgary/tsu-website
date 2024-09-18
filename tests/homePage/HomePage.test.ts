@@ -18,10 +18,26 @@ test('Should display Logo', async ({ page }) => {
  * Test join team button
  */
 test('join button should navigate to Apply page', async function ({ page }) {
-    await page.goto("https://techstartucalgary.com");
+//    await page.goto("https://techstartucalgary.com");
+    await page.goto("http://localhost:3000");
+
+    // Wait for the join team button to be visible before clicking
+    await page.waitForSelector('[data-testid="homePage_apply_btn"]');
 
     // find the join team button
-    await page.getByRole('link', { name: 'theTeam.join()' }).click();
+    const applyBtn = page.getByTestId('homePage_apply_btn');
+    await applyBtn.scrollIntoViewIfNeeded();
+
+    // Click the button and wait for navigation
+    /* workaround for error:
+    waiting for element to be visible, enabled and stable
+- element is visible, enabled and stable
+    */
+    await Promise.all([
+        applyBtn.click(), // Trigger the click
+        await page.waitForURL(/.*apply/), // Wait for the navigation to /apply
+    ]);
+    
     await expect(page).toHaveURL(/.*apply/)
     await page.close();
 });

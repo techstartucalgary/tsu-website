@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useMemo } from "react";
 import * as S from "./Profile.styles";
 import { TeamMember } from "./TeamInformation";
 import ProfileDescription from "./ProfileDescription";
@@ -22,7 +22,11 @@ type ProfileProps = {
 const Profile = (props: ProfileProps) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const preventDragHandler = (e: any) => e.preventDefault();
-
+  
+  // memoize the test data id so its not recalcaulated on every render but only when the member name changes
+  const testDataId = useMemo( () => {
+    return `profile-image-${props.member.name.replace(/\s/g, "-").toLowerCase()}`
+  },  [props.member.name]);
 
   return (
     <S.ProfileDiv
@@ -36,6 +40,7 @@ const Profile = (props: ProfileProps) => {
           key={props.key}
           alt={props.alt}
           onDragStart={preventDragHandler}
+          data-testid={testDataId}
         />
       </S.ProfileIconDiv>
 

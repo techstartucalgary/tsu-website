@@ -4,7 +4,7 @@ interface TeamStyledProps {
     mobileView: boolean;
 }
 
-export const FounderImg = styled.img`
+export const FounderImg = styled.img.attrs({'data-testid': 'founder-img'})`
   border-radius: 80%;
 `;
 

@@ -11,7 +11,7 @@ export const ProjectsSection = () => {
   const { width } = useViewport(); // get screen width
 
   return (
-    <S.ProjectsSection>
+    <S.ProjectsSection id="projects">
       {width > 1200 ? (
         <div className="homePage__container">
           <h1 className="chonkyHeading chonkyHeading--white chonkyHeading--lessMargin">

@@ -16,24 +16,12 @@ const Header = () => {
     setNavbarExpanded(false);
   };
 
-  type NavbarLinkProps = {
-    top: string;
-    link: string;
-    name: string;
+  const scrollToSection = (sectionId: string) => {
+    hideNavbar();
+    setTimeout(() => {
+      document.getElementById(sectionId)?.scrollIntoView({ behavior: "smooth" });
+    }, 0);
   };
-
-  const NavbarLink = (props: NavbarLinkProps) => (
-    <li>
-      <a href="#">
-        <LinkScroll to={props.top} spy={true} offset={-80} duration={500}>
-          <Link onClick={hideNavbar} to={props.link}>
-            {" "}
-            {props.name}{" "}
-          </Link>
-        </LinkScroll>
-      </a>
-    </li>
-  );
 
   return (
     <header className="navbar__container">
@@ -45,8 +33,7 @@ const Header = () => {
           id="navbar__nav-toggle"
           className="navbar__nav-toggle"
         />
-        <a href="#">
-          <LinkScroll to="homePageTop" spy={true} offset={-70} duration={500}>
+         <LinkScroll to="homePageTop" spy={true} offset={-70} duration={500}>
             <Link to="/">
               <motion.img
                 initial={{ y: -250 }}
@@ -57,20 +44,22 @@ const Header = () => {
               />
             </Link>
           </LinkScroll>
-        </a>
+
         <nav className="navbar__content ">
           <motion.ul initial={{ y: -250 }} animate={{ y: 0 }}>
-            <NavbarLink top="homePageTop" link="/" name="About" />
-            <NavbarLink top="teamPageTop" link="/team" name="Team" />
-            <NavbarLink
-              top="projectsPageTop"
-              link="/projects"
-              name="Projects"
-            />
-            <NavbarLink top="applyPageTop" link="/apply" name="Apply" />
-            <NavbarLink top="merchPageTop" link="/merch" name="Merch" />
-            <NavbarLink top="galleryPageTop" link="/gallery" name="Gallery" />
-            <NavbarLink top="docsPageTop" link="/resources" name="Resources" />
+            <li className="navbar__item">
+              <Link to="/" > About </Link>
+              <ul className="dropdown">
+                <li onClick={() => scrollToSection('projects')}><Link to="/" onClick={hideNavbar}>Our Projects</Link></li>
+                <li onClick={() => scrollToSection('events')}><Link to="/" onClick={hideNavbar}>Events</Link></li>
+                <li onClick={() => scrollToSection('sponsors')}><Link to="/" onClick={hideNavbar}>Sponsors</Link></li>
+              </ul>
+            </li>
+            <li><Link to="/team" onClick={hideNavbar}>Team</Link></li>
+            <li><Link to="/projects" onClick={hideNavbar}>Projects</Link></li>
+            <li><Link to="/apply" onClick={hideNavbar}>Apply</Link></li>
+            <li><Link to="/gallery" onClick={hideNavbar}>Gallery</Link></li>
+            <li><Link to="/resources" onClick={hideNavbar}>Resources</Link></li>
           </motion.ul>
         </nav>
         <label

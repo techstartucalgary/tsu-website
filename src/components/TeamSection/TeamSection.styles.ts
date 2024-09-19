@@ -4,13 +4,13 @@ import styled from "styled-components/macro";
 const getStylesForCategory = (category: "executives" | "projectManagers" | "alumni") => {
   switch (category) {
     case "executives":
-      return { backgroundColor: "rgb(77, 214, 168)", left: "5px" };
+      return { backgroundColor: "var(--primary-green)", left: "5px" };
     case "projectManagers":
-      return { backgroundColor: "rgb(97, 195, 212)", left: "calc(33.3% + 5px)" };
+      return { backgroundColor: "var(--lightwash-green)", left: "calc(33.3% + 5px)" };
     case "alumni":
-      return { backgroundColor: "#c9e265", left: "calc(66.6% + 5px)" };
+      return { backgroundColor: "var(--secondary-lime)", left: "calc(66.6% + 5px)" };
     default:
-      return { backgroundColor: "rgb(77, 214, 168)", left: "5px" }; // Default to executives
+      return { backgroundColor: "var(--primary-green)", left: "5px" }; // Default to executives
   }
 };
 
@@ -48,9 +48,9 @@ export const SliderWrapper = styled.div<{ selectedCategory: "executives" | "proj
   width: 700px;
   height: 60px;
   background-color: ${({ selectedCategory }) =>
-    selectedCategory === "executives" ? "rgb(77, 214, 168)" :
-      selectedCategory === "projectManagers" ? "rgb(97, 195, 212)" :
-        "#c9e265"};
+  selectedCategory === "executives" ? "var(--primary-green)" :
+    selectedCategory === "projectManagers" ? "var(--lightwash-green)" :
+        "var(--secondary-lime)"};
   border-radius: 50px;
   padding: 5px;
 `;

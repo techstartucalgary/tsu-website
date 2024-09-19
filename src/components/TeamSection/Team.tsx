@@ -4,13 +4,15 @@ import * as S from "./Team.styles";
 import "./Team.styles.ts";
 import { type TeamMember, executiveTeam, projectManagers, alumniTeam } from "./TeamInformation";
 
+type teamCategory = "executives" | "projectManagers" | "alumni";
+
 type TeamProps = {
   teamMembers: TeamMember[];
   desktopView: boolean;
-  activeCategory: "executives" | "projectManagers" | "alumni";
+  activeCategory: teamCategory;
 };
 
-const getBaseLength = (category: "executives" | "projectManagers" | "alumni") => {
+const getBaseLength = (category: teamCategory) => {
   switch (category) {
     case "executives":
       return executiveTeam.length;

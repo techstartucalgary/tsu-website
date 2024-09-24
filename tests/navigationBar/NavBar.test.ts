@@ -3,10 +3,10 @@ import { test, expect } from '@playwright/test';
 /**
  * Test About button stays on the landing page
  */
-test('Test About button stays on the landing page', async ({ page }) => {
-  await page.goto('https://techstartucalgary.com/');
+test('Test About button stays on the landing page', async ({ page, baseURL }) => {
+  await page.goto('/');
   await page.getByText('About').click();
-  await expect(page).toHaveURL('https://techstartucalgary.com/');
+  await expect(page).toHaveURL(`${baseURL}`);
   await page.close();
 
 });
@@ -15,8 +15,7 @@ test('Test About button stays on the landing page', async ({ page }) => {
  * Test Team button navigates to the team page and shows Founder
  */
 test('Test Team button navigates to the team page and shows Founder', async ({ page }) => {
-  // await page.goto('https://techstartucalgary.com/');
-  await page.goto('http://localhost:3000/')
+  await page.goto('/')
   await page.getByText('Team', { exact: true }).click();
   await expect(page.getByRole('heading', { name: 'Our Team' })).toBeVisible();
   await expect(page.getByTestId('founder-img')).toBeVisible();
@@ -31,7 +30,7 @@ test('Test Team button navigates to the team page and shows Founder', async ({ p
  * Test Team button navigates to the team page and shows previous presidents
  */
 test('Test Team button navigates to the team page and shows the 3 previous presidents', async ({ page }) => {
-  await page.goto('https://techstartucalgary.com/');
+  await page.goto('/');
   await page.getByText('Team', { exact: true }).click();
   await expect(page.getByTestId('profile-image-niyousha-raeesinejad')).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Niyousha Raeesinejad' })).toBeVisible();
@@ -47,7 +46,7 @@ test('Test Team button navigates to the team page and shows the 3 previous presi
  * Test Team button navigates to the team page and shows current presidents
  */
 test('Test Team button navigates to the team page and shows the 2 current presidents', async ({ page }) => {
- await page.goto('https://techstartucalgary.com/');
+  await page.goto('/');
   await page.getByText('Team', { exact: true }).click();
   await expect(page.getByTestId('profile-image-rachel-renegado')).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Rachel Renegado' })).toBeVisible();
@@ -60,10 +59,10 @@ test('Test Team button navigates to the team page and shows the 2 current presid
 /**
  * Test project button navigates to the project page
  */
-test('Test project button navigates to the project page', async ({ page }) => {
-  await page.goto('https://techstartucalgary.com/');
+test('Test project button navigates to the project page', async ({ page, baseURL }) => {
+  await page.goto('/');
   await page.getByText('Projects', { exact: true }).click();
-  await expect(page).toHaveURL('https://techstartucalgary.com/projects');
+  await expect(page).toHaveURL(`${baseURL}/projects`);
   await expect(page.getByText('Our', { exact: true })).toBeVisible();
   await expect(page.locator('#projectsPageTop').getByText('Projects', { exact: true })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Final Showcase Winners' })).toBeVisible();
@@ -74,10 +73,10 @@ test('Test project button navigates to the project page', async ({ page }) => {
 /**
  * Test apply button navigates to the Apply page
  */
-test('Test apply button navigates to the apply page', async ({ page }) => {
-  await page.goto('https://techstartucalgary.com/');
+test('Test apply button navigates to the apply page', async ({ page, baseURL }) => {
+  await page.goto('/');
   await page.getByText('Apply', { exact: true }).click();
-  await expect(page).toHaveURL('https://techstartucalgary.com/apply');
+  await expect(page).toHaveURL(`${baseURL}/apply`);
   await expect(page.getByRole('heading', { name: 'APPLY' })).toBeVisible();
   await page.close();
 
@@ -86,10 +85,10 @@ test('Test apply button navigates to the apply page', async ({ page }) => {
 /**
  * Test merch button navigates to the Merch page
  */
-test('Test merch button navigates to the Merch page and then find the 2 merch', async function ({ page }) {
-  await page.goto('https://techstartucalgary.com/');
+test('Test merch button navigates to the Merch page and then find the 2 merch', async function ({ page, baseURL }) {
+  await page.goto('/');
   await page.getByText('Merch', { exact: true }).click();
-  await expect(page).toHaveURL('https://techstartucalgary.com/merch');
+  await expect(page).toHaveURL(`${baseURL}/merch`);
   await expect(page.getByRole('heading', { name: 'Original Basic Crewneck' })).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Crewneck with Sleeve Print' })).toBeVisible();
   await page.close();
@@ -99,10 +98,10 @@ test('Test merch button navigates to the Merch page and then find the 2 merch', 
 /**
  * Test that gallery button navigates to the Gallery page
  */
-test('Test gallery button navigates to the Merch page', async function ({ page }) {
-  await page.goto('https://techstartucalgary.com/');
+test('Test gallery button navigates to the Merch page', async function ({ page, baseURL }) {
+  await page.goto('/');
   await page.getByText('Gallery', { exact: true }).click();
-  await expect(page).toHaveURL('https://techstartucalgary.com/gallery');
+  await expect(page).toHaveURL(`${ baseURL }/gallery`);
   await page.getByRole('heading', { name: 'Gallery' }).click();
   await expect(page.getByTestId('photo-gallery-image-0')).toBeVisible();
   await expect(page.getByTestId('photo-gallery-image-32')).toBeVisible();
@@ -112,10 +111,10 @@ test('Test gallery button navigates to the Merch page', async function ({ page }
 /**
  * Test resources button navigates to the Resources page
  */
-test('Test resources button navigates to the Resources page', async function ({ page }) {
-  await page.goto('https://techstartucalgary.com/');
+test('Test resources button navigates to the Resources page', async function ({ page, baseURL }) {
+  await page.goto('/');
   await page.getByText('Resources', { exact: true }).click();
-  await expect(page).toHaveURL('https://techstartucalgary.com/resources');
+  await expect(page).toHaveURL(`${baseURL}/resources`);
   await expect(page.getByText('Django Guide')).toBeVisible();
   await expect(page.getByText('Git Guide')).toBeVisible();
   await expect(page.getByText('Web Dev Guide')).toBeVisible();

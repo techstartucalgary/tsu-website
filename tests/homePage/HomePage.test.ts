@@ -5,7 +5,7 @@ import { test, expect } from '@playwright/test';
  */
 
 test('Should display Logo', async ({ page }) => {
-    await page.goto("https://techstartucalgary.com");
+    await page.goto("/");
     // Find the logo image by class
     const logo = page.locator('img.homePage__logo');
     await expect(logo).toBeVisible();
@@ -18,8 +18,7 @@ test('Should display Logo', async ({ page }) => {
  * Test join team button
  */
 test('join button should navigate to Apply page', async function ({ page }) {
-//    await page.goto("https://techstartucalgary.com");
-    await page.goto("http://localhost:3000");
+    await page.goto("/");
 
     // Wait for the join team button to be visible before clicking
     await page.waitForSelector('[data-testid="homePage_apply_btn"]');
@@ -46,7 +45,7 @@ test('join button should navigate to Apply page', async function ({ page }) {
  * Test checkout project button
  */
 test('join button should navigate to Project page', async function ({ page }) {
-    await page.goto('https://techstartucalgary.com/');
+    await page.goto('/');
     await page.getByText('Check out our projects!').click();
     await page.getByText('Our', { exact: true }).click();
     await page.locator('#projectsPageTop').getByText('Projects', { exact: true }).click();
@@ -60,7 +59,7 @@ test('join button should navigate to Project page', async function ({ page }) {
  * Test sponsorship button
  */
 test('sponsorship button should navigate to Sponsorship pdf ', async ({ page }, testInfo) => {
-    await page.goto("https://techstartucalgary.com");
+    await page.goto("/");
 
     // find the button by locating the div class
     const sponsorshipBtn = await page.getByRole('link', { name: 'Check out our sponsorship' });

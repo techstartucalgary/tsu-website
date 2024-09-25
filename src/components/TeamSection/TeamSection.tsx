@@ -1,4 +1,4 @@
-import React, { useCallback } from "react";
+import React, { useMemo } from "react";
 import { useState } from "react";
 import Team from "./Team";
 import * as S from "./TeamSection.styles";
@@ -12,7 +12,7 @@ type TeamSectionProps = {
 const TeamSection = (props: TeamSectionProps) => {
   const [selectedCategory, setSelectedCategory] = useState<TeamCategory>("executives");
 
-  const getTeamMembers = useCallback(() => {
+  const getTeamMembers = useMemo(() => {
     switch (selectedCategory) {
       case "projectManagers":
         return projectManagers;
@@ -40,7 +40,7 @@ const TeamSection = (props: TeamSectionProps) => {
         </S.SliderWrapper>
       </S.ToggleButtonWrapper>
       <Team
-        teamMembers={getTeamMembers()}
+        teamMembers={getTeamMembers}
         desktopView={props.desktopView}
         activeCategory={selectedCategory}
       />

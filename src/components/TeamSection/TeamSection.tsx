@@ -3,13 +3,14 @@ import { useState } from "react";
 import Team from "./Team";
 import * as S from "./TeamSection.styles";
 import { executiveTeam, projectManagers, alumniTeam } from "./TeamInformation";
+import { TeamCategory } from "./Team";
 
 type TeamSectionProps = {
   desktopView: boolean;
 };
 
 const TeamSection = (props: TeamSectionProps) => {
-  const [selectedCategory, setSelectedCategory] = useState<"executives" | "projectManagers" | "alumni">("executives");
+  const [selectedCategory, setSelectedCategory] = useState<TeamCategory>("executives");
 
   const getTeamMembers = useCallback(() => {
     switch (selectedCategory) {

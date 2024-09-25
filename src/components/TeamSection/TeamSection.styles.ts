@@ -1,7 +1,8 @@
 import styled from "styled-components/macro";
+import { TeamCategory } from "./Team";
 
 // helper function 
-const getStylesForCategory = (category: "executives" | "projectManagers" | "alumni") => {
+const getStylesForCategory = (category: TeamCategory) => {
   switch (category) {
     case "executives":
       return { backgroundColor: "var(--primary-green)", left: "5px" };
@@ -41,7 +42,7 @@ export const ToggleButtonWrapper = styled.div`
   align-items: center;
 `;
 
-export const SliderWrapper = styled.div<{ selectedCategory: "executives" | "projectManagers" | "alumni" }>`
+export const SliderWrapper = styled.div<{ selectedCategory: TeamCategory}>`
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -73,7 +74,7 @@ export const SliderOption = styled.div`
   }
 `;
 
-export const SliderPosition = styled.div<{ selectedCategory: "executives" | "projectManagers" | "alumni" }>`
+export const SliderPosition = styled.div<{ selectedCategory: TeamCategory }>`
   position: absolute;
   top: 5px;
   left: ${({ selectedCategory }) =>

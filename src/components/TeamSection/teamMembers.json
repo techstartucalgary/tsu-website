@@ -28,7 +28,7 @@
     },
     {
       "name": "Labib Afshar Ahmed",
-      "affiliation": "VP Finance",
+      "affiliation": "Co-VP Finance",
       "imagePath": "Labib_Ahmed.jpg",
       "linkedin": "https://www.linkedin.com/in/labib-afsar-ahmed/"
     },
@@ -93,45 +93,8 @@
       "linkedin": "https://www.linkedin.com/in/mehrnaz-zafari/"
     }
   ],
-  "projectManagers": [
-    {
-      "name": "Aarsh Shah",
-      "affiliation": "CampusBuddy",
-      "imagePath": "Aarsh_Shah.jpg",
-      "linkedin": "https://www.linkedin.com/in/aarsh-shah-0a84161a9/"
-    },
-    {
-      "name": "Hilton Luu",
-      "affiliation": "LocaLoyalty",
-      "imagePath": "Hilton_Luu.jpg",
-      "linkedin": "https://www.linkedin.com/in/hilton-luu/"
-    },
-    {
-      "name": "Lujaina Eldelebshany",
-      "affiliation": "Fashion App",
-      "imagePath": "Lujaina_ Eldelebshany.jpg",
-      "linkedin": "https://www.linkedin.com/in/lujaina-eldelebshany-0029bb1b3/"
-    },
-    {
-      "name": "Wilbur Elbouni",
-      "affiliation": "Achevio",
-      "imagePath": "Wilbur_Elbouni.jpg",
-      "linkedin": "https://www.linkedin.com/in/wilbur-elbouni-3ba923213/"
-    },
-    {
-      "name": "Naman Bhoj",
-      "affiliation": "For Your Research",
-      "imagePath": "Naman_Bhoj.jpg",
-      "linkedin": "https://www.linkedin.com/in/naman-bhoj-3032a6154"
-    },
-    {
-      "name": "Hamza Afzaal",
-      "affiliation": "CraftXR",
-      "imagePath": "Hamza_Afzaal.jpg",
-      "linkedin": "https://www.linkedin.com/in/ammerhamza/"
-    }
-  ],
-  "alumniTeam": [
+  "projectManagers": [],
+   "alumniTeam": [
     {
       "name": "Janita",
       "affiliation": "Alumni VP Design",

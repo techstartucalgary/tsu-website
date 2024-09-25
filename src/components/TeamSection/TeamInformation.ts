@@ -31,11 +31,21 @@ export const executiveTeam: TeamMember[] = teamData.executiveTeam.map((exec, ind
     image: importImage(exec.imagePath)
   }));
 
-export const projectManagers: TeamMember[] = teamData.projectManagers.map((pm, index) => ({
-  id: index,
-  ...pm,
-  image: importImage(pm.imagePath)
-}));
+export const projectManagers: TeamMember[] = teamData.projectManagers?.length ? 
+  teamData.projectManagers.map((pm: any, index: number) => ({
+    id: index,
+    name: pm.name,
+    affiliation: pm.affiliation,
+    image: importImage(pm.imagePath),
+    linkedin: pm.linkedin
+  })) : 
+  [{
+    id: 0,
+    name: "Coming Soon",
+    affiliation: "",
+    image: "",
+    linkedin: ""
+  }];
 
 export const alumniTeam: TeamMember[] = teamData.alumniTeam.map((alum, index) => ({
   id: index,

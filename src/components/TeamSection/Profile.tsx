@@ -41,22 +41,26 @@ const Profile = (props: ProfileProps) => {
       data-aos-duration={!props.mobileView && "1000"}
       mobileView={props.mobileView}
     >
-      <S.ProfileIconDiv>
-        <img
-          src={props.profilePic}
-          key={props.key}
-          alt={props.alt}
-          onDragStart={preventDragHandler}
-        />
-      </S.ProfileIconDiv>
+      {props.profilePic && (
+        <S.ProfileIconDiv>
+          <img
+            src={props.profilePic}
+            key={props.key}
+            alt={props.alt}
+            onDragStart={preventDragHandler}
+          />
+        </S.ProfileIconDiv>
+      )}
 
-      <S.LinksSection backgroundColor={getBackgroundColor(props.activeCategory)}>
-        <SocialMedia
-          color={SocialMediaColor.White}
-          icon={faLinkedinIn}
-          link={props.member.linkedin}
-        />
-      </S.LinksSection>
+      {props.member.linkedin && (
+        <S.LinksSection backgroundColor={getBackgroundColor(props.activeCategory)}>
+          <SocialMedia
+            color={SocialMediaColor.White}
+            icon={faLinkedinIn}
+            link={props.member.linkedin}
+          />
+        </S.LinksSection>
+      )}
 
       <ProfileDescription
         name={props.member.name}

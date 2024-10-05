@@ -108,13 +108,15 @@ const ProjectsPage = () => {
           bring to life with Tech Start?
         </h3>
         <S.WrapDiv>
-          <HoverButton
-            mode={ButtonMode.GRADIENT}
-            glowOnHover={true}
-            link="/apply"
-            text={"Apply Now"}
-            linkIsInternal={true}
-          />
+          <div data-testid="apply_now_button">
+            <HoverButton
+              mode={ButtonMode.GRADIENT}
+              glowOnHover={true}
+              link="/apply"
+              text={"Apply Now"}
+              linkIsInternal={true}
+            />
+          </div>
         </S.WrapDiv>
       </div>
       <ProjectKeywordsSection />

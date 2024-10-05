@@ -77,7 +77,8 @@ test('Test apply button navigates to the apply page', async ({ page, baseURL }) 
   await page.goto('/');
   await page.getByText('Apply', { exact: true }).click();
   await expect(page).toHaveURL(`${baseURL}/apply`);
-  await expect(page.getByRole('heading', { name: 'APPLY' })).toBeVisible();
+  // ensure there's an application section
+  await expect(page.getByRole('heading', { name: 'Applications', exact: true })).toBeVisible()
   await page.close();
 
 });
@@ -101,7 +102,7 @@ test('Test merch button navigates to the Merch page and then find the 2 merch', 
 test('Test gallery button navigates to the Merch page', async function ({ page, baseURL }) {
   await page.goto('/');
   await page.getByText('Gallery', { exact: true }).click();
-  await expect(page).toHaveURL(`${ baseURL }/gallery`);
+  await expect(page).toHaveURL(`${baseURL}/gallery`);
   await page.getByRole('heading', { name: 'Gallery' }).click();
   await expect(page.getByTestId('photo-gallery-image-0')).toBeVisible();
   await expect(page.getByTestId('photo-gallery-image-32')).toBeVisible();

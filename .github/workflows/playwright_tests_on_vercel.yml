@@ -12,7 +12,7 @@ jobs:
 
       # Install project dependencies and Playwright (including browsers)
       - name: Install dependencies
-        run: npm ci && npx playwright install --with deps
+        run: npm ci && npx playwright install --with-deps
 
         # Run Playwright tests
       - name: Run tests

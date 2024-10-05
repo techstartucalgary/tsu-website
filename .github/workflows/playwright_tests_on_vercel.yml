@@ -16,6 +16,13 @@ jobs:
 
         # Run Playwright tests
       - name: Run tests
-        run: npx playwright test
+        run: npx playwright test --workers=4
         env:
           BASE_URL: ${{github.event.deployment_status.environment_url}}
+
+      # Upload test result
+      - name: Upload Playwright test report
+        uses: actions/upload-artifact@v2
+        with:
+          name: playwright-reports
+          path: playwright-reports/

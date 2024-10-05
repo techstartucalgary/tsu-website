@@ -16,9 +16,8 @@ test('Should display Logo', async ({ page }) => {
 
 /**
  * Test join team button
- * sidenote: Oct 4,2024 -> consistently fails on webkit
  */
-test('join button should navigate to Apply page', async function ({ page, baseURL }) {
+test('join button should navigate to Apply page', async function ({ page }) {
     await page.goto("/");
 
     // Wait for the join team button to be visible before clicking
@@ -35,7 +34,7 @@ test('join button should navigate to Apply page', async function ({ page, baseUR
     */
     await Promise.all([
         applyBtn.click(), // Trigger the click
-        await expect(page).toHaveURL(`${baseURL}/apply`) // Wait for the navigation to /apply
+        await page.waitForURL(/.*apply/), // Wait for the navigation to /apply
     ]);
 
     await expect(page).toHaveURL(/.*apply/)

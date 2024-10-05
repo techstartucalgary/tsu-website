@@ -16,7 +16,7 @@ jobs:
 
         # Run Playwright tests
       - name: Run tests
-        run: npx playwright test --workers=4
+        run: npx playwright test --workers=4 --project=chromium
         env:
           BASE_URL: ${{github.event.deployment_status.environment_url}}
 

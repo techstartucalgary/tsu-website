@@ -70,7 +70,7 @@ const TeamPage = () => {
         <Team
           teamMembers={boardMembers}
           desktopView={defaultView}
-          isExec={true}
+          activeCategory = "executives"
         />
       </T.TeamSection>
       <TeamSection desktopView={defaultView} />

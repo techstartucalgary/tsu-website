@@ -190,6 +190,7 @@
 
 .navbar__item:hover .dropdown {
   display: flex;
+  transition: all 0.5s ease;
 }
 
 .dropdown li {
@@ -200,7 +201,7 @@
 }
 
 .dropdown li:hover {
-  background-color: #333;
+  background-color: #1a1a1a;
 }
 
 .navbar__link {
@@ -217,11 +218,14 @@
 @media screen and (max-width: 1400px) {
   .navbar__content ul {
     margin-left: 1em;
+    padding: 8px;
   }
   .dropdown li {
-    margin-left: 3em;
+    margin-left: 40px;
   }
   .dropdown {
     margin-top: 20px;
+    background-color: #1a1a1a;
+    font-size: 2px;
   }
 }

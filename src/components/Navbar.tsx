@@ -50,9 +50,9 @@ const Header = () => {
             <li className="navbar__item">
               <Link to="/" > About </Link>
               <ul className="dropdown">
-                <li onClick={() => scrollToSection('projects')}><Link to="/" onClick={hideNavbar}>Our Projects</Link></li>
-                <li onClick={() => scrollToSection('events')}><Link to="/" onClick={hideNavbar}>Events</Link></li>
-                <li onClick={() => scrollToSection('sponsors')}><Link to="/" onClick={hideNavbar}>Sponsors</Link></li>
+                <li onClick={() => scrollToSection('projects')}><Link to="/" onClick={hideNavbar}>  Our Projects &#8594;</Link></li>
+                <li onClick={() => scrollToSection('events')}><Link to="/" onClick={hideNavbar}> Events &#8594;</Link></li>
+                <li onClick={() => scrollToSection('sponsors')}><Link to="/" onClick={hideNavbar}> Sponsors &#8594;</Link></li>
               </ul>
             </li>
             <li><Link to="/team" onClick={hideNavbar}>Team</Link></li>

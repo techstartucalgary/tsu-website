@@ -2,14 +2,29 @@ import React from "react";
 import Profile from "./Profile";
 import * as S from "./Team.styles";
 import "./Team.styles.ts";
-import { type TeamMember } from "./TeamInformation";
-import { executiveTeam } from "./TeamInformation";
+import { type TeamMember, executiveTeam, projectManagers, alumniTeam } from "./TeamInformation";
+
+export type TeamCategory = "executives" | "projectManagers" | "alumni";
 
 type TeamProps = {
   teamMembers: TeamMember[];
   desktopView: boolean;
-  isExec: boolean;
+  activeCategory: TeamCategory;
 };
+
+const getBaseLength = (category: TeamCategory) => {
+  switch (category) {
+    case "executives":
+      return executiveTeam.length;
+    case "projectManagers":
+      return projectManagers.length;
+    case "alumni":
+      return alumniTeam.length;
+    default:
+      return 0;
+  }
+};
+
 const Team = (props: TeamProps) => {
   return (
     <S.TeamContainer mobileView={!props.desktopView}>
@@ -17,12 +32,12 @@ const Team = (props: TeamProps) => {
       {props.teamMembers.map((member: TeamMember) => {
         return (
           <Profile
-            key={props.isExec ? member.id : member.id + executiveTeam.length}
+            key={member.id + getBaseLength(props.activeCategory)}
             member={member}
             profilePic={member.image}
             alt={member.image}
             mobileView={!props.desktopView}
-            isExec={props.isExec}
+            activeCategory={props.activeCategory}
           />
         );
       })}

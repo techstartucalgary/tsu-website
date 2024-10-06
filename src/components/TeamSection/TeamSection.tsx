@@ -1,39 +1,48 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { useState } from "react";
 import Team from "./Team";
 import * as S from "./TeamSection.styles";
-import { executiveTeam, projectManagers } from "./TeamInformation";
+import { executiveTeam, projectManagers, alumniTeam } from "./TeamInformation";
+import { TeamCategory } from "./Team";
 
 type TeamSectionProps = {
   desktopView: boolean;
 };
 
 const TeamSection = (props: TeamSectionProps) => {
-  const [toggle, setToggled] = useState(false);
+  const [selectedCategory, setSelectedCategory] = useState<TeamCategory>("executives");
 
-  const getTeamMembers = () => {
-    return toggle ? projectManagers : executiveTeam;
-  };
+  const getTeamMembers = useMemo(() => {
+    switch (selectedCategory) {
+      case "projectManagers":
+        return projectManagers;
+      case "alumni":
+        return alumniTeam;
+      default:
+        return executiveTeam;
+    }
+  }, [selectedCategory]);
 
   return (
     <S.TeamSection>
       <S.ToggleButtonWrapper>
-        <S.ToggleButton
-          id="checkbox"
-          type="checkbox"
-          onClick={() => setToggled(prev => !prev)}
-        />
-        <S.ToggleButtonLabel htmlFor="checkbox">
-          <S.TeamCategoryText>
-            Project Managers &emsp; &emsp; &emsp;&emsp;&emsp; Executives
-            <S.Slider></S.Slider>
-          </S.TeamCategoryText>
-        </S.ToggleButtonLabel>
+        <S.SliderWrapper selectedCategory={selectedCategory}>
+          <S.SliderPosition selectedCategory={selectedCategory} />
+          <S.SliderOption onClick={() => setSelectedCategory("executives")}>
+            Executives
+          </S.SliderOption>
+          <S.SliderOption onClick={() => setSelectedCategory("projectManagers")}>
+            Project Managers
+          </S.SliderOption>
+          <S.SliderOption onClick={() => setSelectedCategory("alumni")}>
+            Alumni
+          </S.SliderOption>
+        </S.SliderWrapper>
       </S.ToggleButtonWrapper>
       <Team
-        teamMembers={getTeamMembers()}
+        teamMembers={getTeamMembers}
         desktopView={props.desktopView}
-        isExec={!toggle}
+        activeCategory={selectedCategory}
       />
     </S.TeamSection>
   );

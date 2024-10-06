@@ -47,6 +47,12 @@ export const projectManagers: TeamMember[] = teamData.projectManagers?.length ?
     linkedin: ""
   }];
 
+export const alumniTeam: TeamMember[] = teamData.alumniTeam.map((alum, index) => ({
+  id: index,
+  ...alum,
+  image: importImage(alum.imagePath)
+}));
+
 export const boardMembers: TeamMember[] = teamData.boardMembers.map((bm, index) => ({
   id: index,
   ...bm,

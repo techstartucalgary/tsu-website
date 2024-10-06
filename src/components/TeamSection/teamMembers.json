@@ -94,6 +94,20 @@
     }
   ],
   "projectManagers": [],
+   "alumniTeam": [
+    {
+      "name": "Janita",
+      "affiliation": "Alumni VP Design",
+      "imagePath": "Janita.jpg",
+      "linkedin": "https://www.linkedin.com/in/janitamahum/"
+    },
+    {
+      "name": "Sajwal",
+      "affiliation": "Alumni VP Strategy",
+      "imagePath": "Sajwal.jpeg",
+      "linkedin": "https://www.linkedin.com/in/sajwal/"
+    }
+  ],
   "boardMembers": [
     {
       "name": "Niyousha Raeesinejad",

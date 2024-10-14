@@ -24,7 +24,7 @@ const getBackgroundColor = (category: string): SocialMediaColor => {
     case 'projectManagers':
       return SocialMediaColor.ToggleBlue;
     case 'alumni':
-      return SocialMediaColor.ToggleYellow;
+      return SocialMediaColor.ToggleEarthGreen;
     default:
       return SocialMediaColor.ToggleBlue;
   }

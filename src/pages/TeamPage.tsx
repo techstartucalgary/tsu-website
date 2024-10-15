@@ -10,6 +10,7 @@ import Team from "components/TeamSection/Team";
 import { boardMembers } from "components/TeamSection/TeamInformation";
 import useViewport from "components/UseViewport";
 import Divider from "components/Divider";
+import PreviousExecTeam from "components/PreviousExecTeam/PreviousExecTeam";
 
 
 const TeamPage = () => {
@@ -74,6 +75,8 @@ const TeamPage = () => {
         />
       </T.TeamSection>
       <TeamSection desktopView={defaultView} />
+      <Divider />
+      <PreviousExecTeam />
     </S.TeamPage>
   );
 };

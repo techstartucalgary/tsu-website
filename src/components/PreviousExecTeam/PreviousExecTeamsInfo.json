@@ -141,6 +141,46 @@
         "name": "Shohei Ohtani",
         "role": "VP Internal",
         "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+      },
+      {
+        "name": "Lebron James",
+        "role": "VP External",
+        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+      },
+      {
+        "name": "Tom Brady",
+        "role": "VP Marketing",
+        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+      },
+      {
+        "name": "Patrick Mahomes",
+        "role": "VP Finance",
+        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+      },
+      {
+        "name": "Kevin Durant",
+        "role": "VP Social Media",
+        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+      },
+      {
+        "name": "Kyrie Irving",
+        "role": "VP Events",
+        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+      },
+      {
+        "name": "Kawhi Leonard",
+        "role": "VP Tech",
+        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+      },
+      {
+        "name": "James Harden",
+        "role": "VP Design",
+        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+      },
+      {
+        "name": "Anthony Davis",
+        "role": "VP Operations",
+        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
       }
     ]
   }

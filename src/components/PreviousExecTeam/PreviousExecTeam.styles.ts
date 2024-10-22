@@ -3,17 +3,20 @@ import styled from "styled-components";
 export const PrevTeamSection = styled.div`
   margin-left: auto;
   margin-right: auto;
+  /* padding-bottom: 2rem; */
   text-align: center;
-  padding-top: 2%;
+  /* padding-top: 2%; */
   background-color: white;
 `;
 
-export const p = styled.div`
+export const SectionHeader = styled.div`
+  padding: 2rem 0;
   font-size: 2.5rem;
   color: black;
   font-weight: 400;
   text-align: center;
   font-family: 'Arial', sans-serif;
+  
 `;
 
 export const PaginationControl = styled.div`
@@ -50,7 +53,7 @@ export const YearButton = styled.button`
   color: #333;
   font-size: 1.2rem;
   padding: 0.5rem;
-  margin: 0 0.5rem;
+  margin: 0 0.3rem;
   cursor: pointer;
   transition: all 0.3s;
   &:hover {
@@ -61,27 +64,56 @@ export const YearButton = styled.button`
   }
 `;
 
+export const Divider = styled.hr`
+  width: 60%;
+  text-align: center;
+   margin: 3rem auto; 
+  border-top: 0.08rem solid #8d8d8d;
+`;
+
 export const TeamList = styled.div`
-  display:flex;
-  /* border: 1px solid blue; */
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 16px;
-  margin-top: 1rem;
-  & > div {
-    /* border: 1px dotted green; */
+  max-width: 60%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+
+  @media (max-width: 768px) {
+    grid-template-columns: 1fr;
   }
-    /* Styles for desktop view */
-  @media (min-width: 768px) {
-    .team-member {
-      flex: 1 1 calc(50% - 16px); /* Two columns layout with gap adjustment */
-    }
+`;
+
+export const TeamMember = styled.div<{ lastRow: boolean }>`
+  padding-bottom: 2rem;
+
+  ${
+  // if we are are not on the last row, add border to the bottom
+  ({ lastRow }) => !lastRow && `
+    border-bottom: #8d8d8d 0.08rem solid;
+  `}
+`;
+
+export const TeamHeader = styled.h3`
+  font-size: 20px;
+  font-weight: bold;
+  margin: 0 0 10px 0;
+`;
+
+export const TeamRole = styled.p`
+  font-size: 16px;
+  margin: 0 0 5px 0;
+`;
+
+export const TeamContact = styled.p`
+  font-size: 14px;
+  margin: 0 0 5px 0;
+  
+  a {
+    color: #ff0000;
+    text-decoration: none;
     
-    /* Empty space for the right column when there's an odd number of items */
-    &::after {
-      content: '';
-      flex: 1 1 calc(50% - 16px); /* Maintain the column structure */
-      visibility: hidden; /* Hide the empty space */
+    &:hover {
+      text-decoration: underline;
     }
   }
 `;

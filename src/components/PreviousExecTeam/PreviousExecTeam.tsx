@@ -89,7 +89,7 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
 
   return (
     <S.PrevTeamSection>
-      <S.p>Previous Exec Team</S.p>
+      <S.SectionHeader>Previous Exec Team</S.SectionHeader>
       <S.PaginationControl>
         <S.ArrowButton
           className="arrow-button"
@@ -117,27 +117,40 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
           &gt;
         </S.ArrowButton>
       </S.PaginationControl>
-
+      
+      <S.Divider />
+      
       <S.TeamList>
         {prevTeamsData
           .filter((team) => team.year === selectedYear)
-          .map((team) => (
+          .map((team) => {
+            const totalMember = team.members.length;
+            const membersPerRow = props.desktopView ? 2 : 1; // based on the view, how many columns
+            const lastRowStartIndex = Math.floor((totalMember-1)/membersPerRow)*membersPerRow; // index of element that will be on the last row
+            return(
             <>
               {team.members.length > 0 && (
                 <>
                   {team.members.map((member, index) => (
-                    <div key={index} className="team-member">
-                      <h1>{member.name}</h1>
-                      <p>{member.role}</p>
-                      <a href={member.linkedIn_url} target="_blank" rel="noopener noreferrer">
-                        LinkedIn Profile
-                      </a>
-                    </div>
+                    <S.TeamMember 
+                      key={index}
+                      lastRow={index>= lastRowStartIndex ? true : false} // if index is greater or equal, than we are on last row
+                    >
+                      <S.TeamHeader>{member.name}</S.TeamHeader>
+                      <S.TeamRole>{member.role}</S.TeamRole>
+                      <S.TeamContact>
+                        <a href={member.linkedIn_url} target="_blank" rel="noopener noreferrer">
+                          LinkedIn Profile
+                        </a>
+                      </S.TeamContact>
+                    </S.TeamMember>
                   ))}
                 </>
               )}
             </>
-          ))}
+          )
+}
+)}
       </S.TeamList>
 
     </S.PrevTeamSection>

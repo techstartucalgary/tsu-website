@@ -128,59 +128,110 @@
     "year": "2023-2024",
     "members": [
       {
-        "name": "Micheal Jordan",
-        "role": "President",
-        "linkedIn_url": "https://www.linkedin.com/in/yourmom/"
+        "name": "Niyousha Raeesinejad",
+        "role": "Co-President",
+        "linkedIn_url": "https://www.linkedin.com/in/niyoushar/"
       },
       {
-        "name": "Jack Flaherty",
-        "role": "Co-president",
-        "linkedIn_url": "https://www.linkedin.com/in/yourdad/"
+        "name": "Tyler Chan",
+        "role": "Co-President",
+        "linkedIn_url": "https://www.linkedin.com/in/chan-tyler/"
       },
       {
-        "name": "Shohei Ohtani",
-        "role": "VP Internal",
-        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+        "name": "Labib Afshar Ahmed",
+        "role": "President Elect / VP Finance",
+        "linkedIn_url": "https://www.linkedin.com/in/labib-afsar-ahmed/"
       },
       {
-        "name": "Lebron James",
+        "name": "Nathan Karbonik",
+        "role": "External Advisor",
+        "linkedIn_url": "https://www.linkedin.com/in/nathan-karbonik/"
+      },
+      {
+        "name": "Ana Laura Espinosa Garza",
         "role": "VP External",
-        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+        "linkedIn_url": "https://www.linkedin.com/in/ana-laura-espinosa-garza-136a281b0/"
       },
       {
-        "name": "Tom Brady",
-        "role": "VP Marketing",
-        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+        "name": "Cindy Cheng",
+        "role": "Jr. VP External",
+        "linkedIn_url": "https://www.linkedin.com/in/cindy-cheng-66328a2b8/"
       },
       {
-        "name": "Patrick Mahomes",
-        "role": "VP Finance",
-        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+        "name": "Carol Wang",
+        "role": "VP Community",
+        "linkedIn_url": "https://www.linkedin.com/in/carol-wang3116/"
       },
       {
-        "name": "Kevin Durant",
-        "role": "VP Social Media",
-        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+        "name": "Estefy Caballero",
+        "role": "Co-VP Communications",
+        "linkedIn_url": "https://www.linkedin.com/in/estefy-caballero-864aab25a"
       },
       {
-        "name": "Kyrie Irving",
-        "role": "VP Events",
-        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+        "name": "Enioluwafe Balogun",
+        "role": "Co-VP Communications",
+        "linkedIn_url": "https://www.linkedin.com/in/enioluwafe-balogun/"
       },
       {
-        "name": "Kawhi Leonard",
-        "role": "VP Tech",
-        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+        "name": "Leo Wei",
+        "role": "Co-VP Events",
+        "linkedIn_url": "https://www.linkedin.com/in/leo-wei/"
       },
       {
-        "name": "James Harden",
+        "name": "Maheen Raza",
+        "role": "Co-VP Events",
+        "linkedIn_url": "https://www.linkedin.com/in/maheen-raza-40b780229/"
+      },
+      {
+        "name": "Azlfa Anwar",
+        "role": "Jr. VP Events",
+        "linkedIn_url": "https://www.linkedin.com/in/azlfa-anwar-20a040218/"
+      },
+      {
+        "name": "Janita Mahum",
         "role": "VP Design",
-        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+        "linkedIn_url": "https://www.linkedin.com/in/janita-mahum-a5484a1b9/"
       },
       {
-        "name": "Anthony Davis",
-        "role": "VP Operations",
-        "linkedIn_url": "https://www.linkedin.com/in/yourdog/"
+        "name": "Ben Schmidt",
+        "role": "VP Development",
+        "linkedIn_url": "https://www.linkedin.com/in/benschmidt2343/"
+      },
+      {
+        "name": "Abod Abbas",
+        "role": "Senior Technical Advisor",
+        "linkedIn_url": "https://www.linkedin.com/in/abod-a-427274198/"
+      },
+      {
+        "name": "Wai Ka Wong",
+        "role": "Technical Advisor",
+        "linkedIn_url": "https://www.linkedin.com/in/waika-wong/"
+      },
+
+      {
+        "name": "Sajwal Pageni",
+        "role": "VP Strategy",
+        "linkedIn_url": "https://www.linkedin.com/in/sajwal/"
+      },
+      {
+        "name": "Fedor Prokopchuk",
+        "role": "Business Strategy Advisor",
+        "linkedIn_url": "https://www.linkedin.com/in/fedor-prokopchuk-707668a6/"
+      },
+      {
+        "name": "Brian Nguyen",
+        "role": "Senior Web Developer",
+        "linkedIn_url": "https://www.linkedin.com/in/nguyennbrian/"
+      },
+      {
+        "name": "Sahiti Akella",
+        "role": "Web Developer",
+        "linkedIn_url": "https://www.linkedin.com/in/sahiti-akella/"
+      },
+      {
+        "name": "Isaiah Asaolu",
+        "role": "Web Developer",
+        "linkedIn_url": "https://www.linkedin.com/in/isaiah-a-2001/"
       }
     ]
   }

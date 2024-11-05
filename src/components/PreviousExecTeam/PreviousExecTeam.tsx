@@ -10,7 +10,7 @@ interface yearData {
 interface prevMembers {
   name: string;
   role: string;
-  linkedIn_url: string;
+  linkedin_url: string;
 }
 
 const VISIBLE_YEARS_DESKTOP = 4;
@@ -139,7 +139,7 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
                       <S.TeamHeader>{member.name}</S.TeamHeader>
                       <S.TeamRole>{member.role}</S.TeamRole>
                       <S.TeamContact>
-                        <a href={member.linkedIn_url} target="_blank" rel="noopener noreferrer">
+                        <a href={member.linkedin_url} target="_blank" rel="noopener noreferrer">
                           LinkedIn Profile
                         </a>
                       </S.TeamContact>

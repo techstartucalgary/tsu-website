@@ -23,7 +23,7 @@ This guide documents how and when to update different content on the Tech Start 
     - [Applications](#applications)
   - [Resources Page](#resources-page)
     - [Guides](#guides)
-  - [Plawright Tests](#plawright-tests)
+  - [Playwright Tests](#playwright-tests)
     - [Installing Plawright](#installing-plawright)
     - [How to run tests](#how-to-run-the-tests)
     - [To view test results](#to-view-the-test-results)

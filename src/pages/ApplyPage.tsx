@@ -251,9 +251,9 @@ const ApplyPage = () => {
               role="Project Member"
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project for 1 academic year."
-              statusIsOpen={false}
+              statusIsOpen={true}
               closedStatus="APPLICATIONS CLOSED"
-              applicationLink="https://forms.gle/Su73KRH6e5XF9BFd6"
+              applicationLink="https://forms.gle/aH3r7eKwk3sSHhwp8"
               deadline=""
             />
 
@@ -261,7 +261,7 @@ const ApplyPage = () => {
               role="Project Manager"
               description="Manage a project for 1 year and lead a team of 6-9
                     project members to create complex projects."
-              statusIsOpen={true}
+              statusIsOpen={false}
               closedStatus="APPLICATIONS CLOSED"
               applicationLink="https://forms.gle/sXrtiz5PQCLdwK6N7"
               deadline=""
@@ -273,7 +273,7 @@ const ApplyPage = () => {
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
               statusIsOpen={true}
               closedStatus="APPLICATIONS CLOSED"
-              applicationLink="https://forms.gle/foZ76AGfBuUoLpNMA"
+              applicationLink="https://forms.gle/GtioLzJqeNcPYHjB6"
               deadline=""
             />
           </ul>

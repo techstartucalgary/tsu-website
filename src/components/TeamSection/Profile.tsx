@@ -14,10 +14,21 @@ type ProfileProps = {
   profilePic: string;
   alt: string;
   member: TeamMember;
-  isExec: boolean;
+  activeCategory: string;
 };
 
-
+const getBackgroundColor = (category: string): SocialMediaColor => {
+  switch (category) {
+    case 'executives':
+      return SocialMediaColor.ToggleGreen;
+    case 'projectManagers':
+      return SocialMediaColor.ToggleBlue;
+    case 'alumni':
+      return SocialMediaColor.ToggleYellow;
+    default:
+      return SocialMediaColor.ToggleBlue;
+  }
+}
 
 const Profile = (props: ProfileProps) => {
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -34,30 +45,27 @@ const Profile = (props: ProfileProps) => {
       data-aos-duration={!props.mobileView && "1000"}
       mobileView={props.mobileView}
     >
-      <S.ProfileIconDiv>
-        <img
-          src={props.profilePic}
-          key={props.key}
-          alt={props.alt}
-          onDragStart={preventDragHandler}
-          data-testid={testDataId}
+      {props.profilePic && (
+        <S.ProfileIconDiv>
+          <img
+            src={props.profilePic}
+            key={props.key}
+            alt={props.alt}
+            onDragStart={preventDragHandler}
+            data-testid={testDataId}
         />
-      </S.ProfileIconDiv>
+        </S.ProfileIconDiv>
+      )}
 
-      <S.LinksSection
-
-        backgroundColor={
-          props.isExec
-            ? SocialMediaColor.ToggleGreen
-            : SocialMediaColor.ToggleBlue
-        }
-      >
-        <SocialMedia
-          color={SocialMediaColor.White}
-          icon={faLinkedinIn}
-          link={props.member.linkedin}
-        />
-      </S.LinksSection>
+      {props.member.linkedin && (
+        <S.LinksSection backgroundColor={getBackgroundColor(props.activeCategory)}>
+          <SocialMedia
+            color={SocialMediaColor.White}
+            icon={faLinkedinIn}
+            link={props.member.linkedin}
+          />
+        </S.LinksSection>
+      )}
 
       <ProfileDescription
         name={props.member.name}

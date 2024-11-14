@@ -6,7 +6,6 @@ import { test, expect } from '@playwright/test';
 <<<<<<< HEAD
 test('Apply Now btn nagivates to the apply now page', async ({ page, baseURL }) => {
   await page.goto(`${baseURL}/projects`);
-  // await page.getByText('Apply Now').click();
   const applyButton = page.getByTestId('apply_now_button');
   applyButton.click();
   await expect(page).toHaveURL(`${baseURL}/apply`);

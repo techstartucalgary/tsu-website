@@ -24,7 +24,7 @@ This guide documents how and when to update different content on the Tech Start 
   - [Resources Page](#resources-page)
     - [Guides](#guides)
   - [Playwright Tests](#playwright-tests)
-    - [Installing Plawright](#installing-plawright)
+    - [Installing Playwright](#installing-playwright)
     - [How to run tests](#how-to-run-the-tests)
     - [To view test results](#to-view-the-test-results)
 
@@ -223,15 +223,13 @@ Example:
 />
 ```
 
-## Plawright Tests
+## Playwright Tests
 
-<<<<<<< HEAD
+### Installing Playwright
 
-### Installing Plawright
-
-Here are 2 helpful links to get you started with Plawright
-[Plawright Getting Started ](https://playwright.dev/docs/intro) Or [Getting Started with Playwright and VS Code](https://www.youtube.com/watch?v=Xz6lhEzgI5I).
-The second link is a video tutorial that will guide you through the process of setting up Plawright with VS Code, writing tests, and running them using the IDE.
+Here are 2 helpful links to get you started with Playwright
+[Playwright Getting Started ](https://playwright.dev/docs/intro) Or [Getting Started with Playwright and VS Code](https://www.youtube.com/watch?v=Xz6lhEzgI5I).
+The second link is a video tutorial that will guide you through the process of setting up Playwright with VS Code, writing tests, and running them using the IDE.
 
 ### How to run the tests using the terminal
 

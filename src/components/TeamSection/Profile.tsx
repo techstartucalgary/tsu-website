@@ -35,9 +35,9 @@ const Profile = (props: ProfileProps) => {
   const preventDragHandler = (e: any) => e.preventDefault();
   
   // memoize the test data id so its not recalcaulated on every render but only when the member name changes
-  const testDataId = useMemo( () => {
-    return `profile-image-${props.member.name.replace(/\s/g, "-").toLowerCase()}`
-  },  [props.member.name]);
+  const testDataId = useMemo(() => 
+    `profile-image-${props.member.name.replace(/\s/g, "-").toLowerCase()}`,
+  [props.member.name]);
 
   return (
     <S.ProfileDiv

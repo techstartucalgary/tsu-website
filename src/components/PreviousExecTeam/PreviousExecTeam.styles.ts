@@ -13,9 +13,10 @@ export const SectionHeader = styled.div`
   padding: 2rem 0;
   font-size: 2.5rem;
   color: black;
-  font-weight: 400;
+  font-weight: 900;
   text-align: center;
-  font-family: 'Arial', sans-serif;
+  font-family: Inter, Tahoma, sans-serif;
+  line-height: 1;
   
 `;
 
@@ -28,8 +29,9 @@ display: flex;
 `;
 
 export const ArrowButton = styled.button`
-  background-color: #f0f0f0;
+  background-color: white;
   border: none;
+  border-radius: 50%;
   color: #333;
   font-size: 1.5rem;
   padding: 0.5rem 1rem;
@@ -41,7 +43,7 @@ export const ArrowButton = styled.button`
   }
 
   &:disabled {
-    opacity: 0.5;
+    /* opacity: 0.5; */
     cursor: not-allowed;
   }
 `;
@@ -52,12 +54,12 @@ export const YearButton = styled.button`
   border-radius: 10px;
   color: #333;
   font-size: 1.2rem;
-  padding: 0.5rem;
+  padding: 0.5rem 1.5rem;
   margin: 0 0.3rem;
   cursor: pointer;
-  transition: all 0.3s;
+  transition: color 0.3s;
   &:hover {
-    color: #007bff;
+    color: #4dd6a8;
   }
   &.selected {
     background-color: lightgray;
@@ -93,28 +95,21 @@ export const TeamMember = styled.div<{ lastRow: boolean }>`
   `}
 `;
 
-export const TeamHeader = styled.h3`
+export const TeamHeader = styled.a`
   font-size: 20px;
   font-weight: bold;
   margin: 0 0 10px 0;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.3s, text-decoration 0.3;
+  &:hover {
+    color: #4dd6a8;
+    text-decoration: underline ;
+  }
 `;
 
 export const TeamRole = styled.p`
   font-size: 16px;
   margin: 0 0 5px 0;
-`;
-
-export const TeamContact = styled.p`
-  font-size: 14px;
-  margin: 0 0 5px 0;
-  
-  a {
-    color: #ff0000;
-    text-decoration: none;
-    
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 `;
 export const YearPagination = styled.div``;

@@ -9,6 +9,7 @@ import * as S from "../../pages/GalleryPage.styles";
 
 const PhotoGallery = () => {
   const [photosURL, setPhotosURL] = useState<string[]>([]); // photos will be an array of objects
+
   //memoize a getAlbum to prevent unnecessary re-renders.
   const getAlbum = useCallback(async () => {
     const galleryPicsURL = process.env.REACT_APP_PIC_API_URL;
@@ -62,10 +63,11 @@ const PhotoGallery = () => {
           <PicturesContainer>
             {photosURL.map((photo, index) => (
               <LazyLoadImage
-                height="auto"
-                key={index}
-                src={photo}
-                width="100%"
+              height="auto"
+              key={index}
+              src={photo}
+              width="100%"
+              data-testid={`photo-gallery-image-${index}`}
               />
             ))}
           </PicturesContainer>

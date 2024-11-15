@@ -1,0 +1,29 @@
+on:
+  deployment_status:
+name: Playwright
+
+jobs:
+  run-end2endTests:
+    # Only run if the deployment was successful
+    if: github.event_name == 'deployment_status' && github.event.deployment_status.state == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout the code from the repository
+      - uses: actions/checkout@v2
+
+      # Install project dependencies and Playwright (including browsers)
+      - name: Install dependencies
+        run: npm ci && npx playwright install --with-deps
+
+        # Run Playwright tests
+      - name: Run tests
+        run: npx playwright test --workers=4 --project=chromium
+        env:
+          BASE_URL: ${{github.event.deployment_status.environment_url}}
+
+      # Upload test result
+      - name: Upload Playwright test report
+        uses: actions/upload-artifact@v4
+        with:
+          name: playwright-reports
+          path: playwright-reports/

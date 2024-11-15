@@ -32,7 +32,7 @@ const ApplyButton = () => {
               <span>&#62;</span>
               <span>&#62;</span>{" "}
             </S.ApplyButtonArrow>
-            <S.ApplyButtonText> theTeam.join()</S.ApplyButtonText>
+            <S.ApplyButtonText data-testid="homePage_apply_btn"> theTeam.join()</S.ApplyButtonText>
           </S.ApplyButton>
         </S.ApplyButtonLink>
       </motion.div>

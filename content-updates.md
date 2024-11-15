@@ -23,6 +23,10 @@ This guide documents how and when to update different content on the Tech Start 
     - [Applications](#applications)
   - [Resources Page](#resources-page)
     - [Guides](#guides)
+  - [Playwright Tests](#playwright-tests)
+    - [Installing Playwright](#installing-playwright)
+    - [How to run tests](#how-to-run-the-tests)
+    - [To view test results](#to-view-the-test-results)
 
 ## Homepage
 
@@ -31,15 +35,11 @@ This guide documents how and when to update different content on the Tech Start 
 Statistics about our projects and members are set using the `NumberStat` component on the homepage:
 
 ```typescript
- <div className="homePage__numberContainer">
-            <NumberStat number={10} stat="projects so far" />
-            <NumberStat number={92} stat="members so far" />
-            <NumberStat
-              number={93}
-              suffix={"%"}
-              stat="enjoyed their involvement"
-            />
-          </div>
+<div className="homePage__numberContainer">
+  <NumberStat number={10} stat="projects so far" />
+  <NumberStat number={92} stat="members so far" />
+  <NumberStat number={93} suffix={"%"} stat="enjoyed their involvement" />
+</div>
 ```
 
 The `number` values must be updated at the end of each school year.
@@ -72,18 +72,21 @@ You can update our social media outlets via the `SocialMedia` component used in 
 For example:
 
 ```typescript
-  <SocialMedia
-    color={SocialMediaColor.Gradient}
-    icon={faInstagram}
-    link="https://www.instagram.com/techstartucalgary/"
-  />
+<SocialMedia
+  color={SocialMediaColor.Gradient}
+  icon={faInstagram}
+  link="https://www.instagram.com/techstartucalgary/"
+/>
 ```
+
 ### Gallery
+
 Everything related to gallery can be found under [src/components/PhotoGallery](https://github.com/Tech-Start-UCalgary/tsu-website/tree/main/src/components/PhotoGallery)
 
 To Add a new picture visit [TechStart Google Photos Album](https://photos.app.goo.gl/SkVei5N56poqTh8g8)
- - Ask the administrator(s) for credential
- - click add new
+
+- Ask the administrator(s) for credential
+- click add new
 
 To make changes to the server, visit [tsuServer](https://github.com/techstartucalgary/tsuServer)
 
@@ -172,11 +175,10 @@ The team picture should be updated after each showcase, stored in [src/images](h
 
 Application status is managed through the `ApplySection` component used in `ApplyPage.tsx`.
 
-- When an application becomes open, set `statusIsOpen` to `true` and  `applicationLink` to the new application URL.
+- When an application becomes open, set `statusIsOpen` to `true` and `applicationLink` to the new application URL.
 - When an application becomes closed, set `statusIsOpen` to `false`.
 
 Example:
-
 
 ```typescript
 <ApplySection
@@ -220,3 +222,77 @@ Example:
   description="Learn Django, a python-based web framework for building backends, APIs, multi-page applications, and more!"
 />
 ```
+
+## Playwright Tests
+
+### Installing Playwright
+
+Here are 2 helpful links to get you started with Playwright
+[Playwright Getting Started ](https://playwright.dev/docs/intro) Or [Getting Started with Playwright and VS Code](https://www.youtube.com/watch?v=Xz6lhEzgI5I).
+The second link is a video tutorial that will guide you through the process of setting up Playwright with VS Code, writing tests, and running them using the IDE.
+
+### How to run the tests using the terminal
+
+Ensure the tsu website is running locally on `localhost:3000`
+
+This will run all the tests in the tests folder
+
+```bash
+npx playwright test
+```
+
+This will run the test cases in the HomePage.test.ts file on the chromium browser
+
+```bash
+npx playwright test tests/homePage/HomePage.test.ts --project=chromium
+```
+
+### To view the test results
+
+Either navigate to the `playwright-report` folder and open the generated `report.html` file in the browser\
+or run the following command to open the report.html file in the browser
+
+```bash
+npx playwright show-report
+```
+
+### Create tests using Playwright Recorder
+
+You can either click "Record new" or use the terminal command `npx playwright codegen <url>` to generate test code for a specific URL and a specific viewport size.\
+For example, to generate test code for the Tech Start UCalgary website with a viewport size of 1600x900, run the following command:
+
+```bash
+npx playwright codegen --viewport-size=1600,900 https://techstartucalgary.com
+```
+
+=======
+
+### Installing Plawright
+
+Here are 2 helpful links to get you started with Plawright
+[Plawright Getting Started ](https://playwright.dev/docs/intro) Or [Getting Started with Playwright and VS Code](https://www.youtube.com/watch?v=Xz6lhEzgI5I)
+
+### How to run the tests
+
+This will run all the tests in the tests folder
+
+```bash
+npx playwright test
+```
+
+This will run the test cases in the HomePage.test.ts file on the chromium browser
+
+```bash
+npx playwright test tests/homePage/HomePage.test.ts --project=chromium
+```
+
+### To view the test results
+
+Either navigate to the `playwright-report` folder and open the generated `report.html` file in the browser\
+or run the following command to open the report.html file in the browser
+
+```bash
+npx playwright show-report
+```
+
+> > > > > > > b64dc11 (refactor: Updated documentation to include how to run Playwright tests)

@@ -75,7 +75,6 @@ const TeamPage = () => {
         />
       </T.TeamSection>
       <TeamSection desktopView={defaultView} />
-      <Divider />
       <PreviousExecTeam desktopView={defaultView} />
     </S.TeamPage>
   );

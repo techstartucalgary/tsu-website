@@ -2,6 +2,9 @@ import React, { useEffect, useState } from "react";
 import * as S from "./PreviousExecTeam.styles";
 import prevTeamsData from "./PreviousExecTeamsInfo.json";
 // https://react-slick.neostack.com/docs/example/
+import Divider from "components/Divider";
+import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 interface yearData {
   year: string;
@@ -14,7 +17,7 @@ interface prevMembers {
 }
 
 const VISIBLE_YEARS_DESKTOP = 4;
-const VISIBLE_YEARS_MOBILE = 2;
+const VISIBLE_YEARS_MOBILE = 1;
 
 // interface of the prop
 interface PreviousExecTeamProps {
@@ -89,14 +92,15 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
 
   return (
     <S.PrevTeamSection>
-      <S.SectionHeader>Previous Exec Team</S.SectionHeader>
+      <Divider />
+      <S.SectionHeader>Previous Executives</S.SectionHeader>
       <S.PaginationControl>
         <S.ArrowButton
           className="arrow-button"
           onClick={handleLeftArrow}
           disabled={getSelectedYearIndex() === 0}
         >
-          &lt;
+        <FontAwesomeIcon icon={faChevronLeft} size="sm" style={{color:"black"}} />
         </S.ArrowButton>
         <S.YearPagination>
           {visibleYears.map((data) => (
@@ -114,7 +118,7 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
           onClick={handleRightArrow}
           disabled={getSelectedYearIndex() === prevTeamsData.length - 1}
         >
-          &gt;
+        <FontAwesomeIcon icon={faChevronRight} size="sm" style={{color:"black"}} />
         </S.ArrowButton>
       </S.PaginationControl>
       
@@ -136,13 +140,14 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
                       key={index}
                       lastRow={index>= lastRowStartIndex ? true : false} // if index is greater or equal, than we are on last row
                     >
-                      <S.TeamHeader>{member.name}</S.TeamHeader>
+                      <S.TeamHeader
+                      href={member.linkedin_url}
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      >
+                        {member.name}
+                      </S.TeamHeader>
                       <S.TeamRole>{member.role}</S.TeamRole>
-                      <S.TeamContact>
-                        <a href={member.linkedin_url} target="_blank" rel="noopener noreferrer">
-                          LinkedIn Profile
-                        </a>
-                      </S.TeamContact>
                     </S.TeamMember>
                   ))}
                 </>

@@ -49,9 +49,9 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
     setVisibleYears(prevTeamsData.slice(startIndex, endIndex));
   }
 
-  const getSelectedYearIndex = (): number => {
-    return prevTeamsData.findIndex((data) => data.year === selectedYear);
-  }
+  const getSelectedYearIndex = (): number => 
+    prevTeamsData.findIndex((data) => data.year === selectedYear);
+  
 
   const handleLeftArrow = () => {
     const selectedYearIndex = getSelectedYearIndex();

@@ -17,11 +17,10 @@ export const SectionHeader = styled.div`
   text-align: center;
   font-family: Inter, Tahoma, sans-serif;
   line-height: 1;
-  
 `;
 
 export const PaginationControl = styled.div`
-display: flex;
+  display: flex;
   /* border: 1px red solid; */
   margin-left: auto;
   margin-right: auto;
@@ -69,7 +68,7 @@ export const YearButton = styled.button`
 export const Divider = styled.hr`
   width: 60%;
   text-align: center;
-   margin: 3rem auto; 
+  margin: 3rem auto;
   border-top: 0.08rem solid #8d8d8d;
 `;
 
@@ -89,10 +88,13 @@ export const TeamMember = styled.div<{ lastRow: boolean }>`
   padding-bottom: 2rem;
 
   ${
-  // if we are are not on the last row, add border to the bottom
-  ({ lastRow }) => !lastRow && `
+    // if we are are not on the last row, add border to the bottom
+    ({ lastRow }) =>
+      !lastRow &&
+      `
     border-bottom: #8d8d8d 0.08rem solid;
-  `}
+  `
+  }
 `;
 
 export const TeamHeader = styled.a`
@@ -104,7 +106,7 @@ export const TeamHeader = styled.a`
   transition: color 0.3s, text-decoration 0.3;
   &:hover {
     color: #4dd6a8;
-    text-decoration: underline ;
+    text-decoration: underline;
   }
 `;
 

@@ -53,7 +53,7 @@ export const YearButton = styled.button`
   border-radius: 10px;
   color: #333;
   font-size: 1.2rem;
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 2rem;
   margin: 0 0.3rem;
   cursor: pointer;
   transition: color 0.3s;
@@ -69,7 +69,8 @@ export const Divider = styled.hr`
   width: 60%;
   text-align: center;
   margin: 3rem auto;
-  border-top: 0.08rem solid #8d8d8d;
+  /* border-top: 0.08rem solid red; */
+  border: none;
 `;
 
 export const TeamList = styled.div`

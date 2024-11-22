@@ -19,7 +19,7 @@ interface prevMembers {
   linkedin_url: string;
 }
 
-const VISIBLE_YEARS_DESKTOP = 4;
+const VISIBLE_YEARS_DESKTOP = 1;
 const VISIBLE_YEARS_MOBILE = 1;
 
 // interface of the prop
@@ -27,9 +27,7 @@ interface PreviousExecTeamProps {
   desktopView: boolean;
 }
 const PreviousExecTeam = (props: PreviousExecTeamProps) => {
-  const [selectedYear, setSelectedYear] = useState(
-    prevTeamsData[prevTeamsData.length - 1].year
-  );
+  const [selectedYear, setSelectedYear] = useState(prevTeamsData[prevTeamsData.length - 1].year);
   const [visibleYears, setVisibleYears] = useState<yearData[]>([]);
 
   useEffect(() => {
@@ -47,17 +45,11 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
     let startIndex = Math.max(0, prevTeamsData.length - numOfVisibleYears);
     // If the selected year is near the beginning, adjust startIndex to show available years
     if (selectedYearIndex < startIndex) {
-      startIndex = Math.max(
-        0,
-        selectedYearIndex - Math.floor(numOfVisibleYears / 2)
-      );
+      startIndex = Math.max(0,selectedYearIndex - Math.floor(numOfVisibleYears / 2));
     }
 
     // Calculate endIndex based on startIndex
-    const endIndex = Math.min(
-      prevTeamsData.length,
-      startIndex + numOfVisibleYears
-    );
+    const endIndex = Math.min(prevTeamsData.length,startIndex + numOfVisibleYears);
 
     setVisibleYears(prevTeamsData.slice(startIndex, endIndex));
   }
@@ -130,14 +122,14 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
           <FontAwesomeIcon
             icon={faChevronLeft}
             size="sm"
-            style={{ color: "black" }}
+            style={{ color: getSelectedYearIndex() === 0 ? 'grey' : "black" }}
           />
         </S.ArrowButton>
         <S.YearPagination>
           {visibleYears.map((data) => (
             <S.YearButton
               key={data.year}
-              className={selectedYear === data.year ? "selected" : ""}
+              // className={selectedYear === data.year ? "selected" : ""}
               onClick={() => setSelectedYear(data.year)}
             >
               {data.year}
@@ -152,7 +144,7 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
           <FontAwesomeIcon
             icon={faChevronRight}
             size="sm"
-            style={{ color: "black" }}
+            style={{ color: getSelectedYearIndex() === prevTeamsData.length - 1 ? "grey" : "black" }}
           />
         </S.ArrowButton>
       </S.PaginationControl>

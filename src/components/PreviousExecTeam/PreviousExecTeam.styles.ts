@@ -65,19 +65,19 @@ export const YearButton = styled.button`
   }
 `;
 
-export const Divider = styled.hr`
-  width: 60%;
-  text-align: center;
+export const Carousel = styled.div`
+  width: 40%;
   margin: 3rem auto;
-  /* border-top: 0.08rem solid red; */
-  border: none;
+  @media(max-width: 768px) {
+    width: 80%;
+  }
 `;
 
 export const TeamList = styled.div`
-  max-width: 60%;
+  max-width: 85%;
   margin: 0 auto;
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(3, 1fr);
   gap: 2rem;
 
   @media (max-width: 768px) {
@@ -87,13 +87,13 @@ export const TeamList = styled.div`
 
 export const TeamMember = styled.div<{ lastRow: boolean }>`
   padding-bottom: 2rem;
-
   ${
-    // if we are are not on the last row, add border to the bottom
-    ({ lastRow }) =>
-      !lastRow &&
-      `
+  // if we are are not on the last row, add border to the bottom
+  ({ lastRow }) =>
+    !lastRow &&
+    `
     border-bottom: #8d8d8d 0.08rem solid;
+
   `
   }
 `;

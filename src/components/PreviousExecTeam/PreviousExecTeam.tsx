@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as S from "./PreviousExecTeam.styles";
-import prevTeamsData from "./PreviousExecTeamsInfo.json";
+import {prevExecTeamList, PrevExecTeam} from "./PreviousExecTeamsInfo";
 // https://react-slick.neostack.com/docs/example/
 import Divider from "components/Divider";
 import {
@@ -9,61 +9,49 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-interface yearData {
-  year: string;
-  members: prevMembers[];
-}
-interface prevMembers {
-  name: string;
-  role: string;
-  linkedin_url: string;
-}
 
-const VISIBLE_YEARS_DESKTOP = 1;
-const VISIBLE_YEARS_MOBILE = 1;
+
+const PAGINATION_VISIBLE_YEARS = 1;
 
 // interface of the prop
 interface PreviousExecTeamProps {
   desktopView: boolean;
 }
-const PreviousExecTeam = (props: PreviousExecTeamProps) => {
-  const [selectedYear, setSelectedYear] = useState(prevTeamsData[prevTeamsData.length - 1].year);
-  const [visibleYears, setVisibleYears] = useState<yearData[]>([]);
-
+const PreviousExecTeam = ({desktopView} : PreviousExecTeamProps) => {
+  const [selectedYear, setSelectedYear] = useState(prevExecTeamList[prevExecTeamList.length - 1].year);
+  const [visibleYears, setVisibleYears] = useState<PrevExecTeam[]>([]);
+  
   useEffect(() => {
     updateVisibleYears();
-  }, [props.desktopView]); // only run on inital render or when view changes
+  }, [desktopView]); // only run on inital render or when view changes
 
   // Function to set the visible years
   function updateVisibleYears() {
     const selectedYearIndex = getSelectedYearIndex();
-    const numOfVisibleYears = props.desktopView
-      ? VISIBLE_YEARS_DESKTOP
-      : VISIBLE_YEARS_MOBILE;
 
     // Calculate startIndex based on the selectedYearIndex
-    let startIndex = Math.max(0, prevTeamsData.length - numOfVisibleYears);
+    let startIndex = Math.max(0, prevExecTeamList.length - PAGINATION_VISIBLE_YEARS);
     // If the selected year is near the beginning, adjust startIndex to show available years
     if (selectedYearIndex < startIndex) {
-      startIndex = Math.max(0,selectedYearIndex - Math.floor(numOfVisibleYears / 2));
+      startIndex = Math.max(0,selectedYearIndex - Math.floor(PAGINATION_VISIBLE_YEARS / 2));
     }
 
     // Calculate endIndex based on startIndex
-    const endIndex = Math.min(prevTeamsData.length,startIndex + numOfVisibleYears);
+    const endIndex = Math.min(prevExecTeamList.length,startIndex + PAGINATION_VISIBLE_YEARS);
 
-    setVisibleYears(prevTeamsData.slice(startIndex, endIndex));
+    setVisibleYears(prevExecTeamList.slice(startIndex, endIndex));
   }
 
   const getSelectedYearIndex = (): number =>
-    prevTeamsData.findIndex((data) => data.year === selectedYear);
+    prevExecTeamList.findIndex((data) => data.year === selectedYear);
 
   const handleLeftArrow = () => {
     const selectedYearIndex = getSelectedYearIndex();
     if (selectedYearIndex > 0) {
-      setSelectedYear(prevTeamsData[selectedYearIndex - 1].year);
+      setSelectedYear(prevExecTeamList[selectedYearIndex - 1].year);
 
       // Recalculate visible years only if necessary
-      const currentStartIndex = prevTeamsData.findIndex(
+      const currentStartIndex = prevExecTeamList.findIndex(
         (data) => data.year === visibleYears[0].year
       );
 
@@ -72,39 +60,35 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
         // Only shift the visible years by 1 year to the left so we don't introduce any unnecssary years
         const newStartIndex = Math.max(0, currentStartIndex - 1);
         const newEndIndex = Math.min(
-          prevTeamsData.length,
-          newStartIndex +
-            (props.desktopView ? VISIBLE_YEARS_DESKTOP : VISIBLE_YEARS_MOBILE)
+          prevExecTeamList.length,
+          newStartIndex + PAGINATION_VISIBLE_YEARS
         );
-        setVisibleYears(prevTeamsData.slice(newStartIndex, newEndIndex));
+        setVisibleYears(prevExecTeamList.slice(newStartIndex, newEndIndex));
       }
     }
   };
   const handleRightArrow = () => {
     const selectedYearIndex = getSelectedYearIndex();
-    if (selectedYearIndex < prevTeamsData.length - 1) {
-      setSelectedYear(prevTeamsData[selectedYearIndex + 1].year);
+    if (selectedYearIndex < prevExecTeamList.length - 1) {
+      setSelectedYear(prevExecTeamList[selectedYearIndex + 1].year);
 
       // Recalculate visible years only if necessary
-      const currentStartIndex = prevTeamsData.findIndex(
+      const currentStartIndex = prevExecTeamList.findIndex(
         (data) => data.year === visibleYears[0].year
       );
-      const numOfVisibleYears = props.desktopView
-        ? VISIBLE_YEARS_DESKTOP
-        : VISIBLE_YEARS_MOBILE;
 
       // If the selected year moves beyond the currently visible years
-      if (selectedYearIndex + 1 >= currentStartIndex + numOfVisibleYears) {
+      if (selectedYearIndex + 1 >= currentStartIndex + PAGINATION_VISIBLE_YEARS) {
         // Shift the visible years by one to the right
         const newStartIndex = Math.min(
-          prevTeamsData.length - numOfVisibleYears,
+          prevExecTeamList.length - PAGINATION_VISIBLE_YEARS,
           currentStartIndex + 1
         );
         const newEndIndex = Math.min(
-          prevTeamsData.length,
-          newStartIndex + numOfVisibleYears
+          prevExecTeamList.length,
+          newStartIndex + PAGINATION_VISIBLE_YEARS
         );
-        setVisibleYears(prevTeamsData.slice(newStartIndex, newEndIndex));
+        setVisibleYears(prevExecTeamList.slice(newStartIndex, newEndIndex));
       }
     }
   };
@@ -129,8 +113,6 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
           {visibleYears.map((data) => (
             <S.YearButton
               key={data.year}
-              // className={selectedYear === data.year ? "selected" : ""}
-              onClick={() => setSelectedYear(data.year)}
             >
               {data.year}
             </S.YearButton>
@@ -139,28 +121,37 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
         <S.ArrowButton
           className="arrow-button"
           onClick={handleRightArrow}
-          disabled={getSelectedYearIndex() === prevTeamsData.length - 1}
+          disabled={getSelectedYearIndex() === prevExecTeamList.length - 1}
         >
           <FontAwesomeIcon
             icon={faChevronRight}
             size="sm"
-            style={{ color: getSelectedYearIndex() === prevTeamsData.length - 1 ? "grey" : "black" }}
+            style={{ color: getSelectedYearIndex() === prevExecTeamList.length - 1 ? "grey" : "black" }}
           />
         </S.ArrowButton>
       </S.PaginationControl>
 
-      <S.Divider />
-
-      <S.TeamList>
-        {prevTeamsData
+        {prevExecTeamList
           .filter((team) => team.year === selectedYear)
-          .map((team) => {
+          .map((team: PrevExecTeam) => {
             const totalMember = team.members.length;
-            const membersPerRow = props.desktopView ? 2 : 1; // based on the view, how many columns
+            const membersPerRow = desktopView ? 3 : 1; // based on the view, how many columns
             const lastRowStartIndex =
               Math.floor((totalMember - 1) / membersPerRow) * membersPerRow; // index of element that will be on the last row
             return (
               <>
+                    <S.Carousel>
+        {team.picture ? (
+          <img 
+            src={team.picture}
+            style={{width:"100%", height:"auto",borderRadius: "0.75rem", objectFit:"cover", boxShadow: "0rem 1.5rem 2rem -1.5rem rgba(0, 0, 0, 0.7)"}}
+          />
+        ): (
+          <p>No picture available</p>
+        )}
+      </S.Carousel>
+                    <S.TeamList>
+
                 {team.members.length > 0 && (
                   <>
                     {team.members.map((member, index) => (
@@ -180,10 +171,11 @@ const PreviousExecTeam = (props: PreviousExecTeamProps) => {
                     ))}
                   </>
                 )}
+                      </S.TeamList>
+
               </>
             );
           })}
-      </S.TeamList>
     </S.PrevTeamSection>
   );
 };

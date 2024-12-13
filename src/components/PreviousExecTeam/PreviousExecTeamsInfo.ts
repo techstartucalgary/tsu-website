@@ -1,6 +1,17 @@
-[
+import exec2023 from "../../images/previousTeam/exec_23.png";
+import exec2022 from "../../images/previousTeam/exec_22.png";
+import exec2021 from "../../images/previousTeam/exec_21.png";
+
+export type PrevExecTeam = {
+  year : string;
+  picture: string;
+  members: {name: string, role: string, linkedin_url: string}[];
+};
+
+export const prevExecTeamList : PrevExecTeam[] =[
   {
     "year": "2021-2022",
+    "picture": exec2021,
     "members": [
       {
         "name": "Joel Happ",
@@ -62,6 +73,7 @@
   },
   {
     "year": "2022-2023",
+    "picture": exec2022,
     "members": [
       {
         "name": "Niyousha Raeesinejad",
@@ -148,6 +160,7 @@
   },
   {
     "year": "2023-2024",
+    "picture": exec2023,
     "members": [
       {
         "name": "Niyousha Raeesinejad",

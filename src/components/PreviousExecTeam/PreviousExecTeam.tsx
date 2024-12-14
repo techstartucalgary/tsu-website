@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import * as S from "./PreviousExecTeam.styles";
-import {prevExecTeamList, PrevExecTeam} from "./PreviousExecTeamsInfo";
+import { prevExecTeamList, PrevExecTeam } from "./PreviousExecTeamsInfo";
 // https://react-slick.neostack.com/docs/example/
 import Divider from "components/Divider";
 import {
@@ -9,18 +9,18 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
-
 const PAGINATION_VISIBLE_YEARS = 1;
 
 // interface of the prop
 interface PreviousExecTeamProps {
   desktopView: boolean;
 }
-const PreviousExecTeam = ({desktopView} : PreviousExecTeamProps) => {
-  const [selectedYear, setSelectedYear] = useState(prevExecTeamList[prevExecTeamList.length - 1].year);
+const PreviousExecTeam = ({ desktopView }: PreviousExecTeamProps) => {
+  const [selectedYear, setSelectedYear] = useState(
+    prevExecTeamList[prevExecTeamList.length - 1].year
+  );
   const [visibleYears, setVisibleYears] = useState<PrevExecTeam[]>([]);
-  
+
   useEffect(() => {
     updateVisibleYears();
   }, [desktopView]); // only run on inital render or when view changes
@@ -30,14 +30,23 @@ const PreviousExecTeam = ({desktopView} : PreviousExecTeamProps) => {
     const selectedYearIndex = getSelectedYearIndex();
 
     // Calculate startIndex based on the selectedYearIndex
-    let startIndex = Math.max(0, prevExecTeamList.length - PAGINATION_VISIBLE_YEARS);
+    let startIndex = Math.max(
+      0,
+      prevExecTeamList.length - PAGINATION_VISIBLE_YEARS
+    );
     // If the selected year is near the beginning, adjust startIndex to show available years
     if (selectedYearIndex < startIndex) {
-      startIndex = Math.max(0,selectedYearIndex - Math.floor(PAGINATION_VISIBLE_YEARS / 2));
+      startIndex = Math.max(
+        0,
+        selectedYearIndex - Math.floor(PAGINATION_VISIBLE_YEARS / 2)
+      );
     }
 
     // Calculate endIndex based on startIndex
-    const endIndex = Math.min(prevExecTeamList.length,startIndex + PAGINATION_VISIBLE_YEARS);
+    const endIndex = Math.min(
+      prevExecTeamList.length,
+      startIndex + PAGINATION_VISIBLE_YEARS
+    );
 
     setVisibleYears(prevExecTeamList.slice(startIndex, endIndex));
   }
@@ -78,7 +87,10 @@ const PreviousExecTeam = ({desktopView} : PreviousExecTeamProps) => {
       );
 
       // If the selected year moves beyond the currently visible years
-      if (selectedYearIndex + 1 >= currentStartIndex + PAGINATION_VISIBLE_YEARS) {
+      if (
+        selectedYearIndex + 1 >=
+        currentStartIndex + PAGINATION_VISIBLE_YEARS
+      ) {
         // Shift the visible years by one to the right
         const newStartIndex = Math.min(
           prevExecTeamList.length - PAGINATION_VISIBLE_YEARS,
@@ -106,16 +118,12 @@ const PreviousExecTeam = ({desktopView} : PreviousExecTeamProps) => {
           <FontAwesomeIcon
             icon={faChevronLeft}
             size="sm"
-            style={{ color: getSelectedYearIndex() === 0 ? 'grey' : "black" }}
+            style={{ color: getSelectedYearIndex() === 0 ? "grey" : "black" }}
           />
         </S.ArrowButton>
         <S.YearPagination>
           {visibleYears.map((data) => (
-            <S.YearButton
-              key={data.year}
-            >
-              {data.year}
-            </S.YearButton>
+            <S.YearButton key={data.year}>{data.year}</S.YearButton>
           ))}
         </S.YearPagination>
         <S.ArrowButton
@@ -126,53 +134,60 @@ const PreviousExecTeam = ({desktopView} : PreviousExecTeamProps) => {
           <FontAwesomeIcon
             icon={faChevronRight}
             size="sm"
-            style={{ color: getSelectedYearIndex() === prevExecTeamList.length - 1 ? "grey" : "black" }}
+            style={{
+              color:
+                getSelectedYearIndex() === prevExecTeamList.length - 1
+                  ? "grey"
+                  : "black",
+            }}
           />
         </S.ArrowButton>
       </S.PaginationControl>
 
-        {prevExecTeamList
-          .filter((team) => team.year === selectedYear)
-          .map((team: PrevExecTeam) => {
-            return (
-              <>
-                    <S.Carousel>
-        {team.picture ? (
-          <img 
-            src={team.picture}
-            style={{width:"100%", height:"auto",borderRadius: "0.75rem", objectFit:"cover", boxShadow: "0rem 1.5rem 2rem -1.5rem rgba(0, 0, 0, 0.7)"}}
-          />
-        ): (
-          <p>No picture available</p>
-        )}
-      </S.Carousel>
-                    <S.TeamList>
-
+      {prevExecTeamList
+        .filter((team) => team.year === selectedYear)
+        .map((team: PrevExecTeam) => {
+          return (
+            <>
+              <S.Carousel>
+                {team.picture ? (
+                  <img
+                    src={team.picture}
+                    style={{
+                      width: "100%",
+                      height: "auto",
+                      borderRadius: "0.75rem",
+                      objectFit: "cover",
+                      boxShadow: "0rem 1.5rem 2rem -1.5rem rgba(0, 0, 0, 0.7)",
+                    }}
+                  />
+                ) : (
+                  <p>No picture available</p>
+                )}
+              </S.Carousel>
+              <S.TeamList>
                 {team.members.length > 0 && (
                   <>
                     {team.members.map((member, index) => (
-                      <S.TeamMember
-                        key={index}
-                      >
-                        <div style={{justifyContent: "center"}}>
-                        <S.TeamHeader
-                          href={member.linkedin_url}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          {member.name}
-                        </S.TeamHeader>
-                        <S.TeamRole>{member.role}</S.TeamRole>
+                      <S.TeamMember key={index}>
+                        <div style={{ justifyContent: "center" }}>
+                          <S.TeamHeader
+                            href={member.linkedin_url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            {member.name}
+                          </S.TeamHeader>
+                          <S.TeamRole>{member.role}</S.TeamRole>
                         </div>
                       </S.TeamMember>
                     ))}
                   </>
                 )}
-                      </S.TeamList>
-
-              </>
-            );
-          })}
+              </S.TeamList>
+            </>
+          );
+        })}
     </S.PrevTeamSection>
   );
 };

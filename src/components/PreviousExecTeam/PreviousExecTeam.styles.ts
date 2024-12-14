@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const PrevTeamSection = styled.div`
   margin-left: auto;
   margin-right: auto;
-  /* padding-bottom: 2rem; */
+  padding-bottom: 2rem;
   text-align: center;
-  /* padding-top: 2%; */
   background-color: white;
+
 `;
 
 export const SectionHeader = styled.div`
@@ -42,7 +42,6 @@ export const ArrowButton = styled.button`
   }
 
   &:disabled {
-    /* opacity: 0.5; */
     cursor: not-allowed;
   }
 `;

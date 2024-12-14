@@ -81,21 +81,17 @@ export const TeamList = styled.div`
   gap: 2rem;
 
   @media (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+    @media (max-width: 600px) {
     grid-template-columns: 1fr;
   }
 `;
 
-export const TeamMember = styled.div<{ lastRow: boolean }>`
-  padding-bottom: 2rem;
-  ${
-  // if we are are not on the last row, add border to the bottom
-  ({ lastRow }) =>
-    !lastRow &&
-    `
-    border-bottom: #8d8d8d 0.08rem solid;
-
-  `
-  }
+export const TeamMember = styled.div`
+  background-color: #f5f5f5;
+  border-radius: 0.5rem;
+  padding: 1rem 0rem;
 `;
 
 export const TeamHeader = styled.a`
@@ -114,5 +110,6 @@ export const TeamHeader = styled.a`
 export const TeamRole = styled.p`
   font-size: 16px;
   margin: 0 0 5px 0;
+
 `;
 export const YearPagination = styled.div``;

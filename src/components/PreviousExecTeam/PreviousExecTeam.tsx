@@ -134,10 +134,6 @@ const PreviousExecTeam = ({desktopView} : PreviousExecTeamProps) => {
         {prevExecTeamList
           .filter((team) => team.year === selectedYear)
           .map((team: PrevExecTeam) => {
-            const totalMember = team.members.length;
-            const membersPerRow = desktopView ? 3 : 1; // based on the view, how many columns
-            const lastRowStartIndex =
-              Math.floor((totalMember - 1) / membersPerRow) * membersPerRow; // index of element that will be on the last row
             return (
               <>
                     <S.Carousel>
@@ -157,8 +153,8 @@ const PreviousExecTeam = ({desktopView} : PreviousExecTeamProps) => {
                     {team.members.map((member, index) => (
                       <S.TeamMember
                         key={index}
-                        lastRow={index >= lastRowStartIndex ? true : false} // if index is greater or equal, than we are on last row
                       >
+                        <div style={{justifyContent: "center"}}>
                         <S.TeamHeader
                           href={member.linkedin_url}
                           target="_blank"
@@ -167,6 +163,7 @@ const PreviousExecTeam = ({desktopView} : PreviousExecTeamProps) => {
                           {member.name}
                         </S.TeamHeader>
                         <S.TeamRole>{member.role}</S.TeamRole>
+                        </div>
                       </S.TeamMember>
                     ))}
                   </>

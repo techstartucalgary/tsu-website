@@ -46,7 +46,7 @@ export const ArrowButton = styled.button`
   }
 `;
 
-export const YearButton = styled.button`
+export const YearButton = styled.div`
   background-color: transparent;
   border: 1px lightgray solid;
   border-radius: 10px;
@@ -54,14 +54,7 @@ export const YearButton = styled.button`
   font-size: 1.2rem;
   padding: 0.5rem 2rem;
   margin: 0 0.3rem;
-  cursor: pointer;
   transition: color 0.3s;
-  &:hover {
-    color: #4dd6a8;
-  }
-  &.selected {
-    background-color: lightgray;
-  }
 `;
 
 export const Carousel = styled.div`

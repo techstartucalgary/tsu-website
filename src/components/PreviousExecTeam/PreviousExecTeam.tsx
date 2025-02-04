@@ -1,7 +1,6 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import * as S from "./PreviousExecTeam.styles";
 import { prevExecTeamList, PrevExecTeam } from "./PreviousExecTeamsInfo";
-// https://react-slick.neostack.com/docs/example/
 import Divider from "components/Divider";
 import {
   faChevronLeft,

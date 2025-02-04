@@ -8,7 +8,7 @@ import {
   faChevronRight,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
+import { useCallback } from "react";
 const PAGINATION_VISIBLE_YEARS = 1;
 
 // interface of the prop
@@ -20,13 +20,13 @@ const PreviousExecTeam = ({ desktopView }: PreviousExecTeamProps) => {
     prevExecTeamList[prevExecTeamList.length - 1].year
   );
   const [visibleYears, setVisibleYears] = useState<PrevExecTeam[]>([]);
-
-  useEffect(() => {
-    updateVisibleYears();
-  }, [desktopView]); // only run on inital render or when view changes
+  
+  const getSelectedYearIndex = useCallback((): number =>{
+    return prevExecTeamList.findIndex((data) => data.year === selectedYear)
+  },[selectedYear]);
 
   // Function to set the visible years
-  function updateVisibleYears() {
+  const updateVisibleYears= useCallback(() => {
     const selectedYearIndex = getSelectedYearIndex();
 
     // Calculate startIndex based on the selectedYearIndex
@@ -49,12 +49,13 @@ const PreviousExecTeam = ({ desktopView }: PreviousExecTeamProps) => {
     );
 
     setVisibleYears(prevExecTeamList.slice(startIndex, endIndex));
-  }
+  },[getSelectedYearIndex]);
 
-  const getSelectedYearIndex = (): number =>
-    prevExecTeamList.findIndex((data) => data.year === selectedYear);
-
-  const handleLeftArrow = () => {
+  useEffect(() => {
+    updateVisibleYears();
+  }, [desktopView, updateVisibleYears]);
+  
+  const handleLeftArrow = useCallback(() => {
     const selectedYearIndex = getSelectedYearIndex();
     if (selectedYearIndex > 0) {
       setSelectedYear(prevExecTeamList[selectedYearIndex - 1].year);
@@ -75,8 +76,8 @@ const PreviousExecTeam = ({ desktopView }: PreviousExecTeamProps) => {
         setVisibleYears(prevExecTeamList.slice(newStartIndex, newEndIndex));
       }
     }
-  };
-  const handleRightArrow = () => {
+  },[getSelectedYearIndex]);
+  const handleRightArrow = useCallback(() => {
     const selectedYearIndex = getSelectedYearIndex();
     if (selectedYearIndex < prevExecTeamList.length - 1) {
       setSelectedYear(prevExecTeamList[selectedYearIndex + 1].year);
@@ -103,7 +104,7 @@ const PreviousExecTeam = ({ desktopView }: PreviousExecTeamProps) => {
         setVisibleYears(prevExecTeamList.slice(newStartIndex, newEndIndex));
       }
     }
-  };
+  },[getSelectedYearIndex]);
 
   return (
     <S.PrevTeamSection>

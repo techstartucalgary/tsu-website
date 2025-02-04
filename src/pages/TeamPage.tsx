@@ -74,7 +74,7 @@ const TeamPage = () => {
         />
       </T.TeamSection>
       <TeamSection desktopView={defaultView} />
-      <PreviousExecTeam desktopView={defaultView} />
+      <PreviousExecTeam />
     </S.TeamPage>
   );
 };

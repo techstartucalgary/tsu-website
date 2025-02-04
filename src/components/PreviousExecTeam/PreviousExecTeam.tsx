@@ -9,100 +9,28 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useCallback } from "react";
-const PAGINATION_VISIBLE_YEARS = 1;
 
-// interface of the prop
-interface PreviousExecTeamProps {
-  desktopView: boolean;
-}
-const PreviousExecTeam = ({ desktopView }: PreviousExecTeamProps) => {
+
+
+const PreviousExecTeam = () => {
   const [selectedYear, setSelectedYear] = useState(
     prevExecTeamList[prevExecTeamList.length - 1].year
   );
-  const [visibleYears, setVisibleYears] = useState<PrevExecTeam[]>([]);
   
   const getSelectedYearIndex = useCallback((): number =>{
     return prevExecTeamList.findIndex((data) => data.year === selectedYear)
   },[selectedYear]);
 
-  // Function to set the visible years
-  const updateVisibleYears= useCallback(() => {
-    const selectedYearIndex = getSelectedYearIndex();
-
-    // Calculate startIndex based on the selectedYearIndex
-    let startIndex = Math.max(
-      0,
-      prevExecTeamList.length - PAGINATION_VISIBLE_YEARS
-    );
-    // If the selected year is near the beginning, adjust startIndex to show available years
-    if (selectedYearIndex < startIndex) {
-      startIndex = Math.max(
-        0,
-        selectedYearIndex - Math.floor(PAGINATION_VISIBLE_YEARS / 2)
-      );
-    }
-
-    // Calculate endIndex based on startIndex
-    const endIndex = Math.min(
-      prevExecTeamList.length,
-      startIndex + PAGINATION_VISIBLE_YEARS
-    );
-
-    setVisibleYears(prevExecTeamList.slice(startIndex, endIndex));
-  },[getSelectedYearIndex]);
-
-  useEffect(() => {
-    updateVisibleYears();
-  }, [desktopView, updateVisibleYears]);
-  
   const handleLeftArrow = useCallback(() => {
     const selectedYearIndex = getSelectedYearIndex();
     if (selectedYearIndex > 0) {
       setSelectedYear(prevExecTeamList[selectedYearIndex - 1].year);
-
-      // Recalculate visible years only if necessary
-      const currentStartIndex = prevExecTeamList.findIndex(
-        (data) => data.year === visibleYears[0].year
-      );
-
-      // if the selectedyear index less that the start of the visible year array
-      if (selectedYearIndex - 1 < currentStartIndex) {
-        // Only shift the visible years by 1 year to the left so we don't introduce any unnecssary years
-        const newStartIndex = Math.max(0, currentStartIndex - 1);
-        const newEndIndex = Math.min(
-          prevExecTeamList.length,
-          newStartIndex + PAGINATION_VISIBLE_YEARS
-        );
-        setVisibleYears(prevExecTeamList.slice(newStartIndex, newEndIndex));
       }
-    }
   },[getSelectedYearIndex]);
   const handleRightArrow = useCallback(() => {
     const selectedYearIndex = getSelectedYearIndex();
     if (selectedYearIndex < prevExecTeamList.length - 1) {
       setSelectedYear(prevExecTeamList[selectedYearIndex + 1].year);
-
-      // Recalculate visible years only if necessary
-      const currentStartIndex = prevExecTeamList.findIndex(
-        (data) => data.year === visibleYears[0].year
-      );
-
-      // If the selected year moves beyond the currently visible years
-      if (
-        selectedYearIndex + 1 >=
-        currentStartIndex + PAGINATION_VISIBLE_YEARS
-      ) {
-        // Shift the visible years by one to the right
-        const newStartIndex = Math.min(
-          prevExecTeamList.length - PAGINATION_VISIBLE_YEARS,
-          currentStartIndex + 1
-        );
-        const newEndIndex = Math.min(
-          prevExecTeamList.length,
-          newStartIndex + PAGINATION_VISIBLE_YEARS
-        );
-        setVisibleYears(prevExecTeamList.slice(newStartIndex, newEndIndex));
-      }
     }
   },[getSelectedYearIndex]);
 
@@ -123,9 +51,7 @@ const PreviousExecTeam = ({ desktopView }: PreviousExecTeamProps) => {
           />
         </S.ArrowButton>
         <S.YearPagination>
-          {visibleYears.map((data) => (
-            <S.YearButton key={data.year}>{data.year}</S.YearButton>
-          ))}
+          <S.YearButton>{selectedYear}</S.YearButton>
         </S.YearPagination>
         <S.ArrowButton
           className="arrow-button"

@@ -3,7 +3,6 @@ import HoverButton from "components/HoverButton/HoverButton";
 import { ButtonMode } from "components/HoverButton/HoverButton.styles";
 
 type EventProps = {
-  key: number;
   title: string;
   description: string;
   date: string;
@@ -24,7 +23,6 @@ const Event = (props: EventProps) => {
     <S.Event data-aos={fadeDirection} data-aos-duration="2000">
       <S.EventImage
         src={props.image}
-        key={props.key}
         alt={props.title}
         onDragStart={preventDragHandler}
       />

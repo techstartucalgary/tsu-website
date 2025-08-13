@@ -41,7 +41,7 @@ const Header = () => {
         <input
           type="checkbox"
           checked={navbarExpanded}
-          onClick={toggleNavbarExpanded}
+          onChange={toggleNavbarExpanded}
           id="navbar__nav-toggle"
           className="navbar__nav-toggle"
         />

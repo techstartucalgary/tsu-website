@@ -13,9 +13,9 @@ const SponsorSection = () => {
       </h2>
       <Divider />
       <S.SponsorSection>
-        {SponsorList.map((sponsor: Organization) => {
+        {SponsorList.map((sponsor: Organization, index: number) => {
           return (
-            <S.SponsorLogoDiv>
+            <S.SponsorLogoDiv key={sponsor.sponsorLink}>
               <SponsorLogo
                 sponsorLink={sponsor.sponsorLink}
                 sponsorImage={sponsor.sponsorImage}

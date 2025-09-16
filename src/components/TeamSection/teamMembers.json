@@ -9,194 +9,157 @@
   },
   "executiveTeam": [
     {
-      "name": "Rachel Renegado",
-      "affiliation": "Co-President",
-      "imagePath": "Rachel_Renegado.jpg",
-      "linkedin": "https://www.linkedin.com/in/rachel-renegado-544409201"
-    },
-    {
-      "name": "Aarsh Shah",
-      "affiliation": "Co-President",
-      "imagePath": "Aarsh_Shah.jpg",
-      "linkedin": "https://www.linkedin.com/in/aarsh-shah-0a84161a9/"
-    },
-    {
       "name": "Maheen Raza",
-      "affiliation": "VP Internal",
+      "affiliation": "Co-President",
       "imagePath": "Maheen_Raza.jpg",
       "linkedin": "https://www.linkedin.com/in/maheen-raza-40b780229/"
     },
     {
-      "name": "Aminata N'diaye",
-      "affiliation": "Jr. VP Internal",
-      "imagePath": "Aminata_N'diaye.jpg",
-      "linkedin": "https://www.linkedin.com/in/aminata-n%E2%80%99diaye-231108255/"
+      "name": "Youssef Hamed",
+      "affiliation": "Co-President",
+      "imagePath": "Youssef_Hamed.jpeg",
+      "linkedin": "https://www.linkedin.com/in/youssef-walid-hamed/"
     },
     {
-      "name": "Labib Afshar Ahmed",
-      "affiliation": "Co-VP Finance",
-      "imagePath": "Labib_Ahmed.jpg",
-      "linkedin": "https://www.linkedin.com/in/labib-afsar-ahmed/"
-    },
-    {
-      "name": "Ivan Imshenetskyy",
-      "affiliation": "Co-VP Finance",
-      "imagePath": "Ivan_Imshenetskyy.jpg",
-      "linkedin": "https://www.linkedin.com/in/imivani/"
-    },
-    {
-      "name": "Ana Laura Espinosa Garza",
-      "affiliation": "VP External",
-      "imagePath": "Ana_Laura.jpg",
-      "linkedin": "https://www.linkedin.com/in/ana-laura-espinosa-garza-136a281b0/"
-    },
-    {
-      "name": "Saqib Mazhar",
-      "affiliation": "Jr. VP External",
-      "imagePath": "Saqib_Mazhar_JrVpExternal.jpg",
-      "linkedin": "https://www.linkedin.com/in/saqib-mazhar/"
-    },
-    {
-      "name": "Carol Wang",
-      "affiliation": "VP Community",
-      "imagePath": "Carol_Wang.jpg",
-      "linkedin": "https://www.linkedin.com/in/carol-wang3116/"
+      "name": "Kameel Kasumu",
+      "affiliation": "VP Internal",
+      "imagePath": "Kameel_Kasumu.jpg",
+      "linkedin": "https://www.linkedin.com/in/ka-kasumu/"
     },
     {
       "name": "Maliha Chowdhury Adrita",
-      "affiliation": "Co-VP Events",
-      "imagePath": "Maliha_Chowdhury_Adrita.JPG",
-      "linkedin": "https://www.linkedin.com/in/maliha-chowdhury-adrita-5a7579242/"
+      "affiliation": "VP Community",
+      "imagePath": "Maliha_Chowdhury_Adrita.jpg",
+      "linkedin": "https://www.linkedin.com/in/malihachowdhuryadrita/"
     },
     {
       "name": "Azlfa Anwar",
       "affiliation": "Co-VP Events",
       "imagePath": "Azlfa_Anwar.jpeg",
-      "linkedin": "https://www.linkedin.com/in/azlfa-anwar/"
+      "linkedin": "https://www.linkedin.com/in/azlfa-anwar"
     },
     {
-      "name": "Estefy Caballero",
-      "affiliation": "VP Communications",
-      "imagePath": "Estefy_Caballero.jpg",
-      "linkedin": "https://www.linkedin.com/in/estefanía-caballero-864aab25a/"
+      "name": "Oluchukwu Ani",
+      "affiliation": "Co-VP Events",
+      "imagePath": "Oluchukwu_Ani.jpeg",
+      "linkedin": "https://www.linkedin.com/in/oluchukwu-ani/"
+    },
+    {
+      "name": "Brian Oh",
+      "affiliation": "Jr. VP Events",
+      "imagePath": "Brian_Oh.jpeg",
+      "linkedin": "https://www.linkedin.com/in/brian-oh-3adr34"
+    },
+    {
+      "name": "Sneegha Mohanakrishnan Rekha",
+      "affiliation": "Jr. VP Events",
+      "imagePath": "Sneegha_Mohanakrishnan_Rekha.jpg",
+      "linkedin": "https://www.linkedin.com/in/sneegha-mohanakrishnan-rekha/"
+    },
+    {
+      "name": "Saqib Mazhar",
+      "affiliation": "Co-VP External",
+      "imagePath": "Saqib_Mazhar_JrVpExternal.jpg",
+      "linkedin": "https://www.linkedin.com/in/saqib-mazhar/"
+    },
+    {
+      "name": "Svara Patel",
+      "affiliation": "Co-VP External",
+      "imagePath": "Svara_Patel.jpg",
+      "linkedin": "https://www.linkedin.com/in/svara-patel/"
+    },
+    {
+      "name": "Abraham Otegbola",
+      "affiliation": "Jr. VP External",
+      "imagePath": "Abraham_Otegbola.jpg",
+      "linkedin": "https://www.linkedin.com/in/abraham-otegbola-943a39231/"
+    },
+    {
+      "name": "Tara Cherian",
+      "affiliation": "Jr. VP External",
+      "imagePath": "Tara_Cherian.jpg",
+      "linkedin": "https://www.linkedin.com/in/tara-cherian/"
+    },
+    {
+      "name": "Rumaisa Talukder",
+      "affiliation": "VP Design",
+      "imagePath": "Rumaisa_Talukder.jpg",
+      "linkedin": "https://www.linkedin.com/in/rumaisa-talukder/"
     },
     {
       "name": "Esther Thompson",
-      "affiliation": "Jr VP Communications",
+      "affiliation": "Co-VP Communications",
       "imagePath": "Esther_Thompson.jpg",
       "linkedin": "https://www.linkedin.com/in/esther-thompson-2436911b4/"
     },
     {
-      "name": "Phuong Le",
-      "affiliation": "Co-VP Design",
-      "imagePath": "Anna_Le.jpg",
-      "linkedin": "https://www.linkedin.com/in/phuong-le-677918255/"
+      "name": "Estefy Caballero",
+      "affiliation": "Co-VP Communications",
+      "imagePath": "Estefy_Caballero.jpg",
+      "linkedin": "https://www.linkedin.com/in/estefania-caballero-864aab25a/"
     },
     {
-      "name": "Sultan Alzoghaibi",
-      "affiliation": "Co-VP Design",
-      "imagePath": "Sultan.jpg",
-      "linkedin": "https://www.linkedin.com/in/sultan-alzoghaibi-3b99a0250/"
+      "name": "Labib Ahmed",
+      "affiliation": "VP Finance",
+      "imagePath": "Labib_Ahmed.jpg",
+      "linkedin": "https://www.linkedin.com/in/labib-afsar-ahmed/"
     },
     {
-      "name": "Ben Schmidt",
-      "affiliation": "Co-VP Development",
-      "imagePath": "Ben_Schmidt.jpg",
-      "linkedin": "https://www.linkedin.com/in/benschmidt2343/"
-    },
-    {
-      "name": "Youssef Hamed",
-      "affiliation": "Co-VP Development",
-      "imagePath": "Youssef_Hamed.jpg",
-      "linkedin": "https://www.linkedin.com/in/youssef-walid-hamed/"
-    },
-    {
-      "name": "Ryan Mabley",
-      "affiliation": "VP Strategy",
-      "imagePath": "Ryan.jpeg",
-      "linkedin": "https://www.linkedin.com/in/rdmabley/"
-    },
-    {
-      "name": "Parsa Kargari",
-      "affiliation": "Technical Advisor",
-      "imagePath": "Parsa_Kargari.jpg",
-      "linkedin": "https://www.linkedin.com/in/parsa-kargari/"
+      "name": "Nagulan Senthilkumar",
+      "affiliation": "Jr. VP Finance",
+      "imagePath": "Nagulan_Senthilkumar.jpg",
+      "linkedin": "https://www.linkedin.com/in/nagulan-senthilkumar-41370532a/"
     },
     {
       "name": "Mehrnaz Zafari",
-      "affiliation": "Cloud Advisor",
+      "affiliation": "VP Development",
       "imagePath": "Mehrnaz_Zafari.jpg",
       "linkedin": "https://www.linkedin.com/in/mehrnaz-zafari/"
     },
     {
-      "name": "Brian Nguyen",
-      "affiliation": "Senior Website Developer",
-      "imagePath": "Brian_Nguyen.jpg",
-      "linkedin": "https://www.linkedin.com/in/nguyennbrian/"
+      "name": "Farah Shamsi",
+      "affiliation": "VP Strategy",
+      "imagePath": "Farah_Shamsi.JPG",
+      "linkedin": "https://www.linkedin.com/in/farah-shamsi"
     },
     {
-      "name": "Sahiti Akella",
-      "affiliation": "Website Developer",
-      "imagePath": "Sahiti_Akella.png",
-      "linkedin": "https://www.linkedin.com/in/sahiti-akella/"
+      "name": "Paul Hui",
+      "affiliation": "Advisor",
+      "imagePath": "Paul_Hui.jpg",
+      "linkedin": "https://www.linkedin.com/in/pcyhui//"
     },
     {
-      "name": "Isaiah Asaolu",
+      "name": "Shivanshi Visvanatha",
       "affiliation": "Website Developer",
-      "imagePath": "Isaiah_Asaolu.jpg",
-      "linkedin": "https://www.linkedin.com/in/isaiah-a-2001/"
+      "imagePath": "Shivanshi_Visvanatha.jpeg",
+      "linkedin": "https://www.linkedin.com/in/shivanshi-visvanatha-a4a598382"
     },
     {
-      "name": "Sukriti Badhwar",
+      "name": "Raisa Fairuz",
       "affiliation": "Website Developer",
-      "imagePath": "Sukriti_Badhwar.jpg",
-      "linkedin": "https://www.linkedin.com/in/sukriti-badhwar-31210923a/"
+      "imagePath": "Raisa_Fairuz.jpg",
+      "linkedin": "https://www.linkedin.com/in/raisa-fairuz-2077b920a/"
+    },
+    {
+      "name": "Alexey Grekov",
+      "affiliation": "Website Developer",
+      "imagePath": "Alexey_Grekov.jpg",
+      "linkedin": "https://www.linkedin.com/in/alexeygrekov/"
     }
   ],
-  "projectManagers": [
-    {
-      "name": "Alvi Zaman",
-      "affiliation": "Project Manager",
-      "imagePath": "Alvi.jpeg",
-      "linkedin": "https://www.linkedin.com/in/alvi-zaman-ab3395285/"
-    },
-    {
-      "name": "Amirhossein Foroughi",
-      "affiliation": "Project Manager",
-      "imagePath": "Amir.jpeg",
-      "linkedin": "https://www.linkedin.com/in/ahforoughi/"
-    },
-    {
-      "name": "Debo Dam",
-      "affiliation": "Project Manager",
-      "imagePath": "Debo.jpeg",
-      "linkedin": "https://www.linkedin.com/in/debojeetdam/"
-    },
-    {
-      "name": "James Mtendamema",
-      "affiliation": "Project Manager",
-      "imagePath": "James.jpeg",
-      "linkedin": "https://www.linkedin.com/in/james-mtendamema-601b87198/"
-    },
-    {
-      "name": "Phuong Thao Nguyen",
-      "affiliation": "Project Manager",
-      "imagePath": "Thao.jpeg",
-      "linkedin": "https://www.linkedin.com/in/pthaon/"
-    }
-  ],
+  "projectManagers": [],
   "alumniTeam": [
     {
-      "name": "Janita",
-      "affiliation": "Alumni VP Design",
-      "imagePath": "Janita.jpg",
-      "linkedin": "https://www.linkedin.com/in/janitamahum/"
+      "name": "Parsa Kargari",
+      "affiliation": "Alumni Technical Advisor",
+      "imagePath": "Parsa_Kargari.jpg",
+      "linkedin": "https://www.linkedin.com/in/parsa-kargari/"
     },
     {
-      "name": "Sajwal",
-      "affiliation": "Alumni VP Strategy",
-      "imagePath": "Sajwal.jpeg",
-      "linkedin": "https://www.linkedin.com/in/sajwal/"
+      "name": "Carol Wang",
+      "affiliation": "Alumni Advisor",
+      "imagePath": "Carol_Wang.png",
+      "linkedin": "https://www.linkedin.com/in/carol-wang3116"
     }
   ],
   "boardMembers": [

@@ -1,6 +1,5 @@
 import teamData from "./teamMembers.json";
 
-// dynamically import image based on the imageName parameter
 const importImage = (imageName: string) => {
   return require(`../../images/team/${imageName}`);
 }
@@ -8,8 +7,15 @@ const importImage = (imageName: string) => {
 export type TeamMember = {
   id: number;
   name: string;
-  affiliation: string; // Affiliation refers to roles and projects for executives and PMs respectively
+  affiliation: string;
   image: string;
+  linkedin: string;
+};
+
+type TeamMemberJSON = {
+  name: string;
+  affiliation: string;
+  imagePath: string;
   linkedin: string;
 };
 
@@ -19,32 +25,36 @@ type FounderDescription = {
 
 export type FounderInfo = TeamMember & FounderDescription;
 
-export const founder: FounderInfo = {
-  ...teamData.founder,
-  image: importImage(teamData.founder.imagePath)
+const processTeamMembers = (members: TeamMemberJSON[]): TeamMember[] => {
+  if (members.length === 0) return [];
+  return members.map((member, index) => ({
+    id: index,
+    name: member.name,
+    affiliation: member.affiliation,
+    linkedin: member.linkedin,
+    image: importImage(member.imagePath)
+  }));
 };
 
-export const executiveTeam: TeamMember[] = teamData.executiveTeam.map((exec, index) => (
-  {
-    id: index,
-    ...exec,
-    image: importImage(exec.imagePath)
-  }));
+export const getFounder = (): FounderInfo => ({
+  ...teamData.founder,
+  image: importImage(teamData.founder.imagePath)
+});
 
-export const projectManagers: TeamMember[] = teamData.projectManagers.map((pm, index) => ({
-  id: index,
-  ...pm,
-  image: importImage(pm.imagePath)
-}));
+export const getExecutiveTeam = (): TeamMember[] =>
+  processTeamMembers(teamData.executiveTeam as TeamMemberJSON[]);
 
-export const alumniTeam: TeamMember[] = teamData.alumniTeam.map((alum, index) => ({
-  id: index,
-  ...alum,
-  image: importImage(alum.imagePath)
-}));
+export const getProjectManagers = (): TeamMember[] =>
+  processTeamMembers(teamData.projectManagers as TeamMemberJSON[]);
 
-export const boardMembers: TeamMember[] = teamData.boardMembers.map((bm, index) => ({
-  id: index,
-  ...bm,
-  image: importImage(bm.imagePath)
-}))
+export const getAlumniTeam = (): TeamMember[] =>
+  processTeamMembers(teamData.alumniTeam as TeamMemberJSON[]);
+
+export const getBoardMembers = (): TeamMember[] =>
+  processTeamMembers(teamData.boardMembers as TeamMemberJSON[]);
+
+export const founder = getFounder();
+export const executiveTeam = getExecutiveTeam();
+export const projectManagers = getProjectManagers();
+export const alumniTeam = getAlumniTeam();
+export const boardMembers = getBoardMembers();

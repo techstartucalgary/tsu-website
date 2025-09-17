@@ -51,9 +51,7 @@ const getBaseLength = (category: TeamCategory) => {
 };
 
 const Team = (props: TeamProps) => {
-  // NEW: Check if the current category is empty
   const isEmpty = props.teamMembers.length === 0;
-  // NEW: Get the appropriate message content
   const { message, subtext } = getEmptyStateContent(props.activeCategory);
 
   return (
@@ -71,7 +69,6 @@ const Team = (props: TeamProps) => {
         );
       })}
       
-      {/* NEW: Show empty state if no team members */}
       {isEmpty && (
         <S.EmptyStateContainer>
           <S.EmptyStateText>

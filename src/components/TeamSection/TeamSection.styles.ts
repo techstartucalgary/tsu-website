@@ -37,7 +37,6 @@ export const ToggleButtonWrapper = styled.div`
   display: flex;
   position: relative;
   margin-top: 2%;
-  margin-left: -5%;
   justify-content: center;
   align-items: center;
 `;

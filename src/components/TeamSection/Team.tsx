@@ -12,6 +12,31 @@ type TeamProps = {
   activeCategory: TeamCategory;
 };
 
+const getEmptyStateContent = (category: TeamCategory) => {
+  switch (category) {
+    case "executives":
+      return {
+        message: "Coming Soon",
+        subtext: "No executive team members available at this time."
+      };
+    case "projectManagers":
+      return {
+        message: "Coming Soon",
+        subtext: "No project managers available at this time."
+      };
+    case "alumni":
+      return {
+        message: "Coming Soon",
+        subtext: "No alumni information available at this time."
+      };
+    default:
+      return {
+        message: "Coming Soon",
+        subtext: "No team members available at this time."
+      };
+  }
+};
+
 const getBaseLength = (category: TeamCategory) => {
   switch (category) {
     case "executives":
@@ -26,9 +51,11 @@ const getBaseLength = (category: TeamCategory) => {
 };
 
 const Team = (props: TeamProps) => {
+  const isEmpty = props.teamMembers.length === 0;
+  const { message, subtext } = getEmptyStateContent(props.activeCategory);
+
   return (
     <S.TeamContainer mobileView={!props.desktopView}>
-      {/* eslint-disable-next-line @typescript-eslint/no-explicit-any */}
       {props.teamMembers.map((member: TeamMember) => {
         return (
           <Profile
@@ -41,6 +68,17 @@ const Team = (props: TeamProps) => {
           />
         );
       })}
+      
+      {isEmpty && (
+        <S.EmptyStateContainer>
+          <S.EmptyStateText>
+            <h3>{message}</h3>
+          </S.EmptyStateText>
+          <S.EmptyStateSubtext>
+            <h4>{subtext}</h4>
+          </S.EmptyStateSubtext>
+        </S.EmptyStateContainer>
+      )}
     </S.TeamContainer>
   );
 };

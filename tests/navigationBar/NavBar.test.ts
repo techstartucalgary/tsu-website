@@ -48,10 +48,10 @@ test('Test Team button navigates to the team page and shows the 3 previous presi
 test('Test Team button navigates to the team page and shows the 2 current presidents', async ({ page }) => {
   await page.goto('/');
   await page.getByText('Team', { exact: true }).click();
-  await expect(page.getByTestId('profile-image-rachel-renegado')).toBeVisible();
-  await expect(page.getByRole('heading', { name: 'Rachel Renegado' })).toBeVisible();
-  await expect(page.getByTestId('profile-image-aarsh-shah')).toBeVisible();
-  await expect(page.getByRole('heading', { name: 'Aarsh Shah' })).toBeVisible();
+  await expect(page.getByTestId('profile-image-maheen-raza')).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Maheen Raza' })).toBeVisible();
+  await expect(page.getByTestId('profile-image-youssef-hamed')).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Youssef Hamed' })).toBeVisible();
   await page.close();
 
 });

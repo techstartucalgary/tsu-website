@@ -175,7 +175,19 @@
     }
   ],
   "boardMembers": [
+    { 
+      "name": "Aarsh Shah",
+      "affiliation": "2024-2025 President",
+      "imagePath": "Aarsh_Shah.jpg",
+      "linkedin": "https://www.linkedin.com/in/aarsh-shah-0a84161a9/"
+    },
     {
+      "name": "Rachel Renegado",
+      "affiliation": "2024-2025 President",
+      "imagePath": "Rachel_Renegado.jpg",
+      "linkedin": "https://www.linkedin.com/in/rachel-r-544409201/"
+    },
+    { 
       "name": "Niyousha Raeesinejad",
       "affiliation": "2022-2024 President",
       "imagePath": "Niyousha_Raeesinejad.jpg",

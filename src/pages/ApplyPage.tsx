@@ -251,10 +251,10 @@ const ApplyPage = () => {
               role="Project Member"
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project for 1 academic year."
-              statusIsOpen={false}
+              statusIsOpen={true}
               closedStatus="APPLICATIONS CLOSED"
-              applicationLink="https://forms.gle/aH3r7eKwk3sSHhwp8"
-              deadline=""
+              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSdXXjj9iWhO9Am_v4lxF32WEH-fVEKMgyRYX285EkWkEyCdzw/viewform"
+              deadline="Applications due October 3rd, 2025 @ 11:59 PM MT"
             />
 
             <ApplySection

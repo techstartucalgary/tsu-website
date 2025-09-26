@@ -141,7 +141,44 @@
       "linkedin": "https://www.linkedin.com/in/alexeygrekov/"
     }
   ],
-  "projectManagers": [],
+  "projectManagers": [
+    {
+      "name": "Debojeet Dam",
+      "affiliation": "Project Manager",
+      "imagePath": "Debojeet_Dam.jpeg",
+      "linkedin": "https://www.linkedin.com/in/debojeetdam/"
+    },
+    {
+      "name": "Divakar Gaba",
+      "affiliation": "Project Manager",
+      "imagePath": "Divakar_Gaba.jpg",
+      "linkedin": "https://www.linkedin.com/in/divakar-gaba-776b0624b/"
+    },
+    {
+      "name": "Gurjit Samra",
+      "affiliation": "Project Manager",
+      "imagePath": "Gurjit_Samra.PNG",
+      "linkedin": "https://www.linkedin.com/in/gurjit-samra/"
+    },
+    {
+      "name": "Huzaifa Shahid",
+      "affiliation": "Project Manager",
+      "imagePath": "Huzaifa_Shahid.jpg",
+      "linkedin": "https://www.linkedin.com/in/huzaifa-shahid2/"
+    },
+    {
+      "name": "Luca Rios",
+      "affiliation": "Project Manager",
+      "imagePath": "Luca_Rios.jpeg",
+      "linkedin": "https://www.linkedin.com/in/lujarios/"
+    },
+    {
+      "name": "Rami Maalouf",
+      "affiliation": "Project Manager",
+      "imagePath": "Rami_Maalouf.jpg",
+      "linkedin": "https://www.linkedin.com/in/rami-m/"
+    }
+  ],
   "alumniTeam": [
     {
       "name": "Parsa Kargari",
@@ -175,7 +212,7 @@
     }
   ],
   "boardMembers": [
-    { 
+    {
       "name": "Aarsh Shah",
       "affiliation": "2024-2025 President",
       "imagePath": "Aarsh_Shah.jpg",
@@ -187,7 +224,7 @@
       "imagePath": "Rachel_Renegado.jpg",
       "linkedin": "https://www.linkedin.com/in/rachel-r-544409201/"
     },
-    { 
+    {
       "name": "Niyousha Raeesinejad",
       "affiliation": "2022-2024 President",
       "imagePath": "Niyousha_Raeesinejad.jpg",

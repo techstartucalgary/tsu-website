@@ -251,10 +251,10 @@ const ApplyPage = () => {
               role="Project Member"
               description="Work and grow as a developer, business strategist, or designer.
                   Collaborate with team members on various platforms to build an exciting project for 1 academic year."
-              statusIsOpen={true}
+              statusIsOpen={false}
               closedStatus="APPLICATIONS CLOSED"
               applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSdXXjj9iWhO9Am_v4lxF32WEH-fVEKMgyRYX285EkWkEyCdzw/viewform"
-              deadline="Applications due October 3rd, 2025 @ 11:59 PM MT"
+              deadline=""
             />
 
             <ApplySection
@@ -271,10 +271,10 @@ const ApplyPage = () => {
               role="Executive Team"
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
-              statusIsOpen={false}
+              statusIsOpen={true}
               closedStatus="APPLICATIONS CLOSED"
-              applicationLink="https://forms.gle/GtioLzJqeNcPYHjB6"
-              deadline=""
+              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSdaqiGpPQ5z7221SB61eMFLrS4Vb1ZLuQRD-_fZ71e-E5m1Gw/viewform"
+              deadline="Applications due October 31st, 2025 @ 11:59 PM MT"
             />
           </ul>
         </div>

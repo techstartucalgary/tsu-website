@@ -16,7 +16,7 @@ const HomePage = () => {
   return (
     <div className="homePage">
       <AnnouncementBanner 
-        message="🎉 Project Member Applications are now open for the 2025-26 academic year!"
+        message="🎉 Executive Team Applications are now open for the 2025–26 academic year!"
         link={{
           text: "Apply Here!",
           to: "/apply",

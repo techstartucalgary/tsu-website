@@ -99,10 +99,28 @@
       "linkedin": "https://www.linkedin.com/in/estefania-caballero-864aab25a/"
     },
     {
+      "name": "Md Samiu Hossain",
+      "affiliation": "Jr. VP Communications",
+      "imagePath": "Md_Hossain.jpg",
+      "linkedin": "https://www.linkedin.com/in/mdsamiuhossain/?originalSubdomain=ca"
+    },
+    {
+      "name": "Naasha Golwala",
+      "affiliation": "Jr. VP Communications",
+      "imagePath": "Naasha_Golwala.JPG",
+      "linkedin": "https://www.linkedin.com/in/naasha-golwala-67b913302/?originalSubdomain=ca"
+    },
+    {
       "name": "Labib Ahmed",
       "affiliation": "VP Finance",
       "imagePath": "Labib_Ahmed.jpg",
       "linkedin": "https://www.linkedin.com/in/labib-afsar-ahmed/"
+    },
+    {
+      "name": "Aleena Sheikh",
+      "affiliation": "Jr. VP Finance",
+      "imagePath": "Aleena_Sheikh.jpeg",
+      "linkedin": "https://www.linkedin.com/in/aleena-sheikh-a67236303/"
     },
     {
       "name": "Mehrnaz Zafari",
@@ -197,12 +215,6 @@
       "affiliation": "Alumni VP Strategy",
       "imagePath": "Ryan.jpeg",
       "linkedin": "https://www.linkedin.com/in/rdmabley/"
-    },
-    {
-      "name": "Sajwal",
-      "affiliation": "Alumni VP Strategy",
-      "imagePath": "Sajwal.jpeg",
-      "linkedin": "https://www.linkedin.com/in/sajwal/"
     },
     {
       "name": "Ben Schmidt",

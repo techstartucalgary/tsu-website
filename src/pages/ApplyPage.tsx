@@ -271,10 +271,10 @@ const ApplyPage = () => {
               role="Executive Team"
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
-              statusIsOpen={true}
+              statusIsOpen={false}
               closedStatus="APPLICATIONS CLOSED"
               applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSdaqiGpPQ5z7221SB61eMFLrS4Vb1ZLuQRD-_fZ71e-E5m1Gw/viewform"
-              deadline="Applications due October 31st, 2025 @ 11:59 PM MT"
+              deadline=""
             />
           </ul>
         </div>

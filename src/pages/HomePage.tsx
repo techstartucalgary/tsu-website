@@ -10,19 +10,10 @@ import Blobbie from "components/Blobbie";
 import EventsSection from "components/EventsSection/EventsSection";
 import { ProjectsSection } from "../components/ProjectSection/ProjectsSection";
 import ApplyButton from "components/ApplyButton";
-import AnnouncementBanner from "components/AnnouncementBanner/AnnouncementBanner";
 
 const HomePage = () => {
   return (
     <div className="homePage">
-      <AnnouncementBanner 
-        message="🎉 Executive Team Applications are now open for the 2025-26 academic year!"
-        link={{
-          text: "Apply Here!",
-          to: "/apply",
-          external: false
-        }}
-      />
       <header className="homePage__hero" id="homePageTop">
         <Particle />
         <div className="homePage__logoContainer">

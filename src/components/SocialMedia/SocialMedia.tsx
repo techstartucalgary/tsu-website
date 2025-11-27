@@ -7,6 +7,7 @@ interface SocialMediaProps {
   color: SocialMediaColor;
   link: string;
   icon: IconDefinition;
+  newTab?: boolean;
 }
 
 const SocialMedia = (props: SocialMediaProps) => {
@@ -16,7 +17,12 @@ const SocialMedia = (props: SocialMediaProps) => {
         <FontAwesomeIcon icon={props.icon} size="3x" />
       </SocialMediaIcon>
       :
-      <SocialMediaIcon color={props.color} href={props.link}>
+      <SocialMediaIcon 
+        color={props.color} 
+        href={props.link}
+        target={props.newTab ? "_blank" : undefined}
+        rel={props.newTab ? "noopener noreferrer" : undefined}
+      >
         <FontAwesomeIcon icon={props.icon} size="3x" />
       </SocialMediaIcon>
   );

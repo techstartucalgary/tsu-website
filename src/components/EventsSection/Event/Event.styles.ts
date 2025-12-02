@@ -19,6 +19,8 @@ export const EventImage = styled.img`
   border-radius: 20px;
   margin: 2%;
   width: 60%;
+  aspect-ratio: 3 / 2;
+  object-fit: cover;
   float: left;
   clear: right;
 

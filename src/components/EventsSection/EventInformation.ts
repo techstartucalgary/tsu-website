@@ -1,7 +1,7 @@
+import ArcurveTechTalk_img from "../../images/events/Arcurve_Tech_Talk.jpg";
 import FinalShowcase24_img from "../../images/events/Final_Showcase_24.jpg";
-import PasonTechTalk_img from "../../images/events/PasonTechTalk.jpg";
 import IEEExTechStart_img from "../../images/events/IEEExTechStart.jpg";
-
+import PasonTechTalk_img from "../../images/events/PasonTechTalk.jpg";
 
 export interface Event {
   title: string;
@@ -13,6 +13,15 @@ export interface Event {
 }
 
 export const highlightedEvents: Event[] = [
+  {
+    title: "Arcurve Tech Talk",
+    description:
+      "We teamed up with Arcurve for a hands-on deep dive into Application Security 101! Our speakers, Technical Leads Andrew Langemann and Matthew Powaschuk and Software Developer Haris Muhammad, guided students through live hacking demos and real-world defense strategies.",
+    date: "Thursday, November 27, 2025",
+    time: "6:00 - 8:00 PM",
+    image: ArcurveTechTalk_img,
+    link: "https://www.instagram.com/p/DRphWrcj5_O/",
+  },
   {
     title: "Final Showcase 2024",
     description:

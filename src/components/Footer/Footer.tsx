@@ -34,6 +34,7 @@ const Footer = () => (
         color={SocialMediaColor.Gradient}
         icon={faLinkedin}
         link="https://www.linkedin.com/company/tech-start-ucalgary"
+        newTab={true}
       />
       <SocialMedia
         color={SocialMediaColor.Gradient}

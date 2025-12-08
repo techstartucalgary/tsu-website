@@ -63,6 +63,7 @@ const Profile = (props: ProfileProps) => {
             color={SocialMediaColor.White}
             icon={faLinkedinIn}
             link={props.member.linkedin}
+            newTab={true}
           />
         </S.LinksSection>
       )}

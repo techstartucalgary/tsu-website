@@ -69,12 +69,6 @@
       "linkedin": "https://www.linkedin.com/in/svara-patel/"
     },
     {
-      "name": "Abraham Otegbola",
-      "affiliation": "Jr. VP External",
-      "imagePath": "Abraham_Otegbola.jpg",
-      "linkedin": "https://www.linkedin.com/in/abraham-otegbola-943a39231/"
-    },
-    {
       "name": "Tara Cherian",
       "affiliation": "Jr. VP External",
       "imagePath": "Tara_Cherian.jpg",
@@ -111,14 +105,8 @@
       "linkedin": "https://www.linkedin.com/in/naasha-golwala-67b913302/?originalSubdomain=ca"
     },
     {
-      "name": "Labib Ahmed",
-      "affiliation": "VP Finance",
-      "imagePath": "Labib_Ahmed.jpg",
-      "linkedin": "https://www.linkedin.com/in/labib-afsar-ahmed/"
-    },
-    {
       "name": "Aleena Sheikh",
-      "affiliation": "Jr. VP Finance",
+      "affiliation": "VP Finance",
       "imagePath": "Aleena_Sheikh.jpg",
       "linkedin": "https://www.linkedin.com/in/aleena-sheikh-a67236303/"
     },
@@ -142,7 +130,7 @@
     },
     {
       "name": "Shivanshi Visvanatha",
-      "affiliation": "Website Developer",
+      "affiliation": "Website Lead",
       "imagePath": "Shivanshi_Visvanatha.jpeg",
       "linkedin": "https://www.linkedin.com/in/shivanshi-visvanatha-a4a598382"
     },
@@ -151,12 +139,6 @@
       "affiliation": "Website Developer",
       "imagePath": "Raisa_Fairuz.jpg",
       "linkedin": "https://www.linkedin.com/in/raisa-fairuz-2077b920a/"
-    },
-    {
-      "name": "Alexey Grekov",
-      "affiliation": "Website Developer",
-      "imagePath": "Alexey_Grekov.jpg",
-      "linkedin": "https://www.linkedin.com/in/alexeygrekov/"
     }
   ],
   "projectManagers": [
@@ -200,7 +182,7 @@
   "alumniTeam": [
     {
       "name": "Parsa Kargari",
-      "affiliation": "Alumni Technical Advisor and Web Lead",
+      "affiliation": "Alumni Technical Advisor",
       "imagePath": "Parsa_Kargari.jpg",
       "linkedin": "https://www.linkedin.com/in/parsa-kargari/"
     },
@@ -209,6 +191,12 @@
       "affiliation": "Alumni Business Mentor",
       "imagePath": "Carol_Wang.png",
       "linkedin": "https://www.linkedin.com/in/carol-wang3116"
+    },
+    {
+      "name": "Labib Ahmed",
+      "affiliation": "Alumni VP Finance",
+      "imagePath": "Labib_Ahmed.jpg",
+      "linkedin": "https://www.linkedin.com/in/labib-afsar-ahmed/"
     },
     {
       "name": "Ryan Mabley",

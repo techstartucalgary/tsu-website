@@ -13,7 +13,7 @@ const SponsorSection = () => {
       </h2>
       <Divider />
       <S.SponsorSection>
-        {SponsorList.map((sponsor: Organization, index: number) => {
+        {SponsorList.map((sponsor: Organization) => {
           return (
             <S.SponsorLogoDiv key={sponsor.sponsorLink}>
               <SponsorLogo

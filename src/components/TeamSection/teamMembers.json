@@ -139,6 +139,18 @@
       "affiliation": "Website Developer",
       "imagePath": "Raisa_Fairuz.jpg",
       "linkedin": "https://www.linkedin.com/in/raisa-fairuz-2077b920a/"
+    },
+    {
+      "name": "Mico Ben Issa",
+      "affiliation": "Website Developer",
+      "imagePath": "Mico_Ben_Issa.jpg",
+      "linkedin": "https://www.linkedin.com/in/micobenissa/"
+    },
+    {
+      "name": "Luis Hernandez",
+      "affiliation": "Website Developer",
+      "imagePath": "Luis_Hernandez.jpg",
+      "linkedin": "https://www.linkedin.com/in/ucalgary-luis-hernandez/"
     }
   ],
   "projectManagers": [

@@ -14,6 +14,15 @@ export interface Event {
 
 export const highlightedEvents: Event[] = [
   {
+    title: "Interim Showcase 2026",
+    description:
+      "We hosted the Interim Showcase as a midpoint event where project teams presented their progress, innovations, and early-stage solutions! Students pitched their ideas, demonstrated prototypes, and received feedback from peers and judges to refine their projects and prepare for the final showcase.",
+    date: "Thursday, February 12, 2026",
+    time: "6:00 - 8:00 PM",
+    image: ArcurveTechTalk_img,
+    link: "https://www.instagram.com/p/DVCBNt7Eh7Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
+  },
+  {
     title: "Arcurve Tech Talk",
     description:
       "We teamed up with Arcurve for a hands-on deep dive into Application Security 101! Our speakers, Technical Leads Andrew Langemann and Matthew Powaschuk and Software Developer Haris Muhammad, guided students through live hacking demos and real-world defense strategies.",

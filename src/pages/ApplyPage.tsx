@@ -261,9 +261,9 @@ const ApplyPage = () => {
               role="Project Manager"
               description="Manage a project for 1 year and lead a team of 6-9
                     project members to create complex projects."
-              statusIsOpen={false}
-              closedStatus="APPLICATIONS CLOSED"
-              applicationLink="https://forms.gle/sXrtiz5PQCLdwK6N7"
+              statusIsOpen={true}
+              closedStatus="APPLY NOW!"
+              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSfMIg4mGSg-Ag2oY94NTcZsj6Fsm72EZsNuCmUnBm79vZMt3g/viewform"
               deadline=""
             />
 
@@ -271,9 +271,9 @@ const ApplyPage = () => {
               role="Executive Team"
               description="Work behind the scenes for 1 academic year to organize project teams, run
                   workshops and events, and grow our club culture. Be a visionary that helps this club fulfill its goals!"
-              statusIsOpen={false}
-              closedStatus="APPLICATIONS CLOSED"
-              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSdaqiGpPQ5z7221SB61eMFLrS4Vb1ZLuQRD-_fZ71e-E5m1Gw/viewform"
+              statusIsOpen={true}
+              closedStatus="APPLY NOW!"
+              applicationLink="https://docs.google.com/forms/d/e/1FAIpQLSfCVh6kmyzIEJ19_VaoP3UC-a6E-l56G_XQM2ox9Sjd06FtiQ/viewform"
               deadline=""
             />
           </ul>

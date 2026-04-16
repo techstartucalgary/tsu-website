@@ -23,6 +23,15 @@ export const highlightedEvents: Event[] = [
     link: "https://www.instagram.com/p/DRphWrcj5_O/",
   },
   {
+    title: "Pitch Night",
+    description:
+      "We hosted Pitch Night as an exciting event where students presented their startup ideas and projects to an audience of peers and judges! Participants delivered confident pitches, shared innovative concepts, and engaged in inspiring conversations while receiving feedback to refine their ideas.",
+    date: "Thursday, November 20, 2025",
+    time: "6:00 - 8:00 PM",
+    image: ArcurveTechTalk_img,
+    link: "https://www.instagram.com/reel/DRa040rjymB//",
+  },
+  {
     title: "Final Showcase 2024",
     description:
       "Our 2024 Final Showcase was an astounding success, pushing our club to new heights and setting even higher standards for what project teams are able to achieve. Congratulations to all the project teams for their achievements this year! ",

@@ -2,6 +2,7 @@ import ArcurveTechTalk_img from "../../images/events/Arcurve_Tech_Talk.jpg";
 import FinalShowcase24_img from "../../images/events/Final_Showcase_24.jpg";
 import IEEExTechStart_img from "../../images/events/IEEExTechStart.jpg";
 import PasonTechTalk_img from "../../images/events/PasonTechTalk.jpg";
+import InterimShowcase_img from "../..images/events/InterimShowcase_img";
 
 export interface Event {
   title: string;
@@ -19,7 +20,7 @@ export const highlightedEvents: Event[] = [
       "We hosted the Interim Showcase as a midpoint event where project teams presented their progress, innovations, and early-stage solutions! Students pitched their ideas, demonstrated prototypes, and received feedback from peers and judges to refine their projects and prepare for the final showcase.",
     date: "Thursday, February 12, 2026",
     time: "6:00 - 8:00 PM",
-    image: ArcurveTechTalk_img,
+    image: InterimShowcase_img,
     link: "https://www.instagram.com/p/DVCBNt7Eh7Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
   {

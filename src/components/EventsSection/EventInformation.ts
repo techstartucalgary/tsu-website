@@ -2,7 +2,7 @@ import ArcurveTechTalk_img from "../../images/events/Arcurve_Tech_Talk.jpg";
 import FinalShowcase24_img from "../../images/events/Final_Showcase_24.jpg";
 import IEEExTechStart_img from "../../images/events/IEEExTechStart.jpg";
 import PasonTechTalk_img from "../../images/events/PasonTechTalk.jpg";
-import InterimShowcase_img from "../..images/events/InterimShowcase_img";
+import InterimShowcase_img from "../..images/events/interimShowcase2026.jpeg";
 
 export interface Event {
   title: string;

@@ -2,6 +2,7 @@ import ArcurveTechTalk_img from "../../images/events/Arcurve_Tech_Talk.jpg";
 import FinalShowcase24_img from "../../images/events/Final_Showcase_24.jpg";
 import IEEExTechStart_img from "../../images/events/IEEExTechStart.jpg";
 import PasonTechTalk_img from "../../images/events/PasonTechTalk.jpg";
+import PitchNight_img from "../../images/events/pitchNight.jpg";
 
 export interface Event {
   title: string;
@@ -28,7 +29,7 @@ export const highlightedEvents: Event[] = [
       "We hosted Pitch Night as an exciting event where students presented their startup ideas and projects to an audience of peers and judges! Participants delivered confident pitches, shared innovative concepts, and engaged in inspiring conversations while receiving feedback to refine their ideas.",
     date: "Thursday, November 20, 2025",
     time: "6:00 - 8:00 PM",
-    image: ArcurveTechTalk_img,
+    image: PitchNight_img,
     link: "https://www.instagram.com/reel/DRa040rjymB//",
   },
   {

@@ -1,3 +1,4 @@
+import ZooTechHackathon_img from "../../images/events/ZooTech_Hackathon.jpg";
 import ArcurveTechTalk_img from "../../images/events/Arcurve_Tech_Talk.jpg";
 import FinalShowcase24_img from "../../images/events/Final_Showcase_24.jpg";
 import IEEExTechStart_img from "../../images/events/IEEExTechStart.jpg";
@@ -14,6 +15,15 @@ export interface Event {
 }
 
 export const highlightedEvents: Event[] = [
+  {
+    title: "ZooTech x Cursor Hackathon",
+    description:
+      "We teamed up with Tech Start UCalgary, ZOO (Electrical & Software Engineering Students' Society), and Cursor for a high-energy 24-hour hackathon where students built innovative software projects from scratch! Participants worked in teams to develop real-world solutions, leveraging modern tools like AI, and pitched their ideas to industry judges.",
+    date: "March 14 - 15, 2026",
+    time: "24 Hours",
+    image: ZooTechHackathon_img,
+    link: "https://www.instagram.com/p/DV8_IPAlPPV/",
+  },
   {
     title: "Arcurve Tech Talk",
     description:

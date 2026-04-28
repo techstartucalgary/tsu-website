@@ -17,7 +17,7 @@ export const highlightedEvents: Event[] = [
   {
     title: "ZooTech x Cursor Hackathon",
     description:
-      "We teamed up with Tech Start UCalgary, ZOO (Electrical & Software Engineering Students' Society), and Cursor for a high-energy 24-hour hackathon where students built innovative software projects from scratch! Participants worked in teams to develop real-world solutions, leveraging modern tools like AI, and pitched their ideas to industry judges.",
+      "We teamed up with ZOO (Electrical & Software Engineering Students' Society) and Cursor for a high-energy 24-hour hackathon where students built innovative software projects from scratch! Participants worked in teams to develop real-world solutions, leveraging modern tools like AI, and pitched their ideas to industry judges.",
     date: "March 14 - 15, 2026",
     time: "24 Hours",
     image: ZooTechHackathon_img,

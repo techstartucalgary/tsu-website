@@ -20,20 +20,32 @@ const Header = () => {
     top: string;
     link: string;
     name: string;
+    external?: boolean;
   };
 
-  const NavbarLink = (props: NavbarLinkProps) => (
-    <li>
-      <a href="#">
-        <LinkScroll to={props.top} spy={true} offset={-80} duration={500}>
-          <Link onClick={hideNavbar} to={props.link}>
-            {" "}
-            {props.name}{" "}
-          </Link>
-        </LinkScroll>
-      </a>
-    </li>
-  );
+  const NavbarLink = (props: NavbarLinkProps) => {
+    if (props.external) {
+      return (
+        <li>
+          <a href={props.link} target="_blank" rel="noopener noreferrer" onClick={hideNavbar}>
+            {props.name}
+          </a>
+        </li>
+      );
+    }
+    return (
+      <li>
+        <a href="#">
+          <LinkScroll to={props.top} spy={true} offset={-80} duration={500}>
+            <Link onClick={hideNavbar} to={props.link}>
+              {" "}
+              {props.name}{" "}
+            </Link>
+          </LinkScroll>
+        </a>
+      </li>
+    );
+  };
 
   return (
     <header className="navbar__container">
@@ -68,9 +80,10 @@ const Header = () => {
               name="Projects"
             />
             <NavbarLink top="applyPageTop" link="/apply" name="Apply" />
-            <NavbarLink top="merchPageTop" link="/merch" name="Merch" />
+            <NavbarLink  top="merchPageTop" link="/merch" name="Merch" />
             <NavbarLink top="galleryPageTop" link="/gallery" name="Gallery" />
             <NavbarLink top="docsPageTop" link="/resources" name="Resources" />
+            <NavbarLink top="eventTop" link="https://www.eventbrite.ca/e/tech-start-ucalgary-final-showcase-2026-tickets-1987370723332?aff=oddtdtcreator" name="Final Showcase Sign Up" external={true} />
           </motion.ul>
         </nav>
         <label

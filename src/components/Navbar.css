@@ -110,36 +110,33 @@
   }
 
   .navbar {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr auto minmax(600px, 12fr) 1fr;
   }
 
   .navbar__logo {
+    /*position: left;
+    padding-left: 4em; */
     margin-left: 20px;
-    margin-top: 0;
+    grid-column: 1 / 2;
   }
 
   .navbar__content {
     all: unset;
+    grid-column: 3 / 4;
     display: flex;
+    justify-content: flex-end;
     align-items: center;
-    margin: 0;
-    flex: 1;
-    justify-content: center;
+    margin-left: 500px;
   }
 
   .navbar__content ul {
     display: flex;
-    align-items: center;
-    gap: 2em;
   }
 
   .navbar__content li {
-    margin-left: 0;
+    margin-left: 3em;
     margin-bottom: 0;
-    white-space: nowrap;
   }
 
   .navbar__content a {

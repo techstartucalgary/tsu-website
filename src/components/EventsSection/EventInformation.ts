@@ -1,8 +1,10 @@
+import ZooTechHackathon_img from "../../images/events/ZooTech_Hackathon.jpg";
 import ArcurveTechTalk_img from "../../images/events/Arcurve_Tech_Talk.jpg";
 import FinalShowcase24_img from "../../images/events/Final_Showcase_24.jpg";
 import IEEExTechStart_img from "../../images/events/IEEExTechStart.jpg";
 import PasonTechTalk_img from "../../images/events/PasonTechTalk.jpg";
 import InterimShowcase_img from "../../images/events/interimShowcase2026.jpeg";
+import PitchNight_img from "../../images/events/pitchNight.jpg";
 
 export interface Event {
   title: string;
@@ -14,6 +16,15 @@ export interface Event {
 }
 
 export const highlightedEvents: Event[] = [
+  {
+     title: "ZooTech x Cursor Hackathon",
+    description:
+      "We teamed up with ZOO (Electrical & Software Engineering Students' Society) and Cursor for a high-energy 24-hour hackathon where students built innovative software projects from scratch! Participants worked in teams to develop real-world solutions, leveraging modern tools like AI, and pitched their ideas to industry judges.",
+    date: "March 14 - 15, 2026",
+    time: "24 Hours",
+    image: ZooTechHackathon_img,
+    link: "https://www.instagram.com/p/DV8_IPAlPPV/",
+  },
   {
     title: "Interim Showcase 2026",
     description:
@@ -31,6 +42,15 @@ export const highlightedEvents: Event[] = [
     time: "6:00 - 8:00 PM",
     image: ArcurveTechTalk_img,
     link: "https://www.instagram.com/p/DRphWrcj5_O/",
+  },
+  {
+    title: "Pitch Night",
+    description:
+      "We hosted Pitch Night as an exciting event where students presented their startup ideas and projects to an audience of peers and judges! Participants delivered confident pitches, shared innovative concepts, and engaged in inspiring conversations while receiving feedback to refine their ideas.",
+    date: "Thursday, November 20, 2025",
+    time: "6:00 - 8:00 PM",
+    image: PitchNight_img,
+    link: "https://www.instagram.com/reel/DRa040rjymB/",
   },
   {
     title: "Final Showcase 2024",

@@ -13,17 +13,18 @@ import ApplyButton from "components/ApplyButton";
 import AnnouncementBanner from "components/AnnouncementBanner/AnnouncementBanner";
 
 const HomePage = () => {
-  const showAnnouncement = false; // toggle visibility
+  const showAnnouncement = true; // toggle visibility
   return (
     <div className="homePage">
       {showAnnouncement && (
         <AnnouncementBanner
-          message="🎉 Executive Team Applications are now open for the 2025-26 academic year!"
+          
           link={{
-            text: "Apply Here!",
-            to: "/apply",
-            external: false,
+            text: "Click Here",
+            to: "https://www.eventbrite.ca/e/tech-start-ucalgary-final-showcase-2026-tickets-1987370723332?aff=oddtdtcreator",
+            external: true,
           }}
+          message="Sign Up for Final Showcase!"
         />
       )}
       <header className="homePage__hero" id="homePageTop">

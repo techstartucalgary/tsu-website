@@ -3,6 +3,7 @@ import ArcurveTechTalk_img from "../../images/events/Arcurve_Tech_Talk.jpg";
 import FinalShowcase24_img from "../../images/events/Final_Showcase_24.jpg";
 import IEEExTechStart_img from "../../images/events/IEEExTechStart.jpg";
 import PasonTechTalk_img from "../../images/events/PasonTechTalk.jpg";
+import InterimShowcase_img from "../../images/events/interimShowcase2026.jpeg";
 import PitchNight_img from "../../images/events/pitchNight.jpg";
 
 export interface Event {
@@ -16,13 +17,22 @@ export interface Event {
 
 export const highlightedEvents: Event[] = [
   {
-    title: "ZooTech x Cursor Hackathon",
+     title: "ZooTech x Cursor Hackathon",
     description:
       "We teamed up with ZOO (Electrical & Software Engineering Students' Society) and Cursor for a high-energy 24-hour hackathon where students built innovative software projects from scratch! Participants worked in teams to develop real-world solutions, leveraging modern tools like AI, and pitched their ideas to industry judges.",
     date: "March 14 - 15, 2026",
     time: "24 Hours",
     image: ZooTechHackathon_img,
     link: "https://www.instagram.com/p/DV8_IPAlPPV/",
+  },
+  {
+    title: "Interim Showcase 2026",
+    description:
+      "We hosted the Interim Showcase as a midpoint event where project teams presented their progress, innovations, and early-stage solutions! Students pitched their ideas, demonstrated prototypes, and received feedback from peers and judges to refine their projects and prepare for the final showcase.",
+    date: "Thursday, February 12, 2026",
+    time: "6:00 - 8:00 PM",
+    image: InterimShowcase_img,
+    link: "https://www.instagram.com/p/DVCBNt7Eh7Y/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==",
   },
   {
     title: "Arcurve Tech Talk",

@@ -13,7 +13,7 @@ import ApplyButton from "components/ApplyButton";
 import AnnouncementBanner from "components/AnnouncementBanner/AnnouncementBanner";
 
 const HomePage = () => {
-  const showAnnouncement = true; // toggle visibility
+  const showAnnouncement = false; // toggle visibility
   return (
     <div className="homePage">
       {showAnnouncement && (
